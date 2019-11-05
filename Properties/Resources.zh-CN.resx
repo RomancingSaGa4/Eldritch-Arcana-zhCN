@@ -210,19 +210,19 @@
     <value>获得+1点生命值</value>
   </data>
   <data name="BonusHitPointFeatureName_info" xml:space="preserve">
-    <value>奖励生命点数</value>
+    <value>奖励生命值</value>
   </data>
   <data name="BonusSkillRankFeatureDescription_info" xml:space="preserve">
-    <value>获得+1级技能等级</value>
+    <value>获得+1点奖励技能点</value>
   </data>
   <data name="BonusSkillRankFeatureName_info" xml:space="preserve">
-    <value>奖励技能等级</value>
+    <value>奖励技能点</value>
   </data>
   <data name="BonusSpellLevelFeatureDescription_info" xml:space="preserve">
-    <value>增加一个{0}级法术来自于已知的{1}法术列表。这个法术必须至少比你能施放的最高等级{2}法术低一级。</value>
+    <value>增加一个 {0} 级 {1} 法术。这个法术必须比你当前所能施展的最高级 {2} 法术低一级。</value>
   </data>
   <data name="BonusSpellLevelFeatureName_info" xml:space="preserve">
-    <value>奖励已知法术（等级{0}）</value>
+    <value>奖励已知法术（ {0} 级）</value>
   </data>
   <data name="ChannelEnergyFeatureDescription_info" xml:space="preserve">
     <value>你可以像牧师一样输送正能量，在确定治愈（或伤害不死生物）的生命值和DC时，使用你的神使等级作为你的有效牧师等级。
@@ -235,10 +235,10 @@
     <value>启用所有作弊特性及法术甚至自定义和自制（需要重新启动才能生效）</value>
   </data>
   <data name="ChooseFavoredClassLocalized_info" xml:space="preserve">
-    <value>选择偏爱职业奖励</value>
+    <value>选择天赋职业奖励</value>
   </data>
   <data name="ChooseMysteryLocalized_info" xml:space="preserve">
-    <value>选择秘法</value>
+    <value>选择秘视域</value>
   </data>
   <data name="CrossbloodedChoicesFeatureDescription_info" xml:space="preserve">
     <value>
@@ -266,7 +266,7 @@
     <value>这个法术的作用类似火球，只是它更强大，在施放这个法术后最多可以5轮后再引爆。火焰爆发使得每施法者等级造成1d6点火焰伤害（最大20d6）。延迟爆炸火球产生的发光火珠可以立即引爆，如果你愿意，或者你可以选择延迟爆炸多达5轮。你可以在完成法术后选择延迟的时间，这个时间一旦设置好就不能改变，除非有人触碰了光珠。如果你选择一个延迟，光珠会停留在它的目的地直到爆炸。一个生物可以捡起并投掷光珠作为投掷武器（射程增加10英尺）。如果一个生物在其爆炸的1轮内操控并移动光珠，那么光珠在被操控时爆炸的几率为25%。</value>
   </data>
   <data name="DelayedBlastFireballAbilityName_info" xml:space="preserve">
-    <value>延迟爆炸火球</value>
+    <value>延时爆裂火球</value>
   </data>
   <data name="DervishDanceFeatureDescription_info" xml:space="preserve">
     <value>当用一只手使用弯刀时，你可以在近战攻击和伤害骰上使用你的敏捷加值而不是你的力量加值。你将弯刀视为一种单手穿透武器，用于所有需要此类武器（如决斗家的精确造成能力）的专长和等级能力。弯刀必须适合你这种体型的生物。如果你的副手里拿着武器或盾牌，你就不能使用这个专长。</value>
@@ -337,10 +337,10 @@
     <value>埃尔德里奇的遗产</value>
   </data>
   <data name="EldritchKnightFix_info" xml:space="preserve">
-    <value>兼职埃尔德里奇骑士需要已拥有战士类职业</value>
+    <value>兼职秘法骑士需要已拥有战士类职业</value>
   </data>
   <data name="EldritchKnightFix_tip" xml:space="preserve">
-    <value>例如：野蛮人、战士、圣武士、游侠，不影响已创建的角色</value>
+    <value>例如：野蛮人、战士、圣武士、巡林客，不影响已创建的角色</value>
   </data>
   <data name="EmergencyForceSphereBuffDescription_info" xml:space="preserve">
     <value>作为原力之墙，除非你创造一个半球形的原力圆顶，硬度为20，每施法者等级有10点生命值。如果你站在一个相当平坦的表面上，圆顶的底部边缘形成一个相对不漏水的空间。圆顶的形状意味着落下的碎片(比如从坍塌的天花板上落下的岩石)会滚到一边，堆积在圆顶的底部。如果你制作一个DC20制作(石匠)，知识(工程)，或专业(建筑师或工程师)检查，碎片是足够稳定的，当法术结束时，它保持它的圆顶状结构，否则它会倒塌。
@@ -376,38 +376,39 @@
     <value>额外启示</value>
   </data>
   <data name="FavoredClassAnyFeatureDescription_info" xml:space="preserve">
-    <value>喜爱的职业将自动确定每一等级，如果在该职业中获得一个等级，将获得额外的生命点。喜爱的职业是你最高级别的非声望职业。这是默认的游戏行为。</value>
+    <value>每个等级自动确定天赋职业，如果选择此天赋职业，你就只能获得额外生命值。天赋职业为你最高等级的非进阶职业。此为默认的游戏设定。</value>
   </data>
   <data name="FavoredClassAnyFeatureName_info" xml:space="preserve">
-    <value>偏爱职业——任何</value>
+    <value>天赋职业——任何</value>
   </data>
   <data name="FavoredClassExtraSpellProgressionDescription_info" xml:space="preserve">
     <value>
-每当你获得{0}等级时，你可以在+1生命点、+1技能等级或与偏爱职业相关的种族加值之间作出选择。
+每当此角色提升 {0} 等级时, 你可以获得+1生命值，+1技能点，或者基于他们天赋职业的种族奖励。
 种族奖励：
 人类（半精灵，半兽人，阿西马尔）-从{0}法术列表中添加一个已知法术。这个法术必须至少比你能施放的最高等级{1}法术低一级。</value>
   </data>
   <data name="FavoredClassFeatureDescription_info" xml:space="preserve">
-    <value>每个角色开始玩他们通常选择的一个最喜欢的单一职业，这他们在第一级选择的同一个职业。当一个角色在他们喜欢的职业中获得一个等级时，他们将获得命中率+1，技能等级+1，或者与他们的偏爱职业相关的种族奖励。一旦创建了角色，就不能更改偏爱职业的选择。</value>
+    <value>每个角色以他选择的一个天赋职业开始游戏，通常这会是他们在1级时选择的职业。
+每当一个角色提升他们选择的天赋职业时，他获得+1生命值，+1技能点，或者基于他们天赋职业的其他奖励。一旦创建了角色，就不能更改偏爱职业的选择。</value>
   </data>
   <data name="FavoredClassFeatureName_info" xml:space="preserve">
-    <value>偏爱职业</value>
+    <value>天赋职业</value>
   </data>
   <data name="FavoredClassProgressionDescription_info" xml:space="preserve">
-    <value>每当你获得{0}等级时，你可以在+1生命点、+1技能等级或与偏爱职业相关的种族加值之间作出选择。</value>
+    <value>每当此角色提升 {0} 等级时, 你可以获得+1生命值，+1技能点，或者基于他们天赋职业的种族奖励。</value>
   </data>
   <data name="FavoredClassProgressionName_info" xml:space="preserve">
-    <value>偏爱职业——{0}</value>
+    <value>天赋职业——{0}</value>
   </data>
   <data name="FavoredPresitgeClassFeatureDescription_info" xml:space="preserve">
-    <value>你之所以喜爱某个声望职业，要么是因为你对该职业的事业特别投入，比大多数其他人在这个特定角色上所接受的培训都多，要么是因为你注定会一直在声望职业上表现出色。不管原因是什么，在你所喜爱的声望等级中获得等级会以一种类似于在你所喜爱的基础等级中获得等级的方式给予额外利益。
-你可以在你所选择的声望等级中获得等级之前选择此专长，但你在该声望等级中获得至少一个等级之前，此专长的好处不适用。</value>
+    <value>你对某个进阶职业产生了偏好，这可能是因为你对它有着更强的认同，比其他单一职业者经受了更多的训练或者是单纯擅长做这个职业。无论原因为何，进阶职业给你带来了一些额外好处，就和天赋基础职业一样。
+你可以在获取进阶职业前选择此专长，但在你在此进阶中至少提升1级前，你不会获得此专长的任何好处。</value>
   </data>
   <data name="FavoredPresitgeClassFeatureName_info" xml:space="preserve">
-    <value>喜爱声望职业</value>
+    <value>天赋进阶职业</value>
   </data>
   <data name="FavoredPrestigeProgressionName_info" xml:space="preserve">
-    <value>喜爱声望职业——{0}</value>
+    <value>天赋进阶职业——{0}</value>
   </data>
   <data name="FeyFoundlingFeatureDescription_info" xml:space="preserve">
     <value>你小时候在野外被发现。
@@ -764,7 +765,7 @@
     <value>忽略神祗</value>
   </data>
   <data name="SpellBlendingFeatureDescription_info" xml:space="preserve">
-    <value>当魔战士选择这个秘法时，他们必须从法师的法术列表中选择一个可以施放的法术等级。他们将这个法术添加到法术书和被称为法术级别的法术列表中。他们可以用这种方式选择两个法术来添加，但是两个法术都必须至少比他们能施放的最高法术低一级。
+    <value>当秘法师选择这个秘法时，他们必须从法师的法术列表中选择一个可以施放的法术等级。他们将这个法术添加到法术书和被称为法术级别的法术列表中。他们可以用这种方式选择两个法术来添加，但是两个法术都必须至少比他们能施放的最高法术低一级。
 特殊：秘法师可以多次选择这个秘法。</value>
   </data>
   <data name="SpellBlendingFeatureName_info" xml:space="preserve">
@@ -828,7 +829,7 @@
     <value>时间停止</value>
   </data>
   <data name="TrueResurrectionSpells_info" xml:space="preserve">
-    <value>完全复活术</value>
+    <value>完全复生术</value>
   </data>
   <data name="WeaponOfAweAbilityDescription_info" xml:space="preserve">
     <value>你把一件武器变成令人敬畏的工具。该武器在伤害骰上获得＋2神圣加值，如果该武器获得暴击，被暴击的目标将被摇晃1轮且不能进行豁免投掷。
