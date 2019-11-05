@@ -135,9 +135,9 @@
 你也可以在不增加施法时间的情况下将你所知道的任何元魔法技能添加到你的法术中，尽管你仍然必须花费更高级别的法术槽。</value>
   </data>
   <data name="BloodHavocMutationFeatureDescription_info" xml:space="preserve">
-    <value>一个嗜血者不需要在一场血腥的狂怒中使用她的血统突变能力。或者，一个嗜血者或巫师可以选择一个血统突变来代替血统奖励专长，前提是她的等级至少等于突变替代的血统能力等级。
+    <value>一个嗜血者不需要在一场血腥的狂怒中使用她的血统突变能力。或者，一个嗜血者或术士可以选择一个血统突变来代替血统奖励专长，前提是她的等级至少等于突变替代的血统能力等级。
 血统突变：血统严重破坏
-每当你施展一个造成伤害的嗜血或巫师法术时，投掷的每个伤害骰子点数增加1点。</value>
+每当你施展一个造成伤害的嗜血或术士法术时，投掷的每个伤害骰子点数增加1点。</value>
   </data>
   <data name="BloodHavocMutationFeatureName_info" xml:space="preserve">
     <value>血统严重突变（{0}）</value>
@@ -195,13 +195,13 @@
     <value>战神重生</value>
   </data>
   <data name="BloodlinePowerFeatureDescription_info" xml:space="preserve">
-    <value>在第1、第3、第9、第15和第20级，一个混血巫师获得了该级别的两个新血统力量之一。相反，他们可以选择一个他们尚未具备的较低级别的血统力量来取代这些较高级别的力量之一。</value>
+    <value>在第1、第3、第9、第15和第20级，一个混血术士获得了该级别的两个新血统力量之一。相反，他们可以选择一个他们尚未具备的较低级别的血统力量来取代这些较高级别的力量之一。</value>
   </data>
   <data name="BloodlinePowerFeatureName_info" xml:space="preserve">
     <value>血统力量</value>
   </data>
   <data name="BloodlineSpellFeatureDescription_info" xml:space="preserve">
-    <value>一个混血巫师可以从他们的血统中选择他们的额外法术。巫师也可以选择学习一个他们没有选择的较低等级的奖励法术来代替他们通常会获得的较高等级的奖励法术。以这种方式学习的低级奖励法术总是使用如果巫师用合适的奖励法术学习的法术等级。</value>
+    <value>一个混血术士可以从他们的血统中选择他们的额外法术。术士也可以选择学习一个他们没有选择的较低等级的奖励法术来代替他们通常会获得的较高等级的奖励法术。以这种方式学习的低级奖励法术总是使用如果术士用合适的奖励法术学习的法术等级。</value>
   </data>
   <data name="BloodlineSpellFeatureName_info" xml:space="preserve">
     <value>血统法术</value>
@@ -245,16 +245,16 @@
 每个血统的选择：</value>
   </data>
   <data name="CrossbloodedConflictingUrgesFeatureDescription_info" xml:space="preserve">
-    <value>由于混血巫师的双重遗产的不同性质所产生的相互冲突的渴望，迫使他们不断地进行一些精神上的努力，只是为了保持对他们当前的状况和需求的专注。这使得他们在处理外部威胁时没有那么大的决心。一个混血巫师总是在意志豁免检定中遭到-2的惩罚。</value>
+    <value>由于混血术士的双重遗产的不同性质所产生的相互冲突的渴望，迫使他们不断地进行一些精神上的努力，只是为了保持对他们当前的状况和需求的专注。这使得他们在处理外部威胁时没有那么大的决心。一个混血术士总是在意志豁免检定中遭到-2的惩罚。</value>
   </data>
   <data name="CrossbloodedConflictingUrgesFeatureName_info" xml:space="preserve">
     <value>混血（相互冲突的欲望）</value>
   </data>
   <data name="CrossbloodedSorcererLocalizedDescription_info" xml:space="preserve">
-    <value>一个混血巫师可以选择两种不同的血统。巫师可以获得技能，专长和他们所继承的两种血统的一些力量，但代价是降低了精神的清晰度和选择。</value>
+    <value>一个混血术士可以选择两种不同的血统。术士可以获得技能，专长和他们所继承的两种血统的一些力量，但代价是降低了精神的清晰度和选择。</value>
   </data>
   <data name="CrossbloodedSorcererLocalizedName_info" xml:space="preserve">
-    <value>混血巫师</value>
+    <value>混血术士</value>
   </data>
   <data name="DelayAfflictionFeatureDescription_info" xml:space="preserve">
     <value>每天一次，作为一个即时的行动，当你对某种疾病或毒素的豁免失败时，你可以忽略它的影响，每级1小时。在第7级和第15级，你可以每天额外使用这个技能一次。</value>
@@ -275,20 +275,20 @@
     <value>狂野之舞</value>
   </data>
   <data name="DetectSecretDoorsAbilityDescription_info" xml:space="preserve">
-    <value>您可以检测密门、隔间、隐藏物等等。这个法术只能探测到专门为逃避侦查而建造的通道、门或开口。
+    <value>您可以侦测密门、隔间、隐藏物等等。这个法术只能探测到专门为逃避侦查而建造的通道、门或开口。
 每回合，你都可以在一个新的区域内打开来侦查密门。这个法术需要通过专注检定，如果你施放另一个法术，采取标准动作，或者专注检定失败，它会提前结束。</value>
   </data>
   <data name="DetectSecretDoorsAbilityDuration_info" xml:space="preserve">
     <value>专注，1分钟/每施法者等级</value>
   </data>
   <data name="DetectSecretDoorsFoundDoorLog_info" xml:space="preserve">
-    <value>检测暗门：发现了密门。</value>
+    <value>侦测暗门：发现了密门。</value>
   </data>
   <data name="DetectSecretDoorsFoundItemLog_info" xml:space="preserve">
-    <value>检测暗门：发现了隐藏物品。</value>
+    <value>侦测暗门：发现了隐藏物品。</value>
   </data>
   <data name="DetectSecretDoorsSpells_info" xml:space="preserve">
-    <value>检测暗门</value>
+    <value>侦测暗门</value>
   </data>
   <data name="DismissAreaEffectAbilityDescription_info" xml:space="preserve">
     <value>有些法术可以随意取消，有些法术可以在你退出战斗时取消。你必须在法术效果范围内。解除一个法术是一种不会引发借机攻击的标准行为。
@@ -330,8 +330,8 @@
     <value>埃尔德里奇的遗产——{0}</value>
   </data>
   <data name="EldritchHeritageFeatureDescription_info" xml:space="preserve">
-    <value>你是一个历史悠久的巫师家族后裔，他们力量的一部分在你的血管里流动。
-选择一个巫师血统。你必须在血统给予第1级巫师的职业技能中拥有技能专攻（例如，为天界血统治疗）。这个血统不能是你已有的血统。你获得所选血统的第1级血统力量。为了使用这种力量，将你的巫师等级等同于你的角色等级－2，即使你已有巫师等级。你没有获得任何其他血统的能力。</value>
+    <value>你是一个历史悠久的术士家族后裔，他们力量的一部分在你的血管里流动。
+选择一个术士血统。你必须在血统给予第1级术士的职业技能中拥有技能专攻（例如，为天界血统治疗）。这个血统不能是你已有的血统。你获得所选血统的第1级血统力量。为了使用这种力量，将你的术士等级等同于你的角色等级－2，即使你已有术士等级。你没有获得任何其他血统的能力。</value>
   </data>
   <data name="EldritchHeritageFeatureName_info" xml:space="preserve">
     <value>埃尔德里奇的遗产</value>
@@ -426,7 +426,7 @@
     <value>火系法术</value>
   </data>
   <data name="FixBloodlineSpellDescription_info" xml:space="preserve">
-    <value>从第三级起，以及之后每两级，巫师可学习一个额外的法术，来自她的血统。这些法术是在新等级的法术数量之外的附加法术。
+    <value>从第三级起，以及之后每两级，术士可学习一个额外的法术，来自她的血统。这些法术是在新等级的法术数量之外的附加法术。
 {0}</value>
   </data>
   <data name="FixElementalSpells_info" xml:space="preserve">
@@ -449,7 +449,7 @@
   </data>
   <data name="GreaterEldritchHeritageFeatureDescription_info" xml:space="preserve">
     <value>你已发现的血统力量达到了顶峰。
-你可以从你选择的血统中获得额外的力量，这是你在埃尔德里奇的遗产专长中选择的。你获得了一个尚未具备的15级（或更低）巫师血统力量。为了使用这种力量，将你的角色等级视为你的巫师等级，以获得此专长、埃尔德里奇的遗产专长和精通埃尔德里奇的遗产专长所给予的所有巫师血统力量。</value>
+你可以从你选择的血统中获得额外的力量，这是你在埃尔德里奇的遗产专长中选择的。你获得了一个尚未具备的15级（或更低）术士血统力量。为了使用这种力量，将你的角色等级视为你的术士等级，以获得此专长、埃尔德里奇的遗产专长和精通埃尔德里奇的遗产专长所给予的所有术士血统力量。</value>
   </data>
   <data name="GreaterEldritchHeritageFeatureName_info" xml:space="preserve">
     <value>高等埃尔德里奇的遗产</value>
@@ -483,7 +483,7 @@
   </data>
   <data name="ImprovedEldritchHeritageFeatureDescription_info" xml:space="preserve">
     <value>你已发现的血统力量继续增长。
-你可以获得你选择的第3级或第9级的血统力量（你的选择）与埃尔德里奇的遗产专长。为了使用这种力量，将你的巫师等级等同于你的角色等级－2，即使你已有巫师等级。你没有获得任何其他血统的能力。</value>
+你可以获得你选择的第3级或第9级的血统力量（你的选择）与埃尔德里奇的遗产专长。为了使用这种力量，将你的术士等级等同于你的角色等级－2，即使你已有术士等级。你没有获得任何其他血统的能力。</value>
   </data>
   <data name="ImprovedEldritchHeritageFeatureName_info" xml:space="preserve">
     <value>精通埃尔德里奇的遗产</value>
@@ -567,10 +567,10 @@
   </data>
   <data name="LimitedWishAbilityDescription_info" xml:space="preserve">
     <value>有限许愿术可以让你创造几乎任何类型的效果。例如，有限许愿术可以做以下任何一件事。
-・复制任何6级或更低级别的巫师/法师法术，前提是该法术不属于你的任何敌对学派。
-・复制任何5级或更低级别的非巫师/法师法术，前提是该法术不属于你的任何敌对学派。
-・复制任何5级或更低级别的巫师/法师法术，即使它属于你的任何敌对学派。
-・复制任何4级或更低级别的非巫师/法师法术，即使它属于你的任何敌对学派。
+・复制任何6级或更低级别的术士/法师法术，前提是该法术不属于你的任何敌对学派。
+・复制任何5级或更低级别的非术士/法师法术，前提是该法术不属于你的任何敌对学派。
+・复制任何5级或更低级别的术士/法师法术，即使它属于你的任何敌对学派。
+・复制任何4级或更低级别的非术士/法师法术，即使它属于你的任何敌对学派。
 ・撤销许多法术的有害效果，如：狂乱。
 ・产生与上述效果一致的任何其他效果，例如单个生物自动攻击其下一次攻击或在其下一次豁免投掷中受到-7惩罚。
 复制的法术可以像普通法术那样进行豁免投掷和法术抵抗，但是豁免的DC相当于7级法术。当一个有限许愿术为复制一个法术所使用的材料花费超过1000GP，你必须提供该材料（除了这个法术的1500GP钻石材料）。</value>
@@ -585,16 +585,16 @@
     <value>选择一个魔法学派，你可以以施法者等级＋1施放该学派的法术。</value>
   </data>
   <data name="MagesTattooFeatureName_info" xml:space="preserve">
-    <value>法师符文</value>
+    <value>魔法刺青</value>
   </data>
   <data name="MagusArcanasFeatureName_info" xml:space="preserve">
-    <value>秘法</value>
+    <value>魔战士奥能</value>
   </data>
   <data name="MagusFamiliarFeatureDescription_info" xml:space="preserve">
-    <value>秘法师获得通晓秘法的技能，使用他们的秘法师等级作为有效的法师等级。通晓秘法遵循以神秘方式提供并绑定到法师特性的规则中。</value>
+    <value>魔战士获得通晓秘法的技能，使用他们的秘法师等级作为有效的法师等级。通晓秘法遵循以神秘方式提供并绑定到法师特性的规则中。</value>
   </data>
   <data name="MagusFamiliarFeatureName_info" xml:space="preserve">
-    <value>通晓秘法</value>
+    <value>魔宠</value>
   </data>
   <data name="MagusMagicCastTimeLevelFeatureDescription_info" xml:space="preserve">
     <value>这不会增加施法时间和法术等级。</value>
@@ -612,14 +612,14 @@
     <value>在第3级，你可以在不增加施法时间的情况下，将你知道的任何一个元魔法专长应用到你即将施法的咒语上。你仍然必须花费一个更高级别的法术槽来施放这个法术。你可以在第3级每天使用一次这种能力，在第3级之后，每4个法师等级可每天额外使用一次，在第19级每天最多使用五次。在第20级，这个能力被奥术巅峰所取代。</value>
   </data>
   <data name="MetamagicAdeptFeatureName_info" xml:space="preserve">
-    <value>元魔法专长（奥法血统）</value>
+    <value>超魔专长（奥法血统）</value>
   </data>
   <data name="MetamagicFeatsFeatureName_info" xml:space="preserve">
-    <value>元魔法专长</value>
+    <value>超魔专长</value>
   </data>
   <data name="MiracleAbilityDescription_info" xml:space="preserve">
     <value>你不会像要求的那样创造奇迹。你陈述你希望发生的事情，并请求你的神（或你为法术祈祷的力量）调解。
-奇迹可以做以下任何一件事。
+奇迹术可以做以下任何一件事。
 ・复制8级或更低级别的牧师法术。
 ・复制任何其他7级或更低级别的法术。
 ・撤消某些法术的有害影响，如虚弱或狂乱。
@@ -632,7 +632,7 @@
 复制的法术可以像普通法术那样进行豁免投掷和法术抵抗，但是豁免的DC相当于9级法术。当一个奇迹法术为复制一个法术所使用的材料花费超过100GP，你必须提供该材料。</value>
   </data>
   <data name="MiracleSpells_info" xml:space="preserve">
-    <value>奇迹</value>
+    <value>奇迹术</value>
   </data>
   <data name="MysteryClassSkillsFeatureDescription_info" xml:space="preserve">
     <value>神使可以获得额外的职业技能，获益于他们掌握的秘法。</value>
@@ -764,7 +764,7 @@
     <value>忽略神祗</value>
   </data>
   <data name="SpellBlendingFeatureDescription_info" xml:space="preserve">
-    <value>当秘法师选择这个秘法时，他们必须从法师的法术列表中选择一个可以施放的法术等级。他们将这个法术添加到法术书和被称为法术级别的法术列表中。他们可以用这种方式选择两个法术来添加，但是两个法术都必须至少比他们能施放的最高法术低一级。
+    <value>当魔战士选择这个秘法时，他们必须从法师的法术列表中选择一个可以施放的法术等级。他们将这个法术添加到法术书和被称为法术级别的法术列表中。他们可以用这种方式选择两个法术来添加，但是两个法术都必须至少比他们能施放的最高法术低一级。
 特殊：秘法师可以多次选择这个秘法。</value>
   </data>
   <data name="SpellBlendingFeatureName_info" xml:space="preserve">
@@ -828,7 +828,7 @@
     <value>时间停止</value>
   </data>
   <data name="TrueResurrectionSpells_info" xml:space="preserve">
-    <value>完全复生术</value>
+    <value>完全复活术</value>
   </data>
   <data name="WeaponOfAweAbilityDescription_info" xml:space="preserve">
     <value>你把一件武器变成令人敬畏的工具。该武器在伤害骰上获得＋2神圣加值，如果该武器获得暴击，被暴击的目标将被摇晃1轮且不能进行豁免投掷。
@@ -842,11 +842,11 @@
     <value>伤害骰获得＋2神圣奖励，被暴击目标会摇晃1轮。</value>
   </data>
   <data name="WishAbilityDescription_info" xml:space="preserve">
-    <value>许愿术是巫师或法师能施展的最强大的法术。只要大声说话，你就能改变现实，使之更适合你。然而，即使是许愿术也有其局限性。许愿术可以产生以下任何一种效果。
-・复制任何8级或更低级别的巫师/法师法术，前提是该法术不属于你的任何敌对学派。
-・复制任何7级或更低级别的非巫师/法师法术，前提是该法术不属于你的任何敌对学派。
-・复制任何7级或更低级别的巫师/法师法术，即使它属于你的任何敌对学派。
-・复制任何6级或更低级别的非巫师/法师法术，即使它属于你的任何敌对学派。
+    <value>许愿术是术士或法师能施展的最强大的法术。只要大声说话，你就能改变现实，使之更适合你。然而，即使是许愿术也有其局限性。许愿术可以产生以下任何一种效果。
+・复制任何8级或更低级别的术士/法师法术，前提是该法术不属于你的任何敌对学派。
+・复制任何7级或更低级别的非术士/法师法术，前提是该法术不属于你的任何敌对学派。
+・复制任何7级或更低级别的术士/法师法术，即使它属于你的任何敌对学派。
+・复制任何6级或更低级别的非术士/法师法术，即使它属于你的任何敌对学派。
 ・给生物一个能力点数＋1固有加值。立即连续施放2到5个许愿术可以给生物一个能力点数＋2到＋5的内在加值（两个许愿术获得＋2的内在加值，三个许愿术获得＋3的内在加值，以此类推）。固有加值是即时的，所以它们不能被驱散。注意：对于单个能力点数，固有加值不能超过＋5，并且对于特定能力点数的固有加值不能叠加，因此只能应用最大加值。
 ・消除伤害和痛苦。一个许愿术可以帮助每施法者等级一个生物，并且所有受试者都能被治愈相同的痛苦。例如，您可以治愈您和您的同伴所遭受的所有伤害，或者从队伍中的每个人身上移除所有的毒害效果，但不能进行群体治愈。
 ・复活死者。一个许愿术可以通过复制复活法术使一个死去的生物复活。一个许愿术可以唤醒一个身体被摧毁的死去的生物，但此任务需要两次许愿：一次是重建身体，另一次是再次给身体注入生命。许愿术不能阻止一个重新复活的角色获得永久的负面等级。
@@ -858,10 +858,10 @@
   </data>
   <data name="WishFabricateAbilityDescription_info" xml:space="preserve">
     <value>奥术许愿术可以让你创造几乎任何类型的效果，只需要提供5颗钻石。
-・复制任何6级或更低级别的巫师/法师法术，前提是该法术不属于你的任何敌对学派。
-・复制任何5级或更低级别的非巫师/法师法术，前提是该法术不属于你的任何敌对学派。
-・复制任何5级或更低级别的巫师/法师法术，即使它属于你的任何敌对学派。
-・复制任何4级或更低级别的非巫师/法师法术，即使它属于你的任何敌对学派。
+・复制任何6级或更低级别的术士/法师法术，前提是该法术不属于你的任何敌对学派。
+・复制任何5级或更低级别的非术士/法师法术，前提是该法术不属于你的任何敌对学派。
+・复制任何5级或更低级别的术士/法师法术，即使它属于你的任何敌对学派。
+・复制任何4级或更低级别的非术士/法师法术，即使它属于你的任何敌对学派。
 ・撤销许多法术的有害效果，如：狂乱。
 ・产生与上述效果一致的任何其他效果，例如单个生物自动攻击其下一次攻击或在其下一次豁免投掷中受到-7惩罚。
 复制的法术可以像普通法术那样进行豁免投掷和法术抵抗，但是豁免的DC相当于7级法术。当一个有限许愿术为复制一个法术所使用的材料花费超过1000GP，你必须提供该材料（除了这个法术的1500GP钻石材料）。</value>
