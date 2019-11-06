@@ -130,6 +130,18 @@
   <data name="AnyClassSkillName_info" xml:space="preserve">
     <value>任何知识/学识技能</value>
   </data>
+  <data name="applyPatch_error" xml:space="preserve">
+    <value>应用修补类型{0}失败：{1}！</value>
+  </data>
+  <data name="applyPathHarmony_error" xml:space="preserve">
+    <value>应用修补类型{0}失败：找不到Harmony属性！</value>
+  </data>
+  <data name="applyPathMethod" xml:space="preserve">
+    <value>应用修补类型{0}失败：没有生成动态方法！</value>
+  </data>
+  <data name="applyPath_warning" xml:space="preserve">
+    <value>不能应用修补类型{0}！</value>
+  </data>
   <data name="ArcaneApotheosisFeatureDescription_info" xml:space="preserve">
     <value>
 你也可以在不增加施法时间的情况下将你所知道的任何元魔法技能添加到你的法术中，尽管你仍然必须花费更高级别的法术槽。</value>
@@ -195,34 +207,37 @@
     <value>战神重生</value>
   </data>
   <data name="BloodlinePowerFeatureDescription_info" xml:space="preserve">
-    <value>在第1、第3、第9、第15和第20级，一个混血术士获得了该级别的两个新血统力量之一。相反，他们可以选择一个他们尚未具备的较低级别的血统力量来取代这些较高级别的力量之一。</value>
+    <value>在第1、第3、第9、第15和第20级，一个混血术士获得了该级别的两个新血脉力量之一。相反，他们可以选择一个他们尚未具备的较低级别的血脉力量来取代这些较高级别的力量之一。</value>
   </data>
   <data name="BloodlinePowerFeatureName_info" xml:space="preserve">
-    <value>血统力量</value>
+    <value>血脉力量</value>
   </data>
   <data name="BloodlineSpellFeatureDescription_info" xml:space="preserve">
-    <value>一个混血术士可以从他们的血统中选择他们的额外法术。术士也可以选择学习一个他们没有选择的较低等级的奖励法术来代替他们通常会获得的较高等级的奖励法术。以这种方式学习的低级奖励法术总是使用如果术士用合适的奖励法术学习的法术等级。</value>
+    <value>一个混血术士可以从他们的血脉中选择他们的额外法术。术士也可以选择学习一个他们没有选择的较低等级的奖励法术来代替他们通常会获得的较高等级的奖励法术。以这种方式学习的低级奖励法术总是使用如果术士用合适的奖励法术学习的法术等级。</value>
   </data>
   <data name="BloodlineSpellFeatureName_info" xml:space="preserve">
-    <value>血统法术</value>
+    <value>血脉法术</value>
   </data>
   <data name="BonusHitPointFeatureDescription_info" xml:space="preserve">
-    <value>获得+1点生命值</value>
+    <value>获得+1生命值</value>
   </data>
   <data name="BonusHitPointFeatureName_info" xml:space="preserve">
     <value>奖励生命值</value>
   </data>
   <data name="BonusSkillRankFeatureDescription_info" xml:space="preserve">
-    <value>获得+1点奖励技能点</value>
+    <value>获得+1奖励技能点</value>
   </data>
   <data name="BonusSkillRankFeatureName_info" xml:space="preserve">
     <value>奖励技能点</value>
   </data>
   <data name="BonusSpellLevelFeatureDescription_info" xml:space="preserve">
-    <value>增加一个 {0} 级 {1} 法术。这个法术必须比你当前所能施展的最高级 {2} 法术低一级。</value>
+    <value>增加一个 {0} 级{1}法术。这个法术必须比你当前所能施展的最高级{2}法术低一级。</value>
   </data>
   <data name="BonusSpellLevelFeatureName_info" xml:space="preserve">
     <value>奖励已知法术（ {0} 级）</value>
+  </data>
+  <data name="cannotLoadMod_error" xml:space="preserve">
+    <value>修补方法libraryscriptableobject.loadDictionary()失败，无法加载mod！</value>
   </data>
   <data name="ChannelEnergyFeatureDescription_info" xml:space="preserve">
     <value>你可以像牧师一样输送正能量，在确定治愈（或伤害不死生物）的生命值和DC时，使用你的神使等级作为你的有效牧师等级。
@@ -232,7 +247,7 @@
     <value>引导能量</value>
   </data>
   <data name="CheatCustomTraits_info" xml:space="preserve">
-    <value>启用所有作弊特性及法术甚至自定义和自制（需要重新启动才能生效）</value>
+    <value>启用所有作弊特性及法术，乃至自定义和自制（需要重新启动才能生效）</value>
   </data>
   <data name="ChooseFavoredClassLocalized_info" xml:space="preserve">
     <value>选择天赋职业奖励</value>
@@ -275,20 +290,20 @@
     <value>狂野之舞</value>
   </data>
   <data name="DetectSecretDoorsAbilityDescription_info" xml:space="preserve">
-    <value>您可以侦测密门、隔间、隐藏物等等。这个法术只能探测到专门为逃避侦查而建造的通道、门或开口。
-每回合，你都可以在一个新的区域内打开来侦查密门。这个法术需要通过专注检定，如果你施放另一个法术，采取标准动作，或者专注检定失败，它会提前结束。</value>
+    <value>你可以侦测到密门、夹层、隐藏物品等等。本法术只会侦测到那些刻意掩人耳目的通道、门或者出入口。
+每回合，你都可以在一个新的区域内侦测密门。这个法术需要通过专注检定，如果你施放另一个法术，采取标准动作，或者专注检定失败，它会提前结束。</value>
   </data>
   <data name="DetectSecretDoorsAbilityDuration_info" xml:space="preserve">
     <value>专注，1分钟/每施法者等级</value>
   </data>
   <data name="DetectSecretDoorsFoundDoorLog_info" xml:space="preserve">
-    <value>侦测暗门：发现了密门。</value>
+    <value>侦测密门：发现了密门。</value>
   </data>
   <data name="DetectSecretDoorsFoundItemLog_info" xml:space="preserve">
-    <value>侦测暗门：发现了隐藏物品。</value>
+    <value>侦测密门：发现了隐藏物品。</value>
   </data>
   <data name="DetectSecretDoorsSpells_info" xml:space="preserve">
-    <value>侦测暗门</value>
+    <value>侦测密门</value>
   </data>
   <data name="DismissAreaEffectAbilityDescription_info" xml:space="preserve">
     <value>有些法术可以随意取消，有些法术可以在你退出战斗时取消。你必须在法术效果范围内。解除一个法术是一种不会引发借机攻击的标准行为。
@@ -327,17 +342,17 @@
     <value>法术弱点</value>
   </data>
   <data name="EldritchHeritageBloodlineFeatureName_info" xml:space="preserve">
-    <value>埃尔德里奇的遗产——{0}</value>
+    <value>悠远血脉——{0}</value>
   </data>
   <data name="EldritchHeritageFeatureDescription_info" xml:space="preserve">
-    <value>你是一个历史悠久的术士家族后裔，他们力量的一部分在你的血管里流动。
+    <value>你是一个历史悠久的术士家族后裔，一些源于血统的力量流淌在你的血液之中。
 选择一个术士血统。你必须在血统给予第1级术士的职业技能中拥有技能专攻（例如，为天界血统治疗）。这个血统不能是你已有的血统。你获得所选血统的第1级血统力量。为了使用这种力量，将你的术士等级等同于你的角色等级－2，即使你已有术士等级。你没有获得任何其他血统的能力。</value>
   </data>
   <data name="EldritchHeritageFeatureName_info" xml:space="preserve">
-    <value>埃尔德里奇的遗产</value>
+    <value>悠远血脉</value>
   </data>
   <data name="EldritchKnightFix_info" xml:space="preserve">
-    <value>兼职秘法骑士需要已拥有战士类职业</value>
+    <value>兼职奥法骑士需要已拥有战士类职业</value>
   </data>
   <data name="EldritchKnightFix_tip" xml:space="preserve">
     <value>例如：野蛮人、战士、圣武士、巡林客，不影响已创建的角色</value>
@@ -375,21 +390,33 @@
   <data name="ExtraRevelationFeatureName_info" xml:space="preserve">
     <value>额外启示</value>
   </data>
+  <data name="failedFindEntries_error" xml:space="preserve">
+    <value>找不到{0}的条目（GUID：{1}）</value>
+  </data>
+  <data name="failedFindLevelSpell" xml:space="preserve">
+    <value>找不到{1}的第{0}级法术</value>
+  </data>
+  <data name="failedLoading_error" xml:space="preserve">
+    <value>&lt;b&gt;错误：某些功能加载失败。保存的这些功能将不起作用：&lt;/b&gt;</value>
+  </data>
+  <data name="failedPatches_error" xml:space="preserve">
+    <value>&lt;b&gt;错误：某些修补方法无法应用。保存的这些方法将不起作用：&lt;/b&gt;</value>
+  </data>
   <data name="FavoredClassAnyFeatureDescription_info" xml:space="preserve">
     <value>每个等级自动确定天赋职业，如果选择此天赋职业，你就只能获得额外生命值。天赋职业为你最高等级的非进阶职业。此为默认的游戏设定。</value>
   </data>
   <data name="FavoredClassAnyFeatureName_info" xml:space="preserve">
-    <value>天赋职业——任何</value>
+    <value>天赋职业——任意</value>
   </data>
   <data name="FavoredClassExtraSpellProgressionDescription_info" xml:space="preserve">
     <value>
 每当此角色提升 {0} 等级时, 你可以获得+1生命值，+1技能点，或者基于他们天赋职业的种族奖励。
 种族奖励：
-人类（半精灵，半兽人，阿西马尔）-从{0}法术列表中添加一个已知法术。这个法术必须至少比你能施放的最高等级{1}法术低一级。</value>
+　人类（及半精灵，半兽人，神裔）——从{0}法术列表中获得一个额外已知法术。这个法术必须比你当前所能施展的最高级{1}法术低一环。</value>
   </data>
   <data name="FavoredClassFeatureDescription_info" xml:space="preserve">
     <value>每个角色以他选择的一个天赋职业开始游戏，通常这会是他们在1级时选择的职业。
-每当一个角色提升他们选择的天赋职业时，他获得+1生命值，+1技能点，或者基于他们天赋职业的其他奖励。一旦创建了角色，就不能更改偏爱职业的选择。</value>
+每当一个角色提升他们选择的天赋职业时，他获得+1生命值，+1技能点，或者基于他们天赋职业的种族奖励。一旦创建了角色，就不能更改偏爱职业的选择。</value>
   </data>
   <data name="FavoredClassFeatureName_info" xml:space="preserve">
     <value>天赋职业</value>
@@ -409,6 +436,12 @@
   </data>
   <data name="FavoredPrestigeProgressionName_info" xml:space="preserve">
     <value>天赋进阶职业——{0}</value>
+  </data>
+  <data name="featureNameAll_error" xml:space="preserve">
+    <value>所有mod功能</value>
+  </data>
+  <data name="featureName_error" xml:space="preserve">
+    <value>・&lt;b&gt;{0}&lt;/b&gt;</value>
   </data>
   <data name="FeyFoundlingFeatureDescription_info" xml:space="preserve">
     <value>你小时候在野外被发现。
@@ -579,8 +612,38 @@
   <data name="LimitedWishSpells_info" xml:space="preserve">
     <value>有限许愿术</value>
   </data>
+  <data name="loadBloodlines_error" xml:space="preserve">
+    <value>血源</value>
+  </data>
   <data name="LoadCustomPortraits_error" xml:space="preserve">
     <value>在肖像列表中列出自定义肖像</value>
+  </data>
+  <data name="loadDrawbackFeats_error" xml:space="preserve">
+    <value>有缺点的专长</value>
+  </data>
+  <data name="loadFavoredClassBonus_error" xml:space="preserve">
+    <value>天赋职业奖励和神祗选择</value>
+  </data>
+  <data name="loadHelpers_error" xml:space="preserve">
+    <value>初始化代码</value>
+  </data>
+  <data name="loadMagicFeats_error" xml:space="preserve">
+    <value>魔法专长</value>
+  </data>
+  <data name="loadOracleClass_error" xml:space="preserve">
+    <value>神使职业</value>
+  </data>
+  <data name="loadReplaceSpells_error" xml:space="preserve">
+    <value>自然施法者的法术替换</value>
+  </data>
+  <data name="loadSpells_error" xml:space="preserve">
+    <value>新法术</value>
+  </data>
+  <data name="loadTraits_error" xml:space="preserve">
+    <value>特性</value>
+  </data>
+  <data name="loadWishSpells_error" xml:space="preserve">
+    <value>许愿法术</value>
   </data>
   <data name="MagesTattooFeatureDescription_info" xml:space="preserve">
     <value>选择一个魔法学派，你可以以施法者等级＋1施放该学派的法术。</value>
@@ -635,6 +698,21 @@
   <data name="MiracleSpells_info" xml:space="preserve">
     <value>奇迹术</value>
   </data>
+  <data name="MysteryBattleBattlecryDescription_info" xml:space="preserve">
+    <value>花费一个标准动作，你能够释放一个充满激励的战吼。100尺内所有听到战吼的盟友在攻击检定，技能检定和豁免检定上获得+1士气加值，持续轮数等同于你的魅力加值。10级后检定加值变为+2。每天你可以使用此能力1次，并在5级以及之后每5级增加1次使用次数。</value>
+  </data>
+  <data name="MysteryBattleBattlecryName_info" xml:space="preserve">
+    <value>战吼</value>
+  </data>
+  <data name="MysteryBattleFinalRevelationDescription_info" xml:space="preserve">
+    <value>当达到20级时，你成为了战斗的化身。你能以一个整轮动作进行一次全力攻击，并移动相当于你速度的距离（你可以在攻击之前或之后移动）。当你造成重击时，你可以忽略目标可能拥有的伤害减免。在进行重击确认时你在AC上获得+4的洞察加值。</value>
+  </data>
+  <data name="MysteryBattleFinalRevelationName_info" xml:space="preserve">
+    <value>最终启示</value>
+  </data>
+  <data name="MysteryBattleRevelationName_info" xml:space="preserve">
+    <value>战斗启示</value>
+  </data>
   <data name="MysteryClassSkillsFeatureDescription_info" xml:space="preserve">
     <value>神使可以获得额外的职业技能，获益于他们掌握的秘法。</value>
   </data>
@@ -646,9 +724,6 @@
   </data>
   <data name="OppositionResearchFeatureName_info" xml:space="preserve">
     <value>反对学派研究</value>
-  </data>
-  <data name="OrClassSkillName_info" xml:space="preserve">
-    <value>或{0}</value>
   </data>
   <data name="OracleCureOrInflictSpellFeatureDescription_info" xml:space="preserve">
     <value>神使除了可获得等级法术外，还将所有治疗法术或造成法术添加到她已知的法术列表中（治疗法术包括名字中有“治疗”的所有法术，造成法术包括名字中有“造成”的所有法术）。一旦神使能够施法，这些法术就会被添加。这个选择是在神使获得第一个职业等级并且不能改变的时候作出的。</value>
@@ -677,7 +752,7 @@
 在第二级，以及此后的每两级，一个神使从她的秘法中学习一个额外的法术。这些法术是对所选已知法术数量的补充。它们不能在更高级别上交换不同的法术。</value>
   </data>
   <data name="OracleMysteryFeatureName_info" xml:space="preserve">
-    <value>秘法</value>
+    <value>秘视域</value>
   </data>
   <data name="OracleOrisonsFeatureDescription_info" xml:space="preserve">
     <value>神使学习了许多祷念，或0级法术。这些法术像其他法术一样施法，但它们不消耗任何槽位，可以再次使用。</value>
@@ -700,10 +775,13 @@
 兽人血统的额外专长奖励：顽强，坚忍不拔，高等强韧，威逼，精通横冲直撞，猛力攻击，健壮，接触法术。</value>
   </data>
   <data name="OrcBloodlineFeatureName_info" xml:space="preserve">
-    <value>兽人血统</value>
+    <value>兽人血脉</value>
+  </data>
+  <data name="OrClassSkillName_info" xml:space="preserve">
+    <value>或{0}</value>
   </data>
   <data name="PrestigiousSpellcasterClassFeatureName_info" xml:space="preserve">
-    <value>有威望的施法者——{0}</value>
+    <value>进阶施法者——{0}</value>
   </data>
   <data name="PrestigiousSpellcasterFeatureDescription_info" xml:space="preserve">
     <value>对你来说，转换到有威望的施法者职业的难度较小，因此，你从有威望的施法者职业等级中获得1个额外的有效施法者等级。</value>
@@ -712,7 +790,7 @@
     <value>著名的施法者，自发施法者的法术替代者</value>
   </data>
   <data name="PrestigiousSpellcasterFeatureName_info" xml:space="preserve">
-    <value>有威望的施法者</value>
+    <value>进阶施法者</value>
   </data>
   <data name="RelaxAncientLorekeeper_info" xml:space="preserve">
     <value>任何种族都可以选择职业 神使：远古博学者</value>
@@ -746,7 +824,7 @@
     <value>可靠治愈</value>
   </data>
   <data name="ScionExtraArcanaFeatureName_info" xml:space="preserve">
-    <value>额外秘法（{0}）</value>
+    <value>额外奥术（{0}）</value>
   </data>
   <data name="ShowCustomPortraits_info" xml:space="preserve">
     <value>创建角色时在肖像列表中显示自定义肖像（需要重新启动才能生效）</value>
@@ -817,6 +895,9 @@
   <data name="SummonWildhuntSpells_info" xml:space="preserve">
     <value>荒野猎人</value>
   </data>
+  <data name="testedGameVersion_warning" xml:space="preserve">
+    <value>&lt;b&gt;此Mod是基于游戏版本{0}测试的，但是正在运行的游戏版本为{1}。&lt;/b&gt;</value>
+  </data>
   <data name="TimeStopAbilityDuration_info" xml:space="preserve">
     <value>1d4+1轮（视时）</value>
   </data>
@@ -836,11 +917,11 @@
 这是一种影响心灵的恐惧效果。受此法术影响的远程武器对其弹药应用这些效果。
 您不能将此法术施加于自然武器，但可以将其施加于徒手攻击。</value>
   </data>
-  <data name="WeaponOfAweSpells_info" xml:space="preserve">
-    <value>敬畏武器</value>
-  </data>
   <data name="WeaponofAweDescription_info" xml:space="preserve">
     <value>伤害骰获得＋2神圣奖励，被暴击目标会摇晃1轮。</value>
+  </data>
+  <data name="WeaponOfAweSpells_info" xml:space="preserve">
+    <value>敬畏武器</value>
   </data>
   <data name="WishAbilityDescription_info" xml:space="preserve">
     <value>许愿术是术士或法师能施展的最强大的法术。只要大声说话，你就能改变现实，使之更适合你。然而，即使是许愿术也有其局限性。许愿术可以产生以下任何一种效果。
@@ -889,70 +970,35 @@
   <data name="WishSpells_info" xml:space="preserve">
     <value>许愿术</value>
   </data>
-  <data name="applyPatch_error" xml:space="preserve">
-    <value>应用修补类型{0}失败：{1}！</value>
+  <data name="MysteryBattleBattlefieldClarityDescription_info" xml:space="preserve">
+    <value>每天1次，作为一个直觉动作，当你在豁免检定失败后导致目盲，耳聋，战栗，惊惧，麻痹，恐慌或是震慑状态时，你都可以再投一次豁免，并获得+4加值。你必须接受第二次的结果，即使它比原先更糟。在第7级和第15级，你可以增加1次每天的使用次数。</value>
   </data>
-  <data name="applyPathHarmony_error" xml:space="preserve">
-    <value>应用修补类型{0}失败：找不到Harmony属性！</value>
+  <data name="MysteryBattleBattlefieldClarityName_info" xml:space="preserve">
+    <value>灵台澄明</value>
   </data>
-  <data name="applyPathMethod" xml:space="preserve">
-    <value>应用修补类型{0}失败：没有生成动态方法！</value>
+  <data name="MysteryBattleIronSkinDescription_info" xml:space="preserve">
+    <value>每天一次，你的皮肤可以变得如同钢铁一般坚硬，使你获得“10/精金”的伤害减免。这项能力作用如同“石肤术”，并使用你的先知等级作为施法者等级。15级后你每天可以使用此能力2次。</value>
   </data>
-  <data name="applyPath_warning" xml:space="preserve">
-    <value>不能应用修补类型{0}！</value>
+  <data name="MysteryBattleIronSkinName_info" xml:space="preserve">
+    <value>铁布衫</value>
   </data>
-  <data name="cannotLoadMod_error" xml:space="preserve">
-    <value>修补方法libraryscriptableobject.loadDictionary()失败，无法加载mod！</value>
+  <data name="MysteryBattleManeuverMasteryDescription_info" xml:space="preserve">
+    <value>选择一种类型的战技，你将获得此战技的精通专长 (例如精通摔绊) 让你可以施展此战技。在7级, 当你施展你所选择的战技时，将你的先知等级视作基本攻击加值计算战技加值。在11级, 你获得此战技的高等专长 (例如高等摔绊) 为你的这种战技提供加值。你不需要满足这些专长的前置条件。</value>
   </data>
-  <data name="failedFindEntries_error" xml:space="preserve">
-    <value>找不到{0}的条目（GUID：{1}）</value>
+  <data name="MysteryBattleManeuverMasteryName_info" xml:space="preserve">
+    <value>战技精通</value>
   </data>
-  <data name="failedFindLevelSpell" xml:space="preserve">
-    <value>找不到{1}的第{0}级法术</value>
+  <data name="MysteryBattleResiliencyDescription_info" xml:space="preserve">
+    <value>你获得“顽强”作为奖励专长。
+{0}</value>
   </data>
-  <data name="failedLoading_error" xml:space="preserve">
-    <value>&lt;b&gt;错误：某些功能加载失败。保存的这些功能将不起作用：&lt;/b&gt;</value>
+  <data name="MysteryBattleResiliencyName_info" xml:space="preserve">
+    <value>强韧身躯</value>
   </data>
-  <data name="failedPatches_error" xml:space="preserve">
-    <value>&lt;b&gt;错误：某些修补方法无法应用。保存的这些方法将不起作用：&lt;/b&gt;</value>
+  <data name="OracleCombatHealerDescription_info" xml:space="preserve">
+    <value>当你使用一个治疗法术（名称中含有：“治疗”字样）时，你可以用一个迅捷动作来释放它，如同使用“法术瞬发”专长，但要花费两个法术位。这不会提升法术等级。在7级你可以每天使用此能力1次，并在之后的每4级增加1次使用次数。</value>
   </data>
-  <data name="featureNameAll_error" xml:space="preserve">
-    <value>所有mod功能</value>
-  </data>
-  <data name="featureName_error" xml:space="preserve">
-    <value>・&lt;b&gt;{0}&lt;/b&gt;</value>
-  </data>
-  <data name="loadBloodlines_error" xml:space="preserve">
-    <value>血源</value>
-  </data>
-  <data name="loadDrawbackFeats_error" xml:space="preserve">
-    <value>有缺点的专长</value>
-  </data>
-  <data name="loadFavoredClassBonus_error" xml:space="preserve">
-    <value>天赋职业奖励和神祗选择</value>
-  </data>
-  <data name="loadHelpers_error" xml:space="preserve">
-    <value>初始化代码</value>
-  </data>
-  <data name="loadMagicFeats_error" xml:space="preserve">
-    <value>魔法专长</value>
-  </data>
-  <data name="loadOracleClass_error" xml:space="preserve">
-    <value>神使职业</value>
-  </data>
-  <data name="loadReplaceSpells_error" xml:space="preserve">
-    <value>自然施法者的法术替换</value>
-  </data>
-  <data name="loadSpells_error" xml:space="preserve">
-    <value>新法术</value>
-  </data>
-  <data name="loadTraits_error" xml:space="preserve">
-    <value>特性</value>
-  </data>
-  <data name="loadWishSpells_error" xml:space="preserve">
-    <value>许愿法术</value>
-  </data>
-  <data name="testedGameVersion_warning" xml:space="preserve">
-    <value>&lt;b&gt;此Mod是基于游戏版本{0}测试的，但是正在运行的游戏版本为{1}。&lt;/b&gt;</value>
+  <data name="OracleCombatHealerName_info" xml:space="preserve">
+    <value>战斗医师</value>
   </data>
 </root>

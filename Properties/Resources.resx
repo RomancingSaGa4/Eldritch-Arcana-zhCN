@@ -130,6 +130,18 @@ Special: You can gain this feat multiple times. Its effects do not stack. Each t
   <data name="AnyClassSkillName_info" xml:space="preserve">
     <value>Any Lore/Knowledge Skill</value>
   </data>
+  <data name="applyPatch_error" xml:space="preserve">
+    <value>Failed to apply patch {0}: {1}</value>
+  </data>
+  <data name="applyPathHarmony_error" xml:space="preserve">
+    <value>Failed to apply patch {0}: could not find Harmony attributes</value>
+  </data>
+  <data name="applyPathMethod" xml:space="preserve">
+    <value>Failed to apply patch {0}: no dynamic method generated</value>
+  </data>
+  <data name="applyPath_warning" xml:space="preserve">
+    <value>Did not apply patch for {0}</value>
+  </data>
   <data name="ArcaneApotheosisFeatureDescription_info" xml:space="preserve">
     <value>
 You can also add any metamagic feats that you know to your spells without increasing their casting time, although you must still expend higher-level spell slots.</value>
@@ -223,6 +235,9 @@ Whenever you cast a bloodrager or sorcerer spell that deals damage, add 1 point 
   </data>
   <data name="BonusSpellLevelFeatureName_info" xml:space="preserve">
     <value>Bonus Known Spell (Level {0})</value>
+  </data>
+  <data name="cannotLoadMod_error" xml:space="preserve">
+    <value>Failed to patch LibraryScriptableObject.LoadDictionary(), cannot load mod!</value>
   </data>
   <data name="ChannelEnergyFeatureDescription_info" xml:space="preserve">
     <value>You can channel positive energy like a cleric, using your oracle level as your effective cleric level when determining the amount of damage healed (or caused to undead) and the DC.
@@ -376,6 +391,18 @@ Special: You can gain Extra Revelation multiple times.</value>
   <data name="ExtraRevelationFeatureName_info" xml:space="preserve">
     <value>Extra Revelation</value>
   </data>
+  <data name="failedFindEntries_error" xml:space="preserve">
+    <value>Failed to find the entries for {0} (guid {1})</value>
+  </data>
+  <data name="failedFindLevelSpell" xml:space="preserve">
+    <value>could not find level {0} spell for {1}</value>
+  </data>
+  <data name="failedLoading_error" xml:space="preserve">
+    <value>&lt;b&gt;Error: Some assets failed to load. Saves using these features won't work:&lt;/b&gt;</value>
+  </data>
+  <data name="failedPatches_error" xml:space="preserve">
+    <value>&lt;b&gt;Error: Some patches failed to apply. These features may not work:&lt;/b&gt;</value>
+  </data>
   <data name="FavoredClassAnyFeatureDescription_info" xml:space="preserve">
     <value>The favored class is automatically determined each level-up, and an extra hit point is awarded if gaining a level in that class. The favored class is your highest level non-prestige class. This is the default game behavior.</value>
   </data>
@@ -408,6 +435,12 @@ You can select this feat before you gain levels in your chosen favored prestige 
   </data>
   <data name="FavoredPrestigeProgressionName_info" xml:space="preserve">
     <value>Favored Prestige Class — {0}</value>
+  </data>
+  <data name="featureNameAll_error" xml:space="preserve">
+    <value>All mod features</value>
+  </data>
+  <data name="featureName_error" xml:space="preserve">
+    <value>  • &lt;b&gt;{0}&lt;/b&gt;</value>
   </data>
   <data name="FeyFoundlingFeatureDescription_info" xml:space="preserve">
     <value>You were found in the wilds as a child.
@@ -579,8 +612,38 @@ A duplicated spell allows saving throws and spell resistance as normal, but the 
   <data name="LimitedWishSpells_info" xml:space="preserve">
     <value>Limited Wish</value>
   </data>
+  <data name="loadBloodlines_error" xml:space="preserve">
+    <value>Bloodlines</value>
+  </data>
   <data name="LoadCustomPortraits_error" xml:space="preserve">
     <value>Custom Portraits in main portrait selection</value>
+  </data>
+  <data name="loadDrawbackFeats_error" xml:space="preserve">
+    <value>Drawback Feats</value>
+  </data>
+  <data name="loadFavoredClassBonus_error" xml:space="preserve">
+    <value>Favored class bonus, deity selection</value>
+  </data>
+  <data name="loadHelpers_error" xml:space="preserve">
+    <value>Initialization code</value>
+  </data>
+  <data name="loadMagicFeats_error" xml:space="preserve">
+    <value>Magic feats</value>
+  </data>
+  <data name="loadOracleClass_error" xml:space="preserve">
+    <value>Oracle class</value>
+  </data>
+  <data name="loadReplaceSpells_error" xml:space="preserve">
+    <value>Spell replacement for spontaneous casters</value>
+  </data>
+  <data name="loadSpells_error" xml:space="preserve">
+    <value>New spells</value>
+  </data>
+  <data name="loadTraits_error" xml:space="preserve">
+    <value>Traits</value>
+  </data>
+  <data name="loadWishSpells_error" xml:space="preserve">
+    <value>Wish spells</value>
   </data>
   <data name="MagesTattooFeatureDescription_info" xml:space="preserve">
     <value>Select a school of magic in which you have Spell Focus—you cast spells from this school at +1 caster level.</value>
@@ -635,6 +698,46 @@ A duplicated spell allows saving throws and spell resistance as normal, but the 
   <data name="MiracleSpells_info" xml:space="preserve">
     <value>Miracle</value>
   </data>
+  <data name="MysteryBattleBattlecryDescription_info" xml:space="preserve">
+    <value>As a standard action, you can unleash an inspiring battlecry. All allies within 100 feet who hear your cry gain a +1 morale bonus on attack rolls, skill checks, and saving throws for a number of rounds equal to your Charisma modifier. At 10th level, this bonus increases to +2. You can use this ability once per day, plus one additional time per day at 5th level and for every five levels thereafter.</value>
+  </data>
+  <data name="MysteryBattleBattlecryName_info" xml:space="preserve">
+    <value>Battlecry</value>
+  </data>
+  <data name="MysteryBattleBattlefieldClarityDescription_info" xml:space="preserve">
+    <value>Once per day, as an immediate action, whenever you fail a saving throw that causes you to become blinded, deafened, frightened, panicked, paralyzed, shaken, or stunned, you may attempt that saving throw again, with a +4 insight bonus on the roll. You must take the second result, even if it is worse. At 7th and 15th level, you can use this ability one additional time per day.</value>
+  </data>
+  <data name="MysteryBattleBattlefieldClarityName_info" xml:space="preserve">
+    <value>Battlefield Clarity</value>
+  </data>
+  <data name="MysteryBattleFinalRevelationDescription_info" xml:space="preserve">
+    <value>Upon reaching 20th level, you become an avatar of battle. You can take a full-attack action and move up to your speed as a full-round action (you can move before or after the attacks). Whenever you score a critical hit, you can ignore any DR the target might possess. You gain a +4 insight bonus to your AC for the purpose of confirming critical hits against you.</value>
+  </data>
+  <data name="MysteryBattleFinalRevelationName_info" xml:space="preserve">
+    <value>Final Revelation</value>
+  </data>
+  <data name="MysteryBattleIronSkinDescription_info" xml:space="preserve">
+    <value>Once per day, your skin hardens and takes on the appearance of iron, granting you DR 10/adamantine. This functions as stoneskin, using your oracle level as the caster level. At 15th level, you can use this ability twice per day.</value>
+  </data>
+  <data name="MysteryBattleIronSkinName_info" xml:space="preserve">
+    <value>Iron Skin</value>
+  </data>
+  <data name="MysteryBattleManeuverMasteryDescription_info" xml:space="preserve">
+    <value>Select one type of combat maneuver. You gain the Improved feat (such as Improved Trip) that grants you the ability to perform that maneuver. At the 7th level, you treat your oracle level as your base attack bonus when determining your CMB for the selected maneuver. At 11th level, you gain the Greater feat (such as Greater Trip) that grants you a bonus when performing that maneuver. You do not need to meet the prerequisites to receive these feats.</value>
+  </data>
+  <data name="MysteryBattleManeuverMasteryName_info" xml:space="preserve">
+    <value>Maneuver Mastery</value>
+  </data>
+  <data name="MysteryBattleResiliencyDescription_info" xml:space="preserve">
+    <value>Resiliency</value>
+  </data>
+  <data name="MysteryBattleResiliencyName_info" xml:space="preserve">
+    <value>You get Diehard as a bonus feat.
+{0}</value>
+  </data>
+  <data name="MysteryBattleRevelationName_info" xml:space="preserve">
+    <value>Battle Revelation</value>
+  </data>
   <data name="MysteryClassSkillsFeatureDescription_info" xml:space="preserve">
     <value>Oracles receive additional class skills depending upon their oracle mystery.</value>
   </data>
@@ -647,8 +750,11 @@ A duplicated spell allows saving throws and spell resistance as normal, but the 
   <data name="OppositionResearchFeatureName_info" xml:space="preserve">
     <value>Opposition Research</value>
   </data>
-  <data name="OrClassSkillName_info" xml:space="preserve">
-    <value> or {0}</value>
+  <data name="OracleCombatHealerDescription_info" xml:space="preserve">
+    <value>Whenever you cast a cure spell (a spell with “cure” in its name), you can cast it as a swift action, as if using the Quicken Spell feat, by expending two spell slots. This does not increase the level of the spell. You can use this ability once per day at 7th level and one additional time per day for every four levels beyond 7th.</value>
+  </data>
+  <data name="OracleCombatHealerName_info" xml:space="preserve">
+    <value>Combat Healer</value>
   </data>
   <data name="OracleCureOrInflictSpellFeatureDescription_info" xml:space="preserve">
     <value>In addition to the spells gained by oracles as they gain levels, each oracle also adds all of either the cure spells or the inflict spells to her list of spells known (cure spells include all spells with "cure" in the name, inflict spells include all spells with "inflict" in the name). These spells are added as soon as the oracle is capable of casting them. This choice is made when the oracle gains her first level and cannot be changed.</value>
@@ -701,6 +807,9 @@ Bonus Feats of the Orc Bloodline: Diehard, Endurance, Great Fortitude, Intimidat
   </data>
   <data name="OrcBloodlineFeatureName_info" xml:space="preserve">
     <value>Orc Bloodline</value>
+  </data>
+  <data name="OrClassSkillName_info" xml:space="preserve">
+    <value> or {0}</value>
   </data>
   <data name="PrestigiousSpellcasterClassFeatureName_info" xml:space="preserve">
     <value>Prestigious Spellcaster — {0}</value>
@@ -817,6 +926,9 @@ The weapon that you get is often a force replica of your deity’s own personal 
   <data name="SummonWildhuntSpells_info" xml:space="preserve">
     <value>Wild Hunt</value>
   </data>
+  <data name="testedGameVersion_warning" xml:space="preserve">
+    <value>&lt;b&gt;This mod was tested against game version {0}, but you are running {1}.&lt;/b&gt;</value>
+  </data>
   <data name="TimeStopAbilityDuration_info" xml:space="preserve">
     <value>1d4+1 rounds (apparent time)</value>
   </data>
@@ -836,11 +948,11 @@ You are undetectable while time stop lasts. You cannot enter an area protected b
 This is a mind-affecting fear effect. A ranged weapon affected by this spell applies these effects to its ammunition.
 You can't cast this spell on a natural weapon, but you can cast it on an unarmed strike.</value>
   </data>
-  <data name="WeaponOfAweSpells_info" xml:space="preserve">
-    <value>Weapon Of Awe</value>
-  </data>
   <data name="WeaponofAweDescription_info" xml:space="preserve">
     <value>+2 sacred bonus on damage rolls, and target is shaken for 1 round on critical hits.</value>
+  </data>
+  <data name="WeaponOfAweSpells_info" xml:space="preserve">
+    <value>Weapon Of Awe</value>
   </data>
   <data name="WishAbilityDescription_info" xml:space="preserve">
     <value>Wish is the mightiest spell a wizard or sorcerer can cast. By simply speaking aloud, you can alter reality to better suit you. Even wish, however, has its limits. A wish can produce any one of the following effects.
@@ -890,71 +1002,5 @@ A duplicated spell allows saving throws and spell resistance as normal, but the 
   </data>
   <data name="WishSpells_info" xml:space="preserve">
     <value>Wish</value>
-  </data>
-  <data name="applyPatch_error" xml:space="preserve">
-    <value>Failed to apply patch {0}: {1}</value>
-  </data>
-  <data name="applyPathHarmony_error" xml:space="preserve">
-    <value>Failed to apply patch {0}: could not find Harmony attributes</value>
-  </data>
-  <data name="applyPathMethod" xml:space="preserve">
-    <value>Failed to apply patch {0}: no dynamic method generated</value>
-  </data>
-  <data name="applyPath_warning" xml:space="preserve">
-    <value>Did not apply patch for {0}</value>
-  </data>
-  <data name="cannotLoadMod_error" xml:space="preserve">
-    <value>Failed to patch LibraryScriptableObject.LoadDictionary(), cannot load mod!</value>
-  </data>
-  <data name="failedFindEntries_error" xml:space="preserve">
-    <value>Failed to find the entries for {0} (guid {1})</value>
-  </data>
-  <data name="failedFindLevelSpell" xml:space="preserve">
-    <value>could not find level {0} spell for {1}</value>
-  </data>
-  <data name="failedLoading_error" xml:space="preserve">
-    <value>&lt;b&gt;Error: Some assets failed to load. Saves using these features won't work:&lt;/b&gt;</value>
-  </data>
-  <data name="failedPatches_error" xml:space="preserve">
-    <value>&lt;b&gt;Error: Some patches failed to apply. These features may not work:&lt;/b&gt;</value>
-  </data>
-  <data name="featureNameAll_error" xml:space="preserve">
-    <value>All mod features</value>
-  </data>
-  <data name="featureName_error" xml:space="preserve">
-    <value>  • &lt;b&gt;{0}&lt;/b&gt;</value>
-  </data>
-  <data name="loadBloodlines_error" xml:space="preserve">
-    <value>Bloodlines</value>
-  </data>
-  <data name="loadDrawbackFeats_error" xml:space="preserve">
-    <value>Drawback Feats</value>
-  </data>
-  <data name="loadFavoredClassBonus_error" xml:space="preserve">
-    <value>Favored class bonus, deity selection</value>
-  </data>
-  <data name="loadHelpers_error" xml:space="preserve">
-    <value>Initialization code</value>
-  </data>
-  <data name="loadMagicFeats_error" xml:space="preserve">
-    <value>Magic feats</value>
-  </data>
-  <data name="loadOracleClass_error" xml:space="preserve">
-    <value>Oracle class</value>
-  </data>
-  <data name="loadReplaceSpells_error" xml:space="preserve">
-    <value>Spell replacement for spontaneous casters</value>
-  </data>
-  <data name="loadSpells_error" xml:space="preserve">
-    <value>New spells</value>
-  </data>
-  <data name="loadTraits_error" xml:space="preserve">
-    <value>Traits</value>
-  </data>
-  <data name="loadWishSpells_error" xml:space="preserve">
-    <value>Wish spells</value>
-  </data>
-  <data name="testedGameVersion_warning" xml:space="preserve">
-    <value>&lt;b&gt;This mod was tested against game version {0}, but you are running {1}.&lt;/b&gt;</value>
   </data>
 </root>

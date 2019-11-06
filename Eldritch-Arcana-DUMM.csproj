@@ -16,10 +16,10 @@
     <AssemblyVersion>1.2.7.10</AssemblyVersion>
     <FileVersion>1.2.7.10</FileVersion>
     <Version>1.2.7.10</Version>
-    <Authors>李允</Authors>
+    <Authors>李允, saladinqiao</Authors>
     <Company>Legend</Company>
     <Copyright>Copyright © Legend 2019</Copyright>
-    <Description>《开拓者：拥王者》埃尔德里奇的秘法Mod，适用于DUMM的特别版本。</Description>
+    <Description>《开拓者：拥王者》精深奥术Mod，适用于DUMM的特别版本。</Description>
     <AssemblyTitle>$(Description)</AssemblyTitle>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
