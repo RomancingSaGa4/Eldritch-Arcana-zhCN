@@ -78,13 +78,13 @@ namespace EldritchArcana
             };
             var description = new StringBuilder(mysteryDescription);
             description.AppendLine(
-                $"\n本职技能： {UIUtility.GetStatText(skill1)}, {UIUtility.GetStatText(skill2)}\n" +
-                "选择了战斗秘视域的先知可以选择以下启示：");
+                string.Format(RES.MysteryBattleDescription_info, UIUtility.GetStatText(skill1), UIUtility.GetStatText(skill2)));
+
             foreach (var r in revelations)
             {
                 description.AppendLine($"• {r.Name}");
             }
-            var mystery = Helpers.CreateProgression("MysteryBattleProgression", "Battle Mystery", description.ToString(),
+            var mystery = Helpers.CreateProgression("MysteryBattleProgression", RES.MysteryBattleName_info, description.ToString(),
                 "4c1f09f08d984c05993c552a27a04b12",
                 Helpers.GetIcon("27203d62eb3d4184c9aced94f22e1806"), // Transformation spell
                 UpdateLevelUpDeterminatorText.Group,
@@ -141,8 +141,8 @@ namespace EldritchArcana
         static BlueprintFeature CreateBattlecry()
         {
             var bless = library.Get<BlueprintAbility>("90e59f4a4ada87243b7b3535a06d0638");
-            var feat = Helpers.CreateFeature("MysteryBattleBattlecry", "战吼",
-                "花费一个标准动作，你能够释放一个充满激励的战吼。100尺内所有听到战吼的盟友在攻击检定，技能检定和豁免检定上获得+1士气加值，持续轮数等同于你的魅力加值。10级后检定加值变为+2。每天你可以使用此能力1次，并在5级以及之后每5级增加1次使用次数。",
+            var feat = Helpers.CreateFeature("MysteryBattleBattlecry", RES.MysteryBattleBattlecryName_info,
+                RES.MysteryBattleBattlecryDescription_info,
                 "18c60a9fcef24ebab71b146d543f47af",
                 bless.Icon,
                 FeatureGroup.None);
@@ -183,8 +183,8 @@ namespace EldritchArcana
 
         static BlueprintFeature CreateBattlefieldClarity()
         {
-            var feat = Helpers.CreateFeature("MysteryBattleBattlefieldClarity", "灵台澄明",
-                "每天1次，作为一个直觉动作，当你在豁免检定失败后导致目盲，耳聋，战栗，惊惧，麻痹，恐慌或是震慑状态时，你都可以再投一次豁免，并获得+4加值。你必须接受第二次的结果，即使它更糟。在第7级和第15级，你可以增加1次每天的使用次数。",
+            var feat = Helpers.CreateFeature("MysteryBattleBattlefieldClarity", RES.MysteryBattleBattlefieldClarityName_info,
+                RES.MysteryBattleBattlefieldClarityDescription_info,
                 "9f47a7738fb340c6818df733364a7b3c",
                 Helpers.GetIcon("485a18c05792521459c7d06c63128c79"), // improved uncanny dodge
                 FeatureGroup.None);
@@ -210,8 +210,8 @@ namespace EldritchArcana
         internal static BlueprintFeature CreateCombatHealer()
         {
             if (combatHealer != null) return combatHealer;
-            var feat = Helpers.CreateFeature($"OracleCombatHealer", "战斗医师",
-                "当你使用一个“治疗（描述符含有：治疗）”法术时，你可以用一个迅捷动作来释放它，如同使用“法术瞬发”专长，但要花费两个法术位。这不会提升法术等级。在7级你可以每天使用此能力1次，并在之后的每4级增加1次使用次数。",
+            var feat = Helpers.CreateFeature($"OracleCombatHealer", RES.OracleCombatHealerName_info,
+                RES.OracleCombatHealerDescription_info,
                 "64c5870b6dc44a07a395cadb57a8f472",
                 Helpers.GetIcon("6b90c773a6543dc49b2505858ce33db5"), // cure moderate wounds
                 FeatureGroup.None);
@@ -247,8 +247,8 @@ namespace EldritchArcana
         static BlueprintFeature CreateIronSkin()
         {
             var stoneskin = library.Get<BlueprintAbility>("c66e86905f7606c4eaa5c774f0357b2b");
-            var feat = Helpers.CreateFeature("MysteryBattleIronSkin", "铁布衫",
-                "每天一次，你的皮肤可以变得如同像钢铁一般坚硬，使你获得伤害减免“10/精金”。这项能力作用如同“石肤术”，并使用你的先知等级作为施法者等级。到15级时，你每天可以使用此能力2次。",
+            var feat = Helpers.CreateFeature("MysteryBattleIronSkin", RES.MysteryBattleIronSkinName_info,
+                RES.MysteryBattleIronSkinDescription_info,
                 "e19be65f7e444601b40788d4e4f7d297",
                 stoneskin.Icon,
                 FeatureGroup.None);
@@ -286,8 +286,8 @@ namespace EldritchArcana
             // (PF:K does not let you use maneuvers without the Improved feat, so it needs to come first.)
             var noFeature = Helpers.PrerequisiteNoFeature(null);
             var feat = Helpers.CreateFeatureSelection("MysteryBattleManeuverMastery",
-                "战技精通",
-                "选择一种类型的战技，你获得此战技的精通专长 (例如精通摔绊) 让你可以施展此战技。在7级, 当你施展你所选择的战技时，将你的先知等级视作基本攻击加值计算战技加值。在11级, 你获得此战技的高等专长 (例如高等摔绊) 为你的这种战技提供加值。你不需要满足这些专长的前置条件。",
+                RES.MysteryBattleManeuverMasteryName_info,
+                RES.MysteryBattleManeuverMasteryDescription_info, 
                 "44f54173a6cc4111af4e9e5c2c86a036",
                 Helpers.GetIcon("4c44724ffa8844f4d9bedb5bb27d144a"), // combat expertise
                 FeatureGroup.None,
@@ -349,8 +349,8 @@ namespace EldritchArcana
             var heavyArmor = library.Get<BlueprintFeature>("1b0f68188dcc435429fb87a022239681");
             var martialWeapons = library.Get<BlueprintFeature>("203992ef5b35c864390b4e4a1e200629");
             var scalemail = library.Get<BlueprintItemArmor>("d7963e1fcf260c148877afd3252dbc91");
-            var feat = Helpers.CreateFeature("MysteryBattleSkillAtArms", "军械精通",
-                "你擅长所有军用武器和重型盔甲。",
+            var feat = Helpers.CreateFeature("MysteryBattleSkillAtArms", RES.MysteryBattleSkillAtArmsName_info,
+                RES.MysteryBattleSkillAtArmsDescription_info,
                 "a4606d518d0046159ce30ab05b998a60",
                 martialWeapons.Icon,
                 FeatureGroup.None,
@@ -367,8 +367,8 @@ namespace EldritchArcana
         static BlueprintFeature CreateSurprisingCharge()
         {
             var expeditiousRetreatBuff = library.Get<BlueprintBuff>("9ea4ec3dc30cd7940a372a4d699032e7");
-            var feat = Helpers.CreateFeature("MysteryBattleSurprisingCharge", "惊人突进",
-                "每天1次，你能以一个直觉动作进行移动，移动距离等同于你的移动速度。你在7级和15级可以增加1次此能力的使用次数。",
+            var feat = Helpers.CreateFeature("MysteryBattleSurprisingCharge", RES.MysteryBattleSurprisingChargeName_info,
+                RES.MysteryBattleSurprisingChargeDescription_info,
                 "9896725bc76b437ebe2fa6911b78788c",
                 expeditiousRetreatBuff.Icon,
                 FeatureGroup.None);
@@ -396,13 +396,13 @@ namespace EldritchArcana
 
         static BlueprintFeature CreateWarSight()
         {
-            return CreateRerollInitiative("MysteryBattleWarSight", "战阵先决", "bd17cb0da953415691e63d17db26bb4b");
+            return CreateRerollInitiative("MysteryBattleWarSight", RES.MysteryBattleWarSightName_info, "bd17cb0da953415691e63d17db26bb4b");
         }
 
         internal static BlueprintFeature CreateRerollInitiative(String name, String displayName, String assetId)
         {
             var feat = Helpers.CreateFeature(name, displayName,
-                "当你进行先攻掷骰时，你可以掷骰两次并采用其中一个结果。7级后你总是可以在突袭轮行动，不过若你没有发现伏击，你将最后行动，不管你的先攻值是多少（在之后的回合恢复正常）。11级后你可以进行三次先攻掷骰并采用其中一个结果。",
+                RES.MysteryBattleWarSightDescription_info,
                 assetId,
                 Helpers.GetIcon("797f25d709f559546b29e7bcb181cc74"), // improved initiative
                 FeatureGroup.None);
@@ -430,8 +430,8 @@ namespace EldritchArcana
             var weaponFocusGreater = library.Get<BlueprintParametrizedFeature>("09c9e82965fb4334b984a1e9df3bd088");
             var improvedCritical = library.Get<BlueprintParametrizedFeature>("f4201c85a991369408740c6888362e20");
             var feat = Helpers.CreateParamSelection<WeaponMasteryCustomSelection>("MysteryBattleWeaponMastery",
-                "武器精通",
-                "选择一种你擅长的武器，你获得此武器的“武器专攻”专长。8级你获得此武器的“精通重击”专长。12级你获得此武器的“高等武器专攻”专长。你不需要满足这些专长的先决条件。",
+                RES.MysteryBattleWeaponMasteryName_info,
+                RES.MysteryBattleWeaponMasteryDescription_info,
                 "7223e69cd8644b27aeb58150f0155900",
                 weaponFocus.Icon,
                 FeatureGroup.None,

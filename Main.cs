@@ -22,8 +22,6 @@ using UnityModManagerNet;
 
 using static EldritchArcana.Common;
 
-using GL = UnityEngine.GUILayout;
-
 using RES = EldritchArcana.Properties.Resources;
 
 namespace EldritchArcana
@@ -314,41 +312,39 @@ namespace EldritchArcana
         {
             if (!enabled) return;
 
-            GL.BeginVertical("box");
+            var fixedWidth = new GUILayoutOption[1] { GUILayout.ExpandWidth(false) };
 
             if (testedGameVersion != GameVersion.GetVersion())
             {
-                SingleLineLabel(string.Format(RES.testedGameVersion_warning, testedGameVersion, GameVersion.GetVersion()));
+                GUILayout.Label(string.Format(RES.testedGameVersion_warning, testedGameVersion, GameVersion.GetVersion()), fixedWidth);
             }
             if (failedPatches.Count > 0)
             {
-                SingleLineLabel(RES.failedPatches_error);
+                GUILayout.Label(RES.failedPatches_error, fixedWidth);
                 foreach (var featureName in failedPatches)
                 {
-                    SingleLineLabel(string.Format(RES.featureName_error, featureName));
+                    GUILayout.Label(string.Format(RES.featureName_error, featureName), fixedWidth);
                 }
             }
             if (failedLoading.Count > 0)
             {
-                SingleLineLabel(RES.failedLoading_error);
+                GUILayout.Label(RES.failedLoading_error, fixedWidth);
                 foreach (var featureName in failedLoading)
                 {
-                    SingleLineLabel(string.Format(RES.featureName_error, featureName));
+                    GUILayout.Label(string.Format(RES.featureName_error, featureName), fixedWidth);
                 }
             }
 
-            SingleLineToggle(ref settings.EldritchKnightFix, RES.EldritchKnightFix_info, RES.EldritchKnightFix_tip);
-            SingleLineToggle(ref settings.DrawbackForextraTraits, RES.DrawbackForextraTraits_info);
-            SingleLineToggle(ref settings.OracleHas3SkillPoints, RES.OracleHas3SkillPoints_info);
+            GUILayout.Toggle(settings.EldritchKnightFix, RES.EldritchKnightFix_info, RES.EldritchKnightFix_tip, fixedWidth);
+            GUILayout.Toggle(settings.DrawbackForextraTraits, RES.DrawbackForextraTraits_info, fixedWidth);
+            GUILayout.Toggle(settings.OracleHas3SkillPoints, RES.OracleHas3SkillPoints_info, fixedWidth);
             OracleClass.MaybeUpdateSkillPoints();
-            SingleLineToggle(ref settings.RelaxAncientLorekeeper, RES.RelaxAncientLorekeeper_info);
-            SingleLineToggle(ref settings.RelaxTonguesCurse, RES.RelaxTonguesCurse_info, RES.RelaxTonguesCurse_tip);
-            SingleLineToggle(ref settings.ShowCustomPortraits, RES.ShowCustomPortraits_info);
-            SingleLineToggle(ref settings.CheatCustomTraits, RES.CheatCustomTraits_info);
-            SingleLineToggle(ref settings.HighDCl, RES.HighDCl_info);
 
-            GL.EndVertical();
-            ShowTooltip();
+            GUILayout.Toggle(settings.RelaxAncientLorekeeper, RES.RelaxAncientLorekeeper_info, fixedWidth);
+            GUILayout.Toggle(settings.RelaxTonguesCurse, RES.RelaxTonguesCurse_info, RES.RelaxTonguesCurse_tip, fixedWidth);
+            GUILayout.Toggle(settings.ShowCustomPortraits, RES.ShowCustomPortraits_info, fixedWidth);
+            GUILayout.Toggle(settings.CheatCustomTraits, RES.CheatCustomTraits_info, fixedWidth);
+            GUILayout.Toggle(settings.HighDCl, RES.HighDCl_info, fixedWidth);
         }
 
         static void OnSaveGUI(UnityModManager.ModEntry modEntry)

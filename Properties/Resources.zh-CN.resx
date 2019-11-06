@@ -705,7 +705,7 @@
     <value>战吼</value>
   </data>
   <data name="MysteryBattleFinalRevelationDescription_info" xml:space="preserve">
-    <value>当达到20级时，你成为了战斗的化身。你能以一个整轮动作进行一次全力攻击，并移动相当于你速度的距离（你可以在攻击之前或之后移动）。当你造成重击时，你可以忽略目标可能拥有的伤害减免。在进行重击确认时你在AC上获得+4的洞察加值。</value>
+    <value>当你到达20级时，你成为了战斗的化身。你能以一个整轮动作进行一次全力攻击，并移动相当于你速度的距离（你可以在攻击之前或之后移动）。当你造成重击时，你可以忽略目标可能拥有的伤害减免。在进行重击确认时你在AC上获得+4的洞察加值。</value>
   </data>
   <data name="MysteryBattleFinalRevelationName_info" xml:space="preserve">
     <value>最终启示</value>
@@ -752,7 +752,7 @@
 在第二级，以及此后的每两级，一个神使从她的秘法中学习一个额外的法术。这些法术是对所选已知法术数量的补充。它们不能在更高级别上交换不同的法术。</value>
   </data>
   <data name="OracleMysteryFeatureName_info" xml:space="preserve">
-    <value>秘视域</value>
+    <value>秘示域</value>
   </data>
   <data name="OracleOrisonsFeatureDescription_info" xml:space="preserve">
     <value>神使学习了许多祷念，或0级法术。这些法术像其他法术一样施法，但它们不消耗任何槽位，可以再次使用。</value>
@@ -910,7 +910,7 @@
     <value>时间停止</value>
   </data>
   <data name="TrueResurrectionSpells_info" xml:space="preserve">
-    <value>完全复生术</value>
+    <value>完全复原术</value>
   </data>
   <data name="WeaponOfAweAbilityDescription_info" xml:space="preserve">
     <value>你把一件武器变成令人敬畏的工具。该武器在伤害骰上获得＋2神圣加值，如果该武器获得暴击，被暴击的目标将被摇晃1轮且不能进行豁免投掷。
@@ -977,7 +977,7 @@
     <value>灵台澄明</value>
   </data>
   <data name="MysteryBattleIronSkinDescription_info" xml:space="preserve">
-    <value>每天一次，你的皮肤可以变得如同钢铁一般坚硬，使你获得“10/精金”的伤害减免。这项能力作用如同“石肤术”，并使用你的先知等级作为施法者等级。15级后你每天可以使用此能力2次。</value>
+    <value>每天1次，你的皮肤可以变得如同钢铁一般坚硬，使你获得“10/精金”的伤害减免。这项能力作用如同“石肤术”，并使用你的先知等级作为施法者等级。15级后你每天可以使用此能力2次。</value>
   </data>
   <data name="MysteryBattleIronSkinName_info" xml:space="preserve">
     <value>铁布衫</value>
@@ -1000,5 +1000,37 @@
   </data>
   <data name="OracleCombatHealerName_info" xml:space="preserve">
     <value>战斗医师</value>
+  </data>
+  <data name="MysteryBattleSkillAtArmsDescription_info" xml:space="preserve">
+    <value>你擅长所有军用武器和重型盔甲。</value>
+  </data>
+  <data name="MysteryBattleSkillAtArmsName_info" xml:space="preserve">
+    <value>军械精通</value>
+  </data>
+  <data name="MysteryBattleSurprisingChargeDescription_info" xml:space="preserve">
+    <value>每天1次，你可以用一个直觉动作移动相当于你速度的距离。在7级和15级时，你每天可以使用本能力的次数再增加1次。</value>
+  </data>
+  <data name="MysteryBattleSurprisingChargeName_info" xml:space="preserve">
+    <value>惊人冲锋</value>
+  </data>
+  <data name="MysteryBattleWarSightDescription_info" xml:space="preserve">
+    <value>当你进行先攻掷骰时，你可以掷骰两次并采用其中一个结果。7级后你总是可以在突袭轮行动，不过若你没有发现伏击，你将最后行动，不管你的先攻值是多少（在之后的回合恢复正常）。11级后你可以进行三次先攻掷骰并采用其中一个结果。</value>
+  </data>
+  <data name="MysteryBattleWarSightName_info" xml:space="preserve">
+    <value>战阵先决</value>
+  </data>
+  <data name="MysteryBattleWeaponMasteryDescription_info" xml:space="preserve">
+    <value>选择一种你擅长的武器，你获得此武器的“武器专攻”专长。8级你获得此武器的“精通重击”专长。12级你获得此武器的“高等武器专攻”专长。你无需满足这些专长的先决条件。",</value>
+  </data>
+  <data name="MysteryBattleWeaponMasteryName_info" xml:space="preserve">
+    <value>武器精通</value>
+  </data>
+  <data name="MysteryBattleDescription_info" xml:space="preserve">
+    <value>
+本职技能： {0}，{1}
+选择了战斗秘示域的先知可以选择以下启示：</value>
+  </data>
+  <data name="MysteryBattleName_info" xml:space="preserve">
+    <value>战斗秘示域</value>
   </data>
 </root>

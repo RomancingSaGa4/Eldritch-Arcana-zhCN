@@ -119,7 +119,7 @@
   </resheader>
   <data name="AbundantRevelationsFeatureDescription_info" xml:space="preserve">
     <value>Choose one of your revelations that has a number of uses per day. You gain 1 additional use per day of that revelation.
-Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new revelation.</value>
+Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new revelation. </value>
   </data>
   <data name="AbundantRevelationsFeatureName_info" xml:space="preserve">
     <value>Abundant Revelations</value>
@@ -1002,5 +1002,37 @@ A duplicated spell allows saving throws and spell resistance as normal, but the 
   </data>
   <data name="WishSpells_info" xml:space="preserve">
     <value>Wish</value>
+  </data>
+  <data name="MysteryBattleSkillAtArmsDescription_info" xml:space="preserve">
+    <value>You gain proficiency in all martial weapons and heavy armor.</value>
+  </data>
+  <data name="MysteryBattleSkillAtArmsName_info" xml:space="preserve">
+    <value>Skill at Arms</value>
+  </data>
+  <data name="MysteryBattleSurprisingChargeDescription_info" xml:space="preserve">
+    <value>Once per day, you can move up to your speed as an immediate action. You can use this ability one additional time per day at 7th level and 15th level.</value>
+  </data>
+  <data name="MysteryBattleSurprisingChargeName_info" xml:space="preserve">
+    <value>Surprising Charge</value>
+  </data>
+  <data name="MysteryBattleWarSightDescription_info" xml:space="preserve">
+    <value>Whenever you roll for initiative, you can roll twice and take either result. At 7th level, you can always act in the surprise round, but if you fail to notice the ambush, you act last, regardless of your initiative result (you act in the normal order in following rounds). At 11th level, you can roll for initiative three times and take any one of the results.</value>
+  </data>
+  <data name="MysteryBattleWarSightName_info" xml:space="preserve">
+    <value>War Sight</value>
+  </data>
+  <data name="MysteryBattleWeaponMasteryDescription_info" xml:space="preserve">
+    <value>Select one weapon with which you are proficient. You gain Weapon Focus with that weapon. At 8th level, you gain Improved Critical with that weapon. At 12th level, you gain Greater Weapon Focus with that weapon. You do not need to meet the prerequisites to receive these feats.</value>
+  </data>
+  <data name="MysteryBattleWeaponMasteryName_info" xml:space="preserve">
+    <value>Weapon Mastery</value>
+  </data>
+  <data name="MysteryBattleDescription_info" xml:space="preserve">
+    <value>
+Class skills: {0}, {1}
+An oracle with the battle mystery can choose from any of the following revelations: </value>
+  </data>
+  <data name="MysteryBattleName_info" xml:space="preserve">
+    <value>Battle Mystery</value>
   </data>
 </root>

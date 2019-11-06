@@ -19,10 +19,11 @@ namespace EldritchArcana.Properties {
     // 类通过类似于 ResGen 或 Visual Studio 的工具自动生成的。
     // 若要添加或移除成员，请编辑 .ResX 文件，然后重新运行 ResGen
     // (以 /str 作为命令选项)，或重新生成 VS 项目。
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
@@ -46,7 +47,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   重写当前线程的 CurrentUICulture 属性
+        ///   使用此强类型资源类，为所有资源查找
         ///   重写当前线程的 CurrentUICulture 属性。
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -61,7 +62,7 @@ namespace EldritchArcana.Properties {
         
         /// <summary>
         ///   查找类似 Choose one of your revelations that has a number of uses per day. You gain 1 additional use per day of that revelation.
-        ///Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new revelation. 的本地化字符串。
+        ///Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new revelation.  的本地化字符串。
         /// </summary>
         internal static string AbundantRevelationsFeatureDescription_info {
             get {
@@ -715,7 +716,7 @@ namespace EldritchArcana.Properties {
         
         /// <summary>
         ///   查找类似 You are descended from a long line of sorcerers, and some portion of their power flows in your veins.
-        ///Select one sorcerer bloodline. You must have Skill focus in the class skill that bloodline grants to a sorcerer at 1st level (for example, Heal for the celestial bloodline). This bloodline cannot be a bloodline you already have. You gain the first-level bloodline power for the selected bloodline. For purposes of using that power, treat your sorcerer level as equal to your character level – 2, even if you h [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///Select one sorcerer bloodline. You must have Skill focus in the class skill that bloodline grants to a sorcerer at 1st level (for example, Heal for the celestial bloodline). This bloodline cannot be a bloodline you already have. You gain the first-level bloodline power for the selected bloodline. For purposes of using that power, treat your sorcerer level as equal to your character level – 2, even if you ha [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string EldritchHeritageFeatureDescription_info {
             get {
@@ -945,7 +946,7 @@ namespace EldritchArcana.Properties {
         
         /// <summary>
         ///   查找类似 You have come to favor a certain prestige class, either because you are particularly devoted to the class’s cause, have trained more than most others have for that specific role, or have simply been destined to excel in the prestige class all along. Regardless of the reason, levels gained in your favored prestige class grant additional benefits in a way similar to those you gain for taking levels in your base favored class.
-        ///You can select this feat before you gain levels in your chosen favored prestige cla [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///You can select this feat before you gain levels in your chosen favored prestige clas [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string FavoredPresitgeClassFeatureDescription_info {
             get {
@@ -1318,7 +1319,7 @@ namespace EldritchArcana.Properties {
         ///• Duplicate any other spell of 7th level or lower.
         ///• Undo the harmful effects of certain spells, such as feeblemind or insanity.
         ///• Have any effect whose power level is in line with the above effects.
-        ///Alternatively, a cleric can make a ve [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///Alternatively, a cleric can make a very pow [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string LesserMiracleAbilityDescription_info {
             get {
@@ -1422,7 +1423,7 @@ namespace EldritchArcana.Properties {
         ///• Duplicate any sorcerer/wizard spell of 6th level or lower, provided the spell does not belong to one of your opposition schools.
         ///• Duplicate any non-sorcerer/wizard spell of 5th level or lower, provided the spell does not belong to one of your opposition schools.
         ///• Duplicate any sorcerer/wizard spell of 5th level or lower, even if it belongs to one of your opposition schools.
-        ///• Dup [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///• Duplica [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string LimitedWishAbilityDescription_info {
             get {
@@ -1653,7 +1654,7 @@ namespace EldritchArcana.Properties {
         ///• Duplicate any other spell of 7th level or lower.
         ///• Undo the harmful effects of certain spells, such as feeblemind or insanity.
         ///• Have any effect whose power level is in line with the above effects.
-        ///Alternatively, a cleric can make a ve [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///Alternatively, a cleric can make a very pow [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string MiracleAbilityDescription_info {
             get {
@@ -1667,6 +1668,216 @@ namespace EldritchArcana.Properties {
         internal static string MiracleSpells_info {
             get {
                 return ResourceManager.GetString("MiracleSpells_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 As a standard action, you can unleash an inspiring battlecry. All allies within 100 feet who hear your cry gain a +1 morale bonus on attack rolls, skill checks, and saving throws for a number of rounds equal to your Charisma modifier. At 10th level, this bonus increases to +2. You can use this ability once per day, plus one additional time per day at 5th level and for every five levels thereafter. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleBattlecryDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleBattlecryDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Battlecry 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleBattlecryName_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleBattlecryName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Once per day, as an immediate action, whenever you fail a saving throw that causes you to become blinded, deafened, frightened, panicked, paralyzed, shaken, or stunned, you may attempt that saving throw again, with a +4 insight bonus on the roll. You must take the second result, even if it is worse. At 7th and 15th level, you can use this ability one additional time per day. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleBattlefieldClarityDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleBattlefieldClarityDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Battlefield Clarity 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleBattlefieldClarityName_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleBattlefieldClarityName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 
+        ///Class skills: {0}, {1}
+        ///An oracle with the battle mystery can choose from any of the following revelations:  的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Upon reaching 20th level, you become an avatar of battle. You can take a full-attack action and move up to your speed as a full-round action (you can move before or after the attacks). Whenever you score a critical hit, you can ignore any DR the target might possess. You gain a +4 insight bonus to your AC for the purpose of confirming critical hits against you. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleFinalRevelationDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleFinalRevelationDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Final Revelation 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleFinalRevelationName_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleFinalRevelationName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Once per day, your skin hardens and takes on the appearance of iron, granting you DR 10/adamantine. This functions as stoneskin, using your oracle level as the caster level. At 15th level, you can use this ability twice per day. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleIronSkinDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleIronSkinDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Iron Skin 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleIronSkinName_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleIronSkinName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Select one type of combat maneuver. You gain the Improved feat (such as Improved Trip) that grants you the ability to perform that maneuver. At the 7th level, you treat your oracle level as your base attack bonus when determining your CMB for the selected maneuver. At 11th level, you gain the Greater feat (such as Greater Trip) that grants you a bonus when performing that maneuver. You do not need to meet the prerequisites to receive these feats. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleManeuverMasteryDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleManeuverMasteryDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Maneuver Mastery 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleManeuverMasteryName_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleManeuverMasteryName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Battle Mystery 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleName_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Resiliency 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleResiliencyDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleResiliencyDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You get Diehard as a bonus feat.
+        ///{0} 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleResiliencyName_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleResiliencyName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Battle Revelation 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleRevelationName_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleRevelationName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You gain proficiency in all martial weapons and heavy armor. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleSkillAtArmsDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleSkillAtArmsDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Skill at Arms 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleSkillAtArmsName_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleSkillAtArmsName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Once per day, you can move up to your speed as an immediate action. You can use this ability one additional time per day at 7th level and 15th level. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleSurprisingChargeDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleSurprisingChargeDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Surprising Charge 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleSurprisingChargeName_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleSurprisingChargeName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Whenever you roll for initiative, you can roll twice and take either result. At 7th level, you can always act in the surprise round, but if you fail to notice the ambush, you act last, regardless of your initiative result (you act in the normal order in following rounds). At 11th level, you can roll for initiative three times and take any one of the results. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleWarSightDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleWarSightDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 War Sight 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleWarSightName_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleWarSightName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Select one weapon with which you are proficient. You gain Weapon Focus with that weapon. At 8th level, you gain Improved Critical with that weapon. At 12th level, you gain Greater Weapon Focus with that weapon. You do not need to meet the prerequisites to receive these feats. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleWeaponMasteryDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleWeaponMasteryDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Weapon Mastery 的本地化字符串。
+        /// </summary>
+        internal static string MysteryBattleWeaponMasteryName_info {
+            get {
+                return ResourceManager.GetString("MysteryBattleWeaponMasteryName_info", resourceCulture);
             }
         }
         
@@ -1703,6 +1914,24 @@ namespace EldritchArcana.Properties {
         internal static string OppositionResearchFeatureName_info {
             get {
                 return ResourceManager.GetString("OppositionResearchFeatureName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Whenever you cast a cure spell (a spell with “cure” in its name), you can cast it as a swift action, as if using the Quicken Spell feat, by expending two spell slots. This does not increase the level of the spell. You can use this ability once per day at 7th level and one additional time per day for every four levels beyond 7th. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCombatHealerDescription_info {
+            get {
+                return ResourceManager.GetString("OracleCombatHealerDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Combat Healer 的本地化字符串。
+        /// </summary>
+        internal static string OracleCombatHealerName_info {
+            get {
+                return ResourceManager.GetString("OracleCombatHealerName_info", resourceCulture);
             }
         }
         
@@ -2118,7 +2347,7 @@ namespace EldritchArcana.Properties {
         /// <summary>
         ///   查找类似 A weapon made of force appears and attacks foes at a distance, as you direct it, dealing 1d8 force damage per hit, +1 point per three caster levels (maximum +5 at 15th level). 
         ///The weapon takes the shape of a weapon favored by your deity or a weapon with some spiritual significance or symbolism to you (see below) and has the same threat range and critical multipliers as a real weapon of its form. 
-        ///It strikes the opponent you designate, starting with one attack in the round the spell is cast and continuing [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///It strikes the opponent you designate, starting with one attack in the round the spell is cast and continuing e [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string SpiritualWeaponAbilityDescription_info {
             get {
@@ -2249,7 +2478,7 @@ namespace EldritchArcana.Properties {
         ///   查找类似 Wish is the mightiest spell a wizard or sorcerer can cast. By simply speaking aloud, you can alter reality to better suit you. Even wish, however, has its limits. A wish can produce any one of the following effects.
         ///• Duplicate any sorcerer/wizard spell of 8th level or lower, provided the spell does not belong to one of your opposition schools.
         ///• Duplicate any non-sorcerer/wizard spell of 7th level or lower, provided the spell does not belong to one of your opposition schools.
-        ///• Duplicate any sorcerer/wi [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///• Duplicate any sorcerer/wizar [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string WishAbilityDescription_info {
             get {
@@ -2272,7 +2501,7 @@ namespace EldritchArcana.Properties {
         ///• Duplicate any sorcerer/wizard spell of 6th level or lower, provided the spell does not belong to one of your opposition schools.
         ///• Duplicate any non-sorcerer/wizard spell of 5th level or lower, provided the spell does not belong to one of your opposition schools.
         ///• Duplicate any sorcerer/wizard spell of 5th level or lower, even if it belongs to one of your opposition schools.
-        ///• Duplicate any non-sor [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///• Duplicate any non-sorcere [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string WishFabricateAbilityDescription_info {
             get {

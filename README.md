@@ -1,5 +1,5 @@
-# Eldritch-Arcana-DUMM（DUMM Mod：埃尔德里奇的秘法）
-#### 游戏《开拓者：拥王者》的埃尔德里奇的秘法Mod，专用于DUMM v0.21.0.19+版本的功能增强&文本汉化&界面美化特别版。
+# Eldritch-Arcana-zhCN
+#### 游戏《开拓者：拥王者》的精深奥法Mod汉化版。
 
 #
 # 目前版本
@@ -7,7 +7,7 @@
 
 #
 # 此项目使用到的第三方类库有：
-- [Dear-Unity-Mod-Manager](https://github.com/legendaryhero1981/Dear-Unity-Mod-Manager)
+- [Unity-Mod-Manager](https://github.com/newman55/unity-mod-manager)
 - [Harmony](https://github.com/pardeike/Harmony)
 
 #

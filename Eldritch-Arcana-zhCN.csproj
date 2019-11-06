@@ -19,7 +19,7 @@
     <Authors>李允, saladinqiao</Authors>
     <Company>Legend</Company>
     <Copyright>Copyright © Legend 2019</Copyright>
-    <Description>《开拓者：拥王者》精深奥术Mod，适用于DUMM的特别版本。</Description>
+    <Description>《开拓者：拥王者》精深奥术Mod，资源分离汉化版</Description>
     <AssemblyTitle>$(Description)</AssemblyTitle>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
@@ -29,23 +29,27 @@
   <ItemGroup>
     <Folder Include="resources\" />
   </ItemGroup>
+ <ItemGroup>
+   <Compile Update="Properties\Resources.Designer.cs">
+     <DesignTime>True</DesignTime>
+     <AutoGen>True</AutoGen>
+     <DependentUpon>Resources.resx</DependentUpon>
+   </Compile>
+ </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.zh-CN.resx">
-      <Generator></Generator>
-    </EmbeddedResource>
-    <Compile Update="Properties\Resources.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="Properties\Resources.zh-CN.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Sdk="Microsoft.NET.Sdk" Project="Sdk.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>D:\games\exe4j\11\file -cd~::-m!~::-md~ ".::*::*" "$(SolutionDir)\resources\EldritchArcana::$(TargetDir)::*\zh-CN" "$(TargetDir)::$(TargetDir)\EldritchArcana::*" ?::1::?</PostBuildEvent>
-  </PropertyGroup>
+  <PropertyGroup />
 </Project>

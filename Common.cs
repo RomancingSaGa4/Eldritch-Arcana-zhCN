@@ -1955,34 +1955,5 @@ namespace EldritchArcana
             c.Not = not;
             return c;
         }
-
-        /// <summary>
-        /// [1.2.1.8] 显示窗口控件的文本提示
-        /// </summary>
-        internal static void ShowTooltip() => UnityModManager.UI.ShowTooltip();
-        /// <summary>
-        /// [1.2.1.7] 窗口尺寸
-        /// </summary>
-        internal static Vector2 WindowSize => UnityModManager.UI.WindowSize;
-        /// <summary>
-        /// [1.2.1.7] 窗口宽度样式
-        /// </summary>
-        internal static GUILayoutOption WindowWidth => GL.MaxWidth(UnityModManager.UI.WindowSize.x - 40f);
-
-        internal static void SingleLineLabel(string label)
-        {
-            GL.BeginHorizontal();
-            GL.Label(label, WindowWidth);
-            GL.EndHorizontal();
-            GL.Space(10);
-        }
-
-        internal static void SingleLineToggle(ref bool value, string info, string tip = "")
-        {
-            GL.BeginHorizontal();
-            value = GL.Toggle(value, new GC(info, tip), WindowWidth);
-            GL.EndHorizontal();
-            GL.Space(10);
-        }
     }
 }
