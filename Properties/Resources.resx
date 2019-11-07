@@ -1166,4 +1166,30 @@ Level Increase: +1</value>
 {1}rods can be used with spells of {2} level or lower.
 {3}: {4}</value>
   </data>
+  <data name="ArcaneSavantAdeptActivationDescription_info" xml:space="preserve">
+    <value>An arcane savant can always take 10 on Use Magic Device checks, except when activating an item blindly.</value>
+  </data>
+  <data name="ArcaneSavantAdeptActivationName_info" xml:space="preserve">
+    <value>Adept Activation</value>
+  </data>
+  <data name="ArcaneSavantDescription_info" xml:space="preserve">
+    <value>Arcane savants are specialists in the theory and practice of magic, illuminating mysteries of the eldritch fabric that permeates existence. 
+The path of the arcane savant brings expertise in the lore of glyphs and sigils, knowledge of exotic spells, and the power to unlock the full potential of magical devices.
+This skill also makes savants quite valuable to adventuring parties, both in their mastery over ancient traps that utilize old magic and in their skill at identifying and utilizing magic items found in the field.</value>
+  </data>
+  <data name="ArcaneSavantGlyphFindingDescription_info" xml:space="preserve">
+    <value>At 2nd level, an arcane savant can use {0} to find magical traps in the same way a rogue can use {1} to search for traps.</value>
+  </data>
+  <data name="ArcaneSavantGlyphFindingName_info" xml:space="preserve">
+    <value>Glyph Finding</value>
+  </data>
+  <data name="ArcaneSavantMasterScholarDescription_info" xml:space="preserve">
+    <value>An arcane savant adds half their class level (minimum 1) as a bonus on Knowledge (arcana), and Use Magic Device checks, and can always take 10 on Knowledge (arcana) checks, even if distracted or endangered.</value>
+  </data>
+  <data name="ArcaneSavantMasterScholarName_info" xml:space="preserve">
+    <value>Master Scholar</value>
+  </data>
+  <data name="ArcaneSavantName_info" xml:space="preserve">
+    <value>Arcane Savant</value>
+  </data>
 </root>

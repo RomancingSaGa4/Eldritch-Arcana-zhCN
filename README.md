@@ -12,4 +12,5 @@
 
 #
 # 特别感谢：
-- [joostjasper](https://www.nexusmods.com/pathfinderkingmaker/mods/129) 开发了Eldritch Arcana原始版本！
+- 作者[Elmindra](https://github.com/jennyem/pathfinder-mods)开发了Eldritch Arcana原始版本
+- [joostjasper](https://www.nexusmods.com/pathfinderkingmaker/mods/129) 的后续更新

@@ -144,6 +144,80 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 An arcane savant can always take 10 on Use Magic Device checks, except when activating an item blindly. 的本地化字符串。
+        /// </summary>
+        internal static string ArcaneSavantAdeptActivationDescription_info {
+            get {
+                return ResourceManager.GetString("ArcaneSavantAdeptActivationDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Adept Activation 的本地化字符串。
+        /// </summary>
+        internal static string ArcaneSavantAdeptActivationName_info {
+            get {
+                return ResourceManager.GetString("ArcaneSavantAdeptActivationName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Arcane savants are specialists in the theory and practice of magic, illuminating mysteries of the eldritch fabric that permeates existence. 
+        ///The path of the arcane savant brings expertise in the lore of glyphs and sigils, knowledge of exotic spells, and the power to unlock the full potential of magical devices.
+        ///This skill also makes savants quite valuable to adventuring parties, both in their mastery over ancient traps that utilize old magic and in their skill at identifying and utilizing magic items foun [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string ArcaneSavantDescription_info {
+            get {
+                return ResourceManager.GetString("ArcaneSavantDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 2nd level, an arcane savant can use {0} to find magical traps in the same way a rogue can use {1} to search for traps. 的本地化字符串。
+        /// </summary>
+        internal static string ArcaneSavantGlyphFindingDescription_info {
+            get {
+                return ResourceManager.GetString("ArcaneSavantGlyphFindingDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Glyph Finding 的本地化字符串。
+        /// </summary>
+        internal static string ArcaneSavantGlyphFindingName_info {
+            get {
+                return ResourceManager.GetString("ArcaneSavantGlyphFindingName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 An arcane savant adds half their class level (minimum 1) as a bonus on Knowledge (arcana), and Use Magic Device checks, and can always take 10 on Knowledge (arcana) checks, even if distracted or endangered. 的本地化字符串。
+        /// </summary>
+        internal static string ArcaneSavantMasterScholarDescription_info {
+            get {
+                return ResourceManager.GetString("ArcaneSavantMasterScholarDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Master Scholar 的本地化字符串。
+        /// </summary>
+        internal static string ArcaneSavantMasterScholarName_info {
+            get {
+                return ResourceManager.GetString("ArcaneSavantMasterScholarName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Arcane Savant 的本地化字符串。
+        /// </summary>
+        internal static string ArcaneSavantName_info {
+            get {
+                return ResourceManager.GetString("ArcaneSavantName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 A bloodrager need not be in a bloodrage to use her bloodline mutation powers. Alternatively, a bloodrager or sorcerer can select a bloodline mutation in place of a bloodline bonus feat, provided her class level is at least equal to the level of the bloodline ability the mutation normally replaces.
         ///Bloodline Mutation: Blood havoc
         ///Whenever you cast a bloodrager or sorcerer spell that deals damage, add 1 point of damage per die rolled.  的本地化字符串。

@@ -27,6 +27,8 @@ using Kingmaker.UnitLogic.FactLogic;
 using Kingmaker.UnitLogic.Mechanics.Components;
 using Kingmaker.View.MapObjects;
 
+using RES = EldritchArcana.Properties.Resources;
+
 namespace EldritchArcana
 {
     static class ArcaneSavantClass
@@ -45,11 +47,9 @@ namespace EldritchArcana
             savantArray = new BlueprintCharacterClass[] { savant };
             savant.name = "ArcaneSavantClass";
             library.AddAsset(savant, "50dfddb6962b4f13a631362766ba4b61");
-            savant.LocalizedName = Helpers.CreateString("ArcaneSavant.Name", "ArcaneSavant");
+            savant.LocalizedName = Helpers.CreateString("ArcaneSavant.Name", RES.ArcaneSavantName_info);
             savant.LocalizedDescription = Helpers.CreateString("ArcaneSavant.Description",
-                "Arcane savants are specialists in the theory and practice of magic, illuminating mysteries of the eldritch fabric that permeates existence. " +
-                "The path of the arcane savant brings expertise in the lore of glyphs and sigils, knowledge of exotic spells, and the power to unlock the full potential of magical devices. " +
-                "This skill also makes savants quite valuable to adventuring parties, both in their mastery over ancient traps that utilize old magic and in their skill at identifying and utilizing magic items found in the field.");
+                RES.ArcaneSavantDescription_info);
             savant.SkillPoints = 2;
             savant.HitDie = DiceType.D6;
             savant.PrestigeClass = true;
@@ -210,9 +210,10 @@ namespace EldritchArcana
 
         static BlueprintFeature CreateGlyphFinding()
         {
-            return Helpers.CreateFeature("ArcaneSavantGlyphFinding", "Glyph Finding",
-                $"At 2nd level, an arcane savant can use {UIUtility.GetStatText(StatType.SkillKnowledgeArcana)} to find magical " +
-                $"traps in the same way a rogue can use {UIUtility.GetStatText(StatType.SkillPerception)} to search for traps.",
+            return Helpers.CreateFeature("ArcaneSavantGlyphFinding", RES.ArcaneSavantGlyphFindingName_info,
+                String.Format(RES.ArcaneSavantGlyphFindingDescription_info,
+                UIUtility.GetStatText(StatType.SkillKnowledgeArcana),
+                UIUtility.GetStatText(StatType.SkillPerception)),
                 "f64aa29727344ed9b7fa7918943d3038",
                 Helpers.GetIcon("dbb6b3bffe6db3547b31c3711653838e"), // trapfinding
                 FeatureGroup.None,
@@ -221,8 +222,8 @@ namespace EldritchArcana
 
         static BlueprintFeature CreateMasterScholar()
         {
-            return Helpers.CreateFeature("ArcaneSavantMasterScholar", "Master Scholar",
-                "An arcane savant adds half their class level (minimum 1) as a bonus on Knowledge (arcana), and Use Magic Device checks, and can always take 10 on Knowledge (arcana) checks, even if distracted or endangered.",
+            return Helpers.CreateFeature("ArcaneSavantMasterScholar", RES.ArcaneSavantMasterScholarName_info,
+                RES.ArcaneSavantMasterScholarDescription_info,
                 "0f8e9b62eb1b46e194955b1a0592e848",
                 Helpers.GetSkillFocus(StatType.SkillKnowledgeArcana).Icon,
                 FeatureGroup.None,
@@ -234,8 +235,8 @@ namespace EldritchArcana
 
         static BlueprintFeatureBase CreateAdeptActivation()
         {
-            return Helpers.CreateFeature("ArcaneSavantAdeptActivation", "Adept Activation",
-                "An arcane savant can always take 10 on Use Magic Device checks, except when activating an item blindly.",
+            return Helpers.CreateFeature("ArcaneSavantAdeptActivation", RES.ArcaneSavantAdeptActivationName_info,
+                RES.ArcaneSavantAdeptActivationDescription_info,
                 "0d0f6d7e0326444ea519ef9c2cb7c8a4",
                 Helpers.GetSkillFocus(StatType.SkillUseMagicDevice).Icon,
                 FeatureGroup.None,
