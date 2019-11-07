@@ -74,7 +74,7 @@ namespace EldritchArcana
             Main.SafeLoad(LoadDervishDance, RES.DervishDanceFeatureName_info);
 
             SafeAddToList(CreateFeyFoundling, feats, RES.FeyFoundlingFeatureName_info);
-            SafeAddToList(CreateRollWithIt, feats, "Roll with it");
+            SafeAddToList(CreateRollWithIt, feats, RES.RollWithItFeatureName_info);
 
             // Add all feats (including metamagic, wizard discoveries) to general feats.         
             library.AddFeats(feats.ToArray());
@@ -114,16 +114,14 @@ namespace EldritchArcana
         static BlueprintFeature CreateRollWithIt()
         {
             var goblinReq = Helpers.PrerequisiteFeature(Helpers.goblin);
-            var feat = Helpers.CreateFeature("RollWithIt", "Roll With It",
-                "You know how to take a hit, even if your reaction sends you bouncing and flying out of battle while shrieking at the top of your lungs." +
-                "\nBenefit: If you are struck by a melee weapon you can try to convert some of that damage into a movement correction. that way you reduce damage by 13 points",
+            var feat = Helpers.CreateFeature("RollWithIt", RES.RollWithItFeatureName_info,
+                RES.SafeCuringFeatureDescription_info,
                 "1249556638b04ecc85e069e230751bfa",
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/optimistic_gambler.png"),
                 FeatureGroup.Feat,
                 Helpers.Create<AddDamageResistancePhysical>(s => { s.Value = 13; }),
                 Helpers.PrerequisiteStatValue(StatType.SkillMobility,5),
                 Helpers.Create<RecommendationHasFeature>(r => r.Feature = Helpers.goblin)
-
                 , goblinReq);
             
             return feat;
@@ -150,7 +148,7 @@ namespace EldritchArcana
             scionArcanas.SetFeatures(scionArcanas.AllFeatures.AddToArray(arcanas));
             return new BlueprintFeature[] {
                 CreateExtraArcana(magusArcanas, "ExtraArcanaSelection", RES.ExtraArcanaFeatureName_info, "bace31a97ed141d9b11cc5dabacb5b88"),
-                CreateExtraArcana(scionArcanas, "ScionExtraArcanaSelection", string.Format(RES.ScionExtraArcanaFeatureName_info,Helpers.eldritchScionArchetype.Name), "4ea3182a6f544612af7b4aa42cb2b677")
+                CreateExtraArcana(scionArcanas, "ScionExtraArcanaSelection", string.Format(RES.ScionExtraArcanaFeatureName_info, Helpers.eldritchScionArchetype.Name), "4ea3182a6f544612af7b4aa42cb2b677")
             };
         }
 
@@ -227,7 +225,7 @@ namespace EldritchArcana
 
             var pickOneSpell = Helpers.CreateParamSelection<SelectAnySpellAtComputedLevel>(
                 $"{name}OneSpellSelection",
-                $"{feat.Name} (one spell)",
+                String.Format(RES.SpellBlendingFeatureOneSpellSelection_info, feat.Name),
                 feat.Description,
                 "0744c1eca7084c18aef2230828680cc9",
                 null,
@@ -237,7 +235,7 @@ namespace EldritchArcana
             pickOneSpell.SpellcasterClass = magus;
 
             var pickTwoSpells = Helpers.CreateFeature($"{name}TwoSpellProgression",
-                $"{feat.Name} (two spells)",
+                String.Format(RES.SpellBlendingFeatureTwoSpellProgression_info, feat.Name),
                 feat.Description,
                 "1fa334799e9a4a169fa53d154af86363",
                 null,

@@ -716,7 +716,7 @@ namespace EldritchArcana.Properties {
         
         /// <summary>
         ///   查找类似 You are descended from a long line of sorcerers, and some portion of their power flows in your veins.
-        ///Select one sorcerer bloodline. You must have Skill focus in the class skill that bloodline grants to a sorcerer at 1st level (for example, Heal for the celestial bloodline). This bloodline cannot be a bloodline you already have. You gain the first-level bloodline power for the selected bloodline. For purposes of using that power, treat your sorcerer level as equal to your character level – 2, even if you ha [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///Select one sorcerer bloodline. You must have Skill focus in the class skill that bloodline grants to a sorcerer at 1st level (for example, Heal for the celestial bloodline). This bloodline cannot be a bloodline you already have. You gain the first-level bloodline power for the selected bloodline. For purposes of using that power, treat your sorcerer level as equal to your character level – 2, even if you h [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string EldritchHeritageFeatureDescription_info {
             get {
@@ -734,20 +734,11 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Eldritch Knight requires martial class 的本地化字符串。
+        ///   查找类似 Eldritch Knight requires martial class (doesn&apos;t affect existing EKs) 的本地化字符串。
         /// </summary>
         internal static string EldritchKnightFix_info {
             get {
                 return ResourceManager.GetString("EldritchKnightFix_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 doesn&apos;t affect existing EKs 的本地化字符串。
-        /// </summary>
-        internal static string EldritchKnightFix_tip {
-            get {
-                return ResourceManager.GetString("EldritchKnightFix_tip", resourceCulture);
             }
         }
         
@@ -946,7 +937,7 @@ namespace EldritchArcana.Properties {
         
         /// <summary>
         ///   查找类似 You have come to favor a certain prestige class, either because you are particularly devoted to the class’s cause, have trained more than most others have for that specific role, or have simply been destined to excel in the prestige class all along. Regardless of the reason, levels gained in your favored prestige class grant additional benefits in a way similar to those you gain for taking levels in your base favored class.
-        ///You can select this feat before you gain levels in your chosen favored prestige clas [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///You can select this feat before you gain levels in your chosen favored prestige cla [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string FavoredPresitgeClassFeatureDescription_info {
             get {
@@ -1319,7 +1310,7 @@ namespace EldritchArcana.Properties {
         ///• Duplicate any other spell of 7th level or lower.
         ///• Undo the harmful effects of certain spells, such as feeblemind or insanity.
         ///• Have any effect whose power level is in line with the above effects.
-        ///Alternatively, a cleric can make a very pow [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///Alternatively, a cleric can make a ve [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string LesserMiracleAbilityDescription_info {
             get {
@@ -1423,7 +1414,7 @@ namespace EldritchArcana.Properties {
         ///• Duplicate any sorcerer/wizard spell of 6th level or lower, provided the spell does not belong to one of your opposition schools.
         ///• Duplicate any non-sorcerer/wizard spell of 5th level or lower, provided the spell does not belong to one of your opposition schools.
         ///• Duplicate any sorcerer/wizard spell of 5th level or lower, even if it belongs to one of your opposition schools.
-        ///• Duplica [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///• Dup [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string LimitedWishAbilityDescription_info {
             get {
@@ -1639,11 +1630,355 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Choose one energy type: acid, cold, electricity, fire, or force. You may replace a spell’s normal damage with that energy type.
+        ///Level Increase: +1 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicElementalSpellSelectionDescription_info {
+            get {
+                return ResourceManager.GetString("MetamagicElementalSpellSelectionDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Metamagic (Elemental Spell) 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicElementalSpellSelectionName_info {
+            get {
+                return ResourceManager.GetString("MetamagicElementalSpellSelectionName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You can modify a spell to daze a creature damaged by the spell. When a creature takes damage from this spell, they become dazed for a number of rounds equal to the original level of the spell. If the spell allows a saving throw, a successful save negates the daze effect. If the spell does not allow a save, the target can make a Will save to negate the daze effect. If the spell effect also causes the creature to become dazed, the duration of this metamagic effect is added to the duration of the spell.
+        ///Level [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicFeatDazingSpellDescription_info {
+            get {
+                return ResourceManager.GetString("MetamagicFeatDazingSpellDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Dazing Spell 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicFeatDazingSpellName_info {
+            get {
+                return ResourceManager.GetString("MetamagicFeatDazingSpellName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You can manipulate the elemental nature of your spells. You may replace a spell’s normal damage with {0} damage.
+        ///Level Increase: +1 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicFeatElementalSpellDescription_info {
+            get {
+                return ResourceManager.GetString("MetamagicFeatElementalSpellDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Elemental Spell — {0} 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicFeatElementalSpellName_info {
+            get {
+                return ResourceManager.GetString("MetamagicFeatElementalSpellName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Metamagic ({0}) 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicFeatGeneralName_info {
+            get {
+                return ResourceManager.GetString("MetamagicFeatGeneralName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 An intensified spell increases the maximum number of damage dice by 5 levels. You must actually have sufficient caster levels to surpass the maximum in order to benefit from this feat. No other variables of the spell are affected, and spells that inflict damage that is not modified by caster level are not affected by this feat.
+        ///Level Increase: +1 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicFeatIntensifiedSpellDescription_info {
+            get {
+                return ResourceManager.GetString("MetamagicFeatIntensifiedSpellDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Intensified Spell 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicFeatIntensifiedSpellName_info {
+            get {
+                return ResourceManager.GetString("MetamagicFeatIntensifiedSpellName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Whenever a creature targeted by a persistent spell or within its area succeeds on its saving throw against the spell, it must make another saving throw against the effect. If a creature fails this second saving throw, it suffers the full effects of the spell, as if it had failed its first saving throw.
+        ///Level Increase: +2 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicFeatPersistentSpellDescription_info {
+            get {
+                return ResourceManager.GetString("MetamagicFeatPersistentSpellDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Persistent Spell 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicFeatPersistentSpellName_info {
+            get {
+                return ResourceManager.GetString("MetamagicFeatPersistentSpellName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 The frost of your cold spell clings to the target, impeding it for a short time. A rime spell causes creatures that takes cold damage from the spell to become entangled for a number of rounds equal to the original level of the spell.
+        ///This feat only affects spells with the cold descriptor.
+        ///Level Increase: +1 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicFeatRimeSpellDescription_info {
+            get {
+                return ResourceManager.GetString("MetamagicFeatRimeSpellDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Rime Spell 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicFeatRimeSpellName_info {
+            get {
+                return ResourceManager.GetString("MetamagicFeatRimeSpellName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 When casting a selective spell with an area effect and a duration of instantaneous, friendly targets in the area are excluded from the effects of your spell.
+        ///Level Increase: +1 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicFeatSelectiveSpellDescription_info {
+            get {
+                return ResourceManager.GetString("MetamagicFeatSelectiveSpellDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Selective Spell 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicFeatSelectiveSpellName_info {
+            get {
+                return ResourceManager.GetString("MetamagicFeatSelectiveSpellName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Metamagic feats 的本地化字符串。
         /// </summary>
         internal static string MetamagicFeatsFeatureName_info {
             get {
                 return ResourceManager.GetString("MetamagicFeatsFeatureName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 The impact of your force spell is strong enough to knock the target prone. If the target takes damage, fails its saving throw, or is moved by your force spell, make a trip check against the target, using your caster level plus your casting ability score bonus (Wisdom for clerics, Intelligence for wizards, and so on). This does not provoke an attack of opportunity. If the check fails, the target cannot attempt to trip you or the force effect in response.
+        ///This feat only affects spells with the force descript [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicFeatTopplingSpellDescription_info {
+            get {
+                return ResourceManager.GetString("MetamagicFeatTopplingSpellDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Toppling Spell 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicFeatTopplingSpellName_info {
+            get {
+                return ResourceManager.GetString("MetamagicFeatTopplingSpellName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Dazing  的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodAdjectiveDazing_info {
+            get {
+                return ResourceManager.GetString("MetamagicRodAdjectiveDazing_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Acid Elemental  的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodAdjectiveElementalAcid_info {
+            get {
+                return ResourceManager.GetString("MetamagicRodAdjectiveElementalAcid_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Cold Elemental  的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodAdjectiveElementalCold_info {
+            get {
+                return ResourceManager.GetString("MetamagicRodAdjectiveElementalCold_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Electricity Elemental  的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodAdjectiveElementalElectricity_info {
+            get {
+                return ResourceManager.GetString("MetamagicRodAdjectiveElementalElectricity_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Fire Elemental  的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodAdjectiveElementalFire_info {
+            get {
+                return ResourceManager.GetString("MetamagicRodAdjectiveElementalFire_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Force Elemental  的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodAdjectiveElementalForce_info {
+            get {
+                return ResourceManager.GetString("MetamagicRodAdjectiveElementalForce_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Intensified  的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodAdjectiveIntensified_info {
+            get {
+                return ResourceManager.GetString("MetamagicRodAdjectiveIntensified_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Persistent  的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodAdjectivePersistent_info {
+            get {
+                return ResourceManager.GetString("MetamagicRodAdjectivePersistent_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Rime  的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodAdjectiveRime_info {
+            get {
+                return ResourceManager.GetString("MetamagicRodAdjectiveRime_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Selectvie  的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodAdjectiveSelectvie_info {
+            get {
+                return ResourceManager.GetString("MetamagicRodAdjectiveSelectvie_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Toppling  的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodAdjectiveToppling_info {
+            get {
+                return ResourceManager.GetString("MetamagicRodAdjectiveToppling_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 The wielder can cast up to three spells per day that are affected as though the spells were augmented with the {0} feat.
+        ///{1}rods can be used with spells of {2} level or lower.
+        ///{3}: {4} 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodDescription_info {
+            get {
+                return ResourceManager.GetString("MetamagicRodDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Greater  的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodDisplayPrefixString_Greater {
+            get {
+                return ResourceManager.GetString("MetamagicRodDisplayPrefixString_Greater", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Lesser  的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodDisplayPrefixString_Lesser {
+            get {
+                return ResourceManager.GetString("MetamagicRodDisplayPrefixString_Lesser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Normal  的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodDisplayPrefixString_Normal {
+            get {
+                return ResourceManager.GetString("MetamagicRodDisplayPrefixString_Normal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Metamagic rod 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodName_info {
+            get {
+                return ResourceManager.GetString("MetamagicRodName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Metamagic rods 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodsName_info {
+            get {
+                return ResourceManager.GetString("MetamagicRodsName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 3rd 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodSpellMaxLevel_3rd {
+            get {
+                return ResourceManager.GetString("MetamagicRodSpellMaxLevel_3rd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 6th 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodSpellMaxLevel_6th {
+            get {
+                return ResourceManager.GetString("MetamagicRodSpellMaxLevel_6th", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 9th 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicRodSpellMaxLevel_9th {
+            get {
+                return ResourceManager.GetString("MetamagicRodSpellMaxLevel_9th", resourceCulture);
             }
         }
         
@@ -1654,7 +1989,7 @@ namespace EldritchArcana.Properties {
         ///• Duplicate any other spell of 7th level or lower.
         ///• Undo the harmful effects of certain spells, such as feeblemind or insanity.
         ///• Have any effect whose power level is in line with the above effects.
-        ///Alternatively, a cleric can make a very pow [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///Alternatively, a cleric can make a ve [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string MiracleAbilityDescription_info {
             get {
@@ -2044,8 +2379,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 At 1st level, 3rd level, and every four levels thereafter (7th, 11th, and so on), an oracle uncovers a new secret about her mystery that grants her powers and abilities. The oracle must select a revelation from the list of revelations available to her mystery (see FAQ at right). If a revelation is chosen at a later level, the oracle gains all of the abilities and bonuses granted by that revelation based on her current level. Unless otherwise noted, activating the power of a revelation is a standard action.
-        /// [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///   查找类似 At 1st level, 3rd level, and every four levels thereafter (7th, 11th, and so on), an oracle uncovers a new secret about her mystery that grants her powers and abilities. The oracle must select a revelation from the list of revelations available to her mystery (see FAQ at right). If a revelation is chosen at a later level, the oracle gains all of the abilities and bonuses granted by that revelation based on her current level. Unless otherwise noted, activating the power of a revelation is a standard action.        /// [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string OracleRevelationFeatureDescription_info {
             get {
@@ -2136,20 +2470,11 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Disable Tongues curse penalty 的本地化字符串。
+        ///   查找类似 Disable Tongues curse penalty (that party members need 1 rank Knowledge: World to be controlled by PC in combat) 的本地化字符串。
         /// </summary>
         internal static string RelaxTonguesCurse_info {
             get {
                 return ResourceManager.GetString("RelaxTonguesCurse_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 that party members need 1 rank Knowledge: World to be controlled by PC in combat 的本地化字符串。
-        /// </summary>
-        internal static string RelaxTonguesCurse_tip {
-            get {
-                return ResourceManager.GetString("RelaxTonguesCurse_tip", resourceCulture);
             }
         }
         
@@ -2195,6 +2520,25 @@ namespace EldritchArcana.Properties {
         internal static string ResurrectionSpellDescription_info {
             get {
                 return ResourceManager.GetString("ResurrectionSpellDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You know how to take a hit, even if your reaction sends you bouncing and flying out of battle while shrieking at the top of your lungs.
+        ///Benefit: If you are struck by a melee weapon you can try to convert some of that damage into a movement correction. That way you reduce damage by 13 points. 的本地化字符串。
+        /// </summary>
+        internal static string RollWithItFeatureDescription_info {
+            get {
+                return ResourceManager.GetString("RollWithItFeatureDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Roll with it 的本地化字符串。
+        /// </summary>
+        internal static string RollWithItFeatureName_info {
+            get {
+                return ResourceManager.GetString("RollWithItFeatureName_info", resourceCulture);
             }
         }
         
@@ -2291,6 +2635,24 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 {0} (one spell) 的本地化字符串。
+        /// </summary>
+        internal static string SpellBlendingFeatureOneSpellSelection_info {
+            get {
+                return ResourceManager.GetString("SpellBlendingFeatureOneSpellSelection_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0} (two spells) 的本地化字符串。
+        /// </summary>
+        internal static string SpellBlendingFeatureTwoSpellProgression_info {
+            get {
+                return ResourceManager.GetString("SpellBlendingFeatureTwoSpellProgression_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Pick one spell which you have the ability to cast. Whenever you cast that spell you may apply any one metamagic feat you have to that spell without affecting its level or casting time, as long as the total modified level of the spell does not use a spell slot above 9th level. In addition, if you have other feats which allow you to apply a set numerical bonus to any aspect of this spell (such as Spell Focus, Spell Penetration, Weapon Focus [ray], and so on), double the bonus granted by that feat when applied [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string SpellPerfectionFeatureDescription_info {
@@ -2347,7 +2709,7 @@ namespace EldritchArcana.Properties {
         /// <summary>
         ///   查找类似 A weapon made of force appears and attacks foes at a distance, as you direct it, dealing 1d8 force damage per hit, +1 point per three caster levels (maximum +5 at 15th level). 
         ///The weapon takes the shape of a weapon favored by your deity or a weapon with some spiritual significance or symbolism to you (see below) and has the same threat range and critical multipliers as a real weapon of its form. 
-        ///It strikes the opponent you designate, starting with one attack in the round the spell is cast and continuing e [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///It strikes the opponent you designate, starting with one attack in the round the spell is cast and continuing [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string SpiritualWeaponAbilityDescription_info {
             get {
@@ -2478,7 +2840,7 @@ namespace EldritchArcana.Properties {
         ///   查找类似 Wish is the mightiest spell a wizard or sorcerer can cast. By simply speaking aloud, you can alter reality to better suit you. Even wish, however, has its limits. A wish can produce any one of the following effects.
         ///• Duplicate any sorcerer/wizard spell of 8th level or lower, provided the spell does not belong to one of your opposition schools.
         ///• Duplicate any non-sorcerer/wizard spell of 7th level or lower, provided the spell does not belong to one of your opposition schools.
-        ///• Duplicate any sorcerer/wizar [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///• Duplicate any sorcerer/wi [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string WishAbilityDescription_info {
             get {
@@ -2501,7 +2863,7 @@ namespace EldritchArcana.Properties {
         ///• Duplicate any sorcerer/wizard spell of 6th level or lower, provided the spell does not belong to one of your opposition schools.
         ///• Duplicate any non-sorcerer/wizard spell of 5th level or lower, provided the spell does not belong to one of your opposition schools.
         ///• Duplicate any sorcerer/wizard spell of 5th level or lower, even if it belongs to one of your opposition schools.
-        ///• Duplicate any non-sorcere [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///• Duplicate any non-sor [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string WishFabricateAbilityDescription_info {
             get {

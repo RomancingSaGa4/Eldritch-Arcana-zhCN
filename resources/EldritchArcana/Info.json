@@ -1,10 +1,10 @@
 {
     "Id": "EldritchArcana",
     "DisplayName": "精深奥法",
-    "Author": "李允, saladinqiao",
-    "Version": "1.2.7.10",
-    "ManagerVersion": "0.21.0.19",
+    "Author": "Elmindra_joostjasper",
+    "Version": "1.2.7.11",
+    "ManagerVersion": "0.21.2",
     "EntryMethod": "EldritchArcana.Main.Load",
-    "HomePage": "https://github.com/legendaryhero1981/Eldritch-Arcana-DUMM",
-    "Repository": "https://raw.githubusercontent.com/legendaryhero1981/Eldritch-Arcana-DUMM/master/Repository.json"
+    "HomePage": "https://github.com/RomancingSugar/Eldritch-Arcana-zhCN",
+    "Repository": "https://raw.githubusercontent.com/RomancingSugar/Eldritch-Arcana-zhCN/master/Repository.json"
 }

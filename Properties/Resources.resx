@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -353,10 +353,7 @@ Select one sorcerer bloodline. You must have Skill focus in the class skill that
     <value>Eldritch Heritage</value>
   </data>
   <data name="EldritchKnightFix_info" xml:space="preserve">
-    <value>Eldritch Knight requires martial class</value>
-  </data>
-  <data name="EldritchKnightFix_tip" xml:space="preserve">
-    <value>doesn't affect existing EKs</value>
+    <value>Eldritch Knight requires martial class (doesn't affect existing EKs)</value>
   </data>
   <data name="EmergencyForceSphereBuffDescription_info" xml:space="preserve">
     <value>As wall of force, except you create a hemispherical dome of force with hardness 20 and a number of hit points equal to 10 per caster level. The bottom edge of the dome forms a relatively watertight space if you are standing on a reasonably flat surface. The dome shape means that falling debris (such as rocks from a collapsing ceiling) tend to tumble to the side and pile up around the base of the dome. If you make a DC 20 Craft (stonemasonry), Knowledge (engineering), or Profession (architect or engineer) check, the debris is stable enough that it retains its dome-like configuration when the spell ends, otherwise it collapses.
@@ -827,10 +824,7 @@ Bonus Feats of the Orc Bloodline: Diehard, Endurance, Great Fortitude, Intimidat
     <value>Any race can choose the Oracle Ancient Lorekeeper archetype</value>
   </data>
   <data name="RelaxTonguesCurse_info" xml:space="preserve">
-    <value>Disable Tongues curse penalty</value>
-  </data>
-  <data name="RelaxTonguesCurse_tip" xml:space="preserve">
-    <value>that party members need 1 rank Knowledge: World to be controlled by PC in combat</value>
+    <value>Disable Tongues curse penalty (that party members need 1 rank Knowledge: World to be controlled by PC in combat)</value>
   </data>
   <data name="ReplacementFeatureDescription_info" xml:space="preserve">
     <value>Upon reaching {0}th level, and at every {1} {2} level after that ({3}th, {4}th, and so on), a {5} can choose to learn a new spell in place of one they already know. In effect, the {6} loses the old spell in exchange for the new one. The new spell's level must be the same as that of the spell being exchanged. A {7} may swap only a single spell at any given level, and must choose whether or not to swap the spell at the same time that they gain new spells known for the level.</value>
@@ -1034,5 +1028,142 @@ An oracle with the battle mystery can choose from any of the following revelatio
   </data>
   <data name="MysteryBattleName_info" xml:space="preserve">
     <value>Battle Mystery</value>
+  </data>
+  <data name="RollWithItFeatureDescription_info" xml:space="preserve">
+    <value>You know how to take a hit, even if your reaction sends you bouncing and flying out of battle while shrieking at the top of your lungs.
+Benefit: If you are struck by a melee weapon you can try to convert some of that damage into a movement correction. That way you reduce damage by 13 points.</value>
+  </data>
+  <data name="RollWithItFeatureName_info" xml:space="preserve">
+    <value>Roll with it</value>
+  </data>
+  <data name="SpellBlendingFeatureOneSpellSelection_info" xml:space="preserve">
+    <value>{0} (one spell)</value>
+  </data>
+  <data name="SpellBlendingFeatureTwoSpellProgression_info" xml:space="preserve">
+    <value>{0} (two spells)</value>
+  </data>
+  <data name="MetamagicElementalSpellSelectionDescription_info" xml:space="preserve">
+    <value>Choose one energy type: acid, cold, electricity, fire, or force. You may replace a spell’s normal damage with that energy type.
+Level Increase: +1</value>
+  </data>
+  <data name="MetamagicElementalSpellSelectionName_info" xml:space="preserve">
+    <value>Metamagic (Elemental Spell)</value>
+  </data>
+  <data name="MetamagicFeatDazingSpellDescription_info" xml:space="preserve">
+    <value>You can modify a spell to daze a creature damaged by the spell. When a creature takes damage from this spell, they become dazed for a number of rounds equal to the original level of the spell. If the spell allows a saving throw, a successful save negates the daze effect. If the spell does not allow a save, the target can make a Will save to negate the daze effect. If the spell effect also causes the creature to become dazed, the duration of this metamagic effect is added to the duration of the spell.
+Level Increase: +3
+</value>
+  </data>
+  <data name="MetamagicFeatDazingSpellName_info" xml:space="preserve">
+    <value>Dazing Spell</value>
+  </data>
+  <data name="MetamagicFeatElementalSpellDescription_info" xml:space="preserve">
+    <value>You can manipulate the elemental nature of your spells. You may replace a spell’s normal damage with {0} damage.
+Level Increase: +1</value>
+  </data>
+  <data name="MetamagicFeatElementalSpellName_info" xml:space="preserve">
+    <value>Elemental Spell — {0}</value>
+  </data>
+  <data name="MetamagicFeatGeneralName_info" xml:space="preserve">
+    <value>Metamagic ({0})</value>
+  </data>
+  <data name="MetamagicFeatIntensifiedSpellDescription_info" xml:space="preserve">
+    <value>An intensified spell increases the maximum number of damage dice by 5 levels. You must actually have sufficient caster levels to surpass the maximum in order to benefit from this feat. No other variables of the spell are affected, and spells that inflict damage that is not modified by caster level are not affected by this feat.
+Level Increase: +1</value>
+  </data>
+  <data name="MetamagicFeatIntensifiedSpellName_info" xml:space="preserve">
+    <value>Intensified Spell</value>
+  </data>
+  <data name="MetamagicFeatPersistentSpellDescription_info" xml:space="preserve">
+    <value>Whenever a creature targeted by a persistent spell or within its area succeeds on its saving throw against the spell, it must make another saving throw against the effect. If a creature fails this second saving throw, it suffers the full effects of the spell, as if it had failed its first saving throw.
+Level Increase: +2</value>
+  </data>
+  <data name="MetamagicFeatPersistentSpellName_info" xml:space="preserve">
+    <value>Persistent Spell</value>
+  </data>
+  <data name="MetamagicFeatRimeSpellDescription_info" xml:space="preserve">
+    <value>The frost of your cold spell clings to the target, impeding it for a short time. A rime spell causes creatures that takes cold damage from the spell to become entangled for a number of rounds equal to the original level of the spell.
+This feat only affects spells with the cold descriptor.
+Level Increase: +1</value>
+  </data>
+  <data name="MetamagicFeatRimeSpellName_info" xml:space="preserve">
+    <value>Rime Spell</value>
+  </data>
+  <data name="MetamagicFeatSelectiveSpellDescription_info" xml:space="preserve">
+    <value>When casting a selective spell with an area effect and a duration of instantaneous, friendly targets in the area are excluded from the effects of your spell.
+Level Increase: +1</value>
+  </data>
+  <data name="MetamagicFeatSelectiveSpellName_info" xml:space="preserve">
+    <value>Selective Spell</value>
+  </data>
+  <data name="MetamagicFeatTopplingSpellDescription_info" xml:space="preserve">
+    <value>The impact of your force spell is strong enough to knock the target prone. If the target takes damage, fails its saving throw, or is moved by your force spell, make a trip check against the target, using your caster level plus your casting ability score bonus (Wisdom for clerics, Intelligence for wizards, and so on). This does not provoke an attack of opportunity. If the check fails, the target cannot attempt to trip you or the force effect in response.
+This feat only affects spells with the force descriptor.
+Level Increase: +1</value>
+  </data>
+  <data name="MetamagicFeatTopplingSpellName_info" xml:space="preserve">
+    <value>Toppling Spell</value>
+  </data>
+  <data name="MetamagicRodAdjectiveDazing_info" xml:space="preserve">
+    <value>Dazing </value>
+  </data>
+  <data name="MetamagicRodAdjectiveElementalAcid_info" xml:space="preserve">
+    <value>Acid Elemental </value>
+  </data>
+  <data name="MetamagicRodAdjectiveElementalCold_info" xml:space="preserve">
+    <value>Cold Elemental </value>
+  </data>
+  <data name="MetamagicRodAdjectiveElementalElectricity_info" xml:space="preserve">
+    <value>Electricity Elemental </value>
+  </data>
+  <data name="MetamagicRodAdjectiveElementalFire_info" xml:space="preserve">
+    <value>Fire Elemental </value>
+  </data>
+  <data name="MetamagicRodAdjectiveIntensified_info" xml:space="preserve">
+    <value>Intensified </value>
+  </data>
+  <data name="MetamagicRodAdjectivePersistent_info" xml:space="preserve">
+    <value>Persistent </value>
+  </data>
+  <data name="MetamagicRodAdjectiveRime_info" xml:space="preserve">
+    <value>Rime </value>
+  </data>
+  <data name="MetamagicRodAdjectiveSelectvie_info" xml:space="preserve">
+    <value>Selectvie </value>
+  </data>
+  <data name="MetamagicRodAdjectiveToppling_info" xml:space="preserve">
+    <value>Toppling </value>
+  </data>
+  <data name="MetamagicRodDisplayPrefixString_Greater" xml:space="preserve">
+    <value>Greater </value>
+  </data>
+  <data name="MetamagicRodDisplayPrefixString_Lesser" xml:space="preserve">
+    <value>Lesser </value>
+  </data>
+  <data name="MetamagicRodDisplayPrefixString_Normal" xml:space="preserve">
+    <value>Normal </value>
+  </data>
+  <data name="MetamagicRodName_info" xml:space="preserve">
+    <value>Metamagic rod</value>
+  </data>
+  <data name="MetamagicRodsName_info" xml:space="preserve">
+    <value>Metamagic rods</value>
+  </data>
+  <data name="MetamagicRodSpellMaxLevel_3rd" xml:space="preserve">
+    <value>3rd</value>
+  </data>
+  <data name="MetamagicRodSpellMaxLevel_6th" xml:space="preserve">
+    <value>6th</value>
+  </data>
+  <data name="MetamagicRodSpellMaxLevel_9th" xml:space="preserve">
+    <value>9th</value>
+  </data>
+  <data name="MetamagicRodAdjectiveElementalForce_info" xml:space="preserve">
+    <value>Force Elemental </value>
+  </data>
+  <data name="MetamagicRodDescription_info" xml:space="preserve">
+    <value>The wielder can cast up to three spells per day that are affected as though the spells were augmented with the {0} feat.
+{1}rods can be used with spells of {2} level or lower.
+{3}: {4}</value>
   </data>
 </root>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -125,7 +125,7 @@
     <value>充裕启示</value>
   </data>
   <data name="AddSpellScrollsFeatureName_info" xml:space="preserve">
-    <value>卷轴和新法术</value>
+    <value>新增法术的卷轴</value>
   </data>
   <data name="AnyClassSkillName_info" xml:space="preserve">
     <value>任何知识/学识技能</value>
@@ -173,7 +173,7 @@
     <value>光明感性</value>
   </data>
   <data name="BloodlineOrcOracleSpellDescription_info" xml:space="preserve">
-    <value>在第二级，以及此后每两级，神使会从他们的秘术中学习一个额外的法术。</value>
+    <value>在第二级，以及此后每两级，先知会从他们的秘术中学习一个额外的法术。</value>
   </data>
   <data name="BloodlineOrcPowerOfGiantsBuffDescription_info" xml:space="preserve">
     <value>在第15级，作为标准动作，你可以变大身体尺寸。在这个尺寸上，你可以获得+6力量奖励、-2敏捷惩罚、+4体质奖励和+4自然护甲奖励。作为标准动作，你可以恢复到正常尺寸。每天每个字符级别可以保持此大小最多1分钟；此持续时间不需要连续，但必须以1分钟为增量使用。</value>
@@ -240,14 +240,14 @@
     <value>修补方法libraryscriptableobject.loadDictionary()失败，无法加载mod！</value>
   </data>
   <data name="ChannelEnergyFeatureDescription_info" xml:space="preserve">
-    <value>你可以像牧师一样输送正能量，在确定治愈（或伤害不死生物）的生命值和DC时，使用你的神使等级作为你的有效牧师等级。
+    <value>你可以像牧师一样输送正能量，在确定治愈（或伤害不死生物）的生命值和DC时，使用你的先知等级作为你的有效牧师等级。
 你可以每天多次使用这个能力，相当于你的魅力修正值＋1。</value>
   </data>
   <data name="ChannelEnergyFeatureName_info" xml:space="preserve">
     <value>引导能量</value>
   </data>
   <data name="CheatCustomTraits_info" xml:space="preserve">
-    <value>启用所有作弊特性及法术，乃至自定义和自制（需要重新启动才能生效）</value>
+    <value>启用所有作弊特性及法术，包括修改和自制法术（需要重新启动游戏才能生效）</value>
   </data>
   <data name="ChooseFavoredClassLocalized_info" xml:space="preserve">
     <value>选择天赋职业奖励</value>
@@ -260,13 +260,13 @@
 每个血统的选择：</value>
   </data>
   <data name="CrossbloodedConflictingUrgesFeatureDescription_info" xml:space="preserve">
-    <value>由于混血术士的双重遗产的不同性质所产生的相互冲突的渴望，迫使他们不断地进行一些精神上的努力，只是为了保持对他们当前的状况和需求的专注。这使得他们在处理外部威胁时没有那么大的决心。一个混血术士总是在意志豁免检定中遭到-2的惩罚。</value>
+    <value>源自于混血术士双重血脉的不同天性所造成的，迫使他们不断地进行一些精神上的努力，只是为了保持对他们当前的状况和需求的专注。这使他们必须花费更大的精力来解决自身内部的问题。一个混血术士总是在意志豁免检定中遭到-2的惩罚。</value>
   </data>
   <data name="CrossbloodedConflictingUrgesFeatureName_info" xml:space="preserve">
-    <value>混血（相互冲突的欲望）</value>
+    <value>混血（冲突的欲望）</value>
   </data>
   <data name="CrossbloodedSorcererLocalizedDescription_info" xml:space="preserve">
-    <value>一个混血术士可以选择两种不同的血统。术士可以获得技能，专长和他们所继承的两种血统的一些力量，但代价是降低了精神的清晰度和选择。</value>
+    <value>一个混血术士可以选择两种不同的血统。术士能够从他的两种血脉分别继承技能，专长，以及源自血缘的力量，但也会付出一些代价，如容易分心和选择局限。</value>
   </data>
   <data name="CrossbloodedSorcererLocalizedName_info" xml:space="preserve">
     <value>混血术士</value>
@@ -284,14 +284,14 @@
     <value>延时爆裂火球</value>
   </data>
   <data name="DervishDanceFeatureDescription_info" xml:space="preserve">
-    <value>当用一只手使用弯刀时，你可以在近战攻击和伤害骰上使用你的敏捷加值而不是你的力量加值。你将弯刀视为一种单手穿透武器，用于所有需要此类武器（如决斗家的精确造成能力）的专长和等级能力。弯刀必须适合你这种体型的生物。如果你的副手里拿着武器或盾牌，你就不能使用这个专长。</value>
+    <value>当你用单手挥舞弯刀时，你可以在近战攻击和伤害骰上使用你的敏捷加值而不是你的力量加值。你将弯刀视为一种单手穿刺武器，并适用于所有需要此类武器（如决斗家的精准刺击能力）的专长和等级能力。弯刀的大小必须匹配你的体型。如果你的副手拿着武器或者盾牌，你就无法使用这个专长。</value>
   </data>
   <data name="DervishDanceFeatureName_info" xml:space="preserve">
     <value>狂野之舞</value>
   </data>
   <data name="DetectSecretDoorsAbilityDescription_info" xml:space="preserve">
     <value>你可以侦测到密门、夹层、隐藏物品等等。本法术只会侦测到那些刻意掩人耳目的通道、门或者出入口。
-每回合，你都可以在一个新的区域内侦测密门。这个法术需要通过专注检定，如果你施放另一个法术，采取标准动作，或者专注检定失败，它会提前结束。</value>
+每一回合你都可以在一个新的区域内侦测密门。这个法术需要通过专注检定，如果你施放另一个法术，采取标准动作，或者专注检定失败，它会提前结束。</value>
   </data>
   <data name="DetectSecretDoorsAbilityDuration_info" xml:space="preserve">
     <value>专注，1分钟/每施法者等级</value>
@@ -311,32 +311,33 @@
 如果这个能力被启用，这意味着你有一个当前有效的效果法术可以被解除。</value>
   </data>
   <data name="DismissAreaEffectAbilityName_info" xml:space="preserve">
-    <value>解除区域效果法术</value>
+    <value>驱散区域效果法术</value>
   </data>
   <data name="DismissSpells_info" xml:space="preserve">
     <value>驱散区域效果的能力</value>
   </data>
   <data name="DrawbackForextraTraits_info" xml:space="preserve">
-    <value>启用有缺点的专长（需要重新启动才能生效）</value>
+    <value>启用有缺陷的专长（需要重新启动游戏才能生效）</value>
   </data>
   <data name="DrawbackFrailFeatureDescription_info" xml:space="preserve">
-    <value>你的身体很虚弱，容易骨折，而且你的健康状况也不好，所以你在抵抗疾病时遭受-1点豁免检定惩罚。
-危害：第1级时会损失3点生命值，且对于你拥有的每1个生命骰都会额外损失1点的生命值。</value>
+    <value>如果你在第1级选择1个有缺陷的专长，你可以在顶部选择1个额外的专长。
+你天生羸弱，容易骨折，而且你的健康状况也不好，因此你在抵抗疾病时遭受-1点豁免检定惩罚。
+缺陷：在第1级时你会损失3点生命值，且对于你拥有的每1个生命骰都会额外损失1点生命值。</value>
   </data>
   <data name="DrawbackFrailFeatureName_info" xml:space="preserve">
     <value>虚弱</value>
   </data>
   <data name="DrawbackOneLeggedFeatureDescription_info" xml:space="preserve">
-    <value>如果你在第1级选择1个有害专长，你可以在顶部选择1个额外的专长。
-危害：即使有1条假腿，你也会失去10英尺的正常移动速度。
-危害：你失去了2个先攻点。</value>
+    <value>如果你在第1级选择1个有缺陷的专长，你可以在顶部选择1个额外的专长。
+缺陷：即使装上1条假腿，你一样会失去10英尺的正常移动速度。
+缺陷：你失去了2个先攻点。</value>
   </data>
   <data name="DrawbackOneLeggedFeatureName_info" xml:space="preserve">
     <value>假腿</value>
   </data>
   <data name="DrawbackSpellVulnerabilityFeatureDescription_info" xml:space="preserve">
-    <value>如果你在第1级选择1个有害专长，你可以在顶部选择1个额外的专长。
-痛苦之源：选择一个法术学派你将在抵抗该法术学派法术时遭受{0}豁免检定惩罚。</value>
+    <value>如果你在第1级选择1个有缺陷的专长，你可以在顶部选择1个额外的专长。
+痛苦之源：选择一个法术学派，你将在抵抗该法术学派法术时遭受{0}豁免检定惩罚。</value>
   </data>
   <data name="DrawbackSpellVulnerabilityFeatureName_info" xml:space="preserve">
     <value>法术弱点</value>
@@ -352,10 +353,7 @@
     <value>悠远血脉</value>
   </data>
   <data name="EldritchKnightFix_info" xml:space="preserve">
-    <value>兼职奥法骑士需要已拥有战士类职业</value>
-  </data>
-  <data name="EldritchKnightFix_tip" xml:space="preserve">
-    <value>例如：野蛮人、战士、圣武士、巡林客，不影响已创建的角色</value>
+    <value>兼职奥法骑士需要已拥有战士类职业（例如：野蛮人、战士、圣武士、巡林客，不影响已创建的角色）</value>
   </data>
   <data name="EmergencyForceSphereBuffDescription_info" xml:space="preserve">
     <value>作为原力之墙，除非你创造一个半球形的原力圆顶，硬度为20，每施法者等级有10点生命值。如果你站在一个相当平坦的表面上，圆顶的底部边缘形成一个相对不漏水的空间。圆顶的形状意味着落下的碎片(比如从坍塌的天花板上落下的岩石)会滚到一边，堆积在圆顶的底部。如果你制作一个DC20制作(石匠)，知识(工程)，或专业(建筑师或工程师)检查，碎片是足够稳定的，当法术结束时，它保持它的圆顶状结构，否则它会倒塌。
@@ -365,23 +363,23 @@
     <value>应急原力法球</value>
   </data>
   <data name="EnergyBodyFeatureDescription_info" xml:space="preserve">
-    <value>作为一个标准动作，你可以将你的身体转化为纯净的生命能量，就像一个金白色的火元素。在这种形式下，你获得元素亚型并发出一种温暖的迎宾之光，它将10英尺范围内的光照水平提高一步，直至正常光照。任何不死生物用身体或手持武器攻击你都会造成正常伤害，同时攻击者也会受到每神使等级1d6＋1点正能量伤害。使用近战武器的生物如果攻击你，就不会受到这种伤害。如果你用徒手攻击或天然武器抓取或攻击一个不死生物，你可以用这个伤害代替攻击的正常伤害。每轮一次，如果你通过一个有生命的盟军生物的方阵或盟军通过你的方阵，每神使等级治愈1d6＋1点伤害。你可以用这个能力作为移动动作来治愈自己。当一个生物通过你的空间时，你可以选择是否治愈它。你可以作为一个自由动作回到你的正常状态。你可以保持能量之躯形态，每天可使用相当于你的神使等级的轮数。</value>
+    <value>作为一个标准动作，你可以将你的身体转化为纯净的生命能量，就像一个金白色的火元素。在这种形式下，你获得元素亚型并发出一种温暖的迎宾之光，它将10英尺范围内的光照水平提高一步，直至正常光照。任何不死生物用身体或手持武器攻击你都会造成正常伤害，同时攻击者也会受到每先知等级1d6＋1点正能量伤害。使用近战武器的生物如果攻击你，就不会受到这种伤害。如果你用徒手攻击或天然武器抓取或攻击一个不死生物，你可以用这个伤害代替攻击的正常伤害。每轮一次，如果你通过一个有生命的盟军生物的方阵或盟军通过你的方阵，每先知等级治愈1d6＋1点伤害。你可以用这个能力作为移动动作来治愈自己。当一个生物通过你的空间时，你可以选择是否治愈它。你可以作为一个自由动作回到你的正常状态。你可以保持能量之躯形态，每天可使用相当于你的先知等级的轮数。</value>
   </data>
   <data name="EnergyBodyFeatureName_info" xml:space="preserve">
     <value>能量之躯</value>
   </data>
   <data name="EnhancedCuresFeatureDescription_info" xml:space="preserve">
-    <value>每当你施放一个治疗法术时，治疗的最大生命点数是基于你的神使等级，而不是基于法术的限制。例如，一个11级的生命神使可以施放治疗轻伤来治疗1d8＋11点，而不是普通的1d8＋5点的最大值。</value>
+    <value>每当你施放一个治疗法术时，治疗的最大生命点数是基于你的先知等级，而不是基于法术的限制。例如，一个11级的生命先知可以施放治疗轻伤来治疗1d8＋11点，而不是普通的1d8＋5点的最大值。</value>
   </data>
   <data name="EnhancedCuresFeatureName_info" xml:space="preserve">
     <value>强效治疗</value>
   </data>
   <data name="ExtraArcanaFeatureDescription_info" xml:space="preserve">
-    <value>你解开了一个新的秘法。你得到一个额外的法术。你必须满足这个法术的所有先决条件。
-特殊：你可以多次获得此专长。它的效果叠加，每次你获得这个专长时都给予一个新的秘法。</value>
+    <value>你已经研究出了一个新的魔战士奥能。你获得一个额外的魔战士奥能，你必须满足这个奥能的所有先决条件。
+特殊：你可以多次选择这个专长，它的效果叠加。你每次选择这个专长都要选择一个新奥能。</value>
   </data>
   <data name="ExtraArcanaFeatureName_info" xml:space="preserve">
-    <value>额外秘法</value>
+    <value>额外奥能</value>
   </data>
   <data name="ExtraRevelationFeatureDescription_info" xml:space="preserve">
     <value>你得到一个额外的启示。你必须满足这个启示的所有先决条件。
@@ -444,11 +442,11 @@
     <value>・&lt;b&gt;{0}&lt;/b&gt;</value>
   </data>
   <data name="FeyFoundlingFeatureDescription_info" xml:space="preserve">
-    <value>你小时候在野外被发现。
-每当你得到魔法治疗，你能获得每骰子额外2点治疗量0。对死亡效果的所有豁免掷骰都会获得＋2加值。不幸的是，你也会受到＋1点的寒铁武器伤害（尽管你可以使用寒铁武器而没有明显的不适）。</value>
+    <value>当你在野外被找到时你还是个孩子。
+无论何时，当你受到魔法治疗时，你受到的治愈效果在每次掷骰时都将额外+2。你在对抗死亡效果的所有豁免检定中均获得2点加值。不幸的是，在你受到寒铁武器造成的伤害时，将额外增加1点伤害（尽管你仍旧可以使用寒铁武器而不会感到明显的不适）。</value>
   </data>
   <data name="FeyFoundlingFeatureName_info" xml:space="preserve">
-    <value>妖精弃儿</value>
+    <value>精类遗孤</value>
   </data>
   <data name="FinalRevelationFeatureDescription_info" xml:space="preserve">
     <value>达到20级后，你将成为一个完美的生命能量系统。你会对出血、即死攻击、力竭、疲劳、恶心、负等级和疾病效果免疫。任何能力伤害和消耗都不会使能力点数降低到1以下。</value>
@@ -513,14 +511,14 @@
     <value>一种微妙而多变的扭曲的彩色符文在空气中编织，里面有着迷人的生物。投掷2D4并添加施法者等级（最多10级），以确定受影响生物的HD总数。具有最小HD的生物首先受到影响；在具有相同HD的生物中，最接近法术原点的生物首先受到影响。不足以影响生物的HD将被浪费。受影响的生物将对彩色符文着迷。无视觉的生物不会受到影响。</value>
   </data>
   <data name="ImprovedEldritchHeritageBloodlineFeatureName_info" xml:space="preserve">
-    <value>高等埃尔德里奇的遗产——{0}</value>
+    <value>精通悠远血脉血承专长——{0}</value>
   </data>
   <data name="ImprovedEldritchHeritageFeatureDescription_info" xml:space="preserve">
     <value>你已发现的血统力量继续增长。
 你可以获得你选择的第3级或第9级的血统力量（你的选择）与埃尔德里奇的遗产专长。为了使用这种力量，将你的术士等级等同于你的角色等级－2，即使你已有术士等级。你没有获得任何其他血统的能力。</value>
   </data>
   <data name="ImprovedEldritchHeritageFeatureName_info" xml:space="preserve">
-    <value>精通埃尔德里奇的遗产</value>
+    <value>精通悠远血脉专长</value>
   </data>
   <data name="KeepAllSpellsFeatureDescription_info" xml:space="preserve">
     <value>选择此选项可跳过替换此级别的已知法术。</value>
@@ -575,14 +573,14 @@
     <value>奇迹——预警</value>
   </data>
   <data name="LifeLinkFeatureDescription_info" xml:space="preserve">
-    <value>作为一个标准动作，你可以在自己和另一个生物之间建立一种连接。每回合开始时，如果被绑定生物在其最大生命点以下受伤5点或更多，它将治疗5个生命点，并且您将受到5个伤害点。每个神使等级可以有一个有效的绑定。这种结合持续到被结合的生物死亡，你死亡，你和其他生物之间的距离超过中等范围，或者你作为一个即时动作结束它（如果你有多个连接，你可以作为同一即时动作的一部分结束尽可能多的连接）。</value>
+    <value>作为一个标准动作，你可以在自己和另一个生物之间建立一种连接。每回合开始时，如果被绑定生物在其最大生命点以下受伤5点或更多，它将治疗5个生命点，并且您将受到5个伤害点。每个先知等级可以有一个有效的绑定。这种结合持续到被结合的生物死亡，你死亡，你和其他生物之间的距离超过中等范围，或者你作为一个即时动作结束它（如果你有多个连接，你可以作为同一即时动作的一部分结束尽可能多的连接）。</value>
   </data>
   <data name="LifeLinkFeatureName_info" xml:space="preserve">
     <value>生命连接</value>
   </data>
   <data name="LifeMysteryProgressionDescription_info" xml:space="preserve">
     <value>职业技能：{0}，{1}
-具有生命秘法的神使可以从以下任何启示中选择：</value>
+具有生命秘法的先知可以从以下任何启示中选择：</value>
   </data>
   <data name="LifeMysteryProgressionName_info" xml:space="preserve">
     <value>生命秘法</value>
@@ -619,7 +617,7 @@
     <value>在肖像列表中列出自定义肖像</value>
   </data>
   <data name="loadDrawbackFeats_error" xml:space="preserve">
-    <value>有缺点的专长</value>
+    <value>有缺陷的专长</value>
   </data>
   <data name="loadFavoredClassBonus_error" xml:space="preserve">
     <value>天赋职业奖励和神祗选择</value>
@@ -631,13 +629,13 @@
     <value>魔法专长</value>
   </data>
   <data name="loadOracleClass_error" xml:space="preserve">
-    <value>神使职业</value>
+    <value>先知职业</value>
   </data>
   <data name="loadReplaceSpells_error" xml:space="preserve">
     <value>自然施法者的法术替换</value>
   </data>
   <data name="loadSpells_error" xml:space="preserve">
-    <value>新法术</value>
+    <value>新增法术</value>
   </data>
   <data name="loadTraits_error" xml:space="preserve">
     <value>特性</value>
@@ -646,16 +644,16 @@
     <value>许愿法术</value>
   </data>
   <data name="MagesTattooFeatureDescription_info" xml:space="preserve">
-    <value>选择一个魔法学派，你可以以施法者等级＋1施放该学派的法术。</value>
+    <value>选择一个你专精的法术学派，你能以施法者等级+1施放该学派的法术。</value>
   </data>
   <data name="MagesTattooFeatureName_info" xml:space="preserve">
-    <value>魔法刺青</value>
+    <value>法师刺青</value>
   </data>
   <data name="MagusArcanasFeatureName_info" xml:space="preserve">
     <value>魔战士奥能</value>
   </data>
   <data name="MagusFamiliarFeatureDescription_info" xml:space="preserve">
-    <value>魔战士获得通晓秘法的技能，使用他们的秘法师等级作为有效的法师等级。通晓秘法遵循以神秘方式提供并绑定到法师特性的规则中。</value>
+    <value>魔战士获得一个魔宠，使用他的魔战士等级作为有效施法者等级。这个魔宠遵循法师的魔宠规则。</value>
   </data>
   <data name="MagusFamiliarFeatureName_info" xml:space="preserve">
     <value>魔宠</value>
@@ -664,22 +662,22 @@
     <value>这不会增加施法时间和法术等级。</value>
   </data>
   <data name="MagusMagicFeatureDescription_info" xml:space="preserve">
-    <value>秘法师每天可以施放一个法术，就好像它被法术专长（{0}）修改过一样。</value>
+    <value>魔战士每天可以施放一个如同被超魔专长”{0}“调整过一般的法术。</value>
   </data>
   <data name="MagusMagicFeatureName_info" xml:space="preserve">
-    <value>秘法（{0}）</value>
+    <value>{0}法术</value>
   </data>
   <data name="MagusMagicLevelFeatureDescription_info" xml:space="preserve">
     <value>这不会增加法术等级。</value>
   </data>
   <data name="MetamagicAdeptFeatureDescription_info" xml:space="preserve">
-    <value>在第3级，你可以在不增加施法时间的情况下，将你知道的任何一个元魔法专长应用到你即将施法的咒语上。你仍然必须花费一个更高级别的法术槽来施放这个法术。你可以在第3级每天使用一次这种能力，在第3级之后，每4个法师等级可每天额外使用一次，在第19级每天最多使用五次。在第20级，这个能力被奥术巅峰所取代。</value>
+    <value>在第3级，你可以在不增加施法时间的情况下，将你知道的任何一个超魔专长应用到你即将施展的法术上。你仍必须花费一个更高级别的法术位来施放这个法术。你可以在第3级每天使用一次该能力，在第3级之后，每4个施法者等级可每天额外使用一次，在第19级每天最多使用五次。达到20级后，该能力被奥法巅峰替代。</value>
   </data>
   <data name="MetamagicAdeptFeatureName_info" xml:space="preserve">
-    <value>超魔专长（奥法血统）</value>
+    <value>超魔专擅（奥术血承）</value>
   </data>
   <data name="MetamagicFeatsFeatureName_info" xml:space="preserve">
-    <value>超魔专长</value>
+    <value>超魔专擅</value>
   </data>
   <data name="MiracleAbilityDescription_info" xml:space="preserve">
     <value>你不会像要求的那样创造奇迹。你陈述你希望发生的事情，并请求你的神（或你为法术祈祷的力量）调解。
@@ -714,19 +712,19 @@
     <value>战斗启示</value>
   </data>
   <data name="MysteryClassSkillsFeatureDescription_info" xml:space="preserve">
-    <value>神使可以获得额外的职业技能，获益于他们掌握的秘法。</value>
+    <value>先知可以获得额外的职业技能，获益于他们掌握的秘法。</value>
   </data>
   <data name="MysteryClassSkillsFeatureName_info" xml:space="preserve">
     <value>职业技能奖励</value>
   </data>
   <data name="OppositionResearchFeatureDescription_info" xml:space="preserve">
-    <value>选择一个法师反对学派；准备这个学派的法术现在只需要一个适当级别的法术槽而不是两个，并且你不再因为从那个学派制作物品而受到-4法术惩罚。</value>
+    <value>选择一个你的对立学派；现在你准备这个学派的法术只需要一个合适等级的法术位而非两个，并且你在制造此学派物品时不再承受-4的豁免惩罚。</value>
   </data>
   <data name="OppositionResearchFeatureName_info" xml:space="preserve">
-    <value>反对学派研究</value>
+    <value>对立学派研究</value>
   </data>
   <data name="OracleCureOrInflictSpellFeatureDescription_info" xml:space="preserve">
-    <value>神使除了可获得等级法术外，还将所有治疗法术或造成法术添加到她已知的法术列表中（治疗法术包括名字中有“治疗”的所有法术，造成法术包括名字中有“造成”的所有法术）。一旦神使能够施法，这些法术就会被添加。这个选择是在神使获得第一个职业等级并且不能改变的时候作出的。</value>
+    <value>先知除了可获得等级法术外，还将所有治疗法术或造成法术添加到她已知的法术列表中（治疗法术包括名字中有“治疗”的所有法术，造成法术包括名字中有“造成”的所有法术）。一旦先知能够施法，这些法术就会被添加。这个选择是在先知获得第一个职业等级并且不能改变的时候作出的。</value>
   </data>
   <data name="OracleCureOrInflictSpellFeatureName_info" xml:space="preserve">
     <value>治疗和造成法术</value>
@@ -735,47 +733,47 @@
     <value>治疗法术</value>
   </data>
   <data name="OracleHas3SkillPoints_info" xml:space="preserve">
-    <value>神使在升级时获得3个技能点（取代4个，因为技能压缩）</value>
+    <value>先知在升级时获得3个技能点（取代4个，因为技能压缩）</value>
   </data>
   <data name="OracleInflictSpellProgressionName_info" xml:space="preserve">
     <value>造成法术</value>
   </data>
   <data name="OracleLocalizedDescription_info" xml:space="preserve">
-    <value>虽然众神通过许多代理人工作，但也许没有人比神使更神秘。这些神圣的容器被不由自主的授予能力，由上帝选择使用能力，即使他们不完全理解。与一个通过献身于神而获得魔力的牧师不同，神使从很多方面获得力量和能力，即那些支持他们理想的守护神。神使不是崇拜单一的来源，而是崇拜所有分享他们信仰的神。有些人把神使的力量视为礼物，而另一些人则把它们视为一种诅咒，以不可预见的方式改变了被选者的生活。
-角色：神使通常不与任何一个教堂或神殿联系在一起，而是倾向于自己动手，或与一群志同道合的人一起动手。神使通常使用他们的法术和启示来加深他们对神秘的理解，无论是通过战斗或照顾穷人和病人。</value>
+    <value>虽然众神有无数代言人为他们在地上行走，这些人种最为神秘的一群恐怕莫过于先知了。这些获选者在并不知情的状况下成为了神祗伟力的容器，得以操纵他们并不能完全理解的大能。和通过虔诚侍奉以从他们的主宰手中获得神力的牧师不同，先知的力量可能来源于多种多样的途径，换句话说，他们可以从所有与自己分享同一理念的神祗那里获得支持。先知并不依靠敬拜单一神明，而是向所有与自己的信仰融会贯通的神祗表达敬意。当然，有人将先知掌握的力量视为天赋，而另一些人则将之看作是这些人背负的诅咒——它们以种种不可预料的方法影响着这些获选者的命运之路。
+角色：先知的任务并不一定与某个特定的教会或神殿相关，他们更喜欢独来独往或是和一小群志同道合的先知合作。运用自己的法术和通过启迪自己所身负的秘示之能，一个先知既可以呼啸沙场战无不胜，也可以医疗疾患救死扶伤。</value>
   </data>
   <data name="OracleLocalizedName_info" xml:space="preserve">
-    <value>神使</value>
+    <value>先知</value>
   </data>
   <data name="OracleMysteryFeatureDescription_info" xml:space="preserve">
-    <value>每一位神使都利用一个神圣的秘法来赋予她的法术和力量。这个秘密还授予额外的职业技能和其他特殊能力。秘法可以代表对一个理想的忠诚，对支持这个概念的神的祈祷，或者为捍卫理想而来的一种自然召唤。例如，一个关于海浪秘法的神使可能在海上诞生，并且发现了一个自然的召唤，去崇拜海洋、河流和湖泊的神，不管它们是温和的还是凶恶的。无论其来源如何，随着神使等级的提高，这一秘法现象以多种方式表现出来。神使必须在第一级时选择一个秘法。一旦做出选择，就无法更改。
-在第二级，以及此后的每两级，一个神使从她的秘法中学习一个额外的法术。这些法术是对所选已知法术数量的补充。它们不能在更高级别上交换不同的法术。</value>
+    <value>每一个先知都拥有属于自己的神力奥秘以为力量和法术之源，这些秘示域也同样会给予他们以额外的本职技能和其他特殊能力。秘示域代表了一个先知所追随的信念以及对于支持类型概念神祗的赞美，或是这些大能赋予一个代行者发自内心的召唤。举例来说，一个拥有波涛秘示域的先知可能是因为她在在风口浪尖之间出生长大并受到了江河湖海之神的启迪，作为水之平静与狂暴双面的化身在人间行走。这些来源不明的能力将随着先知等级的提升而渐变演化为更多更强的力量，在她的第一个等级先知需要选择一个秘示域，一旦选定即无法更改。
+在2级，以及之后每提升2个等级时，取决于她的秘示域先知可以将额外的一个法术加入她的已知法术列表。这些法术计在她已知法术数量之外，在提升等级时，先知无法替换这些法术。</value>
   </data>
   <data name="OracleMysteryFeatureName_info" xml:space="preserve">
     <value>秘示域</value>
   </data>
   <data name="OracleOrisonsFeatureDescription_info" xml:space="preserve">
-    <value>神使学习了许多祷念，或0级法术。这些法术像其他法术一样施法，但它们不消耗任何槽位，可以再次使用。</value>
+    <value>先知可以了解一些祷言，或 0 级法术。这些法术可以像其他法术一样施放，不过在施放后不会被消耗掉，可以再次使用。</value>
   </data>
   <data name="OracleProficienciesFeatureDescription_info" xml:space="preserve">
-    <value>神使精通所有简单武器、轻甲、中甲和护盾（除了塔盾）。一些神使的启示给予了额外的熟练度。</value>
+    <value>先知擅长使用所有的简单武器、轻型盔甲、中型盔甲和盾牌（不包括塔盾）。一部分先知的秘示域会带来额外的擅长。。</value>
   </data>
   <data name="OracleProficienciesFeatureName_info" xml:space="preserve">
-    <value>神使熟练</value>
+    <value>先知擅长</value>
   </data>
   <data name="OracleRevelationFeatureDescription_info" xml:space="preserve">
-    <value>在第一级，第三级，以及此后每四级（第七级，第十一级，以此类推），一个神使揭示了一个关于她秘法的新秘密，赋予了她力量和能力。神使必须从她秘法的启示列表中选择一个启示。如果一个启示被选择在一个更高的等级，神使将获得该启示基于她当前等级所授予的所有能力和奖励。
-除非另有说明，激活启示的力量是一种标准的行为；豁免这些启示的DC等于10＋1/2神使等级＋神使魅力加值。</value>
+    <value>在1级，3级以及之后每提升4个等级时（7级，11级，以此类推），先知可以从自己的秘示域中学习和领悟到新的力量与能力。先知只能选择她秘示域所给予的启示，如果一项启示具有随等级提升的效能，先知以她的现有等级来计算这些效果。
+除非特别提及，否则激活启示能力将是一个标准动作。豁免这些启示的DC等于10＋1/2先知等级＋先知魅力加值。</value>
   </data>
   <data name="OracleRevelationFeatureName_info" xml:space="preserve">
-    <value>神使启示</value>
+    <value>先知启示</value>
   </data>
   <data name="OrcBloodlineFeatureDescription_info" xml:space="preserve">
     <value>你祖先的愤怒在你体内燃烧，野蛮兽人的污秽血液在你的血管里流动。你的愤怒永远不会停歇，它会给你力量并驱使你寻求更大的力量。
-兽人血统的额外专长奖励：顽强，坚忍不拔，高等强韧，威逼，精通横冲直撞，猛力攻击，健壮，接触法术。</value>
+兽人血承额外专长：顽强、坚韧、顽石强韧、威逼、精通冲撞、猛力攻击、健壮、法术及远。</value>
   </data>
   <data name="OrcBloodlineFeatureName_info" xml:space="preserve">
-    <value>兽人血脉</value>
+    <value>兽人血承</value>
   </data>
   <data name="OrClassSkillName_info" xml:space="preserve">
     <value>或{0}</value>
@@ -793,13 +791,10 @@
     <value>进阶施法者</value>
   </data>
   <data name="RelaxAncientLorekeeper_info" xml:space="preserve">
-    <value>任何种族都可以选择职业 神使：远古博学者</value>
+    <value>任何种族都可以选择职业 先知：远古博学者</value>
   </data>
   <data name="RelaxTonguesCurse_info" xml:space="preserve">
-    <value>丧失沟通能力诅咒</value>
-  </data>
-  <data name="RelaxTonguesCurse_tip" xml:space="preserve">
-    <value>即除主角外的其他队伍成员的 知识：世界 技能不能低于1级，否则在战斗中不能被控制</value>
+    <value>消除饶舌诅咒的负面效果（即除主角外的其他队伍成员的 知识：世界 技能不能低于1级，否则在战斗中不受指挥）</value>
   </data>
   <data name="ReplacementFeatureDescription_info" xml:space="preserve">
     <value>达到{0}级后，在每{1}{2}等级之后（{3}，{4}，以此类推），{5}可以选择学习一个新的法术来代替他们已知的法术。实际上，{6}会丢弃旧的法术，以换取新的法术。新法术的等级必须与被交换的法术的等级相同。{7}在任何给定等级只能交换一个法术，并且必须选择是否在获得该等级已知的新法术的同时交换该法术。</value>
@@ -818,16 +813,16 @@
 超载：这是一个自由行动。</value>
   </data>
   <data name="SafeCuringFeatureDescription_info" xml:space="preserve">
-    <value>每当你施放一个法术来治疗目标的生命点伤害时，你在施法时不会引发敌人的借机攻击。</value>
+    <value>当你使用法术来治疗目标的生命值伤害时，你不会引起对施法的借机攻击。</value>
   </data>
   <data name="SafeCuringFeatureName_info" xml:space="preserve">
-    <value>可靠治愈</value>
+    <value>安全治疗</value>
   </data>
   <data name="ScionExtraArcanaFeatureName_info" xml:space="preserve">
     <value>额外奥术（{0}）</value>
   </data>
   <data name="ShowCustomPortraits_info" xml:space="preserve">
-    <value>创建角色时在肖像列表中显示自定义肖像（需要重新启动才能生效）</value>
+    <value>创建角色时在肖像列表中显示自定义肖像（需要重新启动游戏才能生效）</value>
   </data>
   <data name="SingleLineDescription_info" xml:space="preserve">
     <value>・{0}</value>
@@ -843,14 +838,14 @@
     <value>忽略神祗</value>
   </data>
   <data name="SpellBlendingFeatureDescription_info" xml:space="preserve">
-    <value>当秘法师选择这个秘法时，他们必须从法师的法术列表中选择一个可以施放的法术等级。他们将这个法术添加到法术书和被称为法术级别的法术列表中。他们可以用这种方式选择两个法术来添加，但是两个法术都必须至少比他们能施放的最高法术低一级。
-特殊：秘法师可以多次选择这个秘法。</value>
+    <value>选取此项奥能的魔战士可以选择一个法师法术列表中的法术，将其加入他的法术书和魔战士职业法术列表之中，此法术的法术等级必须在魔战士所能施展的法术等级之内。魔战士也可以选择以此方式添加两个法术，但这两个法术必须至少比他能施展的最高级法术低一级。。
+特殊：魔战士可以重复选取此奥能。</value>
   </data>
   <data name="SpellBlendingFeatureName_info" xml:space="preserve">
-    <value>法术融合</value>
+    <value>法术混合</value>
   </data>
   <data name="SpellPerfectionFeatureDescription_info" xml:space="preserve">
-    <value>选择一个你有能力施展的法术。每当你施法时，你可以在不影响其等级或施法时间的情况下对该法术应用任何一个元魔法专长，只要该法术的总修改等级不使用高于9级的法术槽。另外，如果你有其他的专长，允许你对这个法术的任何方面（如法术专攻、法术穿透、武器专攻【射线】等等）应用一个固定的数字加值，那么当应用到这个法术时，该专长所给予的加值会加倍。</value>
+    <value>选择一个你能够施放的法术，每当你施法时，你可以在不影响法术等级或施法时间的情况下对该法术应用任一你所掌握的超魔专长，只要该法术的所有调整加成后不超过9级。此外，如果你有其他专长允许你对这个法术的任何一个方面添加一个加值（如法术专攻、法术穿透、武器专攻【射线】等），那么这些专长在这个法术上的效果将加倍。</value>
   </data>
   <data name="SpellPerfectionFeatureName_info" xml:space="preserve">
     <value>完美法术</value>
@@ -862,7 +857,7 @@
     <value>法术弱点（{0}）</value>
   </data>
   <data name="SpiritBoostFeatureDescription_info" xml:space="preserve">
-    <value>每当你的治疗法术将一个目标治疗到它的最大生命值时，任何多余的生命值将作为临时生命值持续1轮（临时生命值最大值等于你的神使等级）。</value>
+    <value>每当你的治疗法术将一个目标治疗到它的最大生命值时，任何多余的生命值将作为临时生命值持续1轮（临时生命值最大值等于你的先知等级）。</value>
   </data>
   <data name="SpiritBoostFeatureName_info" xml:space="preserve">
     <value>精神振奋</value>
@@ -958,7 +953,7 @@
     <value>{0}（法术等级{1}）</value>
   </data>
   <data name="WishReason_error" xml:space="preserve">
-    <value>此级别法术的反对学派法术不可用。</value>
+    <value>此级别法术的对立学派法术不可用。</value>
   </data>
   <data name="WishSpellDescription_info" xml:space="preserve">
     <value>（施法后，使用能力栏选择你的{0}）{1}。
@@ -1005,7 +1000,7 @@
     <value>你擅长所有军用武器和重型盔甲。</value>
   </data>
   <data name="MysteryBattleSkillAtArmsName_info" xml:space="preserve">
-    <value>军械精通</value>
+    <value>军械娴熟</value>
   </data>
   <data name="MysteryBattleSurprisingChargeDescription_info" xml:space="preserve">
     <value>每天1次，你可以用一个直觉动作移动相当于你速度的距离。在7级和15级时，你每天可以使用本能力的次数再增加1次。</value>
@@ -1032,5 +1027,142 @@
   </data>
   <data name="MysteryBattleName_info" xml:space="preserve">
     <value>战斗秘示域</value>
+  </data>
+  <data name="RollWithItFeatureDescription_info" xml:space="preserve">
+    <value>你很擅长挨打，尽管你在大多数时候都是在声嘶力竭的大叫中飞出战场。
+好处：在遭受近战武器的打击时，你有时可以将一部分伤害转化为一个移动修正。那样会使你减轻13点伤害。</value>
+  </data>
+  <data name="RollWithItFeatureName_info" xml:space="preserve">
+    <value>逆来顺受</value>
+  </data>
+  <data name="SpellBlendingFeatureOneSpellSelection_info" xml:space="preserve">
+    <value>{0}（单个法术）</value>
+  </data>
+  <data name="SpellBlendingFeatureTwoSpellProgression_info" xml:space="preserve">
+    <value>{0}（两个法术）</value>
+  </data>
+  <data name="MetamagicFeatDazingSpellDescription_info" xml:space="preserve">
+    <value>你可以在一个伤害性法术上附上晕眩效果。当生物被“晕眩法术”调整的法术伤害时将会陷入晕眩，持续轮数相当于该法术的等级。如果法术需要进行豁免检定，那么目标若通过豁免将不会受到晕眩的影响。如果法术本身无需豁免检定，那么目标需要通过一次意志豁免来避免晕眩的影响。如果法术本身也造成晕眩，那么该超魔专长造成的晕眩持续时间将会累加到法术本身造成的晕眩时间上。
+等级提升：+3（晕眩法术耗用的法术位比实际法术等级高3级）</value>
+  </data>
+  <data name="MetamagicFeatDazingSpellName_info" xml:space="preserve">
+    <value>晕眩法术</value>
+  </data>
+  <data name="MetamagicFeatIntensifiedSpellDescription_info" xml:space="preserve">
+    <value>“法术加强”将会增加5个等级的最大伤害骰（例如从最大5d6，1d6/每施法者等级增加到最大10d6）。要想从这个专长受益，你必须有足够的施法者等级来达到这个最大值（如在前例中，你的施法者等级必须大于5才能使法术加强生效）。除了伤害之外，所有其他的法术要素都不会受到该专长影响，并且伤害不受施法者等级影响的法术也不会受到该专长影响。
+等级提升：+1（法术加强耗用的法术位比实际法术等级高1级）</value>
+  </data>
+  <data name="MetamagicFeatIntensifiedSpellName_info" xml:space="preserve">
+    <value>法术加强</value>
+  </data>
+  <data name="MetamagicFeatRimeSpellDescription_info" xml:space="preserve">
+    <value>霜冻如影随形般伴随着你的寒冷法术而来，将会在短时间内迟滞目标的行动。“冰霜法术”将会使遭受寒冷伤害的生物陷入纠缠状态，持续轮数相当于该法术的等级。
+该专长仅作用于带有寒冷描述符的法术。
+等级提升：+1（冰霜法术耗用的法术位比实际法术等级高1级）</value>
+  </data>
+  <data name="MetamagicFeatRimeSpellName_info" xml:space="preserve">
+    <value>冰霜法术</value>
+  </data>
+  <data name="MetamagicFeatTopplingSpellDescription_info" xml:space="preserve">
+    <value>你的力场法术造成的冲击足以将对手击倒在地。如果目标受到法术伤害，豁免失败，或者被你的力场法术所移动，你可以应用你的施法者等级加上施法能力调整值（如牧师的感知，法师的智力等）发起一次对于目标的绊摔检定。这并不会引发对方的借机攻击，即便检定失败，对方也无法反过来绊摔你或对你施予力场效果。
+该专长仅作用于带有力场描述符的法术。
+等级提升：+1（法术击倒耗用的法术位比实际法术等级高1级）
+</value>
+  </data>
+  <data name="MetamagicFeatTopplingSpellName_info" xml:space="preserve">
+    <value>法术击倒</value>
+  </data>
+  <data name="MetamagicElementalSpellSelectionDescription_info" xml:space="preserve">
+    <value>选择一项能量类型：酸蚀、寒冷、电击、火焰或力场。你会用该能量类型取代法术原来的能量类型。
+等级提升：+1（元素法术耗用的法术位比实际法术等级高1级）</value>
+  </data>
+  <data name="MetamagicElementalSpellSelectionName_info" xml:space="preserve">
+    <value>超魔（元素法术）</value>
+  </data>
+  <data name="MetamagicFeatElementalSpellDescription_info" xml:space="preserve">
+    <value>你能够改变法术的能量类型。你可以将法术的能量类型修改为{0}伤害。
+等级提升：+1</value>
+  </data>
+  <data name="MetamagicFeatElementalSpellName_info" xml:space="preserve">
+    <value>元素法术——{0}</value>
+  </data>
+  <data name="MetamagicFeatGeneralName_info" xml:space="preserve">
+    <value>超魔（{0}）</value>
+  </data>
+  <data name="MetamagicFeatPersistentSpellDescription_info" xml:space="preserve">
+    <value>当一个生物被持久法术瞄准或在其作用范围内，并且已成功豁免该法术，它必须再次对法术效果投豁免。如果第二次豁免失败，则会和第一次豁免失败时一样对法术效果照单全收。
+等级提升：+2（法术持久耗用的法术位比实际法术等级高2级）</value>
+  </data>
+  <data name="MetamagicFeatPersistentSpellName_info" xml:space="preserve">
+    <value>法术持久</value>
+  </data>
+  <data name="MetamagicFeatSelectiveSpellDescription_info" xml:space="preserve">
+    <value>当你使用法术择发施展一个即时生效的范围法术时，范围内的友善单位不会受到该法术的影响。
+等级提升：+1（法术择发耗用的法术位比实际法术等级高1级）</value>
+  </data>
+  <data name="MetamagicFeatSelectiveSpellName_info" xml:space="preserve">
+    <value>法术择发</value>
+  </data>
+  <data name="MetamagicRodName_info" xml:space="preserve">
+    <value>超魔权杖</value>
+  </data>
+  <data name="MetamagicRodsName_info" xml:space="preserve">
+    <value>超魔权杖</value>
+  </data>
+  <data name="MetamagicRodAdjectiveDazing_info" xml:space="preserve">
+    <value>晕眩</value>
+  </data>
+  <data name="MetamagicRodAdjectiveElementalAcid_info" xml:space="preserve">
+    <value>酸蚀元素</value>
+  </data>
+  <data name="MetamagicRodAdjectiveElementalCold_info" xml:space="preserve">
+    <value>寒冷元素</value>
+  </data>
+  <data name="MetamagicRodAdjectiveElementalElectricity_info" xml:space="preserve">
+    <value>电击元素</value>
+  </data>
+  <data name="MetamagicRodAdjectiveElementalFire_info" xml:space="preserve">
+    <value>火焰元素</value>
+  </data>
+  <data name="MetamagicRodAdjectiveIntensified_info" xml:space="preserve">
+    <value>加强</value>
+  </data>
+  <data name="MetamagicRodAdjectivePersistent_info" xml:space="preserve">
+    <value>持久</value>
+  </data>
+  <data name="MetamagicRodAdjectiveRime_info" xml:space="preserve">
+    <value>冰霜</value>
+  </data>
+  <data name="MetamagicRodAdjectiveSelectvie_info" xml:space="preserve">
+    <value>择发</value>
+  </data>
+  <data name="MetamagicRodAdjectiveToppling_info" xml:space="preserve">
+    <value>击倒</value>
+  </data>
+  <data name="MetamagicRodDisplayPrefixString_Greater" xml:space="preserve">
+    <value>高等</value>
+  </data>
+  <data name="MetamagicRodDisplayPrefixString_Lesser" xml:space="preserve">
+    <value>低等</value>
+  </data>
+  <data name="MetamagicRodDisplayPrefixString_Normal" xml:space="preserve">
+    <value>普通</value>
+  </data>
+  <data name="MetamagicRodSpellMaxLevel_3rd" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="MetamagicRodSpellMaxLevel_6th" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="MetamagicRodSpellMaxLevel_9th" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="MetamagicRodAdjectiveElementalForce_info" xml:space="preserve">
+    <value>力场元素</value>
+  </data>
+  <data name="MetamagicRodDescription_info" xml:space="preserve">
+    <value>这根权杖赋予持用者每天增效施放三次法术的能力，如同运用了专长“{0}”。
+{1}权杖可被用于不超过{2}级的法术。
+{3}：{4}</value>
   </data>
 </root>
