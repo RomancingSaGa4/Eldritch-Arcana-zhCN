@@ -335,13 +335,13 @@ namespace EldritchArcana
                 }
             }
 
-            GUILayout.Toggle(settings.EldritchKnightFix, RES.EldritchKnightFix_info, RES.EldritchKnightFix_tip, fixedWidth);
+            GUILayout.Toggle(settings.EldritchKnightFix, RES.EldritchKnightFix_info, fixedWidth);
             GUILayout.Toggle(settings.DrawbackForextraTraits, RES.DrawbackForextraTraits_info, fixedWidth);
             GUILayout.Toggle(settings.OracleHas3SkillPoints, RES.OracleHas3SkillPoints_info, fixedWidth);
             OracleClass.MaybeUpdateSkillPoints();
 
             GUILayout.Toggle(settings.RelaxAncientLorekeeper, RES.RelaxAncientLorekeeper_info, fixedWidth);
-            GUILayout.Toggle(settings.RelaxTonguesCurse, RES.RelaxTonguesCurse_info, RES.RelaxTonguesCurse_tip, fixedWidth);
+            GUILayout.Toggle(settings.RelaxTonguesCurse, RES.RelaxTonguesCurse_info, fixedWidth);
             GUILayout.Toggle(settings.ShowCustomPortraits, RES.ShowCustomPortraits_info, fixedWidth);
             GUILayout.Toggle(settings.CheatCustomTraits, RES.CheatCustomTraits_info, fixedWidth);
             GUILayout.Toggle(settings.HighDCl, RES.HighDCl_info, fixedWidth);

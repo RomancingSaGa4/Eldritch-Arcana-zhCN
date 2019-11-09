@@ -1,10 +1,10 @@
 {
     "Releases":
     [
-        {
-            "Id": "EldritchArcana",
-            "Version": "1.2.7.10",
-            "DownloadUrl": "https://github.com/legendaryhero1981/Eldritch-Arcana-DUMM/releases/download/v1.2.7.10/Eldritch-Arcana-DUMM.zip"
-        }
+      {
+        "Id": "EldritchArcana",
+        "Version": "1.2.9",
+        "DownloadUrl": "https://github.com/RomancingSaGa4/Eldritch-Arcana-zhCN/releases/tag/v1.2.7.10"
+      }
     ]
 }

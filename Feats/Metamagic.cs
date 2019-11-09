@@ -230,17 +230,15 @@ namespace EldritchArcana
 
         static void CreateMetamagicRods(BlueprintFeature feature, ModMetamagic modMetamagic, String friendlyName, BlueprintComponent logic)
         {
-            Dictionary<ModMetamagic, string> MetamagicRodAdjective = new Dictionary<ModMetamagic, string>{
-                {ModMetamagic.Dazing, RES.MetamagicRodAdjectiveDazing_info},
-                {ModMetamagic.ElementalAcid, RES.MetamagicRodAdjectiveElementalAcid_info},
-                {ModMetamagic.ElementalCold, RES.MetamagicRodAdjectiveElementalCold_info},
-                {ModMetamagic.ElementalElectricity, RES.MetamagicRodAdjectiveElementalElectricity_info},
-                {ModMetamagic.ElementalFire, RES.MetamagicRodAdjectiveElementalFire_info},
-                {ModMetamagic.Intensified, RES.MetamagicRodAdjectiveIntensified_info},
-                {ModMetamagic.Persistent, RES.MetamagicRodAdjectivePersistent_info},
-                {ModMetamagic.Rime, RES.MetamagicRodAdjectiveRime_info},
-                {ModMetamagic.Selective, RES.MetamagicRodAdjectiveSelectvie_info},
-                {ModMetamagic.Toppling, RES.MetamagicRodAdjectiveToppling_info}
+            // For loacalization
+            var ModMetamagicNames = new Dictionary<ModMetamagic, string>{
+                {ModMetamagic.Dazing, RES.NewMetamagicNamesDazing_info},
+                {ModMetamagic.Elemental, RES.NewMetamagicNamesElemental_info},
+                {ModMetamagic.Intensified, RES.NewMetamagicNamesIntensified_info},
+                {ModMetamagic.Persistent, RES.NewMetamagicNamesPersistent_info},
+                {ModMetamagic.Rime, RES.NewMetamagicNamesRime_info},
+                {ModMetamagic.Selective, RES.NewMetamagicNamesSelectvie_info},
+                {ModMetamagic.Toppling, RES.NewMetamagicNamesToppling_info}
             };
 
             // Create a metamagic rod by cloning an existing one.
@@ -254,7 +252,7 @@ namespace EldritchArcana
 
             for (int i = 0; i < 3; i++)
             {
-                var displayName = displayPrefix[i] + MetamagicRodAdjective[modMetamagic] + RES.MetamagicRodName_info;
+                var displayName = displayPrefix[i] + ModMetamagicNames[modMetamagic] + RES.MetamagicRodName_info;
                 var description = string.Format(RES.MetamagicRodDescription_info, 
                     displayPrefix[i], maxLevel[i], friendlyName, feature.Description);
 

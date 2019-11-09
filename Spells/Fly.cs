@@ -28,6 +28,8 @@ using Kingmaker.Utility;
 using UnityEngine;
 using static Kingmaker.UnitLogic.Commands.Base.UnitCommand;
 
+using RES = EldritchArcana.Properties.Resources;
+
 namespace EldritchArcana
 {
     static class FlySpells
@@ -40,7 +42,7 @@ namespace EldritchArcana
 
         internal static void Load()
         {
-            Main.SafeLoad(FixWingsImmunities, "Wings/flight provides immunity to ground spells/trip");
+            Main.SafeLoad(FixWingsImmunities, RES.FixWingsImmunities_info);
 
             // Note: Air Walk is generated first, because Fly and Overland Flight suppress it.
             // (they're generally better due to the speed boost).
@@ -123,12 +125,29 @@ namespace EldritchArcana
                 }
             }
 
+            // Wings' name for localization
+            var dictLocalWingName = new Dictionary<string, string>{
+                {"BuffWingsAngel", RES.FlyWingAngelName_info},                      // angel
+                {"BuffWingsDemon", RES.FlyWingDemonName_info},                      // demon
+                {"BuffWingsDevil", RES.FlyWingDevilName_info},                      // devil
+                {"BuffWingsDraconicBlack", RES.FlyWingDraconicBlackName_info},      // black dragon
+                {"BuffWingsDraconicBlue", RES.FlyWingDraconicBlueName_info},        // blue dragon
+                {"BuffWingsDraconicBrass", RES.FlyWingDraconicBrassName_info},      // brass
+                {"BuffWingsDraconicBronze", RES.FlyWingDraconicBronzeName_info},    // bronze
+                {"BuffWingsDraconicCopper", RES.FlyWingDraconicCopperName_info},    // copper
+                {"BuffWingsDraconicGold", RES.FlyWingDraconicGoldName_info},        // gold
+                {"BuffWingsDraconicGreen", RES.FlyWingDraconicGreenName_info},      // green
+                {"BuffWingsDraconicRed", RES.FlyWingDraconicRedName_info},          // red
+                {"BuffWingsDraconicSilver", RES.FlyWingDraconicSilverName_info},    // silver
+                {"BuffWingsDraconicWhite", RES.FlyWingDraconicWhiteName_info}       // white
+            };
+
             var variants = new List<FlySpellInfo>();
             foreach (var wing in wings)
             {
-                var name = wing.name.Replace("BuffWings", "");
-                if (name.StartsWith("Draconic")) name = $"{name.Replace("Draconic", "")} Dragon";
-                variants.Add(CreateFly(wing, name, wingToIcon[wing]));
+                // var name = wing.name.Replace("BuffWings", "");
+                // if (name.StartsWith("Draconic")) name = $"{name.Replace("Draconic", "")} Dragon";
+                variants.Add(CreateFly(wing, dictLocalWingName[wing.name], wingToIcon[wing]));
             }
 
             // Each Fly variant needs to suppress wing buffs, air walk, and previous fly buffs
@@ -199,10 +218,9 @@ namespace EldritchArcana
             // I'd also like to grant immunity to ground-based effects (e.g. Grease), as it doesn't really make sense
             // for a flying player to get caught in that. Not sure how to implement it though, short of listing the
             // spells explicitly (SpellDescriptor.Ground isn't used by spells like Grease).
-            var wingsDescription = "The wings grant a +3 dodge bonus to AC against melee attacks, immunity to difficult terrain, and a bonus on Mobility skill checks equal to 1/2 your caster level. This does not stack with other spells that grant wings or flight.";
-            var flySpell = Helpers.CreateAbility($"Fly{baseWingsBuff.name.Replace("Buff", "Spell")}", $"Fly — {wingsName}",
-                "The subject gains a pair of wings, and movement speed increases to 60 feet (or 40 feet if it wears medium or heavy armor, or if it carries a medium or heavy load).\n" +
-                wingsDescription,
+            var flySpell = Helpers.CreateAbility($"Fly{baseWingsBuff.name.Replace("Buff", "Spell")}",
+                String.Format(RES.FlySpellAbilityName_info, wingsName),
+                RES.FlySpellAbilityDescription_info + "\n" + RES.FlySpellWingsDescription_info,
                 Helpers.MergeIds("5e2cc60e071a44e09ada9cbb299d654d", baseWingsBuff.AssetGuid),
                 spellIcon, AbilityType.Spell,
                 CommandType.Standard, AbilityRange.Touch, Helpers.minutesPerLevelDuration, "",
@@ -236,9 +254,9 @@ namespace EldritchArcana
 
             var overlandFlight = library.CopyAndAdd(flySpell, $"OverlandFlight{baseWingsBuff.name.Replace("Buff", "")}",
                 "c4c313ae43694d36b5c62492e033c25b", baseWingsBuff.AssetGuid);
-            overlandFlight.SetNameDescriptionIcon($"Overland Flight — {wingsName}",
-                "This spell grants you a pair of wings, increasing your movement speed is increased to 40 feet (30 feet if wearing medium or heavy armor, or if carrying a medium or heavy load). This spell is designed for long-distance movement, and prevents fatigue for the duration of the spell.\n" +
-                wingsDescription, spellIcon);
+            overlandFlight.SetNameDescriptionIcon(String.Format(RES.OverlandFlightSpellAbilityName_info, wingsName),
+                RES.OverlandFlightSpellAbilityDescription_info + "\n" + RES.FlySpellWingsDescription_info,
+                spellIcon);
             overlandFlight.LocalizedDuration = Helpers.hourPerLevelDuration;
             overlandFlight.CanTargetFriends = false;
             overlandFlight.Range = AbilityRange.Personal;
@@ -283,8 +301,8 @@ namespace EldritchArcana
 
             airWalkBuff.FxOnStart = new PrefabLink();
 
-            var airWalk = Helpers.CreateAbility("AirWalk", "Air Walk",
-                "The subject can tread on air as if walking on solid ground. This grants a +3 dodge bonus to AC against melee attacks, immunity to difficult terrain, and +10 to Mobility skill checks. This does not stack with other spells that grant wings or flight.",
+            var airWalk = Helpers.CreateAbility("AirWalk", RES.AirWalkAbilityName_info,
+                RES.AirWalkAbilityDescription_info,
                 "dea7c9fd73aa40b89bb2a641e83d2b8e", featherStep.Icon, AbilityType.Spell,
                 CommandType.Standard, AbilityRange.Touch, Helpers.tenMinPerLevelDuration, "",
                 SpellSchool.Transmutation.CreateSpellComponent(),
@@ -313,8 +331,8 @@ namespace EldritchArcana
 
             // Note: duration is not divided, and area is 30ft, to match similar communal abilities in PF:K
             var communalWalk = library.CopyAndAdd(airWalk, "AirWalkCommunal", "591043d80ad54fe1af29d4cbf3141ca6");
-            communalWalk.SetNameDescriptionIcon("Air Walk, Communal",
-                $"The caster and all allies in a 30-feet radius gain the benefits of Air Walk:\n{airWalk.Description}",
+            communalWalk.SetNameDescriptionIcon(RES.AirWalkCommunalAbilityName_info,
+                String.Format(RES.AirWalkCommunalAbilityDescription_info, airWalk.Description),
                 airWalk.Icon);
             communalWalk.CanTargetFriends = false;
             communalWalk.Range = AbilityRange.Personal;

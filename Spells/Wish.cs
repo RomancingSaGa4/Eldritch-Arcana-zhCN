@@ -86,7 +86,7 @@ namespace EldritchArcana
         static void LoadWishFabricate()
         {
             var spell = Helpers.CreateAbility("Wishy", RES.WishFabricateSpells_info,
-                "",
+                RES.WishArcaneAbilityDescription_info,
                 "9e70b011f25453cba0fe9060dc93fc6c",
                 Helpers.GetIcon("6f1f99b38e471fa42b1b42f7549b4210"), // geniekind
                 AbilityType.Spell,
@@ -276,8 +276,8 @@ namespace EldritchArcana
 
         static void LoadLesserMiracle()
         {
-            var spell = Helpers.CreateAbility("LesserMiracle", RES.LesserMiracleAbilityName_info,
-                RES.LesserMiracleAbilityDescription_info,
+            var spell = Helpers.CreateAbility("LesserMiracle", RES.MiracleDivineAbilityName_info,
+                RES.MiracleAbilityDescription_info,
                 "be3eb41e7b4d484bbfaa83b83a98931c",
                 //"2ce3374c93de461b91596ef7e4e04c14",
                 Helpers.GetIcon("fafd77c6bfa85c04ba31fdc1c962c914"), // restoration greater

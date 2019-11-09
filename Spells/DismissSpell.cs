@@ -85,7 +85,7 @@ namespace EldritchArcana
             return false;
         }
 
-        public string GetReason() => $"No area effects to dismiss (only certain spells can be dismissed in combat).";
+        public string GetReason() => RES.DismissSpellNoAreaEffectsToDismiss_info;
 
         internal static void EndTargetAreaEffect(UnitEntityData caster, TargetWrapper target)
         {

@@ -132,7 +132,7 @@ namespace EldritchArcana
                 RES.DelayedBlastFireballAbilityDescription_info,
                 "dfe891561c4d48ed8235268b0e7692e7",
                 fireball.Icon, AbilityType.Spell, CommandType.Standard, fireball.Range,
-                "5 rounds or less; see text", fireball.LocalizedSavingThrow);
+                RES.DelayedBlastFireballDelayRoundsDescription_info, fireball.LocalizedSavingThrow);
             spell.SpellResistance = true;
 
             var delayIds = new String[] {
@@ -176,7 +176,7 @@ namespace EldritchArcana
             for (int delay = 1; delay <= 5; delay++)
             {
                 var delaySpell = library.CopyAndAdd(spell0, $"{spell.name}Delay{delay}", delayIds[delay]);
-                delaySpell.SetName($"{spell.Name} ({delay} rounds)");
+                delaySpell.SetName(String.Format(RES.DelaySpellName_info, spell.Name, delay));
                 delaySpell.SetComponents(
                     fireball.GetComponent<SpellComponent>(),
                     deliverProjectile,
@@ -331,10 +331,10 @@ namespace EldritchArcana
             //Log.Write(fx.GetType().ToString());
 
             buff.name = "EmergencyForceSphereBuff";
-            var description = RES.EmergencyForceSphereBuffDescription_info;
+            // var description = RES.EmergencyForceSphereBuffDescription_info;
             // TODO: figure out why buff icon did not show up immediately
             buff.SetNameDescriptionIcon(RES.EmergencyForceSphereSpells_info,
-                description,
+                RES.EmergencyForceSphereBuffDescription_info,
                 protectionFromSonic.Icon);
             library.AddAsset(buff, "2d61e248f56c47979c009b00451c45ac");
             //Log.Write(buff);
@@ -351,8 +351,8 @@ namespace EldritchArcana
             // TODO: Figure out how to hide this for personal spells.
             spell.LocalizedSavingThrow = Helpers.CreateString("Spell.SavingThrow.None", "None");
             spell.name = "EmergencyForceSphere";
-            spell.SetNameDescriptionIcon("Emergency Force Sphere",
-                description,
+            spell.SetNameDescriptionIcon(RES.EmergencyForceSphereSpells_info,
+                RES.EmergencyForceSphereBuffDescription_info,
                 protectionFromSonic.Icon);
             library.AddAsset(spell, "60908c0563da4c1fbec017980a34e5c5");
             var components = new List<BlueprintComponent>();

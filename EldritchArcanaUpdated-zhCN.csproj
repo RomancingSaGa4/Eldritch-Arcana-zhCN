@@ -29,20 +29,22 @@
   <ItemGroup>
     <Folder Include="resources\" />
   </ItemGroup>
- <ItemGroup>
-   <Compile Update="Properties\Resources.Designer.cs">
-     <DesignTime>True</DesignTime>
-     <AutoGen>True</AutoGen>
-     <DependentUpon>Resources.resx</DependentUpon>
-   </Compile>
- </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.zh-CN.resx" />
+    <EmbeddedResource Include="Properties\Resources.zh-CN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Update="Properties\Resources.resx">

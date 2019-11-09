@@ -89,6 +89,43 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 The subject can tread on air as if walking on solid ground. This grants a +3 dodge bonus to AC against melee attacks, immunity to difficult terrain, and +10 to Mobility skill checks. This does not stack with other spells that grant wings or flight. 的本地化字符串。
+        /// </summary>
+        internal static string AirWalkAbilityDescription_info {
+            get {
+                return ResourceManager.GetString("AirWalkAbilityDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Air Walk 的本地化字符串。
+        /// </summary>
+        internal static string AirWalkAbilityName_info {
+            get {
+                return ResourceManager.GetString("AirWalkAbilityName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 The caster and all allies in a 30-feet radius gain the benefits of Air Walk:
+        ///{0} 的本地化字符串。
+        /// </summary>
+        internal static string AirWalkCommunalAbilityDescription_info {
+            get {
+                return ResourceManager.GetString("AirWalkCommunalAbilityDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Air Walk, Communal 的本地化字符串。
+        /// </summary>
+        internal static string AirWalkCommunalAbilityName_info {
+            get {
+                return ResourceManager.GetString("AirWalkCommunalAbilityName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Any Lore/Knowledge Skill 的本地化字符串。
         /// </summary>
         internal static string AnyClassSkillName_info {
@@ -510,7 +547,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Enable Show alll traits,spells even custom and homebrew(if changed, requires restart for changes to show up) 的本地化字符串。
+        ///   查找类似 Enable Show all traits, spells even custom and homebrew(if changed, requires restart for changes to show up) 的本地化字符串。
         /// </summary>
         internal static string CheatCustomTraits_info {
             get {
@@ -601,7 +638,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 This spell functions like fireball, except that it is more powerful and can detonate up to 5 rounds after the spell is cast. The burst of flame deals 1d6 points of fire damage per caster level (maximum 20d6). The glowing bead created by delayed blast fireball can detonate immediately if you desire, or you can choose to delay the burst for as many as 5 rounds. You select the amount of delay upon completing the spell, and that time cannot change once it has been set unless someone touches the bead. If you cho [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///   查找类似 This spell functions like fireball, except that it is more powerful and can detonate up to 5 rounds after the spell is cast. The burst of flame deals 1d6 points of fire damage per caster level (maximum 20d6). The glowing bead created by delayed blast fireball can detonate immediately if you desire, or you can choose to delay the burst for as many as 5 rounds. You select the amount of delay upon completing the spell and that time cannot change thereafter. 的本地化字符串。
         /// </summary>
         internal static string DelayedBlastFireballAbilityDescription_info {
             get {
@@ -615,6 +652,24 @@ namespace EldritchArcana.Properties {
         internal static string DelayedBlastFireballAbilityName_info {
             get {
                 return ResourceManager.GetString("DelayedBlastFireballAbilityName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 5 rounds or less; see text 的本地化字符串。
+        /// </summary>
+        internal static string DelayedBlastFireballDelayRoundsDescription_info {
+            get {
+                return ResourceManager.GetString("DelayedBlastFireballDelayRoundsDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0} ({1} rounds) 的本地化字符串。
+        /// </summary>
+        internal static string DelaySpellName_info {
+            get {
+                return ResourceManager.GetString("DelaySpellName_info", resourceCulture);
             }
         }
         
@@ -699,6 +754,15 @@ namespace EldritchArcana.Properties {
         internal static string DismissAreaEffectAbilityName_info {
             get {
                 return ResourceManager.GetString("DismissAreaEffectAbilityName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 No area effects to dismiss (only certain spells can be dismissed in combat). 的本地化字符串。
+        /// </summary>
+        internal static string DismissSpellNoAreaEffectsToDismiss_info {
+            get {
+                return ResourceManager.GetString("DismissSpellNoAreaEffectsToDismiss_info", resourceCulture);
             }
         }
         
@@ -1130,11 +1194,164 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Wings/flight provides immunity to ground spells/trip 的本地化字符串。
+        /// </summary>
+        internal static string FixWingsImmunities_info {
+            get {
+                return ResourceManager.GetString("FixWingsImmunities_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 The subject gains a pair of wings, and movement speed increases to 60 feet (or 40 feet if it wears medium or heavy armor, or if it carries a medium or heavy load). 的本地化字符串。
+        /// </summary>
+        internal static string FlySpellAbilityDescription_info {
+            get {
+                return ResourceManager.GetString("FlySpellAbilityDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Fly — {0} 的本地化字符串。
+        /// </summary>
+        internal static string FlySpellAbilityName_info {
+            get {
+                return ResourceManager.GetString("FlySpellAbilityName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Fly and Air Walk spells 的本地化字符串。
         /// </summary>
         internal static string FlySpells_info {
             get {
                 return ResourceManager.GetString("FlySpells_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 The wings grant a +3 dodge bonus to AC against melee attacks, an immunity to ground based effects such as difficult terrain, and a bonus on Mobility skill checks equal to 1/2 your caster level. This does not stack with other spells that grant wings or flight. 的本地化字符串。
+        /// </summary>
+        internal static string FlySpellWingsDescription_info {
+            get {
+                return ResourceManager.GetString("FlySpellWingsDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Angel 的本地化字符串。
+        /// </summary>
+        internal static string FlyWingAngelName_info {
+            get {
+                return ResourceManager.GetString("FlyWingAngelName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Demon 的本地化字符串。
+        /// </summary>
+        internal static string FlyWingDemonName_info {
+            get {
+                return ResourceManager.GetString("FlyWingDemonName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Devil 的本地化字符串。
+        /// </summary>
+        internal static string FlyWingDevilName_info {
+            get {
+                return ResourceManager.GetString("FlyWingDevilName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Black Dragon 的本地化字符串。
+        /// </summary>
+        internal static string FlyWingDraconicBlackName_info {
+            get {
+                return ResourceManager.GetString("FlyWingDraconicBlackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Blue Dragon 的本地化字符串。
+        /// </summary>
+        internal static string FlyWingDraconicBlueName_info {
+            get {
+                return ResourceManager.GetString("FlyWingDraconicBlueName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Brass Dragon 的本地化字符串。
+        /// </summary>
+        internal static string FlyWingDraconicBrassName_info {
+            get {
+                return ResourceManager.GetString("FlyWingDraconicBrassName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Bronze Dragon 的本地化字符串。
+        /// </summary>
+        internal static string FlyWingDraconicBronzeName_info {
+            get {
+                return ResourceManager.GetString("FlyWingDraconicBronzeName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Copper Dragon 的本地化字符串。
+        /// </summary>
+        internal static string FlyWingDraconicCopperName_info {
+            get {
+                return ResourceManager.GetString("FlyWingDraconicCopperName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Gold Dragon 的本地化字符串。
+        /// </summary>
+        internal static string FlyWingDraconicGoldName_info {
+            get {
+                return ResourceManager.GetString("FlyWingDraconicGoldName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Green Dragon 的本地化字符串。
+        /// </summary>
+        internal static string FlyWingDraconicGreenName_info {
+            get {
+                return ResourceManager.GetString("FlyWingDraconicGreenName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Red Dragon 的本地化字符串。
+        /// </summary>
+        internal static string FlyWingDraconicRedName_info {
+            get {
+                return ResourceManager.GetString("FlyWingDraconicRedName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Silver Dragon 的本地化字符串。
+        /// </summary>
+        internal static string FlyWingDraconicSilverName_info {
+            get {
+                return ResourceManager.GetString("FlyWingDraconicSilverName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 White Dragon 的本地化字符串。
+        /// </summary>
+        internal static string FlyWingDraconicWhiteName_info {
+            get {
+                return ResourceManager.GetString("FlyWingDraconicWhiteName_info", resourceCulture);
             }
         }
         
@@ -1285,6 +1502,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 An incendiary cloud spell creates a cloud of roiling smoke shot through with white-hot embers. The smoke obscures all sight as a fog cloud does. In addition, the white-hot embers within the cloud deal 6d6 points of fire damage to everything within the cloud on your turn each round. All targets can make Reflex saves each round to take half damage.
+        ///As with a cloudkill spell, the smoke moves away from you at 10 feet per round. Figure out the smoke’s new spread each round based on its new point of origin, whic [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string IncendiaryCloudAbilityDescription_info {
+            get {
+                return ResourceManager.GetString("IncendiaryCloudAbilityDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Incendiary Cloud 的本地化字符串。
+        /// </summary>
+        internal static string IncendiaryCloudAbilityName_info {
+            get {
+                return ResourceManager.GetString("IncendiaryCloudAbilityName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Choose this to skip replacing a known spell this level. 的本地化字符串。
         /// </summary>
         internal static string KeepAllSpellsFeatureDescription_info {
@@ -1374,30 +1610,6 @@ namespace EldritchArcana.Properties {
         internal static string KnockSpells_info {
             get {
                 return ResourceManager.GetString("KnockSpells_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 You don&apos;t so much cast a miracle as request one. You state what you would like to have happen and request that your deity (or the power you pray to for spells) intercede.
-        ///A miracle can do any of the following things.
-        ///• Duplicate any cleric spell of 8th level or lower.
-        ///• Duplicate any other spell of 7th level or lower.
-        ///• Undo the harmful effects of certain spells, such as feeblemind or insanity.
-        ///• Have any effect whose power level is in line with the above effects.
-        ///Alternatively, a cleric can make a ve [字符串的其余部分被截断]&quot;; 的本地化字符串。
-        /// </summary>
-        internal static string LesserMiracleAbilityDescription_info {
-            get {
-                return ResourceManager.GetString("LesserMiracleAbilityDescription_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 (Divine) Miracle 的本地化字符串。
-        /// </summary>
-        internal static string LesserMiracleAbilityName_info {
-            get {
-                return ResourceManager.GetString("LesserMiracleAbilityName_info", resourceCulture);
             }
         }
         
@@ -1875,105 +2087,6 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Dazing  的本地化字符串。
-        /// </summary>
-        internal static string MetamagicRodAdjectiveDazing_info {
-            get {
-                return ResourceManager.GetString("MetamagicRodAdjectiveDazing_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Acid Elemental  的本地化字符串。
-        /// </summary>
-        internal static string MetamagicRodAdjectiveElementalAcid_info {
-            get {
-                return ResourceManager.GetString("MetamagicRodAdjectiveElementalAcid_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Cold Elemental  的本地化字符串。
-        /// </summary>
-        internal static string MetamagicRodAdjectiveElementalCold_info {
-            get {
-                return ResourceManager.GetString("MetamagicRodAdjectiveElementalCold_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Electricity Elemental  的本地化字符串。
-        /// </summary>
-        internal static string MetamagicRodAdjectiveElementalElectricity_info {
-            get {
-                return ResourceManager.GetString("MetamagicRodAdjectiveElementalElectricity_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Fire Elemental  的本地化字符串。
-        /// </summary>
-        internal static string MetamagicRodAdjectiveElementalFire_info {
-            get {
-                return ResourceManager.GetString("MetamagicRodAdjectiveElementalFire_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Force Elemental  的本地化字符串。
-        /// </summary>
-        internal static string MetamagicRodAdjectiveElementalForce_info {
-            get {
-                return ResourceManager.GetString("MetamagicRodAdjectiveElementalForce_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Intensified  的本地化字符串。
-        /// </summary>
-        internal static string MetamagicRodAdjectiveIntensified_info {
-            get {
-                return ResourceManager.GetString("MetamagicRodAdjectiveIntensified_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Persistent  的本地化字符串。
-        /// </summary>
-        internal static string MetamagicRodAdjectivePersistent_info {
-            get {
-                return ResourceManager.GetString("MetamagicRodAdjectivePersistent_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Rime  的本地化字符串。
-        /// </summary>
-        internal static string MetamagicRodAdjectiveRime_info {
-            get {
-                return ResourceManager.GetString("MetamagicRodAdjectiveRime_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Selectvie  的本地化字符串。
-        /// </summary>
-        internal static string MetamagicRodAdjectiveSelectvie_info {
-            get {
-                return ResourceManager.GetString("MetamagicRodAdjectiveSelectvie_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Toppling  的本地化字符串。
-        /// </summary>
-        internal static string MetamagicRodAdjectiveToppling_info {
-            get {
-                return ResourceManager.GetString("MetamagicRodAdjectiveToppling_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查找类似 The wielder can cast up to three spells per day that are affected as though the spells were augmented with the {0} feat.
         ///{1}rods can be used with spells of {2} level or lower.
         ///{3}: {4} 的本地化字符串。
@@ -2057,6 +2170,34 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Meteor swarm is a very powerful and spectacular spell that is similar to fireball in many aspects. When you cast it, four 2-foot-diameter spheres spring from your outstretched hand and streak in straight lines to the spots you select. The meteor spheres leave a fiery trail of sparks.
+        ///If you aim a sphere at a specific creature, you may make a ranged touch attack to strike the target with the meteor.Any creature struck by a sphere takes 2d6 points of bludgeoning damage(no save) and has to make a saving throw [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string MeteorSwarmAbilityDescription_info {
+            get {
+                return ResourceManager.GetString("MeteorSwarmAbilityDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Meteor Swarm 的本地化字符串。
+        /// </summary>
+        internal static string MeteorSwarmAbilityName_info {
+            get {
+                return ResourceManager.GetString("MeteorSwarmAbilityName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 None or Reflex half, see text 的本地化字符串。
+        /// </summary>
+        internal static string MeteorSwarmSavingThrowDescription_info {
+            get {
+                return ResourceManager.GetString("MeteorSwarmSavingThrowDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You don&apos;t so much cast a miracle as request one. You state what you would like to have happen and request that your deity (or the power you pray to for spells) intercede.
         ///A miracle can do any of the following things.
         ///• Duplicate any cleric spell of 8th level or lower.
@@ -2068,6 +2209,15 @@ namespace EldritchArcana.Properties {
         internal static string MiracleAbilityDescription_info {
             get {
                 return ResourceManager.GetString("MiracleAbilityDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 (Divine) Miracle 的本地化字符串。
+        /// </summary>
+        internal static string MiracleDivineAbilityName_info {
+            get {
+                return ResourceManager.GetString("MiracleDivineAbilityName_info", resourceCulture);
             }
         }
         
@@ -2191,7 +2341,8 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Resiliency 的本地化字符串。
+        ///   查找类似 You get Diehard as a bonus feat.
+        ///{0} 的本地化字符串。
         /// </summary>
         internal static string MysteryBattleResiliencyDescription_info {
             get {
@@ -2200,8 +2351,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 You get Diehard as a bonus feat.
-        ///{0} 的本地化字符串。
+        ///   查找类似 Resiliency 的本地化字符串。
         /// </summary>
         internal static string MysteryBattleResiliencyName_info {
             get {
@@ -2309,6 +2459,114 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Dazing  的本地化字符串。
+        /// </summary>
+        internal static string NewMetamagicNamesDazing_info {
+            get {
+                return ResourceManager.GetString("NewMetamagicNamesDazing_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Elemental  的本地化字符串。
+        /// </summary>
+        internal static string NewMetamagicNamesElemental_info {
+            get {
+                return ResourceManager.GetString("NewMetamagicNamesElemental_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Acid Elemental  的本地化字符串。
+        /// </summary>
+        internal static string NewMetamagicNamesElementalAcid_info {
+            get {
+                return ResourceManager.GetString("NewMetamagicNamesElementalAcid_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Cold Elemental  的本地化字符串。
+        /// </summary>
+        internal static string NewMetamagicNamesElementalCold_info {
+            get {
+                return ResourceManager.GetString("NewMetamagicNamesElementalCold_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Electricity Elemental  的本地化字符串。
+        /// </summary>
+        internal static string NewMetamagicNamesElementalElectricity_info {
+            get {
+                return ResourceManager.GetString("NewMetamagicNamesElementalElectricity_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Fire Elemental  的本地化字符串。
+        /// </summary>
+        internal static string NewMetamagicNamesElementalFire_info {
+            get {
+                return ResourceManager.GetString("NewMetamagicNamesElementalFire_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Force Elemental  的本地化字符串。
+        /// </summary>
+        internal static string NewMetamagicNamesElementalForce_info {
+            get {
+                return ResourceManager.GetString("NewMetamagicNamesElementalForce_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Intensified  的本地化字符串。
+        /// </summary>
+        internal static string NewMetamagicNamesIntensified_info {
+            get {
+                return ResourceManager.GetString("NewMetamagicNamesIntensified_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Persistent  的本地化字符串。
+        /// </summary>
+        internal static string NewMetamagicNamesPersistent_info {
+            get {
+                return ResourceManager.GetString("NewMetamagicNamesPersistent_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Rime  的本地化字符串。
+        /// </summary>
+        internal static string NewMetamagicNamesRime_info {
+            get {
+                return ResourceManager.GetString("NewMetamagicNamesRime_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Selectvie  的本地化字符串。
+        /// </summary>
+        internal static string NewMetamagicNamesSelectvie_info {
+            get {
+                return ResourceManager.GetString("NewMetamagicNamesSelectvie_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Toppling  的本地化字符串。
+        /// </summary>
+        internal static string NewMetamagicNamesToppling_info {
+            get {
+                return ResourceManager.GetString("NewMetamagicNamesToppling_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Select one Wizard opposition school; preparing spells of this school now only requires one spell slot of the appropriate level instead of two, and you no longer have the –4 Spellcraft penalty for crafting items from that school. 的本地化字符串。
         /// </summary>
         internal static string OppositionResearchFeatureDescription_info {
@@ -2368,6 +2626,24 @@ namespace EldritchArcana.Properties {
         internal static string OracleCureSpellProgressionName_info {
             get {
                 return ResourceManager.GetString("OracleCureSpellProgressionName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Each oracle is cursed, but this curse comes with a benefit as well as a hindrance.This choice is made at 1st level, and once made, it cannot be changed.The oracle’s curse cannot be removed or dispelled without the aid of a deity.An oracle’s curse is based on her oracle level plus one for every two levels or Hit Dice other than oracle.Each oracle must choose one of the following curses. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseSelectionDescription_info {
+            get {
+                return ResourceManager.GetString("OracleCurseSelectionDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Curse 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseSelectionName_info {
+            get {
+                return ResourceManager.GetString("OracleCurseSelectionName_info", resourceCulture);
             }
         }
         
@@ -2495,6 +2771,24 @@ namespace EldritchArcana.Properties {
         internal static string OrClassSkillName_info {
             get {
                 return ResourceManager.GetString("OrClassSkillName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 This spell grants you a pair of wings, increasing your movement speed is increased to 40 feet (30 feet if wearing medium or heavy armor, or if carrying a medium or heavy load). This spell is designed for long-distance movement, and prevents fatigue for the duration of the spell. 的本地化字符串。
+        /// </summary>
+        internal static string OverlandFlightSpellAbilityDescription_info {
+            get {
+                return ResourceManager.GetString("OverlandFlightSpellAbilityDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Overland Flight — {0} 的本地化字符串。
+        /// </summary>
+        internal static string OverlandFlightSpellAbilityName_info {
+            get {
+                return ResourceManager.GetString("OverlandFlightSpellAbilityName_info", resourceCulture);
             }
         }
         
@@ -2864,6 +3158,24 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Time stop is active for another unit, freezing apparent time for them. 的本地化字符串。
+        /// </summary>
+        internal static string TimeStopFreezeBuffDescription_info {
+            get {
+                return ResourceManager.GetString("TimeStopFreezeBuffDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Frozen in Time 的本地化字符串。
+        /// </summary>
+        internal static string TimeStopFreezeBuffName_info {
+            get {
+                return ResourceManager.GetString("TimeStopFreezeBuffName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Time Stop 的本地化字符串。
         /// </summary>
         internal static string TimeStopSpells_info {
@@ -2878,6 +3190,24 @@ namespace EldritchArcana.Properties {
         internal static string TrueResurrectionSpells_info {
             get {
                 return ResourceManager.GetString("TrueResurrectionSpells_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 An immobile, blazing curtain of shimmering violet fire springs into existence. One side of the wall, selected by you, sends forth waves of heat, dealing 2d4 points of fire damage to creatures within 10 feet and 1d4 points of fire damage to those past 10 feet but within 20 feet. The wall deals this damage when it appears, and to all creatures in the area on your turn each round. In addition, the wall deals 2d6 points of fire damage + 1 point of fire damage per caster level (maximum +20) to any creature passi [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string WallOfFireAbilityDescription_info {
+            get {
+                return ResourceManager.GetString("WallOfFireAbilityDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Wall of Fire 的本地化字符串。
+        /// </summary>
+        internal static string WallOfFireAbilityName_info {
+            get {
+                return ResourceManager.GetString("WallOfFireAbilityName_info", resourceCulture);
             }
         }
         
@@ -2923,25 +3253,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Wish for a permanent inherent bonus to {0}.
-        ///Two to five wish spells cast in immediate succession can grant a creature a +2 to +5 inherent bonus to an ability score (two wishes for a +2 inherent bonus, three wishes for a +3 inherent bonus, and so on). Inherent bonuses are instantaneous, so they cannot be dispelled. Note: An inherent bonus may not exceed +5 for a single ability score, and inherent bonuses to a particular ability score do not stack, so only the best one applies. 的本地化字符串。
-        /// </summary>
-        internal static string WishBuffDescription_info {
-            get {
-                return ResourceManager.GetString("WishBuffDescription_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查找类似 Arcane Wish lets you create nearly any type of effect as long as you provide 5 diamonds is high enough.
         ///• Duplicate any sorcerer/wizard spell of 6th level or lower, provided the spell does not belong to one of your opposition schools.
         ///• Duplicate any non-sorcerer/wizard spell of 5th level or lower, provided the spell does not belong to one of your opposition schools.
         ///• Duplicate any sorcerer/wizard spell of 5th level or lower, even if it belongs to one of your opposition schools.
         ///• Duplicate any non-sor [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
-        internal static string WishFabricateAbilityDescription_info {
+        internal static string WishArcaneAbilityDescription_info {
             get {
-                return ResourceManager.GetString("WishFabricateAbilityDescription_info", resourceCulture);
+                return ResourceManager.GetString("WishArcaneAbilityDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Wish for a permanent inherent bonus to {0}.
+        ///Two to five wish spells cast in immediate succession can grant a creature a +2 to +5 inherent bonus to an ability score (two wishes for a +2 inherent bonus, three wishes for a +3 inherent bonus, and so on). Inherent bonuses are instantaneous, so they cannot be dispelled. Note: An inherent bonus may not exceed +5 for a single ability score, and inherent bonuses to a particular ability score do not stack, so only the best one applies. 的本地化字符串。
+        /// </summary>
+        internal static string WishBuffDescription_info {
+            get {
+                return ResourceManager.GetString("WishBuffDescription_info", resourceCulture);
             }
         }
         

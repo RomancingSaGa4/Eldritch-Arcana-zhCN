@@ -155,15 +155,27 @@ namespace EldritchArcana
         static BlueprintFeature CreateMagusArcanaMetamagic(BlueprintFeature metamagicFeat, int requiredLevel)
         {
             var metamagic = metamagicFeat.GetComponent<AddMetamagicFeat>().Metamagic;
-            var name = metamagic.ToString();
-            name += name.EndsWith("e") ? "d" : "ed";
-            var feat = metamagic == Metamagic.Quicken ? Helpers.CreateFeature($"Magus{name}Magic", string.Format(RES.MagusMagicFeatureName_info, name),
-                    RES.MagusMagicFeatureDescription_info + RES.MagusMagicLevelFeatureDescription_info,
+            // For localization
+            var ModMetamagicNames = new Dictionary<ModMetamagic, string>{
+                    {ModMetamagic.Dazing, RES.NewMetamagicNamesDazing_info},
+                    {ModMetamagic.Elemental, RES.NewMetamagicNamesElemental_info},
+                    {ModMetamagic.Intensified, RES.NewMetamagicNamesIntensified_info},
+                    {ModMetamagic.Persistent, RES.NewMetamagicNamesPersistent_info},
+                    {ModMetamagic.Rime, RES.NewMetamagicNamesRime_info},
+                    {ModMetamagic.Selective, RES.NewMetamagicNamesSelectvie_info},
+                    {ModMetamagic.Toppling, RES.NewMetamagicNamesToppling_info}
+                };
+            String metamagicName = LocalizedTexts.Instance.MetamagicNames.Contains(metamagic) ?
+                LocalizedTexts.Instance.MetamagicNames.GetText(metamagic) : ModMetamagicNames[(ModMetamagic)metamagic];
+
+            // metamagicName += metamagicName.EndsWith("e") ? "d" : "ed";
+            var feat = metamagic == Metamagic.Quicken ? Helpers.CreateFeature($"Magus{metamagicName}Magic", string.Format(RES.MagusMagicFeatureName_info, metamagicName),
+                    RES.MagusMagicFeatureDescription_info + "\n" + RES.MagusMagicLevelFeatureDescription_info,
                 Helpers.MergeIds(metamagicFeat.AssetGuid, "65768d69b6b84954b3d6a1d1dc265cf8"),
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/extra_arcana.png"),//metamagicFeat.Icon,
                 FeatureGroup.MagusArcana)
-                : Helpers.CreateFeature($"Magus{name}Magic", string.Format(RES.MagusMagicFeatureName_info, name),
-                    RES.MagusMagicFeatureDescription_info + RES.MagusMagicCastTimeLevelFeatureDescription_info,
+                : Helpers.CreateFeature($"Magus{metamagicName}Magic", string.Format(RES.MagusMagicFeatureName_info, metamagicName),
+                    RES.MagusMagicFeatureDescription_info + "\n" + RES.MagusMagicCastTimeLevelFeatureDescription_info,
                     Helpers.MergeIds(metamagicFeat.AssetGuid, "65768d69b6b84954b3d6a1d1dc265cf8"),
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/extra_arcana.png"),//metamagicFeat.Icon,
                     FeatureGroup.MagusArcana);

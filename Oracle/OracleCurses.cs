@@ -36,6 +36,8 @@ using Kingmaker.Utility;
 using Kingmaker.Visual.Sound;
 using Newtonsoft.Json;
 
+using RES = EldritchArcana.Properties.Resources;
+
 namespace EldritchArcana
 {
     static class OracleCurses

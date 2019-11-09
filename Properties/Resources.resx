@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -247,7 +247,7 @@ You can use this ability a number of times per day equal to 1+your Charisma modi
     <value>Channel Energy</value>
   </data>
   <data name="CheatCustomTraits_info" xml:space="preserve">
-    <value>Enable Show alll traits,spells even custom and homebrew(if changed, requires restart for changes to show up)</value>
+    <value>Enable Show all traits, spells even custom and homebrew(if changed, requires restart for changes to show up)</value>
   </data>
   <data name="ChooseFavoredClassLocalized_info" xml:space="preserve">
     <value>Choose Favored Class Bonus</value>
@@ -278,7 +278,7 @@ Choices for each bloodline:</value>
     <value>Delay Affliction</value>
   </data>
   <data name="DelayedBlastFireballAbilityDescription_info" xml:space="preserve">
-    <value>This spell functions like fireball, except that it is more powerful and can detonate up to 5 rounds after the spell is cast. The burst of flame deals 1d6 points of fire damage per caster level (maximum 20d6). The glowing bead created by delayed blast fireball can detonate immediately if you desire, or you can choose to delay the burst for as many as 5 rounds. You select the amount of delay upon completing the spell, and that time cannot change once it has been set unless someone touches the bead. If you choose a delay, the glowing bead sits at its destination until it detonates. A creature can pick up and hurl the bead as a thrown weapon (range increment 10 feet). If a creature handles and moves the bead within 1 round of its detonation, there is a 25% chance that the bead detonates while being handled.</value>
+    <value>This spell functions like fireball, except that it is more powerful and can detonate up to 5 rounds after the spell is cast. The burst of flame deals 1d6 points of fire damage per caster level (maximum 20d6). The glowing bead created by delayed blast fireball can detonate immediately if you desire, or you can choose to delay the burst for as many as 5 rounds. You select the amount of delay upon completing the spell and that time cannot change thereafter.</value>
   </data>
   <data name="DelayedBlastFireballAbilityName_info" xml:space="preserve">
     <value>Delayed Blast Fireball</value>
@@ -551,21 +551,7 @@ Difficulty Class (DC): {3}.
   <data name="KnockSpells_info" xml:space="preserve">
     <value>Knock</value>
   </data>
-  <data name="LesserMiracleAbilityDescription_info" xml:space="preserve">
-    <value>You don't so much cast a miracle as request one. You state what you would like to have happen and request that your deity (or the power you pray to for spells) intercede.
-A miracle can do any of the following things.
-• Duplicate any cleric spell of 8th level or lower.
-• Duplicate any other spell of 7th level or lower.
-• Undo the harmful effects of certain spells, such as feeblemind or insanity.
-• Have any effect whose power level is in line with the above effects.
-Alternatively, a cleric can make a very powerful request. Casting such a miracle costs the cleric 25,000 gp in powdered diamond because of the powerful divine energies involved. Examples of especially powerful miracles of this sort could include the following:
-• Swinging the tide of a battle in your favor by raising fallen allies to continue fighting.
-• Moving you and your allies, with all your and their gear, from one plane to a specific locale through planar barriers with no chance of error.
-• Protecting a city from an earthquake, volcanic eruption, flood, or other major natural disaster.
-In any event, a request that is out of line with the deity's (or alignment's) nature is refused.
-A duplicated spell allows saving throws and spell resistance as normal, but the save DCs are as for a 9th-level spell.When a miracle spell duplicates a spell with a material component that costs more than 100 gp, you must provide that component.</value>
-  </data>
-  <data name="LesserMiracleAbilityName_info" xml:space="preserve">
+  <data name="MiracleDivineAbilityName_info" xml:space="preserve">
     <value>(Divine) Miracle</value>
   </data>
   <data name="LesserMiracleSpells_info" xml:space="preserve">
@@ -726,11 +712,11 @@ A duplicated spell allows saving throws and spell resistance as normal, but the 
     <value>Maneuver Mastery</value>
   </data>
   <data name="MysteryBattleResiliencyDescription_info" xml:space="preserve">
-    <value>Resiliency</value>
-  </data>
-  <data name="MysteryBattleResiliencyName_info" xml:space="preserve">
     <value>You get Diehard as a bonus feat.
 {0}</value>
+  </data>
+  <data name="MysteryBattleResiliencyName_info" xml:space="preserve">
+    <value>Resiliency</value>
   </data>
   <data name="MysteryBattleRevelationName_info" xml:space="preserve">
     <value>Battle Revelation</value>
@@ -840,7 +826,7 @@ Bonus Feats of the Orc Bloodline: Diehard, Endurance, Great Fortitude, Intimidat
   </data>
   <data name="ResurrectionSpellDescription_info" xml:space="preserve">
     <value>This spell functions like raise dead, except that you can resurrect a creature that has been dead for as long as 10 years per caster level.This spell can even bring back creatures whose bodies have been destroyed, provided that you unambiguously identify the deceased in some fashion(reciting the deceased's time and place of birth or death is the most common method).Upon completion of the spell, the creature is immediately restored to full hit points, vigor, and health, with no negative levels(or loss of * Constitution points) and all of the prepared spells possessed by the creature when it died.You can revive someone killed by a death effect or someone who has been turned into an undead creature and then destroyed.This spell can also resurrect elementals or outsiders, but it can't resurrect constructs or undead creatures.Even true resurrection can't restore to life a creature who has died of old age.
-Befit over Ressurection: this is a free action.</value>
+Benefit over Ressurection: this is a free action.</value>
   </data>
   <data name="SafeCuringFeatureDescription_info" xml:space="preserve">
     <value>Whenever you cast a spell that cures the target of hit point damage, you do not provoke attacks of opportunity for spellcasting.</value>
@@ -965,7 +951,7 @@ When a wish duplicates a spell with a material component that costs more than 10
     <value>Wish for a permanent inherent bonus to {0}.
 Two to five wish spells cast in immediate succession can grant a creature a +2 to +5 inherent bonus to an ability score (two wishes for a +2 inherent bonus, three wishes for a +3 inherent bonus, and so on). Inherent bonuses are instantaneous, so they cannot be dispelled. Note: An inherent bonus may not exceed +5 for a single ability score, and inherent bonuses to a particular ability score do not stack, so only the best one applies.</value>
   </data>
-  <data name="WishFabricateAbilityDescription_info" xml:space="preserve">
+  <data name="WishArcaneAbilityDescription_info" xml:space="preserve">
     <value>Arcane Wish lets you create nearly any type of effect as long as you provide 5 diamonds is high enough.
 • Duplicate any sorcerer/wizard spell of 6th level or lower, provided the spell does not belong to one of your opposition schools.
 • Duplicate any non-sorcerer/wizard spell of 5th level or lower, provided the spell does not belong to one of your opposition schools.
@@ -1104,34 +1090,37 @@ Level Increase: +1</value>
   <data name="MetamagicFeatTopplingSpellName_info" xml:space="preserve">
     <value>Toppling Spell</value>
   </data>
-  <data name="MetamagicRodAdjectiveDazing_info" xml:space="preserve">
+  <data name="NewMetamagicNamesDazing_info" xml:space="preserve">
     <value>Dazing </value>
   </data>
-  <data name="MetamagicRodAdjectiveElementalAcid_info" xml:space="preserve">
+  <data name="NewMetamagicNamesElemental_info" xml:space="preserve">
+    <value>Elemental </value>
+  </data>
+  <data name="NewMetamagicNamesElementalAcid_info" xml:space="preserve">
     <value>Acid Elemental </value>
   </data>
-  <data name="MetamagicRodAdjectiveElementalCold_info" xml:space="preserve">
+  <data name="NewMetamagicNamesElementalCold_info" xml:space="preserve">
     <value>Cold Elemental </value>
   </data>
-  <data name="MetamagicRodAdjectiveElementalElectricity_info" xml:space="preserve">
+  <data name="NewMetamagicNamesElementalElectricity_info" xml:space="preserve">
     <value>Electricity Elemental </value>
   </data>
-  <data name="MetamagicRodAdjectiveElementalFire_info" xml:space="preserve">
+  <data name="NewMetamagicNamesElementalFire_info" xml:space="preserve">
     <value>Fire Elemental </value>
   </data>
-  <data name="MetamagicRodAdjectiveIntensified_info" xml:space="preserve">
+  <data name="NewMetamagicNamesIntensified_info" xml:space="preserve">
     <value>Intensified </value>
   </data>
-  <data name="MetamagicRodAdjectivePersistent_info" xml:space="preserve">
+  <data name="NewMetamagicNamesPersistent_info" xml:space="preserve">
     <value>Persistent </value>
   </data>
-  <data name="MetamagicRodAdjectiveRime_info" xml:space="preserve">
+  <data name="NewMetamagicNamesRime_info" xml:space="preserve">
     <value>Rime </value>
   </data>
-  <data name="MetamagicRodAdjectiveSelectvie_info" xml:space="preserve">
+  <data name="NewMetamagicNamesSelectvie_info" xml:space="preserve">
     <value>Selectvie </value>
   </data>
-  <data name="MetamagicRodAdjectiveToppling_info" xml:space="preserve">
+  <data name="NewMetamagicNamesToppling_info" xml:space="preserve">
     <value>Toppling </value>
   </data>
   <data name="MetamagicRodDisplayPrefixString_Greater" xml:space="preserve">
@@ -1150,15 +1139,15 @@ Level Increase: +1</value>
     <value>Metamagic rods</value>
   </data>
   <data name="MetamagicRodSpellMaxLevel_3rd" xml:space="preserve">
-    <value>3rd</value>
+    <value>3rd </value>
   </data>
   <data name="MetamagicRodSpellMaxLevel_6th" xml:space="preserve">
-    <value>6th</value>
+    <value>6th </value>
   </data>
   <data name="MetamagicRodSpellMaxLevel_9th" xml:space="preserve">
-    <value>9th</value>
+    <value>9th </value>
   </data>
-  <data name="MetamagicRodAdjectiveElementalForce_info" xml:space="preserve">
+  <data name="NewMetamagicNamesElementalForce_info" xml:space="preserve">
     <value>Force Elemental </value>
   </data>
   <data name="MetamagicRodDescription_info" xml:space="preserve">
@@ -1191,5 +1180,122 @@ This skill also makes savants quite valuable to adventuring parties, both in the
   </data>
   <data name="ArcaneSavantName_info" xml:space="preserve">
     <value>Arcane Savant</value>
+  </data>
+  <data name="TimeStopFreezeBuffDescription_info" xml:space="preserve">
+    <value>Time stop is active for another unit, freezing apparent time for them.</value>
+  </data>
+  <data name="TimeStopFreezeBuffName_info" xml:space="preserve">
+    <value>Frozen in Time</value>
+  </data>
+  <data name="DelayedBlastFireballDelayRoundsDescription_info" xml:space="preserve">
+    <value>5 rounds or less; see text</value>
+  </data>
+  <data name="DelaySpellName_info" xml:space="preserve">
+    <value>{0} ({1} rounds)</value>
+  </data>
+  <data name="IncendiaryCloudAbilityDescription_info" xml:space="preserve">
+    <value>An incendiary cloud spell creates a cloud of roiling smoke shot through with white-hot embers. The smoke obscures all sight as a fog cloud does. In addition, the white-hot embers within the cloud deal 6d6 points of fire damage to everything within the cloud on your turn each round. All targets can make Reflex saves each round to take half damage.
+As with a cloudkill spell, the smoke moves away from you at 10 feet per round. Figure out the smoke’s new spread each round based on its new point of origin, which is 10 feet farther away from where you were when you cast the spell. By concentrating, you can make the cloud move as much as 60 feet each round.Any portion of the cloud that would extend beyond your maximum range dissipates harmlessly, reducing the remainder’s spread thereafter.
+As with fog cloud, wind disperses the smoke, and the spell can’t be cast underwater.</value>
+  </data>
+  <data name="IncendiaryCloudAbilityName_info" xml:space="preserve">
+    <value>Incendiary Cloud</value>
+  </data>
+  <data name="MeteorSwarmAbilityDescription_info" xml:space="preserve">
+    <value>Meteor swarm is a very powerful and spectacular spell that is similar to fireball in many aspects. When you cast it, four 2-foot-diameter spheres spring from your outstretched hand and streak in straight lines to the spots you select. The meteor spheres leave a fiery trail of sparks.
+If you aim a sphere at a specific creature, you may make a ranged touch attack to strike the target with the meteor.Any creature struck by a sphere takes 2d6 points of bludgeoning damage(no save) and has to make a saving throw against +4 DC for the sphere’s fire damage(see below).If a targeted sphere misses its target, it simply explodes at the nearest corner of the target’s space. You may aim more than one sphere at the same target.
+Once a sphere reaches its destination, it explodes in a 40-foot-radius spread, dealing 6d6 points of fire damage to each creature in the area.If a creature is within the area of more than one sphere, it must save separately against each.Despite stemming from separate spheres, all of the fire damage is added together after the saves have been made, and fire resistance is applied only once.</value>
+  </data>
+  <data name="MeteorSwarmAbilityName_info" xml:space="preserve">
+    <value>Meteor Swarm</value>
+  </data>
+  <data name="MeteorSwarmSavingThrowDescription_info" xml:space="preserve">
+    <value>None or Reflex half, see text</value>
+  </data>
+  <data name="OracleCurseSelectionDescription_info" xml:space="preserve">
+    <value>Each oracle is cursed, but this curse comes with a benefit as well as a hindrance.This choice is made at 1st level, and once made, it cannot be changed.The oracle’s curse cannot be removed or dispelled without the aid of a deity.An oracle’s curse is based on her oracle level plus one for every two levels or Hit Dice other than oracle.Each oracle must choose one of the following curses.</value>
+  </data>
+  <data name="OracleCurseSelectionName_info" xml:space="preserve">
+    <value>Curse</value>
+  </data>
+  <data name="WallOfFireAbilityDescription_info" xml:space="preserve">
+    <value>An immobile, blazing curtain of shimmering violet fire springs into existence. One side of the wall, selected by you, sends forth waves of heat, dealing 2d4 points of fire damage to creatures within 10 feet and 1d4 points of fire damage to those past 10 feet but within 20 feet. The wall deals this damage when it appears, and to all creatures in the area on your turn each round. In addition, the wall deals 2d6 points of fire damage + 1 point of fire damage per caster level (maximum +20) to any creature passing through it. The wall deals double damage to undead creatures.
+If you evoke the wall so that it appears where creatures are, each creature takes damage as if passing through the wall. If any 5-foot length of wall takes 20 points or more of cold damage in 1 round, that length goes away. (Do not divide cold damage by 2, as normal for objects.)</value>
+  </data>
+  <data name="WallOfFireAbilityName_info" xml:space="preserve">
+    <value>Wall of Fire</value>
+  </data>
+  <data name="DismissSpellNoAreaEffectsToDismiss_info" xml:space="preserve">
+    <value>No area effects to dismiss (only certain spells can be dismissed in combat).</value>
+  </data>
+  <data name="AirWalkAbilityDescription_info" xml:space="preserve">
+    <value>The subject can tread on air as if walking on solid ground. This grants a +3 dodge bonus to AC against melee attacks, immunity to difficult terrain, and +10 to Mobility skill checks. This does not stack with other spells that grant wings or flight.</value>
+  </data>
+  <data name="AirWalkAbilityName_info" xml:space="preserve">
+    <value>Air Walk</value>
+  </data>
+  <data name="AirWalkCommunalAbilityDescription_info" xml:space="preserve">
+    <value>The caster and all allies in a 30-feet radius gain the benefits of Air Walk:
+{0}</value>
+  </data>
+  <data name="AirWalkCommunalAbilityName_info" xml:space="preserve">
+    <value>Air Walk, Communal</value>
+  </data>
+  <data name="FixWingsImmunities_info" xml:space="preserve">
+    <value>Wings/flight provides immunity to ground spells/trip</value>
+  </data>
+  <data name="FlySpellAbilityDescription_info" xml:space="preserve">
+    <value>The subject gains a pair of wings, and movement speed increases to 60 feet (or 40 feet if it wears medium or heavy armor, or if it carries a medium or heavy load).</value>
+  </data>
+  <data name="FlySpellAbilityName_info" xml:space="preserve">
+    <value>Fly — {0}</value>
+  </data>
+  <data name="FlySpellWingsDescription_info" xml:space="preserve">
+    <value>The wings grant a +3 dodge bonus to AC against melee attacks, an immunity to ground based effects such as difficult terrain, and a bonus on Mobility skill checks equal to 1/2 your caster level. This does not stack with other spells that grant wings or flight.</value>
+  </data>
+  <data name="FlyWingAngelName_info" xml:space="preserve">
+    <value>Angel</value>
+  </data>
+  <data name="FlyWingDemonName_info" xml:space="preserve">
+    <value>Demon</value>
+  </data>
+  <data name="FlyWingDevilName_info" xml:space="preserve">
+    <value>Devil</value>
+  </data>
+  <data name="FlyWingDraconicBlackName_info" xml:space="preserve">
+    <value>Black Dragon</value>
+  </data>
+  <data name="FlyWingDraconicBlueName_info" xml:space="preserve">
+    <value>Blue Dragon</value>
+  </data>
+  <data name="FlyWingDraconicBrassName_info" xml:space="preserve">
+    <value>Brass Dragon</value>
+  </data>
+  <data name="FlyWingDraconicBronzeName_info" xml:space="preserve">
+    <value>Bronze Dragon</value>
+  </data>
+  <data name="FlyWingDraconicCopperName_info" xml:space="preserve">
+    <value>Copper Dragon</value>
+  </data>
+  <data name="FlyWingDraconicGoldName_info" xml:space="preserve">
+    <value>Gold Dragon</value>
+  </data>
+  <data name="FlyWingDraconicGreenName_info" xml:space="preserve">
+    <value>Green Dragon</value>
+  </data>
+  <data name="FlyWingDraconicRedName_info" xml:space="preserve">
+    <value>Red Dragon</value>
+  </data>
+  <data name="FlyWingDraconicSilverName_info" xml:space="preserve">
+    <value>Silver Dragon</value>
+  </data>
+  <data name="FlyWingDraconicWhiteName_info" xml:space="preserve">
+    <value>White Dragon</value>
+  </data>
+  <data name="OverlandFlightSpellAbilityDescription_info" xml:space="preserve">
+    <value>This spell grants you a pair of wings, increasing your movement speed is increased to 40 feet (30 feet if wearing medium or heavy armor, or if carrying a medium or heavy load). This spell is designed for long-distance movement, and prevents fatigue for the duration of the spell.</value>
+  </data>
+  <data name="OverlandFlightSpellAbilityName_info" xml:space="preserve">
+    <value>Overland Flight — {0}</value>
   </data>
 </root>

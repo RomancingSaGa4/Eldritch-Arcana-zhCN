@@ -2,9 +2,9 @@
     "Id": "EldritchArcana",
     "DisplayName": "精深奥法",
     "Author": "Elmindra_joostjasper",
-    "Version": "1.2.7.11",
+    "Version": "1.2.9",
     "ManagerVersion": "0.21.2",
     "EntryMethod": "EldritchArcana.Main.Load",
-    "HomePage": "https://github.com/RomancingSugar/Eldritch-Arcana-zhCN",
-    "Repository": "https://raw.githubusercontent.com/RomancingSugar/Eldritch-Arcana-zhCN/master/Repository.json"
+    "HomePage": "https://github.com/RomancingSaGa4/Eldritch-Arcana-zhCN",
+    "Repository": "https://raw.githubusercontent.com/RomancingSaGa4/Eldritch-Arcana-zhCN/master/Repository.json"
 }
