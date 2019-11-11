@@ -32,7 +32,7 @@ namespace EldritchArcana
     static class EldritchHeritage
     {
         static LibraryScriptableObject library => Main.library;
-        static BlueprintFeatureSelection bloodlineSelection => Helpers.bloodlineSelection;
+        static BlueprintFeatureSelection BloodlineSelection => Helpers.bloodlineSelection;
 
         static BlueprintFeatureSelection heritageSelection;
 
@@ -91,12 +91,13 @@ namespace EldritchArcana
             var heritageFeats = new List<BlueprintFeature> { undoChoice };
             var improvedHeritageFeats = new List<BlueprintFeature> { undoChoice };
             var greaterHeritageFeats = new List<BlueprintFeature> { undoChoice };
-            var featDescription = new StringBuilder(heritageSelection.Description)
-                .Append($"\n{bloodlineSelection.Name} — {Helpers.skillFocusFeat.Name} prerequisites:");
+            var featDescription = new StringBuilder(heritageSelection.Description).Append(
+                String.Format(RES.EldritchHeritagePrerequisitesDescription_info, Helpers.skillFocusFeat.Name));
 
-            bool seenDraconic = false;
-            bool seenElemental = false;
-            foreach (var bloodline in bloodlineSelection.AllFeatures.Cast<BlueprintProgression>())
+            HashSet<String> DescribeItemsSet = new HashSet<string> { };
+            // bool seenDraconic = false;
+            // bool seenElemental = false;
+            foreach (var bloodline in BloodlineSelection.AllFeatures.Cast<BlueprintProgression>())
             {
                 // Create Eldritch Heritage (level 1 power, Prereq: level 3+, Cha 13+, skill focus bloodline skill)
                 String classSkillName;
@@ -105,30 +106,41 @@ namespace EldritchArcana
                 heritageFeats.Add(heritageFeat);
 
                 var bloodlineName = bloodline.Name;
-                if (bloodline.name.StartsWith("BloodlineDraconic"))
-                {
-                    if (!seenDraconic)
-                    {
-                        var i = bloodlineName.IndexOf(" — ");
-                        if (i >= 0) bloodlineName = bloodlineName.Substring(0, i);
-                        featDescription.Append($"\n  {bloodlineName} — {classSkillName}");
-                        seenDraconic = true;
-                    }
-                }
-                else if (bloodline.name.StartsWith("BloodlineElemental"))
-                {
-                    if (!seenElemental)
-                    {
-                        var i = bloodlineName.IndexOf(" — ");
-                        if (i >= 0) bloodlineName = bloodlineName.Substring(0, i);
-                        featDescription.Append($"\n  {bloodlineName} — {classSkillName}");
-                        seenElemental = true;
-                    }
-                }
-                else
-                {
-                    featDescription.Append($"\n  {bloodlineName} — {classSkillName}");
-                }
+                // 英语法语用“—”，德语俄语用“-”，中文是“（）”，不想写字典只能用傻办法。
+                List<int> SubstringIndexForBloodline = new List<int>(){
+                        bloodlineName.IndexOf(" — "),
+                        bloodlineName.IndexOf(" - "),
+                        bloodlineName.IndexOf("（")
+                    };
+                SubstringIndexForBloodline.Sort();
+                var i = SubstringIndexForBloodline[2];
+                if (i >= 0) bloodlineName = bloodlineName.Substring(0, i);
+
+                DescribeItemsSet.Add(String.Format(RES.EldritchHeritageFeatDescription_info, bloodlineName, classSkillName));
+                //if (bloodline.name.StartsWith("BloodlineDraconic"))
+                //{
+                //    if (!seenDraconic)
+                //    {
+                //        var i = bloodlineName.IndexOf(" — ");
+                //        if (i >= 0) bloodlineName = bloodlineName.Substring(0, i);
+                //        featDescription.Append($"\n  {bloodlineName} — {classSkillName}");
+                //        seenDraconic = true;
+                //    }
+                //}
+                //else if (bloodline.name.StartsWith("BloodlineElemental"))
+                //{
+                //    if (!seenElemental)
+                //    {
+                //        var i = bloodlineName.IndexOf(" — ");
+                //        if (i >= 0) bloodlineName = bloodlineName.Substring(0, i);
+                //        featDescription.Append($"\n  {bloodlineName} — {classSkillName}");
+                //        seenElemental = true;
+                //    }
+                //}
+                //else
+                //{
+                //    featDescription.Append($"\n  {bloodlineName} — {classSkillName}");
+                //}
 
                 // Create Improved Eldrith Heritage (choice of level 3/9 powers and use level -2, can select twice, Prereq: level 11+, Cha 15+)
                 var improvedFeat3 = CreateImprovedHeritage(bloodline, heritageFeat, 3);
@@ -145,7 +157,11 @@ namespace EldritchArcana
                 greaterHeritageFeats.Add(greaterFeat9);
                 greaterHeritageFeats.Add(greaterFeat15);
             }
-
+            foreach (var DescribeItem in DescribeItemsSet)
+            {
+                featDescription.Append(DescribeItem);
+            }
+            // Log.Write(featDescription.ToString());
             heritageSelection.SetDescription(featDescription.ToString());
             heritageSelection.SetFeatures(heritageFeats);
             improvedHeritageSelection.SetFeatures(improvedHeritageFeats);

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -147,12 +147,12 @@
 你还可以在不增加施法时间的情况下将你所掌握的任何超魔专长附加到法术上，尽管你仍必须使用更高级别的法术位。</value>
   </data>
   <data name="BloodHavocMutationFeatureDescription_info" xml:space="preserve">
-    <value>血脉狂怒者无需在血怒中也可使用其血承变异能力。取而代之的是血脉狂怒者或术士可以选择血承变异来代替血承奖励专长，前提是其职业等级至少与变异替代的血承能力的获得等级相当。
-血承变异：血之蹂躏
+    <value>每当血脉狂怒者或者术士获得一个新的血承能力，他可以将这个血承能力换成一个其满足先决条件的血统突变。一旦他作出这个选择就无法改变。血脉狂怒者或术士不能将一个已经被变体改变或取代的血承能力替换为血统突变。血脉狂怒者无须进入血怒来使用他的血统突变。另外，血脉狂怒者或术士可以选择一个血统突变来代替血承奖励专长，只要他的职业等级不低于该突变通常取代的血承能力的等级。
+血统突变：血之毁灭
 每当你施放一个造成伤害的血脉狂怒者或术士法术时，投出的每个伤害骰点数+1。</value>
   </data>
   <data name="BloodHavocMutationFeatureName_info" xml:space="preserve">
-    <value>血之蹂躏变异（{0}）</value>
+    <value>血统突变：血之毁灭（{0}）</value>
   </data>
   <data name="BloodlineOrcArcanaFeatureDescription_info" xml:space="preserve">
     <value>你获得了兽人亚种特性，包括黑暗视觉和强光敏感。每当你施放一个造成伤害的法术时，投出的每个伤害骰点数+1。</value>
@@ -207,13 +207,13 @@
     <value>军神重生</value>
   </data>
   <data name="BloodlinePowerFeatureDescription_info" xml:space="preserve">
-    <value>达到1、3、9、15和20级时，一个混血术士获得了该级别的两个新的血承能力之一。相反，他们可以选择一个他们尚未具备的较低级别的血承能力来取代这些较高级别的能力之一。</value>
+    <value>达到1、3、9、15和20级时，混血术士能够选择该等级可获得的两个新的血承能力之一。他们也可以选择一个之前未选择的低等级的血承能力来取代这些高等级的能力。</value>
   </data>
   <data name="BloodlinePowerFeatureName_info" xml:space="preserve">
     <value>血承能力</value>
   </data>
   <data name="BloodlineSpellFeatureDescription_info" xml:space="preserve">
-    <value>混血术士可以从他们的血承中选择他们的额外法术。术士也可以选择学习一个他们没有选择的较低等级的奖励法术来代替他们通常会获得的较高等级的奖励法术。以这种方式学习的低级奖励法术总是使用如果术士用合适的奖励法术学习的法术等级。</value>
+    <value>混血术士可以从他们的两种血承中选择额外法术。他们也可以选择学习一个之前未选择的低等级的奖励法术来取代他们通常会获得的高等级的奖励法术。以这种方式学习的低级奖励法术依然处于它们原来所该在的法术等级，而不是取代的高级奖励法术所在的等级。</value>
   </data>
   <data name="BloodlineSpellFeatureName_info" xml:space="preserve">
     <value>血承法术</value>
@@ -247,7 +247,7 @@
     <value>引导能量</value>
   </data>
   <data name="CheatCustomTraits_info" xml:space="preserve">
-    <value>开启显示所有背景特性及法术，包括修改和自制内容（需要重新启动游戏才能生效）</value>
+    <value>开启显示所有背景特性及法术，包括作弊和自制内容（需要重新启动游戏才能生效）</value>
   </data>
   <data name="ChooseFavoredClassLocalized_info" xml:space="preserve">
     <value>选择天赋职业奖励</value>
@@ -257,10 +257,10 @@
   </data>
   <data name="CrossbloodedChoicesFeatureDescription_info" xml:space="preserve">
     <value>
-选择两个血承：</value>
+当前等级的可选列表如下：</value>
   </data>
   <data name="CrossbloodedConflictingUrgesFeatureDescription_info" xml:space="preserve">
-    <value>混血术士的双重血脉带来不同的天性，造成他们内心本能的互相冲突，这使得他们需要不断进行一些精神上的努力来保持对他们当前情势的专注。这也迫使他们无法花费太大的精力来应对外部的威胁。混血术士在意志豁免检定中承受-2的减值。</value>
+    <value>混血术士的双重血脉带来不同的天性，造成他们内心本能的互相冲突，这使得他们需要不断进行一些精神上的努力来保持对他们当前情势的专注。这也让他们无法花费太大的精力来应对外部的威胁。混血术士在意志豁免检定中承受-2的减值。</value>
   </data>
   <data name="CrossbloodedConflictingUrgesFeatureName_info" xml:space="preserve">
     <value>混血（矛盾冲动）</value>
@@ -272,7 +272,7 @@
     <value>混血术士</value>
   </data>
   <data name="DelayAfflictionFeatureDescription_info" xml:space="preserve">
-    <value>每天一次，作为一个即时的行动，当你对某种疾病或毒素的豁免失败时，你可以忽略它的影响，每级1小时。在7级和15级时，你每天可以使用本能力的次数再增加1次。</value>
+    <value>每天一次，作为一个即时行动，当你对某种疾病或毒素的豁免失败时，你可以忽略它的影响，每级1小时。在7级和15级时，你每天可以使用本能力的次数再增加1次。</value>
   </data>
   <data name="DelayAfflictionFeatureName_info" xml:space="preserve">
     <value>缓解痛苦</value>
@@ -317,10 +317,10 @@
     <value>驱散范围法术效果的能力</value>
   </data>
   <data name="DrawbackForextraTraits_info" xml:space="preserve">
-    <value>启用有缺陷的专长（需要重新启动游戏才能生效）</value>
+    <value>启用缺陷专长（需要重新启动游戏才能生效）</value>
   </data>
   <data name="DrawbackFrailFeatureDescription_info" xml:space="preserve">
-    <value>如果你在第1级选择1个有缺陷的专长，你可以在顶部选择1个额外的专长。
+    <value>如果你在第1级选择1个缺陷专长，你可以在顶部选择1个额外的专长。
 你天生羸弱，容易骨折，而且你的健康状况也不好，因此你在抵抗疾病时遭受-1豁免检定减值。
 缺陷：在1级时你会损失3点生命值，且对于你拥有的每1个生命骰都会额外损失1点生命值。</value>
   </data>
@@ -328,7 +328,7 @@
     <value>虚弱</value>
   </data>
   <data name="DrawbackOneLeggedFeatureDescription_info" xml:space="preserve">
-    <value>如果你在第1级选择1个有缺陷的专长，你可以在顶部选择1个额外的专长。
+    <value>如果你在第1级选择1个缺陷专长，你可以在顶部选择1个额外的专长。
 缺陷：即便装上1条假腿，你一样会失去10英尺的正常移动速度。
 缺陷：你失去了2个先攻点。</value>
   </data>
@@ -336,21 +336,21 @@
     <value>假腿</value>
   </data>
   <data name="DrawbackSpellVulnerabilityFeatureDescription_info" xml:space="preserve">
-    <value>如果你在第1级选择1个有缺陷的专长，你可以在顶部选择1个额外的专长。
+    <value>如果你在第1级选择1个缺陷专长，你可以在顶部选择1个额外的专长。
 破敌：选择一个法术学派，你将在抵抗该法术学派法术时遭受{0}豁免检定减值。</value>
   </data>
   <data name="DrawbackSpellVulnerabilityFeatureName_info" xml:space="preserve">
     <value>法术弱点</value>
   </data>
   <data name="EldritchHeritageBloodlineFeatureName_info" xml:space="preserve">
-    <value>奥法传承—{0}</value>
+    <value>悠远血脉—{0}</value>
   </data>
   <data name="EldritchHeritageFeatureDescription_info" xml:space="preserve">
-    <value>你是一个历史悠久的术士家族后裔，一些源于血统的力量流淌在你的血液之中。
-选择一个术士血承。你必须在血统给予第1级术士的职业技能中拥有技能专攻（例如，天界血承的圣疗）。这个血统不能是你已有的血统。你获得所选血统的第1级血统力量。为了使用这种力量，将你的术士等级等同于你的角色等级－2，即使你已有术士等级。你没有获得任何其他血统的能力。</value>
+    <value>你是一个术士家族的八辈子孙，有一些源于你祖先的力量流淌在你的血液之中。
+你需要选择一个术士血承，并且你必须在该血承1级时给予术士的职业技能上有技能专攻（例如天界血承的“医疗技能”，见下）。如果你已有一个血承，那这个血承不能是你已选择的血承。如此你就能获得对应血承的1级血承能力，你在使用该能力时职业等级视为角色等级-2，而非你的术士等级（即便你有）。你也无法获得你选择的这个血承的其他血承能力。</value>
   </data>
   <data name="EldritchHeritageFeatureName_info" xml:space="preserve">
-    <value>奥法传承</value>
+    <value>悠远血脉</value>
   </data>
   <data name="EldritchKnightFix_info" xml:space="preserve">
     <value>兼职奥法骑士需要已拥有战士类职业（例如：野蛮人、战士、圣武士、巡林客，不影响已创建的角色）</value>
@@ -410,7 +410,7 @@
     <value>
 每当此角色提升 {0} 级后, 你可以获得+1生命值，+1技能点，或者基于他们天赋职业的种族奖励。
 种族奖励：
-・人类（及半精灵，半兽人，神裔）——从{0}法术列表中获得一个额外已知法术。这个法术必须比你当前所能施展的最高级{1}法术低1级。</value>
+• 人类（及半精灵，半兽人，神裔）——从{0}法术列表中获得一个额外已知法术。这个法术必须比你当前所能施展的最高级{1}法术低1级。</value>
   </data>
   <data name="FavoredClassFeatureDescription_info" xml:space="preserve">
     <value>每个角色以他选择的一个天赋职业开始游戏，通常这会是他们在1级时选择的职业。
@@ -439,7 +439,7 @@
     <value>所有mod功能</value>
   </data>
   <data name="featureName_error" xml:space="preserve">
-    <value>・&lt;b&gt;{0}&lt;/b&gt;</value>
+    <value>• &lt;b&gt;{0}&lt;/b&gt;</value>
   </data>
   <data name="FeyFoundlingFeatureDescription_info" xml:space="preserve">
     <value>当你在野外被找到时你还是个孩子。
@@ -477,14 +477,14 @@
     <value>召唤六只地精</value>
   </data>
   <data name="GreaterEldritchHeritageBloodlineFeatureName_info" xml:space="preserve">
-    <value>高等奥法传承—{0}</value>
+    <value>高等悠远血脉—{0}</value>
   </data>
   <data name="GreaterEldritchHeritageFeatureDescription_info" xml:space="preserve">
-    <value>你已发现的血统力量达到了顶峰。
-你可以从你选择的血统中获得额外的力量，这是你在奥法传承专长中选择的。你获得了一个尚未具备的15级（或更低）术士血统力量。为了使用这种力量，将你的角色等级视为你的术士等级，以获得此专长、奥法传承专长和精通奥法传承专长所给予的所有术士血统力量。</value>
+    <value>你身上的血脉之力达到了顶峰。
+你可以从你在悠远血脉专长选择的血承上再额外获得一个血承能力，只要该能力尚未被你获得，并且是15级以下的血承能力。使用该能力时术士等级视为你的角色等级，并且悠远血脉专长和精通悠远血脉专长所给予的血承能力也适用该等级。</value>
   </data>
   <data name="GreaterEldritchHeritageFeatureName_info" xml:space="preserve">
-    <value>高等奥法传承</value>
+    <value>高等悠远血脉</value>
   </data>
   <data name="GreaterMagicWeaponAbilityDescription_info" xml:space="preserve">
     <value>该法术的效果类似于魔化武器，但是能够给武器在攻击和伤害上提供+1/每4施法者等级的增强加值（最大+5）。这个加值无法让一个武器穿透伤害减免，除非是对魔法的伤害减免。</value>
@@ -511,14 +511,14 @@
     <value>闪烁变化的旋转彩色图纹在空中扩散，迷魂身在其中的生物。投2d4然后加上你的施法者等级（最大+10）决定受到影响的生物的总生命骰数。生命骰数最少的生物最先受到影响；对于生命骰相同的生物，最靠近法术中心点的生物最先受到影响。不足以影响生物的生命骰数将被浪费。受到影响的生物被彩色图纹迷魂。没有视觉的生物不受影响。</value>
   </data>
   <data name="ImprovedEldritchHeritageBloodlineFeatureName_info" xml:space="preserve">
-    <value>精通奥法传承——{0}</value>
+    <value>精通悠远血脉—{0}</value>
   </data>
   <data name="ImprovedEldritchHeritageFeatureDescription_info" xml:space="preserve">
-    <value>你已发现的血统力量继续增长。
-你可以获得你选择的第3级或第9级的血统力量（你的选择）与奥法传承专长。为了使用这种力量，将你的术士等级等同于你的角色等级－2，即使你已有术士等级。你没有获得任何其他血统的能力。</value>
+    <value>你身上的血脉之力持续增长。
+你可以从你在悠远血脉专长选择的血承上获得一个3级或9级的血承能力。你在使用该能力时职业等级视为角色等级-2，而非你的术士等级（即便你有）。你也无法获得你选择的这个血承的其他血承能力。</value>
   </data>
   <data name="ImprovedEldritchHeritageFeatureName_info" xml:space="preserve">
-    <value>精通奥法传承</value>
+    <value>精通悠远血脉</value>
   </data>
   <data name="KeepAllSpellsFeatureDescription_info" xml:space="preserve">
     <value>选择此选项可略过替换此级别的已知法术。</value>
@@ -585,12 +585,12 @@
   </data>
   <data name="LimitedWishAbilityDescription_info" xml:space="preserve">
     <value>有限祈愿术能够让你创造出几乎任何类型的效果。比如说有限祈愿术可以做到下列事情：
-・复制任何一个不超过6级的术士/法师法术，但是这个法术不能属于你的对立学派。
-・复制任何一个不超过5级的非术士/法师法术，但是这个法术不能属于你的对立学派。
-・复制任何一个不超过5级的术士/法师法术，哪怕这个法术属于你的对立学派。
-・复制任何一个不超过4级的非术士/法师法术，哪怕这个法术属于你的对立学派。
-・取消许多法术的有害效果，如神智错乱。
-・创造出其它效果，其强度等级不超过上述的效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定中受到-7的减值等等。
+• 复制任何一个不超过6级的术士/法师法术，但是这个法术不能属于你的对立学派。
+• 复制任何一个不超过5级的非术士/法师法术，但是这个法术不能属于你的对立学派。
+• 复制任何一个不超过5级的术士/法师法术，哪怕这个法术属于你的对立学派。
+• 复制任何一个不超过4级的非术士/法师法术，哪怕这个法术属于你的对立学派。
+• 取消许多法术的有害效果，如神智错乱。
+• 创造出其它效果，其强度等级不超过上述的效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定中受到-7的减值等等。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照7级法术计算。如果有限祈愿术复制的法术含有价格超过1000金币的材料成分，那么你就必须提供这些材料（这并不包含在法术本身价值1500金币的材料费内）。</value>
   </data>
   <data name="LimitedWishSpells_info" xml:space="preserve">
@@ -603,7 +603,7 @@
     <value>在肖像列表中列出自定义肖像</value>
   </data>
   <data name="loadDrawbackFeats_error" xml:space="preserve">
-    <value>有缺陷的专长</value>
+    <value>缺陷专长</value>
   </data>
   <data name="loadFavoredClassBonus_error" xml:space="preserve">
     <value>天赋职业奖励和神祗选择</value>
@@ -668,14 +668,14 @@
   <data name="MiracleAbilityDescription_info" xml:space="preserve">
     <value>准确地说，你并非“施放”奇迹术，而是请求奇迹发生。你声明你希望发生什么样的事情，并且向你的神祇（或者你祈祷获得法术能力的其它力量）请求神迹降临。
 奇迹术可以做到以下任意一点：
-・复制任何不超过8级的牧师法术。
-・复制任何不超过7级的其它法术。
-・取消特定法术的有害效果，诸如弱智或是神智错乱。
-・获得任何强度不超过上述效果的其它效果。
+• 复制任何不超过8级的牧师法术。
+• 复制任何不超过7级的其它法术。
+• 取消特定法术的有害效果，诸如弱智或是神智错乱。
+• 获得任何强度不超过上述效果的其它效果。
 此外，牧师还可以请求一个非常强力的神迹。施放这样的奇迹术将耗费牧师价值25000金币的钻石粉末，因为这会涉及非常强大的神圣能量。这类特殊的强力奇迹可能包含下列情况：
-・让阵亡的盟友重新复活，继续战斗，从而让战局变得对你有利。
-・让你和你的盟友带着所有的装备从某个位面前往一个特定位置，并且在穿过位面之间的屏障时不会出现任何错误。
-・保护一座城市免受地震、火山爆发、洪水或其他重大自然灾害的影响。
+• 让阵亡的盟友重新复活，继续战斗，从而让战局变得对你有利。
+• 让你和你的盟友带着所有的装备从某个位面前往一个特定位置，并且在穿过位面之间的屏障时不会出现任何错误。
+• 保护一座城市免受地震、火山爆发、洪水或其他重大自然灾害的影响。
 无论情况为何，超出神祇本性（或者阵营）的要求都会被拒绝。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照9级法术计算。如果奇迹术复制的法术含有价格超过100金币的材料成分，那么你就必须提供这些材料。</value>
   </data>
@@ -811,7 +811,7 @@
     <value>创建角色时在肖像列表中显示自定义肖像（需要重新启动游戏才能生效）</value>
   </data>
   <data name="SingleLineDescription_info" xml:space="preserve">
-    <value>・{0}</value>
+    <value>• {0}</value>
   </data>
   <data name="SkillBonusProgressionDescription_info" xml:space="preserve">
     <value>{0}
@@ -906,14 +906,14 @@
   </data>
   <data name="WishAbilityDescription_info" xml:space="preserve">
     <value>祈愿术是法师或术士所能施放的最强力的法术。只需要简单地大声说出你的愿望，你就能让现实变得更符合你的心意。但即便是祈愿术也有其极限。祈愿术可以产生下列效果中的其中一种。
-・复制任何一个不超过8级的术士/法师法术，但是该法术不能属于你的对立学派。
-・复制任何一个不超过7级的非术士/法师法术，但是该法术不能属于你的对立学派。
-・复制任何一个不超过7级的术士/法师学派，哪怕该法术属于你的对立学派。
-・复制任何一个不超过6级的非术士/法师法术，哪怕该法术属于你的对立学派。
-・取消许多其他法术的有害效果，诸如指使术或是神智错乱。
-・给予一个生物的某项属性值+1的天赋加值。连续不断地施放2到5个祈愿术可以给予生物的某项属性值+2到+5的天赋加值（两个祈愿术获得+2天赋加值，三个祈愿术获得+3天赋加值，以此类推）。天赋加值即刻生效，因此无法被解除。注意：对于任何一项属性，天赋加值最大不能超过+5，并且天赋加值的效果无法叠加，只能应用最大加值。
-・移除受伤和疾病。单个祈愿术可以帮助1个/每施法者等级的生物，所有目标的同一类病症都将得到治疗。例如你可以治疗自己和同伴受到的所有伤害，或者移除队伍中每个人受到的中毒效果，但是不能用1个祈愿术来同时得到两种效果。
-・死者重生。一个祈愿术可以通过复制死者复活法术来复活一个死去的生物。如果死去的生物已然尸骨无存，祈愿术依旧可以复活它，但是这需要两个祈愿术：一个用来创造其身体，另外一个让该身体重新获得生命的活力。祈愿术复活的生物仍然无可避免地会损失一个等级。
+• 复制任何一个不超过8级的术士/法师法术，但是该法术不能属于你的对立学派。
+• 复制任何一个不超过7级的非术士/法师法术，但是该法术不能属于你的对立学派。
+• 复制任何一个不超过7级的术士/法师学派，哪怕该法术属于你的对立学派。
+• 复制任何一个不超过6级的非术士/法师法术，哪怕该法术属于你的对立学派。
+• 取消许多其他法术的有害效果，诸如指使术或是神智错乱。
+• 给予一个生物的某项属性值+1的天赋加值。连续不断地施放2到5个祈愿术可以给予生物的某项属性值+2到+5的天赋加值（两个祈愿术获得+2天赋加值，三个祈愿术获得+3天赋加值，以此类推）。天赋加值即刻生效，因此无法被解除。注意：对于任何一项属性，天赋加值最大不能超过+5，并且天赋加值的效果无法叠加，只能应用最大加值。
+• 移除受伤和疾病。单个祈愿术可以帮助1个/每施法者等级的生物，所有目标的同一类病症都将得到治疗。例如你可以治疗自己和同伴受到的所有伤害，或者移除队伍中每个人受到的中毒效果，但是不能用1个祈愿术来同时得到两种效果。
+• 死者重生。一个祈愿术可以通过复制死者复活法术来复活一个死去的生物。如果死去的生物已然尸骨无存，祈愿术依旧可以复活它，但是这需要两个祈愿术：一个用来创造其身体，另外一个让该身体重新获得生命的活力。祈愿术复活的生物仍然无可避免地会损失一个等级。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照9级法术计算。如果祈愿术复制的法术含有价格超过10000金币的材料成分，那么你就必须提供这些材料（这并不包含在法术本身价值25000金币的材料费内）。</value>
   </data>
   <data name="WishBuffDescription_info" xml:space="preserve">
@@ -922,12 +922,12 @@
   </data>
   <data name="WishArcaneAbilityDescription_info" xml:space="preserve">
     <value>奥术祈愿术能够让你创造出几乎任何类型的效果，只需要你提供5颗钻石。
-・复制任何一个不超过6级的术士/法师法术，但是这个法术不能属于你的对立学派。
-・复制任何一个不超过5级的非术士/法师法术，但是这个法术不能属于你的对立学派。
-・复制任何一个不超过5级的术士/法师法术，哪怕这个法术属于你的对立学派。
-・复制任何一个不超过4级的非术士/法师法术，哪怕这个法术属于你的对立学派。
-・取消许多法术的有害效果，如神智错乱。
-・创造出其它效果，其强度等级不能超过上述的效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定中受到-7的减值等等。
+• 复制任何一个不超过6级的术士/法师法术，但是这个法术不能属于你的对立学派。
+• 复制任何一个不超过5级的非术士/法师法术，但是这个法术不能属于你的对立学派。
+• 复制任何一个不超过5级的术士/法师法术，哪怕这个法术属于你的对立学派。
+• 复制任何一个不超过4级的非术士/法师法术，哪怕这个法术属于你的对立学派。
+• 取消许多法术的有害效果，如神智错乱。
+• 创造出其它效果，其强度等级不能超过上述的效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定中受到-7的减值等等。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照7级法术计算。如果有限祈愿术复制的法术含有价格超过1000金币的材料成分，那么你就必须提供这些材料（这并不包含在法术本身价值1500金币的材料费内）。</value>
   </data>
   <data name="WishFabricateSpells_info" xml:space="preserve">
@@ -1235,7 +1235,7 @@
     <value>目标长出一双飞翼，能够以60英尺的速度飞行（如身穿中型或重型盔甲，或者负重为中度或重度负荷时，速度为40英尺）。</value>
   </data>
   <data name="FlySpellAbilityName_info" xml:space="preserve">
-    <value>飞行术—{0}</value>
+    <value>飞行术（{0}）</value>
   </data>
   <data name="FlySpellWingsDescription_info" xml:space="preserve">
     <value>肋生双翼时对抗近战攻击的防御等级获得+3的闪避加值，对如困难地形等造成的地面效果免疫，并获得一个相当于1/2施法者等级的灵巧技能检定加值。该效果不会与其他法术给予的飞翼或飞行能力的效果叠加。</value>
@@ -1283,7 +1283,7 @@
     <value>该法术给予你一双飞翼，使你能够以40英尺的速度飞行（如身穿中型或重型盔甲，或者负重为中度或重度负荷时，速度为30英尺）。该法术为长途飞行而设计，并能保证你在飞行期间不会疲劳。</value>
   </data>
   <data name="OverlandFlightSpellAbilityName_info" xml:space="preserve">
-    <value>跨陆飞行—{0}</value>
+    <value>跨陆飞行（{0}）</value>
   </data>
   <data name="AirWalkAbilityDescription_info" xml:space="preserve">
     <value>目标能在空中步行，一如其脚踏坚硬的地面。这让其获得对抗近战攻击的防御等级+3的闪避加值，对如困难地形等造成的地面效果免疫，并获得一个相当于1/2施法者等级的灵巧技能检定加值。该效果不会与其他法术给予的飞翼或飞行能力的效果叠加。</value>
@@ -1297,5 +1297,232 @@
   </data>
   <data name="AirWalkCommunalAbilityName_info" xml:space="preserve">
     <value>共用凌空而行</value>
+  </data>
+  <data name="OracleCurseCloudedVisionName_info" xml:space="preserve">
+    <value>障目</value>
+  </data>
+  <data name="OracleCurseCloudedVisionDescription_info" xml:space="preserve">
+    <value>你的双眼蒙上一层雾翳，这使你难以看清东西。
+你无法看到20英尺之外，因此你无法设定20英尺外的目标，距离外的目标视为隐蔽。</value>
+  </data>
+  <data name="OracleCurseCloudedVisionLevel5Description_info" xml:space="preserve">
+    <value>达到5级时，你的视距增加到30英尺。</value>
+  </data>
+  <data name="OracleCurseCloudedVisionLevel10Description_info" xml:space="preserve">
+    <value>达到10级时，你获得30英尺内盲感。</value>
+  </data>
+  <data name="OracleCurseCloudedVisionLevel15Description_info" xml:space="preserve">
+    <value>达到15级时，你获得15英尺盲视。</value>
+  </data>
+  <data name="OracleCurseBlindsenseName_info" xml:space="preserve">
+    <value>盲感</value>
+  </data>
+  <data name="OracleCurseBlindsightName_info" xml:space="preserve">
+    <value>盲视</value>
+  </data>
+  <data name="CrossBloodlineName_info" xml:space="preserve">
+    <value>{0}（混血）</value>
+  </data>
+  <data name="CrossbloodedDisplayDescribeChoices_info" xml:space="preserve">
+    <value>
+• {0}：{1}</value>
+  </data>
+  <data name="FlySpellName_info" xml:space="preserve">
+    <value>飞行术</value>
+  </data>
+  <data name="OverlandFlightSpellName_info" xml:space="preserve">
+    <value>跨陆飞行</value>
+  </data>
+  <data name="PrerequisiteCasterSpellLevelCaption_info" xml:space="preserve">
+    <value>可施放 {1} 级{0}法术</value>
+  </data>
+  <data name="EldritchHeritageFeatDescription_info" xml:space="preserve">
+    <value>
+• {0}—{1}</value>
+  </data>
+  <data name="EldritchHeritagePrerequisitesDescription_info" xml:space="preserve">
+    <value>
+  血承—先决{0}:</value>
+  </data>
+  <data name="AdditionalTraitsFeatDescription_info" xml:space="preserve">
+    <value>你将获得比通常更多的背景特性。
+效益：你可以选择两个额外的角色背景特性。你必须从两个不同的类型列表里选择这些额外的背景特性，并且你也无法从你之前已选取过背景特性的类型特性列表里选取。你还必须遵从你所选择的角色背景的其他所有限制——例如你无法为一个精灵角色选择一个矮人的角色特性。</value>
+  </data>
+  <data name="AdditionalTraitsFeatName_info" xml:space="preserve">
+    <value>额外背景特性</value>
+  </data>
+  <data name="DrawbacksDescription_info" xml:space="preserve">
+    <value>缺陷特性即负面的背景特性。此类特性将给予你负面而非正面效果，特别是在某些特殊情形下。
+如果你选择了一个缺陷特性，你将会获得第三个背景特性可供选择。
+缺陷特性并非是一个角色创建必选项。</value>
+  </data>
+  <data name="Drawbacks_info" xml:space="preserve">
+    <value>缺陷特性</value>
+  </data>
+  <data name="SkipSelectionDescription_info" xml:space="preserve">
+    <value>跳过这项选择。</value>
+  </data>
+  <data name="SkipSelection_info" xml:space="preserve">
+    <value>(跳过)</value>
+  </data>
+  <data name="TraitsSelectionDescription_info" xml:space="preserve">
+    <value>角色的背景特性是指那些和你的种族、职业无关的能力。</value>
+  </data>
+  <data name="CustomTraitDescription_info" xml:space="preserve">
+    <value>这些背景特性有些滥强，因此只能用来娱乐。如果你想好好玩游戏就别选这些。</value>
+  </data>
+  <data name="CustomTraitName_info" xml:space="preserve">
+    <value>自定义特性｛作弊｝</value>
+  </data>
+  <data name="GoBackDescription_info" xml:space="preserve">
+    <value>选此项返回你之前的选定的特性。</value>
+  </data>
+  <data name="GoBackName_info" xml:space="preserve">
+    <value>(返回)</value>
+  </data>
+  <data name="TraitsAddStatBonusDescription_info" xml:space="preserve">
+    <value>{0}
+效益：你在{1}检定上获得+1的背景特性奖励加值，并且{2}成为你的职业技能。</value>
+  </data>
+  <data name="TraitsFillSpellSelection_info" xml:space="preserve">
+    <value>{0}（{1} 级法术）</value>
+  </data>
+  <data name="OracleCurseBlackenedDescription_info" xml:space="preserve">
+    <value>你的手掌与前臂干瘪发黑，就如同你曾经把手臂插入熊熊火焰中一样。你那薄如纸张的皮肤对碰触极为敏感。你在武器攻击检定中受到-4减值，不过你能够将燃烧之手加入到你的已知法术列表中。</value>
+  </data>
+  <data name="OracleCurseBlackenedLevel10Description_info" xml:space="preserve">
+    <value>10级时，将火墙术加入到你的已知法术列表中。并且你受到的武器攻击检定减值降低到-2。</value>
+  </data>
+  <data name="OracleCurseBlackenedLevel15Description_info" xml:space="preserve">
+    <value>15级起，将延迟爆裂火球加入到你的已知法术列表中。</value>
+  </data>
+  <data name="OracleCurseBlackenedLevel5Description_info" xml:space="preserve">
+    <value>5级时，将灼热射线及炽焰法球加入到你的已知法术列表中。</value>
+  </data>
+  <data name="OracleCurseBlackenedName_info" xml:space="preserve">
+    <value>焦黑之臂</value>
+  </data>
+  <data name="OracleCurseCovetousDescription_info" xml:space="preserve">
+    <value>你发现自己沉迷于闪耀的奢华生活。
+你必须佩戴至少100gp+200gp*（人物等级-1）的非魔法物品及珠宝。如果你没有足够的资金来购买这些额外装备，你会感到强烈的渴望（但是并非强制性）的去卖掉现有装备或者偷窃他人财物。如果你无法满足这一要求，你会陷入恶心状态。使用魔法装置成为你的职业技能。</value>
+  </data>
+  <data name="OracleCurseCovetousLevel10Description_info" xml:space="preserve">
+    <value>10级时，你能使用{0}技能辨识物品。</value>
+  </data>
+  <data name="OracleCurseCovetousLevel15Description_info" xml:space="preserve">
+    <value>15级时，你在{0}检定上获得+4洞察加值。</value>
+  </data>
+  <data name="OracleCurseCovetousLevel5Description_info" xml:space="preserve">
+    <value>5级时，你在{0}检定上获得+4洞察加值。</value>
+  </data>
+  <data name="OracleCurseCovetousName_info" xml:space="preserve">
+    <value>贪欲</value>
+  </data>
+  <data name="OracleCurseDeafDescription_info" xml:space="preserve">
+    <value>你失去了听力，并将承受所有因为耳聋而获得的正常减值：先攻-4，察觉技能-4。不过你施放的所有法术都视为搭配有法术默发专长，并且这些法术的施法时间和法术等级不会增加。</value>
+  </data>
+  <data name="OracleCurseDeafLevel10Description_info" xml:space="preserve">
+    <value>10级时，你在察觉技能检定上获得+3加值。</value>
+  </data>
+  <data name="OracleCurseDeafLevel15Description_info" xml:space="preserve">
+    <value>15级时，你获得30英尺内的震颤感应。</value>
+  </data>
+  <data name="OracleCurseDeafLevel15Name_info" xml:space="preserve">
+    <value>震颤感应</value>
+  </data>
+  <data name="OracleCurseDeafLevel5Description_info" xml:space="preserve">
+    <value>5级时，你在察觉技能检定上不再受到减值，并且你因为耳聋而受到的先攻检定减值降低到-2。</value>
+  </data>
+  <data name="OracleCurseDeafName_info" xml:space="preserve">
+    <value>失聪</value>
+  </data>
+  <data name="OracleCurseHauntedDescription_info" xml:space="preserve">
+    <value>恶意的灵魂如影随形，在你身边制造各种不快和怪事（比如诡异的气流，小物件无主自动，轻微的噪声等）。
+取出任何携带的物品都需要你使用一个标准动作，除非它需要的时间长于一个标准动作，且任何你掉落的物品都会自动朝随机方向远离你10英尺距离。
+将{0}加入你的已知法术列表中。</value>
+  </data>
+  <data name="OracleCurseHauntedLevel5Description_info" xml:space="preserve">
+    <value>{0}级时，将“{1}”加入你的已知法术列表中。</value>
+  </data>
+  <data name="OracleCurseHauntedName_info" xml:space="preserve">
+    <value>鬼上身</value>
+  </data>
+  <data name="OracleCurseLameDescription_info" xml:space="preserve">
+    <value>你的一条腿受到了永久性的伤损，如果你拥有30英尺及以上基础速度，那么你的移动速度降低10英尺；如果你的基础速度低于30英尺，那么你的移动速度降低5英尺。你将不会再因为重负而降低移动速度。</value>
+  </data>
+  <data name="OracleCurseLameEffortlessArmorName_info" xml:space="preserve">
+    <value>重甲轻装</value>
+  </data>
+  <data name="OracleCurseLameExhaustionImmunity" xml:space="preserve">
+    <value>免疫力竭</value>
+  </data>
+  <data name="OracleCurseLameFatigueImmunityName_info" xml:space="preserve">
+    <value>免疫疲劳</value>
+  </data>
+  <data name="OracleCurseLameLevel10Description_info" xml:space="preserve">
+    <value>10级时，你穿戴的盔甲不再拖慢你的速度。</value>
+  </data>
+  <data name="OracleCurseLameLevel15Description_info" xml:space="preserve">
+    <value>15级时，你免疫力竭状态。</value>
+  </data>
+  <data name="OracleCurseLameLevel5Description_info" xml:space="preserve">
+    <value>5级时，你免疫疲劳状态（但是不包括力竭）。</value>
+  </data>
+  <data name="OracleCurseLameName_info" xml:space="preserve">
+    <value>跛足</value>
+  </data>
+  <data name="OracleCurseTonguesDescription_info" xml:space="preserve">
+    <value>在承受压力或不安的状态下你会变得不知所云。
+你可以从以下语言中选择一项：深渊语，邪灵语，水族语，风族语，天界语，火族语，炼狱语或土族语。
+当你进入战斗时你将只能说和理解此种语言。这并不会干扰你的施法，但确实会影响基于语言成分的法术。你获得你所选的语言类型，并且获得“{0}”技能的+2加值，这代表你获得了一门外域语言的知识。
+你的队友必须至少拥有1级的“{1}”技能，才能在战斗中有效和你沟通，否则他们将会变得不受控制。</value>
+  </data>
+  <data name="OracleCurseTonguesLevel10Description_info" xml:space="preserve">
+    <value>10级后，你可以理解任何可以说的语言，如同“巧言术”的效果，即使是在战斗中也是一样。
+因为你丰富的语言知识，你再获得额外的“{0}”+4加值。</value>
+  </data>
+  <data name="OracleCurseTonguesLevel10Name_info" xml:space="preserve">
+    <value>理解所有语言</value>
+  </data>
+  <data name="OracleCurseTonguesLevel15Description_info" xml:space="preserve">
+    <value>15级后，你可以理解和表达任何语言，不过在战斗时诅咒依然会照常生效。
+因为你异常丰富的语言知识，你再获得额外的“{0}”+4加值。</value>
+  </data>
+  <data name="OracleCurseTonguesLevel15Name_info" xml:space="preserve">
+    <value>通晓所有语言</value>
+  </data>
+  <data name="OracleCurseTonguesLevel5Description_info" xml:space="preserve">
+    <value>5级时，你学会了另一门外域语言，因此获得额外的“{0}”技能的+2加值。</value>
+  </data>
+  <data name="OracleCurseTonguesLevel5Name_info" xml:space="preserve">
+    <value>奖励语言</value>
+  </data>
+  <data name="OracleCurseTonguesName_info" xml:space="preserve">
+    <value>呓语</value>
+  </data>
+  <data name="OracleCurseWastingDescription_info" xml:space="preserve">
+    <value>你的躯体正在缓慢地逐渐腐烂。
+除了威吓技能之外，你在所有基于魅力的技能检定上承受-4减值。同时你在对抗疾病效果的强韧检定上获得+4表现加值。</value>
+  </data>
+  <data name="OracleCurseWastingLevel10Description_info" xml:space="preserve">
+    <value>10级时，你免疫疾病效果。</value>
+  </data>
+  <data name="OracleCurseWastingLevel10Name_info" xml:space="preserve">
+    <value>免疫疾病</value>
+  </data>
+  <data name="OracleCurseWastingLevel15Description_info" xml:space="preserve">
+    <value>15级时，你免疫反胃效果。</value>
+  </data>
+  <data name="OracleCurseWastingLevel15Name_info" xml:space="preserve">
+    <value>免疫反胃</value>
+  </data>
+  <data name="OracleCurseWastingLevel5Description_info" xml:space="preserve">
+    <value>5级时，你免疫恶心效果（但不包括反胃）。</value>
+  </data>
+  <data name="OracleCurseWastingLevel5Name_info" xml:space="preserve">
+    <value>免疫恶心</value>
+  </data>
+  <data name="OracleCurseWastingName_info" xml:space="preserve">
+    <value>朽坏</value>
   </data>
 </root>

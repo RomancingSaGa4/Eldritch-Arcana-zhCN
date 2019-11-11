@@ -20,8 +20,6 @@ using UnityEngine;
 
 using UnityModManagerNet;
 
-using static EldritchArcana.Common;
-
 using RES = EldritchArcana.Properties.Resources;
 
 namespace EldritchArcana
@@ -109,7 +107,7 @@ namespace EldritchArcana
 
         internal static Settings settings;
 
-        static string testedGameVersion = "2.0.7";
+        static string testedGameVersion = "2.0.7b";
 
         static PortraitLoader portraitLoader;
 
@@ -320,31 +318,35 @@ namespace EldritchArcana
             }
             if (failedPatches.Count > 0)
             {
+                GUILayout.BeginVertical();
                 GUILayout.Label(RES.failedPatches_error, fixedWidth);
                 foreach (var featureName in failedPatches)
                 {
                     GUILayout.Label(string.Format(RES.featureName_error, featureName), fixedWidth);
                 }
+				GUILayout.EndVertical();				
             }
             if (failedLoading.Count > 0)
             {
+                GUILayout.BeginVertical();									  
                 GUILayout.Label(RES.failedLoading_error, fixedWidth);
                 foreach (var featureName in failedLoading)
                 {
                     GUILayout.Label(string.Format(RES.featureName_error, featureName), fixedWidth);
                 }
+                GUILayout.EndVertical();
             }
 
-            GUILayout.Toggle(settings.EldritchKnightFix, RES.EldritchKnightFix_info, fixedWidth);
-            GUILayout.Toggle(settings.DrawbackForextraTraits, RES.DrawbackForextraTraits_info, fixedWidth);
-            GUILayout.Toggle(settings.OracleHas3SkillPoints, RES.OracleHas3SkillPoints_info, fixedWidth);
+            settings.EldritchKnightFix = GUILayout.Toggle(settings.EldritchKnightFix, RES.EldritchKnightFix_info, fixedWidth);
+            settings.DrawbackForextraTraits = GUILayout.Toggle(settings.DrawbackForextraTraits, RES.DrawbackForextraTraits_info, fixedWidth);
+            settings.OracleHas3SkillPoints = GUILayout.Toggle(settings.OracleHas3SkillPoints, RES.OracleHas3SkillPoints_info, fixedWidth);
             OracleClass.MaybeUpdateSkillPoints();
 
-            GUILayout.Toggle(settings.RelaxAncientLorekeeper, RES.RelaxAncientLorekeeper_info, fixedWidth);
-            GUILayout.Toggle(settings.RelaxTonguesCurse, RES.RelaxTonguesCurse_info, fixedWidth);
-            GUILayout.Toggle(settings.ShowCustomPortraits, RES.ShowCustomPortraits_info, fixedWidth);
-            GUILayout.Toggle(settings.CheatCustomTraits, RES.CheatCustomTraits_info, fixedWidth);
-            GUILayout.Toggle(settings.HighDCl, RES.HighDCl_info, fixedWidth);
+            settings.RelaxAncientLorekeeper = GUILayout.Toggle(settings.RelaxAncientLorekeeper, RES.RelaxAncientLorekeeper_info, fixedWidth);
+            settings.RelaxTonguesCurse = GUILayout.Toggle(settings.RelaxTonguesCurse, RES.RelaxTonguesCurse_info, fixedWidth);
+            settings.ShowCustomPortraits = GUILayout.Toggle(settings.ShowCustomPortraits, RES.ShowCustomPortraits_info, fixedWidth);
+            settings.CheatCustomTraits = GUILayout.Toggle(settings.CheatCustomTraits, RES.CheatCustomTraits_info, fixedWidth);
+            settings.HighDCl = GUILayout.Toggle(settings.HighDCl, RES.HighDCl_info, fixedWidth);
         }
 
         static void OnSaveGUI(UnityModManager.ModEntry modEntry)

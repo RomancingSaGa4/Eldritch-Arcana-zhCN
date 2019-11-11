@@ -37,6 +37,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+using RES = EldritchArcana.Properties.Resources;
+
 namespace EldritchArcana
 {
 
@@ -61,24 +63,22 @@ namespace EldritchArcana
             // Create the trait selection (https://www.d20pfsrd.com/traits/).
             // TODO: ideally we'd use FeatureGroup.Trait, but it's not recognized by the game code.
             var featureGroup = FeatureGroup.Feat;
-            var traitSelection = Helpers.CreateFeatureSelection("TraitSelection1", "Traits",
-                "Character traits are abilities that are not tied to your character’s race or class. They can enhance your character’s skills, racial abilities, class abilities, or other statistics, enabling you to further customize them. At its core, a character trait is approximately equal in power to half a feat, so two character traits are roughly equivalent to a bonus feat. Yet a character trait isn’t just another kind of power you can add on to your character—it’s a way to quantify (and encourage) building a character background that fits into your campaign world. Think of character traits as “story seeds” for your background; after you pick your two traits, you’ll have a point of inspiration from which to build your character’s personality and history. Alternatively, if you’ve already got a background in your head or written down for your character, you can view picking their traits as a way to quantify that background, just as picking race and class and ability scores quantifies their other strengths and weaknesses.",
+            var traitSelection = Helpers.CreateFeatureSelection("TraitSelection1", RES.loadTraits_error,
+                RES.TraitsSelectionDescription_info,
                 "f243a1b828714591b5fa0635b0cefb5b", null, featureGroup);
-            var traitSelection2 = Helpers.CreateFeatureSelection("TraitSelection2", "Traits",
+            var traitSelection2 = Helpers.CreateFeatureSelection("TraitSelection2", RES.loadTraits_error,
                 traitSelection.Description, "d3a6541d2d384b1390d8ea26bb02b8cd", null, featureGroup);
-            var traitSelection3 = Helpers.CreateFeatureSelection("TraitSelection3", "Traits",
+            var traitSelection3 = Helpers.CreateFeatureSelection("TraitSelection3", RES.loadTraits_error,
                 traitSelection.Description, "d4b7541d2d384b1390d8ea26bb02b8rt", null, featureGroup);
 
-            var DrawbackSelection1 = Helpers.CreateFeatureSelection("DrawbackSelection3", "Drawbacks",
-                "Drawbacks are traits in reverse. Instead of granting you a boon, they grant you a negative effect, typically in particular circumstances. " +
-                "If you choose to take a drawback, you can take a third trait that you have access to. " +
-                "You are not required to take a drawback.(disable in eldrich arcana menu and restart game)", "4db7541d2d384b1390d8ea26bb02b9tr", null, featureGroup);
+            var DrawbackSelection1 = Helpers.CreateFeatureSelection("DrawbackSelection3", RES.Drawbacks_info,
+                RES.DrawbacksDescription_info, "4db7541d2d384b1390d8ea26bb02b9tr", null, featureGroup);
 
             var choices = new List<BlueprintFeatureSelection>();
             var Drawbackchoices = new List<BlueprintFeatureSelection>();
 
-            var Skip = Helpers.CreateFeatureSelection("NoChoice", "(Skip)",
-                "skip this selection.",
+            var Skip = Helpers.CreateFeatureSelection("NoChoice", RES.SkipSelection_info,
+                RES.SkipSelectionDescription_info,
                 "afb4225be98a4b3e9717883f22068c28", null, FeatureGroup.None);
             choices.Add(Skip);
             Drawbackchoices.Add(Skip);
@@ -121,22 +121,22 @@ namespace EldritchArcana
 
             // Create the "Additional Traits" feat.
             var additionalTraits = Helpers.CreateFeature("AdditionalTraitsProgression",
-                "Additional Traits",
-                "You have more traits than normal.\nBenefit: You gain two character traits of your choice. These traits must be chosen from different lists, and cannot be chosen from lists from which you have already selected a character trait. You must meet any additional qualifications for the character traits you choose — this feat cannot enable you to select a dwarf character trait if you are an elf, for example.",
+                RES.AdditionalTraitsFeatName_info,
+                RES.AdditionalTraitsFeatDescription_info,
                 "02dbb324cc334412a55e6d8f9fe87009",
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/additional_traits.png"),//Helpers.GetIcon("0d3651b2cb0d89448b112e23214e744e"), // Extra Performance
                 FeatureGroup.Feat);
 
-            var additionalTrait1 = Helpers.CreateFeatureSelection("AdditionalTraitSelection1", "Traits",
+            var additionalTrait1 = Helpers.CreateFeatureSelection("AdditionalTraitSelection1", RES.loadTraits_error,
                 traitSelection.Description,
                 "a85fbbe3c9184137a31a12f4b0b7904a", null, FeatureGroup.Feat);
-            var additionalTrait2 = Helpers.CreateFeatureSelection("AdditionalTraitSelection2", "Traits",
+            var additionalTrait2 = Helpers.CreateFeatureSelection("AdditionalTraitSelection2", RES.loadTraits_error,
                 traitSelection.Description,
                 "0fdd6f51c19c44938b9d64b147cf32f8", null, FeatureGroup.Feat);
-            var additionalTrait3 = Helpers.CreateFeatureSelection("AdditionalTraitSelection3", "Traits",
+            var additionalTrait3 = Helpers.CreateFeatureSelection("AdditionalTraitSelection3", RES.loadTraits_error,
                 traitSelection.Description,
                 "1cdd6f51c19c44938b9d64b147cf32d2", null, FeatureGroup.Feat);
-            var additionalDrawback1 = Helpers.CreateFeatureSelection("AdditionalDrawbackSelection1", "Drawbacks",
+            var additionalDrawback1 = Helpers.CreateFeatureSelection("AdditionalDrawbackSelection1", RES.Drawbacks_info,
                 DrawbackSelection1.Description,
                 "1ddd6f51c19c44938b9d64b147cc22c9", null, FeatureGroup.Feat);
             additionalTrait1.SetFeatures(traitSelection.Features);
@@ -178,14 +178,14 @@ namespace EldritchArcana
         static BlueprintFeatureSelection CreateCustomTraits(Boolean optedin)
         {
             var noFeature = Helpers.PrerequisiteNoFeature(null);
-            var customTraits = Helpers.CreateFeatureSelection("CustomTrait", "Custom Trait{cheat}",
-                "These traits are a little overpowered and are here just for fun, if you want to play fair don't pick em.",
+            var customTraits = Helpers.CreateFeatureSelection("CustomTrait", RES.CustomTraitName_info,
+                RES.CustomTraitDescription_info,
                 "9e41e60c929e46bc84ded046148d08ec", null, FeatureGroup.None);
             //noFeature.Feature = customTraits;
             var choices = new List<BlueprintFeature>();
 
 
-            var metamagicMaster = Helpers.CreateFeatureSelection("MetamagicMasterTrait", "Metamagic expert([cheat])",
+            var metamagicMaster = Helpers.CreateFeatureSelection("MetamagicMasterTrait", "Metamagic Expert([cheat])",
                 "Your ability to alter your spell of choice is greater than expected.\nBenefit: Select one spell of 3rd level or below; when you use the chosen spell with a metamagic feat, it uses up three spell slots one level lower than it normally would.\nstarting level is still minimun",
                 "00844f940e434033ab826e5ff5929011",
                 Helpers.GetIcon("ee7dc126939e4d9438357fbd5980d459"), // Spell Penetration
@@ -272,7 +272,7 @@ namespace EldritchArcana
             {
                 var spellChoice = Helpers.CreateParamSelection<SelectAnySpellAtLevel>(
                     $"{selection.name}Level{level}",
-                    $"{selection.Name} (Spell Level {level})",
+                    String.Format(RES.TraitsFillSpellSelection_info, selection.Name, level),
                     selection.Description,
                     Helpers.MergeIds(selection.AssetGuid, FavoredClassBonus.spellLevelGuids[level - 1]),
                     null,
@@ -314,7 +314,7 @@ namespace EldritchArcana
                 
                 var spellChoice = Helpers.CreateParamSelection<SelectAnySpellAtLevel>(
                     $"{selection.name}Level{level}",
-                    $"{selection.Name} (Spell Level {level})",
+                    String.Format(RES.TraitsFillSpellSelection_info, selection.Name, level),
                     selection.Description,
                     Helpers.MergeIds(selection.AssetGuid, FavoredClassBonus.spellLevelGuids[level - 1],GuidList[2]),
                     null,
@@ -340,7 +340,7 @@ namespace EldritchArcana
             var skillText = UIUtility.GetStatText(skill);
             return Helpers.CreateFeature(name,
                 displayName,
-                $"{description}\nBenefits: You gain a +1 trait bonus on {skillText} checks, and {skillText} is always a class skill for you.",
+                String.Format(RES.TraitsAddStatBonusDescription_info, description, skillText, skillText),
                 assetId,
                 Helpers.GetSkillFocus(skill).Icon,
                 FeatureGroup.None,
@@ -811,8 +811,8 @@ namespace EldritchArcana
     public class UndoSelection : ComponentAppliedOnceOnLevelUp
     {
         public static Lazy<BlueprintFeature> Feature = new Lazy<BlueprintFeature>(() =>
-            Helpers.CreateFeature("UndoSelectionChoice", "(Go back)",
-                "Select this to go back to the previous selection, allowing you to pick something else.",
+            Helpers.CreateFeature("UndoSelectionChoice", RES.GoBackName_info,
+                RES.GoBackDescription_info,
                 "48963ed6422b41e5ba23d1f3f0fbe7c7", null, FeatureGroup.None,
                 Helpers.Create<UndoSelection>()));
 

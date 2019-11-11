@@ -11,12 +11,12 @@
     <LangVersion>latest</LangVersion>
     <RootNamespace>EldritchArcana</RootNamespace>
     <AssemblyName>EldritchArcana</AssemblyName>
-    <ApplicationVersion>1.2.7.10</ApplicationVersion>
+    <ApplicationVersion>1.2.9</ApplicationVersion>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <AssemblyVersion>1.2.7.10</AssemblyVersion>
-    <FileVersion>1.2.7.10</FileVersion>
-    <Version>1.2.7.10</Version>
-    <Authors>李允, saladinqiao</Authors>
+    <AssemblyVersion>1.2.9</AssemblyVersion>
+    <FileVersion>1.2.9</FileVersion>
+    <Version>1.2.9</Version>
+    <Authors>Elmindra_joostjasper</Authors>
     <Company>Legend</Company>
     <Copyright>Copyright © Legend 2019</Copyright>
     <Description>《开拓者：拥王者》精深奥术Mod，资源分离汉化版</Description>
@@ -54,4 +54,7 @@
   </ItemGroup>
   <Import Sdk="Microsoft.NET.Sdk" Project="Sdk.targets" />
   <PropertyGroup />
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /y &quot;D:\Project\EldritchArcanaUpdated-zhCN\bin\Debug\net472&quot; &quot;E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Mods\EldritchArcana&quot; /s&#xD;&#xA;xcopy /y &quot;D:\Project\EldritchArcanaUpdated-zhCN\resources\EldritchArcana&quot; &quot;E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Mods\EldritchArcana&quot; /s&#xD;&#xA;xcopy /y &quot;D:\Project\EldritchArcanaUpdated-zhCN\Testing\baseline_assets.txt&quot; &quot;E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Mods\EldritchArcana&quot;" />
+  </Target>
 </Project>

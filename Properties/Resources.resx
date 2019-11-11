@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -152,7 +152,7 @@ Bloodline Mutation: Blood havoc
 Whenever you cast a bloodrager or sorcerer spell that deals damage, add 1 point of damage per die rolled. </value>
   </data>
   <data name="BloodHavocMutationFeatureName_info" xml:space="preserve">
-    <value>Blood Havoc Mutation({0})</value>
+    <value>Blood Havoc Mutation ({0})</value>
   </data>
   <data name="BloodlineOrcArcanaFeatureDescription_info" xml:space="preserve">
     <value>You gain the orc subtype, including light sensitivity. Whenever you cast a spell that deals damage, that spell deals +1 point of damage per die rolled.</value>
@@ -1297,5 +1297,233 @@ If you evoke the wall so that it appears where creatures are, each creature take
   </data>
   <data name="OverlandFlightSpellAbilityName_info" xml:space="preserve">
     <value>Overland Flight — {0}</value>
+  </data>
+  <data name="OracleCurseCloudedVisionName_info" xml:space="preserve">
+    <value>Clouded Vision</value>
+  </data>
+  <data name="OracleCurseCloudedVisionDescription_info" xml:space="preserve">
+    <value>Your eyes are obscured, making it difficult for you to see.
+You cannot see anything beyond 20 feet. Targets beyond this range have concealment, and you cannot target any point past that range.</value>
+  </data>
+  <data name="OracleCurseCloudedVisionLevel5Description_info" xml:space="preserve">
+    <value>At 5th level, your vision distance increases to 30 feet.</value>
+  </data>
+  <data name="OracleCurseCloudedVisionLevel10Description_info" xml:space="preserve">
+    <value>At 10th level, you gain blindsense out to a range of 30 feet.</value>
+  </data>
+  <data name="OracleCurseCloudedVisionLevel15Description_info" xml:space="preserve">
+    <value>At 15th level, you gain blindsight out to a range of 15 feet.</value>
+  </data>
+  <data name="OracleCurseBlindsenseName_info" xml:space="preserve">
+    <value>Blindsense</value>
+  </data>
+  <data name="OracleCurseBlindsightName_info" xml:space="preserve">
+    <value>Blindsight</value>
+  </data>
+  <data name="CrossBloodlineName_info" xml:space="preserve">
+    <value>{0} (Crossblood)</value>
+  </data>
+  <data name="CrossbloodedDisplayDescribeChoices_info" xml:space="preserve">
+    <value>
+• {0}: {1}</value>
+  </data>
+  <data name="FlySpellName_info" xml:space="preserve">
+    <value>Fly</value>
+  </data>
+  <data name="OverlandFlightSpellName_info" xml:space="preserve">
+    <value>Overland Flight</value>
+  </data>
+  <data name="EldritchHeritageFeatDescription_info" xml:space="preserve">
+    <value>
+• {0}— {1}</value>
+  </data>
+  <data name="EldritchHeritagePrerequisitesDescription_info" xml:space="preserve">
+    <value>
+  Bloodline — {0} prerequisites:</value>
+  </data>
+  <data name="PrerequisiteCasterSpellLevelCaption_info" xml:space="preserve">
+    <value>Can cast {0} spells of level: {1}</value>
+  </data>
+  <data name="AdditionalTraitsFeatDescription_info" xml:space="preserve">
+    <value>You have more traits than normal.
+Benefit: You gain two character traits of your choice. These traits must be chosen from different lists, and cannot be chosen from lists from which you have already selected a character trait. You must meet any additional qualifications for the character traits you choose — this feat cannot enable you to select a dwarf character trait if you are an elf, for example.</value>
+  </data>
+  <data name="AdditionalTraitsFeatName_info" xml:space="preserve">
+    <value>Additional Traits</value>
+  </data>
+  <data name="DrawbacksDescription_info" xml:space="preserve">
+    <value>Drawbacks are traits in reverse. Instead of granting you a boon, they grant you a negative effect, typically in particular circumstances. 
+If you choose to take a drawback, you can take a third trait that you have access to. 
+You are not required to take a drawback.(disable in eldrich arcana menu and restart game)</value>
+  </data>
+  <data name="Drawbacks_info" xml:space="preserve">
+    <value>Drawbacks</value>
+  </data>
+  <data name="SkipSelectionDescription_info" xml:space="preserve">
+    <value>Skip this selection.</value>
+  </data>
+  <data name="SkipSelection_info" xml:space="preserve">
+    <value>(Skip)</value>
+  </data>
+  <data name="TraitsSelectionDescription_info" xml:space="preserve">
+    <value>Character traits are abilities that are not tied to your character’s race or class. They can enhance your character’s skills, racial abilities, class abilities, or other statistics, enabling you to further customize them. At its core, a character trait is approximately equal in power to half a feat, so two character traits are roughly equivalent to a bonus feat. Yet a character trait isn’t just another kind of power you can add on to your character—it’s a way to quantify (and encourage) building a character background that fits into your campaign world. Think of character traits as “story seeds” for your background; after you pick your two traits, you’ll have a point of inspiration from which to build your character’s personality and history. Alternatively, if you’ve already got a background in your head or written down for your character, you can view picking their traits as a way to quantify that background, just as picking race and class and ability scores quantifies their other strengths and weaknesses.</value>
+  </data>
+  <data name="CustomTraitDescription_info" xml:space="preserve">
+    <value>These traits are a little overpowered and are here just for fun, if you want to play fair don't pick em.</value>
+  </data>
+  <data name="CustomTraitName_info" xml:space="preserve">
+    <value>Custom Trait{cheat}</value>
+  </data>
+  <data name="GoBackDescription_info" xml:space="preserve">
+    <value>Select this to go back to the previous selection, allowing you to pick something else.</value>
+  </data>
+  <data name="GoBackName_info" xml:space="preserve">
+    <value>(Go back)</value>
+  </data>
+  <data name="OracleCurseBlackenedDescription_info" xml:space="preserve">
+    <value>Your hands and forearms are shriveled and blackened, as if you had plunged your arms into a blazing fire, and your thin, papery skin is sensitive to the touch.
+You take a –4 penalty on weapon attack rolls, but you add burning hands to your list of spells known.</value>
+  </data>
+  <data name="OracleCurseBlackenedLevel10Description_info" xml:space="preserve">
+    <value>At 10th level, add wall of fire to your list of spells known and your penalty on weapon attack rolls is reduced to –2.</value>
+  </data>
+  <data name="OracleCurseBlackenedLevel15Description_info" xml:space="preserve">
+    <value>At 15th level, add delayed blast fireball to your list of spells known.</value>
+  </data>
+  <data name="OracleCurseBlackenedLevel5Description_info" xml:space="preserve">
+    <value>At 5th level, add scorching ray and burning arc to your list of spells known.</value>
+  </data>
+  <data name="OracleCurseBlackenedName_info" xml:space="preserve">
+    <value>Blackened</value>
+  </data>
+  <data name="OracleCurseCovetousDescription_info" xml:space="preserve">
+    <value>You find yourself drawn to the luster of wealthy living.
+You must have a gold reserve worth at least 100 gp + 200 gp per character level you have beyond 1st. If you do not have sufficient wealth, you feel a strong desire (but are not compelled) to sell existing items or steal from others to obtain it. You are sickened whenever you do not meet this requirement. Use Magic Device becomes a class skill for you.</value>
+  </data>
+  <data name="OracleCurseCovetousLevel10Description_info" xml:space="preserve">
+    <value>At 10th level, you can use your {0} skill to identify items.</value>
+  </data>
+  <data name="OracleCurseCovetousLevel15Description_info" xml:space="preserve">
+    <value>At 15th level, you gain a +4 insight bonus on {0} checks.</value>
+  </data>
+  <data name="OracleCurseCovetousLevel5Description_info" xml:space="preserve">
+    <value>At 5th level, you gain a +4 insight bonus on {0} checks.</value>
+  </data>
+  <data name="OracleCurseCovetousName_info" xml:space="preserve">
+    <value>Covetous</value>
+  </data>
+  <data name="OracleCurseDeafDescription_info" xml:space="preserve">
+    <value>You cannot hear and suffer all of the usual penalties for being deafened: -4 penalty on initiative and -4 perception. You cast all of your spells as if they were modified by the Silent Spell feat. This does not increase their level or casting time.</value>
+  </data>
+  <data name="OracleCurseDeafLevel10Description_info" xml:space="preserve">
+    <value>At 10th level, you receive a +3 competence bonus on Perception checks, and you do not suffer any penalty on initiative checks due to being deaf.</value>
+  </data>
+  <data name="OracleCurseDeafLevel15Description_info" xml:space="preserve">
+    <value>At 15th level, you gain tremorsense out to a range of 30 feet.</value>
+  </data>
+  <data name="OracleCurseDeafLevel15Name_info" xml:space="preserve">
+    <value>Tremorsense</value>
+  </data>
+  <data name="OracleCurseDeafLevel5Description_info" xml:space="preserve">
+    <value>At 5th level, you no longer receive a penalty on Perception checks, and the initiative penalty for being deaf is reduced to –2.</value>
+  </data>
+  <data name="OracleCurseDeafName_info" xml:space="preserve">
+    <value>Deaf</value>
+  </data>
+  <data name="OracleCurseHauntedDescription_info" xml:space="preserve">
+    <value>Malevolent spirits follow you wherever you go, causing minor mishaps and strange occurrences (such as unexpected breezes, small objects moving on their own, and faint noises).
+Retrieving any stored item from your gear requires a standard action, unless it would normally take longer.Any item you drop lands 10 feet away from you in a random direction.
+Add {0} to your list of spells known.</value>
+  </data>
+  <data name="OracleCurseHauntedLevel5Description_info" xml:space="preserve">
+    <value>At {0}th level, add {1} to your list of spells known.</value>
+  </data>
+  <data name="OracleCurseHauntedName_info" xml:space="preserve">
+    <value>Haunted</value>
+  </data>
+  <data name="OracleCurseLameDescription_info" xml:space="preserve">
+    <value>One of your legs is permanently wounded, reducing your base land speed by 10 feet if your base speed is 30 feet or more. If your base speed is less than 30 feet, your speed is reduced by 5 feet. Your speed is never reduced due to encumbrance.</value>
+  </data>
+  <data name="OracleCurseLameEffortlessArmorName_info" xml:space="preserve">
+    <value>Effortless Armor</value>
+  </data>
+  <data name="OracleCurseLameExhaustionImmunity" xml:space="preserve">
+    <value>Immune to Exhausted</value>
+  </data>
+  <data name="OracleCurseLameFatigueImmunityName_info" xml:space="preserve">
+    <value>Immune to Fatigue</value>
+  </data>
+  <data name="OracleCurseLameLevel10Description_info" xml:space="preserve">
+    <value>At 10th level, your speed is never reduced by armor.</value>
+  </data>
+  <data name="OracleCurseLameLevel15Description_info" xml:space="preserve">
+    <value>At 15th level, you are immune to the exhausted condition.</value>
+  </data>
+  <data name="OracleCurseLameLevel5Description_info" xml:space="preserve">
+    <value>At 5th level, you are immune to the fatigued condition (but not exhaustion).</value>
+  </data>
+  <data name="OracleCurseLameName_info" xml:space="preserve">
+    <value>Lame</value>
+  </data>
+  <data name="OracleCurseTonguesDescription_info" xml:space="preserve">
+    <value>In times of stress or unease, you speak in tongues.
+Pick one of the following languages: Abyssal, Aklo, Aquan, Auran, Celestial, Ignan, Infernal, or Terran.
+Whenever you are in combat, you can only speak and understand the selected language. This does not interfere with spellcasting, but it does apply to spells that are language dependent. You know the selected language, and gain a +2 bonus to {0} representing your knowledge of otherworldly languages.
+If your party members have at least 1 rank in {1} they can communicate with you in combat, allowing you to issue orders to them or vice versa.</value>
+  </data>
+  <data name="OracleCurseTonguesLevel10Description_info" xml:space="preserve">
+    <value>At 10th level, you can understand any spoken language, as if under the effects of tongues, even during combat.
+You gain an additional +4 {0} representing this knowledge.</value>
+  </data>
+  <data name="OracleCurseTonguesLevel10Name_info" xml:space="preserve">
+    <value>Understand All Languages</value>
+  </data>
+  <data name="OracleCurseTonguesLevel15Description_info" xml:space="preserve">
+    <value>At 15th level, you can speak and understand any language, but your speech is still restricted during combat.
+You gain an additional +4 {0} representing this knowledge.</value>
+  </data>
+  <data name="OracleCurseTonguesLevel15Name_info" xml:space="preserve">
+    <value>Speak All Languages</value>
+  </data>
+  <data name="OracleCurseTonguesLevel5Description_info" xml:space="preserve">
+    <value>At 5th level, you learn a new language, gaining an additional +2 {0} representing this knowledge.</value>
+  </data>
+  <data name="OracleCurseTonguesLevel5Name_info" xml:space="preserve">
+    <value>Bonus Language</value>
+  </data>
+  <data name="OracleCurseTonguesName_info" xml:space="preserve">
+    <value>Tongues</value>
+  </data>
+  <data name="OracleCurseWastingDescription_info" xml:space="preserve">
+    <value>Your body is slowly rotting away.
+You take a –4 penalty on Charisma-based skill checks, except for Intimidate. You gain a +4 competence bonus on saves made against disease.</value>
+  </data>
+  <data name="OracleCurseWastingLevel10Description_info" xml:space="preserve">
+    <value>At 10th level, you gain immunity to disease.</value>
+  </data>
+  <data name="OracleCurseWastingLevel10Name_info" xml:space="preserve">
+    <value>Immune to Disease</value>
+  </data>
+  <data name="OracleCurseWastingLevel15Description_info" xml:space="preserve">
+    <value>At 15th level, you are immune to the nauseated condition.</value>
+  </data>
+  <data name="OracleCurseWastingLevel15Name_info" xml:space="preserve">
+    <value>Immune to Nauseated</value>
+  </data>
+  <data name="OracleCurseWastingLevel5Description_info" xml:space="preserve">
+    <value>At 5th level, you are immune to the sickened condition (but not nauseated).</value>
+  </data>
+  <data name="OracleCurseWastingLevel5Name_info" xml:space="preserve">
+    <value>Immune to Sickened</value>
+  </data>
+  <data name="OracleCurseWastingName_info" xml:space="preserve">
+    <value>Wasting</value>
+  </data>
+  <data name="TraitsAddStatBonusDescription_info" xml:space="preserve">
+    <value>{0}
+Benefits: You gain a +1 trait bonus on {1} checks, and {2} is always a class skill for you.</value>
+  </data>
+  <data name="TraitsFillSpellSelection_info" xml:space="preserve">
+    <value>{0} (Spell Level {1})</value>
   </data>
 </root>

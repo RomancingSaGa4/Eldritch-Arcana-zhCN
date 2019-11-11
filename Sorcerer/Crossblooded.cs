@@ -88,7 +88,7 @@ namespace EldritchArcana
                 var levelLogic = CrossBloodlineLogic.TryCreate(bloodline);
                 if (levelLogic == null) continue;
                 var crossbloodline = library.CopyAndAdd(bloodline, $"{bloodline.name}Cross", bloodline.AssetGuid, "933224357f8d48be837a3083e33a18a8");
-                crossbloodline.SetName($"{bloodline.Name} (Crossblood)");
+                crossbloodline.SetName(String.Format(RES.CrossBloodlineName_info, bloodline.Name));
                 crossbloodline.LevelEntries = new LevelEntry[] {
                     Helpers.LevelEntry(1, bloodline.GetLevelEntry(1).Features.Where(EldritchHeritage.IsArcanaOrClassSkill))
                 };
@@ -146,9 +146,6 @@ namespace EldritchArcana
                         Helpers.MergeIds(guidsByLevel[level], "15029e64baee4db6b09ca6a6ed2d70c0"),
                         null,
                         FeatureGroup.None);
-
-
-
 
                     allPowerChoices.AddRange(powerChoices);
                     powerSelection.SetFeatures(allPowerChoices);
@@ -359,31 +356,49 @@ namespace EldritchArcana
         {
             var str = new StringBuilder(description);
             str.Append(RES.CrossbloodedChoicesFeatureDescription_info);
-            var seenDraconic = false;
-            var seenElemental = false;
+            // 重写，利用HashSet
+            HashSet<String> DescribeItemsSet = new HashSet<string> { };
+
             foreach (var f in features)
             {
                 foreach (var prereq in f.GetComponents<PrerequisiteFeature>())
                 {
                     var bloodline = prereq.Feature;
                     var displayName = bloodline.Name;
-                    if (bloodline.name.StartsWith("CrossBloodlineDraconic"))
-                    {
-                        if (seenDraconic) continue;
 
-                        var i = displayName.IndexOf(" — ");
-                        if (i >= 0) displayName = displayName.Substring(0, i);
-                        seenDraconic = true;
-                    }
-                    else if (bloodline.name.StartsWith("CrossBloodlineElemental"))
+                    // 英语法语用“—”，德语俄语用“-”，中文是“（）”，不想写字典只能用傻办法。
+                    List<int> SubstringIndexForDisplayName = new List<int>(){
+                        displayName.IndexOf(" — "),
+                        displayName.IndexOf(" - "),
+                        displayName.IndexOf("（")
+                    };
+                    SubstringIndexForDisplayName.Sort();
+                    var i = SubstringIndexForDisplayName[2];
+
+                    if (i >= 0) displayName = String.Format(RES.CrossBloodlineName_info, displayName.Substring(0, i));
+
+                    // 诸如“燃烧之手（电击）”之类的法术或能力名称要把“（电击）”部分去除
+                    List<int> SubstringIndexForFName = new List<int>(){
+                        f.Name.IndexOf("("),
+                        f.Name.IndexOf("（")
+                    };
+                    SubstringIndexForFName.Sort();
+                    var fIndex = SubstringIndexForFName[1];
+
+                    if (bloodline.name.StartsWith("SpellFocus"))
                     {
-                        if (seenElemental) continue;
-                        var i = displayName.IndexOf(" — ");
-                        if (i >= 0) displayName = displayName.Substring(0, i);
-                        seenElemental = true;
+                        DescribeItemsSet.Add("\n" + String.Format(RES.SingleLineDescription_info, displayName));
                     }
-                    str.Append($"\n• {displayName}: {f.Name}");
+                    else
+                    {
+                        DescribeItemsSet.Add(
+                            String.Format(RES.CrossbloodedDisplayDescribeChoices_info, displayName, fIndex >= 0 ? f.Name.Substring(0, fIndex) : f.Name));
+                    }
                 }
+            }
+            foreach (var DescribeItem in DescribeItemsSet)
+            {
+                str.Append(DescribeItem);
             }
             return str.ToString();
         }

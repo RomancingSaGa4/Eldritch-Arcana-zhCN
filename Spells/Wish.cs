@@ -52,7 +52,7 @@ namespace EldritchArcana
             Main.SafeLoad(LoadWish, RES.WishSpells_info);
             Main.SafeLoad(LoadLimitedWish, RES.LimitedWishSpells_info);
             Main.SafeLoad(LoadWishFabricate, RES.WishFabricateSpells_info);
-            Log.Write("wishSPells loaded");
+            Log.Write("wishSpells loaded");
         }
 
         static void LoadLimitedWish()

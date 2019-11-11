@@ -80,6 +80,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You have more traits than normal.
+        ///Benefit: You gain two character traits of your choice. These traits must be chosen from different lists, and cannot be chosen from lists from which you have already selected a character trait. You must meet any additional qualifications for the character traits you choose — this feat cannot enable you to select a dwarf character trait if you are an elf, for example. 的本地化字符串。
+        /// </summary>
+        internal static string AdditionalTraitsFeatDescription_info {
+            get {
+                return ResourceManager.GetString("AdditionalTraitsFeatDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Additional Traits 的本地化字符串。
+        /// </summary>
+        internal static string AdditionalTraitsFeatName_info {
+            get {
+                return ResourceManager.GetString("AdditionalTraitsFeatName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Scrolls for new spells 的本地化字符串。
         /// </summary>
         internal static string AddSpellScrollsFeatureName_info {
@@ -266,7 +285,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Blood Havoc Mutation({0}) 的本地化字符串。
+        ///   查找类似 Blood Havoc Mutation ({0}) 的本地化字符串。
         /// </summary>
         internal static string BloodHavocMutationFeatureName_info {
             get {
@@ -602,6 +621,16 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 
+        ///• {0}: {1} 的本地化字符串。
+        /// </summary>
+        internal static string CrossbloodedDisplayDescribeChoices_info {
+            get {
+                return ResourceManager.GetString("CrossbloodedDisplayDescribeChoices_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 A crossblooded sorcerer selects two different bloodlines. The sorcerer may gain access to the skills, feats, and some of the powers of both bloodlines they are descended from, but at the cost of reduced mental clarity and choice. 的本地化字符串。
         /// </summary>
         internal static string CrossbloodedSorcererLocalizedDescription_info {
@@ -616,6 +645,33 @@ namespace EldritchArcana.Properties {
         internal static string CrossbloodedSorcererLocalizedName_info {
             get {
                 return ResourceManager.GetString("CrossbloodedSorcererLocalizedName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0} (Crossblood) 的本地化字符串。
+        /// </summary>
+        internal static string CrossBloodlineName_info {
+            get {
+                return ResourceManager.GetString("CrossBloodlineName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 These traits are a little overpowered and are here just for fun, if you want to play fair don&apos;t pick em. 的本地化字符串。
+        /// </summary>
+        internal static string CustomTraitDescription_info {
+            get {
+                return ResourceManager.GetString("CustomTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Custom Trait{cheat} 的本地化字符串。
+        /// </summary>
+        internal static string CustomTraitName_info {
+            get {
+                return ResourceManager.GetString("CustomTraitName_info", resourceCulture);
             }
         }
         
@@ -825,6 +881,26 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Drawbacks 的本地化字符串。
+        /// </summary>
+        internal static string Drawbacks_info {
+            get {
+                return ResourceManager.GetString("Drawbacks_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Drawbacks are traits in reverse. Instead of granting you a boon, they grant you a negative effect, typically in particular circumstances. 
+        ///If you choose to take a drawback, you can take a third trait that you have access to. 
+        ///You are not required to take a drawback.(disable in eldrich arcana menu and restart game) 的本地化字符串。
+        /// </summary>
+        internal static string DrawbacksDescription_info {
+            get {
+                return ResourceManager.GetString("DrawbacksDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 If you pick a Drawback at level one you can choose an extra feat on top.
         ///Bane: choose a spellschool you have {0} on saves vs that spellschool. 的本地化字符串。
         /// </summary>
@@ -853,6 +929,16 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 
+        ///• {0}— {1} 的本地化字符串。
+        /// </summary>
+        internal static string EldritchHeritageFeatDescription_info {
+            get {
+                return ResourceManager.GetString("EldritchHeritageFeatDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You are descended from a long line of sorcerers, and some portion of their power flows in your veins.
         ///Select one sorcerer bloodline. You must have Skill focus in the class skill that bloodline grants to a sorcerer at 1st level (for example, Heal for the celestial bloodline). This bloodline cannot be a bloodline you already have. You gain the first-level bloodline power for the selected bloodline. For purposes of using that power, treat your sorcerer level as equal to your character level – 2, even if you h [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
@@ -868,6 +954,16 @@ namespace EldritchArcana.Properties {
         internal static string EldritchHeritageFeatureName_info {
             get {
                 return ResourceManager.GetString("EldritchHeritageFeatureName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 
+        ///  Bloodline — {0} prerequisites: 的本地化字符串。
+        /// </summary>
+        internal static string EldritchHeritagePrerequisitesDescription_info {
+            get {
+                return ResourceManager.GetString("EldritchHeritagePrerequisitesDescription_info", resourceCulture);
             }
         }
         
@@ -1221,6 +1317,15 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Fly 的本地化字符串。
+        /// </summary>
+        internal static string FlySpellName_info {
+            get {
+                return ResourceManager.GetString("FlySpellName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Fly and Air Walk spells 的本地化字符串。
         /// </summary>
         internal static string FlySpells_info {
@@ -1352,6 +1457,24 @@ namespace EldritchArcana.Properties {
         internal static string FlyWingDraconicWhiteName_info {
             get {
                 return ResourceManager.GetString("FlyWingDraconicWhiteName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Select this to go back to the previous selection, allowing you to pick something else. 的本地化字符串。
+        /// </summary>
+        internal static string GoBackDescription_info {
+            get {
+                return ResourceManager.GetString("GoBackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 (Go back) 的本地化字符串。
+        /// </summary>
+        internal static string GoBackName_info {
+            get {
+                return ResourceManager.GetString("GoBackName_info", resourceCulture);
             }
         }
         
@@ -2143,7 +2266,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 3rd 的本地化字符串。
+        ///   查找类似 3rd  的本地化字符串。
         /// </summary>
         internal static string MetamagicRodSpellMaxLevel_3rd {
             get {
@@ -2152,7 +2275,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 6th 的本地化字符串。
+        ///   查找类似 6th  的本地化字符串。
         /// </summary>
         internal static string MetamagicRodSpellMaxLevel_6th {
             get {
@@ -2161,7 +2284,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 9th 的本地化字符串。
+        ///   查找类似 9th  的本地化字符串。
         /// </summary>
         internal static string MetamagicRodSpellMaxLevel_9th {
             get {
@@ -2630,6 +2753,317 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Your hands and forearms are shriveled and blackened, as if you had plunged your arms into a blazing fire, and your thin, papery skin is sensitive to the touch.
+        ///You take a –4 penalty on weapon attack rolls, but you add burning hands to your list of spells known. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseBlackenedDescription_info {
+            get {
+                return ResourceManager.GetString("OracleCurseBlackenedDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 10th level, add wall of fire to your list of spells known and your penalty on weapon attack rolls is reduced to –2. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseBlackenedLevel10Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseBlackenedLevel10Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 15th level, add delayed blast fireball to your list of spells known. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseBlackenedLevel15Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseBlackenedLevel15Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 5th level, add scorching ray and burning arc to your list of spells known. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseBlackenedLevel5Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseBlackenedLevel5Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Blackened 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseBlackenedName_info {
+            get {
+                return ResourceManager.GetString("OracleCurseBlackenedName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Blindsense 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseBlindsenseName_info {
+            get {
+                return ResourceManager.GetString("OracleCurseBlindsenseName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Blindsight 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseBlindsightName_info {
+            get {
+                return ResourceManager.GetString("OracleCurseBlindsightName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your eyes are obscured, making it difficult for you to see.
+        ///You cannot see anything beyond 20 feet. Targets beyond this range have concealment, and you cannot target any point past that range. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseCloudedVisionDescription_info {
+            get {
+                return ResourceManager.GetString("OracleCurseCloudedVisionDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 10th level, you gain blindsense out to a range of 30 feet. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseCloudedVisionLevel10Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseCloudedVisionLevel10Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 15th level, you gain blindsight out to a range of 15 feet. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseCloudedVisionLevel15Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseCloudedVisionLevel15Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 5th level, your vision distance increases to 30 feet. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseCloudedVisionLevel5Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseCloudedVisionLevel5Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Clouded Vision 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseCloudedVisionName_info {
+            get {
+                return ResourceManager.GetString("OracleCurseCloudedVisionName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You find yourself drawn to the luster of wealthy living.
+        ///You must have a gold reserve worth at least 100 gp + 200 gp per character level you have beyond 1st. If you do not have sufficient wealth, you feel a strong desire (but are not compelled) to sell existing items or steal from others to obtain it. You are sickened whenever you do not meet this requirement. Use Magic Device becomes a class skill for you. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseCovetousDescription_info {
+            get {
+                return ResourceManager.GetString("OracleCurseCovetousDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 10th level, you can use your {0} skill to identify items. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseCovetousLevel10Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseCovetousLevel10Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 15th level, you gain a +4 insight bonus on {0} checks. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseCovetousLevel15Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseCovetousLevel15Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 5th level, you gain a +4 insight bonus on {0} checks. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseCovetousLevel5Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseCovetousLevel5Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Covetous 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseCovetousName_info {
+            get {
+                return ResourceManager.GetString("OracleCurseCovetousName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You cannot hear and suffer all of the usual penalties for being deafened: -4 penalty on initiative and -4 perception. You cast all of your spells as if they were modified by the Silent Spell feat. This does not increase their level or casting time. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseDeafDescription_info {
+            get {
+                return ResourceManager.GetString("OracleCurseDeafDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 10th level, you receive a +3 competence bonus on Perception checks, and you do not suffer any penalty on initiative checks due to being deaf. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseDeafLevel10Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseDeafLevel10Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 15th level, you gain tremorsense out to a range of 30 feet. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseDeafLevel15Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseDeafLevel15Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Tremorsense 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseDeafLevel15Name_info {
+            get {
+                return ResourceManager.GetString("OracleCurseDeafLevel15Name_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 5th level, you no longer receive a penalty on Perception checks, and the initiative penalty for being deaf is reduced to –2. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseDeafLevel5Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseDeafLevel5Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Deaf 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseDeafName_info {
+            get {
+                return ResourceManager.GetString("OracleCurseDeafName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Malevolent spirits follow you wherever you go, causing minor mishaps and strange occurrences (such as unexpected breezes, small objects moving on their own, and faint noises).
+        ///Retrieving any stored item from your gear requires a standard action, unless it would normally take longer.Any item you drop lands 10 feet away from you in a random direction.
+        ///Add {0} to your list of spells known. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseHauntedDescription_info {
+            get {
+                return ResourceManager.GetString("OracleCurseHauntedDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At {0}th level, add {1} to your list of spells known. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseHauntedLevel5Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseHauntedLevel5Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Haunted 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseHauntedName_info {
+            get {
+                return ResourceManager.GetString("OracleCurseHauntedName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 One of your legs is permanently wounded, reducing your base land speed by 10 feet if your base speed is 30 feet or more. If your base speed is less than 30 feet, your speed is reduced by 5 feet. Your speed is never reduced due to encumbrance. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseLameDescription_info {
+            get {
+                return ResourceManager.GetString("OracleCurseLameDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Effortless Armor 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseLameEffortlessArmorName_info {
+            get {
+                return ResourceManager.GetString("OracleCurseLameEffortlessArmorName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Immune to Exhausted 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseLameExhaustionImmunity {
+            get {
+                return ResourceManager.GetString("OracleCurseLameExhaustionImmunity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Immune to Fatigue 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseLameFatigueImmunityName_info {
+            get {
+                return ResourceManager.GetString("OracleCurseLameFatigueImmunityName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 10th level, your speed is never reduced by armor. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseLameLevel10Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseLameLevel10Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 15th level, you are immune to the exhausted condition. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseLameLevel15Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseLameLevel15Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 5th level, you are immune to the fatigued condition (but not exhaustion). 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseLameLevel5Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseLameLevel5Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Lame 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseLameName_info {
+            get {
+                return ResourceManager.GetString("OracleCurseLameName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Each oracle is cursed, but this curse comes with a benefit as well as a hindrance.This choice is made at 1st level, and once made, it cannot be changed.The oracle’s curse cannot be removed or dispelled without the aid of a deity.An oracle’s curse is based on her oracle level plus one for every two levels or Hit Dice other than oracle.Each oracle must choose one of the following curses. 的本地化字符串。
         /// </summary>
         internal static string OracleCurseSelectionDescription_info {
@@ -2644,6 +3078,156 @@ namespace EldritchArcana.Properties {
         internal static string OracleCurseSelectionName_info {
             get {
                 return ResourceManager.GetString("OracleCurseSelectionName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 In times of stress or unease, you speak in tongues.
+        ///Pick one of the following languages: Abyssal, Aklo, Aquan, Auran, Celestial, Ignan, Infernal, or Terran.
+        ///Whenever you are in combat, you can only speak and understand the selected language. This does not interfere with spellcasting, but it does apply to spells that are language dependent. You know the selected language, and gain a +2 bonus to {0} representing your knowledge of otherworldly languages.
+        ///If your party members have at least 1 rank in {1} the [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseTonguesDescription_info {
+            get {
+                return ResourceManager.GetString("OracleCurseTonguesDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 10th level, you can understand any spoken language, as if under the effects of tongues, even during combat.
+        ///You gain an additional +4 {0} representing this knowledge. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseTonguesLevel10Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseTonguesLevel10Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Understand All Languages 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseTonguesLevel10Name_info {
+            get {
+                return ResourceManager.GetString("OracleCurseTonguesLevel10Name_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 15th level, you can speak and understand any language, but your speech is still restricted during combat.
+        ///You gain an additional +4 {0} representing this knowledge. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseTonguesLevel15Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseTonguesLevel15Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Speak All Languages 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseTonguesLevel15Name_info {
+            get {
+                return ResourceManager.GetString("OracleCurseTonguesLevel15Name_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 5th level, you learn a new language, gaining an additional +2 {0} representing this knowledge. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseTonguesLevel5Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseTonguesLevel5Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Bonus Language 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseTonguesLevel5Name_info {
+            get {
+                return ResourceManager.GetString("OracleCurseTonguesLevel5Name_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Tongues 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseTonguesName_info {
+            get {
+                return ResourceManager.GetString("OracleCurseTonguesName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your body is slowly rotting away.
+        ///You take a –4 penalty on Charisma-based skill checks, except for Intimidate. You gain a +4 competence bonus on saves made against disease. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseWastingDescription_info {
+            get {
+                return ResourceManager.GetString("OracleCurseWastingDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 10th level, you gain immunity to disease. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseWastingLevel10Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseWastingLevel10Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Immune to Disease 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseWastingLevel10Name_info {
+            get {
+                return ResourceManager.GetString("OracleCurseWastingLevel10Name_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 15th level, you are immune to the nauseated condition. 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseWastingLevel15Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseWastingLevel15Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Immune to Nauseated 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseWastingLevel15Name_info {
+            get {
+                return ResourceManager.GetString("OracleCurseWastingLevel15Name_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 5th level, you are immune to the sickened condition (but not nauseated). 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseWastingLevel5Description_info {
+            get {
+                return ResourceManager.GetString("OracleCurseWastingLevel5Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Immune to Sickened 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseWastingLevel5Name_info {
+            get {
+                return ResourceManager.GetString("OracleCurseWastingLevel5Name_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Wasting 的本地化字符串。
+        /// </summary>
+        internal static string OracleCurseWastingName_info {
+            get {
+                return ResourceManager.GetString("OracleCurseWastingName_info", resourceCulture);
             }
         }
         
@@ -2789,6 +3373,24 @@ namespace EldritchArcana.Properties {
         internal static string OverlandFlightSpellAbilityName_info {
             get {
                 return ResourceManager.GetString("OverlandFlightSpellAbilityName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Overland Flight 的本地化字符串。
+        /// </summary>
+        internal static string OverlandFlightSpellName_info {
+            get {
+                return ResourceManager.GetString("OverlandFlightSpellName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Can cast {0} spells of level: {1} 的本地化字符串。
+        /// </summary>
+        internal static string PrerequisiteCasterSpellLevelCaption_info {
+            get {
+                return ResourceManager.GetString("PrerequisiteCasterSpellLevelCaption_info", resourceCulture);
             }
         }
         
@@ -2980,6 +3582,24 @@ namespace EldritchArcana.Properties {
         internal static string SkipDeityFeatureName_info {
             get {
                 return ResourceManager.GetString("SkipDeityFeatureName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 (Skip) 的本地化字符串。
+        /// </summary>
+        internal static string SkipSelection_info {
+            get {
+                return ResourceManager.GetString("SkipSelection_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Skip this selection. 的本地化字符串。
+        /// </summary>
+        internal static string SkipSelectionDescription_info {
+            get {
+                return ResourceManager.GetString("SkipSelectionDescription_info", resourceCulture);
             }
         }
         
@@ -3181,6 +3801,34 @@ namespace EldritchArcana.Properties {
         internal static string TimeStopSpells_info {
             get {
                 return ResourceManager.GetString("TimeStopSpells_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0}
+        ///Benefits: You gain a +1 trait bonus on {1} checks, and {2} is always a class skill for you. 的本地化字符串。
+        /// </summary>
+        internal static string TraitsAddStatBonusDescription_info {
+            get {
+                return ResourceManager.GetString("TraitsAddStatBonusDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0} (Spell Level {1}) 的本地化字符串。
+        /// </summary>
+        internal static string TraitsFillSpellSelection_info {
+            get {
+                return ResourceManager.GetString("TraitsFillSpellSelection_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Character traits are abilities that are not tied to your character’s race or class. They can enhance your character’s skills, racial abilities, class abilities, or other statistics, enabling you to further customize them. At its core, a character trait is approximately equal in power to half a feat, so two character traits are roughly equivalent to a bonus feat. Yet a character trait isn’t just another kind of power you can add on to your character—it’s a way to quantify (and encourage) building a character [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string TraitsSelectionDescription_info {
+            get {
+                return ResourceManager.GetString("TraitsSelectionDescription_info", resourceCulture);
             }
         }
         

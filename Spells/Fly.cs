@@ -167,7 +167,7 @@ namespace EldritchArcana
             }
 
             var fly = library.CopyAndAdd(variants[0].Fly, "FlySpell", "20ab2cd848c04d46882625e696c921bf");
-            fly.SetName("Fly");
+            fly.SetName(RES.FlySpellName_info);
             fly.SetComponents(
                 SpellSchool.Transmutation.CreateSpellComponent(),
                 Helpers.CreateSpellDescriptor(),
@@ -186,7 +186,7 @@ namespace EldritchArcana
             fly.FixDomainSpell(3, "ab90308db82342f47bf0d636fe941434");
 
             var overlandFlight = library.CopyAndAdd(variants[0].OverlandFlight, "OverlandFlight", "8b5ea075097e4c7e999266b7569ee39d");
-            overlandFlight.SetName("Overland Flight");
+            overlandFlight.SetName(RES.OverlandFlightSpellName_info);
             overlandFlight.SetComponents(
                 SpellSchool.Transmutation.CreateSpellComponent(),
                 Helpers.CreateSpellDescriptor(),

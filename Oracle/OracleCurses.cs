@@ -48,8 +48,8 @@ namespace EldritchArcana
 
         internal static BlueprintFeatureSelection CreateSelection()
         {
-            var selection = Helpers.CreateFeatureSelection("OracleCurseSelection", "Curse",
-                "Each oracle is cursed, but this curse comes with a benefit as well as a hindrance.This choice is made at 1st level, and once made, it cannot be changed.The oracle’s curse cannot be removed or dispelled without the aid of a deity.An oracle’s curse is based on her oracle level plus one for every two levels or Hit Dice other than oracle.Each oracle must choose one of the following curses.",
+            var selection = Helpers.CreateFeatureSelection("OracleCurseSelection", RES.OracleCurseSelectionName_info,
+                RES.OracleCurseSelectionDescription_info,
                 "b4c9164ec94a47589eeb2a6688b24320",
                 null,
                 UpdateLevelUpDeterminatorText.Group);
@@ -110,27 +110,26 @@ namespace EldritchArcana
             //
             // Note: I tried altering fog of war settings, but this seems to break some of the game's
             // cutscene scripts, so those patches are removed.
-            var curse = Helpers.CreateProgression("OracleCurseCloudedVision", "Clouded Vision",
-                "Your eyes are obscured, making it difficult for you to see.\nYou cannot see anything beyond 20 feet. " +
-                "Targets beyond this range have concealment, and you cannot target any point past that range.",
+            var curse = Helpers.CreateProgression("OracleCurseCloudedVision", RES.OracleCurseCloudedVisionName_info,
+                RES.OracleCurseCloudedVisionDescription_info,
                 "a4556beb36e742db9361c50587de9514",
                 Helpers.GetIcon("46fd02ad56c35224c9c91c88cd457791"), // blindness
                 FeatureGroup.None,
                 Helpers.Create<CloudedVisionLogic>());
 
-            var level5 = Helpers.CreateFeature($"{curse.name}Level5", curse.Name,
-                "At 5th level, your vision distance increases to 30 feet.",
+            var level5 = Helpers.CreateFeature($"CloudedVisionLevel5", RES.OracleCurseCloudedVisionName_info,
+                RES.OracleCurseCloudedVisionLevel5Description_info,
                 "9ee32f1d54984aa7b635891fa778205d", curse.Icon, FeatureGroup.None);
 
-            var level10 = Helpers.CreateFeature($"{curse.name}Blindsense", "Blindsense",
-                "At 10th level, you gain blindsense out to a range of 30 feet.",
+            var level10 = Helpers.CreateFeature($"CloudedVisionBlindsense", RES.OracleCurseBlindsenseName_info,
+                RES.OracleCurseCloudedVisionLevel10Description_info,
                 "b92a0776b8984f19b6ae0a83c4b90579",
                 Helpers.GetIcon("30e5dc243f937fc4b95d2f8f4e1b7ff3"), // see invisible
                 FeatureGroup.None,
                 Helpers.Create<Blindsense>(b => b.Range = 30.Feet()));
 
-            var level15 = Helpers.CreateFeature($"{curse.name}Blindsight", "Blindsight",
-                "At 15th level, you gain blindsight out to a range of 15 feet.",
+            var level15 = Helpers.CreateFeature($"CloudedVisionBlindsight", RES.OracleCurseBlindsightName_info,
+                RES.OracleCurseCloudedVisionLevel15Description_info,
                 "69c483cbe48647f2af576275c2a30b59",
                 Helpers.GetIcon("4cf3d0fae3239ec478f51e86f49161cb"), // true seeing
                 FeatureGroup.None,
@@ -149,8 +148,8 @@ namespace EldritchArcana
         static BlueprintProgression CreateDeafCurse()
         {
             var pcVoiceNone = library.Get<BlueprintUnitAsksList>("e7b22776ba8e2b84eaaff98e439639a7");
-            var curse = Helpers.CreateProgression("OracleCurseDeaf", "Deaf",
-                "You cannot hear and suffer all of the usual penalties for being deafened: -4 penalty on initiative and -4 perception. You cast all of your spells as if they were modified by the Silent Spell feat. This does not increase their level or casting time.",
+            var curse = Helpers.CreateProgression("OracleCurseDeaf", RES.OracleCurseDeafName_info,
+                RES.OracleCurseDeafDescription_info,
                 "a69e00e4787d4f4c9bf38540c88fce13",
                 Helpers.GetIcon("c3893092a333b93499fd0a21845aa265"), // sound burst
                 FeatureGroup.None,
@@ -161,20 +160,20 @@ namespace EldritchArcana
             curse.Classes = oracleArray;
             Main.ApplyPatch(typeof(AbilityData_VoiceIntensity_Patch), "Oracle Deaf curse, cast using Silent Spell");
 
-            var level5 = Helpers.CreateFeature($"{curse.name}Level5", curse.Name,
-                "At 5th level, you no longer receive a penalty on Perception checks, and the initiative penalty for being deaf is reduced to –2.",
+            var level5 = Helpers.CreateFeature($"DeafLevel5", RES.OracleCurseDeafName_info,
+                RES.OracleCurseDeafLevel5Description_info,
                 "373c4a9b4d304cbfa77472613010a367", curse.Icon, FeatureGroup.None,
                 AddStatBonusOnCurseLevel.Create(StatType.Initiative, -2, ModifierDescriptor.Penalty, minLevel: 5, maxLevel: 9));
 
-            var level10 = Helpers.CreateFeature($"{curse.name}Level10", curse.Name,
-                "At 10th level, you receive a +3 competence bonus on Perception checks, and you do not suffer any penalty on initiative checks due to being deaf.",
+            var level10 = Helpers.CreateFeature($"DeafLevel10", RES.OracleCurseDeafName_info,
+                RES.OracleCurseDeafLevel10Description_info,
                 "649e4b7f719b4a5d93c322d12ed4ae5b",
                 Helpers.GetIcon("c927a8b0cd3f5174f8c0b67cdbfde539"), // remove blindness
                 FeatureGroup.None,
                 AddStatBonusOnCurseLevel.Create(StatType.SkillPerception, 3, ModifierDescriptor.Competence, minLevel: 10));
 
-            var tremorsense = Helpers.CreateFeature($"{curse.name}Tremorsense", "Tremorsense",
-                "At 15th level, you gain tremorsense out to a range of 30 feet.",
+            var tremorsense = Helpers.CreateFeature($"DeafTremorsense", RES.OracleCurseDeafLevel15Name_info,
+                RES.OracleCurseDeafLevel15Description_info,
                 "26c9d319adb04110b4ee687a3d573190",
                 Helpers.GetIcon("30e5dc243f937fc4b95d2f8f4e1b7ff3"), // see invisible
                 FeatureGroup.None,
@@ -192,15 +191,15 @@ namespace EldritchArcana
         static BlueprintProgression CreateBlackenedCurse()
         {
             var burningHands = library.Get<BlueprintAbility>("4783c3709a74a794dbe7c8e7e0b1b038");
-            var curse = Helpers.CreateProgression("OracleCurseBlackened", "Blackened",
-                "Your hands and forearms are shriveled and blackened, as if you had plunged your arms into a blazing fire, and your thin, papery skin is sensitive to the touch.\n" +
-                "You take a –4 penalty on weapon attack rolls, but you add burning hands to your list of spells known.",
+            var curse = Helpers.CreateProgression("OracleCurseBlackened", RES.OracleCurseBlackenedName_info,
+                RES.OracleCurseBlackenedDescription_info,
                 "753f68b73c73472db713c06057a6009f",
                 burningHands.Icon,
                 FeatureGroup.None);
             curse.Classes = oracleArray;
 
-            var attackPenalty1 = Helpers.CreateFeature($"{curse.name}Level1", curse.Name, curse.Description,
+            var attackPenalty1 = Helpers.CreateFeature($"BlackenedLevel1", RES.OracleCurseBlackenedName_info,
+                RES.OracleCurseBlackenedDescription_info,
                 "a32003ed18444246bb6a92a79bb478b9",
                 curse.Icon,
                 FeatureGroup.None,
@@ -214,8 +213,8 @@ namespace EldritchArcana
 
             var scorchingRay = library.Get<BlueprintAbility>("cdb106d53c65bbc4086183d54c3b97c7");
             var burningArc = library.Get<BlueprintAbility>("eaac3d36e0336cb479209a6f65e25e7c");
-            var level5 = Helpers.CreateFeature($"{curse.name}Level5", curse.Name,
-                "At 5th level, add scorching ray and burning arc to your list of spells known.",
+            var level5 = Helpers.CreateFeature($"BlackenedLevel5", RES.OracleCurseBlackenedName_info,
+                RES.OracleCurseBlackenedLevel5Description_info,
                 "a27670ecc84f4b1d9dd9d434eeb1e782",
                 scorchingRay.Icon,
                 FeatureGroup.None,
@@ -223,8 +222,8 @@ namespace EldritchArcana
                 burningArc.CreateAddKnownSpell(oracle, 2));
 
             var wallOfFire = FireSpells.wallOfFire;
-            var level10 = Helpers.CreateFeature($"{curse.name}Level10", curse.Name,
-                "At 10th level, add wall of fire to your list of spells known and your penalty on weapon attack rolls is reduced to –2.",
+            var level10 = Helpers.CreateFeature($"BlackenedLevel10", RES.OracleCurseBlackenedName_info,
+                RES.OracleCurseBlackenedLevel10Description_info,
                 "3fb920932967478687bae1d71ffe5c97",
                 wallOfFire.Icon,
                 FeatureGroup.None,
@@ -243,8 +242,8 @@ namespace EldritchArcana
                 Helpers.Create<AddFeatureIfHasFact>(a => { a.Not = true; a.CheckedFact = level10; a.Feature = attackPenalty1; }));
 
             var delayedBlastFireball = FireSpells.delayedBlastFireball;
-            var level15 = Helpers.CreateFeature($"{curse.name}Level15", curse.Name,
-                "At 15th level, add delayed blast fireball to your list of spells known.",
+            var level15 = Helpers.CreateFeature($"BlackenedLevel15", RES.OracleCurseBlackenedName_info,
+                RES.OracleCurseBlackenedLevel15Description_info,
                 "330d3fca05884799aef73b546dd27aa5",
                 delayedBlastFireball.Icon,
                 FeatureGroup.None,
@@ -273,8 +272,8 @@ namespace EldritchArcana
             var debuff = library.CopyAndAdd<BlueprintBuff>("4e42460798665fd4cb9173ffa7ada323",
                 "OracleCurseCovetousSickened", "be50bd73d0fd4c22be3c26954e097c8c");
 
-            var curse = Helpers.CreateProgression("OracleCurseCovetous", "Covetous",
-                "You find yourself drawn to the luster of wealthy living.\nYou must have a gold reserve worth at least 100 gp + 200 gp per character level you have beyond 1st. If you do not have sufficient wealth, you feel a strong desire (but are not compelled) to sell existing items or steal from others to obtain it. You are sickened whenever you do not meet this requirement. Use Magic Device becomes a class skill for you.",
+            var curse = Helpers.CreateProgression("OracleCurseCovetous", RES.OracleCurseCovetousName_info,
+                RES.OracleCurseCovetousDescription_info,
                 "e42c5119978c438b9c445a90198632b0",
                 library.Get<BlueprintItemEquipmentRing>("ba4276197d204314d9b4a69a4366b2a3").Icon, // Gold ring
                 FeatureGroup.None,
@@ -284,8 +283,8 @@ namespace EldritchArcana
 
             debuff.SetDescription($"{debuff.Description}\n{curse.Name}: {curse.Description}");
 
-            var level5 = Helpers.CreateFeature($"{curse.name}Level5", curse.Name,
-                $"At 5th level, you gain a +4 insight bonus on {UIUtility.GetStatText(StatType.SkillUseMagicDevice)} checks.",
+            var level5 = Helpers.CreateFeature($"CovetousLevel5", RES.OracleCurseCovetousName_info,
+                String.Format(RES.OracleCurseCovetousLevel5Description_info, UIUtility.GetStatText(StatType.SkillUseMagicDevice)),
                 "04d79bcdcf7d44ea97fd5f09763bb7bc",
                 Helpers.GetSkillFocus(StatType.SkillUseMagicDevice).Icon,
                 FeatureGroup.None,
@@ -293,16 +292,16 @@ namespace EldritchArcana
 
             // Note: reworked; "Fabricate" spell is not in game.
             // It's now the ability to use UMD to identify items (based on the identify bonus from level 5).
-            var level10 = Helpers.CreateFeature($"{curse.name}Level10", curse.Name,
-                $"At 10th level, you can use your {UIUtility.GetStatText(StatType.SkillUseMagicDevice)} skill to identify items.",
+            var level10 = Helpers.CreateFeature($"CovetousLevel10", RES.OracleCurseCovetousName_info,
+                String.Format(RES.OracleCurseCovetousLevel5Description_info, UIUtility.GetStatText(StatType.SkillUseMagicDevice)),
                 "2a32af175975459b9a960b79cfcaaf64",
                 Helpers.GetSkillFocus(StatType.SkillUseMagicDevice).Icon,
                 FeatureGroup.None,
                 Helpers.Create<IdentifySkillReplacement>(i => Helpers.SetField(i, "m_SkillType", (int)StatType.SkillUseMagicDevice)));
 
             // Note: reworked to Thievery since there's no steal checks against PC.
-            var level15 = Helpers.CreateFeature($"{curse.name}Level15", curse.Name,
-                $"At 15th level, you gain a +4 insight bonus on {UIUtility.GetStatText(StatType.SkillThievery)} checks.",
+            var level15 = Helpers.CreateFeature($"CovetousLevel15", RES.OracleCurseCovetousName_info,
+                String.Format(RES.OracleCurseCovetousLevel10Description_info, UIUtility.GetStatText(StatType.SkillThievery)),
                 "c761a8e5ac6e40c087678a3ede5d9bdd",
                 Helpers.GetSkillFocus(StatType.SkillThievery).Icon,
                 FeatureGroup.None,
@@ -332,10 +331,8 @@ namespace EldritchArcana
             // Should be: reverse gravity
             var invisibilityMass = library.Get<BlueprintAbility>("98310a099009bbd4dbdf66bcef58b4cd");
 
-            var curse = Helpers.CreateProgression("OracleCurseHaunted", "Haunted",
-                "Malevolent spirits follow you wherever you go, causing minor mishaps and strange occurrences (such as unexpected breezes, small objects moving on their own, and faint noises).\n" +
-                "Retrieving any stored item from your gear requires a standard action, unless it would normally take longer.Any item you drop lands 10 feet away from you in a random direction.\n" +
-                $"Add {vanish.Name} to your list of spells known.",
+            var curse = Helpers.CreateProgression("OracleCurseHaunted", RES.OracleCurseHauntedName_info,
+                String.Format(RES.OracleCurseHauntedDescription_info, vanish.Name),
                 "e2aa739f54c94f7199f550d7a499a2a0",
                 Helpers.GetIcon("c83447189aabc72489164dfc246f3a36"), // frigid touch
                 FeatureGroup.None,
@@ -343,22 +340,22 @@ namespace EldritchArcana
                 Helpers.Create<HauntedCurseLogic>());
             curse.Classes = oracleArray;
 
-            var level5 = Helpers.CreateFeature($"{curse.name}Level5", invisibility.Name,
-                $"At 5th level, add {invisibility.Name} to your list of spells known.",
+            var level5 = Helpers.CreateFeature($"HauntedLevel5", invisibility.Name,
+                String.Format(RES.OracleCurseHauntedLevel5Description_info, "5", invisibility.Name),
                 "84247c143a9b4d478f4ac3241cce32ab",
                 invisibility.Icon,
                 FeatureGroup.None,
                 invisibility.CreateAddKnownSpell(oracle, 2));
 
-            var level10 = Helpers.CreateFeature($"{curse.name}Level10", invisibilityGreater.Name,
-                $"At 10th level, add {invisibilityGreater.Name} to your list of spells known.",
+            var level10 = Helpers.CreateFeature($"HauntedLevel10", invisibilityGreater.Name,
+                String.Format(RES.OracleCurseHauntedLevel5Description_info, "10", invisibilityGreater.Name),
                 "bd62288494144997b3c32cbaa04b25ab",
                 invisibilityGreater.Icon,
                 FeatureGroup.None,
                 invisibilityGreater.CreateAddKnownSpell(oracle, 5));
 
-            var level15 = Helpers.CreateFeature($"{curse.name}Level15", invisibilityMass.Name,
-                $"At 15th level, add {invisibilityMass.Name} to your list of spells known.",
+            var level15 = Helpers.CreateFeature($"HauntedLevel15", invisibilityMass.Name,
+                String.Format(RES.OracleCurseHauntedLevel5Description_info, "15", invisibilityMass.Name),
                 "90d84dca2e06494cae92566ede0ca6f0",
                 invisibilityMass.Icon,
                 FeatureGroup.None,
@@ -381,24 +378,24 @@ namespace EldritchArcana
             Main.ApplyPatch(typeof(PartyEncumbranceController_UpdatePartyEncumbrance_Patch), "Lame curse (party speed not reduced by encumbrance");
             Main.ApplyPatch(typeof(UnitPartEncumbrance_GetSpeedPenalty_Patch), "Lame curse (speed not reduced by encumbrance)");
 
-            var curse = Helpers.CreateProgression("OracleCurseLame", "Lame",
-                "One of your legs is permanently wounded, reducing your base land speed by 10 feet if your base speed is 30 feet or more. If your base speed is less than 30 feet, your speed is reduced by 5 feet. Your speed is never reduced due to encumbrance.",
+            var curse = Helpers.CreateProgression("OracleCurseLame", RES.OracleCurseLameName_info,
+                RES.OracleCurseLameDescription_info,
                 "08f1f729406a43f5ab9fece5e92579b6",
                 Helpers.GetIcon("f492622e473d34747806bdb39356eb89"), // slow
                 FeatureGroup.None,
                 Helpers.Create<OracleCurseLameSpeedPenalty>());
 
             curse.Classes = oracleArray;
-            var fatigueImmunity = Helpers.CreateFeature("OracleCurseLameFatigueImmunity", "Immune to Fatigue",
-                "At 5th level, you are immune to the fatigued condition (but not exhaustion).",
+            var fatigueImmunity = Helpers.CreateFeature("OracleCurseLameFatigueImmunity", RES.OracleCurseLameFatigueImmunityName_info,
+                RES.OracleCurseLameLevel5Description_info,
                 "b2b9ef97c1b54faeb552247e731d7270",
                 Helpers.GetIcon("e5aa306af9b91974a9b2f2cbe702f562"), // mercy fatigue
                 FeatureGroup.None,
                 UnitCondition.Fatigued.CreateImmunity(),
                 SpellDescriptor.Fatigue.CreateBuffImmunity());
 
-            var effortlessArmor = Helpers.CreateFeature("OracleCurseLameEffortlessArmor", "Effortless Armor",
-                "At 10th level, your speed is never reduced by armor.",
+            var effortlessArmor = Helpers.CreateFeature("OracleCurseLameEffortlessArmor", RES.OracleCurseLameEffortlessArmorName_info,
+                RES.OracleCurseLameLevel10Description_info,
                 "fbe8560cf3f14cd58f380a8dc630b1c7",
                 Helpers.GetIcon("e1291272c8f48c14ab212a599ad17aac"), // effortless armor
                 FeatureGroup.None,
@@ -406,8 +403,8 @@ namespace EldritchArcana
                 AddMechanicsFeature.MechanicsFeatureType.ImmunToMediumArmorSpeedPenalty.CreateAddMechanics(),
                 AddMechanicsFeature.MechanicsFeatureType.ImmunToArmorSpeedPenalty.CreateAddMechanics());
 
-            var exhaustionImmunity = Helpers.CreateFeature("OracleCurseLameExhaustionImmunity", "Immune to Exhausted",
-                "At 15th level, you are immune to the exhausted condition.",
+            var exhaustionImmunity = Helpers.CreateFeature("OracleCurseLameExhaustionImmunity", RES.OracleCurseLameExhaustionImmunity,
+                RES.OracleCurseLameLevel15Description_info,
                 "be45e9251c134ac9baee97e1e3ffc30a",
                 Helpers.GetIcon("25641bda25467224e930e8c70eaf9a83"), // mercy exhausted
                 FeatureGroup.None,
@@ -436,11 +433,8 @@ namespace EldritchArcana
             //
             // Since languages aren't implemented, this instead gives a bonus to knowledge skills.
             var linguistics = UIUtility.GetStatText(StatType.SkillKnowledgeWorld);
-            var curse = Helpers.CreateProgression("OracleCurseTongues", "Tongues",
-                "In times of stress or unease, you speak in tongues.\n" +
-                "Pick one of the following languages: Abyssal, Aklo, Aquan, Auran, Celestial, Ignan, Infernal, or Terran.\n" +
-                $"Whenever you are in combat, you can only speak and understand the selected language. This does not interfere with spellcasting, but it does apply to spells that are language dependent. You know the selected language, and gain a +2 bonus to {linguistics} representing your knowledge of otherworldly languages.\n" +
-                $"If your party members have at least 1 rank in {linguistics} they can communicate with you in combat, allowing you to issue orders to them or vice versa.",
+            var curse = Helpers.CreateProgression("OracleCurseTongues", RES.OracleCurseTonguesLevel5Name_info,
+                String.Format(RES.OracleCurseTonguesDescription_info, linguistics, linguistics),
                 "983b66fc844a496da24acbcbdceebede",
                 Helpers.GetIcon("f09453607e683784c8fca646eec49162"), // shout
                 FeatureGroup.None,
@@ -448,22 +442,22 @@ namespace EldritchArcana
                 Helpers.Create<OracleCurseLogic>(o => o.Curse = OracleCurse.Tongues));
             curse.Classes = oracleArray;
 
-            var level5 = Helpers.CreateFeature($"{curse.name}Level5", "Bonus Language",
-                $"At 5th level, you learn a new language, gaining an additional +2 {linguistics} representing this knowledge.",
+            var level5 = Helpers.CreateFeature($"TonguesLevel5", RES.OracleCurseTonguesLevel5Name_info,
+                String.Format(RES.OracleCurseTonguesLevel5Description_info, linguistics),
                 "7b08ed37b3034c94b5e00c7f507f1000",
                 curse.Icon,
                 FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.SkillKnowledgeWorld, 2, ModifierDescriptor.UntypedStackable));
 
-            var level10 = Helpers.CreateFeature($"{curse.name}Level10", "Understand All Languages",
-                $"At 10th level, you can understand any spoken language, as if under the effects of tongues, even during combat.\nYou gain an additional +4 {linguistics} representing this knowledge.",
+            var level10 = Helpers.CreateFeature($"TonguesLevel10", RES.OracleCurseTonguesLevel10Name_info,
+                String.Format(RES.OracleCurseTonguesLevel10Description_info, linguistics),
                 "9a38bf8a757e4980b4d07298d7cdad52",
                 curse.Icon,
                 FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.SkillKnowledgeWorld, 4, ModifierDescriptor.UntypedStackable));
 
-            var level15 = Helpers.CreateFeature($"{curse.name}Level15", "Speak All Languages",
-                $"At 15th level, you can speak and understand any language, but your speech is still restricted during combat.\nYou gain an additional +4 {linguistics} representing this knowledge.",
+            var level15 = Helpers.CreateFeature($"TonguesLevel15", RES.OracleCurseTonguesLevel15Name_info,
+                String.Format(RES.OracleCurseTonguesLevel15Description_info, linguistics),
                 "40ef931c66c94183a3a6b34454e6cde1",
                 curse.Icon,
                 FeatureGroup.None,

@@ -233,7 +233,12 @@ namespace EldritchArcana
             // For loacalization
             var ModMetamagicNames = new Dictionary<ModMetamagic, string>{
                 {ModMetamagic.Dazing, RES.NewMetamagicNamesDazing_info},
-                {ModMetamagic.Elemental, RES.NewMetamagicNamesElemental_info},
+                // {ModMetamagic.Elemental, RES.NewMetamagicNamesElemental_info},
+                {ModMetamagic.ElementalAcid, RES.NewMetamagicNamesElementalAcid_info},
+                {ModMetamagic.ElementalCold, RES.NewMetamagicNamesElementalCold_info},
+                {ModMetamagic.ElementalElectricity, RES.NewMetamagicNamesElementalElectricity_info},
+                {ModMetamagic.ElementalFire, RES.NewMetamagicNamesElementalFire_info},
+                {ModMetamagic.ElementalForce, RES.NewMetamagicNamesElementalForce_info},
                 {ModMetamagic.Intensified, RES.NewMetamagicNamesIntensified_info},
                 {ModMetamagic.Persistent, RES.NewMetamagicNamesPersistent_info},
                 {ModMetamagic.Rime, RES.NewMetamagicNamesRime_info},
@@ -246,15 +251,16 @@ namespace EldritchArcana
             var rodCosts = metamagicRodCosts[modMetamagic.OriginalCost() - 1];
 
             var library = Main.library;
-            var names = new string[] { RES.MetamagicRodDisplayPrefixString_Lesser, RES.MetamagicRodDisplayPrefixString_Normal, RES.MetamagicRodDisplayPrefixString_Greater };
-            var displayPrefix = new string[] { RES.MetamagicRodDisplayPrefixString_Lesser, "", RES.MetamagicRodDisplayPrefixString_Greater };
+            var names = new string[] { "Lesser", "Normal", "Greater" };
+            var displayPrefix = new string[] { RES.MetamagicRodDisplayPrefixString_Lesser, RES.MetamagicRodDisplayPrefixString_Normal, RES.MetamagicRodDisplayPrefixString_Greater };
             var maxLevel = new string[] { RES.MetamagicRodSpellMaxLevel_3rd, RES.MetamagicRodSpellMaxLevel_6th, RES.MetamagicRodSpellMaxLevel_9th };
 
             for (int i = 0; i < 3; i++)
             {
-                var displayName = displayPrefix[i] + ModMetamagicNames[modMetamagic] + RES.MetamagicRodName_info;
-                var description = string.Format(RES.MetamagicRodDescription_info, 
-                    displayPrefix[i], maxLevel[i], friendlyName, feature.Description);
+                var displayName = i == 1 ? ModMetamagicNames[modMetamagic] + RES.MetamagicRodName_info :
+                    displayPrefix[i] + ModMetamagicNames[modMetamagic] + RES.MetamagicRodName_info;
+                var description = string.Format(RES.MetamagicRodDescription_info,
+                    feature.Name, displayPrefix[i], maxLevel[i], friendlyName, feature.Description);
 
                 // We need to clone 3 things:
                 // - the item
