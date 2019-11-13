@@ -239,7 +239,7 @@ namespace EldritchArcana
             var power = GetBloodlinePower(bloodline, powerLevel);
             return CreateHeritageFeat(bloodline, power, powerLevel,
                 $"{bloodline.name.Replace("Progression", "")}EldritchHeritage",
-                string.Format(RES.EldritchHeritageBloodlineFeatureName_info, bloodline.name),
+                string.Format(RES.TypeHyphenSubtype_info, RES.EldritchHeritageFeatureName_info, bloodline.name),
                 bloodline.Icon,
                 Helpers.MergeIds(bloodline.AssetGuid, "7114742a530d4946ba36888247422abe"),
                 components);
@@ -250,7 +250,7 @@ namespace EldritchArcana
             var power = GetBloodlinePower(bloodline, powerLevel);
             return CreateHeritageFeat(bloodline, power, powerLevel,
                 $"{GetPowerName(power)}ImprovedHeritage",
-                string.Format(RES.ImprovedEldritchHeritageBloodlineFeatureName_info, power.Name),
+                string.Format(RES.TypeHyphenSubtype_info, RES.ImprovedEldritchHeritageFeatureName_info, power.Name),
                 power.Icon,
                 Helpers.MergeIds(power.AssetGuid, "6a4ec4f556ff4f0d9581722972cb6600"),
                 new List<BlueprintComponent> { heritageFeat.PrerequisiteFeature() });
@@ -266,7 +266,7 @@ namespace EldritchArcana
         {
             var power = GetBloodlinePower(bloodline, powerLevel);
             var name = $"{GetPowerName(power)}GreaterHeritage";
-            var displayName = string.Format(RES.GreaterEldritchHeritageBloodlineFeatureName_info, power.Name);
+            var displayName = string.Format(RES.TypeHyphenSubtype_info, RES.GreaterEldritchHeritageFeatureName_info, power.Name);
             var assetId = Helpers.MergeIds(power.AssetGuid, "f2f2797315644c32a949182d79ae151e");
             if (improvedFeat != null)
             {

@@ -5,6 +5,7 @@ using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.Blueprints.Items.Equipment;
+using Kingmaker.Blueprints.Root;
 using Kingmaker.Designers.Mechanics.Facts;
 using Kingmaker.Designers.Mechanics.Recommendations;
 using Kingmaker.EntitySystem.Entities;
@@ -201,9 +202,11 @@ namespace EldritchArcana
 
         static BlueprintFeature CreateElementalMetamagicFeat(ModMetamagic metamagic, DamageEnergyType energyType, String assetId, Sprite icon)
         {
-            var friendlyName = string.Format(RES.MetamagicFeatElementalSpellName_info, energyType);
-            var shortName = energyType.ToString().ToLower();
-            var description = string.Format(RES.MetamagicFeatElementalSpellDescription_info, shortName);
+            
+            var displayName = energyType.ToString().ToLower() == "magic" ? RES.NewMetamagicNamesElementalForcePrefix_info : 
+                LocalizedTexts.Instance.DamageEnergy.GetText(energyType);
+            var friendlyName = string.Format(RES.MetamagicFeatElementalSpellName_info, displayName);
+            var description = string.Format(RES.MetamagicFeatElementalSpellDescription_info, displayName);
             return CreateMetamagicFeat(metamagic, assetId, friendlyName, description, icon,
                 Helpers.Create<ElementalMetamagic>(e => e.EnergyType = energyType));
         }
@@ -233,12 +236,12 @@ namespace EldritchArcana
             // For loacalization
             var ModMetamagicNames = new Dictionary<ModMetamagic, string>{
                 {ModMetamagic.Dazing, RES.NewMetamagicNamesDazing_info},
-                // {ModMetamagic.Elemental, RES.NewMetamagicNamesElemental_info},
-                {ModMetamagic.ElementalAcid, RES.NewMetamagicNamesElementalAcid_info},
-                {ModMetamagic.ElementalCold, RES.NewMetamagicNamesElementalCold_info},
-                {ModMetamagic.ElementalElectricity, RES.NewMetamagicNamesElementalElectricity_info},
-                {ModMetamagic.ElementalFire, RES.NewMetamagicNamesElementalFire_info},
-                {ModMetamagic.ElementalForce, RES.NewMetamagicNamesElementalForce_info},
+                // {ModMetamagic.Elemental, RES.NewMetamagicNamesElemental_info.Trim()},
+                {ModMetamagic.ElementalAcid, LocalizedTexts.Instance.DamageEnergy.GetText(DamageEnergyType.Acid) + RES.NewMetamagicNamesElemental_info},
+                {ModMetamagic.ElementalCold, LocalizedTexts.Instance.DamageEnergy.GetText(DamageEnergyType.Cold) + RES.NewMetamagicNamesElemental_info},
+                {ModMetamagic.ElementalElectricity, LocalizedTexts.Instance.DamageEnergy.GetText(DamageEnergyType.Electricity) + RES.NewMetamagicNamesElemental_info},
+                {ModMetamagic.ElementalFire, LocalizedTexts.Instance.DamageEnergy.GetText(DamageEnergyType.Fire) + RES.NewMetamagicNamesElemental_info},
+                {ModMetamagic.ElementalForce, RES.NewMetamagicNamesElementalForcePrefix_info + RES.NewMetamagicNamesElemental_info},
                 {ModMetamagic.Intensified, RES.NewMetamagicNamesIntensified_info},
                 {ModMetamagic.Persistent, RES.NewMetamagicNamesPersistent_info},
                 {ModMetamagic.Rime, RES.NewMetamagicNamesRime_info},

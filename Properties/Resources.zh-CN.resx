@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -124,27 +124,90 @@
   <data name="AbundantRevelationsFeatureName_info" xml:space="preserve">
     <value>充裕启示</value>
   </data>
+  <data name="AdditionalTraitsFeatDescription_info" xml:space="preserve">
+    <value>你将获得比通常更多的背景特性。
+效益：你可以选择两个额外的角色背景特性。你必须从两个不同的类型列表里选择这些额外的背景特性，并且你也无法从你之前已选取过背景特性的类型特性列表里选取。你还必须遵从你所选择的角色背景的其他所有限制——例如你无法为一个精灵角色选择一个矮人的角色特性。</value>
+  </data>
+  <data name="AdditionalTraitsFeatName_info" xml:space="preserve">
+    <value>额外背景特性</value>
+  </data>
   <data name="AddSpellScrollsFeatureName_info" xml:space="preserve">
     <value>新增法术的卷轴</value>
+  </data>
+  <data name="AirWalkAbilityDescription_info" xml:space="preserve">
+    <value>目标能在空中步行，一如其脚踏坚硬的地面。这让其获得对抗近战攻击的防御等级+3的闪避加值，对如困难地形等造成的地面效果免疫，并获得一个相当于1/2施法者等级的灵巧技能检定加值。该效果不会与其他法术给予的飞翼或飞行能力的效果叠加。</value>
+  </data>
+  <data name="AirWalkAbilityName_info" xml:space="preserve">
+    <value>凌空而行</value>
+  </data>
+  <data name="AirWalkCommunalAbilityDescription_info" xml:space="preserve">
+    <value>施法者及其半径30英尺范围内的队友获得“凌空而行”的效果：
+{0}</value>
+  </data>
+  <data name="AirWalkCommunalAbilityName_info" xml:space="preserve">
+    <value>共用凌空而行</value>
+  </data>
+  <data name="AncientLorekeeperClassSkillsDescription_info" xml:space="preserve">
+    <value>传古学者将知识（奥术）加入其职业技能。</value>
+  </data>
+  <data name="AncientLorekeeperDescription_info" xml:space="preserve">
+    <value>传古学者是精灵一族广博知识和信仰的活图书馆。他们在年轻时就已对此展现出浓厚的兴趣，并能理解历史、续写传说；而当成年时，他们为自己这个长寿种族的久远记忆服务的意愿便已被所有认识他们的人所熟知。
+传古学者将知识（奥术）加入他们的职业技能列表中，这将取代他们从秘示域获得的奖励技能。</value>
+  </data>
+  <data name="AncientLorekeeperElvenArcanaDescription_info" xml:space="preserve">
+    <value>2级时，传古学者对精灵传奇和哲学的精通使他们能够掌握一项精灵法师的法术。他们可以选择一个法师/术士列表中的法术，这一法术等级需比他们当前最高可施展的先知法术等级低至少一级。传古学者将这一法术作为额外可知法术。这一法术在任何情况下都被视为比起本身法术等级高一级的法术。传古学者在4级，6级，8级，10级，12级，14级，16级和18级可以再选择一项额外法术。
+该能力将取代先知原本从秘示域获得的奖励法术。</value>
+  </data>
+  <data name="AncientLorekeeperElvenArcanaName_info" xml:space="preserve">
+    <value>精灵秘术</value>
+  </data>
+  <data name="AncientLorekeeperName_info" xml:space="preserve">
+    <value>传古学者</value>
   </data>
   <data name="AnyClassSkillName_info" xml:space="preserve">
     <value>任何知识/学识技能</value>
   </data>
   <data name="applyPatch_error" xml:space="preserve">
-    <value>应用修补类型{0}失败：{1}！</value>
+    <value>应用补丁：{0}失败：{1}！</value>
   </data>
   <data name="applyPathHarmony_error" xml:space="preserve">
-    <value>应用修补类型{0}失败：找不到Harmony属性！</value>
+    <value>应用补丁：{0}失败：找不到Harmony属性！</value>
   </data>
   <data name="applyPathMethod" xml:space="preserve">
-    <value>应用修补类型{0}失败：没有生成动态方法！</value>
+    <value>应用补丁：{0}失败：没有生成动态方法！</value>
   </data>
   <data name="applyPath_warning" xml:space="preserve">
-    <value>不能应用修补类型{0}！</value>
+    <value>无法应用补丁：{0}！</value>
   </data>
   <data name="ArcaneApotheosisFeatureDescription_info" xml:space="preserve">
     <value>
 你还可以在不增加施法时间的情况下将你所掌握的任何超魔专长附加到法术上，尽管你仍必须使用更高级别的法术位。</value>
+  </data>
+  <data name="ArcaneSavantAdeptActivationDescription_info" xml:space="preserve">
+    <value>奥术学者总能在使用魔法装置检定时投出10点，除非他在目盲状态下启用魔法物品。</value>
+  </data>
+  <data name="ArcaneSavantAdeptActivationName_info" xml:space="preserve">
+    <value>启动专擅</value>
+  </data>
+  <data name="ArcaneSavantDescription_info" xml:space="preserve">
+    <value>奥术学者是魔法理论和实践的专家，一生致力于揭开这些奇异造物的神秘面纱。
+奥术学者的研究使他们拥有专业鉴定刻文和法印的学识，关于异界法术的知识，以及引出魔法装置全部潜能的能力。
+这些技能也使得奥术学者对于冒险队伍价值不菲，他们不仅精通解除利用古老魔法设置的古代陷阱，同样还精于鉴识和利用在旅途中找到的魔法物品。</value>
+  </data>
+  <data name="ArcaneSavantGlyphFindingDescription_info" xml:space="preserve">
+    <value>2级时，奥术学者可以利用“{0}”来寻找魔法陷阱，一如游荡者利用“{1}”技能来找寻陷阱。</value>
+  </data>
+  <data name="ArcaneSavantGlyphFindingName_info" xml:space="preserve">
+    <value>寻找刻文</value>
+  </data>
+  <data name="ArcaneSavantMasterScholarDescription_info" xml:space="preserve">
+    <value>奥术学者在“知识（奥术）”的技能等级上，以及进行使用魔法装置检定时将获得1/2其职业等级（最小为1）的加值，并且总能在知识（奥术）检定时投出10点，即便其处于扰乱或危险状态。</value>
+  </data>
+  <data name="ArcaneSavantMasterScholarName_info" xml:space="preserve">
+    <value>学术大师</value>
+  </data>
+  <data name="ArcaneSavantName_info" xml:space="preserve">
+    <value>奥术学者</value>
   </data>
   <data name="BloodHavocMutationFeatureDescription_info" xml:space="preserve">
     <value>每当血脉狂怒者或者术士获得一个新的血承能力，他可以将这个血承能力换成一个其满足先决条件的血统突变。一旦他作出这个选择就无法改变。血脉狂怒者或术士不能将一个已经被变体改变或取代的血承能力替换为血统突变。血脉狂怒者无须进入血怒来使用他的血统突变。另外，血脉狂怒者或术士可以选择一个血统突变来代替血承奖励专长，只要他的职业等级不低于该突变通常取代的血承能力的等级。
@@ -155,7 +218,7 @@
     <value>血统突变：血之毁灭（{0}）</value>
   </data>
   <data name="BloodlineOrcArcanaFeatureDescription_info" xml:space="preserve">
-    <value>你获得了兽人亚种特性，包括黑暗视觉和强光敏感。每当你施放一个造成伤害的法术时，投出的每个伤害骰点数+1。</value>
+    <value>你获得兽人亚种特性，包括黑暗视觉和强光敏感。每当你施放一个造成伤害的法术时，投出的每个伤害骰点数+1。</value>
   </data>
   <data name="BloodlineOrcArcanaFeatureName_info" xml:space="preserve">
     <value>兽人血承奥法</value>
@@ -192,7 +255,7 @@
     <value>9级时，你的力量会获得+2的内在奖励。此奖励在13级后增至+4，17级后增至+6。</value>
   </data>
   <data name="BloodlineOrcStrengthOfTheBeastFeatureName_info" xml:space="preserve">
-    <value>野兽力量</value>
+    <value>野兽蛮力</value>
   </data>
   <data name="BloodlineOrcTouchOfRageBuffDescription_info" xml:space="preserve">
     <value>自1级起，你能以一个标准动作触摸一个生物，使该生物在攻击、伤害和意志豁免检定上获得相当于你的术士等级1/2的加值（至少为1），持续1轮。你每天可以多次使用这个能力，次数为“魅力调整值+3”。</value>
@@ -247,7 +310,7 @@
     <value>引导能量</value>
   </data>
   <data name="CheatCustomTraits_info" xml:space="preserve">
-    <value>开启显示所有背景特性及法术，包括作弊和自制内容（需要重新启动游戏才能生效）</value>
+    <value>显示所有背景特性及法术，包括作弊和自制内容（需要重新启动游戏才能生效）</value>
   </data>
   <data name="ChooseFavoredClassLocalized_info" xml:space="preserve">
     <value>选择天赋职业奖励</value>
@@ -265,23 +328,42 @@
   <data name="CrossbloodedConflictingUrgesFeatureName_info" xml:space="preserve">
     <value>混血（矛盾冲动）</value>
   </data>
+  <data name="CrossbloodedDisplayDescribeChoices_info" xml:space="preserve">
+    <value>
+• {0}：{1}</value>
+  </data>
   <data name="CrossbloodedSorcererLocalizedDescription_info" xml:space="preserve">
     <value>混血术士可以选择两种不同的血承。术士能够从他的两种血脉分别继承技能，专长，以及某些源自血缘的力量，但也会付出一些代价，如容易头脑混乱以及选择局限。</value>
   </data>
   <data name="CrossbloodedSorcererLocalizedName_info" xml:space="preserve">
     <value>混血术士</value>
   </data>
+  <data name="CrossBloodlineName_info" xml:space="preserve">
+    <value>{0}（混血）</value>
+  </data>
+  <data name="CustomTraitDescription_info" xml:space="preserve">
+    <value>这些背景特性有些滥强，因此只能用来娱乐。如果你想好好玩游戏就别选这些。</value>
+  </data>
+  <data name="CustomTraitName_info" xml:space="preserve">
+    <value>自定义特性｛作弊｝</value>
+  </data>
   <data name="DelayAfflictionFeatureDescription_info" xml:space="preserve">
-    <value>每天一次，作为一个即时行动，当你对某种疾病或毒素的豁免失败时，你可以忽略它的影响，每级1小时。在7级和15级时，你每天可以使用本能力的次数再增加1次。</value>
+    <value>每天1次，当你对某种疾病或毒素的豁免失败时，你能以一个即时动作忽略它的影响，每级1小时。在7级和15级时，你每天可以使用本能力的次数再增加1次。</value>
   </data>
   <data name="DelayAfflictionFeatureName_info" xml:space="preserve">
-    <value>缓解痛苦</value>
+    <value>延缓感染</value>
   </data>
   <data name="DelayedBlastFireballAbilityDescription_info" xml:space="preserve">
     <value>该法术的效果类似于火球术，但是更为强力，并且可以在施法完成后5轮内引爆。爆炸的火焰将造成每施法者等级1d6点火焰伤害（最大伤害值为20d6）。延迟爆裂火球的小火珠能按照你的愿望立刻引爆，或者你可以选择延迟爆发时间（至多5轮）。你必须在施法完成之际决定爆发延迟的轮数，并且该时间一旦决定无可更改。</value>
   </data>
   <data name="DelayedBlastFireballAbilityName_info" xml:space="preserve">
     <value>延迟爆裂火球</value>
+  </data>
+  <data name="DelayedBlastFireballDelayRoundsDescription_info" xml:space="preserve">
+    <value>至多5轮；参见说明</value>
+  </data>
+  <data name="DelaySpellName_info" xml:space="preserve">
+    <value>{0} （{1}轮）</value>
   </data>
   <data name="DervishDanceFeatureDescription_info" xml:space="preserve">
     <value>当你用单手挥舞弯刀时，你可以在近战攻击和伤害骰上使用你的敏捷加值而不是你的力量加值。你将弯刀视为一种单手穿刺武器，并适用于所有需要此类武器（如决斗家的精准刺击能力）的专长和等级能力。弯刀的大小必须匹配你的体型。如果你的副手拿着武器或者盾牌，你就无法使用这个专长。</value>
@@ -313,6 +395,9 @@
   <data name="DismissAreaEffectAbilityName_info" xml:space="preserve">
     <value>驱散范围法术效果</value>
   </data>
+  <data name="DismissSpellNoAreaEffectsToDismiss_info" xml:space="preserve">
+    <value>无法驱散范围法术效果（只有特定的法术才能在战斗中被驱散）。</value>
+  </data>
   <data name="DismissSpells_info" xml:space="preserve">
     <value>驱散范围法术效果的能力</value>
   </data>
@@ -335,6 +420,11 @@
   <data name="DrawbackOneLeggedFeatureName_info" xml:space="preserve">
     <value>假腿</value>
   </data>
+  <data name="DrawbacksDescription_info" xml:space="preserve">
+    <value>缺陷特性即负面的背景特性。此类特性将给予你负面而非正面效果，特别是在某些特殊情形下。
+如果你选择了一个缺陷特性，你将会获得第三个背景特性可供选择。
+缺陷特性并非是一个角色创建必选项。</value>
+  </data>
   <data name="DrawbackSpellVulnerabilityFeatureDescription_info" xml:space="preserve">
     <value>如果你在第1级选择1个缺陷专长，你可以在顶部选择1个额外的专长。
 破敌：选择一个法术学派，你将在抵抗该法术学派法术时遭受{0}豁免检定减值。</value>
@@ -342,15 +432,23 @@
   <data name="DrawbackSpellVulnerabilityFeatureName_info" xml:space="preserve">
     <value>法术弱点</value>
   </data>
-  <data name="EldritchHeritageBloodlineFeatureName_info" xml:space="preserve">
-    <value>悠远血脉—{0}</value>
+  <data name="Drawbacks_info" xml:space="preserve">
+    <value>缺陷特性</value>
+  </data>
+  <data name="EldritchHeritageFeatDescription_info" xml:space="preserve">
+    <value>
+• {0}—{1}</value>
   </data>
   <data name="EldritchHeritageFeatureDescription_info" xml:space="preserve">
     <value>你是一个术士家族的八辈子孙，有一些源于你祖先的力量流淌在你的血液之中。
-你需要选择一个术士血承，并且你必须在该血承1级时给予术士的职业技能上有技能专攻（例如天界血承的“医疗技能”，见下）。如果你已有一个血承，那这个血承不能是你已选择的血承。如此你就能获得对应血承的1级血承能力，你在使用该能力时职业等级视为角色等级-2，而非你的术士等级（即便你有）。你也无法获得你选择的这个血承的其他血承能力。</value>
+你需要选择一个术士血承，并且你必须在该血承1级时给予术士的职业技能上有技能专攻（例如天界血承的“医疗技能”，见下）。如果你已有一个血承，那这个血承不能是你已选择的血承。如此你就能获得对应血承的1级血承能力。你在使用该能力时职业等级视为角色等级-2，而非你的术士等级（即便你有）。你也无法获得你选择的这个血承的其他血承能力。</value>
   </data>
   <data name="EldritchHeritageFeatureName_info" xml:space="preserve">
     <value>悠远血脉</value>
+  </data>
+  <data name="EldritchHeritagePrerequisitesDescription_info" xml:space="preserve">
+    <value>
+  血承—先决{0}：</value>
   </data>
   <data name="EldritchKnightFix_info" xml:space="preserve">
     <value>兼职奥法骑士需要已拥有战士类职业（例如：野蛮人、战士、圣武士、巡林客，不影响已创建的角色）</value>
@@ -363,16 +461,16 @@
     <value>紧急力场护罩</value>
   </data>
   <data name="EnergyBodyFeatureDescription_info" xml:space="preserve">
-    <value>作为一个标准动作，你可以将你的身体转化为纯净的生命能量，就像一个金白色的火元素。在这种形式下，你获得元素亚型并发出一种温暖的迎宾之光，它将10英尺范围内的光照水平提高一步，直至正常光照。任何不死生物用身体或手持武器攻击你都会造成正常伤害，同时攻击者也会受到每先知等级1d6+1点正能量伤害。使用近战武器的生物如果攻击你，就不会受到这种伤害。如果你用徒手攻击或天然武器抓取或攻击一个不死生物，你可以用这个伤害代替攻击的正常伤害。每轮一次，如果你通过一个有生命的盟军生物的方阵或盟军通过你的方阵，每先知等级治愈1d6+1点伤害。你可以用这个能力作为移动动作来治愈自己。当一个生物通过你的空间时，你可以选择是否治愈它。你可以作为一个自由动作回到你的正常状态。你可以保持能量之躯形态，每天可使用相当于你的先知等级的轮数。</value>
+    <value>你能以一个标准动作将自己的身体化为纯净的生命能量，在外观上看来就如同一个金光闪闪的火元素一般。在此形态下，你获得元素亚种特性，并且你浑身散发的怡人暖光会使得身周10英尺范围内的光照等级上升一级，最高到正常光照水平。任何用自己的身体部分或持有武器近战攻击你的不死生物都能正常造成伤害，但同时也会受到1d6+每先知等级1点的正向能量伤害。用长触及武器攻击你的生物不受此效果影响。如果你在此状态下擒抱或者通过天生武器或徒手击打攻击不死生物，你也可以选择造成此伤害而非你的正常攻击伤害。每轮一次，如果你穿越一个盟友占据的方格或者一个盟友穿越你占据的方格，同时治疗他1d6+每先知等级1点的伤害，你也可以通过一个移动动作以此能力治疗自己，并且你自己可以选择是否治疗穿过你的盟友。你可以以一个自由动作返回正常形态，你每天可以转换为能量形态的轮数等同于你的先知等级。</value>
   </data>
   <data name="EnergyBodyFeatureName_info" xml:space="preserve">
     <value>能量之躯</value>
   </data>
   <data name="EnhancedCuresFeatureDescription_info" xml:space="preserve">
-    <value>当你施放一个治疗法术时，治疗的最大生命点数是基于你的先知等级，而不是基于法术的限制。例如一个11级的生命秘示域先知可以施放治疗轻伤回复1d8+11点生命值，而不是通常1d8+5点的最大值。</value>
+    <value>每当你施放一个治疗法术时，该法术的最高治疗量将以你的先知等级而非法术本身来计算。例如一个11级的生命秘示域先知在施放一个治疗轻伤法术时，他可以治疗1d8+11点生命值，而非正常的1d8+5点。</value>
   </data>
   <data name="EnhancedCuresFeatureName_info" xml:space="preserve">
-    <value>强效治疗</value>
+    <value>强化治疗</value>
   </data>
   <data name="ExtraArcanaFeatureDescription_info" xml:space="preserve">
     <value>你已经解锁了一个新的魔战士奥能。你获得一个额外的魔战士奥能，你必须满足这个奥能的所有先决条件。
@@ -422,18 +520,12 @@
   <data name="FavoredClassProgressionDescription_info" xml:space="preserve">
     <value>每当此角色提升 {0} 级后, 你可以获得+1生命值，+1技能点，或者基于他们天赋职业的种族奖励。</value>
   </data>
-  <data name="FavoredClassProgressionName_info" xml:space="preserve">
-    <value>天赋职业—{0}</value>
-  </data>
   <data name="FavoredPresitgeClassFeatureDescription_info" xml:space="preserve">
     <value>你对某个进阶职业产生了偏好，这可能是因为你对它有着更强的认同，比其他单一职业者经受了更多的训练或者是单纯擅长做这个职业。无论原因为何，进阶职业给你带来了一些额外好处，就和天赋基础职业一样。
-你可以在获取进阶职业前选择此专长，但在你在此进阶中至少提升1级前，你无法享受此专长的任何好处。</value>
+你可以在获取进阶职业前选择此专长，但在你拥有此进阶职业至少1个等级前，你无法享受此专长的任何好处。</value>
   </data>
   <data name="FavoredPresitgeClassFeatureName_info" xml:space="preserve">
     <value>天赋进阶职业</value>
-  </data>
-  <data name="FavoredPrestigeProgressionName_info" xml:space="preserve">
-    <value>天赋进阶职业—{0}</value>
   </data>
   <data name="featureNameAll_error" xml:space="preserve">
     <value>所有mod功能</value>
@@ -449,13 +541,13 @@
     <value>精类遗孤</value>
   </data>
   <data name="FinalRevelationFeatureDescription_info" xml:space="preserve">
-    <value>达到20级后，你将成为一个完美的生命能量系统。你会对出血、即死攻击、力竭、疲劳、恶心、负等级和疾病效果免疫。任何能力伤害和消耗都不会使属性值降至1以下。</value>
+    <value>达到20级时，你成为了生命能量的完美通道。你免疫流血，死亡，力竭，疲劳，反胃，负向等级和恶心效果。属性伤害和吸取无法将你的任何属性降低到1以下。</value>
   </data>
   <data name="FinalRevelationFeatureName_info" xml:space="preserve">
     <value>最终启示</value>
   </data>
   <data name="FireSpells_info" xml:space="preserve">
-    <value>火法术</value>
+    <value>火焰法术</value>
   </data>
   <data name="FixBloodlineSpellDescription_info" xml:space="preserve">
     <value>达到3级时，以及之后每升2级，术士都可以额外学习一个来自于血承的法术。该法术不计入新等级赋予的法术数量。
@@ -467,17 +559,74 @@
   <data name="FixSpellSpecializationFeatureName_info" xml:space="preserve">
     <value>法术专精</value>
   </data>
+  <data name="FixWingsImmunities_info" xml:space="preserve">
+    <value>飞翼/飞行类法术免疫地面类法术/陷阱</value>
+  </data>
+  <data name="FlySpellAbilityDescription_info" xml:space="preserve">
+    <value>目标长出一双飞翼，能够以60英尺的速度飞行（如身穿中型或重型盔甲，或者负重为中度或重度负荷时，速度为40英尺）。</value>
+  </data>
+  <data name="FlySpellAbilityName_info" xml:space="preserve">
+    <value>飞行术（{0}）</value>
+  </data>
+  <data name="FlySpellName_info" xml:space="preserve">
+    <value>飞行术</value>
+  </data>
   <data name="FlySpells_info" xml:space="preserve">
     <value>飞行术和凌空疾行</value>
+  </data>
+  <data name="FlySpellWingsDescription_info" xml:space="preserve">
+    <value>肋生双翼时对抗近战攻击的防御等级获得+3的闪避加值，对如困难地形等造成的地面效果免疫，并获得一个相当于1/2施法者等级的灵巧技能检定加值。该效果不会与其他法术给予的飞翼或飞行能力的效果叠加。</value>
+  </data>
+  <data name="FlyWingAngelName_info" xml:space="preserve">
+    <value>天使</value>
+  </data>
+  <data name="FlyWingDemonName_info" xml:space="preserve">
+    <value>魔鬼</value>
+  </data>
+  <data name="FlyWingDevilName_info" xml:space="preserve">
+    <value>恶魔</value>
+  </data>
+  <data name="FlyWingDraconicBlackName_info" xml:space="preserve">
+    <value>黑龙</value>
+  </data>
+  <data name="FlyWingDraconicBlueName_info" xml:space="preserve">
+    <value>蓝龙</value>
+  </data>
+  <data name="FlyWingDraconicBrassName_info" xml:space="preserve">
+    <value>黄铜龙</value>
+  </data>
+  <data name="FlyWingDraconicBronzeName_info" xml:space="preserve">
+    <value>青铜龙</value>
+  </data>
+  <data name="FlyWingDraconicCopperName_info" xml:space="preserve">
+    <value>赤铜龙</value>
+  </data>
+  <data name="FlyWingDraconicGoldName_info" xml:space="preserve">
+    <value>金龙</value>
+  </data>
+  <data name="FlyWingDraconicGreenName_info" xml:space="preserve">
+    <value>绿龙</value>
+  </data>
+  <data name="FlyWingDraconicRedName_info" xml:space="preserve">
+    <value>红龙</value>
+  </data>
+  <data name="FlyWingDraconicSilverName_info" xml:space="preserve">
+    <value>银龙</value>
+  </data>
+  <data name="FlyWingDraconicWhiteName_info" xml:space="preserve">
+    <value>白龙</value>
+  </data>
+  <data name="GoBackDescription_info" xml:space="preserve">
+    <value>选此项返回前一选项，以便选择其他项目。</value>
+  </data>
+  <data name="GoBackName_info" xml:space="preserve">
+    <value>(返回)</value>
   </data>
   <data name="GoblinSpellDescription_info" xml:space="preserve">
     <value>该法术召唤了一组六只地精。召唤的地精群出现在你指定的地方，并在你行动之际立即行动。它会尽其所能攻击你的对手。如果你能和这些生物交流，你可以指示它们不要攻击，攻击特定的敌人，或者按照你的命令采取其他行动。</value>
   </data>
   <data name="GoblinSpellName_info" xml:space="preserve">
     <value>召唤六只地精</value>
-  </data>
-  <data name="GreaterEldritchHeritageBloodlineFeatureName_info" xml:space="preserve">
-    <value>高等悠远血脉—{0}</value>
   </data>
   <data name="GreaterEldritchHeritageFeatureDescription_info" xml:space="preserve">
     <value>你身上的血脉之力达到了顶峰。
@@ -487,19 +636,19 @@
     <value>高等悠远血脉</value>
   </data>
   <data name="GreaterMagicWeaponAbilityDescription_info" xml:space="preserve">
-    <value>该法术的效果类似于魔化武器，但是能够给武器在攻击和伤害上提供+1/每4施法者等级的增强加值（最大+5）。这个加值无法让一个武器穿透伤害减免，除非是对魔法的伤害减免。</value>
+    <value>该法术的效果类似于魔化武器，但是能够给武器在攻击和伤害上提供+1/每4施法者等级的增强加值（最大+5）。这个加值无法让武器穿透伤害减免，除非是对魔法的伤害减免。</value>
   </data>
   <data name="GreaterMagicWeaponSpells_info" xml:space="preserve">
     <value>高等魔化武器</value>
   </data>
   <data name="HealingHandsFeatureDescription_info" xml:space="preserve">
-    <value>你在治疗检定中获得+4加值。你可以使用{0}作为一个快速动作。</value>
+    <value>你在医疗检定上获得+4加值。你能以一个迅捷动作使用{0}。</value>
   </data>
   <data name="HealingHandsFeatureName_info" xml:space="preserve">
-    <value>治愈之手</value>
+    <value>医疗之手</value>
   </data>
   <data name="HighDCl_info" xml:space="preserve">
-    <value>外域法术获得施法者等级和DC的最大值（作弊）</value>
+    <value>外乡来客的法术获得最大的施法者等级和DC加值（作弊）</value>
   </data>
   <data name="HypnoticDurationLocalized_info" xml:space="preserve">
     <value>专注+2轮</value>
@@ -510,15 +659,20 @@
   <data name="HypnoticSpellDescription_info" xml:space="preserve">
     <value>闪烁变化的旋转彩色图纹在空中扩散，迷魂身在其中的生物。投2d4然后加上你的施法者等级（最大+10）决定受到影响的生物的总生命骰数。生命骰数最少的生物最先受到影响；对于生命骰相同的生物，最靠近法术中心点的生物最先受到影响。不足以影响生物的生命骰数将被浪费。受到影响的生物被彩色图纹迷魂。没有视觉的生物不受影响。</value>
   </data>
-  <data name="ImprovedEldritchHeritageBloodlineFeatureName_info" xml:space="preserve">
-    <value>精通悠远血脉—{0}</value>
-  </data>
   <data name="ImprovedEldritchHeritageFeatureDescription_info" xml:space="preserve">
     <value>你身上的血脉之力持续增长。
 你可以从你在悠远血脉专长选择的血承上获得一个3级或9级的血承能力。你在使用该能力时职业等级视为角色等级-2，而非你的术士等级（即便你有）。你也无法获得你选择的这个血承的其他血承能力。</value>
   </data>
   <data name="ImprovedEldritchHeritageFeatureName_info" xml:space="preserve">
     <value>精通悠远血脉</value>
+  </data>
+  <data name="IncendiaryCloudAbilityDescription_info" xml:space="preserve">
+    <value>焚云术造出一股充满白热灰烬的沸腾烟云。该云雾就如云雾术一样阻碍视线。此外，每轮在你行动之际炙热的灰烬将对身处其中的事物造成6d6点火焰伤害。目标每轮做反射检定，成功的话只受一半伤害。
+如同死云术一样，该云雾以每轮10英尺的速度从你身边移开。每一轮都要以云雾新的源发点开始计算新的扩散范围，源发点的距离为每轮远离施法时的起点10英尺。通过专注，你可以指引云雾（实际上是它的源发点）以至多每轮60英尺的速度移动。云雾任何超出最大法术距离的部分都会无害的消散，从而减少剩余部分的扩散区域。
+如同云雾术一样，风能吹散云雾，并且该法术不能在水下施展。</value>
+  </data>
+  <data name="IncendiaryCloudAbilityName_info" xml:space="preserve">
+    <value>焚云术</value>
   </data>
   <data name="KeepAllSpellsFeatureDescription_info" xml:space="preserve">
     <value>选择此选项可略过替换此级别的已知法术。</value>
@@ -552,33 +706,30 @@
   <data name="KnockSpells_info" xml:space="preserve">
     <value>敲击术</value>
   </data>
-  <data name="MiracleDivineAbilityName_info" xml:space="preserve">
-    <value>奇迹术（神术）</value>
-  </data>
   <data name="LesserMiracleSpells_info" xml:space="preserve">
     <value>奇迹术预载</value>
   </data>
   <data name="LifeLinkFeatureDescription_info" xml:space="preserve">
-    <value>作为一个标准动作，你可以在自己和另一个生物之间建立一种连接。每回合开始时，如果被绑定生物在其最大生命点以下受伤5点或更多，它将治疗5个生命点，并且您将受到5个伤害点。每个先知等级可以有一个有效的绑定。这种结合持续到被结合的生物死亡，你死亡，你和其他生物之间的距离超过中等范围，或者你作为一个即时动作结束它（如果你有多个连接，你可以作为同一即时动作的一部分结束尽可能多的连接）。</value>
+    <value>你能以一个标准动作在自己和另一个生物之间建立一种连接。每回合开始时，如果被绑定生物在其最大生命点以下受伤5点或更多，它将治疗5个生命点，并且您将受到5个伤害点。每个先知等级可以有一个有效的绑定。这种结合持续到被结合的生物死亡，你死亡，你和其他生物之间的距离超过中等范围，或者你作为一个即时动作结束它（如果你有多个连接，你可以作为同一即时动作的一部分结束尽可能多的连接）。</value>
   </data>
   <data name="LifeLinkFeatureName_info" xml:space="preserve">
     <value>生命链接</value>
   </data>
   <data name="LifeMysteryProgressionDescription_info" xml:space="preserve">
     <value>职业技能：{0}，{1}
-具有生命秘法的先知可以从以下任何启示中选择：</value>
+选择了生命秘示域的先知可以选择以下启示：</value>
   </data>
   <data name="LifeMysteryProgressionName_info" xml:space="preserve">
-    <value>生命秘法</value>
+    <value>生命秘示域</value>
   </data>
   <data name="LifeMysteryReason_error" xml:space="preserve">
     <value>{0}在任何目标上都未激活。</value>
   </data>
   <data name="LifeRevelationFeatureName_info" xml:space="preserve">
-    <value>启示生命</value>
+    <value>生命启示</value>
   </data>
   <data name="LifeSenseFeatureDescription_info" xml:space="preserve">
-    <value>你注意到并定位30英尺以内的生物，就好像你拥有盲视能力一样。你必须至少达到11级才能选择这个启示。</value>
+    <value>你可以感知和定位距离你30英尺范围内的所有活物，如同你拥有盲视能力一般。你必须达到11级才能选择这个启示。</value>
   </data>
   <data name="LifeSenseFeatureName_info" xml:space="preserve">
     <value>生命感知</value>
@@ -662,8 +813,110 @@
   <data name="MetamagicAdeptFeatureName_info" xml:space="preserve">
     <value>超魔专擅（奥术血承）</value>
   </data>
+  <data name="MetamagicElementalSpellSelectionDescription_info" xml:space="preserve">
+    <value>选择一项能量类型：酸蚀、寒冷、电击、火焰或力场。你会用该能量类型取代法术原来的能量类型。
+等级提升：+1</value>
+  </data>
+  <data name="MetamagicElementalSpellSelectionName_info" xml:space="preserve">
+    <value>超魔（元素法术）</value>
+  </data>
+  <data name="MetamagicFeatDazingSpellDescription_info" xml:space="preserve">
+    <value>你可以在一个伤害性法术上附上晕眩效果。当生物被“晕眩法术”调整的法术伤害时将会陷入晕眩，持续轮数相当于该法术的原等级。如果法术需要进行豁免检定，那么目标若通过豁免将不会受到晕眩的影响。如果法术本身无需豁免检定，那么目标需要通过一次意志豁免来避免晕眩的影响。如果法术本身也造成晕眩，那么该超魔专长造成的晕眩持续时间将会累加到法术本身造成的晕眩时间上。
+等级提升：+3（晕眩法术耗用的法术位比实际法术等级高3级）</value>
+  </data>
+  <data name="MetamagicFeatDazingSpellName_info" xml:space="preserve">
+    <value>晕眩法术</value>
+  </data>
+  <data name="MetamagicFeatElementalSpellDescription_info" xml:space="preserve">
+    <value>你能够改变法术的能量类型，将其改为{0}伤害。
+等级提升：+1（元素法术耗用的法术位比实际法术等级高1级）</value>
+  </data>
+  <data name="MetamagicFeatElementalSpellName_info" xml:space="preserve">
+    <value>元素法术—{0}</value>
+  </data>
+  <data name="MetamagicFeatGeneralName_info" xml:space="preserve">
+    <value>超魔（{0}）</value>
+  </data>
+  <data name="MetamagicFeatIntensifiedSpellDescription_info" xml:space="preserve">
+    <value>“法术加强”将会增加5个等级的最大伤害骰（例如从最大5d6，1d6/每施法者等级增加到最大10d6）。要想从这个专长受益，你必须有足够的施法者等级来达到这个最大值（如在前例中，你的施法者等级必须大于5才能使法术加强生效）。除了伤害之外，所有其他的法术要素都不会受到该专长影响，并且伤害不受施法者等级影响的法术也不会受到该专长影响。
+等级提升：+1（法术加强耗用的法术位比实际法术等级高1级）</value>
+  </data>
+  <data name="MetamagicFeatIntensifiedSpellName_info" xml:space="preserve">
+    <value>法术加强</value>
+  </data>
+  <data name="MetamagicFeatPersistentSpellDescription_info" xml:space="preserve">
+    <value>当一个生物被持久法术瞄准或在其效果范围内，并且已成功豁免该法术，它必须再次对法术效果投豁免。如果第二次豁免失败，则会和第一次豁免失败时一样对法术效果照单全收。
+等级提升：+2（法术持久耗用的法术位比实际法术等级高2级）</value>
+  </data>
+  <data name="MetamagicFeatPersistentSpellName_info" xml:space="preserve">
+    <value>法术持久</value>
+  </data>
+  <data name="MetamagicFeatRimeSpellDescription_info" xml:space="preserve">
+    <value>霜冻如影随形般伴随着你的寒冷法术而来，将会在短时间内迟滞目标的行动。“冰霜法术”将会使遭受寒冷伤害的生物陷入纠缠状态，持续轮数相当于该法术的原等级。
+该专长仅作用于带有寒冷描述符的法术。
+等级提升：+1（冰霜法术耗用的法术位比实际法术等级高1级）</value>
+  </data>
+  <data name="MetamagicFeatRimeSpellName_info" xml:space="preserve">
+    <value>冰霜法术</value>
+  </data>
+  <data name="MetamagicFeatSelectiveSpellDescription_info" xml:space="preserve">
+    <value>当你使用法术择发施放一个即时生效的范围法术时，范围内的友善单位不会受到该法术的影响。
+等级提升：+1（法术择发耗用的法术位比实际法术等级高1级）</value>
+  </data>
+  <data name="MetamagicFeatSelectiveSpellName_info" xml:space="preserve">
+    <value>法术择发</value>
+  </data>
   <data name="MetamagicFeatsFeatureName_info" xml:space="preserve">
     <value>超魔专擅</value>
+  </data>
+  <data name="MetamagicFeatTopplingSpellDescription_info" xml:space="preserve">
+    <value>你的力场法术造成的冲击足以将对手击倒在地。如果目标受到法术伤害，豁免失败，或者被你的力场法术所移动，你可以应用你的施法者等级加上施法能力调整值（如牧师的感知，法师的智力等）发起一次对于目标的绊摔检定。这并不会引发对方的借机攻击，即便检定失败，对方也无法反过来绊摔你或对你施予力场效果。
+该专长仅作用于带有力场描述符的法术。
+等级提升：+1（法术击倒耗用的法术位比实际法术等级高1级）
+</value>
+  </data>
+  <data name="MetamagicFeatTopplingSpellName_info" xml:space="preserve">
+    <value>法术击倒</value>
+  </data>
+  <data name="MetamagicRodDescription_info" xml:space="preserve">
+    <value>这根权杖赋予持用者每天增效施放三次法术的能力，如同运用了专长“{0}”。
+{1}权杖可被用于不超过 {2} 级的法术。
+{3}：{4}</value>
+  </data>
+  <data name="MetamagicRodDisplayPrefixString_Greater" xml:space="preserve">
+    <value>高级</value>
+  </data>
+  <data name="MetamagicRodDisplayPrefixString_Lesser" xml:space="preserve">
+    <value>次级</value>
+  </data>
+  <data name="MetamagicRodDisplayPrefixString_Normal" xml:space="preserve">
+    <value>普通</value>
+  </data>
+  <data name="MetamagicRodName_info" xml:space="preserve">
+    <value>超魔权杖</value>
+  </data>
+  <data name="MetamagicRodsName_info" xml:space="preserve">
+    <value>超魔权杖</value>
+  </data>
+  <data name="MetamagicRodSpellMaxLevel_3rd" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="MetamagicRodSpellMaxLevel_6th" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="MetamagicRodSpellMaxLevel_9th" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="MeteorSwarmAbilityDescription_info" xml:space="preserve">
+    <value>流星爆是一个强力且壮观的法术，它在很多方面都跟火球术很像。当你施展此法术时，四颗直径2英尺的火球从你伸展的手中飞出，这些流星会拖着一条火光灿烂的尾巴，以直线路径飞向你选定的地点。
+如果你将流星瞄准一个特定的生物，你必须分别为每颗流星做一个远程接触攻击检定来使流星命中目标。任何生物只要被流星击中，每颗击中他的流星会对他造成2d6点钝击伤害（无豁免），并且接下来他不能对成功击中他的流星所产生的火焰伤害（见下）做任何豁免。如果流星没有成功命中所指定的目标，则会在目标生物所在空间边最近的方格交叉点爆炸。你可以指定多颗流星瞄准同一个目标。
+一旦流星到达目的地，它就会爆炸并波及所有半径40英尺扩散范围内的生物。每颗流星会对每个在爆炸区域内的生物造成6d6点伤害。如果生物在多颗流星的爆炸范围内，他必须分别对每颗流星做反射检定。来源于所有流星的火焰伤害将会在经过豁免检定后加总，而火焰抗力则只需要计算一次。</value>
+  </data>
+  <data name="MeteorSwarmAbilityName_info" xml:space="preserve">
+    <value>流星爆</value>
+  </data>
+  <data name="MeteorSwarmSavingThrowDescription_info" xml:space="preserve">
+    <value>无豁免或反射减半，参见说明</value>
   </data>
   <data name="MiracleAbilityDescription_info" xml:space="preserve">
     <value>准确地说，你并非“施放”奇迹术，而是请求奇迹发生。你声明你希望发生什么样的事情，并且向你的神祇（或者你祈祷获得法术能力的其它力量）请求神迹降临。
@@ -679,6 +932,9 @@
 无论情况为何，超出神祇本性（或者阵营）的要求都会被拒绝。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照9级法术计算。如果奇迹术复制的法术含有价格超过100金币的材料成分，那么你就必须提供这些材料。</value>
   </data>
+  <data name="MiracleDivineAbilityName_info" xml:space="preserve">
+    <value>奇迹术（神术）</value>
+  </data>
   <data name="MiracleSpells_info" xml:space="preserve">
     <value>奇迹术</value>
   </data>
@@ -688,14 +944,68 @@
   <data name="MysteryBattleBattlecryName_info" xml:space="preserve">
     <value>战吼</value>
   </data>
-  <data name="MysteryBattleFinalRevelationDescription_info" xml:space="preserve">
-    <value>达到20级时，你成为了战斗的化身。你能以一个整轮动作进行一次全力攻击，并移动相当于你速度的距离（你可以在攻击之前或之后移动）。当你造成重击时，你可以忽略目标可能拥有的伤害减免。在进行重击确认时你在AC上获得+4的洞察加值。</value>
+  <data name="MysteryBattleBattlefieldClarityDescription_info" xml:space="preserve">
+    <value>每天1次，当你在豁免检定失败后导致目盲，耳聋，战栗，惊惧，麻痹，恐慌或是震慑状态时，你都能以一个即时动作再投一次豁免，并获得+4加值。即使第二次检定的结果比第一次更糟，你也必须接受。在7级和15级时，你每天可以使用本能力的次数再增加1次。</value>
   </data>
-  <data name="MysteryBattleFinalRevelationName_info" xml:space="preserve">
-    <value>最终启示</value>
+  <data name="MysteryBattleBattlefieldClarityName_info" xml:space="preserve">
+    <value>灵台澄明</value>
+  </data>
+  <data name="MysteryBattleDescription_info" xml:space="preserve">
+    <value>
+职业技能：{0}，{1}
+选择了战斗秘示域的先知可以选择以下启示：</value>
+  </data>
+  <data name="MysteryBattleFinalRevelationDescription_info" xml:space="preserve">
+    <value>达到20级时，你成为了战斗的化身。你能以整轮动作进行一次全力攻击，并移动相当于你速度的距离（你可以在攻击之前或之后移动）。当你造成重击时，你可以忽略目标可能拥有的伤害减免。在进行重击确认时你在AC上获得+4的洞察加值。</value>
+  </data>
+  <data name="MysteryBattleIronSkinDescription_info" xml:space="preserve">
+    <value>每天1次，你的皮肤可以变得如同钢铁一般坚硬，使你获得伤害减免“10/精金”。这项能力作用如同“石肤术”，并使用你的先知等级作为施法者等级。15级后你每天可以使用此能力2次。</value>
+  </data>
+  <data name="MysteryBattleIronSkinName_info" xml:space="preserve">
+    <value>铁布衫</value>
+  </data>
+  <data name="MysteryBattleManeuverMasteryDescription_info" xml:space="preserve">
+    <value>选择一种类型的战技，你将获得此战技的精通专长 (例如精通摔绊) 让你可以施展此战技。在7级, 当你施展你所选择的战技时，将你的先知等级视作基本攻击加值计算战技加值。在11级, 你获得此战技的高等专长 (例如高等摔绊) 为你的这种战技提供加值。你不需要满足这些专长的前置条件。</value>
+  </data>
+  <data name="MysteryBattleManeuverMasteryName_info" xml:space="preserve">
+    <value>战技大师</value>
+  </data>
+  <data name="MysteryBattleName_info" xml:space="preserve">
+    <value>战斗秘示域</value>
+  </data>
+  <data name="MysteryBattleResiliencyDescription_info" xml:space="preserve">
+    <value>你获得“顽强”作为奖励专长。
+{0}</value>
+  </data>
+  <data name="MysteryBattleResiliencyName_info" xml:space="preserve">
+    <value>强韧身躯</value>
   </data>
   <data name="MysteryBattleRevelationName_info" xml:space="preserve">
     <value>战斗启示</value>
+  </data>
+  <data name="MysteryBattleSkillAtArmsDescription_info" xml:space="preserve">
+    <value>你擅长所有军用武器和重型盔甲。</value>
+  </data>
+  <data name="MysteryBattleSkillAtArmsName_info" xml:space="preserve">
+    <value>军械娴熟</value>
+  </data>
+  <data name="MysteryBattleSurprisingChargeDescription_info" xml:space="preserve">
+    <value>每天1次，你能以一个即时动作移动相当于你速度的距离。在7级和15级时，你每天可以使用本能力的次数再增加1次。</value>
+  </data>
+  <data name="MysteryBattleSurprisingChargeName_info" xml:space="preserve">
+    <value>惊人冲锋</value>
+  </data>
+  <data name="MysteryBattleWarSightDescription_info" xml:space="preserve">
+    <value>当你进行先攻掷骰时，你可以掷骰两次并采用其中一个结果。7级后你总是可以在突袭轮行动，不过若你没有发现伏击，你将最后行动，不管你的先攻值是多少（在之后的回合恢复正常）。11级后你可以进行三次先攻掷骰并采用其中一个结果。</value>
+  </data>
+  <data name="MysteryBattleWarSightName_info" xml:space="preserve">
+    <value>战阵先决</value>
+  </data>
+  <data name="MysteryBattleWeaponMasteryDescription_info" xml:space="preserve">
+    <value>选择一种你擅长的武器，你获得此武器的“武器专攻”专长。8级时你获得此武器的“精通重击”专长。12级时你获得此武器的“高等武器专攻”专长。你无需满足这些专长的先决条件。",</value>
+  </data>
+  <data name="MysteryBattleWeaponMasteryName_info" xml:space="preserve">
+    <value>武器大师</value>
   </data>
   <data name="MysteryClassSkillsFeatureDescription_info" xml:space="preserve">
     <value>先知可以获得源于其秘示域的额外职业技能</value>
@@ -703,11 +1013,238 @@
   <data name="MysteryClassSkillsFeatureName_info" xml:space="preserve">
     <value>职业技能奖励</value>
   </data>
+  <data name="MysteryDragonBreathWeaponConeOfEnergyType_info" xml:space="preserve">
+    <value>{0}锥形吐息</value>
+  </data>
+  <data name="MysteryDragonBreathWeaponDescription_info" xml:space="preserve">
+    <value>龙类最强大的力量在你体内涌动。你获得了喷吐攻击的能力。该喷吐攻击会造成每2个先知等级1d6点的能量伤害（最小1d6，反射减半），能量类型为你最初选定的类型。你需要在选择该启示时选择喷吐攻击的范围，可选项为30英尺的锥形或者60英尺的直线。1级时你每天能使用此能力1次，5级及5级之后每5级增加1次使用次数。</value>
+  </data>
+  <data name="MysteryDragonBreathWeaponLineOfEnergyType_info" xml:space="preserve">
+    <value>{0}直线吐息</value>
+  </data>
+  <data name="MysteryDragonBreathWeaponName_info" xml:space="preserve">
+    <value>喷吐攻击</value>
+  </data>
+  <data name="MysteryDragonDescription2_info" xml:space="preserve">
+    <value>选择了巨龙秘示域的先知可以获得以下启示：</value>
+  </data>
+  <data name="MysteryDragonDescription_info" xml:space="preserve">
+    <value>有那么一群孤独的先知，他们从那些拥有神秘而强大威力的巨龙那里汲取力量。他们是一群沉思者，也不乏机智敏捷，但同时也傲慢而脾气暴躁。
+在选择了此秘示域后，先知必须再选择一种能量类型（火焰，寒冷，电击或者酸蚀）作为其关联元素，这个选择将会影响巨龙秘示域的某些启示。</value>
+  </data>
+  <data name="MysteryDragonFinalRevelationDescription_info" xml:space="preserve">
+    <value>达到20级时，你的龙裔命运显露出来。你对麻痹、睡眠和你选定的能量伤害免疫。你作为法术及魔法效果目标时被视作龙类。如果你获得了喷吐攻击的启示，你每天能够无限次使用该能力，但是每1d4+1轮内只能使用一次。</value>
+  </data>
+  <data name="MysteryDragonFormDescription_info" xml:space="preserve">
+    <value>你和龙类的亲密关系使你能变形为龙的形态。你能以一个标准动作变为中体型类龙生物，如同龙形I。15级时，你能变为大体型类龙生物，如同龙形II。你每天能使用该能力1次，持续时间为每先知等级10分钟。如果你在15级后使用该能力变为中体型龙，则持续时间为每先知等级1小时。</value>
+  </data>
+  <data name="MysteryDragonFormName_info" xml:space="preserve">
+    <value>巨龙形态</value>
+  </data>
+  <data name="MysteryDragonMagicDescription_info" xml:space="preserve">
+    <value>源自巨龙的力量使你能有限度地使用奥术。你能从低于你最大法术等级2级的术士/法师法术列表中选择一个，或是低于你最大法术等级3级的术士/法师法术列表中选择两个法术加入你的已知法术列表，并视其为神术。</value>
+  </data>
+  <data name="MysteryDragonMagicName_info" xml:space="preserve">
+    <value>巨龙魔法</value>
+  </data>
+  <data name="MysteryDragonMagicOneSpellSelection_info" xml:space="preserve">
+    <value>巨龙魔法（一个法术）</value>
+  </data>
+  <data name="MysteryDragonMagicTwoSpellSelection_info" xml:space="preserve">
+    <value>巨龙魔法（两个法术）</value>
+  </data>
+  <data name="MysteryDragonName_info" xml:space="preserve">
+    <value>巨龙秘示域</value>
+  </data>
+  <data name="MysteryDragonPresenceAbilityCheck_info" xml:space="preserve">
+    <value>意志，免除效果</value>
+  </data>
+  <data name="MysteryDragonPresenceAbilityDuration_info" xml:space="preserve">
+    <value>2d6轮</value>
+  </data>
+  <data name="MysteryDragonPresenceDescription_info" xml:space="preserve">
+    <value>那些同你对抗的人必须克服对巨龙的恐惧，否则就将因为你的龙威而陷入恐慌。你能以迅捷动作在你身周展开蕴有龙力的灵光。当你激活此能力时，30英尺以内能目视你的敌人必须进行意志检定。成功意味着该生物对此能力免疫24小时，检定失败则陷入战栗2d6轮。此能力为影响心智的恐怖效果。1级时你每天能使用此能力1次，5级及5级之后每5级增加1次使用次数。</value>
+  </data>
+  <data name="MysteryDragonPresenceImmuneForDayDescription_info" xml:space="preserve">
+    <value>通过检定，对“龙威显现”免疫24小时。</value>
+  </data>
+  <data name="MysteryDragonPresenceImmuneForDayName_info" xml:space="preserve">
+    <value>免疫龙威显现</value>
+  </data>
+  <data name="MysteryDragonPresenceName_info" xml:space="preserve">
+    <value>龙威显现</value>
+  </data>
+  <data name="MysteryDragonResistancesDescription_info" xml:space="preserve">
+    <value>就如同那些巨龙一样，你很难被通常的攻击方式伤害。你获得5点对你选定能量类型的抗力以及+1天生防御加值。9级时，你对选定能量类型的抗力提升至10点，天生防御加值提升至+2。15级时，你对选定能量类型的抗力提升至20点，天生防御加值提升至+4。</value>
+  </data>
+  <data name="MysteryDragonResistancesName_info" xml:space="preserve">
+    <value>龙裔抗力</value>
+  </data>
+  <data name="MysteryDragonRevelationName_info" xml:space="preserve">
+    <value>巨龙启示</value>
+  </data>
+  <data name="MysteryDragonScaledToughnessDescription_info" xml:space="preserve">
+    <value>你能在身上显现坚硬的龙鳞。每天1次，你能以一个迅捷动作硬化皮肤，呈现出鳞状外观，并使你获得伤害减免“10/魔法”。在此期间你也对麻痹和睡眠效果免疫。该能力的持续时间为相当于你先知等级的轮数。13级后你每天能使用该能力2次。</value>
+  </data>
+  <data name="MysteryDragonScaledToughnessName_info" xml:space="preserve">
+    <value>金甲龙鳞</value>
+  </data>
+  <data name="MysteryDragonSensesDescription_info" xml:space="preserve">
+    <value>你的直觉如同巨龙一般惊人地敏锐。你在察觉检定上获得+2的加值。5级时，该加值增至+4。11级时你获得30英尺内盲感。15级时你的盲感距离增至60英尺。</value>
+  </data>
+  <data name="MysteryDragonSensesName_info" xml:space="preserve">
+    <value>巨龙直觉</value>
+  </data>
+  <data name="MysteryDragonTailSwipeDescription_info" xml:space="preserve">
+    <value>你通过甩动你的尾巴来倾泄怒火。你能长出一条布满鳞片的尾巴，它改善了你的平衡，使你每轮得到一次额外的武器攻击机会。</value>
+  </data>
+  <data name="MysteryDragonTailSwipeName_info" xml:space="preserve">
+    <value>神龙摆尾</value>
+  </data>
+  <data name="MysteryDragonTalonsDescription_info" xml:space="preserve">
+    <value>你使用龙类的可怖利爪作战。你能够以自由动作长出利爪。利爪被视为天生武器，使你能够在整轮攻击时，以最高基础攻击加值进行2次爪抓攻击。每次攻击造成1d4（小体型则为1d3点）+力量调整值的伤害。达到5级后，利爪在穿透伤害减免时可视为魔法武器。达到7级后，伤害提高一级，变为1d6点（小体型则为1d4点）。达到11级后，利爪变为你选定能量类型的武器，攻击命中后能够额外造成1d6点对应能量类型的伤害。你每天可使用爪抓的轮数等于3+魅力调整值。生效轮次无需连续。</value>
+  </data>
+  <data name="MysteryDragonTalonsName_info" xml:space="preserve">
+    <value>巨龙之爪</value>
+  </data>
+  <data name="MysteryDragonWingsDescription_info" xml:space="preserve">
+    <value>就如同那些巨龙一样，你能展翼高飞，从空中威吓你的对手。你能以一个迅捷动作展现出一对皮质龙翼，使你获得60英尺的飞行速度。你每天可以维持双翼达1分钟/每先知等级；你无须一次性用完这段持续时间，但必须至少以1分钟为单位来使用这段时间。11级后你每天可以维持双翼达10分钟/每先知等级。15级后你展现双翼不再存在时间限制。</value>
+  </data>
+  <data name="MysteryDragonWingsName_info" xml:space="preserve">
+    <value>巨龙展翼</value>
+  </data>
+  <data name="MysteryFlameBreathDescription_info" xml:space="preserve">
+    <value>你能以一个标动作从口中喷发出15英尺锥形的火焰，造成每先知等级1d4点火焰伤害（反射豁免减半）。每天你可以使用此能力1次，并在5级以及之后每5级增加1次使用次数。该能力的豁免DC基于魅力。</value>
+  </data>
+  <data name="MysteryFlameBreathName_info" xml:space="preserve">
+    <value>火焰之息</value>
+  </data>
+  <data name="MysteryFlameBurningMagicDescription_info" xml:space="preserve">
+    <value>每当一个生物在对抗你的法术的豁免检定中失败并承受火焰伤害时，它就会着火。火焰会在生物燃烧的第一轮造成法术等级点的火焰伤害并继续燃烧1d4轮，不过生物可以以一个移动动作通过一个反射检定（DC=法术的豁免检定DC）来灭火。给生物浇水会为这个反射检定提供+2加值，而完全浸入水中则会立刻熄灭火焰。不需要通过豁免检定的法术无法使生物着火。</value>
+  </data>
+  <data name="MysteryFlameBurningMagicName_info" xml:space="preserve">
+    <value>燃烧魔法</value>
+  </data>
+  <data name="MysteryFlameCinderDanceDescription_info" xml:space="preserve">
+    <value>你的基础速度提高10英尺。10级时，你移动时无视困难地形。拥有跛足诅咒的先知无法选择本启示。</value>
+  </data>
+  <data name="MysteryFlameCinderDanceName_info" xml:space="preserve">
+    <value>灰烬之舞</value>
+  </data>
+  <data name="MysteryFlameDescription_info" xml:space="preserve">
+    <value>职业技能：{0}，{1}
+选择了烈焰秘示域的先知可以获得以下启示：</value>
+  </data>
+  <data name="MysteryFlameFinalRevelationDescription_info" xml:space="preserve">
+    <value>达到20级时，你成为了火焰的主宰。你可以选择将以下一项超魔专长应用到你的任何火焰法术上而不需要消费额外的高级法术位或施法时间：法术延时，法术加强，法术及远，你无需满足这些专长的先决条件。</value>
+  </data>
+  <data name="MysteryFlameFinalRevelationExtendSpellName_info" xml:space="preserve">
+    <value>法术延时（火焰）</value>
+  </data>
+  <data name="MysteryFlameFinalRevelationIntensifiedSpellName_info" xml:space="preserve">
+    <value>法术加强（火焰）</value>
+  </data>
+  <data name="MysteryFlameFinalRevelationReachSpellName_info" xml:space="preserve">
+    <value>法术及远（火焰）</value>
+  </data>
+  <data name="MysteryFlameFirestormDescription_info" xml:space="preserve">
+    <value>你能以一个标准动作使火焰以你为中心爆发。你能制造出一个10英尺/每先知等级立方范围的火焰。这些立方可以根据你的意愿被排列成任何形状，但它们之间必须互相连接且至少有一个立方邻接你。任何被火焰冲击的生物都必须承受你每个先知等级1d6点伤害（反射豁免减半），火焰可以维持相当于你魅力调整值的轮数。每天你可以使用此能力1次，你必须达到11级才能选择本启示。</value>
+  </data>
+  <data name="MysteryFlameFirestormName_info" xml:space="preserve">
+    <value>火焰风暴</value>
+  </data>
+  <data name="MysteryFlameFormDescription_info" xml:space="preserve">
+    <value>你能以一个标准动作变为一个小型火元素，如同法术元素形态I。在9级时，你可以变身为一个中型火元素，如同元素形态II。在11级时，你可以变身为一个大型火元素，如同元素形态III。你每天可以使用此启示一次，持续时间为每先知等级/小时。你必须达到7级才能选择本启示。</value>
+  </data>
+  <data name="MysteryFlameFormName_info" xml:space="preserve">
+    <value>烈火形态</value>
+  </data>
+  <data name="MysteryFlameHeatAuraDescription_info" xml:space="preserve">
+    <value>你能以一个迅捷动作从体内释放出波波热浪，对所有处于你身周10英尺范围内的生物造成每2个先知等级1d4点的火焰伤害（最小1d4，反射减半）。与此同时，你的身形将因为热气流而模糊不清，在你下一轮行动前使你获得20%隐蔽。每天你可以使用此能力1次，并在5级以及之后每5级增加1次使用次数。</value>
+  </data>
+  <data name="MysteryFlameHeatAuraName_info" xml:space="preserve">
+    <value>炽热灵光</value>
+  </data>
+  <data name="MysteryFlameName_info" xml:space="preserve">
+    <value>烈焰秘示域</value>
+  </data>
+  <data name="MysteryFlameRevelationName_info" xml:space="preserve">
+    <value>烈焰启示</value>
+  </data>
+  <data name="MysteryFlamesMoltenSkinDescription_info" xml:space="preserve">
+    <value>你获得5点火焰抗力。5级时，该抗力上升至10点；11级时，抗力上升至20点；17级后你免疫火焰。</value>
+  </data>
+  <data name="MysteryFlamesMoltenSkinName_info" xml:space="preserve">
+    <value>熔融皮肤</value>
+  </data>
+  <data name="MysteryFlameTouchDescription_info" xml:space="preserve">
+    <value>你能以一个标准动作通过一次近战接触攻击对其他生物造成1d6+每两个先知等级1点的火焰伤害。你每天可以多次使用这个能力，次数为“魅力调整值+3”。
+11级时，所有你持有的武器将被视为炽焰属性武器。</value>
+  </data>
+  <data name="MysteryFlameTouchName_info" xml:space="preserve">
+    <value>怒焰之触</value>
+  </data>
+  <data name="MysteryFlameTouchWeaponName_info" xml:space="preserve">
+    <value>{0}—炽焰武器</value>
+  </data>
+  <data name="MysteryFlameWingsDescription_info" xml:space="preserve">
+    <value>你能以一个迅捷动作展现一对炽焰双翼，使你获得60英尺的飞行速度（机动性一般）。你每天可以维持双翼达1分钟/每先知等级；你无须一次性用完这段持续时间，但必须至少以1分钟为单位来使用这段时间。你必须达到7级才能选择本启示。</value>
+  </data>
+  <data name="MysteryFlameWingsName_info" xml:space="preserve">
+    <value>炎之翼</value>
+  </data>
+  <data name="MysteryHeavensDescription2_info" xml:space="preserve">
+    <value>选择了苍天秘示域的先知可以获得以下启示：</value>
+  </data>
+  <data name="MysteryHeavensDescription_info" xml:space="preserve">
+    <value>那些沉醉于夜空的先知可以习得源于天空中星象之力的法术和启示——七彩星光，夜月，亦或是无尽深空。
+职业技能：{0}，{1}</value>
+  </data>
+  <data name="MysteryHeavensName_info" xml:space="preserve">
+    <value>苍天秘示域</value>
+  </data>
+  <data name="MysteryTimeDescription_info" xml:space="preserve">
+    <value>职业技能：{0}，{1}
+选择了时光秘示域的先知可以获得以下启示：</value>
+  </data>
+  <data name="MysteryTimeName_info" xml:space="preserve">
+    <value>时光秘示域</value>
+  </data>
+  <data name="NewMetamagicNamesDazing_info" xml:space="preserve">
+    <value>晕眩</value>
+  </data>
+  <data name="NewMetamagicNamesElementalForcePrefix_info" xml:space="preserve">
+    <value>力场</value>
+  </data>
+  <data name="NewMetamagicNamesElemental_info" xml:space="preserve">
+    <value>元素</value>
+  </data>
+  <data name="NewMetamagicNamesIntensified_info" xml:space="preserve">
+    <value>加强</value>
+  </data>
+  <data name="NewMetamagicNamesPersistent_info" xml:space="preserve">
+    <value>持久</value>
+  </data>
+  <data name="NewMetamagicNamesRime_info" xml:space="preserve">
+    <value>冰霜</value>
+  </data>
+  <data name="NewMetamagicNamesSelectvie_info" xml:space="preserve">
+    <value>择发</value>
+  </data>
+  <data name="NewMetamagicNamesToppling_info" xml:space="preserve">
+    <value>击倒</value>
+  </data>
   <data name="OppositionResearchFeatureDescription_info" xml:space="preserve">
     <value>选择一个你的对立学派；现在你准备这个学派的法术只需要一个对应等级的法术位而非两个，并且你在制造此学派物品时不再承受-4豁免检定减值。</value>
   </data>
   <data name="OppositionResearchFeatureName_info" xml:space="preserve">
     <value>对立学派研究</value>
+  </data>
+  <data name="OracleCombatHealerDescription_info" xml:space="preserve">
+    <value>当你使用一个治疗法术（名称中带有“治疗”字样）时，你可以用一个迅捷动作来施放它，如同使用“法术瞬发”专长，但要花费两个法术位。这不会提升法术等级。7级时你可以每天使用此能力1次，并在之后每4级增加1次使用次数。</value>
+  </data>
+  <data name="OracleCombatHealerName_info" xml:space="preserve">
+    <value>战斗医师</value>
   </data>
   <data name="OracleCureOrInflictSpellFeatureDescription_info" xml:space="preserve">
     <value>除了随等级提升获得的法术外，先知还能将所有治疗法术或者造成伤害法术添加到已知的法术列表中（“治疗”法术即名称中带有“治疗”字样的法术，“造成伤害”法术即名称中带有“造成X伤”字样的法术）。一旦先知有能力施展这些法术，法术立即就会被添加。选择治疗法术或是造成伤害法术必须在先知1级时作出，且无法改变。</value>
@@ -717,6 +1254,172 @@
   </data>
   <data name="OracleCureSpellProgressionName_info" xml:space="preserve">
     <value>治疗法术</value>
+  </data>
+  <data name="OracleCurseBlackenedDescription_info" xml:space="preserve">
+    <value>你的手掌与前臂干瘪发黑，就如同你曾经把手臂插入熊熊火焰中一样。你那薄如纸张的皮肤对碰触极为敏感。你在武器攻击检定中受到-4减值，不过你能够将燃烧之手加入你的已知法术列表。</value>
+  </data>
+  <data name="OracleCurseBlackenedLevel10Description_info" xml:space="preserve">
+    <value>10级时，将火墙术加入你的已知法术列表。并且你受到的武器攻击检定减值降低到-2。</value>
+  </data>
+  <data name="OracleCurseBlackenedLevel15Description_info" xml:space="preserve">
+    <value>15级起，将延迟爆裂火球加入你的已知法术列表。</value>
+  </data>
+  <data name="OracleCurseBlackenedLevel5Description_info" xml:space="preserve">
+    <value>5级时，将灼热射线及炽焰法球加入你的已知法术列表。</value>
+  </data>
+  <data name="OracleCurseBlackenedName_info" xml:space="preserve">
+    <value>焦黑之臂</value>
+  </data>
+  <data name="OracleCurseBlindsenseName_info" xml:space="preserve">
+    <value>盲感</value>
+  </data>
+  <data name="OracleCurseBlindsightName_info" xml:space="preserve">
+    <value>盲视</value>
+  </data>
+  <data name="OracleCurseCloudedVisionDescription_info" xml:space="preserve">
+    <value>你的双眼蒙上一层雾翳，这使你难以看清东西。
+你无法看到20英尺之外，因此你无法设定20英尺外的目标，距离外的目标视为隐蔽。</value>
+  </data>
+  <data name="OracleCurseCloudedVisionLevel10Description_info" xml:space="preserve">
+    <value>达到10级时，你获得30英尺内盲感。</value>
+  </data>
+  <data name="OracleCurseCloudedVisionLevel15Description_info" xml:space="preserve">
+    <value>达到15级时，你获得15英尺盲视。</value>
+  </data>
+  <data name="OracleCurseCloudedVisionLevel5Description_info" xml:space="preserve">
+    <value>达到5级时，你的视距增加到30英尺。</value>
+  </data>
+  <data name="OracleCurseCloudedVisionName_info" xml:space="preserve">
+    <value>障目</value>
+  </data>
+  <data name="OracleCurseCovetousDescription_info" xml:space="preserve">
+    <value>你发现自己沉迷于闪耀的奢华生活。
+你必须佩戴至少100gp+200gp*（人物等级-1）的非魔法物品及珠宝。如果你没有足够的资金来购买这些额外装备，你会感到强烈的渴望（但是并非强制性）的去卖掉现有装备或者偷窃他人财物。如果你无法满足这一要求，你会陷入恶心状态。使用魔法装置成为你的职业技能。</value>
+  </data>
+  <data name="OracleCurseCovetousLevel10Description_info" xml:space="preserve">
+    <value>10级时，你能使用{0}技能辨识物品。</value>
+  </data>
+  <data name="OracleCurseCovetousLevel15Description_info" xml:space="preserve">
+    <value>15级时，你在{0}检定上获得+4洞察加值。</value>
+  </data>
+  <data name="OracleCurseCovetousLevel5Description_info" xml:space="preserve">
+    <value>5级时，你在{0}检定上获得+4洞察加值。</value>
+  </data>
+  <data name="OracleCurseCovetousName_info" xml:space="preserve">
+    <value>贪欲</value>
+  </data>
+  <data name="OracleCurseDeafDescription_info" xml:space="preserve">
+    <value>你失去了听力，并将承受所有因为耳聋而获得的正常减值：先攻-4，察觉技能-4。不过你施放的所有法术都视为搭配有法术默发专长，并且这些法术的施法时间和法术等级不会增加。</value>
+  </data>
+  <data name="OracleCurseDeafLevel10Description_info" xml:space="preserve">
+    <value>10级时，你在察觉技能检定上获得+3加值。</value>
+  </data>
+  <data name="OracleCurseDeafLevel15Description_info" xml:space="preserve">
+    <value>15级时，你获得30英尺内的震颤感应。</value>
+  </data>
+  <data name="OracleCurseDeafLevel15Name_info" xml:space="preserve">
+    <value>震颤感应</value>
+  </data>
+  <data name="OracleCurseDeafLevel5Description_info" xml:space="preserve">
+    <value>5级时，你在察觉技能检定上不再受到减值，并且你因为耳聋而受到的先攻检定减值降低到-2。</value>
+  </data>
+  <data name="OracleCurseDeafName_info" xml:space="preserve">
+    <value>失聪</value>
+  </data>
+  <data name="OracleCurseHauntedDescription_info" xml:space="preserve">
+    <value>恶意的灵魂如影随形，在你身边制造各种不快和怪事（比如诡异的气流，小物件无主自动，轻微的噪声等）。
+取出任何携带的物品都需要你使用一个标准动作，除非它需要的时间长于一个标准动作，且任何你掉落的物品都会自动朝随机方向远离你10英尺距离。
+你将{0}加入你的已知法术列表。</value>
+  </data>
+  <data name="OracleCurseHauntedLevel5Description_info" xml:space="preserve">
+    <value>{0}级时，将{1}加入你的已知法术列表。</value>
+  </data>
+  <data name="OracleCurseHauntedName_info" xml:space="preserve">
+    <value>鬼上身</value>
+  </data>
+  <data name="OracleCurseLameDescription_info" xml:space="preserve">
+    <value>你的一条腿受到了永久性的伤损，如果你拥有30英尺及以上基础速度，那么你的移动速度降低10英尺；如果你的基础速度低于30英尺，那么你的移动速度降低5英尺。你将不会再因为重负而降低移动速度。</value>
+  </data>
+  <data name="OracleCurseLameEffortlessArmorName_info" xml:space="preserve">
+    <value>重甲轻装</value>
+  </data>
+  <data name="OracleCurseLameExhaustionImmunity" xml:space="preserve">
+    <value>免疫力竭</value>
+  </data>
+  <data name="OracleCurseLameFatigueImmunityName_info" xml:space="preserve">
+    <value>免疫疲劳</value>
+  </data>
+  <data name="OracleCurseLameLevel10Description_info" xml:space="preserve">
+    <value>10级时，你穿戴的盔甲不再拖慢你的速度。</value>
+  </data>
+  <data name="OracleCurseLameLevel15Description_info" xml:space="preserve">
+    <value>15级时，你免疫力竭状态。</value>
+  </data>
+  <data name="OracleCurseLameLevel5Description_info" xml:space="preserve">
+    <value>5级时，你免疫疲劳状态（但是不包括力竭）。</value>
+  </data>
+  <data name="OracleCurseLameName_info" xml:space="preserve">
+    <value>跛足</value>
+  </data>
+  <data name="OracleCurseSelectionDescription_info" xml:space="preserve">
+    <value>每个先知都背负着诅咒，这些诅咒既对他们造成不利也会带来益处。先知必须在1级时选择自己的诅咒，一旦选择即不能更改。除非有神祗力量的介入，否则先知无法以任何方式摆脱自己的诅咒。先知诅咒的等级基于她的先知等级加上每两个非先知职业等级或生命骰+1。每一个先知都必须选择下列诅咒之一。</value>
+  </data>
+  <data name="OracleCurseSelectionName_info" xml:space="preserve">
+    <value>先知诅咒</value>
+  </data>
+  <data name="OracleCurseTonguesDescription_info" xml:space="preserve">
+    <value>在承受压力或不安的状态下你会变得不知所云。
+你可以从以下语言中选择一项：深渊语，邪灵语，水族语，风族语，天界语，火族语，炼狱语或土族语。
+当你进入战斗时你将只能说和理解此种语言。这并不会干扰你的施法，但确实会影响基于语言成分的法术。你获得你所选的语言类型，并且获得“{0}”技能的+2加值，这代表你获得了一门外域语言的知识。
+你的队友必须至少拥有1级的“{1}”技能，才能在战斗中有效和你沟通，否则他们将会变得不受控制。</value>
+  </data>
+  <data name="OracleCurseTonguesLevel10Description_info" xml:space="preserve">
+    <value>10级后，你可以理解任何可以说的语言，如同“巧言术”的效果，即使是在战斗中也是一样。
+因为你丰富的语言知识，你再获得额外的“{0}”+4加值。</value>
+  </data>
+  <data name="OracleCurseTonguesLevel10Name_info" xml:space="preserve">
+    <value>理解所有语言</value>
+  </data>
+  <data name="OracleCurseTonguesLevel15Description_info" xml:space="preserve">
+    <value>15级后，你可以理解和表达任何语言，不过在战斗时诅咒依然会照常生效。
+因为你异常丰富的语言知识，你再获得额外的“{0}”+4加值。</value>
+  </data>
+  <data name="OracleCurseTonguesLevel15Name_info" xml:space="preserve">
+    <value>通晓所有语言</value>
+  </data>
+  <data name="OracleCurseTonguesLevel5Description_info" xml:space="preserve">
+    <value>5级时，你学会了另一门外域语言，因此获得额外的“{0}”技能的+2加值。</value>
+  </data>
+  <data name="OracleCurseTonguesLevel5Name_info" xml:space="preserve">
+    <value>奖励语言</value>
+  </data>
+  <data name="OracleCurseTonguesName_info" xml:space="preserve">
+    <value>口艺语</value>
+  </data>
+  <data name="OracleCurseWastingDescription_info" xml:space="preserve">
+    <value>你的躯体正处于缓慢的腐烂状态。
+除了威吓技能之外，你在所有基于魅力的技能检定上承受-4减值。同时你在对抗疾病效果的强韧检定上获得+4表现加值。</value>
+  </data>
+  <data name="OracleCurseWastingLevel10Description_info" xml:space="preserve">
+    <value>10级时，你免疫疾病效果。</value>
+  </data>
+  <data name="OracleCurseWastingLevel10Name_info" xml:space="preserve">
+    <value>免疫疾病</value>
+  </data>
+  <data name="OracleCurseWastingLevel15Description_info" xml:space="preserve">
+    <value>15级时，你免疫反胃效果。</value>
+  </data>
+  <data name="OracleCurseWastingLevel15Name_info" xml:space="preserve">
+    <value>免疫反胃</value>
+  </data>
+  <data name="OracleCurseWastingLevel5Description_info" xml:space="preserve">
+    <value>5级时，你免疫恶心效果（但不包括反胃）。</value>
+  </data>
+  <data name="OracleCurseWastingLevel5Name_info" xml:space="preserve">
+    <value>免疫恶心</value>
+  </data>
+  <data name="OracleCurseWastingName_info" xml:space="preserve">
+    <value>朽坏</value>
   </data>
   <data name="OracleHas3SkillPoints_info" xml:space="preserve">
     <value>先知在升级时获得3个技能点（而非4个，由于技能的统合）</value>
@@ -739,10 +1442,10 @@
     <value>秘示域</value>
   </data>
   <data name="OracleOrisonsFeatureDescription_info" xml:space="preserve">
-    <value>先知可以了解一些祷言，或称0级法术。这些法术可以像其他法术一样施放，不过在施放后不会被消耗掉，可以再次使用。</value>
+    <value>先知可以学习一些祷言，或称0级法术。这些法术可以像其他法术一样施放，不过在施放后不会被消耗掉，可以再次使用。</value>
   </data>
   <data name="OracleProficienciesFeatureDescription_info" xml:space="preserve">
-    <value>先知擅长使用所有的简单武器、轻型盔甲、中型盔甲和盾牌（不包括塔盾）。一部分先知的秘示域会带来额外的擅长。。</value>
+    <value>先知擅长使用所有的简单武器、轻型盔甲、中型盔甲和盾牌（不包括塔盾）。一部分先知的秘示域会带来额外的擅长。</value>
   </data>
   <data name="OracleProficienciesFeatureName_info" xml:space="preserve">
     <value>先知擅长</value>
@@ -764,8 +1467,20 @@
   <data name="OrClassSkillName_info" xml:space="preserve">
     <value>或{0}</value>
   </data>
-  <data name="PrestigiousSpellcasterClassFeatureName_info" xml:space="preserve">
-    <value>进阶施法者—{0}</value>
+  <data name="OverlandFlightSpellAbilityDescription_info" xml:space="preserve">
+    <value>该法术给予你一双飞翼，使你能够以40英尺的速度飞行（如身穿中型或重型盔甲，或者负重为中度或重度负荷时，速度为30英尺）。该法术为长途飞行而设计，并能保证你在飞行期间不会疲劳。</value>
+  </data>
+  <data name="OverlandFlightSpellAbilityName_info" xml:space="preserve">
+    <value>跨陆飞行（{0}）</value>
+  </data>
+  <data name="OverlandFlightSpellName_info" xml:space="preserve">
+    <value>跨陆飞行</value>
+  </data>
+  <data name="PrerequisiteCasterSpellLevelCaption_info" xml:space="preserve">
+    <value>可施放 {1} 级{0}法术</value>
+  </data>
+  <data name="PrerequisiteCharacterLevelEquals_info" xml:space="preserve">
+    <value>{0}为{1}级</value>
   </data>
   <data name="PrestigiousSpellcasterFeatureDescription_info" xml:space="preserve">
     <value>对你来说，转换到进阶施法者职业的难度并不算大，也因此你从进阶施法者职业等级中获得1个额外的有效施法者等级。</value>
@@ -777,7 +1492,7 @@
     <value>进阶施法者</value>
   </data>
   <data name="RelaxAncientLorekeeper_info" xml:space="preserve">
-    <value>任何种族都可以选择职业“先知：远古博学者”</value>
+    <value>任何种族都可以选择变体职业“先知：传古学者”</value>
   </data>
   <data name="RelaxTonguesCurse_info" xml:space="preserve">
     <value>消除呓语诅咒的负面效果（即除主角外的其他队伍成员的“知识：世界”技能不能低于1级，否则在战斗中不受指挥）</value>
@@ -798,14 +1513,48 @@
     <value>该法术的效果类似于死者复活，不同的是你可以复活已经死亡长达10年/每施法者等级的生物。该法术甚至可以让已经尸骨无存的生物复活，前提是你以某种方式明确地识别死者（吟诵死者的出生或死亡时间和地点是最常见的方法）。在法术完成后，生物即刻完全回复其生命值、活力和健康状态，不会损失等级（或体质属性），并且回复生物在死亡时拥有的所有已准备好的法术。你可以复活被致死效果杀死的人或被变成不死生物再被摧毁的人。这个法术也可以复活元素或异界生物，但不能复活构装体或不死生物。即便完全复原术也不能使死于天年的生物起死回生。
 效益：复活是一个自由动作。</value>
   </data>
+  <data name="RollWithItFeatureDescription_info" xml:space="preserve">
+    <value>你很擅长挨打，尽管你在大多数时候都是在声嘶力竭的大叫中飞出战场。
+效益：在遭受近战武器的打击时，你有时可以将一部分伤害转化为一个移动修正。这会使你减轻13点伤害。</value>
+  </data>
+  <data name="RollWithItFeatureName_info" xml:space="preserve">
+    <value>逆来顺受</value>
+  </data>
   <data name="SafeCuringFeatureDescription_info" xml:space="preserve">
-    <value>当你使用法术来治疗目标的生命值伤害时，你不会引起对施法的借机攻击。</value>
+    <value>当你施放一个治疗目标生物生命值伤害的法术时，你不会引起对施法的借机攻击。</value>
   </data>
   <data name="SafeCuringFeatureName_info" xml:space="preserve">
-    <value>安全治疗</value>
+    <value>安全治愈</value>
   </data>
   <data name="ScionExtraArcanaFeatureName_info" xml:space="preserve">
     <value>额外奥术（{0}）</value>
+  </data>
+  <data name="SeekerDescription_info" xml:space="preserve">
+    <value>被命运和血脉所选中的先知透过神秘又奇异的方式获得他的魔法。虽然大多数的先知满足于自身的神秘力量，但是有些先知加入了开拓者组织，致力于究明秘示域的奥秘，以及确认其诡异能力的起源和历史。这些施法者广为人知的名称就是探求者，他们研究古代典籍和晦涩的废墟，痴迷于任何可以协助他们找到过去遗产和历史的线索。</value>
+  </data>
+  <data name="SeekerLoreDescription_info" xml:space="preserve">
+    <value>3级起，探求者对于自身秘示域的掌握逐渐加深，也能更自在地使用源于其秘示域的奖励法术。他们对这些奖励法术相关的专注检定、突破法术抗力的施法者等级检定得到+4的加值。
+该能力将取代先知3级时获得的启示。</value>
+  </data>
+  <data name="SeekerLoreName_info" xml:space="preserve">
+    <value>探求者学识</value>
+  </data>
+  <data name="SeekerMagicName_info" xml:space="preserve">
+    <value>探求者魔法</value>
+  </data>
+  <data name="SeekerMagic_Description_info" xml:space="preserve">
+    <value>15级时，探求者对于其启示奖励法术的超魔技巧的掌握变得炉火纯青。当探求者将超魔专长运用于其启示奖励法术时，超魔专长对法术等级的修正降低1级——不过只修正1级的超魔专长，例如法术延时不在其列。此降低超魔专长对法术等级修正值的能力不和其他提供类似效果的能力叠加。
+该能力将取代先知15级时获得的启示。</value>
+  </data>
+  <data name="SeekerName_info" xml:space="preserve">
+    <value>探求者</value>
+  </data>
+  <data name="SeekerTinkeringDescription_info" xml:space="preserve">
+    <value>探求者常通过寻找古代装置、老旧典籍和奇奇怪怪的魔法物品来了解他们的秘示域。这种好奇心使破解陌生而怪异机关的诀窍变成他们与生俱来的本能，因此在进行寻找陷阱的察觉检定时将获得1/2其职业等级（最小为1）的加值。如果探求者同时拥有具备寻找陷阱能力的游荡者或其他职业的等级，在决定技能检定加值时会将探求者的等级和其他职业等级加总计算。
+修修补补将取代从秘示域获得的所有其他奖励职业技能。</value>
+  </data>
+  <data name="SeekerTinkeringName_info" xml:space="preserve">
+    <value>修修补补</value>
   </data>
   <data name="ShowCustomPortraits_info" xml:space="preserve">
     <value>创建角色时在肖像列表中显示自定义肖像（需要重新启动游戏才能生效）</value>
@@ -823,12 +1572,24 @@
   <data name="SkipDeityFeatureName_info" xml:space="preserve">
     <value>忽略神祗</value>
   </data>
+  <data name="SkipSelectionDescription_info" xml:space="preserve">
+    <value>跳过这项选择。</value>
+  </data>
+  <data name="SkipSelection_info" xml:space="preserve">
+    <value>(跳过)</value>
+  </data>
   <data name="SpellBlendingFeatureDescription_info" xml:space="preserve">
     <value>选取此项奥能的魔战士可以选择一个法师法术列表中的法术，将其加入他的法术书和魔战士职业法术列表之中，此法术的法术等级必须在魔战士所能施展的法术等级之内。魔战士也可以选择以此方式添加两个法术，但这两个法术必须至少比他能施展的最高级法术低一级。。
 特殊：魔战士可以重复选取此奥能。</value>
   </data>
   <data name="SpellBlendingFeatureName_info" xml:space="preserve">
     <value>法术混合</value>
+  </data>
+  <data name="SpellBlendingFeatureOneSpellSelection_info" xml:space="preserve">
+    <value>{0}（单个法术）</value>
+  </data>
+  <data name="SpellBlendingFeatureTwoSpellProgression_info" xml:space="preserve">
+    <value>{0}（两个法术）</value>
   </data>
   <data name="SpellPerfectionFeatureDescription_info" xml:space="preserve">
     <value>选择一个你有能力施放的法术，每当你施法时，你可以在不影响法术等级及施法时间的情况下对该法术应用任一你所掌握的超魔专长，前提是该法术的所有调整加成后等级不超过9级。此外，如果你有其他专长允许你对这个法术的任何一个方面添加一个加值（如法术专攻、法术穿透、武器专攻【射线】等），那么这些专长在这个法术上的效果将加倍。</value>
@@ -843,10 +1604,10 @@
     <value>法术弱点（{0}）</value>
   </data>
   <data name="SpiritBoostFeatureDescription_info" xml:space="preserve">
-    <value>每当你的治疗法术将一个目标治疗到它的最大生命值时，任何多余的生命值将作为临时生命值持续1轮（临时生命值最大值等于你的先知等级）。</value>
+    <value>每当你的治疗法术将一个生物的生命值治疗到最大值时，这个法术过量治疗的部分将成为该生物的临时生命值（上限为你的先知等级数），这些临时生命值持续每先知等级1轮。</value>
   </data>
   <data name="SpiritBoostFeatureName_info" xml:space="preserve">
-    <value>精神振奋</value>
+    <value>精神充沛</value>
   </data>
   <data name="SpiritualWeaponAbilityDescription_info" xml:space="preserve">
     <value>一把由力场形成的武器出现在一定距离内并且根据你的指挥攻击敌人，每次击中造成1d8+1/每3施法者等级的力场伤害（最大在15级时达到+5）。
@@ -887,11 +1648,37 @@
 若物品被其他困在正常时间内的生物所持有、携带或穿戴，则你不能移动或伤害它们，但你可以影响无主物品。
 在时间停止的持续时间内，你无法被察觉。在时间停止的效果下你不能进入被反魔法场保护的区域。</value>
   </data>
+  <data name="TimeStopFreezeBuffDescription_info" xml:space="preserve">
+    <value>时间停止正在对其生效，其体感时间已被冻结。</value>
+  </data>
+  <data name="TimeStopFreezeBuffName_info" xml:space="preserve">
+    <value>时间被冻结</value>
+  </data>
   <data name="TimeStopSpells_info" xml:space="preserve">
     <value>时间停止</value>
   </data>
+  <data name="TraitsAddStatBonusDescription_info" xml:space="preserve">
+    <value>{0}
+效益：你在{1}检定上获得+1的背景特性奖励加值，并且{2}成为你的职业技能。</value>
+  </data>
+  <data name="TraitsFillSpellSelection_info" xml:space="preserve">
+    <value>{0}（{1} 级法术）</value>
+  </data>
+  <data name="TraitsSelectionDescription_info" xml:space="preserve">
+    <value>角色的背景特性是指那些和你的种族、职业无关的能力。</value>
+  </data>
   <data name="TrueResurrectionSpells_info" xml:space="preserve">
     <value>完全复原术</value>
+  </data>
+  <data name="TypeHyphenSubtype_info" xml:space="preserve">
+    <value>{0}—{1}</value>
+  </data>
+  <data name="WallOfFireAbilityDescription_info" xml:space="preserve">
+    <value>一道不可移动、散发出紫色光焰的炽热火墙凭空出现。你可以选择火墙的一侧对外散发出热量，对于该侧所有位于火墙10英尺内的生物都造成2d4点火焰伤害，并且对10-20英尺处的所有生物造成1d4点火焰伤害。火墙在出现时就立刻造成该伤害，并且在之后每一轮你行动之际对范围内的所有生物再次造成该伤害。此外，任何穿过火墙的人都会受到2d6+1/每施法者等级的火焰伤害（最大+20）。火墙对不死生物造成的伤害翻倍。
+如果你在生物所在的位置直接塑造火墙，那么这些生物受到的伤害如同他们穿越了火墙。如果5英尺长度的火墙在1轮之中受到了20点或以上的寒冷伤害，那么该段火墙就会熄灭。（此时寒冷伤害不像对于普通物品那样会减半。）</value>
+  </data>
+  <data name="WallOfFireAbilityName_info" xml:space="preserve">
+    <value>火墙术</value>
   </data>
   <data name="WeaponOfAweAbilityDescription_info" xml:space="preserve">
     <value>你将一件武器变成了令人敬畏的装备。该武器在伤害骰上获得+2崇圣加值，如果该武器造成重击，被重击的目标将无豁免处于战栗状态1轮。
@@ -916,10 +1703,6 @@
 • 死者重生。一个祈愿术可以通过复制死者复活法术来复活一个死去的生物。如果死去的生物已然尸骨无存，祈愿术依旧可以复活它，但是这需要两个祈愿术：一个用来创造其身体，另外一个让该身体重新获得生命的活力。祈愿术复活的生物仍然无可避免地会损失一个等级。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照9级法术计算。如果祈愿术复制的法术含有价格超过10000金币的材料成分，那么你就必须提供这些材料（这并不包含在法术本身价值25000金币的材料费内）。</value>
   </data>
-  <data name="WishBuffDescription_info" xml:space="preserve">
-    <value>祈愿术给予{0}永久天赋加值。
-连续不断地施放2到5个祈愿术可以给予生物的某项属性值+2到+5的天赋加值（两个祈愿术获得+2天赋加值，三个祈愿术获得+3天赋加值，以此类推）。天赋加值即刻生效，因此无法被解除。注意：对于任何一项属性，天赋加值最大不能超过+5，并且天赋加值的效果无法叠加，只能应用最大加值。</value>
-  </data>
   <data name="WishArcaneAbilityDescription_info" xml:space="preserve">
     <value>奥术祈愿术能够让你创造出几乎任何类型的效果，只需要你提供5颗钻石。
 • 复制任何一个不超过6级的术士/法师法术，但是这个法术不能属于你的对立学派。
@@ -929,6 +1712,10 @@
 • 取消许多法术的有害效果，如神智错乱。
 • 创造出其它效果，其强度等级不能超过上述的效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定中受到-7的减值等等。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照7级法术计算。如果有限祈愿术复制的法术含有价格超过1000金币的材料成分，那么你就必须提供这些材料（这并不包含在法术本身价值1500金币的材料费内）。</value>
+  </data>
+  <data name="WishBuffDescription_info" xml:space="preserve">
+    <value>祈愿术给予{0}永久天赋加值。
+连续不断地施放2到5个祈愿术可以给予生物的某项属性值+2到+5的天赋加值（两个祈愿术获得+2天赋加值，三个祈愿术获得+3天赋加值，以此类推）。天赋加值即刻生效，因此无法被解除。注意：对于任何一项属性，天赋加值最大不能超过+5，并且天赋加值的效果无法叠加，只能应用最大加值。</value>
   </data>
   <data name="WishFabricateSpells_info" xml:space="preserve">
     <value>祈愿术（奥术）</value>
@@ -951,578 +1738,5 @@
   </data>
   <data name="WishSpells_info" xml:space="preserve">
     <value>祈愿术</value>
-  </data>
-  <data name="MysteryBattleBattlefieldClarityDescription_info" xml:space="preserve">
-    <value>每天1次，作为一个直觉动作，当你在豁免检定失败后导致目盲，耳聋，战栗，惊惧，麻痹，恐慌或是震慑状态时，你都可以再投一次豁免，并获得+4加值。你必须接受第二次的结果，即使它比原先更糟。在7级和15级时，你每天可以使用本能力的次数再增加1次。</value>
-  </data>
-  <data name="MysteryBattleBattlefieldClarityName_info" xml:space="preserve">
-    <value>灵台澄明</value>
-  </data>
-  <data name="MysteryBattleIronSkinDescription_info" xml:space="preserve">
-    <value>每天1次，你的皮肤可以变得如同钢铁一般坚硬，使你获得“10/精金”的伤害减免。这项能力作用如同“石肤术”，并使用你的先知等级作为施法者等级。15级后你每天可以使用此能力2次。</value>
-  </data>
-  <data name="MysteryBattleIronSkinName_info" xml:space="preserve">
-    <value>铁布衫</value>
-  </data>
-  <data name="MysteryBattleManeuverMasteryDescription_info" xml:space="preserve">
-    <value>选择一种类型的战技，你将获得此战技的精通专长 (例如精通摔绊) 让你可以施展此战技。在7级, 当你施展你所选择的战技时，将你的先知等级视作基本攻击加值计算战技加值。在11级, 你获得此战技的高等专长 (例如高等摔绊) 为你的这种战技提供加值。你不需要满足这些专长的前置条件。</value>
-  </data>
-  <data name="MysteryBattleManeuverMasteryName_info" xml:space="preserve">
-    <value>战技大师</value>
-  </data>
-  <data name="MysteryBattleResiliencyDescription_info" xml:space="preserve">
-    <value>你获得“顽强”作为奖励专长。
-{0}</value>
-  </data>
-  <data name="MysteryBattleResiliencyName_info" xml:space="preserve">
-    <value>强韧身躯</value>
-  </data>
-  <data name="OracleCombatHealerDescription_info" xml:space="preserve">
-    <value>当你使用一个治疗法术（名称中带有“治疗”字样）时，你可以用一个迅捷动作来施放它，如同使用“法术瞬发”专长，但要花费两个法术位。这不会提升法术等级。7级时你可以每天使用此能力1次，并在之后每4级增加1次使用次数。</value>
-  </data>
-  <data name="OracleCombatHealerName_info" xml:space="preserve">
-    <value>战斗医师</value>
-  </data>
-  <data name="MysteryBattleSkillAtArmsDescription_info" xml:space="preserve">
-    <value>你擅长所有军用武器和重型盔甲。</value>
-  </data>
-  <data name="MysteryBattleSkillAtArmsName_info" xml:space="preserve">
-    <value>军械娴熟</value>
-  </data>
-  <data name="MysteryBattleSurprisingChargeDescription_info" xml:space="preserve">
-    <value>每天1次，你可以用一个直觉动作移动相当于你速度的距离。在7级和15级时，你每天可以使用本能力的次数再增加1次。</value>
-  </data>
-  <data name="MysteryBattleSurprisingChargeName_info" xml:space="preserve">
-    <value>惊人冲锋</value>
-  </data>
-  <data name="MysteryBattleWarSightDescription_info" xml:space="preserve">
-    <value>当你进行先攻掷骰时，你可以掷骰两次并采用其中一个结果。7级后你总是可以在突袭轮行动，不过若你没有发现伏击，你将最后行动，不管你的先攻值是多少（在之后的回合恢复正常）。11级后你可以进行三次先攻掷骰并采用其中一个结果。</value>
-  </data>
-  <data name="MysteryBattleWarSightName_info" xml:space="preserve">
-    <value>战阵先决</value>
-  </data>
-  <data name="MysteryBattleWeaponMasteryDescription_info" xml:space="preserve">
-    <value>选择一种你擅长的武器，你获得此武器的“武器专攻”专长。8级时你获得此武器的“精通重击”专长。12级时你获得此武器的“高等武器专攻”专长。你无需满足这些专长的先决条件。",</value>
-  </data>
-  <data name="MysteryBattleWeaponMasteryName_info" xml:space="preserve">
-    <value>武器大师</value>
-  </data>
-  <data name="MysteryBattleDescription_info" xml:space="preserve">
-    <value>
-职业技能： {0}，{1}
-选择了战斗秘示域的先知可以选择以下启示：</value>
-  </data>
-  <data name="MysteryBattleName_info" xml:space="preserve">
-    <value>战斗秘示域</value>
-  </data>
-  <data name="RollWithItFeatureDescription_info" xml:space="preserve">
-    <value>你很擅长挨打，尽管你在大多数时候都是在声嘶力竭的大叫中飞出战场。
-效益：在遭受近战武器的打击时，你有时可以将一部分伤害转化为一个移动修正。这会使你减轻13点伤害。</value>
-  </data>
-  <data name="RollWithItFeatureName_info" xml:space="preserve">
-    <value>逆来顺受</value>
-  </data>
-  <data name="SpellBlendingFeatureOneSpellSelection_info" xml:space="preserve">
-    <value>{0}（单个法术）</value>
-  </data>
-  <data name="SpellBlendingFeatureTwoSpellProgression_info" xml:space="preserve">
-    <value>{0}（两个法术）</value>
-  </data>
-  <data name="MetamagicFeatDazingSpellDescription_info" xml:space="preserve">
-    <value>你可以在一个伤害性法术上附上晕眩效果。当生物被“晕眩法术”调整的法术伤害时将会陷入晕眩，持续轮数相当于该法术的原等级。如果法术需要进行豁免检定，那么目标若通过豁免将不会受到晕眩的影响。如果法术本身无需豁免检定，那么目标需要通过一次意志豁免来避免晕眩的影响。如果法术本身也造成晕眩，那么该超魔专长造成的晕眩持续时间将会累加到法术本身造成的晕眩时间上。
-等级提升：+3（晕眩法术耗用的法术位比实际法术等级高3级）</value>
-  </data>
-  <data name="MetamagicFeatDazingSpellName_info" xml:space="preserve">
-    <value>晕眩法术</value>
-  </data>
-  <data name="MetamagicFeatIntensifiedSpellDescription_info" xml:space="preserve">
-    <value>“法术加强”将会增加5个等级的最大伤害骰（例如从最大5d6，1d6/每施法者等级增加到最大10d6）。要想从这个专长受益，你必须有足够的施法者等级来达到这个最大值（如在前例中，你的施法者等级必须大于5才能使法术加强生效）。除了伤害之外，所有其他的法术要素都不会受到该专长影响，并且伤害不受施法者等级影响的法术也不会受到该专长影响。
-等级提升：+1（法术加强耗用的法术位比实际法术等级高1级）</value>
-  </data>
-  <data name="MetamagicFeatIntensifiedSpellName_info" xml:space="preserve">
-    <value>法术加强</value>
-  </data>
-  <data name="MetamagicFeatRimeSpellDescription_info" xml:space="preserve">
-    <value>霜冻如影随形般伴随着你的寒冷法术而来，将会在短时间内迟滞目标的行动。“冰霜法术”将会使遭受寒冷伤害的生物陷入纠缠状态，持续轮数相当于该法术的原等级。
-该专长仅作用于带有寒冷描述符的法术。
-等级提升：+1（冰霜法术耗用的法术位比实际法术等级高1级）</value>
-  </data>
-  <data name="MetamagicFeatRimeSpellName_info" xml:space="preserve">
-    <value>冰霜法术</value>
-  </data>
-  <data name="MetamagicFeatTopplingSpellDescription_info" xml:space="preserve">
-    <value>你的力场法术造成的冲击足以将对手击倒在地。如果目标受到法术伤害，豁免失败，或者被你的力场法术所移动，你可以应用你的施法者等级加上施法能力调整值（如牧师的感知，法师的智力等）发起一次对于目标的绊摔检定。这并不会引发对方的借机攻击，即便检定失败，对方也无法反过来绊摔你或对你施予力场效果。
-该专长仅作用于带有力场描述符的法术。
-等级提升：+1（法术击倒耗用的法术位比实际法术等级高1级）
-</value>
-  </data>
-  <data name="MetamagicFeatTopplingSpellName_info" xml:space="preserve">
-    <value>法术击倒</value>
-  </data>
-  <data name="MetamagicElementalSpellSelectionDescription_info" xml:space="preserve">
-    <value>选择一项能量类型：酸蚀、寒冷、电击、火焰或力场。你会用该能量类型取代法术原来的能量类型。
-等级提升：+1</value>
-  </data>
-  <data name="MetamagicElementalSpellSelectionName_info" xml:space="preserve">
-    <value>超魔（元素法术）</value>
-  </data>
-  <data name="MetamagicFeatElementalSpellDescription_info" xml:space="preserve">
-    <value>你能够改变法术的能量类型。你可以将法术的能量类型修改为{0}伤害。
-等级提升：+1（元素法术耗用的法术位比实际法术等级高1级）</value>
-  </data>
-  <data name="MetamagicFeatElementalSpellName_info" xml:space="preserve">
-    <value>元素法术—{0}</value>
-  </data>
-  <data name="MetamagicFeatGeneralName_info" xml:space="preserve">
-    <value>超魔（{0}）</value>
-  </data>
-  <data name="MetamagicFeatPersistentSpellDescription_info" xml:space="preserve">
-    <value>当一个生物被持久法术瞄准或在其效果范围内，并且已成功豁免该法术，它必须再次对法术效果投豁免。如果第二次豁免失败，则会和第一次豁免失败时一样对法术效果照单全收。
-等级提升：+2（法术持久耗用的法术位比实际法术等级高2级）</value>
-  </data>
-  <data name="MetamagicFeatPersistentSpellName_info" xml:space="preserve">
-    <value>法术持久</value>
-  </data>
-  <data name="MetamagicFeatSelectiveSpellDescription_info" xml:space="preserve">
-    <value>当你使用法术择发施放一个即时生效的范围法术时，范围内的友善单位不会受到该法术的影响。
-等级提升：+1（法术择发耗用的法术位比实际法术等级高1级）</value>
-  </data>
-  <data name="MetamagicFeatSelectiveSpellName_info" xml:space="preserve">
-    <value>法术择发</value>
-  </data>
-  <data name="MetamagicRodName_info" xml:space="preserve">
-    <value>超魔权杖</value>
-  </data>
-  <data name="MetamagicRodsName_info" xml:space="preserve">
-    <value>超魔权杖</value>
-  </data>
-  <data name="NewMetamagicNamesDazing_info" xml:space="preserve">
-    <value>晕眩</value>
-  </data>
-  <data name="NewMetamagicNamesElemental_info" xml:space="preserve">
-    <value>元素</value>
-  </data>
-  <data name="NewMetamagicNamesElementalAcid_info" xml:space="preserve">
-    <value>酸蚀元素</value>
-  </data>
-  <data name="NewMetamagicNamesElementalCold_info" xml:space="preserve">
-    <value>寒冷元素</value>
-  </data>
-  <data name="NewMetamagicNamesElementalElectricity_info" xml:space="preserve">
-    <value>电击元素</value>
-  </data>
-  <data name="NewMetamagicNamesElementalFire_info" xml:space="preserve">
-    <value>火焰元素</value>
-  </data>
-  <data name="NewMetamagicNamesIntensified_info" xml:space="preserve">
-    <value>加强</value>
-  </data>
-  <data name="NewMetamagicNamesPersistent_info" xml:space="preserve">
-    <value>持久</value>
-  </data>
-  <data name="NewMetamagicNamesRime_info" xml:space="preserve">
-    <value>冰霜</value>
-  </data>
-  <data name="NewMetamagicNamesSelectvie_info" xml:space="preserve">
-    <value>择发</value>
-  </data>
-  <data name="NewMetamagicNamesToppling_info" xml:space="preserve">
-    <value>击倒</value>
-  </data>
-  <data name="MetamagicRodDisplayPrefixString_Greater" xml:space="preserve">
-    <value>高级</value>
-  </data>
-  <data name="MetamagicRodDisplayPrefixString_Lesser" xml:space="preserve">
-    <value>次级</value>
-  </data>
-  <data name="MetamagicRodDisplayPrefixString_Normal" xml:space="preserve">
-    <value>普通</value>
-  </data>
-  <data name="MetamagicRodSpellMaxLevel_3rd" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="MetamagicRodSpellMaxLevel_6th" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="MetamagicRodSpellMaxLevel_9th" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="NewMetamagicNamesElementalForce_info" xml:space="preserve">
-    <value>力场元素</value>
-  </data>
-  <data name="MetamagicRodDescription_info" xml:space="preserve">
-    <value>这根权杖赋予持用者每天增效施放三次法术的能力，如同运用了专长“{0}”。
-{1}权杖可被用于不超过 {2} 级的法术。
-{3}：{4}</value>
-  </data>
-  <data name="ArcaneSavantDescription_info" xml:space="preserve">
-    <value>奥术学者是魔法理论和实践的专家，一生致力于揭开这些奇异造物的神秘面纱。
-奥术学者的研究使他们拥有专业鉴定刻文和法印的学识，关于异界法术的知识，以及引出魔法装置全部潜能的能力。
-这些技能也使得奥术学者对于冒险队伍价值不菲，他们不仅精通解除利用古老魔法设置的古代陷阱，同样还精于鉴识和利用在旅途中找到的魔法物品。</value>
-  </data>
-  <data name="ArcaneSavantGlyphFindingDescription_info" xml:space="preserve">
-    <value>2级时，奥术学者可以利用“{0}”来寻找魔法陷阱，一如游荡者利用“{1}”技能来找寻陷阱。</value>
-  </data>
-  <data name="ArcaneSavantGlyphFindingName_info" xml:space="preserve">
-    <value>寻找刻文</value>
-  </data>
-  <data name="ArcaneSavantName_info" xml:space="preserve">
-    <value>奥术学者</value>
-  </data>
-  <data name="ArcaneSavantAdeptActivationDescription_info" xml:space="preserve">
-    <value>奥术学者总能在使用魔法装置检定时投出10点，除非他在目盲状态下启用魔法物品。</value>
-  </data>
-  <data name="ArcaneSavantAdeptActivationName_info" xml:space="preserve">
-    <value>启动专擅</value>
-  </data>
-  <data name="ArcaneSavantMasterScholarDescription_info" xml:space="preserve">
-    <value>奥术学者在“知识（奥术）”的技能等级上，以及进行使用魔法装置检定时将获得1/2其职业等级（最小为1）的加值，并且总能在知识（奥术）检定时投出10点，即便其处于扰乱或危险状态。</value>
-  </data>
-  <data name="ArcaneSavantMasterScholarName_info" xml:space="preserve">
-    <value>学术大师</value>
-  </data>
-  <data name="TimeStopFreezeBuffDescription_info" xml:space="preserve">
-    <value>时间停止正在对其生效，其体感时间已被冻结。</value>
-  </data>
-  <data name="TimeStopFreezeBuffName_info" xml:space="preserve">
-    <value>时间被冻结</value>
-  </data>
-  <data name="OracleCurseSelectionDescription_info" xml:space="preserve">
-    <value>每个先知都背负着诅咒，这些诅咒既对他们造成不利也会带来益处。先知必须在1级时选择自己的诅咒，一旦选择即不能更改。除非有神祗力量的介入，否则先知无法以任何方式摆脱自己的诅咒。先知诅咒的等级基于她的先知等级加上每两个非先知职业等级或生命骰+1。每一个先知都必须选择下列诅咒之一。</value>
-  </data>
-  <data name="OracleCurseSelectionName_info" xml:space="preserve">
-    <value>先知诅咒</value>
-  </data>
-  <data name="DelayedBlastFireballDelayRoundsDescription_info" xml:space="preserve">
-    <value>至多5轮；参见说明</value>
-  </data>
-  <data name="DelaySpellName_info" xml:space="preserve">
-    <value>{0} （{1}轮）</value>
-  </data>
-  <data name="IncendiaryCloudAbilityDescription_info" xml:space="preserve">
-    <value>焚云术造出一股充满白热灰烬的沸腾烟云。该云雾就如云雾术一样阻碍视线。此外，每轮在你行动之际炙热的灰烬将对身处其中的事物造成6d6点火焰伤害。目标每轮做反射检定，成功的话只受一半伤害。
-如同死云术一样，该云雾以每轮10英尺的速度从你身边移开。每一轮都要以云雾新的源发点开始计算新的扩散范围，源发点的距离为每轮远离施法时的起点10英尺。通过专注，你可以指引云雾（实际上是它的源发点）以至多每轮60英尺的速度移动。云雾任何超出最大法术距离的部分都会无害的消散，从而减少剩余部分的扩散区域。
-如同云雾术一样，风能吹散云雾，并且该法术不能在水下施展。</value>
-  </data>
-  <data name="IncendiaryCloudAbilityName_info" xml:space="preserve">
-    <value>焚云术</value>
-  </data>
-  <data name="MeteorSwarmAbilityDescription_info" xml:space="preserve">
-    <value>流星爆是一个强力且壮观的法术，它在很多方面都跟火球术很像。当你施展此法术时，四颗直径2英尺的火球从你伸展的手中飞出，这些流星会拖着一条火光灿烂的尾巴，以直线路径飞向你选定的地点。
-如果你将流星瞄准一个特定的生物，你必须分别为每颗流星做一个远程接触攻击检定来使流星命中目标。任何生物只要被流星击中，每颗击中他的流星会对他造成2d6点钝击伤害（无豁免），并且接下来他不能对成功击中他的流星所产生的火焰伤害（见下）做任何豁免。如果流星没有成功命中所指定的目标，则会在目标生物所在空间边最近的方格交叉点爆炸。你可以指定多颗流星瞄准同一个目标。
-一旦流星到达目的地，它就会爆炸并波及所有半径40英尺扩散范围内的生物。每颗流星会对每个在爆炸区域内的生物造成6d6点伤害。如果生物在多颗流星的爆炸范围内，他必须分别对每颗流星做反射检定。来源于所有流星的火焰伤害将会在经过豁免检定后加总，而火焰抗力则只需要计算一次。</value>
-  </data>
-  <data name="MeteorSwarmAbilityName_info" xml:space="preserve">
-    <value>流星爆</value>
-  </data>
-  <data name="WallOfFireAbilityDescription_info" xml:space="preserve">
-    <value>一道不可移动、散发出紫色光焰的炽热火墙凭空出现。你可以选择火墙的一侧对外散发出热量，对于该侧所有位于火墙10英尺内的生物都造成2d4点火焰伤害，并且对10-20英尺处的所有生物造成1d4点火焰伤害。火墙在出现时就立刻造成该伤害，并且在之后每一轮你行动之际对范围内的所有生物再次造成该伤害。此外，任何穿过火墙的人都会受到2d6+1/每施法者等级的火焰伤害（最大+20）。火墙对不死生物造成的伤害翻倍。
-如果你在生物所在的位置直接塑造火墙，那么这些生物受到的伤害如同他们穿越了火墙。如果5英尺长度的火墙在1轮之中受到了20点或以上的寒冷伤害，那么该段火墙就会熄灭。（此时寒冷伤害不像对于普通物品那样会减半。）</value>
-  </data>
-  <data name="WallOfFireAbilityName_info" xml:space="preserve">
-    <value>火墙术</value>
-  </data>
-  <data name="MeteorSwarmSavingThrowDescription_info" xml:space="preserve">
-    <value>无豁免或反射减半，参见说明</value>
-  </data>
-  <data name="DismissSpellNoAreaEffectsToDismiss_info" xml:space="preserve">
-    <value>无法驱散范围法术效果（只有特定的法术才能在战斗中被驱散）。</value>
-  </data>
-  <data name="FixWingsImmunities_info" xml:space="preserve">
-    <value>飞翼/飞行类法术免疫地面类法术/陷阱</value>
-  </data>
-  <data name="FlySpellAbilityDescription_info" xml:space="preserve">
-    <value>目标长出一双飞翼，能够以60英尺的速度飞行（如身穿中型或重型盔甲，或者负重为中度或重度负荷时，速度为40英尺）。</value>
-  </data>
-  <data name="FlySpellAbilityName_info" xml:space="preserve">
-    <value>飞行术（{0}）</value>
-  </data>
-  <data name="FlySpellWingsDescription_info" xml:space="preserve">
-    <value>肋生双翼时对抗近战攻击的防御等级获得+3的闪避加值，对如困难地形等造成的地面效果免疫，并获得一个相当于1/2施法者等级的灵巧技能检定加值。该效果不会与其他法术给予的飞翼或飞行能力的效果叠加。</value>
-  </data>
-  <data name="FlyWingDraconicBlackName_info" xml:space="preserve">
-    <value>黑龙</value>
-  </data>
-  <data name="FlyWingDraconicBlueName_info" xml:space="preserve">
-    <value>蓝龙</value>
-  </data>
-  <data name="FlyWingDraconicBrassName_info" xml:space="preserve">
-    <value>黄铜龙</value>
-  </data>
-  <data name="FlyWingDraconicBronzeName_info" xml:space="preserve">
-    <value>青铜龙</value>
-  </data>
-  <data name="FlyWingDraconicCopperName_info" xml:space="preserve">
-    <value>赤铜龙</value>
-  </data>
-  <data name="FlyWingDraconicGoldName_info" xml:space="preserve">
-    <value>金龙</value>
-  </data>
-  <data name="FlyWingDraconicGreenName_info" xml:space="preserve">
-    <value>绿龙</value>
-  </data>
-  <data name="FlyWingDraconicRedName_info" xml:space="preserve">
-    <value>红龙</value>
-  </data>
-  <data name="FlyWingDraconicSilverName_info" xml:space="preserve">
-    <value>银龙</value>
-  </data>
-  <data name="FlyWingDraconicWhiteName_info" xml:space="preserve">
-    <value>白龙</value>
-  </data>
-  <data name="FlyWingAngelName_info" xml:space="preserve">
-    <value>天使</value>
-  </data>
-  <data name="FlyWingDemonName_info" xml:space="preserve">
-    <value>魔鬼</value>
-  </data>
-  <data name="FlyWingDevilName_info" xml:space="preserve">
-    <value>恶魔</value>
-  </data>
-  <data name="OverlandFlightSpellAbilityDescription_info" xml:space="preserve">
-    <value>该法术给予你一双飞翼，使你能够以40英尺的速度飞行（如身穿中型或重型盔甲，或者负重为中度或重度负荷时，速度为30英尺）。该法术为长途飞行而设计，并能保证你在飞行期间不会疲劳。</value>
-  </data>
-  <data name="OverlandFlightSpellAbilityName_info" xml:space="preserve">
-    <value>跨陆飞行（{0}）</value>
-  </data>
-  <data name="AirWalkAbilityDescription_info" xml:space="preserve">
-    <value>目标能在空中步行，一如其脚踏坚硬的地面。这让其获得对抗近战攻击的防御等级+3的闪避加值，对如困难地形等造成的地面效果免疫，并获得一个相当于1/2施法者等级的灵巧技能检定加值。该效果不会与其他法术给予的飞翼或飞行能力的效果叠加。</value>
-  </data>
-  <data name="AirWalkAbilityName_info" xml:space="preserve">
-    <value>凌空而行</value>
-  </data>
-  <data name="AirWalkCommunalAbilityDescription_info" xml:space="preserve">
-    <value>施法者及其半径30英尺范围内的队友获得“凌空而行”的效果：
-{0}</value>
-  </data>
-  <data name="AirWalkCommunalAbilityName_info" xml:space="preserve">
-    <value>共用凌空而行</value>
-  </data>
-  <data name="OracleCurseCloudedVisionName_info" xml:space="preserve">
-    <value>障目</value>
-  </data>
-  <data name="OracleCurseCloudedVisionDescription_info" xml:space="preserve">
-    <value>你的双眼蒙上一层雾翳，这使你难以看清东西。
-你无法看到20英尺之外，因此你无法设定20英尺外的目标，距离外的目标视为隐蔽。</value>
-  </data>
-  <data name="OracleCurseCloudedVisionLevel5Description_info" xml:space="preserve">
-    <value>达到5级时，你的视距增加到30英尺。</value>
-  </data>
-  <data name="OracleCurseCloudedVisionLevel10Description_info" xml:space="preserve">
-    <value>达到10级时，你获得30英尺内盲感。</value>
-  </data>
-  <data name="OracleCurseCloudedVisionLevel15Description_info" xml:space="preserve">
-    <value>达到15级时，你获得15英尺盲视。</value>
-  </data>
-  <data name="OracleCurseBlindsenseName_info" xml:space="preserve">
-    <value>盲感</value>
-  </data>
-  <data name="OracleCurseBlindsightName_info" xml:space="preserve">
-    <value>盲视</value>
-  </data>
-  <data name="CrossBloodlineName_info" xml:space="preserve">
-    <value>{0}（混血）</value>
-  </data>
-  <data name="CrossbloodedDisplayDescribeChoices_info" xml:space="preserve">
-    <value>
-• {0}：{1}</value>
-  </data>
-  <data name="FlySpellName_info" xml:space="preserve">
-    <value>飞行术</value>
-  </data>
-  <data name="OverlandFlightSpellName_info" xml:space="preserve">
-    <value>跨陆飞行</value>
-  </data>
-  <data name="PrerequisiteCasterSpellLevelCaption_info" xml:space="preserve">
-    <value>可施放 {1} 级{0}法术</value>
-  </data>
-  <data name="EldritchHeritageFeatDescription_info" xml:space="preserve">
-    <value>
-• {0}—{1}</value>
-  </data>
-  <data name="EldritchHeritagePrerequisitesDescription_info" xml:space="preserve">
-    <value>
-  血承—先决{0}:</value>
-  </data>
-  <data name="AdditionalTraitsFeatDescription_info" xml:space="preserve">
-    <value>你将获得比通常更多的背景特性。
-效益：你可以选择两个额外的角色背景特性。你必须从两个不同的类型列表里选择这些额外的背景特性，并且你也无法从你之前已选取过背景特性的类型特性列表里选取。你还必须遵从你所选择的角色背景的其他所有限制——例如你无法为一个精灵角色选择一个矮人的角色特性。</value>
-  </data>
-  <data name="AdditionalTraitsFeatName_info" xml:space="preserve">
-    <value>额外背景特性</value>
-  </data>
-  <data name="DrawbacksDescription_info" xml:space="preserve">
-    <value>缺陷特性即负面的背景特性。此类特性将给予你负面而非正面效果，特别是在某些特殊情形下。
-如果你选择了一个缺陷特性，你将会获得第三个背景特性可供选择。
-缺陷特性并非是一个角色创建必选项。</value>
-  </data>
-  <data name="Drawbacks_info" xml:space="preserve">
-    <value>缺陷特性</value>
-  </data>
-  <data name="SkipSelectionDescription_info" xml:space="preserve">
-    <value>跳过这项选择。</value>
-  </data>
-  <data name="SkipSelection_info" xml:space="preserve">
-    <value>(跳过)</value>
-  </data>
-  <data name="TraitsSelectionDescription_info" xml:space="preserve">
-    <value>角色的背景特性是指那些和你的种族、职业无关的能力。</value>
-  </data>
-  <data name="CustomTraitDescription_info" xml:space="preserve">
-    <value>这些背景特性有些滥强，因此只能用来娱乐。如果你想好好玩游戏就别选这些。</value>
-  </data>
-  <data name="CustomTraitName_info" xml:space="preserve">
-    <value>自定义特性｛作弊｝</value>
-  </data>
-  <data name="GoBackDescription_info" xml:space="preserve">
-    <value>选此项返回你之前的选定的特性。</value>
-  </data>
-  <data name="GoBackName_info" xml:space="preserve">
-    <value>(返回)</value>
-  </data>
-  <data name="TraitsAddStatBonusDescription_info" xml:space="preserve">
-    <value>{0}
-效益：你在{1}检定上获得+1的背景特性奖励加值，并且{2}成为你的职业技能。</value>
-  </data>
-  <data name="TraitsFillSpellSelection_info" xml:space="preserve">
-    <value>{0}（{1} 级法术）</value>
-  </data>
-  <data name="OracleCurseBlackenedDescription_info" xml:space="preserve">
-    <value>你的手掌与前臂干瘪发黑，就如同你曾经把手臂插入熊熊火焰中一样。你那薄如纸张的皮肤对碰触极为敏感。你在武器攻击检定中受到-4减值，不过你能够将燃烧之手加入到你的已知法术列表中。</value>
-  </data>
-  <data name="OracleCurseBlackenedLevel10Description_info" xml:space="preserve">
-    <value>10级时，将火墙术加入到你的已知法术列表中。并且你受到的武器攻击检定减值降低到-2。</value>
-  </data>
-  <data name="OracleCurseBlackenedLevel15Description_info" xml:space="preserve">
-    <value>15级起，将延迟爆裂火球加入到你的已知法术列表中。</value>
-  </data>
-  <data name="OracleCurseBlackenedLevel5Description_info" xml:space="preserve">
-    <value>5级时，将灼热射线及炽焰法球加入到你的已知法术列表中。</value>
-  </data>
-  <data name="OracleCurseBlackenedName_info" xml:space="preserve">
-    <value>焦黑之臂</value>
-  </data>
-  <data name="OracleCurseCovetousDescription_info" xml:space="preserve">
-    <value>你发现自己沉迷于闪耀的奢华生活。
-你必须佩戴至少100gp+200gp*（人物等级-1）的非魔法物品及珠宝。如果你没有足够的资金来购买这些额外装备，你会感到强烈的渴望（但是并非强制性）的去卖掉现有装备或者偷窃他人财物。如果你无法满足这一要求，你会陷入恶心状态。使用魔法装置成为你的职业技能。</value>
-  </data>
-  <data name="OracleCurseCovetousLevel10Description_info" xml:space="preserve">
-    <value>10级时，你能使用{0}技能辨识物品。</value>
-  </data>
-  <data name="OracleCurseCovetousLevel15Description_info" xml:space="preserve">
-    <value>15级时，你在{0}检定上获得+4洞察加值。</value>
-  </data>
-  <data name="OracleCurseCovetousLevel5Description_info" xml:space="preserve">
-    <value>5级时，你在{0}检定上获得+4洞察加值。</value>
-  </data>
-  <data name="OracleCurseCovetousName_info" xml:space="preserve">
-    <value>贪欲</value>
-  </data>
-  <data name="OracleCurseDeafDescription_info" xml:space="preserve">
-    <value>你失去了听力，并将承受所有因为耳聋而获得的正常减值：先攻-4，察觉技能-4。不过你施放的所有法术都视为搭配有法术默发专长，并且这些法术的施法时间和法术等级不会增加。</value>
-  </data>
-  <data name="OracleCurseDeafLevel10Description_info" xml:space="preserve">
-    <value>10级时，你在察觉技能检定上获得+3加值。</value>
-  </data>
-  <data name="OracleCurseDeafLevel15Description_info" xml:space="preserve">
-    <value>15级时，你获得30英尺内的震颤感应。</value>
-  </data>
-  <data name="OracleCurseDeafLevel15Name_info" xml:space="preserve">
-    <value>震颤感应</value>
-  </data>
-  <data name="OracleCurseDeafLevel5Description_info" xml:space="preserve">
-    <value>5级时，你在察觉技能检定上不再受到减值，并且你因为耳聋而受到的先攻检定减值降低到-2。</value>
-  </data>
-  <data name="OracleCurseDeafName_info" xml:space="preserve">
-    <value>失聪</value>
-  </data>
-  <data name="OracleCurseHauntedDescription_info" xml:space="preserve">
-    <value>恶意的灵魂如影随形，在你身边制造各种不快和怪事（比如诡异的气流，小物件无主自动，轻微的噪声等）。
-取出任何携带的物品都需要你使用一个标准动作，除非它需要的时间长于一个标准动作，且任何你掉落的物品都会自动朝随机方向远离你10英尺距离。
-将{0}加入你的已知法术列表中。</value>
-  </data>
-  <data name="OracleCurseHauntedLevel5Description_info" xml:space="preserve">
-    <value>{0}级时，将“{1}”加入你的已知法术列表中。</value>
-  </data>
-  <data name="OracleCurseHauntedName_info" xml:space="preserve">
-    <value>鬼上身</value>
-  </data>
-  <data name="OracleCurseLameDescription_info" xml:space="preserve">
-    <value>你的一条腿受到了永久性的伤损，如果你拥有30英尺及以上基础速度，那么你的移动速度降低10英尺；如果你的基础速度低于30英尺，那么你的移动速度降低5英尺。你将不会再因为重负而降低移动速度。</value>
-  </data>
-  <data name="OracleCurseLameEffortlessArmorName_info" xml:space="preserve">
-    <value>重甲轻装</value>
-  </data>
-  <data name="OracleCurseLameExhaustionImmunity" xml:space="preserve">
-    <value>免疫力竭</value>
-  </data>
-  <data name="OracleCurseLameFatigueImmunityName_info" xml:space="preserve">
-    <value>免疫疲劳</value>
-  </data>
-  <data name="OracleCurseLameLevel10Description_info" xml:space="preserve">
-    <value>10级时，你穿戴的盔甲不再拖慢你的速度。</value>
-  </data>
-  <data name="OracleCurseLameLevel15Description_info" xml:space="preserve">
-    <value>15级时，你免疫力竭状态。</value>
-  </data>
-  <data name="OracleCurseLameLevel5Description_info" xml:space="preserve">
-    <value>5级时，你免疫疲劳状态（但是不包括力竭）。</value>
-  </data>
-  <data name="OracleCurseLameName_info" xml:space="preserve">
-    <value>跛足</value>
-  </data>
-  <data name="OracleCurseTonguesDescription_info" xml:space="preserve">
-    <value>在承受压力或不安的状态下你会变得不知所云。
-你可以从以下语言中选择一项：深渊语，邪灵语，水族语，风族语，天界语，火族语，炼狱语或土族语。
-当你进入战斗时你将只能说和理解此种语言。这并不会干扰你的施法，但确实会影响基于语言成分的法术。你获得你所选的语言类型，并且获得“{0}”技能的+2加值，这代表你获得了一门外域语言的知识。
-你的队友必须至少拥有1级的“{1}”技能，才能在战斗中有效和你沟通，否则他们将会变得不受控制。</value>
-  </data>
-  <data name="OracleCurseTonguesLevel10Description_info" xml:space="preserve">
-    <value>10级后，你可以理解任何可以说的语言，如同“巧言术”的效果，即使是在战斗中也是一样。
-因为你丰富的语言知识，你再获得额外的“{0}”+4加值。</value>
-  </data>
-  <data name="OracleCurseTonguesLevel10Name_info" xml:space="preserve">
-    <value>理解所有语言</value>
-  </data>
-  <data name="OracleCurseTonguesLevel15Description_info" xml:space="preserve">
-    <value>15级后，你可以理解和表达任何语言，不过在战斗时诅咒依然会照常生效。
-因为你异常丰富的语言知识，你再获得额外的“{0}”+4加值。</value>
-  </data>
-  <data name="OracleCurseTonguesLevel15Name_info" xml:space="preserve">
-    <value>通晓所有语言</value>
-  </data>
-  <data name="OracleCurseTonguesLevel5Description_info" xml:space="preserve">
-    <value>5级时，你学会了另一门外域语言，因此获得额外的“{0}”技能的+2加值。</value>
-  </data>
-  <data name="OracleCurseTonguesLevel5Name_info" xml:space="preserve">
-    <value>奖励语言</value>
-  </data>
-  <data name="OracleCurseTonguesName_info" xml:space="preserve">
-    <value>呓语</value>
-  </data>
-  <data name="OracleCurseWastingDescription_info" xml:space="preserve">
-    <value>你的躯体正在缓慢地逐渐腐烂。
-除了威吓技能之外，你在所有基于魅力的技能检定上承受-4减值。同时你在对抗疾病效果的强韧检定上获得+4表现加值。</value>
-  </data>
-  <data name="OracleCurseWastingLevel10Description_info" xml:space="preserve">
-    <value>10级时，你免疫疾病效果。</value>
-  </data>
-  <data name="OracleCurseWastingLevel10Name_info" xml:space="preserve">
-    <value>免疫疾病</value>
-  </data>
-  <data name="OracleCurseWastingLevel15Description_info" xml:space="preserve">
-    <value>15级时，你免疫反胃效果。</value>
-  </data>
-  <data name="OracleCurseWastingLevel15Name_info" xml:space="preserve">
-    <value>免疫反胃</value>
-  </data>
-  <data name="OracleCurseWastingLevel5Description_info" xml:space="preserve">
-    <value>5级时，你免疫恶心效果（但不包括反胃）。</value>
-  </data>
-  <data name="OracleCurseWastingLevel5Name_info" xml:space="preserve">
-    <value>免疫恶心</value>
-  </data>
-  <data name="OracleCurseWastingName_info" xml:space="preserve">
-    <value>朽坏</value>
   </data>
 </root>

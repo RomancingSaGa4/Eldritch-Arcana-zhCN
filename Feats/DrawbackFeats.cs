@@ -6,6 +6,7 @@ using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Prerequisites;
 using Kingmaker.Blueprints.Classes.Selection;
 using Kingmaker.Blueprints.Classes.Spells;
+using Kingmaker.Blueprints.Root;
 using Kingmaker.Designers.Mechanics.Facts;
 using Kingmaker.EntitySystem.Stats;
 using Kingmaker.Enums;
@@ -151,9 +152,11 @@ namespace EldritchArcana
             var spellSchoolChoiceFeature = schoolTypes.Select(schoolType =>
             {
                 var result = Helpers.CreateFeature($"SpellVulnerability{schoolType.Key}",
-                    string.Format(RES.SpellVulnerabilityFeatureName_info, schoolType.Key),
-                    string.Format(RES.SpellVulnerabilityFeatureDescription_info, SpellVunrabilityBonus, schoolType.Key,
-                        schoolType.Value), Helpers.MergeIds(DrawFeatGuids[1], Helpers.spellSchoolGuid(schoolType.Key)),
+                    string.Format(RES.SpellVulnerabilityFeatureName_info, LocalizedTexts.Instance.SpellSchoolNames.GetText(schoolType.Key)),
+                    string.Format(RES.SpellVulnerabilityFeatureDescription_info, SpellVunrabilityBonus,                        
+                        LocalizedTexts.Instance.SpellSchoolNames.GetText(schoolType.Key),                       
+                        LocalizedTexts.Instance.DamageEnergy.GetText(schoolType.Value)), 
+                    Helpers.MergeIds(DrawFeatGuids[1], Helpers.spellSchoolGuid(schoolType.Key)),
                     Helpers.GetIcon(Helpers.spellSchoolGuid(schoolType.Key)), FeatureGroup.None,
                     Helpers.Create<SavingThrowBonusAgainstSchool>(a =>
                     {

@@ -998,7 +998,7 @@ namespace EldritchArcana
             return unit.Progression.CharacterLevel == Level;
         }
 
-        public override string GetCaption() => $"{UIStrings.Instance.Tooltips.CharacterLevel} equals: {Level}";
+        public override string GetCaption() => String.Format(RES.PrerequisiteCharacterLevelEquals_info, UIStrings.Instance.Tooltips.CharacterLevel, Level);
     }
 
     // Used when we need to prevent metamagic from increasing cast time.

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -124,8 +124,45 @@ Special: You can gain this feat multiple times. Its effects do not stack. Each t
   <data name="AbundantRevelationsFeatureName_info" xml:space="preserve">
     <value>Abundant Revelations</value>
   </data>
+  <data name="AdditionalTraitsFeatDescription_info" xml:space="preserve">
+    <value>You have more traits than normal.
+Benefit: You gain two character traits of your choice. These traits must be chosen from different lists, and cannot be chosen from lists from which you have already selected a character trait. You must meet any additional qualifications for the character traits you choose — this feat cannot enable you to select a dwarf character trait if you are an elf, for example.</value>
+  </data>
+  <data name="AdditionalTraitsFeatName_info" xml:space="preserve">
+    <value>Additional Traits</value>
+  </data>
   <data name="AddSpellScrollsFeatureName_info" xml:space="preserve">
     <value>Scrolls for new spells</value>
+  </data>
+  <data name="AirWalkAbilityDescription_info" xml:space="preserve">
+    <value>The subject can tread on air as if walking on solid ground. This grants a +3 dodge bonus to AC against melee attacks, immunity to difficult terrain, and +10 to Mobility skill checks. This does not stack with other spells that grant wings or flight.</value>
+  </data>
+  <data name="AirWalkAbilityName_info" xml:space="preserve">
+    <value>Air Walk</value>
+  </data>
+  <data name="AirWalkCommunalAbilityDescription_info" xml:space="preserve">
+    <value>The caster and all allies in a 30-feet radius gain the benefits of Air Walk:
+{0}</value>
+  </data>
+  <data name="AirWalkCommunalAbilityName_info" xml:space="preserve">
+    <value>Air Walk, Communal</value>
+  </data>
+  <data name="AncientLorekeeperClassSkillsDescription_info" xml:space="preserve">
+    <value>The ancient lorekeeper is a repository for all the beliefs and vast knowledge of an elven people. They show a strong interest in and understanding of histories and creation legends at a young age, and as they mature their calling to serve as the memory of their long-lived people becomes clear to all who know them.
+An ancient lorekeeper adds Knowledge (arcana) to their list of class skills. This replaces the bonus skills the ancient lorekeeper gains from their mystery.</value>
+  </data>
+  <data name="AncientLorekeeperDescription_info" xml:space="preserve">
+    <value>AncientLorekeeperClassSkills</value>
+  </data>
+  <data name="AncientLorekeeperElvenArcanaDescription_info" xml:space="preserve">
+    <value>At 2nd level, an ancient lorekeeper’s mastery of elven legends and philosophy has allowed them to master one spell used by elven wizards. They select one spell from the sorcerer/ wizard spell list that is at least one level lower than the highest-level oracle spell they can cast. The ancient lorekeeper gains this as a bonus spell known. The spell is treated as one level higher than its true level for all purposes. The ancient lorekeeper may choose an additional spell at 4th, 6th, 8th, 10th, 12th, 14th, 16th, and 18th levels.
+This ability replaces the bonus spells they would normally gain at these levels from their chosen mystery.</value>
+  </data>
+  <data name="AncientLorekeeperElvenArcanaName_info" xml:space="preserve">
+    <value>Elven Arcana</value>
+  </data>
+  <data name="AncientLorekeeperName_info" xml:space="preserve">
+    <value>Ancient Lorekeeper</value>
   </data>
   <data name="AnyClassSkillName_info" xml:space="preserve">
     <value>Any Lore/Knowledge Skill</value>
@@ -145,6 +182,32 @@ Special: You can gain this feat multiple times. Its effects do not stack. Each t
   <data name="ArcaneApotheosisFeatureDescription_info" xml:space="preserve">
     <value>
 You can also add any metamagic feats that you know to your spells without increasing their casting time, although you must still expend higher-level spell slots.</value>
+  </data>
+  <data name="ArcaneSavantAdeptActivationDescription_info" xml:space="preserve">
+    <value>An arcane savant can always take 10 on Use Magic Device checks, except when activating an item blindly.</value>
+  </data>
+  <data name="ArcaneSavantAdeptActivationName_info" xml:space="preserve">
+    <value>Adept Activation</value>
+  </data>
+  <data name="ArcaneSavantDescription_info" xml:space="preserve">
+    <value>Arcane savants are specialists in the theory and practice of magic, illuminating mysteries of the eldritch fabric that permeates existence. 
+The path of the arcane savant brings expertise in the lore of glyphs and sigils, knowledge of exotic spells, and the power to unlock the full potential of magical devices.
+This skill also makes savants quite valuable to adventuring parties, both in their mastery over ancient traps that utilize old magic and in their skill at identifying and utilizing magic items found in the field.</value>
+  </data>
+  <data name="ArcaneSavantGlyphFindingDescription_info" xml:space="preserve">
+    <value>At 2nd level, an arcane savant can use {0} to find magical traps in the same way a rogue can use {1} to search for traps.</value>
+  </data>
+  <data name="ArcaneSavantGlyphFindingName_info" xml:space="preserve">
+    <value>Glyph Finding</value>
+  </data>
+  <data name="ArcaneSavantMasterScholarDescription_info" xml:space="preserve">
+    <value>An arcane savant adds half their class level (minimum 1) as a bonus on Knowledge (arcana), and Use Magic Device checks, and can always take 10 on Knowledge (arcana) checks, even if distracted or endangered.</value>
+  </data>
+  <data name="ArcaneSavantMasterScholarName_info" xml:space="preserve">
+    <value>Master Scholar</value>
+  </data>
+  <data name="ArcaneSavantName_info" xml:space="preserve">
+    <value>Arcane Savant</value>
   </data>
   <data name="BloodHavocMutationFeatureDescription_info" xml:space="preserve">
     <value>A bloodrager need not be in a bloodrage to use her bloodline mutation powers. Alternatively, a bloodrager or sorcerer can select a bloodline mutation in place of a bloodline bonus feat, provided her class level is at least equal to the level of the bloodline ability the mutation normally replaces.
@@ -265,11 +328,24 @@ Choices for each bloodline:</value>
   <data name="CrossbloodedConflictingUrgesFeatureName_info" xml:space="preserve">
     <value>Crossblooded (conflicting urges)</value>
   </data>
+  <data name="CrossbloodedDisplayDescribeChoices_info" xml:space="preserve">
+    <value>
+• {0}: {1}</value>
+  </data>
   <data name="CrossbloodedSorcererLocalizedDescription_info" xml:space="preserve">
     <value>A crossblooded sorcerer selects two different bloodlines. The sorcerer may gain access to the skills, feats, and some of the powers of both bloodlines they are descended from, but at the cost of reduced mental clarity and choice.</value>
   </data>
   <data name="CrossbloodedSorcererLocalizedName_info" xml:space="preserve">
     <value>Crossblooded Sorcerer</value>
+  </data>
+  <data name="CrossBloodlineName_info" xml:space="preserve">
+    <value>{0} (Crossblood)</value>
+  </data>
+  <data name="CustomTraitDescription_info" xml:space="preserve">
+    <value>These traits are a little overpowered and are here just for fun, if you want to play fair don't pick em.</value>
+  </data>
+  <data name="CustomTraitName_info" xml:space="preserve">
+    <value>Custom Trait{cheat}</value>
   </data>
   <data name="DelayAfflictionFeatureDescription_info" xml:space="preserve">
     <value>Once per day as an immediate action, whenever you fail a saving throw against a disease or poison, you may ignore its effects for 1 hour per level. At 7th and 15th level, you can use this ability one additional time per day.</value>
@@ -282,6 +358,12 @@ Choices for each bloodline:</value>
   </data>
   <data name="DelayedBlastFireballAbilityName_info" xml:space="preserve">
     <value>Delayed Blast Fireball</value>
+  </data>
+  <data name="DelayedBlastFireballDelayRoundsDescription_info" xml:space="preserve">
+    <value>5 rounds or less; see text</value>
+  </data>
+  <data name="DelaySpellName_info" xml:space="preserve">
+    <value>{0} ({1} rounds)</value>
   </data>
   <data name="DervishDanceFeatureDescription_info" xml:space="preserve">
     <value>When wielding a scimitar with one hand, you can use your Dexterity modifier instead of your Strength modifier on melee attack and damage rolls. You treat the scimitar as a one-handed piercing weapon for all feats and class abilities that require such a weapon (such as a duelist's precise strike ability). The scimitar must be for a creature of your size. You cannot use this feat if you are carrying a weapon or shield in your off hand.</value>
@@ -313,6 +395,9 @@ If this ability is enabled, it means you have a currently active effect spell th
   <data name="DismissAreaEffectAbilityName_info" xml:space="preserve">
     <value>Dismiss Area Effect Spell</value>
   </data>
+  <data name="DismissSpellNoAreaEffectsToDismiss_info" xml:space="preserve">
+    <value>No area effects to dismiss (only certain spells can be dismissed in combat).</value>
+  </data>
   <data name="DismissSpells_info" xml:space="preserve">
     <value>Ability to dismiss area effects</value>
   </data>
@@ -335,6 +420,11 @@ Drawback: You lose 2 initiative.</value>
   <data name="DrawbackOneLeggedFeatureName_info" xml:space="preserve">
     <value>Peg leg</value>
   </data>
+  <data name="DrawbacksDescription_info" xml:space="preserve">
+    <value>Drawbacks are traits in reverse. Instead of granting you a boon, they grant you a negative effect, typically in particular circumstances. 
+If you choose to take a drawback, you can take a third trait that you have access to. 
+You are not required to take a drawback.(disable in eldrich arcana menu and restart game)</value>
+  </data>
   <data name="DrawbackSpellVulnerabilityFeatureDescription_info" xml:space="preserve">
     <value>If you pick a Drawback at level one you can choose an extra feat on top.
 Bane: choose a spellschool you have {0} on saves vs that spellschool.</value>
@@ -342,8 +432,12 @@ Bane: choose a spellschool you have {0} on saves vs that spellschool.</value>
   <data name="DrawbackSpellVulnerabilityFeatureName_info" xml:space="preserve">
     <value>Spell Vulnerability</value>
   </data>
-  <data name="EldritchHeritageBloodlineFeatureName_info" xml:space="preserve">
-    <value>Eldritch Heritage — {0}</value>
+  <data name="Drawbacks_info" xml:space="preserve">
+    <value>Drawbacks</value>
+  </data>
+  <data name="EldritchHeritageFeatDescription_info" xml:space="preserve">
+    <value>
+• {0}— {1}</value>
   </data>
   <data name="EldritchHeritageFeatureDescription_info" xml:space="preserve">
     <value>You are descended from a long line of sorcerers, and some portion of their power flows in your veins.
@@ -351,6 +445,10 @@ Select one sorcerer bloodline. You must have Skill focus in the class skill that
   </data>
   <data name="EldritchHeritageFeatureName_info" xml:space="preserve">
     <value>Eldritch Heritage</value>
+  </data>
+  <data name="EldritchHeritagePrerequisitesDescription_info" xml:space="preserve">
+    <value>
+  Bloodline — {0} prerequisites:</value>
   </data>
   <data name="EldritchKnightFix_info" xml:space="preserve">
     <value>Eldritch Knight requires martial class (doesn't affect existing EKs)</value>
@@ -420,18 +518,12 @@ Human (and Half-Elf, Half-Orc, Aasimar) — Add one spell known from the {0} spe
   <data name="FavoredClassProgressionDescription_info" xml:space="preserve">
     <value>Whenever you gain a {0} level, you can choose between +1 hit point, +1 skill rank, or the racial bonus associated with their favored class.</value>
   </data>
-  <data name="FavoredClassProgressionName_info" xml:space="preserve">
-    <value>Favored Class — {0}</value>
-  </data>
   <data name="FavoredPresitgeClassFeatureDescription_info" xml:space="preserve">
     <value>You have come to favor a certain prestige class, either because you are particularly devoted to the class’s cause, have trained more than most others have for that specific role, or have simply been destined to excel in the prestige class all along. Regardless of the reason, levels gained in your favored prestige class grant additional benefits in a way similar to those you gain for taking levels in your base favored class.
 You can select this feat before you gain levels in your chosen favored prestige class, but the benefits of the feat do not apply until you actually gain at least 1 level in that prestige class.</value>
   </data>
   <data name="FavoredPresitgeClassFeatureName_info" xml:space="preserve">
     <value>Favored Prestige Class</value>
-  </data>
-  <data name="FavoredPrestigeProgressionName_info" xml:space="preserve">
-    <value>Favored Prestige Class — {0}</value>
   </data>
   <data name="featureNameAll_error" xml:space="preserve">
     <value>All mod features</value>
@@ -465,17 +557,74 @@ Whenever you receive magical healing, you heal an additional 2 points per die ro
   <data name="FixSpellSpecializationFeatureName_info" xml:space="preserve">
     <value>Spell Specialization</value>
   </data>
+  <data name="FixWingsImmunities_info" xml:space="preserve">
+    <value>Wings/flight provides immunity to ground spells/trip</value>
+  </data>
+  <data name="FlySpellAbilityDescription_info" xml:space="preserve">
+    <value>The subject gains a pair of wings, and movement speed increases to 60 feet (or 40 feet if it wears medium or heavy armor, or if it carries a medium or heavy load).</value>
+  </data>
+  <data name="FlySpellAbilityName_info" xml:space="preserve">
+    <value>Fly — {0}</value>
+  </data>
+  <data name="FlySpellName_info" xml:space="preserve">
+    <value>Fly</value>
+  </data>
   <data name="FlySpells_info" xml:space="preserve">
     <value>Fly and Air Walk spells</value>
+  </data>
+  <data name="FlySpellWingsDescription_info" xml:space="preserve">
+    <value>The wings grant a +3 dodge bonus to AC against melee attacks, an immunity to ground based effects such as difficult terrain, and a bonus on Mobility skill checks equal to 1/2 your caster level. This does not stack with other spells that grant wings or flight.</value>
+  </data>
+  <data name="FlyWingAngelName_info" xml:space="preserve">
+    <value>Angel</value>
+  </data>
+  <data name="FlyWingDemonName_info" xml:space="preserve">
+    <value>Demon</value>
+  </data>
+  <data name="FlyWingDevilName_info" xml:space="preserve">
+    <value>Devil</value>
+  </data>
+  <data name="FlyWingDraconicBlackName_info" xml:space="preserve">
+    <value>Black Dragon</value>
+  </data>
+  <data name="FlyWingDraconicBlueName_info" xml:space="preserve">
+    <value>Blue Dragon</value>
+  </data>
+  <data name="FlyWingDraconicBrassName_info" xml:space="preserve">
+    <value>Brass Dragon</value>
+  </data>
+  <data name="FlyWingDraconicBronzeName_info" xml:space="preserve">
+    <value>Bronze Dragon</value>
+  </data>
+  <data name="FlyWingDraconicCopperName_info" xml:space="preserve">
+    <value>Copper Dragon</value>
+  </data>
+  <data name="FlyWingDraconicGoldName_info" xml:space="preserve">
+    <value>Gold Dragon</value>
+  </data>
+  <data name="FlyWingDraconicGreenName_info" xml:space="preserve">
+    <value>Green Dragon</value>
+  </data>
+  <data name="FlyWingDraconicRedName_info" xml:space="preserve">
+    <value>Red Dragon</value>
+  </data>
+  <data name="FlyWingDraconicSilverName_info" xml:space="preserve">
+    <value>Silver Dragon</value>
+  </data>
+  <data name="FlyWingDraconicWhiteName_info" xml:space="preserve">
+    <value>White Dragon</value>
+  </data>
+  <data name="GoBackDescription_info" xml:space="preserve">
+    <value>Select this to go back to the previous selection, allowing you to pick something else.</value>
+  </data>
+  <data name="GoBackName_info" xml:space="preserve">
+    <value>(Go back)</value>
   </data>
   <data name="GoblinSpellDescription_info" xml:space="preserve">
     <value>This spell summons to your side a sextuple band of goblin creatures. The summoned band appears where you designate and acts immediately, on your turn. It attacks your opponents to the best of its ability. If you can communicate with the creature, you can direct it not to attack, to attack particular enemies, or to perform other actions as you command.</value>
   </data>
   <data name="GoblinSpellName_info" xml:space="preserve">
     <value>Summon Six Goblins</value>
-  </data>
-  <data name="GreaterEldritchHeritageBloodlineFeatureName_info" xml:space="preserve">
-    <value>Improved Eldritch Heritage — {0}</value>
   </data>
   <data name="GreaterEldritchHeritageFeatureDescription_info" xml:space="preserve">
     <value>Your discovered bloodline power reaches its zenith.
@@ -508,15 +657,20 @@ You gain an additional power from the bloodline you selected with the Eldritch H
   <data name="HypnoticSpellDescription_info" xml:space="preserve">
     <value>A twisting pattern of subtle, shifting colors weaves through the air, fascinating creatures within it. Roll 2d4 and add your caster level (maximum 10) to determine the total number of HD of creatures affected. Creatures with the fewest HD are affected first; and, among creatures with equal HD, those who are closest to the spell's point of origin are affected first. HD that are not sufficient to affect a creature are wasted. Affected creatures become fascinated by the pattern of colors. Sightless creatures are not affected.</value>
   </data>
-  <data name="ImprovedEldritchHeritageBloodlineFeatureName_info" xml:space="preserve">
-    <value>Greater Eldritch Heritage — {0}</value>
-  </data>
   <data name="ImprovedEldritchHeritageFeatureDescription_info" xml:space="preserve">
     <value>The power of your discovered bloodline continues to grow.
 You gain either the 3rd-level or the 9th-level power (your choice) of the bloodline you selected with the Eldritch Heritage feat. For purposes of using that power, treat your sorcerer level as equal to your character level – 2, even if you have levels in sorcerer. You do not gain any of the other bloodline abilities.</value>
   </data>
   <data name="ImprovedEldritchHeritageFeatureName_info" xml:space="preserve">
     <value>Improved Eldritch Heritage</value>
+  </data>
+  <data name="IncendiaryCloudAbilityDescription_info" xml:space="preserve">
+    <value>An incendiary cloud spell creates a cloud of roiling smoke shot through with white-hot embers. The smoke obscures all sight as a fog cloud does. In addition, the white-hot embers within the cloud deal 6d6 points of fire damage to everything within the cloud on your turn each round. All targets can make Reflex saves each round to take half damage.
+As with a cloudkill spell, the smoke moves away from you at 10 feet per round. Figure out the smoke’s new spread each round based on its new point of origin, which is 10 feet farther away from where you were when you cast the spell. By concentrating, you can make the cloud move as much as 60 feet each round.Any portion of the cloud that would extend beyond your maximum range dissipates harmlessly, reducing the remainder’s spread thereafter.
+As with fog cloud, wind disperses the smoke, and the spell can’t be cast underwater.</value>
+  </data>
+  <data name="IncendiaryCloudAbilityName_info" xml:space="preserve">
+    <value>Incendiary Cloud</value>
   </data>
   <data name="KeepAllSpellsFeatureDescription_info" xml:space="preserve">
     <value>Choose this to skip replacing a known spell this level.</value>
@@ -550,9 +704,6 @@ Difficulty Class (DC): {3}.
   </data>
   <data name="KnockSpells_info" xml:space="preserve">
     <value>Knock</value>
-  </data>
-  <data name="MiracleDivineAbilityName_info" xml:space="preserve">
-    <value>(Divine) Miracle</value>
   </data>
   <data name="LesserMiracleSpells_info" xml:space="preserve">
     <value>Miracle preloading</value>
@@ -661,373 +812,6 @@ A duplicated spell allows saving throws and spell resistance as normal, but the 
   <data name="MetamagicAdeptFeatureName_info" xml:space="preserve">
     <value>Metamagic Adept (Arcane Bloodline)</value>
   </data>
-  <data name="MetamagicFeatsFeatureName_info" xml:space="preserve">
-    <value>Metamagic feats</value>
-  </data>
-  <data name="MiracleAbilityDescription_info" xml:space="preserve">
-    <value>You don't so much cast a miracle as request one. You state what you would like to have happen and request that your deity (or the power you pray to for spells) intercede.
-A miracle can do any of the following things.
-• Duplicate any cleric spell of 8th level or lower.
-• Duplicate any other spell of 7th level or lower.
-• Undo the harmful effects of certain spells, such as feeblemind or insanity.
-• Have any effect whose power level is in line with the above effects.
-Alternatively, a cleric can make a very powerful request. Casting such a miracle costs the cleric 25,000 gp in powdered diamond because of the powerful divine energies involved. Examples of especially powerful miracles of this sort could include the following:
-• Swinging the tide of a battle in your favor by raising fallen allies to continue fighting.
-• Moving you and your allies, with all your and their gear, from one plane to a specific locale through planar barriers with no chance of error.
-• Protecting a city from an earthquake, volcanic eruption, flood, or other major natural disaster.
-In any event, a request that is out of line with the deity's (or alignment's) nature is refused.
-A duplicated spell allows saving throws and spell resistance as normal, but the save DCs are as for a 9th-level spell.When a miracle spell duplicates a spell with a material component that costs more than 100 gp, you must provide that component.</value>
-  </data>
-  <data name="MiracleSpells_info" xml:space="preserve">
-    <value>Miracle</value>
-  </data>
-  <data name="MysteryBattleBattlecryDescription_info" xml:space="preserve">
-    <value>As a standard action, you can unleash an inspiring battlecry. All allies within 100 feet who hear your cry gain a +1 morale bonus on attack rolls, skill checks, and saving throws for a number of rounds equal to your Charisma modifier. At 10th level, this bonus increases to +2. You can use this ability once per day, plus one additional time per day at 5th level and for every five levels thereafter.</value>
-  </data>
-  <data name="MysteryBattleBattlecryName_info" xml:space="preserve">
-    <value>Battlecry</value>
-  </data>
-  <data name="MysteryBattleBattlefieldClarityDescription_info" xml:space="preserve">
-    <value>Once per day, as an immediate action, whenever you fail a saving throw that causes you to become blinded, deafened, frightened, panicked, paralyzed, shaken, or stunned, you may attempt that saving throw again, with a +4 insight bonus on the roll. You must take the second result, even if it is worse. At 7th and 15th level, you can use this ability one additional time per day.</value>
-  </data>
-  <data name="MysteryBattleBattlefieldClarityName_info" xml:space="preserve">
-    <value>Battlefield Clarity</value>
-  </data>
-  <data name="MysteryBattleFinalRevelationDescription_info" xml:space="preserve">
-    <value>Upon reaching 20th level, you become an avatar of battle. You can take a full-attack action and move up to your speed as a full-round action (you can move before or after the attacks). Whenever you score a critical hit, you can ignore any DR the target might possess. You gain a +4 insight bonus to your AC for the purpose of confirming critical hits against you.</value>
-  </data>
-  <data name="MysteryBattleFinalRevelationName_info" xml:space="preserve">
-    <value>Final Revelation</value>
-  </data>
-  <data name="MysteryBattleIronSkinDescription_info" xml:space="preserve">
-    <value>Once per day, your skin hardens and takes on the appearance of iron, granting you DR 10/adamantine. This functions as stoneskin, using your oracle level as the caster level. At 15th level, you can use this ability twice per day.</value>
-  </data>
-  <data name="MysteryBattleIronSkinName_info" xml:space="preserve">
-    <value>Iron Skin</value>
-  </data>
-  <data name="MysteryBattleManeuverMasteryDescription_info" xml:space="preserve">
-    <value>Select one type of combat maneuver. You gain the Improved feat (such as Improved Trip) that grants you the ability to perform that maneuver. At the 7th level, you treat your oracle level as your base attack bonus when determining your CMB for the selected maneuver. At 11th level, you gain the Greater feat (such as Greater Trip) that grants you a bonus when performing that maneuver. You do not need to meet the prerequisites to receive these feats.</value>
-  </data>
-  <data name="MysteryBattleManeuverMasteryName_info" xml:space="preserve">
-    <value>Maneuver Mastery</value>
-  </data>
-  <data name="MysteryBattleResiliencyDescription_info" xml:space="preserve">
-    <value>You get Diehard as a bonus feat.
-{0}</value>
-  </data>
-  <data name="MysteryBattleResiliencyName_info" xml:space="preserve">
-    <value>Resiliency</value>
-  </data>
-  <data name="MysteryBattleRevelationName_info" xml:space="preserve">
-    <value>Battle Revelation</value>
-  </data>
-  <data name="MysteryClassSkillsFeatureDescription_info" xml:space="preserve">
-    <value>Oracles receive additional class skills depending upon their oracle mystery.</value>
-  </data>
-  <data name="MysteryClassSkillsFeatureName_info" xml:space="preserve">
-    <value>Bonus Class Skills</value>
-  </data>
-  <data name="OppositionResearchFeatureDescription_info" xml:space="preserve">
-    <value>Select one Wizard opposition school; preparing spells of this school now only requires one spell slot of the appropriate level instead of two, and you no longer have the –4 Spellcraft penalty for crafting items from that school.</value>
-  </data>
-  <data name="OppositionResearchFeatureName_info" xml:space="preserve">
-    <value>Opposition Research</value>
-  </data>
-  <data name="OracleCombatHealerDescription_info" xml:space="preserve">
-    <value>Whenever you cast a cure spell (a spell with “cure” in its name), you can cast it as a swift action, as if using the Quicken Spell feat, by expending two spell slots. This does not increase the level of the spell. You can use this ability once per day at 7th level and one additional time per day for every four levels beyond 7th.</value>
-  </data>
-  <data name="OracleCombatHealerName_info" xml:space="preserve">
-    <value>Combat Healer</value>
-  </data>
-  <data name="OracleCureOrInflictSpellFeatureDescription_info" xml:space="preserve">
-    <value>In addition to the spells gained by oracles as they gain levels, each oracle also adds all of either the cure spells or the inflict spells to her list of spells known (cure spells include all spells with "cure" in the name, inflict spells include all spells with "inflict" in the name). These spells are added as soon as the oracle is capable of casting them. This choice is made when the oracle gains her first level and cannot be changed.</value>
-  </data>
-  <data name="OracleCureOrInflictSpellFeatureName_info" xml:space="preserve">
-    <value>Cure or Inflict Spells</value>
-  </data>
-  <data name="OracleCureSpellProgressionName_info" xml:space="preserve">
-    <value>Cure Spells</value>
-  </data>
-  <data name="OracleHas3SkillPoints_info" xml:space="preserve">
-    <value>Give Oracle class 3+int skill points on level up (instead of 4, due to condensed skills)</value>
-  </data>
-  <data name="OracleInflictSpellProgressionName_info" xml:space="preserve">
-    <value>Inflict Spells</value>
-  </data>
-  <data name="OracleLocalizedDescription_info" xml:space="preserve">
-    <value>Although the gods work through many agents, perhaps none is more mysterious than the oracle. These divine vessels are granted power without their choice, selected by providence to wield powers that even they do not fully understand. Unlike a cleric, who draws her magic through devotion to a deity, oracles garner strength and power from many sources, namely those patron deities who support their ideals. Instead of worshiping a single source, oracles tend to venerate all of the gods that share their beliefs. While some see the powers of the oracle as a gift, others view them as a curse, changing the life of the chosen in unforeseen ways.
-Role: Oracles do not usually associate with any one church or temple, instead preferring to strike out on their own, or with a small group of like-minded individuals. Oracles typically use their spells and revelations to further their understanding of their mystery, be it through fighting mighty battles or tending to the poor and sick.</value>
-  </data>
-  <data name="OracleLocalizedName_info" xml:space="preserve">
-    <value>Oracle</value>
-  </data>
-  <data name="OracleMysteryFeatureDescription_info" xml:space="preserve">
-    <value>Each oracle draws upon a divine mystery to grant her spells and powers. This mystery also grants additional class skills and other special abilities. This mystery can represent a devotion to one ideal, prayers to deities that support the concept, or a natural calling to champion a cause. For example, an oracle with the waves mystery might have been born at sea and found a natural calling to worship the gods of the oceans, rivers, and lakes, be they benign or malevolent. Regardless of its source, the mystery manifests in a number of ways as the oracle gains levels. An oracle must pick one mystery upon taking her first level of oracle. Once made, this choice cannot be changed.
-At 2nd level, and every two levels thereafter, an oracle learns an additional spell derived from her mystery. These spells are in addition to the number of chosen known spells. They cannot be exchanged for different spells at higher levels.</value>
-  </data>
-  <data name="OracleMysteryFeatureName_info" xml:space="preserve">
-    <value>Mystery</value>
-  </data>
-  <data name="OracleOrisonsFeatureDescription_info" xml:space="preserve">
-    <value>Oracles learn a number of orisons, or 0-level spells. These spells are cast like any other spell, but they do not consume any slots and may be used again.</value>
-  </data>
-  <data name="OracleProficienciesFeatureDescription_info" xml:space="preserve">
-    <value>Oracles are proficient with all simple weapons, light armor, medium armor, and shields (except tower shields). Some oracle revelations grant additional proficiencies.</value>
-  </data>
-  <data name="OracleProficienciesFeatureName_info" xml:space="preserve">
-    <value>Oracle Proficiencies</value>
-  </data>
-  <data name="OracleRevelationFeatureDescription_info" xml:space="preserve">
-    <value>At 1st level, 3rd level, and every four levels thereafter (7th, 11th, and so on), an oracle uncovers a new secret about her mystery that grants her powers and abilities. The oracle must select a revelation from the list of revelations available to her mystery (see FAQ at right). If a revelation is chosen at a later level, the oracle gains all of the abilities and bonuses granted by that revelation based on her current level. Unless otherwise noted, activating the power of a revelation is a standard action.
-Unless otherwise noted, the DC to save against these revelations is equal to 10 + 1 / 2 the oracle’s level + the oracle’s Charisma modifier.</value>
-  </data>
-  <data name="OracleRevelationFeatureName_info" xml:space="preserve">
-    <value>Revelation</value>
-  </data>
-  <data name="OrcBloodlineFeatureDescription_info" xml:space="preserve">
-    <value>The rage of your ancestors burns within you, and the taint of savage orc blood flows through your veins. Your anger is never far from the surface, giving you strength and driving you to seek greater power.
-Bonus Feats of the Orc Bloodline: Diehard, Endurance, Great Fortitude, Intimidating Prowess, Improved Bull Rush, Power Attack, Toughness, Reach Spell.</value>
-  </data>
-  <data name="OrcBloodlineFeatureName_info" xml:space="preserve">
-    <value>Orc Bloodline</value>
-  </data>
-  <data name="OrClassSkillName_info" xml:space="preserve">
-    <value> or {0}</value>
-  </data>
-  <data name="PrestigiousSpellcasterClassFeatureName_info" xml:space="preserve">
-    <value>Prestigious Spellcaster — {0}</value>
-  </data>
-  <data name="PrestigiousSpellcasterFeatureDescription_info" xml:space="preserve">
-    <value>The transition into a spellcasting prestige class is less difficult for you, and because of this, you gain 1 additional effective spellcaster level from your prestige class levels.</value>
-  </data>
-  <data name="PrestigiousSpellcasterFeatureName_error" xml:space="preserve">
-    <value>Prestigious Spellcaster, spell replacement for spontaneous casters</value>
-  </data>
-  <data name="PrestigiousSpellcasterFeatureName_info" xml:space="preserve">
-    <value>Prestigious Spellcaster</value>
-  </data>
-  <data name="RelaxAncientLorekeeper_info" xml:space="preserve">
-    <value>Any race can choose the Oracle Ancient Lorekeeper archetype</value>
-  </data>
-  <data name="RelaxTonguesCurse_info" xml:space="preserve">
-    <value>Disable Tongues curse penalty (that party members need 1 rank Knowledge: World to be controlled by PC in combat)</value>
-  </data>
-  <data name="ReplacementFeatureDescription_info" xml:space="preserve">
-    <value>Upon reaching {0}th level, and at every {1} {2} level after that ({3}th, {4}th, and so on), a {5} can choose to learn a new spell in place of one they already know. In effect, the {6} loses the old spell in exchange for the new one. The new spell's level must be the same as that of the spell being exchanged. A {7} may swap only a single spell at any given level, and must choose whether or not to swap the spell at the same time that they gain new spells known for the level.</value>
-  </data>
-  <data name="ReplacementFeatureName_info" xml:space="preserve">
-    <value>Replace Spell ({0})</value>
-  </data>
-  <data name="ResultFailLog_info" xml:space="preserve">
-    <value>Result: failure.</value>
-  </data>
-  <data name="ResultSuccessLog_info" xml:space="preserve">
-    <value>Result: success.</value>
-  </data>
-  <data name="ResurrectionSpellDescription_info" xml:space="preserve">
-    <value>This spell functions like raise dead, except that you can resurrect a creature that has been dead for as long as 10 years per caster level.This spell can even bring back creatures whose bodies have been destroyed, provided that you unambiguously identify the deceased in some fashion(reciting the deceased's time and place of birth or death is the most common method).Upon completion of the spell, the creature is immediately restored to full hit points, vigor, and health, with no negative levels(or loss of * Constitution points) and all of the prepared spells possessed by the creature when it died.You can revive someone killed by a death effect or someone who has been turned into an undead creature and then destroyed.This spell can also resurrect elementals or outsiders, but it can't resurrect constructs or undead creatures.Even true resurrection can't restore to life a creature who has died of old age.
-Benefit over Ressurection: this is a free action.</value>
-  </data>
-  <data name="SafeCuringFeatureDescription_info" xml:space="preserve">
-    <value>Whenever you cast a spell that cures the target of hit point damage, you do not provoke attacks of opportunity for spellcasting.</value>
-  </data>
-  <data name="SafeCuringFeatureName_info" xml:space="preserve">
-    <value>Safe Curing</value>
-  </data>
-  <data name="ScionExtraArcanaFeatureName_info" xml:space="preserve">
-    <value>Extra Arcana ({0})</value>
-  </data>
-  <data name="ShowCustomPortraits_info" xml:space="preserve">
-    <value>Show custom portraits in the portrait list at character creation (if changed, requires restart)</value>
-  </data>
-  <data name="SingleLineDescription_info" xml:space="preserve">
-    <value>• {0}</value>
-  </data>
-  <data name="SkillBonusProgressionDescription_info" xml:space="preserve">
-    <value>{0}
-You gain a +2 bonus on checks using the skill you chose from that prestige class's class skills. If you have 10 or more ranks in one of these skills, the bonus increases to +4 for that skill. This bonus stacks with the bonus granted by Skill Focus, but does not stack with a bonus granted by any other feat (such as Magical Aptitude or Persuasive).</value>
-  </data>
-  <data name="SkipDeityFeatureDescription_info" xml:space="preserve">
-    <value>Choose this to skip selecting a deity at character creation. You may select one later if you gain a level in a class that requires it (such as Cleric, Inquisitor, or Paladin).</value>
-  </data>
-  <data name="SkipDeityFeatureName_info" xml:space="preserve">
-    <value>Skip Deity</value>
-  </data>
-  <data name="SpellBlendingFeatureDescription_info" xml:space="preserve">
-    <value>When a magus selects this arcana, they must select one spell from the wizard spell list that is of a magus spell level they can cast. They adds this spell to their spellbook and list of magus spells known as a magus spell of its wizard spell level. They can instead select two spells to add in this way, but both must be at least one level lower than the highest-level magus spell they can cast.
-Special: A magus can select this magus arcana more than once.</value>
-  </data>
-  <data name="SpellBlendingFeatureName_info" xml:space="preserve">
-    <value>Spell Blending</value>
-  </data>
-  <data name="SpellPerfectionFeatureDescription_info" xml:space="preserve">
-    <value>Pick one spell which you have the ability to cast. Whenever you cast that spell you may apply any one metamagic feat you have to that spell without affecting its level or casting time, as long as the total modified level of the spell does not use a spell slot above 9th level. In addition, if you have other feats which allow you to apply a set numerical bonus to any aspect of this spell (such as Spell Focus, Spell Penetration, Weapon Focus [ray], and so on), double the bonus granted by that feat when applied to this spell.</value>
-  </data>
-  <data name="SpellPerfectionFeatureName_info" xml:space="preserve">
-    <value>Spell Perfection</value>
-  </data>
-  <data name="SpellVulnerabilityFeatureDescription_info" xml:space="preserve">
-    <value>You have {0} on saves vs {1} and elemental weakness {2}.</value>
-  </data>
-  <data name="SpellVulnerabilityFeatureName_info" xml:space="preserve">
-    <value>Spell Vulnerability ({0})</value>
-  </data>
-  <data name="SpiritBoostFeatureDescription_info" xml:space="preserve">
-    <value>Whenever your healing spells heal a target up to its maximum hit points, any excess points persist for 1 round per level as temporary hit points (up to a maximum number of temporary hit points equal to your oracle level).</value>
-  </data>
-  <data name="SpiritBoostFeatureName_info" xml:space="preserve">
-    <value>Spirit Boost</value>
-  </data>
-  <data name="SpiritualWeaponAbilityDescription_info" xml:space="preserve">
-    <value>A weapon made of force appears and attacks foes at a distance, as you direct it, dealing 1d8 force damage per hit, +1 point per three caster levels (maximum +5 at 15th level). 
-The weapon takes the shape of a weapon favored by your deity or a weapon with some spiritual significance or symbolism to you (see below) and has the same threat range and critical multipliers as a real weapon of its form. 
-It strikes the opponent you designate, starting with one attack in the round the spell is cast and continuing each round thereafter on your turn. 
-It uses your base attack bonus (possibly allowing it multiple attacks per round in subsequent rounds) plus your Wisdom modifier (or primary casting ability, if cast as a spell) as its attack bonus. 
-It strikes as a spell, not as a weapon, so for example, it can damage creatures that have damage reduction. 
-As a force effect, it can strike incorporeal creatures without the reduction in damage associated with incorporeality. 
-The weapon always strikes from your direction. It does not get a flanking bonus or help a combatant get one. Your feats or combat actions do not affect the weapon. 
-Each round after the first, the weapon continues to attack the previous round’s target. If the target dies, it will attack the next nearest enemy, if any. On any round that the weapon switches targets, it gets one attack. Subsequent rounds of attacking allow the weapon to make multiple attacks if your base attack bonus would allow it to.
-A spiritual weapon cannot be attacked or harmed by physical attacks, but dispel magic, disintegrate, a sphere of annihilation, or a rod of cancellation affects it.
-If an attacked creature has Spell Resistance, you make a caster level check (1d20 + caster level) against that Spell Resistance the first time the spiritual weapon strikes it. If the weapon is successfully resisted, the spell is dispelled. If not, the weapon has its normal full effect on that creature for the duration of the spell.
-The weapon that you get is often a force replica of your deity’s own personal weapon. A cleric without a deity gets a weapon based on their alignment. A neutral cleric without a deity can create a spiritual weapon of any alignment, provided they are acting at least generally in accord with that alignment at the time. The weapons associated with each alignment are as follows: chaos (battleaxe), evil (light flail), good (warhammer), law (longsword).</value>
-  </data>
-  <data name="SpiritualWeaponAbilityName_info" xml:space="preserve">
-    <value>Spiritual Weapon</value>
-  </data>
-  <data name="SpritualWeaponSpells_info" xml:space="preserve">
-    <value>Spiritual Weapon</value>
-  </data>
-  <data name="SquirrelSpellDescription_info" xml:space="preserve">
-    <value>You summon a swarm of Squirrels, which attacks all other creatures within its area. (You may summon the swarm so that it shares the area of other creatures.) If no living creatures are within its area, the swarm attacks or pursues the nearest creature as best it can. The caster has no control over its target or direction of travel.</value>
-  </data>
-  <data name="SquirrelSpellName_info" xml:space="preserve">
-    <value>Summon Swarm Squirrels</value>
-  </data>
-  <data name="SummonWildhuntSpells_info" xml:space="preserve">
-    <value>Wild Hunt</value>
-  </data>
-  <data name="testedGameVersion_warning" xml:space="preserve">
-    <value>&lt;b&gt;This mod was tested against game version {0}, but you are running {1}.&lt;/b&gt;</value>
-  </data>
-  <data name="TimeStopAbilityDuration_info" xml:space="preserve">
-    <value>1d4+1 rounds (apparent time)</value>
-  </data>
-  <data name="TimeStopBuffDescription_info" xml:space="preserve">
-    <value>This spell seems to make time cease to flow for everyone but you. In fact, you speed up so greatly that all other creatures seem frozen, though they are actually still moving at their normal speeds. You are free to act for 1d4+1 rounds of apparent time. Normal and magical fire, cold, gas, and the like can still harm you. While the time stop is in effect, other creatures are invulnerable to your attacks and spells; you cannot target such creatures with any attack or spell. A spell that affects an area and has a duration longer than the remaining duration of the time stop have their normal effects on other creatures once the time stop ends. Most spellcasters use the additional time to improve their defenses, summon allies, or flee from combat.
-You cannot move or harm items held, carried, or worn by a creature stuck in normal time, but you can affect any item that is not in another creature’s possession.
-You are undetectable while time stop lasts. You cannot enter an area protected by an antimagic field while under the effect of time stop.</value>
-  </data>
-  <data name="TimeStopSpells_info" xml:space="preserve">
-    <value>Time Stop</value>
-  </data>
-  <data name="TrueResurrectionSpells_info" xml:space="preserve">
-    <value>True resurrection</value>
-  </data>
-  <data name="WeaponOfAweAbilityDescription_info" xml:space="preserve">
-    <value>You transform a single weapon into an awe-inspiring instrument. The weapon gains a +2 sacred bonus on damage rolls, and if the weapon scores a critical hit, the target of that critical hit becomes shaken for 1 round with no saving throw.
-This is a mind-affecting fear effect. A ranged weapon affected by this spell applies these effects to its ammunition.
-You can't cast this spell on a natural weapon, but you can cast it on an unarmed strike.</value>
-  </data>
-  <data name="WeaponofAweDescription_info" xml:space="preserve">
-    <value>+2 sacred bonus on damage rolls, and target is shaken for 1 round on critical hits.</value>
-  </data>
-  <data name="WeaponOfAweSpells_info" xml:space="preserve">
-    <value>Weapon Of Awe</value>
-  </data>
-  <data name="WishAbilityDescription_info" xml:space="preserve">
-    <value>Wish is the mightiest spell a wizard or sorcerer can cast. By simply speaking aloud, you can alter reality to better suit you. Even wish, however, has its limits. A wish can produce any one of the following effects.
-• Duplicate any sorcerer/wizard spell of 8th level or lower, provided the spell does not belong to one of your opposition schools.
-• Duplicate any non-sorcerer/wizard spell of 7th level or lower, provided the spell does not belong to one of your opposition schools.
-• Duplicate any sorcerer/wizard spell of 7th level or lower, even if it belongs to one of your opposition schools.
-• Duplicate any non-sorcerer/wizard spell of 6th level or lower, even if it belongs to one of your opposition schools.
-• Undo the harmful effects of many other spells, such as geas/quest or insanity.
-• Grant a creature a +1 inherent bonus to an ability score. Two to five wish spells cast in immediate succession can grant a creature a +2 to +5 inherent bonus to an ability score (two wishes for a +2 inherent bonus, three wishes for a +3 inherent bonus, and so on). Inherent bonuses are instantaneous, so they cannot be dispelled. Note: An inherent bonus may not exceed +5 for a single ability score, and inherent bonuses to a particular ability score do not stack, so only the best one applies.
-• Remove injuries and afflictions. A single wish can aid one creature per caster level, and all subjects are cured of the same kind of affliction. For example, you could heal all the damage you and your companions have taken, or remove all poison effects from everyone in the party, but not do both with the same wish.
-• Revive the dead. A wish can bring a dead creature back to life by duplicating a resurrection spell. A wish can revive a dead creature whose body has been destroyed, but the task takes two wishes: one to recreate the body and another to infuse the body with life again. A wish cannot prevent a character who was brought back to life from gaining a permanent negative level.
-Duplicated spells allow saves and Spell Resistance as normal (but save DCs are for 9th-level spells).
-When a wish duplicates a spell with a material component that costs more than 10,000 gp, you must provide that component (in addition to the 25,000 gp diamond component for this spell).</value>
-  </data>
-  <data name="WishBuffDescription_info" xml:space="preserve">
-    <value>Wish for a permanent inherent bonus to {0}.
-Two to five wish spells cast in immediate succession can grant a creature a +2 to +5 inherent bonus to an ability score (two wishes for a +2 inherent bonus, three wishes for a +3 inherent bonus, and so on). Inherent bonuses are instantaneous, so they cannot be dispelled. Note: An inherent bonus may not exceed +5 for a single ability score, and inherent bonuses to a particular ability score do not stack, so only the best one applies.</value>
-  </data>
-  <data name="WishArcaneAbilityDescription_info" xml:space="preserve">
-    <value>Arcane Wish lets you create nearly any type of effect as long as you provide 5 diamonds is high enough.
-• Duplicate any sorcerer/wizard spell of 6th level or lower, provided the spell does not belong to one of your opposition schools.
-• Duplicate any non-sorcerer/wizard spell of 5th level or lower, provided the spell does not belong to one of your opposition schools.
-• Duplicate any sorcerer/wizard spell of 5th level or lower, even if it belongs to one of your opposition schools.
-• Duplicate any non-sorcerer/wizard spell of 4th level or lower, even if it belongs to one of your opposition schools.
-• Undo the harmful effects of many spells, such as insanity.
-• Produce any other effect whose power level is in line with the above effects, such as a single creature automatically hitting on its next attack or taking a -7 penalty on its next saving throw.
-A duplicated spell allows saving throws and spell resistance as normal, but the save DC is for a 7th-level spell. When a limited wish spell duplicates a spell with a material component that costs more than 1,000 gp, you must provide that component (in addition to the 1,500 gp diamond component for this spell).</value>
-  </data>
-  <data name="WishFabricateSpells_info" xml:space="preserve">
-    <value>Wish(Arcane)</value>
-  </data>
-  <data name="WishFeatureDescription_info" xml:space="preserve">
-    <value>A wish granted a permanent inherent bonus to {0}.</value>
-  </data>
-  <data name="WishLevelSpellName_info" xml:space="preserve">
-    <value>{0} (spell level {1})</value>
-  </data>
-  <data name="WishReason_error" xml:space="preserve">
-    <value>Opposition school spells of this level are not available.</value>
-  </data>
-  <data name="WishSpellDescription_info" xml:space="preserve">
-    <value>(After casting this spell, use the ability bar to select your {0}.){1}
-</value>
-  </data>
-  <data name="WishSpellsSpellName_info" xml:space="preserve">
-    <value>{0} Spells</value>
-  </data>
-  <data name="WishSpells_info" xml:space="preserve">
-    <value>Wish</value>
-  </data>
-  <data name="MysteryBattleSkillAtArmsDescription_info" xml:space="preserve">
-    <value>You gain proficiency in all martial weapons and heavy armor.</value>
-  </data>
-  <data name="MysteryBattleSkillAtArmsName_info" xml:space="preserve">
-    <value>Skill at Arms</value>
-  </data>
-  <data name="MysteryBattleSurprisingChargeDescription_info" xml:space="preserve">
-    <value>Once per day, you can move up to your speed as an immediate action. You can use this ability one additional time per day at 7th level and 15th level.</value>
-  </data>
-  <data name="MysteryBattleSurprisingChargeName_info" xml:space="preserve">
-    <value>Surprising Charge</value>
-  </data>
-  <data name="MysteryBattleWarSightDescription_info" xml:space="preserve">
-    <value>Whenever you roll for initiative, you can roll twice and take either result. At 7th level, you can always act in the surprise round, but if you fail to notice the ambush, you act last, regardless of your initiative result (you act in the normal order in following rounds). At 11th level, you can roll for initiative three times and take any one of the results.</value>
-  </data>
-  <data name="MysteryBattleWarSightName_info" xml:space="preserve">
-    <value>War Sight</value>
-  </data>
-  <data name="MysteryBattleWeaponMasteryDescription_info" xml:space="preserve">
-    <value>Select one weapon with which you are proficient. You gain Weapon Focus with that weapon. At 8th level, you gain Improved Critical with that weapon. At 12th level, you gain Greater Weapon Focus with that weapon. You do not need to meet the prerequisites to receive these feats.</value>
-  </data>
-  <data name="MysteryBattleWeaponMasteryName_info" xml:space="preserve">
-    <value>Weapon Mastery</value>
-  </data>
-  <data name="MysteryBattleDescription_info" xml:space="preserve">
-    <value>
-Class skills: {0}, {1}
-An oracle with the battle mystery can choose from any of the following revelations: </value>
-  </data>
-  <data name="MysteryBattleName_info" xml:space="preserve">
-    <value>Battle Mystery</value>
-  </data>
-  <data name="RollWithItFeatureDescription_info" xml:space="preserve">
-    <value>You know how to take a hit, even if your reaction sends you bouncing and flying out of battle while shrieking at the top of your lungs.
-Benefit: If you are struck by a melee weapon you can try to convert some of that damage into a movement correction. That way you reduce damage by 13 points.</value>
-  </data>
-  <data name="RollWithItFeatureName_info" xml:space="preserve">
-    <value>Roll with it</value>
-  </data>
-  <data name="SpellBlendingFeatureOneSpellSelection_info" xml:space="preserve">
-    <value>{0} (one spell)</value>
-  </data>
-  <data name="SpellBlendingFeatureTwoSpellProgression_info" xml:space="preserve">
-    <value>{0} (two spells)</value>
-  </data>
   <data name="MetamagicElementalSpellSelectionDescription_info" xml:space="preserve">
     <value>Choose one energy type: acid, cold, electricity, fire, or force. You may replace a spell’s normal damage with that energy type.
 Level Increase: +1</value>
@@ -1082,6 +866,9 @@ Level Increase: +1</value>
   <data name="MetamagicFeatSelectiveSpellName_info" xml:space="preserve">
     <value>Selective Spell</value>
   </data>
+  <data name="MetamagicFeatsFeatureName_info" xml:space="preserve">
+    <value>Metamagic feats</value>
+  </data>
   <data name="MetamagicFeatTopplingSpellDescription_info" xml:space="preserve">
     <value>The impact of your force spell is strong enough to knock the target prone. If the target takes damage, fails its saving throw, or is moved by your force spell, make a trip check against the target, using your caster level plus your casting ability score bonus (Wisdom for clerics, Intelligence for wizards, and so on). This does not provoke an attack of opportunity. If the check fails, the target cannot attempt to trip you or the force effect in response.
 This feat only affects spells with the force descriptor.
@@ -1090,38 +877,10 @@ Level Increase: +1</value>
   <data name="MetamagicFeatTopplingSpellName_info" xml:space="preserve">
     <value>Toppling Spell</value>
   </data>
-  <data name="NewMetamagicNamesDazing_info" xml:space="preserve">
-    <value>Dazing </value>
-  </data>
-  <data name="NewMetamagicNamesElemental_info" xml:space="preserve">
-    <value>Elemental </value>
-  </data>
-  <data name="NewMetamagicNamesElementalAcid_info" xml:space="preserve">
-    <value>Acid Elemental </value>
-  </data>
-  <data name="NewMetamagicNamesElementalCold_info" xml:space="preserve">
-    <value>Cold Elemental </value>
-  </data>
-  <data name="NewMetamagicNamesElementalElectricity_info" xml:space="preserve">
-    <value>Electricity Elemental </value>
-  </data>
-  <data name="NewMetamagicNamesElementalFire_info" xml:space="preserve">
-    <value>Fire Elemental </value>
-  </data>
-  <data name="NewMetamagicNamesIntensified_info" xml:space="preserve">
-    <value>Intensified </value>
-  </data>
-  <data name="NewMetamagicNamesPersistent_info" xml:space="preserve">
-    <value>Persistent </value>
-  </data>
-  <data name="NewMetamagicNamesRime_info" xml:space="preserve">
-    <value>Rime </value>
-  </data>
-  <data name="NewMetamagicNamesSelectvie_info" xml:space="preserve">
-    <value>Selectvie </value>
-  </data>
-  <data name="NewMetamagicNamesToppling_info" xml:space="preserve">
-    <value>Toppling </value>
+  <data name="MetamagicRodDescription_info" xml:space="preserve">
+    <value>The wielder can cast up to three spells per day that are affected as though the spells were augmented with the {0} feat.
+{1} rods can be used with spells of {2} level or lower.
+{3}: {4}</value>
   </data>
   <data name="MetamagicRodDisplayPrefixString_Greater" xml:space="preserve">
     <value>Greater </value>
@@ -1147,60 +906,6 @@ Level Increase: +1</value>
   <data name="MetamagicRodSpellMaxLevel_9th" xml:space="preserve">
     <value>9th </value>
   </data>
-  <data name="NewMetamagicNamesElementalForce_info" xml:space="preserve">
-    <value>Force Elemental </value>
-  </data>
-  <data name="MetamagicRodDescription_info" xml:space="preserve">
-    <value>The wielder can cast up to three spells per day that are affected as though the spells were augmented with the {0} feat.
-{1}rods can be used with spells of {2} level or lower.
-{3}: {4}</value>
-  </data>
-  <data name="ArcaneSavantAdeptActivationDescription_info" xml:space="preserve">
-    <value>An arcane savant can always take 10 on Use Magic Device checks, except when activating an item blindly.</value>
-  </data>
-  <data name="ArcaneSavantAdeptActivationName_info" xml:space="preserve">
-    <value>Adept Activation</value>
-  </data>
-  <data name="ArcaneSavantDescription_info" xml:space="preserve">
-    <value>Arcane savants are specialists in the theory and practice of magic, illuminating mysteries of the eldritch fabric that permeates existence. 
-The path of the arcane savant brings expertise in the lore of glyphs and sigils, knowledge of exotic spells, and the power to unlock the full potential of magical devices.
-This skill also makes savants quite valuable to adventuring parties, both in their mastery over ancient traps that utilize old magic and in their skill at identifying and utilizing magic items found in the field.</value>
-  </data>
-  <data name="ArcaneSavantGlyphFindingDescription_info" xml:space="preserve">
-    <value>At 2nd level, an arcane savant can use {0} to find magical traps in the same way a rogue can use {1} to search for traps.</value>
-  </data>
-  <data name="ArcaneSavantGlyphFindingName_info" xml:space="preserve">
-    <value>Glyph Finding</value>
-  </data>
-  <data name="ArcaneSavantMasterScholarDescription_info" xml:space="preserve">
-    <value>An arcane savant adds half their class level (minimum 1) as a bonus on Knowledge (arcana), and Use Magic Device checks, and can always take 10 on Knowledge (arcana) checks, even if distracted or endangered.</value>
-  </data>
-  <data name="ArcaneSavantMasterScholarName_info" xml:space="preserve">
-    <value>Master Scholar</value>
-  </data>
-  <data name="ArcaneSavantName_info" xml:space="preserve">
-    <value>Arcane Savant</value>
-  </data>
-  <data name="TimeStopFreezeBuffDescription_info" xml:space="preserve">
-    <value>Time stop is active for another unit, freezing apparent time for them.</value>
-  </data>
-  <data name="TimeStopFreezeBuffName_info" xml:space="preserve">
-    <value>Frozen in Time</value>
-  </data>
-  <data name="DelayedBlastFireballDelayRoundsDescription_info" xml:space="preserve">
-    <value>5 rounds or less; see text</value>
-  </data>
-  <data name="DelaySpellName_info" xml:space="preserve">
-    <value>{0} ({1} rounds)</value>
-  </data>
-  <data name="IncendiaryCloudAbilityDescription_info" xml:space="preserve">
-    <value>An incendiary cloud spell creates a cloud of roiling smoke shot through with white-hot embers. The smoke obscures all sight as a fog cloud does. In addition, the white-hot embers within the cloud deal 6d6 points of fire damage to everything within the cloud on your turn each round. All targets can make Reflex saves each round to take half damage.
-As with a cloudkill spell, the smoke moves away from you at 10 feet per round. Figure out the smoke’s new spread each round based on its new point of origin, which is 10 feet farther away from where you were when you cast the spell. By concentrating, you can make the cloud move as much as 60 feet each round.Any portion of the cloud that would extend beyond your maximum range dissipates harmlessly, reducing the remainder’s spread thereafter.
-As with fog cloud, wind disperses the smoke, and the spell can’t be cast underwater.</value>
-  </data>
-  <data name="IncendiaryCloudAbilityName_info" xml:space="preserve">
-    <value>Incendiary Cloud</value>
-  </data>
   <data name="MeteorSwarmAbilityDescription_info" xml:space="preserve">
     <value>Meteor swarm is a very powerful and spectacular spell that is similar to fireball in many aspects. When you cast it, four 2-foot-diameter spheres spring from your outstretched hand and streak in straight lines to the spots you select. The meteor spheres leave a fiery trail of sparks.
 If you aim a sphere at a specific creature, you may make a ranged touch attack to strike the target with the meteor.Any creature struck by a sphere takes 2d6 points of bludgeoning damage(no save) and has to make a saving throw against +4 DC for the sphere’s fire damage(see below).If a targeted sphere misses its target, it simply explodes at the nearest corner of the target’s space. You may aim more than one sphere at the same target.
@@ -1212,173 +917,342 @@ Once a sphere reaches its destination, it explodes in a 40-foot-radius spread, d
   <data name="MeteorSwarmSavingThrowDescription_info" xml:space="preserve">
     <value>None or Reflex half, see text</value>
   </data>
-  <data name="OracleCurseSelectionDescription_info" xml:space="preserve">
-    <value>Each oracle is cursed, but this curse comes with a benefit as well as a hindrance.This choice is made at 1st level, and once made, it cannot be changed.The oracle’s curse cannot be removed or dispelled without the aid of a deity.An oracle’s curse is based on her oracle level plus one for every two levels or Hit Dice other than oracle.Each oracle must choose one of the following curses.</value>
+  <data name="MiracleAbilityDescription_info" xml:space="preserve">
+    <value>You don't so much cast a miracle as request one. You state what you would like to have happen and request that your deity (or the power you pray to for spells) intercede.
+A miracle can do any of the following things.
+• Duplicate any cleric spell of 8th level or lower.
+• Duplicate any other spell of 7th level or lower.
+• Undo the harmful effects of certain spells, such as feeblemind or insanity.
+• Have any effect whose power level is in line with the above effects.
+Alternatively, a cleric can make a very powerful request. Casting such a miracle costs the cleric 25,000 gp in powdered diamond because of the powerful divine energies involved. Examples of especially powerful miracles of this sort could include the following:
+• Swinging the tide of a battle in your favor by raising fallen allies to continue fighting.
+• Moving you and your allies, with all your and their gear, from one plane to a specific locale through planar barriers with no chance of error.
+• Protecting a city from an earthquake, volcanic eruption, flood, or other major natural disaster.
+In any event, a request that is out of line with the deity's (or alignment's) nature is refused.
+A duplicated spell allows saving throws and spell resistance as normal, but the save DCs are as for a 9th-level spell.When a miracle spell duplicates a spell with a material component that costs more than 100 gp, you must provide that component.</value>
   </data>
-  <data name="OracleCurseSelectionName_info" xml:space="preserve">
-    <value>Curse</value>
+  <data name="MiracleDivineAbilityName_info" xml:space="preserve">
+    <value>(Divine) Miracle</value>
   </data>
-  <data name="WallOfFireAbilityDescription_info" xml:space="preserve">
-    <value>An immobile, blazing curtain of shimmering violet fire springs into existence. One side of the wall, selected by you, sends forth waves of heat, dealing 2d4 points of fire damage to creatures within 10 feet and 1d4 points of fire damage to those past 10 feet but within 20 feet. The wall deals this damage when it appears, and to all creatures in the area on your turn each round. In addition, the wall deals 2d6 points of fire damage + 1 point of fire damage per caster level (maximum +20) to any creature passing through it. The wall deals double damage to undead creatures.
-If you evoke the wall so that it appears where creatures are, each creature takes damage as if passing through the wall. If any 5-foot length of wall takes 20 points or more of cold damage in 1 round, that length goes away. (Do not divide cold damage by 2, as normal for objects.)</value>
+  <data name="MiracleSpells_info" xml:space="preserve">
+    <value>Miracle</value>
   </data>
-  <data name="WallOfFireAbilityName_info" xml:space="preserve">
-    <value>Wall of Fire</value>
+  <data name="MysteryBattleBattlecryDescription_info" xml:space="preserve">
+    <value>As a standard action, you can unleash an inspiring battlecry. All allies within 100 feet who hear your cry gain a +1 morale bonus on attack rolls, skill checks, and saving throws for a number of rounds equal to your Charisma modifier. At 10th level, this bonus increases to +2. You can use this ability once per day, plus one additional time per day at 5th level and for every five levels thereafter.</value>
   </data>
-  <data name="DismissSpellNoAreaEffectsToDismiss_info" xml:space="preserve">
-    <value>No area effects to dismiss (only certain spells can be dismissed in combat).</value>
+  <data name="MysteryBattleBattlecryName_info" xml:space="preserve">
+    <value>Battlecry</value>
   </data>
-  <data name="AirWalkAbilityDescription_info" xml:space="preserve">
-    <value>The subject can tread on air as if walking on solid ground. This grants a +3 dodge bonus to AC against melee attacks, immunity to difficult terrain, and +10 to Mobility skill checks. This does not stack with other spells that grant wings or flight.</value>
+  <data name="MysteryBattleBattlefieldClarityDescription_info" xml:space="preserve">
+    <value>Once per day, as an immediate action, whenever you fail a saving throw that causes you to become blinded, deafened, frightened, panicked, paralyzed, shaken, or stunned, you may attempt that saving throw again, with a +4 insight bonus on the roll. You must take the second result, even if it is worse. At 7th and 15th level, you can use this ability one additional time per day.</value>
   </data>
-  <data name="AirWalkAbilityName_info" xml:space="preserve">
-    <value>Air Walk</value>
+  <data name="MysteryBattleBattlefieldClarityName_info" xml:space="preserve">
+    <value>Battlefield Clarity</value>
   </data>
-  <data name="AirWalkCommunalAbilityDescription_info" xml:space="preserve">
-    <value>The caster and all allies in a 30-feet radius gain the benefits of Air Walk:
+  <data name="MysteryBattleDescription_info" xml:space="preserve">
+    <value>
+Class skills: {0}, {1}
+An oracle with the battle mystery can choose from any of the following revelations: </value>
+  </data>
+  <data name="MysteryBattleFinalRevelationDescription_info" xml:space="preserve">
+    <value>Upon reaching 20th level, you become an avatar of battle. You can take a full-attack action and move up to your speed as a full-round action (you can move before or after the attacks). Whenever you score a critical hit, you can ignore any DR the target might possess. You gain a +4 insight bonus to your AC for the purpose of confirming critical hits against you.</value>
+  </data>
+  <data name="MysteryBattleIronSkinDescription_info" xml:space="preserve">
+    <value>Once per day, your skin hardens and takes on the appearance of iron, granting you DR 10/adamantine. This functions as stoneskin, using your oracle level as the caster level. At 15th level, you can use this ability twice per day.</value>
+  </data>
+  <data name="MysteryBattleIronSkinName_info" xml:space="preserve">
+    <value>Iron Skin</value>
+  </data>
+  <data name="MysteryBattleManeuverMasteryDescription_info" xml:space="preserve">
+    <value>Select one type of combat maneuver. You gain the Improved feat (such as Improved Trip) that grants you the ability to perform that maneuver. At the 7th level, you treat your oracle level as your base attack bonus when determining your CMB for the selected maneuver. At 11th level, you gain the Greater feat (such as Greater Trip) that grants you a bonus when performing that maneuver. You do not need to meet the prerequisites to receive these feats.</value>
+  </data>
+  <data name="MysteryBattleManeuverMasteryName_info" xml:space="preserve">
+    <value>Maneuver Mastery</value>
+  </data>
+  <data name="MysteryBattleName_info" xml:space="preserve">
+    <value>Battle Mystery</value>
+  </data>
+  <data name="MysteryBattleResiliencyDescription_info" xml:space="preserve">
+    <value>You get Diehard as a bonus feat.
 {0}</value>
   </data>
-  <data name="AirWalkCommunalAbilityName_info" xml:space="preserve">
-    <value>Air Walk, Communal</value>
+  <data name="MysteryBattleResiliencyName_info" xml:space="preserve">
+    <value>Resiliency</value>
   </data>
-  <data name="FixWingsImmunities_info" xml:space="preserve">
-    <value>Wings/flight provides immunity to ground spells/trip</value>
+  <data name="MysteryBattleRevelationName_info" xml:space="preserve">
+    <value>Battle Revelation</value>
   </data>
-  <data name="FlySpellAbilityDescription_info" xml:space="preserve">
-    <value>The subject gains a pair of wings, and movement speed increases to 60 feet (or 40 feet if it wears medium or heavy armor, or if it carries a medium or heavy load).</value>
+  <data name="MysteryBattleSkillAtArmsDescription_info" xml:space="preserve">
+    <value>You gain proficiency in all martial weapons and heavy armor.</value>
   </data>
-  <data name="FlySpellAbilityName_info" xml:space="preserve">
-    <value>Fly — {0}</value>
+  <data name="MysteryBattleSkillAtArmsName_info" xml:space="preserve">
+    <value>Skill at Arms</value>
   </data>
-  <data name="FlySpellWingsDescription_info" xml:space="preserve">
-    <value>The wings grant a +3 dodge bonus to AC against melee attacks, an immunity to ground based effects such as difficult terrain, and a bonus on Mobility skill checks equal to 1/2 your caster level. This does not stack with other spells that grant wings or flight.</value>
+  <data name="MysteryBattleSurprisingChargeDescription_info" xml:space="preserve">
+    <value>Once per day, you can move up to your speed as an immediate action. You can use this ability one additional time per day at 7th level and 15th level.</value>
   </data>
-  <data name="FlyWingAngelName_info" xml:space="preserve">
-    <value>Angel</value>
+  <data name="MysteryBattleSurprisingChargeName_info" xml:space="preserve">
+    <value>Surprising Charge</value>
   </data>
-  <data name="FlyWingDemonName_info" xml:space="preserve">
-    <value>Demon</value>
+  <data name="MysteryBattleWarSightDescription_info" xml:space="preserve">
+    <value>Whenever you roll for initiative, you can roll twice and take either result. At 7th level, you can always act in the surprise round, but if you fail to notice the ambush, you act last, regardless of your initiative result (you act in the normal order in following rounds). At 11th level, you can roll for initiative three times and take any one of the results.</value>
   </data>
-  <data name="FlyWingDevilName_info" xml:space="preserve">
-    <value>Devil</value>
+  <data name="MysteryBattleWarSightName_info" xml:space="preserve">
+    <value>War Sight</value>
   </data>
-  <data name="FlyWingDraconicBlackName_info" xml:space="preserve">
-    <value>Black Dragon</value>
+  <data name="MysteryBattleWeaponMasteryDescription_info" xml:space="preserve">
+    <value>Select one weapon with which you are proficient. You gain Weapon Focus with that weapon. At 8th level, you gain Improved Critical with that weapon. At 12th level, you gain Greater Weapon Focus with that weapon. You do not need to meet the prerequisites to receive these feats.</value>
   </data>
-  <data name="FlyWingDraconicBlueName_info" xml:space="preserve">
-    <value>Blue Dragon</value>
+  <data name="MysteryBattleWeaponMasteryName_info" xml:space="preserve">
+    <value>Weapon Mastery</value>
   </data>
-  <data name="FlyWingDraconicBrassName_info" xml:space="preserve">
-    <value>Brass Dragon</value>
+  <data name="MysteryClassSkillsFeatureDescription_info" xml:space="preserve">
+    <value>Oracles receive additional class skills depending upon their oracle mystery.</value>
   </data>
-  <data name="FlyWingDraconicBronzeName_info" xml:space="preserve">
-    <value>Bronze Dragon</value>
+  <data name="MysteryClassSkillsFeatureName_info" xml:space="preserve">
+    <value>Bonus Class Skills</value>
   </data>
-  <data name="FlyWingDraconicCopperName_info" xml:space="preserve">
-    <value>Copper Dragon</value>
+  <data name="MysteryDragonBreathWeaponConeOfEnergyType_info" xml:space="preserve">
+    <value>Cone of {0}</value>
   </data>
-  <data name="FlyWingDraconicGoldName_info" xml:space="preserve">
-    <value>Gold Dragon</value>
+  <data name="MysteryDragonBreathWeaponDescription_info" xml:space="preserve">
+    <value>The primal power of dragonkind seethes within you. You gain a breath weapon. This breath weapon deals 1d6 points of damage of your energy type per 2 oracle levels you have (minimum 1d6; Reflex half ). The shape of the breath weapon is either a 30-foot cone or a 60-foot line, selected when choosing this revelation. You can use this ability once per day at 1st level, plus one additional time at 5th level and one additional time per day for every 5 levels beyond 5th.</value>
   </data>
-  <data name="FlyWingDraconicGreenName_info" xml:space="preserve">
-    <value>Green Dragon</value>
+  <data name="MysteryDragonBreathWeaponLineOfEnergyType_info" xml:space="preserve">
+    <value>Line of {0}</value>
   </data>
-  <data name="FlyWingDraconicRedName_info" xml:space="preserve">
-    <value>Red Dragon</value>
+  <data name="MysteryDragonBreathWeaponName_info" xml:space="preserve">
+    <value>Breath Weapon</value>
   </data>
-  <data name="FlyWingDraconicSilverName_info" xml:space="preserve">
-    <value>Silver Dragon</value>
+  <data name="MysteryDragonDescription2_info" xml:space="preserve">
+    <value>An oracle with the dragon mystery can choose from any of the following revelations:</value>
   </data>
-  <data name="FlyWingDraconicWhiteName_info" xml:space="preserve">
-    <value>White Dragon</value>
+  <data name="MysteryDragonDescription_info" xml:space="preserve">
+    <value>Oracles who draw their power from the mysterious and primal might of dragons are usually solitary folk. They are deep thinkers and often quick of wit, but prideful and equally quick-tempered.
+Upon selecting this mystery, the oracle must select an energy type (acid, cold, electricity, or fire) to be her associated element, which impacts several revelations.</value>
   </data>
-  <data name="OverlandFlightSpellAbilityDescription_info" xml:space="preserve">
-    <value>This spell grants you a pair of wings, increasing your movement speed is increased to 40 feet (30 feet if wearing medium or heavy armor, or if carrying a medium or heavy load). This spell is designed for long-distance movement, and prevents fatigue for the duration of the spell.</value>
+  <data name="MysteryDragonFinalRevelationDescription_info" xml:space="preserve">
+    <value>Upon reaching 20th level, your draconic destiny unfolds. You gain immunity to paralysis, sleep, and damage of your energy type. You count as a dragon for the purposes of spells and magical effects. If you have the breath weapon revelation, you can use your breath weapon an unlimited number of times per day, though no more often than once every 1d4+1 rounds.</value>
   </data>
-  <data name="OverlandFlightSpellAbilityName_info" xml:space="preserve">
-    <value>Overland Flight — {0}</value>
+  <data name="MysteryDragonFormDescription_info" xml:space="preserve">
+    <value>Your kinship with dragonkind allows you to take on the form of a dragon. As a standard action, you can assume the form of a Medium dragon, as per form of the dragon I. At 15th level, you can assume the form of a Large dragon, as per form of the dragon II. At 19th level, you can assume the form of a Huge dragon, as per form of the dragon III. You can use this ability once per day, but the duration is 10 minutes per oracle level. If you are at least 15th level and choose to have this ability function as per form of the dragon I, the duration is instead 1 hour per oracle level.</value>
   </data>
-  <data name="OracleCurseCloudedVisionName_info" xml:space="preserve">
-    <value>Clouded Vision</value>
+  <data name="MysteryDragonFormName_info" xml:space="preserve">
+    <value>Form of the Dragon</value>
   </data>
-  <data name="OracleCurseCloudedVisionDescription_info" xml:space="preserve">
-    <value>Your eyes are obscured, making it difficult for you to see.
-You cannot see anything beyond 20 feet. Targets beyond this range have concealment, and you cannot target any point past that range.</value>
+  <data name="MysteryDragonMagicDescription_info" xml:space="preserve">
+    <value>Your draconic power grants you a limited form of access to arcane magic. Select one spell from the sorcerer/wizard spell list that is 2 levels lower than the highest-level spell you can cast, or two spells that are both at least 3 levels lower. You add them to your spellbook and can cast them as divine spells.</value>
   </data>
-  <data name="OracleCurseCloudedVisionLevel5Description_info" xml:space="preserve">
-    <value>At 5th level, your vision distance increases to 30 feet.</value>
+  <data name="MysteryDragonMagicName_info" xml:space="preserve">
+    <value>Dragon Magic</value>
   </data>
-  <data name="OracleCurseCloudedVisionLevel10Description_info" xml:space="preserve">
-    <value>At 10th level, you gain blindsense out to a range of 30 feet.</value>
+  <data name="MysteryDragonMagicOneSpellSelection_info" xml:space="preserve">
+    <value>Dragon Magic (one spell)</value>
   </data>
-  <data name="OracleCurseCloudedVisionLevel15Description_info" xml:space="preserve">
-    <value>At 15th level, you gain blindsight out to a range of 15 feet.</value>
+  <data name="MysteryDragonMagicTwoSpellSelection_info" xml:space="preserve">
+    <value>Dragon Magic (two spells)</value>
   </data>
-  <data name="OracleCurseBlindsenseName_info" xml:space="preserve">
-    <value>Blindsense</value>
+  <data name="MysteryDragonName_info" xml:space="preserve">
+    <value>Dragon Mystery</value>
   </data>
-  <data name="OracleCurseBlindsightName_info" xml:space="preserve">
-    <value>Blindsight</value>
+  <data name="MysteryDragonPresenceAbilityCheck_info" xml:space="preserve">
+    <value>Will negates</value>
   </data>
-  <data name="CrossBloodlineName_info" xml:space="preserve">
-    <value>{0} (Crossblood)</value>
+  <data name="MysteryDragonPresenceAbilityDuration_info" xml:space="preserve">
+    <value>2d6 rounds</value>
   </data>
-  <data name="CrossbloodedDisplayDescribeChoices_info" xml:space="preserve">
-    <value>
-• {0}: {1}</value>
+  <data name="MysteryDragonPresenceDescription_info" xml:space="preserve">
+    <value>Those who would oppose you must overcome their fear of dragons or be struck with terror at your draconic majesty. As a swift action, you can manifest an aura of draconic might around yourself. Enemies within 30 feet who can see you when you activate this ability must attempt a Will save. Success means that the creature is immune to this ability for the following 24 hours. On a failed save, the opponent is shaken for 2d6 rounds. This is a mind-affecting fear effect. You can use this ability once per day at 1st level, plus one additional time per day at 5th level and for every 5 levels beyond 5th.</value>
   </data>
-  <data name="FlySpellName_info" xml:space="preserve">
-    <value>Fly</value>
+  <data name="MysteryDragonPresenceImmuneForDayDescription_info" xml:space="preserve">
+    <value>A successful save means that you are now immune to this ability for 24 hours.</value>
   </data>
-  <data name="OverlandFlightSpellName_info" xml:space="preserve">
-    <value>Overland Flight</value>
+  <data name="MysteryDragonPresenceImmuneForDayName_info" xml:space="preserve">
+    <value>Immune to Presence of Dragons</value>
   </data>
-  <data name="EldritchHeritageFeatDescription_info" xml:space="preserve">
-    <value>
-• {0}— {1}</value>
+  <data name="MysteryDragonPresenceName_info" xml:space="preserve">
+    <value>Presence of Dragons</value>
   </data>
-  <data name="EldritchHeritagePrerequisitesDescription_info" xml:space="preserve">
-    <value>
-  Bloodline — {0} prerequisites:</value>
+  <data name="MysteryDragonResistancesDescription_info" xml:space="preserve">
+    <value>Like the great dragons, you are not easily harmed by common means of attack. You gain resistance 5 against your chosen energy type and a +1 natural armor bonus. At 9th level, your energy resistance increases to 10 and your natural armor bonus increases to +2. At 15th level, your energy resistance increases to 20 and your natural armor bonus increases to +4.</value>
   </data>
-  <data name="PrerequisiteCasterSpellLevelCaption_info" xml:space="preserve">
-    <value>Can cast {0} spells of level: {1}</value>
+  <data name="MysteryDragonResistancesName_info" xml:space="preserve">
+    <value>Draconic Resistances</value>
   </data>
-  <data name="AdditionalTraitsFeatDescription_info" xml:space="preserve">
-    <value>You have more traits than normal.
-Benefit: You gain two character traits of your choice. These traits must be chosen from different lists, and cannot be chosen from lists from which you have already selected a character trait. You must meet any additional qualifications for the character traits you choose — this feat cannot enable you to select a dwarf character trait if you are an elf, for example.</value>
+  <data name="MysteryDragonRevelationName_info" xml:space="preserve">
+    <value>Dragon Revelation</value>
   </data>
-  <data name="AdditionalTraitsFeatName_info" xml:space="preserve">
-    <value>Additional Traits</value>
+  <data name="MysteryDragonScaledToughnessDescription_info" xml:space="preserve">
+    <value>You can manifest the scaly toughness of dragonkind. Once per day as a swift action, you can harden your skin, giving it a scaly appearance and granting you DR 10/magic. During this time, you are also immune to paralysis and sleep effects. This effect lasts for a number of rounds equal to your oracle level. At 13th level, you can use this ability twice per day.</value>
   </data>
-  <data name="DrawbacksDescription_info" xml:space="preserve">
-    <value>Drawbacks are traits in reverse. Instead of granting you a boon, they grant you a negative effect, typically in particular circumstances. 
-If you choose to take a drawback, you can take a third trait that you have access to. 
-You are not required to take a drawback.(disable in eldrich arcana menu and restart game)</value>
+  <data name="MysteryDragonScaledToughnessName_info" xml:space="preserve">
+    <value>Scaled Toughness</value>
   </data>
-  <data name="Drawbacks_info" xml:space="preserve">
-    <value>Drawbacks</value>
+  <data name="MysteryDragonSensesDescription_info" xml:space="preserve">
+    <value>Your senses take on a keen draconic edge. You gain a +2 bonus on Perception checks. At 5th level this bonus increases to +4. At 11th level, you gain blindsense with a range of 30 feet. At the 15th level, your blindsense range increases to 60 feet.</value>
   </data>
-  <data name="SkipSelectionDescription_info" xml:space="preserve">
-    <value>Skip this selection.</value>
+  <data name="MysteryDragonSensesName_info" xml:space="preserve">
+    <value>Dragon Senses</value>
   </data>
-  <data name="SkipSelection_info" xml:space="preserve">
-    <value>(Skip)</value>
+  <data name="MysteryDragonTailSwipeDescription_info" xml:space="preserve">
+    <value>You express your wrath through sweeps of a wicked tail. You can grow a scaly tail. This tail improves your balance, allowing you to make one additional attack of opportunity each round with your weapon.</value>
   </data>
-  <data name="TraitsSelectionDescription_info" xml:space="preserve">
-    <value>Character traits are abilities that are not tied to your character’s race or class. They can enhance your character’s skills, racial abilities, class abilities, or other statistics, enabling you to further customize them. At its core, a character trait is approximately equal in power to half a feat, so two character traits are roughly equivalent to a bonus feat. Yet a character trait isn’t just another kind of power you can add on to your character—it’s a way to quantify (and encourage) building a character background that fits into your campaign world. Think of character traits as “story seeds” for your background; after you pick your two traits, you’ll have a point of inspiration from which to build your character’s personality and history. Alternatively, if you’ve already got a background in your head or written down for your character, you can view picking their traits as a way to quantify that background, just as picking race and class and ability scores quantifies their other strengths and weaknesses.</value>
+  <data name="MysteryDragonTailSwipeName_info" xml:space="preserve">
+    <value>Tail Swipe</value>
   </data>
-  <data name="CustomTraitDescription_info" xml:space="preserve">
-    <value>These traits are a little overpowered and are here just for fun, if you want to play fair don't pick em.</value>
+  <data name="MysteryDragonTalonsDescription_info" xml:space="preserve">
+    <value>You fight with the fearsome talons of dragonkind. You can grow claws as a free action. These claws are treated as natural weapons, allowing you to perform two claw attacks as a full attack action using your full base attack bonus. Each of these attacks deals an amount of slashing damage equal to 1d4 (1d3 if you are Small) + your Strength modifier. At 5th level, these claws are considered magic weapons for the purpose of overcoming DR. At 7th level, the damage die increases by 1 step, to deal an amount of slashing damage equal to 1d6 (1d4 if you are Small) + your Strength modifier. At 11th level, these claws deal an additional 1d6 points of damage of your chosen energy type on a successful hit. You can use your claws for a number of rounds per day equal to 3 + your Charisma modifier. These rounds do not need to be consecutive.</value>
   </data>
-  <data name="CustomTraitName_info" xml:space="preserve">
-    <value>Custom Trait{cheat}</value>
+  <data name="MysteryDragonTalonsName_info" xml:space="preserve">
+    <value>Talons of the Dragon</value>
   </data>
-  <data name="GoBackDescription_info" xml:space="preserve">
-    <value>Select this to go back to the previous selection, allowing you to pick something else.</value>
+  <data name="MysteryDragonWingsDescription_info" xml:space="preserve">
+    <value>Like the great dragons, you can take to the skies and terrorize opponents from above. As a swift action, you can manifest leathery dragon wings that grant you a fly speed of 60 feet. You can use these wings for 1 minute per day for each oracle level you have. This duration does not need to be consecutive, but it must be spent in 1-minute increments. At 11th level you can use these wings for 10 minutes per day for each oracle level you have. At 15th level, you can use the wings indefinitely.</value>
   </data>
-  <data name="GoBackName_info" xml:space="preserve">
-    <value>(Go back)</value>
+  <data name="MysteryDragonWingsName_info" xml:space="preserve">
+    <value>Wings of the Dragon</value>
+  </data>
+  <data name="MysteryFlameBreathDescription_info" xml:space="preserve">
+    <value>As a standard action, you can unleash a 15-foot cone of flame from your mouth. This flame deals 1d4 points of fire damage per level. A Reflex save halves this damage. You can use this ability once per day, plus one additional time per day at 5th level and every five levels thereafter. The save DC is Charisma-based.</value>
+  </data>
+  <data name="MysteryFlameBreathName_info" xml:space="preserve">
+    <value>Fire Breath</value>
+  </data>
+  <data name="MysteryFlameBurningMagicDescription_info" xml:space="preserve">
+    <value>Whenever a creature fails a saving throw and takes fire damage from one of your spells, it catches on fire. This fire deals 1 point of fire damage per spell level at the beginning of the burning creature’s turn. The fire lasts for 1d4 rounds, but it can be extinguished as a move action if the creature succeeds at a Reflex save (using the spell’s DC). Dousing the creature with water as a standard action grants a +2 bonus on this save, while immersing the creature in water automatically extinguishes the fire. Spells that do not grant a save do not cause a creature to catch on fire.</value>
+  </data>
+  <data name="MysteryFlameBurningMagicName_info" xml:space="preserve">
+    <value>Burning Magic</value>
+  </data>
+  <data name="MysteryFlameCinderDanceDescription_info" xml:space="preserve">
+    <value>Your base speed increases by 10 feet. At 10th level, you can ignore difficult terrain when moving. Oracles with the lame oracle curse cannot select this revelation.</value>
+  </data>
+  <data name="MysteryFlameCinderDanceName_info" xml:space="preserve">
+    <value>Cinder Dance</value>
+  </data>
+  <data name="MysteryFlameDescription_info" xml:space="preserve">
+    <value>Class skills: {0}, {1}
+An oracle with the flame mystery can choose from any of the following revelations:</value>
+  </data>
+  <data name="MysteryFlameFinalRevelationDescription_info" xml:space="preserve">
+    <value>Upon reaching 20th level, you become a master of fire. You can apply any one of the following feats to any fire spell you cast without increasing the level or casting time: Extend Spell, Intensified Spell, or Reach Spell. You do not need to possess these feats to use this ability.</value>
+  </data>
+  <data name="MysteryFlameFinalRevelationExtendSpellName_info" xml:space="preserve">
+    <value>Extend Spell (Fire)</value>
+  </data>
+  <data name="MysteryFlameFinalRevelationIntensifiedSpellName_info" xml:space="preserve">
+    <value>Intensified Spell (Fire)</value>
+  </data>
+  <data name="MysteryFlameFinalRevelationReachSpellName_info" xml:space="preserve">
+    <value>Reach Spell (Fire)</value>
+  </data>
+  <data name="MysteryFlameFirestormDescription_info" xml:space="preserve">
+    <value>As a standard action, you can cause fire to erupt around you. You can create one 10-foot cube of fire per oracle level. These cubes can be arranged in any pattern you desire, but each cube must be adjacent to another and one must be adjacent to you. Any creature caught in these flames takes 1d6 points of fire damage per oracle level, with a Reflex save resulting in half damage. This fire lasts for a number of rounds equal to your Charisma modifier. You can use this ability once per day. You must be at least 11th level to select this revelation.</value>
+  </data>
+  <data name="MysteryFlameFirestormName_info" xml:space="preserve">
+    <value>Firestorm</value>
+  </data>
+  <data name="MysteryFlameFormDescription_info" xml:space="preserve">
+    <value>As a standard action, you can assume the form of a small fire elemental, as Elemental Body I. At 9th level, you can assume the form of a medium fire elemental, as Elemental Body II. At 11th level, you can assume the form of a large fire elemental, as Elemental Body III. At 13th level, you can assume the form of a huge fire elemental, as Elemental Body IV. You can use this ability once per day, but the duration is 1 hour/level. You must be at least 7th level to select this revelation."</value>
+  </data>
+  <data name="MysteryFlameFormName_info" xml:space="preserve">
+    <value>Form of the Flame</value>
+  </data>
+  <data name="MysteryFlameHeatAuraDescription_info" xml:space="preserve">
+    <value>As a swift action, you can cause waves of heat to radiate from your body. This heat deals 1d4 points of fire damage per two oracle levels (minimum 1d4) to all creatures within 10 feet. A Reflex save halves the damage. In addition, your form wavers and blurs, granting you 20% concealment until your next turn. You can use this ability once per day, plus one additional time per day at 5th level and every five levels thereafter.</value>
+  </data>
+  <data name="MysteryFlameHeatAuraName_info" xml:space="preserve">
+    <value>Heat Aura</value>
+  </data>
+  <data name="MysteryFlameName_info" xml:space="preserve">
+    <value>Flame Mystery</value>
+  </data>
+  <data name="MysteryFlameRevelationName_info" xml:space="preserve">
+    <value>Flame Revelation</value>
+  </data>
+  <data name="MysteryFlamesMoltenSkinDescription_info" xml:space="preserve">
+    <value>You gain resist fire 5. This resistance increases to 10 at 5th level and 20 at 11th level. At 17th level, you gain immunity to fire.</value>
+  </data>
+  <data name="MysteryFlamesMoltenSkinName_info" xml:space="preserve">
+    <value>Molten Skin</value>
+  </data>
+  <data name="MysteryFlameTouchDescription_info" xml:space="preserve">
+    <value>As a standard action, you can perform a melee touch attack that deals 1d6 points of fire damage +1 point for every two oracle levels you possess. You can use this ability a number of times per day equal to 3 + your Charisma modifier.
+At 11th level, any weapon that you wield is treated as a flaming weapon.</value>
+  </data>
+  <data name="MysteryFlameTouchName_info" xml:space="preserve">
+    <value>Touch of Flame</value>
+  </data>
+  <data name="MysteryFlameTouchWeaponName_info" xml:space="preserve">
+    <value>{0} — Flaming Weapon</value>
+  </data>
+  <data name="MysteryFlameWingsDescription_info" xml:space="preserve">
+    <value>As a swift action, you can manifest a pair of fiery wings that grant you a fly speed of 60 feet with average maneuverability. You can use these wings for 1 minute per day per oracle level. This duration does not need to be consecutive, but it must be spent in 1 minute increments. You must be at least 7th level before selecting this revelation.</value>
+  </data>
+  <data name="MysteryFlameWingsName_info" xml:space="preserve">
+    <value>Wings of Fire</value>
+  </data>
+  <data name="MysteryHeavensDescription2_info" xml:space="preserve">
+    <value>An oracle with the heavens mystery can choose from any of the following revelations:</value>
+  </data>
+  <data name="MysteryHeavensDescription_info" xml:space="preserve">
+    <value>Oracles who drawn to the night sky learn spells and revelations that draw power from the heavens: the many colors of starlight, the moon, or the empty void of space.
+Class skills: {0}, {1}</value>
+  </data>
+  <data name="MysteryHeavensName_info" xml:space="preserve">
+    <value>Heavens Mystery</value>
+  </data>
+  <data name="MysteryTimeDescription_info" xml:space="preserve">
+    <value>Class skills: {0}, {1}
+An oracle with the time mystery can choose from any of the following revelations:</value>
+  </data>
+  <data name="MysteryTimeName_info" xml:space="preserve">
+    <value>Time Mystery</value>
+  </data>
+  <data name="NewMetamagicNamesDazing_info" xml:space="preserve">
+    <value>Dazing </value>
+  </data>
+  <data name="NewMetamagicNamesElementalForcePrefix_info" xml:space="preserve">
+    <value>Force</value>
+  </data>
+  <data name="NewMetamagicNamesElemental_info" xml:space="preserve">
+    <value> Elemental </value>
+  </data>
+  <data name="NewMetamagicNamesIntensified_info" xml:space="preserve">
+    <value>Intensified </value>
+  </data>
+  <data name="NewMetamagicNamesPersistent_info" xml:space="preserve">
+    <value>Persistent </value>
+  </data>
+  <data name="NewMetamagicNamesRime_info" xml:space="preserve">
+    <value>Rime </value>
+  </data>
+  <data name="NewMetamagicNamesSelectvie_info" xml:space="preserve">
+    <value>Selectvie </value>
+  </data>
+  <data name="NewMetamagicNamesToppling_info" xml:space="preserve">
+    <value>Toppling </value>
+  </data>
+  <data name="OppositionResearchFeatureDescription_info" xml:space="preserve">
+    <value>Select one Wizard opposition school; preparing spells of this school now only requires one spell slot of the appropriate level instead of two, and you no longer have the –4 Spellcraft penalty for crafting items from that school.</value>
+  </data>
+  <data name="OppositionResearchFeatureName_info" xml:space="preserve">
+    <value>Opposition Research</value>
+  </data>
+  <data name="OracleCombatHealerDescription_info" xml:space="preserve">
+    <value>Whenever you cast a cure spell (a spell with “cure” in its name), you can cast it as a swift action, as if using the Quicken Spell feat, by expending two spell slots. This does not increase the level of the spell. You can use this ability once per day at 7th level and one additional time per day for every four levels beyond 7th.</value>
+  </data>
+  <data name="OracleCombatHealerName_info" xml:space="preserve">
+    <value>Combat Healer</value>
+  </data>
+  <data name="OracleCureOrInflictSpellFeatureDescription_info" xml:space="preserve">
+    <value>In addition to the spells gained by oracles as they gain levels, each oracle also adds all of either the cure spells or the inflict spells to her list of spells known (cure spells include all spells with "cure" in the name, inflict spells include all spells with "inflict" in the name). These spells are added as soon as the oracle is capable of casting them. This choice is made when the oracle gains her first level and cannot be changed.</value>
+  </data>
+  <data name="OracleCureOrInflictSpellFeatureName_info" xml:space="preserve">
+    <value>Cure or Inflict Spells</value>
+  </data>
+  <data name="OracleCureSpellProgressionName_info" xml:space="preserve">
+    <value>Cure Spells</value>
   </data>
   <data name="OracleCurseBlackenedDescription_info" xml:space="preserve">
     <value>Your hands and forearms are shriveled and blackened, as if you had plunged your arms into a blazing fire, and your thin, papery skin is sensitive to the touch.
@@ -1395,6 +1269,28 @@ You take a –4 penalty on weapon attack rolls, but you add burning hands to you
   </data>
   <data name="OracleCurseBlackenedName_info" xml:space="preserve">
     <value>Blackened</value>
+  </data>
+  <data name="OracleCurseBlindsenseName_info" xml:space="preserve">
+    <value>Blindsense</value>
+  </data>
+  <data name="OracleCurseBlindsightName_info" xml:space="preserve">
+    <value>Blindsight</value>
+  </data>
+  <data name="OracleCurseCloudedVisionDescription_info" xml:space="preserve">
+    <value>Your eyes are obscured, making it difficult for you to see.
+You cannot see anything beyond 20 feet. Targets beyond this range have concealment, and you cannot target any point past that range.</value>
+  </data>
+  <data name="OracleCurseCloudedVisionLevel10Description_info" xml:space="preserve">
+    <value>At 10th level, you gain blindsense out to a range of 30 feet.</value>
+  </data>
+  <data name="OracleCurseCloudedVisionLevel15Description_info" xml:space="preserve">
+    <value>At 15th level, you gain blindsight out to a range of 15 feet.</value>
+  </data>
+  <data name="OracleCurseCloudedVisionLevel5Description_info" xml:space="preserve">
+    <value>At 5th level, your vision distance increases to 30 feet.</value>
+  </data>
+  <data name="OracleCurseCloudedVisionName_info" xml:space="preserve">
+    <value>Clouded Vision</value>
   </data>
   <data name="OracleCurseCovetousDescription_info" xml:space="preserve">
     <value>You find yourself drawn to the luster of wealthy living.
@@ -1465,6 +1361,12 @@ Add {0} to your list of spells known.</value>
   <data name="OracleCurseLameName_info" xml:space="preserve">
     <value>Lame</value>
   </data>
+  <data name="OracleCurseSelectionDescription_info" xml:space="preserve">
+    <value>Each oracle is cursed, but this curse comes with a benefit as well as a hindrance.This choice is made at 1st level, and once made, it cannot be changed.The oracle’s curse cannot be removed or dispelled without the aid of a deity.An oracle’s curse is based on her oracle level plus one for every two levels or Hit Dice other than oracle.Each oracle must choose one of the following curses.</value>
+  </data>
+  <data name="OracleCurseSelectionName_info" xml:space="preserve">
+    <value>Curse</value>
+  </data>
   <data name="OracleCurseTonguesDescription_info" xml:space="preserve">
     <value>In times of stress or unease, you speak in tongues.
 Pick one of the following languages: Abyssal, Aklo, Aquan, Auran, Celestial, Ignan, Infernal, or Terran.
@@ -1519,11 +1421,323 @@ You take a –4 penalty on Charisma-based skill checks, except for Intimidate. Y
   <data name="OracleCurseWastingName_info" xml:space="preserve">
     <value>Wasting</value>
   </data>
+  <data name="OracleHas3SkillPoints_info" xml:space="preserve">
+    <value>Give Oracle class 3+int skill points on level up (instead of 4, due to condensed skills)</value>
+  </data>
+  <data name="OracleInflictSpellProgressionName_info" xml:space="preserve">
+    <value>Inflict Spells</value>
+  </data>
+  <data name="OracleLocalizedDescription_info" xml:space="preserve">
+    <value>Although the gods work through many agents, perhaps none is more mysterious than the oracle. These divine vessels are granted power without their choice, selected by providence to wield powers that even they do not fully understand. Unlike a cleric, who draws her magic through devotion to a deity, oracles garner strength and power from many sources, namely those patron deities who support their ideals. Instead of worshiping a single source, oracles tend to venerate all of the gods that share their beliefs. While some see the powers of the oracle as a gift, others view them as a curse, changing the life of the chosen in unforeseen ways.
+Role: Oracles do not usually associate with any one church or temple, instead preferring to strike out on their own, or with a small group of like-minded individuals. Oracles typically use their spells and revelations to further their understanding of their mystery, be it through fighting mighty battles or tending to the poor and sick.</value>
+  </data>
+  <data name="OracleLocalizedName_info" xml:space="preserve">
+    <value>Oracle</value>
+  </data>
+  <data name="OracleMysteryFeatureDescription_info" xml:space="preserve">
+    <value>Each oracle draws upon a divine mystery to grant her spells and powers. This mystery also grants additional class skills and other special abilities. This mystery can represent a devotion to one ideal, prayers to deities that support the concept, or a natural calling to champion a cause. For example, an oracle with the waves mystery might have been born at sea and found a natural calling to worship the gods of the oceans, rivers, and lakes, be they benign or malevolent. Regardless of its source, the mystery manifests in a number of ways as the oracle gains levels. An oracle must pick one mystery upon taking her first level of oracle. Once made, this choice cannot be changed.
+At 2nd level, and every two levels thereafter, an oracle learns an additional spell derived from her mystery. These spells are in addition to the number of chosen known spells. They cannot be exchanged for different spells at higher levels.</value>
+  </data>
+  <data name="OracleMysteryFeatureName_info" xml:space="preserve">
+    <value>Mystery</value>
+  </data>
+  <data name="OracleOrisonsFeatureDescription_info" xml:space="preserve">
+    <value>Oracles learn a number of orisons, or 0-level spells. These spells are cast like any other spell, but they do not consume any slots and may be used again.</value>
+  </data>
+  <data name="OracleProficienciesFeatureDescription_info" xml:space="preserve">
+    <value>Oracles are proficient with all simple weapons, light armor, medium armor, and shields (except tower shields). Some oracle revelations grant additional proficiencies.</value>
+  </data>
+  <data name="OracleProficienciesFeatureName_info" xml:space="preserve">
+    <value>Oracle Proficiencies</value>
+  </data>
+  <data name="OracleRevelationFeatureDescription_info" xml:space="preserve">
+    <value>At 1st level, 3rd level, and every four levels thereafter (7th, 11th, and so on), an oracle uncovers a new secret about her mystery that grants her powers and abilities. The oracle must select a revelation from the list of revelations available to her mystery (see FAQ at right). If a revelation is chosen at a later level, the oracle gains all of the abilities and bonuses granted by that revelation based on her current level. Unless otherwise noted, activating the power of a revelation is a standard action.
+Unless otherwise noted, the DC to save against these revelations is equal to 10 + 1 / 2 the oracle’s level + the oracle’s Charisma modifier.</value>
+  </data>
+  <data name="OracleRevelationFeatureName_info" xml:space="preserve">
+    <value>Revelation</value>
+  </data>
+  <data name="OrcBloodlineFeatureDescription_info" xml:space="preserve">
+    <value>The rage of your ancestors burns within you, and the taint of savage orc blood flows through your veins. Your anger is never far from the surface, giving you strength and driving you to seek greater power.
+Bonus Feats of the Orc Bloodline: Diehard, Endurance, Great Fortitude, Intimidating Prowess, Improved Bull Rush, Power Attack, Toughness, Reach Spell.</value>
+  </data>
+  <data name="OrcBloodlineFeatureName_info" xml:space="preserve">
+    <value>Orc Bloodline</value>
+  </data>
+  <data name="OrClassSkillName_info" xml:space="preserve">
+    <value> or {0}</value>
+  </data>
+  <data name="OverlandFlightSpellAbilityDescription_info" xml:space="preserve">
+    <value>This spell grants you a pair of wings, increasing your movement speed is increased to 40 feet (30 feet if wearing medium or heavy armor, or if carrying a medium or heavy load). This spell is designed for long-distance movement, and prevents fatigue for the duration of the spell.</value>
+  </data>
+  <data name="OverlandFlightSpellAbilityName_info" xml:space="preserve">
+    <value>Overland Flight — {0}</value>
+  </data>
+  <data name="OverlandFlightSpellName_info" xml:space="preserve">
+    <value>Overland Flight</value>
+  </data>
+  <data name="PrerequisiteCasterSpellLevelCaption_info" xml:space="preserve">
+    <value>Can cast {0} spells of level: {1}</value>
+  </data>
+  <data name="PrerequisiteCharacterLevelEquals_info" xml:space="preserve">
+    <value>{0} equals: {1}</value>
+  </data>
+  <data name="PrestigiousSpellcasterFeatureDescription_info" xml:space="preserve">
+    <value>The transition into a spellcasting prestige class is less difficult for you, and because of this, you gain 1 additional effective spellcaster level from your prestige class levels.</value>
+  </data>
+  <data name="PrestigiousSpellcasterFeatureName_error" xml:space="preserve">
+    <value>Prestigious Spellcaster, spell replacement for spontaneous casters</value>
+  </data>
+  <data name="PrestigiousSpellcasterFeatureName_info" xml:space="preserve">
+    <value>Prestigious Spellcaster</value>
+  </data>
+  <data name="RelaxAncientLorekeeper_info" xml:space="preserve">
+    <value>Any race can choose the Oracle Ancient Lorekeeper archetype</value>
+  </data>
+  <data name="RelaxTonguesCurse_info" xml:space="preserve">
+    <value>Disable Tongues curse penalty (that party members need 1 rank Knowledge: World to be controlled by PC in combat)</value>
+  </data>
+  <data name="ReplacementFeatureDescription_info" xml:space="preserve">
+    <value>Upon reaching {0}th level, and at every {1} {2} level after that ({3}th, {4}th, and so on), a {5} can choose to learn a new spell in place of one they already know. In effect, the {6} loses the old spell in exchange for the new one. The new spell's level must be the same as that of the spell being exchanged. A {7} may swap only a single spell at any given level, and must choose whether or not to swap the spell at the same time that they gain new spells known for the level.</value>
+  </data>
+  <data name="ReplacementFeatureName_info" xml:space="preserve">
+    <value>Replace Spell ({0})</value>
+  </data>
+  <data name="ResultFailLog_info" xml:space="preserve">
+    <value>Result: failure.</value>
+  </data>
+  <data name="ResultSuccessLog_info" xml:space="preserve">
+    <value>Result: success.</value>
+  </data>
+  <data name="ResurrectionSpellDescription_info" xml:space="preserve">
+    <value>This spell functions like raise dead, except that you can resurrect a creature that has been dead for as long as 10 years per caster level.This spell can even bring back creatures whose bodies have been destroyed, provided that you unambiguously identify the deceased in some fashion(reciting the deceased's time and place of birth or death is the most common method).Upon completion of the spell, the creature is immediately restored to full hit points, vigor, and health, with no negative levels(or loss of * Constitution points) and all of the prepared spells possessed by the creature when it died.You can revive someone killed by a death effect or someone who has been turned into an undead creature and then destroyed.This spell can also resurrect elementals or outsiders, but it can't resurrect constructs or undead creatures.Even true resurrection can't restore to life a creature who has died of old age.
+Benefit over Ressurection: this is a free action.</value>
+  </data>
+  <data name="RollWithItFeatureDescription_info" xml:space="preserve">
+    <value>You know how to take a hit, even if your reaction sends you bouncing and flying out of battle while shrieking at the top of your lungs.
+Benefit: If you are struck by a melee weapon you can try to convert some of that damage into a movement correction. That way you reduce damage by 13 points.</value>
+  </data>
+  <data name="RollWithItFeatureName_info" xml:space="preserve">
+    <value>Roll with it</value>
+  </data>
+  <data name="SafeCuringFeatureDescription_info" xml:space="preserve">
+    <value>Whenever you cast a spell that cures the target of hit point damage, you do not provoke attacks of opportunity for spellcasting.</value>
+  </data>
+  <data name="SafeCuringFeatureName_info" xml:space="preserve">
+    <value>Safe Curing</value>
+  </data>
+  <data name="ScionExtraArcanaFeatureName_info" xml:space="preserve">
+    <value>Extra Arcana ({0})</value>
+  </data>
+  <data name="SeekerDescription_info" xml:space="preserve">
+    <value>Oracles gain their magical powers through strange and mysterious ways, be they chosen by fate or blood. While most might be content with their strange powers, some oracles join the Pathfinders specifically to find out more about their mysteries and determine the genesis and history of their eldritch talents. These spellcasters are known among the Spells as seekers, after their obsession with researching ancient texts and obscure ruins for any clues they can find about their heritage and histories.</value>
+  </data>
+  <data name="SeekerLoreDescription_info" xml:space="preserve">
+    <value>By 3rd level, a seeker has already learned much about their mystery, and is more comfortable using the bonus spells gained by that mystery. They gain a +4 bonus on all concentration checks, on caster level checks made to overcome spell resistance with their bonus spells.
+This ability replaces the revelation gained at 3rd level.</value>
+  </data>
+  <data name="SeekerLoreName_info" xml:space="preserve">
+    <value>Seeker Lore</value>
+  </data>
+  <data name="SeekerMagicName_info" xml:space="preserve">
+    <value>Seeker Magic</value>
+  </data>
+  <data name="SeekerMagic_Description_info" xml:space="preserve">
+    <value>At 15th level, a seeker becomes skilled at modifying their mystery spells with metamagic. When a seeker applies a metamagic feat to any bonus spells granted by their mystery, they reduce the metamagic feat’s spell level adjustment by 1. Thus, applying a Metamagic feat like Extend Spell to a spell does not change its effective spell level at all, while applying Quicken Spell only increases the spell’s effective spell level by 3 instead of by 4. This reduction to the spell level adjustment for Metamagic feats does not stack with similar reductions from other abilities
+This ability replaces the revelation gained at 15th level.</value>
+  </data>
+  <data name="SeekerName_info" xml:space="preserve">
+    <value>Seeker</value>
+  </data>
+  <data name="SeekerTinkeringDescription_info" xml:space="preserve">
+    <value>Seekers often look to ancient devices, old tomes, and strange magical items in order to learn more about their oracle mysteries. As a result of this curiosity and thanks to an innate knack at deciphering the strange and weird, a seeker adds half their oracle level on Perception checks made to locate traps (minimum +1). If the seeker also possesses levels in rogue or another class that provides the trapfinding ability, those levels stack with their oracle levels for determining their overall bonus on these skill checks.
+This ability replaces all of the bonus class skills they would otherwise normally gain from their mystery.</value>
+  </data>
+  <data name="SeekerTinkeringName_info" xml:space="preserve">
+    <value>Tinkering</value>
+  </data>
+  <data name="ShowCustomPortraits_info" xml:space="preserve">
+    <value>Show custom portraits in the portrait list at character creation (if changed, requires restart)</value>
+  </data>
+  <data name="SingleLineDescription_info" xml:space="preserve">
+    <value>• {0}</value>
+  </data>
+  <data name="SkillBonusProgressionDescription_info" xml:space="preserve">
+    <value>{0}
+You gain a +2 bonus on checks using the skill you chose from that prestige class's class skills. If you have 10 or more ranks in one of these skills, the bonus increases to +4 for that skill. This bonus stacks with the bonus granted by Skill Focus, but does not stack with a bonus granted by any other feat (such as Magical Aptitude or Persuasive).</value>
+  </data>
+  <data name="SkipDeityFeatureDescription_info" xml:space="preserve">
+    <value>Choose this to skip selecting a deity at character creation. You may select one later if you gain a level in a class that requires it (such as Cleric, Inquisitor, or Paladin).</value>
+  </data>
+  <data name="SkipDeityFeatureName_info" xml:space="preserve">
+    <value>Skip Deity</value>
+  </data>
+  <data name="SkipSelectionDescription_info" xml:space="preserve">
+    <value>Skip this selection.</value>
+  </data>
+  <data name="SkipSelection_info" xml:space="preserve">
+    <value>(Skip)</value>
+  </data>
+  <data name="SpellBlendingFeatureDescription_info" xml:space="preserve">
+    <value>When a magus selects this arcana, they must select one spell from the wizard spell list that is of a magus spell level they can cast. They adds this spell to their spellbook and list of magus spells known as a magus spell of its wizard spell level. They can instead select two spells to add in this way, but both must be at least one level lower than the highest-level magus spell they can cast.
+Special: A magus can select this magus arcana more than once.</value>
+  </data>
+  <data name="SpellBlendingFeatureName_info" xml:space="preserve">
+    <value>Spell Blending</value>
+  </data>
+  <data name="SpellBlendingFeatureOneSpellSelection_info" xml:space="preserve">
+    <value>{0} (one spell)</value>
+  </data>
+  <data name="SpellBlendingFeatureTwoSpellProgression_info" xml:space="preserve">
+    <value>{0} (two spells)</value>
+  </data>
+  <data name="SpellPerfectionFeatureDescription_info" xml:space="preserve">
+    <value>Pick one spell which you have the ability to cast. Whenever you cast that spell you may apply any one metamagic feat you have to that spell without affecting its level or casting time, as long as the total modified level of the spell does not use a spell slot above 9th level. In addition, if you have other feats which allow you to apply a set numerical bonus to any aspect of this spell (such as Spell Focus, Spell Penetration, Weapon Focus [ray], and so on), double the bonus granted by that feat when applied to this spell.</value>
+  </data>
+  <data name="SpellPerfectionFeatureName_info" xml:space="preserve">
+    <value>Spell Perfection</value>
+  </data>
+  <data name="SpellVulnerabilityFeatureDescription_info" xml:space="preserve">
+    <value>You have {0} on saves vs {1} and elemental weakness {2}.</value>
+  </data>
+  <data name="SpellVulnerabilityFeatureName_info" xml:space="preserve">
+    <value>Spell Vulnerability ({0})</value>
+  </data>
+  <data name="SpiritBoostFeatureDescription_info" xml:space="preserve">
+    <value>Whenever your healing spells heal a target up to its maximum hit points, any excess points persist for 1 round per level as temporary hit points (up to a maximum number of temporary hit points equal to your oracle level).</value>
+  </data>
+  <data name="SpiritBoostFeatureName_info" xml:space="preserve">
+    <value>Spirit Boost</value>
+  </data>
+  <data name="SpiritualWeaponAbilityDescription_info" xml:space="preserve">
+    <value>A weapon made of force appears and attacks foes at a distance, as you direct it, dealing 1d8 force damage per hit, +1 point per three caster levels (maximum +5 at 15th level). 
+The weapon takes the shape of a weapon favored by your deity or a weapon with some spiritual significance or symbolism to you (see below) and has the same threat range and critical multipliers as a real weapon of its form. 
+It strikes the opponent you designate, starting with one attack in the round the spell is cast and continuing each round thereafter on your turn. 
+It uses your base attack bonus (possibly allowing it multiple attacks per round in subsequent rounds) plus your Wisdom modifier (or primary casting ability, if cast as a spell) as its attack bonus. 
+It strikes as a spell, not as a weapon, so for example, it can damage creatures that have damage reduction. 
+As a force effect, it can strike incorporeal creatures without the reduction in damage associated with incorporeality. 
+The weapon always strikes from your direction. It does not get a flanking bonus or help a combatant get one. Your feats or combat actions do not affect the weapon. 
+Each round after the first, the weapon continues to attack the previous round’s target. If the target dies, it will attack the next nearest enemy, if any. On any round that the weapon switches targets, it gets one attack. Subsequent rounds of attacking allow the weapon to make multiple attacks if your base attack bonus would allow it to.
+A spiritual weapon cannot be attacked or harmed by physical attacks, but dispel magic, disintegrate, a sphere of annihilation, or a rod of cancellation affects it.
+If an attacked creature has Spell Resistance, you make a caster level check (1d20 + caster level) against that Spell Resistance the first time the spiritual weapon strikes it. If the weapon is successfully resisted, the spell is dispelled. If not, the weapon has its normal full effect on that creature for the duration of the spell.
+The weapon that you get is often a force replica of your deity’s own personal weapon. A cleric without a deity gets a weapon based on their alignment. A neutral cleric without a deity can create a spiritual weapon of any alignment, provided they are acting at least generally in accord with that alignment at the time. The weapons associated with each alignment are as follows: chaos (battleaxe), evil (light flail), good (warhammer), law (longsword).</value>
+  </data>
+  <data name="SpiritualWeaponAbilityName_info" xml:space="preserve">
+    <value>Spiritual Weapon</value>
+  </data>
+  <data name="SpritualWeaponSpells_info" xml:space="preserve">
+    <value>Spiritual Weapon</value>
+  </data>
+  <data name="SquirrelSpellDescription_info" xml:space="preserve">
+    <value>You summon a swarm of Squirrels, which attacks all other creatures within its area. (You may summon the swarm so that it shares the area of other creatures.) If no living creatures are within its area, the swarm attacks or pursues the nearest creature as best it can. The caster has no control over its target or direction of travel.</value>
+  </data>
+  <data name="SquirrelSpellName_info" xml:space="preserve">
+    <value>Summon Swarm Squirrels</value>
+  </data>
+  <data name="SummonWildhuntSpells_info" xml:space="preserve">
+    <value>Wild Hunt</value>
+  </data>
+  <data name="testedGameVersion_warning" xml:space="preserve">
+    <value>&lt;b&gt;This mod was tested against game version {0}, but you are running {1}.&lt;/b&gt;</value>
+  </data>
+  <data name="TimeStopAbilityDuration_info" xml:space="preserve">
+    <value>1d4+1 rounds (apparent time)</value>
+  </data>
+  <data name="TimeStopBuffDescription_info" xml:space="preserve">
+    <value>This spell seems to make time cease to flow for everyone but you. In fact, you speed up so greatly that all other creatures seem frozen, though they are actually still moving at their normal speeds. You are free to act for 1d4+1 rounds of apparent time. Normal and magical fire, cold, gas, and the like can still harm you. While the time stop is in effect, other creatures are invulnerable to your attacks and spells; you cannot target such creatures with any attack or spell. A spell that affects an area and has a duration longer than the remaining duration of the time stop have their normal effects on other creatures once the time stop ends. Most spellcasters use the additional time to improve their defenses, summon allies, or flee from combat.
+You cannot move or harm items held, carried, or worn by a creature stuck in normal time, but you can affect any item that is not in another creature’s possession.
+You are undetectable while time stop lasts. You cannot enter an area protected by an antimagic field while under the effect of time stop.</value>
+  </data>
+  <data name="TimeStopFreezeBuffDescription_info" xml:space="preserve">
+    <value>Time stop is active for another unit, freezing apparent time for them.</value>
+  </data>
+  <data name="TimeStopFreezeBuffName_info" xml:space="preserve">
+    <value>Frozen in Time</value>
+  </data>
+  <data name="TimeStopSpells_info" xml:space="preserve">
+    <value>Time Stop</value>
+  </data>
   <data name="TraitsAddStatBonusDescription_info" xml:space="preserve">
     <value>{0}
 Benefits: You gain a +1 trait bonus on {1} checks, and {2} is always a class skill for you.</value>
   </data>
   <data name="TraitsFillSpellSelection_info" xml:space="preserve">
     <value>{0} (Spell Level {1})</value>
+  </data>
+  <data name="TraitsSelectionDescription_info" xml:space="preserve">
+    <value>Character traits are abilities that are not tied to your character’s race or class. They can enhance your character’s skills, racial abilities, class abilities, or other statistics, enabling you to further customize them. At its core, a character trait is approximately equal in power to half a feat, so two character traits are roughly equivalent to a bonus feat. Yet a character trait isn’t just another kind of power you can add on to your character—it’s a way to quantify (and encourage) building a character background that fits into your campaign world. Think of character traits as “story seeds” for your background; after you pick your two traits, you’ll have a point of inspiration from which to build your character’s personality and history. Alternatively, if you’ve already got a background in your head or written down for your character, you can view picking their traits as a way to quantify that background, just as picking race and class and ability scores quantifies their other strengths and weaknesses.</value>
+  </data>
+  <data name="TrueResurrectionSpells_info" xml:space="preserve">
+    <value>True resurrection</value>
+  </data>
+  <data name="TypeHyphenSubtype_info" xml:space="preserve">
+    <value>{0} — {1}</value>
+  </data>
+  <data name="WallOfFireAbilityDescription_info" xml:space="preserve">
+    <value>An immobile, blazing curtain of shimmering violet fire springs into existence. One side of the wall, selected by you, sends forth waves of heat, dealing 2d4 points of fire damage to creatures within 10 feet and 1d4 points of fire damage to those past 10 feet but within 20 feet. The wall deals this damage when it appears, and to all creatures in the area on your turn each round. In addition, the wall deals 2d6 points of fire damage + 1 point of fire damage per caster level (maximum +20) to any creature passing through it. The wall deals double damage to undead creatures.
+If you evoke the wall so that it appears where creatures are, each creature takes damage as if passing through the wall. If any 5-foot length of wall takes 20 points or more of cold damage in 1 round, that length goes away. (Do not divide cold damage by 2, as normal for objects.)</value>
+  </data>
+  <data name="WallOfFireAbilityName_info" xml:space="preserve">
+    <value>Wall of Fire</value>
+  </data>
+  <data name="WeaponOfAweAbilityDescription_info" xml:space="preserve">
+    <value>You transform a single weapon into an awe-inspiring instrument. The weapon gains a +2 sacred bonus on damage rolls, and if the weapon scores a critical hit, the target of that critical hit becomes shaken for 1 round with no saving throw.
+This is a mind-affecting fear effect. A ranged weapon affected by this spell applies these effects to its ammunition.
+You can't cast this spell on a natural weapon, but you can cast it on an unarmed strike.</value>
+  </data>
+  <data name="WeaponofAweDescription_info" xml:space="preserve">
+    <value>+2 sacred bonus on damage rolls, and target is shaken for 1 round on critical hits.</value>
+  </data>
+  <data name="WeaponOfAweSpells_info" xml:space="preserve">
+    <value>Weapon Of Awe</value>
+  </data>
+  <data name="WishAbilityDescription_info" xml:space="preserve">
+    <value>Wish is the mightiest spell a wizard or sorcerer can cast. By simply speaking aloud, you can alter reality to better suit you. Even wish, however, has its limits. A wish can produce any one of the following effects.
+• Duplicate any sorcerer/wizard spell of 8th level or lower, provided the spell does not belong to one of your opposition schools.
+• Duplicate any non-sorcerer/wizard spell of 7th level or lower, provided the spell does not belong to one of your opposition schools.
+• Duplicate any sorcerer/wizard spell of 7th level or lower, even if it belongs to one of your opposition schools.
+• Duplicate any non-sorcerer/wizard spell of 6th level or lower, even if it belongs to one of your opposition schools.
+• Undo the harmful effects of many other spells, such as geas/quest or insanity.
+• Grant a creature a +1 inherent bonus to an ability score. Two to five wish spells cast in immediate succession can grant a creature a +2 to +5 inherent bonus to an ability score (two wishes for a +2 inherent bonus, three wishes for a +3 inherent bonus, and so on). Inherent bonuses are instantaneous, so they cannot be dispelled. Note: An inherent bonus may not exceed +5 for a single ability score, and inherent bonuses to a particular ability score do not stack, so only the best one applies.
+• Remove injuries and afflictions. A single wish can aid one creature per caster level, and all subjects are cured of the same kind of affliction. For example, you could heal all the damage you and your companions have taken, or remove all poison effects from everyone in the party, but not do both with the same wish.
+• Revive the dead. A wish can bring a dead creature back to life by duplicating a resurrection spell. A wish can revive a dead creature whose body has been destroyed, but the task takes two wishes: one to recreate the body and another to infuse the body with life again. A wish cannot prevent a character who was brought back to life from gaining a permanent negative level.
+Duplicated spells allow saves and Spell Resistance as normal (but save DCs are for 9th-level spells).
+When a wish duplicates a spell with a material component that costs more than 10,000 gp, you must provide that component (in addition to the 25,000 gp diamond component for this spell).</value>
+  </data>
+  <data name="WishArcaneAbilityDescription_info" xml:space="preserve">
+    <value>Arcane Wish lets you create nearly any type of effect as long as you provide 5 diamonds is high enough.
+• Duplicate any sorcerer/wizard spell of 6th level or lower, provided the spell does not belong to one of your opposition schools.
+• Duplicate any non-sorcerer/wizard spell of 5th level or lower, provided the spell does not belong to one of your opposition schools.
+• Duplicate any sorcerer/wizard spell of 5th level or lower, even if it belongs to one of your opposition schools.
+• Duplicate any non-sorcerer/wizard spell of 4th level or lower, even if it belongs to one of your opposition schools.
+• Undo the harmful effects of many spells, such as insanity.
+• Produce any other effect whose power level is in line with the above effects, such as a single creature automatically hitting on its next attack or taking a -7 penalty on its next saving throw.
+A duplicated spell allows saving throws and spell resistance as normal, but the save DC is for a 7th-level spell. When a limited wish spell duplicates a spell with a material component that costs more than 1,000 gp, you must provide that component (in addition to the 1,500 gp diamond component for this spell).</value>
+  </data>
+  <data name="WishBuffDescription_info" xml:space="preserve">
+    <value>Wish for a permanent inherent bonus to {0}.
+Two to five wish spells cast in immediate succession can grant a creature a +2 to +5 inherent bonus to an ability score (two wishes for a +2 inherent bonus, three wishes for a +3 inherent bonus, and so on). Inherent bonuses are instantaneous, so they cannot be dispelled. Note: An inherent bonus may not exceed +5 for a single ability score, and inherent bonuses to a particular ability score do not stack, so only the best one applies.</value>
+  </data>
+  <data name="WishFabricateSpells_info" xml:space="preserve">
+    <value>Wish(Arcane)</value>
+  </data>
+  <data name="WishFeatureDescription_info" xml:space="preserve">
+    <value>A wish granted a permanent inherent bonus to {0}.</value>
+  </data>
+  <data name="WishLevelSpellName_info" xml:space="preserve">
+    <value>{0} (spell level {1})</value>
+  </data>
+  <data name="WishReason_error" xml:space="preserve">
+    <value>Opposition school spells of this level are not available.</value>
+  </data>
+  <data name="WishSpellDescription_info" xml:space="preserve">
+    <value>(After casting this spell, use the ability bar to select your {0}.){1}
+</value>
+  </data>
+  <data name="WishSpellsSpellName_info" xml:space="preserve">
+    <value>{0} Spells</value>
+  </data>
+  <data name="WishSpells_info" xml:space="preserve">
+    <value>Wish</value>
   </data>
 </root>

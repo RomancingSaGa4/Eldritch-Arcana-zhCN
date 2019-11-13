@@ -72,6 +72,8 @@ using static Kingmaker.RuleSystem.RulebookEvent;
 using static Kingmaker.UnitLogic.ActivatableAbilities.ActivatableAbilityResourceLogic;
 using static Kingmaker.UnitLogic.Commands.Base.UnitCommand;
 
+using RES = EldritchArcana.Properties.Resources;
+
 namespace EldritchArcana
 {
     static class FlameMystery
@@ -99,15 +101,13 @@ namespace EldritchArcana
             var skill1 = StatType.SkillAthletics;
             var skill2 = StatType.SkillMobility;
             var description = new StringBuilder(mysteryDescription).AppendLine();
-            description.AppendLine(
-                $"Class skills: {UIUtility.GetStatText(skill1)}, {UIUtility.GetStatText(skill2)}\n" +
-                "An oracle with the flame mystery can choose from any of the following revelations:");
+            description.AppendLine(String.Format(RES.MysteryFlameDescription_info, UIUtility.GetStatText(skill1), UIUtility.GetStatText(skill2)));
             foreach (var r in revelations)
             {
                 description.AppendLine($"• {r.Name}");
             }
 
-            var mystery = Helpers.CreateProgression("MysteryFlameProgression", "Flame Mystery", description.ToString(),
+            var mystery = Helpers.CreateProgression("MysteryFlameProgression", RES.MysteryFlameName_info, description.ToString(),
                 "11205333c1be4c6f868e413633fc7557",
                 Helpers.GetIcon("17cc794d47408bc4986c55265475c06f"), // Fire elemental bloodline
                 UpdateLevelUpDeterminatorText.Group,
@@ -138,7 +138,7 @@ namespace EldritchArcana
             mystery.LevelEntries = entries.ToArray();
             mystery.UIGroups = Helpers.CreateUIGroups(new List<BlueprintFeatureBase>(spells) { finalRevelation });
 
-            var revelation = Helpers.CreateFeatureSelection("MysteryFlameRevelation", "Flame Revelation",
+            var revelation = Helpers.CreateFeatureSelection("MysteryFlameRevelation", RES.MysteryFlameRevelationName_info,
                 mystery.Description, "40db1e0f9b3a4f5fb9fde0801b158216", null, FeatureGroup.None,
                 mystery.PrerequisiteFeature());
             revelation.Mode = SelectionMode.OnlyNew;
@@ -148,8 +148,8 @@ namespace EldritchArcana
 
         static BlueprintFeature CreateBurningMagic()
         {
-            var feat = Helpers.CreateFeature("MysteryFlameBurningMagic", "Burning Magic",
-                "Whenever a creature fails a saving throw and takes fire damage from one of your spells, it catches on fire. This fire deals 1 point of fire damage per spell level at the beginning of the burning creature’s turn. The fire lasts for 1d4 rounds, but it can be extinguished as a move action if the creature succeeds at a Reflex save (using the spell’s DC). Dousing the creature with water as a standard action grants a +2 bonus on this save, while immersing the creature in water automatically extinguishes the fire. Spells that do not grant a save do not cause a creature to catch on fire.",
+            var feat = Helpers.CreateFeature("MysteryFlameBurningMagic", RES.MysteryFlameBurningMagicName_info,
+                RES.MysteryFlameBurningMagicDescription_info,
                 "ae7b2ef7026d4de494779f6112f8dfba",
                 Helpers.GetIcon("42a65895ba0cb3a42b6019039dd2bff1"), // molten orb
                 FeatureGroup.None);
@@ -202,8 +202,8 @@ namespace EldritchArcana
             var resource = Helpers.CreateAbilityResource($"{name}Resource", "", "", "49ab0eaffc72414a872f8bf1b9372e0d", null);
             resource.SetFixedResource(1);
 
-            var ability = Helpers.CreateAbility($"{name}Ability", "Firestorm",
-                "As a standard action, you can cause fire to erupt around you. You can create one 10-foot cube of fire per oracle level. These cubes can be arranged in any pattern you desire, but each cube must be adjacent to another and one must be adjacent to you. Any creature caught in these flames takes 1d6 points of fire damage per oracle level, with a Reflex save resulting in half damage. This fire lasts for a number of rounds equal to your Charisma modifier. You can use this ability once per day. You must be at least 11th level to select this revelation.",
+            var ability = Helpers.CreateAbility($"{name}Ability", RES.MysteryFlameFirestormName_info,
+                RES.MysteryFlameFirestormDescription_info,
                 "4bddc1868e8b49ed8d27a67ee2085da3",
                 Helpers.GetIcon("e3d0dfe1c8527934294f241e0ae96a8d"), // fire storm
                 AbilityType.Supernatural, CommandType.Standard, AbilityRange.Close,
@@ -235,8 +235,8 @@ namespace EldritchArcana
 
         static BlueprintFeature CreateCinderDance()
         {
-            var feat = Helpers.CreateFeature("MysteryFlameCinderDance", "Cinder Dance",
-                "Your base speed increases by 10 feet. At 10th level, you can ignore difficult terrain when moving. Oracles with the lame oracle curse cannot select this revelation.",
+            var feat = Helpers.CreateFeature("MysteryFlameCinderDance", RES.MysteryFlameCinderDanceName_info,
+                RES.MysteryFlameCinderDanceDescription_info,
                 "87cdb2075e0f4212895facaeb68cc3ab",
                 Helpers.GetIcon("4f8181e7a7f1d904fbaea64220e83379"), // ExpeditiousRetreat
                 FeatureGroup.None);
@@ -256,8 +256,8 @@ namespace EldritchArcana
 
         static BlueprintFeature CreateHeatAura()
         {
-            var feat = Helpers.CreateFeature("MysteryFlameHeatAura", "Heat Aura",
-                "As a swift action, you can cause waves of heat to radiate from your body. This heat deals 1d4 points of fire damage per two oracle levels (minimum 1d4) to all creatures within 10 feet. A Reflex save halves the damage. In addition, your form wavers and blurs, granting you 20% concealment until your next turn. You can use this ability once per day, plus one additional time per day at 5th level and every five levels thereafter.",
+            var feat = Helpers.CreateFeature("MysteryFlameHeatAura", RES.MysteryFlameHeatAuraName_info,
+                RES.MysteryFlameHeatAuraDescription_info,
                 "0eeea06535d349e7bafb3e8dcc538fa4",
                 FireSpells.wallOfFire.Icon, FeatureGroup.None);
 
@@ -293,8 +293,8 @@ namespace EldritchArcana
 
         static BlueprintFeature CreateFireBreath()
         {
-            var feat = Helpers.CreateFeature("MysteryFlameBreath", "Fire Breath",
-                "As a standard action, you can unleash a 15-foot cone of flame from your mouth. This flame deals 1d4 points of fire damage per level. A Reflex save halves this damage. You can use this ability once per day, plus one additional time per day at 5th level and every five levels thereafter. The save DC is Charisma-based.",
+            var feat = Helpers.CreateFeature("MysteryFlameBreath", RES.MysteryFlameBreathName_info,
+                RES.MysteryFlameBreathDescription_info,
                 "3f254ece8752466d8fd76ca358990eb9",
                 Helpers.GetIcon("2a711cd134b91d34ab027b50d721778b"), // gold dragon fire breath
                 FeatureGroup.None);
@@ -323,8 +323,8 @@ namespace EldritchArcana
 
         static BlueprintFeature CreateFormOfFlame()
         {
-            var feat = Helpers.CreateFeature("MysteryFlameForm", "Form of the Flame",
-                "As a standard action, you can assume the form of a small fire elemental, as Elemental Body I. At 9th level, you can assume the form of a medium fire elemental, as Elemental Body II. At 11th level, you can assume the form of a large fire elemental, as Elemental Body III. At 13th level, you can assume the form of a huge fire elemental, as Elemental Body IV. You can use this ability once per day, but the duration is 1 hour/level. You must be at least 7th level to select this revelation.",
+            var feat = Helpers.CreateFeature("MysteryFlameForm", RES.MysteryFlameFormName_info,
+                RES.MysteryFlameFormDescription_info,
                 "1c18972911284249a0bc38f6f4ec4304",
                 Helpers.GetIcon("bb6bb6d6d4b27514dae8ec694433dcd3"), // elemental body fire 1
                 FeatureGroup.None);
@@ -367,8 +367,8 @@ namespace EldritchArcana
 
         static BlueprintFeature CreateMoltenSkin()
         {
-            var feat = Helpers.CreateFeature("MysteryFlamesMoltenSkin", "Molten Skin",
-                "You gain resist fire 5. This resistance increases to 10 at 5th level and 20 at 11th level. At 17th level, you gain immunity to fire.",
+            var feat = Helpers.CreateFeature("MysteryFlamesMoltenSkin", RES.MysteryFlamesMoltenSkinName_info,
+                RES.MysteryFlamesMoltenSkinDescription_info,
                 "9fc56e88f4dc4733bc99fad0be185ad5",
                 Helpers.GetIcon("ddfb4ac970225f34dbff98a10a4a8844"),
                 FeatureGroup.None);
@@ -403,9 +403,8 @@ namespace EldritchArcana
 
         static BlueprintFeature CreateTouchOfFlame()
         {
-            var feat = Helpers.CreateFeature("MysteryFlameTouch", "Touch of Flame",
-                "As a standard action, you can perform a melee touch attack that deals 1d6 points of fire damage +1 point for every two oracle levels you possess. You can use this ability a number of times per day equal to 3 + your Charisma modifier.\n" +
-                "At 11th level, any weapon that you wield is treated as a flaming weapon.",
+            var feat = Helpers.CreateFeature("MysteryFlameTouch", RES.MysteryFlameTouchName_info,
+                RES.MysteryFlameTouchDescription_info,
                 "b4b0a59bf8d645c0b4329e26176e1cc0",
                 Helpers.GetIcon("05b7cbe45b1444a4f8bf4570fb2c0208"), // burning hands
                 FeatureGroup.None);
@@ -427,7 +426,9 @@ namespace EldritchArcana
             spell.EffectOnEnemy = AbilityEffectOnUnit.Harmful;
 
             var flamingEnchant = library.Get<BlueprintWeaponEnchantment>("30f90becaaac51f41bf56641966c4121");
-            var flamingWeapon = Helpers.CreateFeature($"{feat.name}Flaming", "${feat.Name} — Flaming Weapon", feat.Description,
+            var flamingWeapon = Helpers.CreateFeature($"{feat.name}Flaming", 
+                String.Format(RES.MysteryFlameTouchWeaponName_info, RES.MysteryFlameTouchName_info),
+                feat.Description,
                 "8eb6532176974cdbbf20c38c0f433bad",
                 Helpers.GetIcon("05b7cbe45b1444a4f8bf4570fb2c0208"), // arcane weapon flaming
                 FeatureGroup.None,
@@ -445,8 +446,8 @@ namespace EldritchArcana
         {
             var redDragonWings = library.Get<BlueprintActivatableAbility>("b00344e4b4134bb42a374ad8971392fd");
             var feat = Helpers.CreateFeature("MysteryFlameWings",
-                "Wings of Fire",
-                "As a swift action, you can manifest a pair of fiery wings that grant you a fly speed of 60 feet with average maneuverability. You can use these wings for 1 minute per day per oracle level. This duration does not need to be consecutive, but it must be spent in 1 minute increments. You must be at least 7th level before selecting this revelation.",
+                RES.MysteryFlameWingsName_info,
+                RES.MysteryFlameWingsDescription_info,
                 "bec6ab62414447909cc1393982c10b62",
                 redDragonWings.Icon,
                 FeatureGroup.None);
@@ -483,17 +484,17 @@ namespace EldritchArcana
             // - Reach, Intensified and Extend.
             //
             // Those have the same cost and seem somewhat on-theme for the Flame revelation.
-            var feat = Helpers.CreateFeature("MysteryFlameFinalRevelation", "Final Revelation",
-                "Upon reaching 20th level, you become a master of fire. You can apply any one of the following feats to any fire spell you cast without increasing the level or casting time: Extend Spell, Intensified Spell, or Reach Spell. You do not need to possess these feats to use this ability.",
+            var feat = Helpers.CreateFeature("MysteryFlameFinalRevelation", RES.FinalRevelationFeatureName_info,
+                RES.MysteryFlameFinalRevelationDescription_info,
                 "afdb91ba551440afad8b506b03f3aa5d",
                 Helpers.GetIcon("98734a2665c18cd4db71878b0532024a"), // firebrand
                 FeatureGroup.None);
 
 
             feat.SetComponents(Helpers.CreateAddFacts(ExclusiveAbilityToggle.AddToAbilities(
-                CreateMetamagicAbility(feat, "Extend", "Extend Spell (Fire)", Metamagic.Extend, "bb491aec901f43ebabc1c2a651b1c690"),
-                CreateMetamagicAbility(feat, "Intensified", "Intensified Spell (Fire)", (Metamagic)ModMetamagic.Intensified, "3fe9e72e1e1a4fd3b2cb871b8068c258"),
-                CreateMetamagicAbility(feat, "Reach", "Reach Spell (Fire)", Metamagic.Reach, "5b3c0178959641b08de7c9280ca19f3e"))));
+                CreateMetamagicAbility(feat, "Extend", RES.MysteryFlameFinalRevelationExtendSpellName_info, Metamagic.Extend, "bb491aec901f43ebabc1c2a651b1c690"),
+                CreateMetamagicAbility(feat, "Intensified", RES.MysteryFlameFinalRevelationIntensifiedSpellName_info, (Metamagic)ModMetamagic.Intensified, "3fe9e72e1e1a4fd3b2cb871b8068c258"),
+                CreateMetamagicAbility(feat, "Reach", RES.MysteryFlameFinalRevelationReachSpellName_info, Metamagic.Reach, "5b3c0178959641b08de7c9280ca19f3e"))));
             return feat;
         }
 

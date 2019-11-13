@@ -65,6 +65,8 @@ using Newtonsoft.Json;
 using UnityEngine;
 using static Kingmaker.RuleSystem.RulebookEvent;
 
+using RES = EldritchArcana.Properties.Resources;
+
 namespace EldritchArcana
 {
     static class HeavensMystery
@@ -78,9 +80,8 @@ namespace EldritchArcana
             var skill1 = StatType.SkillKnowledgeArcana;
             var skill2 = StatType.SkillPerception;
 
-            var mystery = Helpers.CreateProgression("MysteryHeavensProgression", "Heavens Mystery", $"{mysteryDescription}\n" +
-                "Oracles who drawn to the night sky learn spells and revelations that draw power from the heavens: the many colors of starlight, the moon, or the empty void of space.\n" +
-                $"Class skills: {UIUtility.GetStatText(skill1)}, {UIUtility.GetStatText(skill2)}",
+            var mystery = Helpers.CreateProgression("MysteryHeavensProgression", RES.MysteryHeavensName_info, $"{mysteryDescription}\n" +
+                String.Format(RES.MysteryHeavensDescription_info, UIUtility.GetStatText(skill1), UIUtility.GetStatText(skill2)),
                 "dabcaefe63bc471dac44e8e23c1c330f",
                 Helpers.GetIcon("91da41b9793a4624797921f221db653c"), // color spray
                 UpdateLevelUpDeterminatorText.Group,
@@ -105,7 +106,7 @@ namespace EldritchArcana
                 // TODO
             };
             var description = new StringBuilder(mystery.Description).AppendLine();
-            description.AppendLine("An oracle with the flame mystery can choose from any of the following revelations:");
+            description.AppendLine(RES.MysteryHeavensDescription2_info);
             foreach (var r in revelations)
             {
                 description.AppendLine($"• {r.Name}");

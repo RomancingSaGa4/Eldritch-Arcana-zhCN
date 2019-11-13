@@ -101,7 +101,7 @@ namespace EldritchArcana
             // Create the progression that will allow +1 HP or skill rank.
             var progression = Helpers.CreateProgression(
                 $"FavoredPrestige{prestigeClass.name}",
-                string.Format(RES.FavoredPrestigeProgressionName_info, prestigeClass.Name),
+                string.Format(RES.TypeHyphenSubtype_info, RES.FavoredPresitgeClassFeatureName_info, prestigeClass.Name),
                 prestigeClass.LocalizedDescription,
                 Helpers.MergeIds(prestigeClass.AssetGuid, "989807536776445d9b4875b4cfbfdd11"),
                 prestigeClass.Icon,
@@ -234,7 +234,7 @@ namespace EldritchArcana
 
             var favored = Helpers.CreateProgression(
                 $"FavoredClass{favoredClass.name}Progression",
-                string.Format(RES.FavoredClassProgressionName_info, favoredClass.Name),
+                string.Format(RES.TypeHyphenSubtype_info, RES.FavoredClassFeatureName_info, favoredClass.Name),
                 description,
                 Helpers.MergeIds(favoredClass.AssetGuid, "081651146ada4d0a88f6e9190ac6b01a"),
                 favoredClass.Icon,

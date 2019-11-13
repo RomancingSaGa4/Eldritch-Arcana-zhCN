@@ -70,6 +70,8 @@ using static Kingmaker.RuleSystem.RulebookEvent;
 using static Kingmaker.UnitLogic.ActivatableAbilities.ActivatableAbilityResourceLogic;
 using static Kingmaker.UnitLogic.Commands.Base.UnitCommand;
 
+using RES = EldritchArcana.Properties.Resources;
+
 namespace EldritchArcana
 {
     static class TimeMystery
@@ -105,15 +107,13 @@ namespace EldritchArcana
             var skill1 = StatType.SkillAthletics;
             var skill2 = StatType.SkillMobility;
             var description = new StringBuilder(mysteryDescription).AppendLine();
-            description.AppendLine(
-                $"Class skills: {UIUtility.GetStatText(skill1)}, {UIUtility.GetStatText(skill2)}\n" +
-                "An oracle with the time mystery can choose from any of the following revelations:");
+            description.AppendLine(String.Format(RES.MysteryTimeDescription_info, UIUtility.GetStatText(skill1), UIUtility.GetStatText(skill2)));
             foreach (var r in revelations)
             {
                 description.AppendLine($"• {r.Name}");
             }
 
-            var mystery = Helpers.CreateProgression("MysteryTimeProgression", "Time Mystery", description.ToString(),
+            var mystery = Helpers.CreateProgression("MysteryTimeProgression", RES.MysteryTimeName_info, description.ToString(),
                 "b05d63ba0f634061af15c995c1a3340d",
                 TimeStop.spell.Icon,
                 UpdateLevelUpDeterminatorText.Group,

@@ -433,7 +433,7 @@ namespace EldritchArcana
             //
             // Since languages aren't implemented, this instead gives a bonus to knowledge skills.
             var linguistics = UIUtility.GetStatText(StatType.SkillKnowledgeWorld);
-            var curse = Helpers.CreateProgression("OracleCurseTongues", RES.OracleCurseTonguesLevel5Name_info,
+            var curse = Helpers.CreateProgression("OracleCurseTongues", RES.OracleCurseTonguesName_info,
                 String.Format(RES.OracleCurseTonguesDescription_info, linguistics, linguistics),
                 "983b66fc844a496da24acbcbdceebede",
                 Helpers.GetIcon("f09453607e683784c8fca646eec49162"), // shout
@@ -475,8 +475,8 @@ namespace EldritchArcana
 
         static BlueprintProgression CreateWastingCurse()
         {
-            var curse = Helpers.CreateProgression("OracleCurseWasting", "Wasting",
-                "Your body is slowly rotting away.\nYou take a –4 penalty on Charisma-based skill checks, except for Intimidate. You gain a +4 competence bonus on saves made against disease.",
+            var curse = Helpers.CreateProgression("OracleCurseWasting", RES.OracleCurseWastingName_info,
+                RES.OracleCurseWastingDescription_info,
                 "12fcf38c71064c9a8e9a79e5d7c115bc",
                 Helpers.GetIcon("4e42460798665fd4cb9173ffa7ada323"), // sickened
                 FeatureGroup.None,
@@ -492,24 +492,24 @@ namespace EldritchArcana
 
             curse.Classes = oracleArray;
 
-            var level5 = Helpers.CreateFeature($"{curse.name}SickenImmunity", "Immune to Sickened",
-                "At 5th level, you are immune to the sickened condition (but not nauseated).",
+            var level5 = Helpers.CreateFeature($"{curse.name}SickenImmunity", RES.OracleCurseWastingLevel5Name_info,
+                RES.OracleCurseWastingLevel5Description_info,
                 "a325e582ba97456784cb3c0e206de8e0",
                 Helpers.GetIcon("7ee2ef06226a4884f80b7647a2aa2dee"), // mercy sickened
                 FeatureGroup.None,
                 UnitCondition.Sickened.CreateImmunity(),
                 SpellDescriptor.Sickened.CreateBuffImmunity());
 
-            var level10 = Helpers.CreateFeature($"{curse.name}DiseaseImmunity", "Immune to Disease",
-                "At 10th level, you gain immunity to disease.",
+            var level10 = Helpers.CreateFeature($"{curse.name}DiseaseImmunity", RES.OracleCurseWastingLevel10Name_info,
+                RES.OracleCurseWastingLevel10Description_info,
                 "ffebfb47717246c58304a01223c26086",
                 Helpers.GetIcon("3990a92ce97efa3439e55c160412ce14"), // mercy diseased
                 FeatureGroup.None,
                 SpellDescriptor.Disease.CreateSpellImmunity(),
                 SpellDescriptor.Disease.CreateBuffImmunity());
 
-            var level15 = Helpers.CreateFeature($"{curse.name}NauseatedImmunity", "Immune to Nauseated",
-                "At 15th level, you are immune to the nauseated condition.",
+            var level15 = Helpers.CreateFeature($"{curse.name}NauseatedImmunity", RES.OracleCurseWastingLevel15Name_info,
+                RES.OracleCurseWastingLevel15Description_info,
                 "9fb165ed9340414085930eb72b0661b6",
                 Helpers.GetIcon("a0cacf71d872d2a42ae3deb6bf977962"), // mercy nauseated
                 FeatureGroup.None,

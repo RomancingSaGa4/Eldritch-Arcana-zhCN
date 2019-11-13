@@ -178,7 +178,7 @@ namespace EldritchArcana
 
             var favoredClassFeat = FavoredClassBonus.favoredPrestigeClass.Features[Helpers.prestigeClasses.IndexOf(prestigeClass)];
             var prestigiousCaster = Helpers.CreateFeature($"PrestigiousCaster{prestigeClass.name}",
-                string.Format(RES.PrestigiousSpellcasterClassFeatureName_info, prestigeClass.Name),
+                string.Format(RES.TypeHyphenSubtype_info, RES.PrestigiousSpellcasterFeatureName_info, prestigeClass.Name),
                 prestigeClass.LocalizedDescription,
                 Helpers.MergeIds(prestigeClass.AssetGuid, "c526dfc221db493d9ec6291575086a99"),
                 prestigeClass.Icon,

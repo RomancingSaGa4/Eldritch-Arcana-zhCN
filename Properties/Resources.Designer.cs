@@ -47,7 +47,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   使用此强类型资源类，为所有资源查找
+        ///   重写当前线程的 CurrentUICulture 属性
         ///   重写当前线程的 CurrentUICulture 属性。
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -141,6 +141,52 @@ namespace EldritchArcana.Properties {
         internal static string AirWalkCommunalAbilityName_info {
             get {
                 return ResourceManager.GetString("AirWalkCommunalAbilityName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 The ancient lorekeeper is a repository for all the beliefs and vast knowledge of an elven people. They show a strong interest in and understanding of histories and creation legends at a young age, and as they mature their calling to serve as the memory of their long-lived people becomes clear to all who know them.
+        ///An ancient lorekeeper adds Knowledge (arcana) to their list of class skills. This replaces the bonus skills the ancient lorekeeper gains from their mystery. 的本地化字符串。
+        /// </summary>
+        internal static string AncientLorekeeperClassSkillsDescription_info {
+            get {
+                return ResourceManager.GetString("AncientLorekeeperClassSkillsDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 AncientLorekeeperClassSkills 的本地化字符串。
+        /// </summary>
+        internal static string AncientLorekeeperDescription_info {
+            get {
+                return ResourceManager.GetString("AncientLorekeeperDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 2nd level, an ancient lorekeeper’s mastery of elven legends and philosophy has allowed them to master one spell used by elven wizards. They select one spell from the sorcerer/ wizard spell list that is at least one level lower than the highest-level oracle spell they can cast. The ancient lorekeeper gains this as a bonus spell known. The spell is treated as one level higher than its true level for all purposes. The ancient lorekeeper may choose an additional spell at 4th, 6th, 8th, 10th, 12th, 14th, 16th [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string AncientLorekeeperElvenArcanaDescription_info {
+            get {
+                return ResourceManager.GetString("AncientLorekeeperElvenArcanaDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Elven Arcana 的本地化字符串。
+        /// </summary>
+        internal static string AncientLorekeeperElvenArcanaName_info {
+            get {
+                return ResourceManager.GetString("AncientLorekeeperElvenArcanaName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Ancient Lorekeeper 的本地化字符串。
+        /// </summary>
+        internal static string AncientLorekeeperName_info {
+            get {
+                return ResourceManager.GetString("AncientLorekeeperName_info", resourceCulture);
             }
         }
         
@@ -920,15 +966,6 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Eldritch Heritage — {0} 的本地化字符串。
-        /// </summary>
-        internal static string EldritchHeritageBloodlineFeatureName_info {
-            get {
-                return ResourceManager.GetString("EldritchHeritageBloodlineFeatureName_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查找类似 
         ///• {0}— {1} 的本地化字符串。
         /// </summary>
@@ -1161,15 +1198,6 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Favored Class — {0} 的本地化字符串。
-        /// </summary>
-        internal static string FavoredClassProgressionName_info {
-            get {
-                return ResourceManager.GetString("FavoredClassProgressionName_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查找类似 You have come to favor a certain prestige class, either because you are particularly devoted to the class’s cause, have trained more than most others have for that specific role, or have simply been destined to excel in the prestige class all along. Regardless of the reason, levels gained in your favored prestige class grant additional benefits in a way similar to those you gain for taking levels in your base favored class.
         ///You can select this feat before you gain levels in your chosen favored prestige cla [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
@@ -1185,15 +1213,6 @@ namespace EldritchArcana.Properties {
         internal static string FavoredPresitgeClassFeatureName_info {
             get {
                 return ResourceManager.GetString("FavoredPresitgeClassFeatureName_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Favored Prestige Class — {0} 的本地化字符串。
-        /// </summary>
-        internal static string FavoredPrestigeProgressionName_info {
-            get {
-                return ResourceManager.GetString("FavoredPrestigeProgressionName_info", resourceCulture);
             }
         }
         
@@ -1497,15 +1516,6 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Improved Eldritch Heritage — {0} 的本地化字符串。
-        /// </summary>
-        internal static string GreaterEldritchHeritageBloodlineFeatureName_info {
-            get {
-                return ResourceManager.GetString("GreaterEldritchHeritageBloodlineFeatureName_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查找类似 Your discovered bloodline power reaches its zenith.
         ///You gain an additional power from the bloodline you selected with the Eldritch Heritage feat. You gain a 15th-level (or lower) sorcerer bloodline power that you do not already have. For purposes of using that power, treat your character level as your sorcerer level for all your sorcerer bloodline powers granted by this feat, Eldritch Heritage, and Improved Eldritch Heritage. 的本地化字符串。
         /// </summary>
@@ -1593,15 +1603,6 @@ namespace EldritchArcana.Properties {
         internal static string HypnoticSpellDescription_info {
             get {
                 return ResourceManager.GetString("HypnoticSpellDescription_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Greater Eldritch Heritage — {0} 的本地化字符串。
-        /// </summary>
-        internal static string ImprovedEldritchHeritageBloodlineFeatureName_info {
-            get {
-                return ResourceManager.GetString("ImprovedEldritchHeritageBloodlineFeatureName_info", resourceCulture);
             }
         }
         
@@ -2211,7 +2212,7 @@ namespace EldritchArcana.Properties {
         
         /// <summary>
         ///   查找类似 The wielder can cast up to three spells per day that are affected as though the spells were augmented with the {0} feat.
-        ///{1}rods can be used with spells of {2} level or lower.
+        ///{1} rods can be used with spells of {2} level or lower.
         ///{3}: {4} 的本地化字符串。
         /// </summary>
         internal static string MetamagicRodDescription_info {
@@ -2410,15 +2411,6 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Final Revelation 的本地化字符串。
-        /// </summary>
-        internal static string MysteryBattleFinalRevelationName_info {
-            get {
-                return ResourceManager.GetString("MysteryBattleFinalRevelationName_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查找类似 Once per day, your skin hardens and takes on the appearance of iron, granting you DR 10/adamantine. This functions as stoneskin, using your oracle level as the caster level. At 15th level, you can use this ability twice per day. 的本地化字符串。
         /// </summary>
         internal static string MysteryBattleIronSkinDescription_info {
@@ -2582,6 +2574,587 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Cone of {0} 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonBreathWeaponConeOfEnergyType_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonBreathWeaponConeOfEnergyType_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 The primal power of dragonkind seethes within you. You gain a breath weapon. This breath weapon deals 1d6 points of damage of your energy type per 2 oracle levels you have (minimum 1d6; Reflex half ). The shape of the breath weapon is either a 30-foot cone or a 60-foot line, selected when choosing this revelation. You can use this ability once per day at 1st level, plus one additional time at 5th level and one additional time per day for every 5 levels beyond 5th. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonBreathWeaponDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonBreathWeaponDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Line of {0} 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonBreathWeaponLineOfEnergyType_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonBreathWeaponLineOfEnergyType_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Breath Weapon 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonBreathWeaponName_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonBreathWeaponName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Oracles who draw their power from the mysterious and primal might of dragons are usually solitary folk. They are deep thinkers and often quick of wit, but prideful and equally quick-tempered.
+        ///Upon selecting this mystery, the oracle must select an energy type (acid, cold, electricity, or fire) to be her associated element, which impacts several revelations. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 An oracle with the dragon mystery can choose from any of the following revelations: 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonDescription2_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonDescription2_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Upon reaching 20th level, your draconic destiny unfolds. You gain immunity to paralysis, sleep, and damage of your energy type. You count as a dragon for the purposes of spells and magical effects. If you have the breath weapon revelation, you can use your breath weapon an unlimited number of times per day, though no more often than once every 1d4+1 rounds. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonFinalRevelationDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonFinalRevelationDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your kinship with dragonkind allows you to take on the form of a dragon. As a standard action, you can assume the form of a Medium dragon, as per form of the dragon I. At 15th level, you can assume the form of a Large dragon, as per form of the dragon II. At 19th level, you can assume the form of a Huge dragon, as per form of the dragon III. You can use this ability once per day, but the duration is 10 minutes per oracle level. If you are at least 15th level and choose to have this ability function as per f [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonFormDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonFormDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Form of the Dragon 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonFormName_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonFormName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your draconic power grants you a limited form of access to arcane magic. Select one spell from the sorcerer/wizard spell list that is 2 levels lower than the highest-level spell you can cast, or two spells that are both at least 3 levels lower. You add them to your spellbook and can cast them as divine spells. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonMagicDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonMagicDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Dragon Magic 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonMagicName_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonMagicName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Dragon Magic (one spell) 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonMagicOneSpellSelection_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonMagicOneSpellSelection_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Dragon Magic (two spells) 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonMagicTwoSpellSelection_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonMagicTwoSpellSelection_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Dragon Mystery 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonName_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Will negates 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonPresenceAbilityCheck_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonPresenceAbilityCheck_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 2d6 rounds 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonPresenceAbilityDuration_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonPresenceAbilityDuration_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Those who would oppose you must overcome their fear of dragons or be struck with terror at your draconic majesty. As a swift action, you can manifest an aura of draconic might around yourself. Enemies within 30 feet who can see you when you activate this ability must attempt a Will save. Success means that the creature is immune to this ability for the following 24 hours. On a failed save, the opponent is shaken for 2d6 rounds. This is a mind-affecting fear effect. You can use this ability once per day at 1 [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonPresenceDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonPresenceDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 A successful save means that you are now immune to this ability for 24 hours. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonPresenceImmuneForDayDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonPresenceImmuneForDayDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Immune to Presence of Dragons 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonPresenceImmuneForDayName_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonPresenceImmuneForDayName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Presence of Dragons 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonPresenceName_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonPresenceName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Like the great dragons, you are not easily harmed by common means of attack. You gain resistance 5 against your chosen energy type and a +1 natural armor bonus. At 9th level, your energy resistance increases to 10 and your natural armor bonus increases to +2. At 15th level, your energy resistance increases to 20 and your natural armor bonus increases to +4. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonResistancesDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonResistancesDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Draconic Resistances 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonResistancesName_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonResistancesName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Dragon Revelation 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonRevelationName_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonRevelationName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You can manifest the scaly toughness of dragonkind. Once per day as a swift action, you can harden your skin, giving it a scaly appearance and granting you DR 10/magic. During this time, you are also immune to paralysis and sleep effects. This effect lasts for a number of rounds equal to your oracle level. At 13th level, you can use this ability twice per day. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonScaledToughnessDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonScaledToughnessDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Scaled Toughness 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonScaledToughnessName_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonScaledToughnessName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your senses take on a keen draconic edge. You gain a +2 bonus on Perception checks. At 5th level this bonus increases to +4. At 11th level, you gain blindsense with a range of 30 feet. At the 15th level, your blindsense range increases to 60 feet. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonSensesDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonSensesDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Dragon Senses 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonSensesName_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonSensesName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You express your wrath through sweeps of a wicked tail. You can grow a scaly tail. This tail improves your balance, allowing you to make one additional attack of opportunity each round with your weapon. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonTailSwipeDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonTailSwipeDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Tail Swipe 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonTailSwipeName_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonTailSwipeName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You fight with the fearsome talons of dragonkind. You can grow claws as a free action. These claws are treated as natural weapons, allowing you to perform two claw attacks as a full attack action using your full base attack bonus. Each of these attacks deals an amount of slashing damage equal to 1d4 (1d3 if you are Small) + your Strength modifier. At 5th level, these claws are considered magic weapons for the purpose of overcoming DR. At 7th level, the damage die increases by 1 step, to deal an amount of sl [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonTalonsDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonTalonsDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Talons of the Dragon 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonTalonsName_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonTalonsName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Like the great dragons, you can take to the skies and terrorize opponents from above. As a swift action, you can manifest leathery dragon wings that grant you a fly speed of 60 feet. You can use these wings for 1 minute per day for each oracle level you have. This duration does not need to be consecutive, but it must be spent in 1-minute increments. At 11th level you can use these wings for 10 minutes per day for each oracle level you have. At 15th level, you can use the wings indefinitely. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonWingsDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonWingsDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Wings of the Dragon 的本地化字符串。
+        /// </summary>
+        internal static string MysteryDragonWingsName_info {
+            get {
+                return ResourceManager.GetString("MysteryDragonWingsName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 As a standard action, you can unleash a 15-foot cone of flame from your mouth. This flame deals 1d4 points of fire damage per level. A Reflex save halves this damage. You can use this ability once per day, plus one additional time per day at 5th level and every five levels thereafter. The save DC is Charisma-based. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameBreathDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameBreathDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Fire Breath 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameBreathName_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameBreathName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Whenever a creature fails a saving throw and takes fire damage from one of your spells, it catches on fire. This fire deals 1 point of fire damage per spell level at the beginning of the burning creature’s turn. The fire lasts for 1d4 rounds, but it can be extinguished as a move action if the creature succeeds at a Reflex save (using the spell’s DC). Dousing the creature with water as a standard action grants a +2 bonus on this save, while immersing the creature in water automatically extinguishes the fire. [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameBurningMagicDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameBurningMagicDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Burning Magic 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameBurningMagicName_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameBurningMagicName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your base speed increases by 10 feet. At 10th level, you can ignore difficult terrain when moving. Oracles with the lame oracle curse cannot select this revelation. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameCinderDanceDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameCinderDanceDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Cinder Dance 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameCinderDanceName_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameCinderDanceName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Class skills: {0}, {1}
+        ///An oracle with the flame mystery can choose from any of the following revelations: 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Upon reaching 20th level, you become a master of fire. You can apply any one of the following feats to any fire spell you cast without increasing the level or casting time: Extend Spell, Intensified Spell, or Reach Spell. You do not need to possess these feats to use this ability. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameFinalRevelationDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameFinalRevelationDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Extend Spell (Fire) 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameFinalRevelationExtendSpellName_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameFinalRevelationExtendSpellName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Intensified Spell (Fire) 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameFinalRevelationIntensifiedSpellName_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameFinalRevelationIntensifiedSpellName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Reach Spell (Fire) 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameFinalRevelationReachSpellName_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameFinalRevelationReachSpellName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 As a standard action, you can cause fire to erupt around you. You can create one 10-foot cube of fire per oracle level. These cubes can be arranged in any pattern you desire, but each cube must be adjacent to another and one must be adjacent to you. Any creature caught in these flames takes 1d6 points of fire damage per oracle level, with a Reflex save resulting in half damage. This fire lasts for a number of rounds equal to your Charisma modifier. You can use this ability once per day. You must be at least [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameFirestormDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameFirestormDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Firestorm 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameFirestormName_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameFirestormName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 As a standard action, you can assume the form of a small fire elemental, as Elemental Body I. At 9th level, you can assume the form of a medium fire elemental, as Elemental Body II. At 11th level, you can assume the form of a large fire elemental, as Elemental Body III. At 13th level, you can assume the form of a huge fire elemental, as Elemental Body IV. You can use this ability once per day, but the duration is 1 hour/level. You must be at least 7th level to select this revelation.&quot; 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameFormDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameFormDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Form of the Flame 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameFormName_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameFormName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 As a swift action, you can cause waves of heat to radiate from your body. This heat deals 1d4 points of fire damage per two oracle levels (minimum 1d4) to all creatures within 10 feet. A Reflex save halves the damage. In addition, your form wavers and blurs, granting you 20% concealment until your next turn. You can use this ability once per day, plus one additional time per day at 5th level and every five levels thereafter. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameHeatAuraDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameHeatAuraDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Heat Aura 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameHeatAuraName_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameHeatAuraName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Flame Mystery 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameName_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Flame Revelation 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameRevelationName_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameRevelationName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You gain resist fire 5. This resistance increases to 10 at 5th level and 20 at 11th level. At 17th level, you gain immunity to fire. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlamesMoltenSkinDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryFlamesMoltenSkinDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Molten Skin 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlamesMoltenSkinName_info {
+            get {
+                return ResourceManager.GetString("MysteryFlamesMoltenSkinName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 As a standard action, you can perform a melee touch attack that deals 1d6 points of fire damage +1 point for every two oracle levels you possess. You can use this ability a number of times per day equal to 3 + your Charisma modifier.
+        ///At 11th level, any weapon that you wield is treated as a flaming weapon. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameTouchDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameTouchDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Touch of Flame 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameTouchName_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameTouchName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0} — Flaming Weapon 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameTouchWeaponName_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameTouchWeaponName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 As a swift action, you can manifest a pair of fiery wings that grant you a fly speed of 60 feet with average maneuverability. You can use these wings for 1 minute per day per oracle level. This duration does not need to be consecutive, but it must be spent in 1 minute increments. You must be at least 7th level before selecting this revelation. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameWingsDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameWingsDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Wings of Fire 的本地化字符串。
+        /// </summary>
+        internal static string MysteryFlameWingsName_info {
+            get {
+                return ResourceManager.GetString("MysteryFlameWingsName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Oracles who drawn to the night sky learn spells and revelations that draw power from the heavens: the many colors of starlight, the moon, or the empty void of space.
+        ///Class skills: {0}, {1} 的本地化字符串。
+        /// </summary>
+        internal static string MysteryHeavensDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryHeavensDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 An oracle with the heavens mystery can choose from any of the following revelations: 的本地化字符串。
+        /// </summary>
+        internal static string MysteryHeavensDescription2_info {
+            get {
+                return ResourceManager.GetString("MysteryHeavensDescription2_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Heavens Mystery 的本地化字符串。
+        /// </summary>
+        internal static string MysteryHeavensName_info {
+            get {
+                return ResourceManager.GetString("MysteryHeavensName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Class skills: {0}, {1}
+        ///An oracle with the time mystery can choose from any of the following revelations: 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Time Mystery 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeName_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Dazing  的本地化字符串。
         /// </summary>
         internal static string NewMetamagicNamesDazing_info {
@@ -2591,7 +3164,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Elemental  的本地化字符串。
+        ///   查找类似  Elemental  的本地化字符串。
         /// </summary>
         internal static string NewMetamagicNamesElemental_info {
             get {
@@ -2600,47 +3173,11 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Acid Elemental  的本地化字符串。
+        ///   查找类似 Force 的本地化字符串。
         /// </summary>
-        internal static string NewMetamagicNamesElementalAcid_info {
+        internal static string NewMetamagicNamesElementalForcePrefix_info {
             get {
-                return ResourceManager.GetString("NewMetamagicNamesElementalAcid_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Cold Elemental  的本地化字符串。
-        /// </summary>
-        internal static string NewMetamagicNamesElementalCold_info {
-            get {
-                return ResourceManager.GetString("NewMetamagicNamesElementalCold_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Electricity Elemental  的本地化字符串。
-        /// </summary>
-        internal static string NewMetamagicNamesElementalElectricity_info {
-            get {
-                return ResourceManager.GetString("NewMetamagicNamesElementalElectricity_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Fire Elemental  的本地化字符串。
-        /// </summary>
-        internal static string NewMetamagicNamesElementalFire_info {
-            get {
-                return ResourceManager.GetString("NewMetamagicNamesElementalFire_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查找类似 Force Elemental  的本地化字符串。
-        /// </summary>
-        internal static string NewMetamagicNamesElementalForce_info {
-            get {
-                return ResourceManager.GetString("NewMetamagicNamesElementalForce_info", resourceCulture);
+                return ResourceManager.GetString("NewMetamagicNamesElementalForcePrefix_info", resourceCulture);
             }
         }
         
@@ -3395,11 +3932,11 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Prestigious Spellcaster — {0} 的本地化字符串。
+        ///   查找类似 {0} equals: {1} 的本地化字符串。
         /// </summary>
-        internal static string PrestigiousSpellcasterClassFeatureName_info {
+        internal static string PrerequisiteCharacterLevelEquals_info {
             get {
-                return ResourceManager.GetString("PrestigiousSpellcasterClassFeatureName_info", resourceCulture);
+                return ResourceManager.GetString("PrerequisiteCharacterLevelEquals_info", resourceCulture);
             }
         }
         
@@ -3536,6 +4073,79 @@ namespace EldritchArcana.Properties {
         internal static string ScionExtraArcanaFeatureName_info {
             get {
                 return ResourceManager.GetString("ScionExtraArcanaFeatureName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Oracles gain their magical powers through strange and mysterious ways, be they chosen by fate or blood. While most might be content with their strange powers, some oracles join the Pathfinders specifically to find out more about their mysteries and determine the genesis and history of their eldritch talents. These spellcasters are known among the Spells as seekers, after their obsession with researching ancient texts and obscure ruins for any clues they can find about their heritage and histories. 的本地化字符串。
+        /// </summary>
+        internal static string SeekerDescription_info {
+            get {
+                return ResourceManager.GetString("SeekerDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 By 3rd level, a seeker has already learned much about their mystery, and is more comfortable using the bonus spells gained by that mystery. They gain a +4 bonus on all concentration checks, on caster level checks made to overcome spell resistance with their bonus spells.
+        ///This ability replaces the revelation gained at 3rd level. 的本地化字符串。
+        /// </summary>
+        internal static string SeekerLoreDescription_info {
+            get {
+                return ResourceManager.GetString("SeekerLoreDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Seeker Lore 的本地化字符串。
+        /// </summary>
+        internal static string SeekerLoreName_info {
+            get {
+                return ResourceManager.GetString("SeekerLoreName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 At 15th level, a seeker becomes skilled at modifying their mystery spells with metamagic. When a seeker applies a metamagic feat to any bonus spells granted by their mystery, they reduce the metamagic feat’s spell level adjustment by 1. Thus, applying a Metamagic feat like Extend Spell to a spell does not change its effective spell level at all, while applying Quicken Spell only increases the spell’s effective spell level by 3 instead of by 4. This reduction to the spell level adjustment for Metamagic feats [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string SeekerMagic_Description_info {
+            get {
+                return ResourceManager.GetString("SeekerMagic_Description_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Seeker Magic 的本地化字符串。
+        /// </summary>
+        internal static string SeekerMagicName_info {
+            get {
+                return ResourceManager.GetString("SeekerMagicName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Seeker 的本地化字符串。
+        /// </summary>
+        internal static string SeekerName_info {
+            get {
+                return ResourceManager.GetString("SeekerName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Seekers often look to ancient devices, old tomes, and strange magical items in order to learn more about their oracle mysteries. As a result of this curiosity and thanks to an innate knack at deciphering the strange and weird, a seeker adds half their oracle level on Perception checks made to locate traps (minimum +1). If the seeker also possesses levels in rogue or another class that provides the trapfinding ability, those levels stack with their oracle levels for determining their overall bonus on these s [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string SeekerTinkeringDescription_info {
+            get {
+                return ResourceManager.GetString("SeekerTinkeringDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Tinkering 的本地化字符串。
+        /// </summary>
+        internal static string SeekerTinkeringName_info {
+            get {
+                return ResourceManager.GetString("SeekerTinkeringName_info", resourceCulture);
             }
         }
         
@@ -3838,6 +4448,15 @@ namespace EldritchArcana.Properties {
         internal static string TrueResurrectionSpells_info {
             get {
                 return ResourceManager.GetString("TrueResurrectionSpells_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0} — {1} 的本地化字符串。
+        /// </summary>
+        internal static string TypeHyphenSubtype_info {
+            get {
+                return ResourceManager.GetString("TypeHyphenSubtype_info", resourceCulture);
             }
         }
         

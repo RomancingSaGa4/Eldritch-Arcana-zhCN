@@ -126,7 +126,7 @@ namespace EldritchArcana
         static BlueprintFeature CreateFinalRevelation()
         {
 
-            finalRevelation = Helpers.CreateFeature("MysteryBattleFinalRevelation", RES.MysteryBattleFinalRevelationName_info,
+            finalRevelation = Helpers.CreateFeature("MysteryBattleFinalRevelation", RES.FinalRevelationFeatureName_info,
                 RES.MysteryBattleFinalRevelationDescription_info,
                 "c37000f13f5d45baae9918c2dddfb993",
                 Helpers.GetIcon("e15e5e7045fda2244b98c8f010adfe31"),

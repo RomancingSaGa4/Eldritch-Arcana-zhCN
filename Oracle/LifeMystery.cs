@@ -330,8 +330,8 @@ namespace EldritchArcana
         static BlueprintFeature CreateDelayAffliction()
         {
             var delayPoisonBuff = library.Get<BlueprintBuff>("51ebd62ee464b1446bb01fa1e214942f");
-            var feat = Helpers.CreateFeature("MysteryLifeDelayAffliction", "",
-                "",
+            var feat = Helpers.CreateFeature("MysteryLifeDelayAffliction", RES.DelayAfflictionFeatureName_info,
+                RES.DelayAfflictionFeatureDescription_info,
                 "42f849d6508949658931e4ed9bca77a8",
                 delayPoisonBuff.Icon,
                 FeatureGroup.None);
