@@ -585,8 +585,8 @@ namespace EldritchArcana
 
         static BlueprintFeature CreateBreathWeaponFeature(String existingId, BlueprintFeature energyFeat, String energyName,String shapeName, BlueprintAbilityResource resource)
         {
-            var name = $"MysteryDragon{energyFeat.name}{shapeName}Breath";
-            Log.Write(name);
+            var name = $"{energyFeat.name.Replace("Progression", "")}{shapeName}Breath";
+            // Log.Write(name);
             var assetId = shapeName == "Line" ? "9cc10f40f706427daff880074c1c423c" : "99bee4ae51af40839154c17c434bca17";
             var feat = library.CopyAndAdd<BlueprintFeature>(existingId,
                 $"{name}Feature", assetId, energyFeat.AssetGuid);

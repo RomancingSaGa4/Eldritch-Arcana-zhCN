@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Kingmaker;
@@ -35,6 +34,8 @@ using Kingmaker.UnitLogic.FactLogic;
 using Kingmaker.UnitLogic.Mechanics;
 using Kingmaker.UnitLogic.Parts;
 
+using RES = EldritchArcana.Properties.Resources;
+
 namespace EldritchArcana
 {
     internal class MagicTraits
@@ -42,8 +43,8 @@ namespace EldritchArcana
         public static BlueprintFeatureSelection CreateMagicTraits()
         {
             var noFeature = Helpers.PrerequisiteNoFeature(null);
-            var magicTraits = Helpers.CreateFeatureSelection("MagicTrait", "Magic Trait",
-                "Magic traits focus on any magical events or training your character may have had in their past.",
+            var magicTraits = Helpers.CreateFeatureSelection("MagicTrait", RES.MagicTraitName_info,
+                RES.MagicTraitDescription_info,
                 "d89181c607e4431084f9d97532c5c554", null, FeatureGroup.None, noFeature);
             noFeature.Feature = magicTraits;
 

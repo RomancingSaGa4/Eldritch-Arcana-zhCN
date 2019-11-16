@@ -35,6 +35,8 @@ using Kingmaker.UnitLogic.FactLogic;
 using Kingmaker.UnitLogic.Mechanics;
 using Kingmaker.UnitLogic.Parts;
 
+using RES = EldritchArcana.Properties.Resources;
+
 namespace EldritchArcana
 {
     internal class CombatTraits
@@ -42,8 +44,8 @@ namespace EldritchArcana
         public static BlueprintFeatureSelection CreateCombatTraits()
         {
             var noFeature = Helpers.PrerequisiteNoFeature(null);
-            var combatTraits = Helpers.CreateFeatureSelection("CombatTrait", "Combat Trait",
-                "Combat traits focus on martial and physical aspects of your character’s background.",
+            var combatTraits = Helpers.CreateFeatureSelection("CombatTrait", RES.CombatTraitName_info,
+                RES.CombatTraitDescription_info,
                 "fab4225be98a4b3e9717883f22086c82", null, FeatureGroup.None, noFeature);
             noFeature.Feature = combatTraits;
 

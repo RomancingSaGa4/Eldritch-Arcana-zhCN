@@ -99,9 +99,7 @@ namespace EldritchArcana
             var x = CreateCustomTraits(Main.settings.CheatCustomTraits);
             if(Main.settings.CheatCustomTraits) choices.Add(x);
 
-
             traitSelection.SetFeatures(choices);
-            
 
             DrawbackSelection1.SetFeatures(Drawbackchoices);
             traitSelection2.SetFeatures(traitSelection.Features);
@@ -161,7 +159,6 @@ namespace EldritchArcana
         }
        
        
-       
         public static List<BlueprintAbility> CollectTieflingAbilities(BlueprintFeatureSelection selection)
         {
             var result = new List<BlueprintAbility>();
@@ -206,7 +203,6 @@ namespace EldritchArcana
                 Helpers.CreateAddStatBonusOnLevel(StatType.Charisma, 2, ModifierDescriptor.Trait, 10), PrerequisiteCharacterLevelExact.Create(1)
                 ));
 
-
             var magicalStrongLineage = Helpers.CreateFeatureSelection("MagicalStrongLineageTrait", "Magical Strong Lineage({cheat})",
                 "One of your parents was a gifted spellcaster who not only used metamagic often, but also developed many magical items and perhaps even a new spell or two—and you have inherited a fragment of this greatness.\nBenefit: Pick one spell when you choose this trait. When you apply metamagic feats to this spell that add at least 1 level to the spell, treat its actual level as 1 lower up to 2 for determining the spell’s final adjusted level.",
                 "1785787fb62a4c529104ba53d0de99ae",
@@ -214,8 +210,6 @@ namespace EldritchArcana
                 FeatureGroup.None);
             FillSpellSelection(magicalStrongLineage, 1, 9, Helpers.Create<ReduceMetamagicCostForSpell>(r => r.Reduction = 2));
             choices.Add(magicalStrongLineage);
-
-
 
             choices.Add(Helpers.CreateFeature("CustomMagicalKnackTrait", "Magical flat Knack",
                 "You were raised, either wholly or in part, by a magical creature, either after it found you abandoned in the woods or because your parents often left you in the care of a magical minion. This constant exposure to magic has made its mysteries easy for you to understand, even when you turn your mind to other devotions and tasks.\nBenefit: Pick a class when you gain this trait—your caster level in that class gains a +2flat level added.",
@@ -234,7 +228,6 @@ namespace EldritchArcana
                             //Helpers.Create<IncreaseCasterLevelUpToCharacterLevel>()
                             Helpers.Create<OrcBloodlineArcana>()
                             ));
-
 
             var dwarfy = new BlueprintComponent[64];
             for (int i = 1; i < 65; i++)

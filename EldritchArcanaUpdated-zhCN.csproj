@@ -17,8 +17,8 @@
     <FileVersion>1.2.9</FileVersion>
     <Version>1.2.9</Version>
     <Authors>Elmindra_joostjasper</Authors>
-    <Company>Legend</Company>
-    <Copyright>Copyright © Legend 2019</Copyright>
+    <Company>Pazio</Company>
+    <Copyright>Copyright © Pazio 2019</Copyright>
     <Description>《开拓者：拥王者》精深奥术Mod，资源分离汉化版</Description>
     <AssemblyTitle>$(Description)</AssemblyTitle>
   </PropertyGroup>

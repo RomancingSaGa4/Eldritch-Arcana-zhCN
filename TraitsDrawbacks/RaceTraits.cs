@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Kingmaker;
@@ -35,6 +34,8 @@ using Kingmaker.UnitLogic.FactLogic;
 using Kingmaker.UnitLogic.Mechanics;
 using Kingmaker.UnitLogic.Parts;
 
+using RES = EldritchArcana.Properties.Resources;
+
 namespace EldritchArcana
 {
     internal class RaceTraits
@@ -43,8 +44,8 @@ namespace EldritchArcana
         public static BlueprintFeatureSelection CreateRaceTraits(BlueprintFeatureSelection adopted)
         {
             var noFeature = Helpers.PrerequisiteNoFeature(null);
-            var raceTraits = Helpers.CreateFeatureSelection("RaceTrait", "Race Trait",
-                "Race traits are keyed to specific races or ethnicities, which your character must belong to in order to select the trait.",
+            var raceTraits = Helpers.CreateFeatureSelection("RaceTrait", RES.RaceTraitName_info,
+                RES.RaceTraitDescription_info,
                 "6264aa9515be40cda55892da93685764", null, FeatureGroup.None,
                 Helpers.PrerequisiteNoFeature(adopted), noFeature);
             noFeature.Feature = raceTraits;
@@ -85,14 +86,15 @@ namespace EldritchArcana
                 a.Value = 2;
                 a.ModifierDescriptor = ModifierDescriptor.Trait;
             }));
-            choices.Add(Helpers.CreateFeature("CarefullyHiddenTrait", "Carefully Hidden (Human)",
-                "Your life as a member of an unpopular ethnic group has given you an uncanny knack for avoiding detection.\nBenefit: You gain a +1 trait bonus to Will saves and a +2 trait bonus to saving throws versus divination effects.",
+            choices.Add(Helpers.CreateFeature("CarefullyHiddenTrait", RES.RaceCarefullyHiddenTraitName_info,
+                RES.RaceCarefullyHiddenTraitDescription_info,
                 "38b92d2ebb4c4cdb8e946e29f5b2f178",
                 Helpers.GetIcon("175d1577bb6c9a04baf88eec99c66334"), // Iron Will
                 FeatureGroup.None,
                 components.ToArray()));
-            choices.Add(Traits.CreateAddStatBonus("FanaticTrait", "Fanatic (Human)",
-                "Your years spent in libraries reading every musty tome you could find about ancient lost civilizations has given you insight into the subjects of history and the arcane.",
+
+            choices.Add(Traits.CreateAddStatBonus("FanaticTrait", RES.RaceFanaticTraitName_info,
+                RES.RaceFanaticTraitDescription_info,
                 "6427e81ba399406c93b463c284a42055",
                 StatType.SkillKnowledgeArcana,
                 humanReq));
@@ -102,9 +104,9 @@ namespace EldritchArcana
             components.Add(humanReq);
             components.AddRange((new StatType[] {
                 StatType.SkillKnowledgeArcana,
-                    StatType.SkillKnowledgeWorld,
-                    StatType.SkillLoreNature,
-                    StatType.SkillLoreReligion,
+                StatType.SkillKnowledgeWorld,
+                StatType.SkillLoreNature,
+                StatType.SkillLoreReligion,
             }).Select((skill) => Helpers.Create<AddStatBonusIfHasFact>(a =>
             {
                 a.Stat = skill;
@@ -113,8 +115,8 @@ namespace EldritchArcana
                 a.Descriptor = ModifierDescriptor.UntypedStackable;
             })));
 
-            var historian = Traits.CreateAddStatBonus("HistorianTrait", "Historian (Human)",
-                "Your parents were scholars of history, whether genealogists of your own family tree, sages on the subject of ancient empires, or simply hobbyists with a deep and abiding love for the past.\nBenefits: You gain a +1 trait bonus on Knowledge (history) checks and bardic knowledge checks, and Knowledge (history) is always a class skill for you.",
+            var historian = Traits.CreateAddStatBonus("HistorianTrait", RES.RaceHistorianTraitName_info,
+                RES.RaceHistorianTraitDescription_info,
                 "4af3871899e4440bae03d4c33d4b52fd",
                 StatType.SkillKnowledgeWorld,
                 components.ToArray());
@@ -129,24 +131,24 @@ namespace EldritchArcana
                 "be9b6408e6101cb4997a8996484baf19"  // WeaponHeavyShield
             }.Select(id => Helpers.Create<WeaponTypeDamageBonus>(w => { w.DamageBonus = 1; w.WeaponType =Traits.library.Get<BlueprintWeaponType>(id); })));
 
-            choices.Add(Helpers.CreateFeature("ShieldBearerTrait", "Shield Bearer (Human)",
-                "You have survived many battles thanks to your skill with your shield.\nBenefit: When performing a shield bash, you deal 1 additional point of damage.",
+            choices.Add(Helpers.CreateFeature("ShieldBearerTrait", RES.RaceShieldBearerTraitName_info,
+                RES.RaceShieldBearerTraitDescription_info,
                 "044ebbbadfba4d58afa11bfbf38df199",
                 Helpers.GetIcon("121811173a614534e8720d7550aae253"), // Shield Bash
                 FeatureGroup.None,
                 components.ToArray()));
 
-            choices.Add(Helpers.CreateFeature("SuperstitiousTrait", "Superstitious (Human)",
-                "You have a healthy fear of sorcerers’ speech and wizards’ words that has helped you to survive their charms.\nBenefit: You gain a +1 trait bonus on saving throws against arcane spells.",
+            choices.Add(Helpers.CreateFeature("SuperstitiousTrait", RES.RaceSuperstitiousTraitName_info,
+                RES.RaceSuperstitiousTraitDescription_info,
                 "f5d79e5fbb87473ca0b13ed15b742079",
                 Helpers.GetIcon("2483a523984f44944a7cf157b21bf79c"), // Elven Immunities
                 FeatureGroup.None,
                 humanReq,
                 Helpers.Create<SavingThrowBonusAgainstSpellSource>()));
 
-            var travelerDescription = "Your family has taken the love of travel to an extreme, roaming the world extensively. You’ve seen dozens of cultures and have learned to appreciate the diversity of what the world has to offer.";
-            var worldTraveler = Helpers.CreateFeatureSelection("WorldTravelerTrait", "World Traveler (Human)",
-                travelerDescription + "\nBenefits: Select one of the following skills: Persuasion, Knowledge (world), or Perception. You gain a +1 trait bonus on checks with that skill, and it is always a class skill for you.",
+            //var travelerDescription = "Your family has taken the love of travel to an extreme, roaming the world extensively. You’ve seen dozens of cultures and have learned to appreciate the diversity of what the world has to offer.";
+            var worldTraveler = Helpers.CreateFeatureSelection("WorldTravelerTrait", RES.RaceWorldTravelerTraitName_info,
+                RES.RaceWorldTravelerTraitDescription_info + RES.RaceWorldTravelerTraitBenefit_info,
                 "ecacfcbeddfe453cafc8d60fc1db7d34",
                 Helpers.GetIcon("3adf9274a210b164cb68f472dc1e4544"), // Human Skilled
                 FeatureGroup.None,
@@ -158,8 +160,11 @@ namespace EldritchArcana
                 StatType.SkillPerception
             }.Select(skill => Traits.CreateAddStatBonus(
                 $"WorldTraveler{skill}Trait",
-                $"World Traveler — {UIUtility.GetStatText(skill)}",
-                travelerDescription,
+                String.Format(RES.TypeHyphenSubtype_info, 
+                    RES.RaceWorldTravelerTraitName_info.Substring(0, RES.RaceWorldTravelerTraitName_info.IndexOf("(") >= 0 ? 
+                        RES.RaceWorldTravelerTraitName_info.IndexOf("(") : RES.RaceWorldTravelerTraitName_info.IndexOf("（")), 
+                    UIUtility.GetStatText(skill)),
+                RES.RaceWorldTravelerTraitDescription_info,
                 Helpers.MergeIds(Helpers.GetSkillFocus(skill).AssetGuid, "9b03b7ff17394007a3fbec18aa42604b"),
                 skill)).ToArray();
             worldTraveler.SetFeatures(travelerFeats);
@@ -176,8 +181,6 @@ namespace EldritchArcana
 
             BlueprintItemWeapon bite = Traits.library.CopyAndAdd<BlueprintItemWeapon>("35dfad6517f401145af54111be04d6cf", "Tusked",
                 "44dfad6517f401145af54111be04d644");
-            
-                
 
             choices.Add(Helpers.CreateFeature("ForlornTrait", "Forlorn (Elf)",
                 "Having lived outside of traditional elf society for much or all of your life, you know the world can be cruel, dangerous, and unforgiving of the weak.\nBenefit: You gain a +1 trait bonus on Fortitude saving throws.",
@@ -222,7 +225,7 @@ namespace EldritchArcana
             brute.SetIcon(Helpers.GetIcon("885f478dff2e39442a0f64ceea6339c9")); // Intimidating
             choices.Add(brute);
 
-            var GloryOfOld = Helpers.CreateFeature("GloryOfOldTrait", "Glory of old",
+            var GloryOfOld = Helpers.CreateFeature("GloryOfOldTrait", "Glory of Old (Dwarf)",
                 "You are part of the old Guard" +
                 "\nYou belong to the elite veteran regiments of The old king and his army and are intensely loyal to him. It was you who made the last charge at the dwarven kingdom." +
                 "Benefit: You receive a +1 trait bonus on saving throws against spells, spell-like abilities, and poison",
@@ -254,10 +257,6 @@ namespace EldritchArcana
             GloryOfOld.AddComponents(components);
 
             choices.Add(GloryOfOld);
-
-
-
-
 
             choices.Add(Helpers.CreateFeature("LegacyOfSandTrait", "Legacy of Sand (Half-Orc)",
                 "A large tribe of orcs adapted to life in the desert once dwelt in southeastern Katapesh. Although this tribe is long extinct, some half-orcs of Katapesh carry the traits of this tribe in their particularly large jaws, broad shoulders, and shockingly pale eyes. You often have dreams of hunts and strange ceremonies held under moonlight in the desert sands. Some ascribe these dreams to racial memory, others to visions or prophecies. These dreams have instilled in you a fierce sense of tradition.\nBenefit: You gain a +1 trait bonus on all Will saving throws.",

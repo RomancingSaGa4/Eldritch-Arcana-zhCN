@@ -148,14 +148,14 @@ Benefit: You gain two character traits of your choice. These traits must be chos
     <value>Air Walk, Communal</value>
   </data>
   <data name="AncientLorekeeperClassSkillsDescription_info" xml:space="preserve">
+    <value>An ancient lorekeeper adds Knowledge (arcana) to their class skills.</value>
+  </data>
+  <data name="AncientLorekeeperDescription_info" xml:space="preserve">
     <value>The ancient lorekeeper is a repository for all the beliefs and vast knowledge of an elven people. They show a strong interest in and understanding of histories and creation legends at a young age, and as they mature their calling to serve as the memory of their long-lived people becomes clear to all who know them.
 An ancient lorekeeper adds Knowledge (arcana) to their list of class skills. This replaces the bonus skills the ancient lorekeeper gains from their mystery.</value>
   </data>
-  <data name="AncientLorekeeperDescription_info" xml:space="preserve">
-    <value>AncientLorekeeperClassSkills</value>
-  </data>
   <data name="AncientLorekeeperElvenArcanaDescription_info" xml:space="preserve">
-    <value>At 2nd level, an ancient lorekeeper’s mastery of elven legends and philosophy has allowed them to master one spell used by elven wizards. They select one spell from the sorcerer/ wizard spell list that is at least one level lower than the highest-level oracle spell they can cast. The ancient lorekeeper gains this as a bonus spell known. The spell is treated as one level higher than its true level for all purposes. The ancient lorekeeper may choose an additional spell at 4th, 6th, 8th, 10th, 12th, 14th, 16th, and 18th levels.
+    <value>At 2nd level, an ancient lorekeeper's mastery of elven legends and philosophy has allowed them to master one spell used by elven wizards. They select one spell from the sorcerer/ wizard spell list that is at least one level lower than the highest-level oracle spell they can cast. The ancient lorekeeper gains this as a bonus spell known. The spell is treated as one level higher than its true level for all purposes. The ancient lorekeeper may choose an additional spell at 4th, 6th, 8th, 10th, 12th, 14th, 16th, and 18th levels.
 This ability replaces the bonus spells they would normally gain at these levels from their chosen mystery.</value>
   </data>
   <data name="AncientLorekeeperElvenArcanaName_info" xml:space="preserve">
@@ -208,6 +208,12 @@ This skill also makes savants quite valuable to adventuring parties, both in the
   </data>
   <data name="ArcaneSavantName_info" xml:space="preserve">
     <value>Arcane Savant</value>
+  </data>
+  <data name="BastardTraitDescription" xml:space="preserve">
+    <value>One of your parents was a member of one of the great families of Brevoy, perhaps even of the line of Rogarvia itself. Yet you have no substantive proof of your nobility, and you've learned that claiming nobility without evidence makes you as good as a liar. While you might own a piece of jewelry, a scrap of once-rich fabric, or an aged confession of love, none of this directly supports your claim. Thus, you've lived your life in the shadow of nobility, knowing that you deserve the comforts and esteem of the elite, even though the contempt of fate brings you nothing but their scorn. Whether a recent attempt to prove your heritage has brought down the wrath of a noble family's henchmen or you merely seek to prove the worth of the blood in your veins, you've joined an expedition into the Stolen Lands, hoping to make a name all your own. You take a –1 penalty on all Charisma-based skill checks made when dealing with members of Brevic nobility but gain a +1 trait bonus on Will saves as a result of your stubbornness and individuality. (The penalty aspect of this trait is removed if you ever manage to establish yourself as a true noble.)</value>
+  </data>
+  <data name="BastardTraitName_info" xml:space="preserve">
+    <value>Bastard</value>
   </data>
   <data name="BloodHavocMutationFeatureDescription_info" xml:space="preserve">
     <value>A bloodrager need not be in a bloodrage to use her bloodline mutation powers. Alternatively, a bloodrager or sorcerer can select a bloodline mutation in place of a bloodline bonus feat, provided her class level is at least equal to the level of the bloodline ability the mutation normally replaces.
@@ -299,6 +305,19 @@ Whenever you cast a bloodrager or sorcerer spell that deals damage, add 1 point 
   <data name="BonusSpellLevelFeatureName_info" xml:space="preserve">
     <value>Bonus Known Spell (Level {0})</value>
   </data>
+  <data name="BurnedDrawbackDescription_info" xml:space="preserve">
+    <value>You were badly burned once by volcanic ash, torch-wielding mobs, or some fiery accident, and the scars pain you terribly you whenever you are too near to fire.
+Drawback: You take a –2 penalty on saves against fire effects.</value>
+  </data>
+  <data name="BurnedDrawbackName_info" xml:space="preserve">
+    <value>Burned</value>
+  </data>
+  <data name="CampaignTraitDescription_info" xml:space="preserve">
+    <value>Campaign traits are specifically tailored to relate to the Kingmaker campaign.</value>
+  </data>
+  <data name="CampaignTraitName_info" xml:space="preserve">
+    <value>Campaign Trait</value>
+  </data>
   <data name="cannotLoadMod_error" xml:space="preserve">
     <value>Failed to patch LibraryScriptableObject.LoadDictionary(), cannot load mod!</value>
   </data>
@@ -318,12 +337,18 @@ You can use this ability a number of times per day equal to 1+your Charisma modi
   <data name="ChooseMysteryLocalized_info" xml:space="preserve">
     <value>Choose Mystery</value>
   </data>
+  <data name="CombatTraitDescription_info" xml:space="preserve">
+    <value>Combat traits focus on martial and physical aspects of your character's background.</value>
+  </data>
+  <data name="CombatTraitName_info" xml:space="preserve">
+    <value>Combat Trait</value>
+  </data>
   <data name="CrossbloodedChoicesFeatureDescription_info" xml:space="preserve">
     <value>
 Choices for each bloodline:</value>
   </data>
   <data name="CrossbloodedConflictingUrgesFeatureDescription_info" xml:space="preserve">
-    <value>The conflicting urges created by the divergent nature of the crossblooded sorcerer’s dual heritage forces them to constantly take some mental effort just to remain focused on their current situation and needs. This leaves them with less mental resolve to deal with external threats. A crossblooded sorcerer always takes a –2 penalty on Will saves.</value>
+    <value>The conflicting urges created by the divergent nature of the crossblooded sorcerer's dual heritage forces them to constantly take some mental effort just to remain focused on their current situation and needs. This leaves them with less mental resolve to deal with external threats. A crossblooded sorcerer always takes a –2 penalty on Will saves.</value>
   </data>
   <data name="CrossbloodedConflictingUrgesFeatureName_info" xml:space="preserve">
     <value>Crossblooded (conflicting urges)</value>
@@ -340,6 +365,12 @@ Choices for each bloodline:</value>
   </data>
   <data name="CrossBloodlineName_info" xml:space="preserve">
     <value>{0} (Crossblood)</value>
+  </data>
+  <data name="CurseDrawbackOptionsDescription_info" xml:space="preserve">
+    <value>You were cursed. Select a Curse.</value>
+  </data>
+  <data name="CurseDrawbackOptionsName_info" xml:space="preserve">
+    <value>You Were Cursed[HB]</value>
   </data>
   <data name="CustomTraitDescription_info" xml:space="preserve">
     <value>These traits are a little overpowered and are here just for fun, if you want to play fair don't pick em.</value>
@@ -461,7 +492,7 @@ Normally this spell is used to buy time for dealing with avalanches, floods, and
     <value>Emergency force sphere</value>
   </data>
   <data name="EnergyBodyFeatureDescription_info" xml:space="preserve">
-    <value>As a standard action, you can transform your body into pure life energy, resembling a golden-white fire elemental. In this form, you gain the elemental subtype and give off a warm, welcoming light that increases the light level within 10 feet by one step, up to normal light. Any undead creature striking you with its body or a handheld weapon deals normal damage, but at the same time the attacker takes 1d6 points of positive energy damage + 1 point per oracle level. Creatures wielding melee weapons with reach are not subject to this damage if they attack you. If you grapple or attack an undead creature using unarmed strikes or natural weapons, you may deal this damage in place of the normal damage for the attack. Once per round, if you pass through a living allied creature’s square or the ally passes through your square, it heals 1d6 hit points + 1 per oracle level. You may use this ability to heal yourself as a move action. You choose whether or not to heal a creature when it passes through your space. You may return to your normal form as a free action. You may remain in energy body form for a number of rounds per day equal to your oracle level.</value>
+    <value>As a standard action, you can transform your body into pure life energy, resembling a golden-white fire elemental. In this form, you gain the elemental subtype and give off a warm, welcoming light that increases the light level within 10 feet by one step, up to normal light. Any undead creature striking you with its body or a handheld weapon deals normal damage, but at the same time the attacker takes 1d6 points of positive energy damage + 1 point per oracle level. Creatures wielding melee weapons with reach are not subject to this damage if they attack you. If you grapple or attack an undead creature using unarmed strikes or natural weapons, you may deal this damage in place of the normal damage for the attack. Once per round, if you pass through a living allied creature's square or the ally passes through your square, it heals 1d6 hit points + 1 per oracle level. You may use this ability to heal yourself as a move action. You choose whether or not to heal a creature when it passes through your space. You may return to your normal form as a free action. You may remain in energy body form for a number of rounds per day equal to your oracle level.</value>
   </data>
   <data name="EnergyBodyFeatureName_info" xml:space="preserve">
     <value>Energy Body</value>
@@ -471,6 +502,19 @@ Normally this spell is used to buy time for dealing with avalanches, floods, and
   </data>
   <data name="EnhancedCuresFeatureName_info" xml:space="preserve">
     <value>Enhanced Cures</value>
+  </data>
+  <data name="EntomophobeDrawbackDescription_info" xml:space="preserve">
+    <value>A harrowing experience with insects when you were young instilled in you a deep-seated fear of vermin of all description, especially when they swarm together.
+Drawback: You take a –2 penalty on attacks against vermin, and you take a –2 penalty on saving throws against the nauseated condition of a swarm's distraction ability.</value>
+  </data>
+  <data name="EntomophobeDrawbackName_info" xml:space="preserve">
+    <value>Entomophobe</value>
+  </data>
+  <data name="EquipmentTraitDescription_info" xml:space="preserve">
+    <value>Many adventurers come to rely on certain gear to the extent that the equipment and the adventurer each become something more when the other is present. The symbiosis between adventurers and their gear is varied and complex. Below are several traits and feats that help characters make the most of their equipment or use their equipment to make the most of their skills.</value>
+  </data>
+  <data name="EquipmentTraitName_info" xml:space="preserve">
+    <value>Equipment Trait</value>
   </data>
   <data name="ExtraArcanaFeatureDescription_info" xml:space="preserve">
     <value>You have unlocked the secret of a new magus arcana. You gain one additional magus arcana. You must meet all the prerequisites for this magus arcana.
@@ -498,6 +542,12 @@ Special: You can gain Extra Revelation multiple times.</value>
   <data name="failedPatches_error" xml:space="preserve">
     <value>&lt;b&gt;Error: Some patches failed to apply. These features may not work:&lt;/b&gt;</value>
   </data>
+  <data name="FaithTraitDescription_info" xml:space="preserve">
+    <value>Faith traits focus on the character's religious and philosophical leanings.</value>
+  </data>
+  <data name="FaithTraitName_info" xml:space="preserve">
+    <value>Faith Trait</value>
+  </data>
   <data name="FavoredClassAnyFeatureDescription_info" xml:space="preserve">
     <value>The favored class is automatically determined each level-up, and an extra hit point is awarded if gaining a level in that class. The favored class is your highest level non-prestige class. This is the default game behavior.</value>
   </data>
@@ -519,7 +569,7 @@ Human (and Half-Elf, Half-Orc, Aasimar) — Add one spell known from the {0} spe
     <value>Whenever you gain a {0} level, you can choose between +1 hit point, +1 skill rank, or the racial bonus associated with their favored class.</value>
   </data>
   <data name="FavoredPresitgeClassFeatureDescription_info" xml:space="preserve">
-    <value>You have come to favor a certain prestige class, either because you are particularly devoted to the class’s cause, have trained more than most others have for that specific role, or have simply been destined to excel in the prestige class all along. Regardless of the reason, levels gained in your favored prestige class grant additional benefits in a way similar to those you gain for taking levels in your base favored class.
+    <value>You have come to favor a certain prestige class, either because you are particularly devoted to the class's cause, have trained more than most others have for that specific role, or have simply been destined to excel in the prestige class all along. Regardless of the reason, levels gained in your favored prestige class grant additional benefits in a way similar to those you gain for taking levels in your base favored class.
 You can select this feat before you gain levels in your chosen favored prestige class, but the benefits of the feat do not apply until you actually gain at least 1 level in that prestige class.</value>
   </data>
   <data name="FavoredPresitgeClassFeatureName_info" xml:space="preserve">
@@ -530,6 +580,13 @@ You can select this feat before you gain levels in your chosen favored prestige 
   </data>
   <data name="featureName_error" xml:space="preserve">
     <value>  • &lt;b&gt;{0}&lt;/b&gt;</value>
+  </data>
+  <data name="Fey-takenDrawbackDescription_info" xml:space="preserve">
+    <value>As a child, you were whisked away by mischievous fey for a time. When you returned, you were ever after considered odd and distant. You long to return there, and find the mortal world dull and at times revolting, so you do not eat as you should and do not question strange visions.
+Drawback: You take a –2 penalty on saving throws against disease, illusions, and poison of all kinds, as well as against the spells, spell-like abilities, and supernatural abilities of fey.</value>
+  </data>
+  <data name="Fey-takenDrawbackName_info" xml:space="preserve">
+    <value>Fey-taken</value>
   </data>
   <data name="FeyFoundlingFeatureDescription_info" xml:space="preserve">
     <value>You were found in the wilds as a child.
@@ -614,6 +671,33 @@ Whenever you receive magical healing, you heal an additional 2 points per die ro
   <data name="FlyWingDraconicWhiteName_info" xml:space="preserve">
     <value>White Dragon</value>
   </data>
+  <data name="FoulBrandDrawbackDescription_info" xml:space="preserve">
+    <value>You have the symbol of an evil deity burned into your flesh. The place where the symbol is decides what the penalty is.</value>
+  </data>
+  <data name="FoulBrandDrawbackName" xml:space="preserve">
+    <value>Foul Brand</value>
+  </data>
+  <data name="FoulBrandFaceDrawbackDescription_info" xml:space="preserve">
+    <value>The symbol is on your face.
+Drawback: You take a -2 penalty on Persuasion.</value>
+  </data>
+  <data name="FoulBrandFaceDrawbackName_info" xml:space="preserve">
+    <value>Face</value>
+  </data>
+  <data name="FoulBrandHandsDrawbackDescription_info" xml:space="preserve">
+    <value>The symbol is on your hands.
+Drawback: You take a -2 penalty on Trickery.</value>
+  </data>
+  <data name="FoulBrandHandsDrawbackName_info" xml:space="preserve">
+    <value>Hands</value>
+  </data>
+  <data name="FoulBrandLegDrawbackDescription_info" xml:space="preserve">
+    <value>The symbol is on your leg.
+Drawback: Your movement speed is 5ft slower.</value>
+  </data>
+  <data name="FoulBrandLegDrawbackName_info" xml:space="preserve">
+    <value>Leg</value>
+  </data>
   <data name="GoBackDescription_info" xml:space="preserve">
     <value>Select this to go back to the previous selection, allowing you to pick something else.</value>
   </data>
@@ -645,6 +729,26 @@ You gain an additional power from the bloodline you selected with the Eldritch H
   <data name="HealingHandsFeatureName_info" xml:space="preserve">
     <value>Healing Hands</value>
   </data>
+  <data name="HedonisticDebuffDescription_info" xml:space="preserve">
+    <value>You have feel like you are fatigued.</value>
+  </data>
+  <data name="HedonisticDebuffName_info" xml:space="preserve">
+    <value>Hedonistic Debuff</value>
+  </data>
+  <data name="HedonisticDrawbackDescription_info" xml:space="preserve">
+    <value>You are a creature of pleasure and comfort.
+Drawback: You take a -2 penalty on Strength and Dexterity if you do not possess at least 100 + 200 per level gold.</value>
+  </data>
+  <data name="HedonisticDrawbackName_info" xml:space="preserve">
+    <value>Hedonistic</value>
+  </data>
+  <data name="HelplessDrawbackDescription_info" xml:space="preserve">
+    <value>You once stood helpless as great harm befell a loved one, and that paralysis sometimes returns when an ally is in a dire position.
+Drawback: You take a -2 penalty on saving throws vs paralysis and petrification.</value>
+  </data>
+  <data name="HelplessDrawbackName_info" xml:space="preserve">
+    <value>Helpless</value>
+  </data>
   <data name="HighDCl_info" xml:space="preserve">
     <value>Outlander spells gain caster level and DC max (cheat)</value>
   </data>
@@ -666,8 +770,8 @@ You gain either the 3rd-level or the 9th-level power (your choice) of the bloodl
   </data>
   <data name="IncendiaryCloudAbilityDescription_info" xml:space="preserve">
     <value>An incendiary cloud spell creates a cloud of roiling smoke shot through with white-hot embers. The smoke obscures all sight as a fog cloud does. In addition, the white-hot embers within the cloud deal 6d6 points of fire damage to everything within the cloud on your turn each round. All targets can make Reflex saves each round to take half damage.
-As with a cloudkill spell, the smoke moves away from you at 10 feet per round. Figure out the smoke’s new spread each round based on its new point of origin, which is 10 feet farther away from where you were when you cast the spell. By concentrating, you can make the cloud move as much as 60 feet each round.Any portion of the cloud that would extend beyond your maximum range dissipates harmlessly, reducing the remainder’s spread thereafter.
-As with fog cloud, wind disperses the smoke, and the spell can’t be cast underwater.</value>
+As with a cloudkill spell, the smoke moves away from you at 10 feet per round. Figure out the smoke's new spread each round based on its new point of origin, which is 10 feet farther away from where you were when you cast the spell. By concentrating, you can make the cloud move as much as 60 feet each round.Any portion of the cloud that would extend beyond your maximum range dissipates harmlessly, reducing the remainder's spread thereafter.
+As with fog cloud, wind disperses the smoke, and the spell can't be cast underwater.</value>
   </data>
   <data name="IncendiaryCloudAbilityName_info" xml:space="preserve">
     <value>Incendiary Cloud</value>
@@ -785,6 +889,12 @@ A duplicated spell allows saving throws and spell resistance as normal, but the 
   <data name="MagesTattooFeatureName_info" xml:space="preserve">
     <value>Mage's Tattoo</value>
   </data>
+  <data name="MagicTraitDescription_info" xml:space="preserve">
+    <value>Magic traits focus on any magical events or training your character may have had in their past.</value>
+  </data>
+  <data name="MagicTraitName_info" xml:space="preserve">
+    <value>Magic Trait</value>
+  </data>
   <data name="MagusArcanasFeatureName_info" xml:space="preserve">
     <value>Magus Arcanas</value>
   </data>
@@ -813,7 +923,7 @@ A duplicated spell allows saving throws and spell resistance as normal, but the 
     <value>Metamagic Adept (Arcane Bloodline)</value>
   </data>
   <data name="MetamagicElementalSpellSelectionDescription_info" xml:space="preserve">
-    <value>Choose one energy type: acid, cold, electricity, fire, or force. You may replace a spell’s normal damage with that energy type.
+    <value>Choose one energy type: acid, cold, electricity, fire, or force. You may replace a spell's normal damage with that energy type.
 Level Increase: +1</value>
   </data>
   <data name="MetamagicElementalSpellSelectionName_info" xml:space="preserve">
@@ -828,7 +938,7 @@ Level Increase: +3
     <value>Dazing Spell</value>
   </data>
   <data name="MetamagicFeatElementalSpellDescription_info" xml:space="preserve">
-    <value>You can manipulate the elemental nature of your spells. You may replace a spell’s normal damage with {0} damage.
+    <value>You can manipulate the elemental nature of your spells. You may replace a spell's normal damage with {0} damage.
 Level Increase: +1</value>
   </data>
   <data name="MetamagicFeatElementalSpellName_info" xml:space="preserve">
@@ -908,7 +1018,7 @@ Level Increase: +1</value>
   </data>
   <data name="MeteorSwarmAbilityDescription_info" xml:space="preserve">
     <value>Meteor swarm is a very powerful and spectacular spell that is similar to fireball in many aspects. When you cast it, four 2-foot-diameter spheres spring from your outstretched hand and streak in straight lines to the spots you select. The meteor spheres leave a fiery trail of sparks.
-If you aim a sphere at a specific creature, you may make a ranged touch attack to strike the target with the meteor.Any creature struck by a sphere takes 2d6 points of bludgeoning damage(no save) and has to make a saving throw against +4 DC for the sphere’s fire damage(see below).If a targeted sphere misses its target, it simply explodes at the nearest corner of the target’s space. You may aim more than one sphere at the same target.
+If you aim a sphere at a specific creature, you may make a ranged touch attack to strike the target with the meteor.Any creature struck by a sphere takes 2d6 points of bludgeoning damage(no save) and has to make a saving throw against +4 DC for the sphere's fire damage(see below).If a targeted sphere misses its target, it simply explodes at the nearest corner of the target's space. You may aim more than one sphere at the same target.
 Once a sphere reaches its destination, it explodes in a 40-foot-radius spread, dealing 6d6 points of fire damage to each creature in the area.If a creature is within the area of more than one sphere, it must save separately against each.Despite stemming from separate spheres, all of the fire damage is added together after the saves have been made, and fire resistance is applied only once.</value>
   </data>
   <data name="MeteorSwarmAbilityName_info" xml:space="preserve">
@@ -1119,7 +1229,7 @@ Upon selecting this mystery, the oracle must select an energy type (acid, cold, 
     <value>Fire Breath</value>
   </data>
   <data name="MysteryFlameBurningMagicDescription_info" xml:space="preserve">
-    <value>Whenever a creature fails a saving throw and takes fire damage from one of your spells, it catches on fire. This fire deals 1 point of fire damage per spell level at the beginning of the burning creature’s turn. The fire lasts for 1d4 rounds, but it can be extinguished as a move action if the creature succeeds at a Reflex save (using the spell’s DC). Dousing the creature with water as a standard action grants a +2 bonus on this save, while immersing the creature in water automatically extinguishes the fire. Spells that do not grant a save do not cause a creature to catch on fire.</value>
+    <value>Whenever a creature fails a saving throw and takes fire damage from one of your spells, it catches on fire. This fire deals 1 point of fire damage per spell level at the beginning of the burning creature's turn. The fire lasts for 1d4 rounds, but it can be extinguished as a move action if the creature succeeds at a Reflex save (using the spell's DC). Dousing the creature with water as a standard action grants a +2 bonus on this save, while immersing the creature in water automatically extinguishes the fire. Spells that do not grant a save do not cause a creature to catch on fire.</value>
   </data>
   <data name="MysteryFlameBurningMagicName_info" xml:space="preserve">
     <value>Burning Magic</value>
@@ -1209,6 +1319,14 @@ An oracle with the time mystery can choose from any of the following revelations
   <data name="MysteryTimeName_info" xml:space="preserve">
     <value>Time Mystery</value>
   </data>
+  <data name="NatureWardDrawbackDescription_info" xml:space="preserve">
+    <value>You look scary. Animals see you as a predator and do not willingly approach within 30 feet of you.
+Benefit: Chance of wild animals not engaging you is greater.
+Drawback: You take a -2 penalty on AC against animal bites and claw attack, and for each animal you have you lose 2 AC.</value>
+  </data>
+  <data name="NatureWardDrawbackName_info" xml:space="preserve">
+    <value>Warded Against Nature</value>
+  </data>
   <data name="NewMetamagicNamesDazing_info" xml:space="preserve">
     <value>Dazing </value>
   </data>
@@ -1233,14 +1351,126 @@ An oracle with the time mystery can choose from any of the following revelations
   <data name="NewMetamagicNamesToppling_info" xml:space="preserve">
     <value>Toppling </value>
   </data>
+  <data name="NobleBornTraitSelectionName_info" xml:space="preserve">
+    <value>Noble Born(Human)</value>
+  </data>
+  <data name="NobleFamilyBornTraitDescription_info" xml:space="preserve">
+    <value>You claim a tangential but legitimate connection to one of Brevoy's noble families. If you aren't human, you were likely adopted by one of Brevoy's nobles or were instead a favored servant or even a childhood friend of a noble scion. Whatever the cause, you've had a comfortable life, but one far from the dignity and decadence your distant cousins know. Although you are associated with an esteemed name, your immediate family is hardly well to do, and you've found your name to be more of a burden to you than a boon in many social situations. You've recently decided to test yourself, to see if you can face the world without the aegis of a name you have little real claim or care for. An expedition into the storied Stolen Lands seems like just the test to see if you really are worth the title "noble."
+Benefits: Select one of the following Royal families to gain its Traits.</value>
+  </data>
+  <data name="NobleFamilyBornTraitName_info" xml:space="preserve">
+    <value>Noble born</value>
+  </data>
+  <data name="NobleFamilyGaressTraitName_info" xml:space="preserve">
+    <value>Noble family — Garess</value>
+  </data>
+  <data name="NobleFamilyKhavortorovTraitName_info" xml:space="preserve">
+    <value>Noble family — Khavortorov</value>
+  </data>
+  <data name="NobleFamilyLebedaTraitName_info" xml:space="preserve">
+    <value>Noble family — Lebeda</value>
+  </data>
+  <data name="NobleFamilyLodovkaTraitName_info" xml:space="preserve">
+    <value>Noble family — Lodovka</value>
+  </data>
+  <data name="NobleFamilyNoneTraitName_info" xml:space="preserve">
+    <value>Noble family — Medvyed</value>
+  </data>
+  <data name="NobleFamilyOrlovskyTraitName_info" xml:space="preserve">
+    <value>Noble family — Orlovsky</value>
+  </data>
+  <data name="NobleFamilyRogarviaTraitName_info" xml:space="preserve">
+    <value>Noble family — Rogarvia</value>
+  </data>
+  <data name="NobleFamilySurtovaTraitName_info" xml:space="preserve">
+    <value>Noble family — Surtova</value>
+  </data>
   <data name="OppositionResearchFeatureDescription_info" xml:space="preserve">
     <value>Select one Wizard opposition school; preparing spells of this school now only requires one spell slot of the appropriate level instead of two, and you no longer have the –4 Spellcraft penalty for crafting items from that school.</value>
   </data>
   <data name="OppositionResearchFeatureName_info" xml:space="preserve">
     <value>Opposition Research</value>
   </data>
+  <data name="OptimisticGamblerGmbldscDescription_info" xml:space="preserve">
+    <value>Look at your stats and inventory or at your class ability usage stats and you will find out your bonus.
+Or you won't. That's the thing. Sometimes you win, and sometimes you lose. But that's what you are all about.
+Benefit: To know what type of bonus you get in advance, right-click on the trait and scroll down.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Note if you want a different bonus you need to restart the game, or this bonus will stay the same.
+</value>
+  </data>
+  <data name="OptimisticGamblerTraitBonus_info" xml:space="preserve">
+    <value>Gain:  {0}</value>
+  </data>
+  <data name="OptimisticGamblerTraitDescription_info" xml:space="preserve">
+    <value>You've always seemed to have trouble keeping money. Worse, you always seem to have debts looming over your head. When you heard about the “Cheat the Devil and Take His Gold" gambling tournament, you felt in your gut that your luck was about to change. You've always been optimistic, in fact, and even though right now is one of those rare times where you don't owe anyone any money (you just paid off a recent loan from local moneylender Lymas Smeed), you know that'll change soon enough. Better to start amassing money now when you're at one of those rare windfall times! You've set aside a gold coin for the entrance fee, and look forward to making it big—you can feel it in your bones! This time's gonna be the big one! Your boundless optimism, even in the face of crushing situations, has always bolstered your spirit.
+Benefit: take a chance you will get a random benefit.</value>
+  </data>
+  <data name="OptimisticGamblerTraitExtraBowBonus_info" xml:space="preserve">
+    <value>You start with a very good bow +2 enhancement and speed.</value>
+  </data>
+  <data name="OptimisticGamblerTraitExtraHealBonus_info" xml:space="preserve">
+    <value>+3 healed by healspels</value>
+  </data>
+  <data name="OptimisticGamblerTraitExtraHealDiceBonus_info" xml:space="preserve">
+    <value>+3 healed by healspels per die</value>
+  </data>
+  <data name="OptimisticGamblerTraitExtraMagicDamageBonus_info" xml:space="preserve">
+    <value>+1 damage on spells per damage die</value>
+  </data>
+  <data name="OptimisticGamblerTraitName_info" xml:space="preserve">
+    <value>Optimistic Gambler</value>
+  </data>
+  <data name="OptimisticGamblerTraitStatsBonus_info" xml:space="preserve">
+    <value>+3 {0} luck bonus</value>
+  </data>
+  <data name="OptimisticGamblerTraitWeaponBonus_info" xml:space="preserve">
+    <value>You start with {0} and you have a +3 bonus on attack rolls with weapons of this type.</value>
+  </data>
+  <data name="OptimisticGamblerTraitWWIB_info" xml:space="preserve">
+    <value>What will it be?</value>
+  </data>
   <data name="OracleCombatHealerDescription_info" xml:space="preserve">
-    <value>Whenever you cast a cure spell (a spell with “cure” in its name), you can cast it as a swift action, as if using the Quicken Spell feat, by expending two spell slots. This does not increase the level of the spell. You can use this ability once per day at 7th level and one additional time per day for every four levels beyond 7th.</value>
+    <value>Whenever you cast a cure spell (a spell with “cure" in its name), you can cast it as a swift action, as if using the Quicken Spell feat, by expending two spell slots. This does not increase the level of the spell. You can use this ability once per day at 7th level and one additional time per day for every four levels beyond 7th.</value>
   </data>
   <data name="OracleCombatHealerName_info" xml:space="preserve">
     <value>Combat Healer</value>
@@ -1362,7 +1592,7 @@ Add {0} to your list of spells known.</value>
     <value>Lame</value>
   </data>
   <data name="OracleCurseSelectionDescription_info" xml:space="preserve">
-    <value>Each oracle is cursed, but this curse comes with a benefit as well as a hindrance.This choice is made at 1st level, and once made, it cannot be changed.The oracle’s curse cannot be removed or dispelled without the aid of a deity.An oracle’s curse is based on her oracle level plus one for every two levels or Hit Dice other than oracle.Each oracle must choose one of the following curses.</value>
+    <value>Each oracle is cursed, but this curse comes with a benefit as well as a hindrance.This choice is made at 1st level, and once made, it cannot be changed.The oracle's curse cannot be removed or dispelled without the aid of a deity.An oracle's curse is based on her oracle level plus one for every two levels or Hit Dice other than oracle.Each oracle must choose one of the following curses.</value>
   </data>
   <data name="OracleCurseSelectionName_info" xml:space="preserve">
     <value>Curse</value>
@@ -1452,7 +1682,7 @@ At 2nd level, and every two levels thereafter, an oracle learns an additional sp
   </data>
   <data name="OracleRevelationFeatureDescription_info" xml:space="preserve">
     <value>At 1st level, 3rd level, and every four levels thereafter (7th, 11th, and so on), an oracle uncovers a new secret about her mystery that grants her powers and abilities. The oracle must select a revelation from the list of revelations available to her mystery (see FAQ at right). If a revelation is chosen at a later level, the oracle gains all of the abilities and bonuses granted by that revelation based on her current level. Unless otherwise noted, activating the power of a revelation is a standard action.
-Unless otherwise noted, the DC to save against these revelations is equal to 10 + 1 / 2 the oracle’s level + the oracle’s Charisma modifier.</value>
+Unless otherwise noted, the DC to save against these revelations is equal to 10 + 1 / 2 the oracle's level + the oracle's Charisma modifier.</value>
   </data>
   <data name="OracleRevelationFeatureName_info" xml:space="preserve">
     <value>Revelation</value>
@@ -1467,6 +1697,41 @@ Bonus Feats of the Orc Bloodline: Diehard, Endurance, Great Fortitude, Intimidat
   <data name="OrClassSkillName_info" xml:space="preserve">
     <value> or {0}</value>
   </data>
+  <data name="OrphanDrawbackDescription_info" xml:space="preserve">
+    <value>Your family is extremely important to you, and you feel disheartened becouse they died.
+Drawback: You take a -2 penalty on Will saves.</value>
+  </data>
+  <data name="OrphanDrawbackName_info" xml:space="preserve">
+    <value>Family Died</value>
+  </data>
+  <data name="OutlanderExileDescription_info" xml:space="preserve">
+    <value>For whatever reason, you were forced to flee your homeland. Chance or fate has brought you here, and it's here that your money ran out, leaving you stranded in this small town. You are also being pursued by enemies from your homeland, and that has made you paranoid and quick to react to danger.
+Benefit: You gain a +2 trait bonus on initiative checks.</value>
+  </data>
+  <data name="OutlanderExileName_info" xml:space="preserve">
+    <value>Outlander: Exile</value>
+  </data>
+  <data name="OutlanderLoreseekerDescription_info" xml:space="preserve">
+    <value>The secrets of ancient fallen civilizations intrigue you, particularly magical traditions. You've studied magic intensely, and hope to increase that knowledge by adding lost lore. You've come to pursue that study, and chose this place as your base because it was out of the way of bigger cities—meaning less competition to study the ancient monuments in the region, you hope!
+Benefit: Pick three spells when you choose this trait. From this point on, whenever you cast these spells, you get a +1 trait bonus to caster level and DC. You also gain a +1 trait bonus to Knowledge (Arcana).</value>
+  </data>
+  <data name="OutlanderLoreseekerName_info" xml:space="preserve">
+    <value>Outlander: Loreseeker</value>
+  </data>
+  <data name="OutlanderMissionaryDescription_info" xml:space="preserve">
+    <value>You have come here to see about expanding the presence of your chosen faith after receiving visions that told you your faith is needed—what that need is, though, you're not quite sure.
+Benefit: Pick three spells when you choose this trait. From this point on, whenever you cast these spells, you get a +1 trait bonus to caster level and DC. You also gain a +1 trait bonus to lore (Religion).</value>
+  </data>
+  <data name="OutlanderMissionaryName_info" xml:space="preserve">
+    <value>Outlander: Missionary</value>
+  </data>
+  <data name="OutlanderTraitDescription_info" xml:space="preserve">
+    <value>You've recently come from somewhere else and are hoping to make your fortune here.
+Choose one of the following.</value>
+  </data>
+  <data name="OutlanderTraitName_info" xml:space="preserve">
+    <value>Outlander</value>
+  </data>
   <data name="OverlandFlightSpellAbilityDescription_info" xml:space="preserve">
     <value>This spell grants you a pair of wings, increasing your movement speed is increased to 40 feet (30 feet if wearing medium or heavy armor, or if carrying a medium or heavy load). This spell is designed for long-distance movement, and prevents fatigue for the duration of the spell.</value>
   </data>
@@ -1475,6 +1740,20 @@ Bonus Feats of the Orc Bloodline: Diehard, Endurance, Great Fortitude, Intimidat
   </data>
   <data name="OverlandFlightSpellName_info" xml:space="preserve">
     <value>Overland Flight</value>
+  </data>
+  <data name="PhysiqueDrawbackDescription_info" xml:space="preserve">
+    <value>Physique Drawbacks puts the focus on bodily cripling aspects of your character's background.</value>
+  </data>
+  <data name="PhysiqueDrawbackName_info" xml:space="preserve">
+    <value>Physique Drawback</value>
+  </data>
+  <data name="PolymorphDrawbackDescription_info" xml:space="preserve">
+    <value>You were cursed by a witch to become a frog. You did not like this and you killed the witch.
+The curse is almost broken, but if you are in a moment of weakness, you transform back into a frog.
+Drawback: If you attack someone when you are below 40 % health, you are transformed into a frog for 2 rounds.</value>
+  </data>
+  <data name="PolymorphDrawbackName_info" xml:space="preserve">
+    <value>Witch's Curse</value>
   </data>
   <data name="PrerequisiteCasterSpellLevelCaption_info" xml:space="preserve">
     <value>Can cast {0} spells of level: {1}</value>
@@ -1490,6 +1769,62 @@ Bonus Feats of the Orc Bloodline: Diehard, Endurance, Great Fortitude, Intimidat
   </data>
   <data name="PrestigiousSpellcasterFeatureName_info" xml:space="preserve">
     <value>Prestigious Spellcaster</value>
+  </data>
+  <data name="RaceCarefullyHiddenTraitDescription_info" xml:space="preserve">
+    <value>Your life as a member of an unpopular ethnic group has given you an uncanny knack for avoiding detection.
+Benefit: You gain a +1 trait bonus to Will saves and a +2 trait bonus to saving throws versus divination effects.</value>
+  </data>
+  <data name="RaceCarefullyHiddenTraitName_info" xml:space="preserve">
+    <value>Carefully Hidden (Human)</value>
+  </data>
+  <data name="RaceFanaticTraitDescription_info" xml:space="preserve">
+    <value>Your years spent in libraries reading every musty tome you could find about ancient lost civilizations has given you insight into the subjects of history and the arcane.</value>
+  </data>
+  <data name="RaceFanaticTraitName_info" xml:space="preserve">
+    <value>Fanatic (Human)</value>
+  </data>
+  <data name="RaceHistorianTraitDescription_info" xml:space="preserve">
+    <value>Your parents were scholars of history, whether genealogists of your own family tree, sages on the subject of ancient empires, or simply hobbyists with a deep and abiding love for the past.
+Benefits: You gain a +1 trait bonus on Knowledge (world) checks and bardic knowledge checks, and Knowledge (world) is always a class skill for you.</value>
+  </data>
+  <data name="RaceHistorianTraitName_info" xml:space="preserve">
+    <value>Historian (Human)</value>
+  </data>
+  <data name="RaceShieldBearerTraitDescription_info" xml:space="preserve">
+    <value>You have survived many battles thanks to your skill with your shield.
+Benefit: When performing a shield bash, you deal 1 additional point of damage.</value>
+  </data>
+  <data name="RaceShieldBearerTraitName_info" xml:space="preserve">
+    <value>Shield Bearer (Human)</value>
+  </data>
+  <data name="RaceSuperstitiousTraitDescription_info" xml:space="preserve">
+    <value>You have a healthy fear of sorcerers' speech and wizards' words that has helped you to survive their charms.
+Benefit: You gain a +1 trait bonus on saving throws against arcane spells.</value>
+  </data>
+  <data name="RaceSuperstitiousTraitName_info" xml:space="preserve">
+    <value>Superstitious (Human)</value>
+  </data>
+  <data name="RaceTraitDescription_info" xml:space="preserve">
+    <value>Race traits are keyed to specific races or ethnicities, which your character must belong to in order to select the trait.</value>
+  </data>
+  <data name="RaceTraitName_info" xml:space="preserve">
+    <value>Race Trait</value>
+  </data>
+  <data name="RaceWorldTravelerTraitBenefit_info" xml:space="preserve">
+    <value>
+Benefits: Select one of the following skills: Persuasion, Knowledge (world), or Perception. You gain a +1 trait bonus on checks with that skill, and it is always a class skill for you.</value>
+  </data>
+  <data name="RaceWorldTravelerTraitDescription_info" xml:space="preserve">
+    <value>Your family has taken the love of travel to an extreme, roaming the world extensively. You've seen dozens of cultures and have learned to appreciate the diversity of what the world has to offer.</value>
+  </data>
+  <data name="RaceWorldTravelerTraitName_info" xml:space="preserve">
+    <value>World Traveler (Human)</value>
+  </data>
+  <data name="RegionalTraitDescription_info" xml:space="preserve">
+    <value>Regional traits are keyed to specific regions, be they large (such as a nation or geographic region) or small (such as a city or a specific mountain). In order to select a regional trait, your PC must have spent at least a year living in that region. At 1st level, you can only select one regional trait (typically the one tied to your character's place of birth or homeland), despite the number of regions you might wish to write into your character's background.</value>
+  </data>
+  <data name="RegionalTraitName_info" xml:space="preserve">
+    <value>Regional Trait</value>
   </data>
   <data name="RelaxAncientLorekeeper_info" xml:space="preserve">
     <value>Any race can choose the Oracle Ancient Lorekeeper archetype</value>
@@ -1520,6 +1855,12 @@ Benefit: If you are struck by a melee weapon you can try to convert some of that
   <data name="RollWithItFeatureName_info" xml:space="preserve">
     <value>Roll with it</value>
   </data>
+  <data name="RostlanderTraitDescription_info" xml:space="preserve">
+    <value>You were raised in the south of Brevoy, a land of dense forests and rolling plains, of crystalline rivers and endless sapphire skies. You come from hearty stock and were raised with simple sensibilities of hard work winning well-deserved gains, the importance of charity and compassion, and the value of personal and familial honor. Yours is the country of the Aldori swordlords and the heroes who refused to bend before the armies of a violent conqueror. You care little for matters of politics and nobles or of deception and schemes. As you are thoroughly Brevic, the call for champions willing to expand your land's influence into the Stolen Lands has inflamed your sense of patriotism and honor, and so you have joined an expedition to quest southward. Your hardy nature grants you a +1 trait bonus on all Fortitude saves.</value>
+  </data>
+  <data name="RostlanderTraitName_info" xml:space="preserve">
+    <value>Rostlander</value>
+  </data>
   <data name="SafeCuringFeatureDescription_info" xml:space="preserve">
     <value>Whenever you cast a spell that cures the target of hit point damage, you do not provoke attacks of opportunity for spellcasting.</value>
   </data>
@@ -1543,7 +1884,7 @@ This ability replaces the revelation gained at 3rd level.</value>
     <value>Seeker Magic</value>
   </data>
   <data name="SeekerMagic_Description_info" xml:space="preserve">
-    <value>At 15th level, a seeker becomes skilled at modifying their mystery spells with metamagic. When a seeker applies a metamagic feat to any bonus spells granted by their mystery, they reduce the metamagic feat’s spell level adjustment by 1. Thus, applying a Metamagic feat like Extend Spell to a spell does not change its effective spell level at all, while applying Quicken Spell only increases the spell’s effective spell level by 3 instead of by 4. This reduction to the spell level adjustment for Metamagic feats does not stack with similar reductions from other abilities
+    <value>At 15th level, a seeker becomes skilled at modifying their mystery spells with metamagic. When a seeker applies a metamagic feat to any bonus spells granted by their mystery, they reduce the metamagic feat's spell level adjustment by 1. Thus, applying a Metamagic feat like Extend Spell to a spell does not change its effective spell level at all, while applying Quicken Spell only increases the spell's effective spell level by 3 instead of by 4. This reduction to the spell level adjustment for Metamagic feats does not stack with similar reductions from other abilities
 This ability replaces the revelation gained at 15th level.</value>
   </data>
   <data name="SeekerName_info" xml:space="preserve">
@@ -1577,6 +1918,12 @@ You gain a +2 bonus on checks using the skill you chose from that prestige class
   </data>
   <data name="SkipSelection_info" xml:space="preserve">
     <value>(Skip)</value>
+  </data>
+  <data name="SocialTraitDescription_info" xml:space="preserve">
+    <value>Social traits focus on your character's social class or upbringing.</value>
+  </data>
+  <data name="SocialTraitName_info" xml:space="preserve">
+    <value>Social Trait</value>
   </data>
   <data name="SpellBlendingFeatureDescription_info" xml:space="preserve">
     <value>When a magus selects this arcana, they must select one spell from the wizard spell list that is of a magus spell level they can cast. They adds this spell to their spellbook and list of magus spells known as a magus spell of its wizard spell level. They can instead select two spells to add in this way, but both must be at least one level lower than the highest-level magus spell they can cast.
@@ -1617,10 +1964,10 @@ It uses your base attack bonus (possibly allowing it multiple attacks per round 
 It strikes as a spell, not as a weapon, so for example, it can damage creatures that have damage reduction. 
 As a force effect, it can strike incorporeal creatures without the reduction in damage associated with incorporeality. 
 The weapon always strikes from your direction. It does not get a flanking bonus or help a combatant get one. Your feats or combat actions do not affect the weapon. 
-Each round after the first, the weapon continues to attack the previous round’s target. If the target dies, it will attack the next nearest enemy, if any. On any round that the weapon switches targets, it gets one attack. Subsequent rounds of attacking allow the weapon to make multiple attacks if your base attack bonus would allow it to.
+Each round after the first, the weapon continues to attack the previous round's target. If the target dies, it will attack the next nearest enemy, if any. On any round that the weapon switches targets, it gets one attack. Subsequent rounds of attacking allow the weapon to make multiple attacks if your base attack bonus would allow it to.
 A spiritual weapon cannot be attacked or harmed by physical attacks, but dispel magic, disintegrate, a sphere of annihilation, or a rod of cancellation affects it.
 If an attacked creature has Spell Resistance, you make a caster level check (1d20 + caster level) against that Spell Resistance the first time the spiritual weapon strikes it. If the weapon is successfully resisted, the spell is dispelled. If not, the weapon has its normal full effect on that creature for the duration of the spell.
-The weapon that you get is often a force replica of your deity’s own personal weapon. A cleric without a deity gets a weapon based on their alignment. A neutral cleric without a deity can create a spiritual weapon of any alignment, provided they are acting at least generally in accord with that alignment at the time. The weapons associated with each alignment are as follows: chaos (battleaxe), evil (light flail), good (warhammer), law (longsword).</value>
+The weapon that you get is often a force replica of your deity's own personal weapon. A cleric without a deity gets a weapon based on their alignment. A neutral cleric without a deity can create a spiritual weapon of any alignment, provided they are acting at least generally in accord with that alignment at the time. The weapons associated with each alignment are as follows: chaos (battleaxe), evil (light flail), good (warhammer), law (longsword).</value>
   </data>
   <data name="SpiritualWeaponAbilityName_info" xml:space="preserve">
     <value>Spiritual Weapon</value>
@@ -1637,6 +1984,12 @@ The weapon that you get is often a force replica of your deity’s own personal 
   <data name="SummonWildhuntSpells_info" xml:space="preserve">
     <value>Wild Hunt</value>
   </data>
+  <data name="SwordScionTraitDescription_info" xml:space="preserve">
+    <value>You have lived all your life in and around the city of Restov, growing up on tales of Baron Sirian Aldori and the exploits of your home city's heroic and legendary swordlords. Perhaps one of your family members was an Aldori swordlord, you have a contact among their members, or you have dreamed since childhood of joining. Regardless, you idolize the heroes, styles, and philosophies of the Aldori and have sought to mimic their vaunted art. Before you can petition to join their ranks, however, you feel that you must test your mettle. Joining an expedition into the Stolen Lands seems like a perfect way to improve your skills and begin a legend comparable to that of Baron Aldori. You begin play with a longsword or Aldori dueling sword and gain a +1 trait bonus on all attacks and combat maneuvers made with such weapons.</value>
+  </data>
+  <data name="SwordScionTraitName_info" xml:space="preserve">
+    <value>Sword Scion</value>
+  </data>
   <data name="testedGameVersion_warning" xml:space="preserve">
     <value>&lt;b&gt;This mod was tested against game version {0}, but you are running {1}.&lt;/b&gt;</value>
   </data>
@@ -1645,7 +1998,7 @@ The weapon that you get is often a force replica of your deity’s own personal 
   </data>
   <data name="TimeStopBuffDescription_info" xml:space="preserve">
     <value>This spell seems to make time cease to flow for everyone but you. In fact, you speed up so greatly that all other creatures seem frozen, though they are actually still moving at their normal speeds. You are free to act for 1d4+1 rounds of apparent time. Normal and magical fire, cold, gas, and the like can still harm you. While the time stop is in effect, other creatures are invulnerable to your attacks and spells; you cannot target such creatures with any attack or spell. A spell that affects an area and has a duration longer than the remaining duration of the time stop have their normal effects on other creatures once the time stop ends. Most spellcasters use the additional time to improve their defenses, summon allies, or flee from combat.
-You cannot move or harm items held, carried, or worn by a creature stuck in normal time, but you can affect any item that is not in another creature’s possession.
+You cannot move or harm items held, carried, or worn by a creature stuck in normal time, but you can affect any item that is not in another creature's possession.
 You are undetectable while time stop lasts. You cannot enter an area protected by an antimagic field while under the effect of time stop.</value>
   </data>
   <data name="TimeStopFreezeBuffDescription_info" xml:space="preserve">
@@ -1665,7 +2018,7 @@ Benefits: You gain a +1 trait bonus on {1} checks, and {2} is always a class ski
     <value>{0} (Spell Level {1})</value>
   </data>
   <data name="TraitsSelectionDescription_info" xml:space="preserve">
-    <value>Character traits are abilities that are not tied to your character’s race or class. They can enhance your character’s skills, racial abilities, class abilities, or other statistics, enabling you to further customize them. At its core, a character trait is approximately equal in power to half a feat, so two character traits are roughly equivalent to a bonus feat. Yet a character trait isn’t just another kind of power you can add on to your character—it’s a way to quantify (and encourage) building a character background that fits into your campaign world. Think of character traits as “story seeds” for your background; after you pick your two traits, you’ll have a point of inspiration from which to build your character’s personality and history. Alternatively, if you’ve already got a background in your head or written down for your character, you can view picking their traits as a way to quantify that background, just as picking race and class and ability scores quantifies their other strengths and weaknesses.</value>
+    <value>Character traits are abilities that are not tied to your character's race or class. They can enhance your character's skills, racial abilities, class abilities, or other statistics, enabling you to further customize them. At its core, a character trait is approximately equal in power to half a feat, so two character traits are roughly equivalent to a bonus feat. Yet a character trait isn't just another kind of power you can add on to your character—it's a way to quantify (and encourage) building a character background that fits into your campaign world. Think of character traits as “story seeds" for your background; after you pick your two traits, you'll have a point of inspiration from which to build your character's personality and history. Alternatively, if you've already got a background in your head or written down for your character, you can view picking their traits as a way to quantify that background, just as picking race and class and ability scores quantifies their other strengths and weaknesses.</value>
   </data>
   <data name="TrueResurrectionSpells_info" xml:space="preserve">
     <value>True resurrection</value>
@@ -1673,12 +2026,145 @@ Benefits: You gain a +1 trait bonus on {1} checks, and {2} is always a class ski
   <data name="TypeHyphenSubtype_info" xml:space="preserve">
     <value>{0} — {1}</value>
   </data>
+  <data name="UndeadCurseDrawbackDescription_info" xml:space="preserve">
+    <value>This creature is changed by Urgothoa to be an undead.
+Drawback: This creature is vulnerable to Fire, Holy and Divine attacks.</value>
+  </data>
+  <data name="UndeadCurseDrawbackName_info" xml:space="preserve">
+    <value>Undead Curse</value>
+  </data>
   <data name="WallOfFireAbilityDescription_info" xml:space="preserve">
     <value>An immobile, blazing curtain of shimmering violet fire springs into existence. One side of the wall, selected by you, sends forth waves of heat, dealing 2d4 points of fire damage to creatures within 10 feet and 1d4 points of fire damage to those past 10 feet but within 20 feet. The wall deals this damage when it appears, and to all creatures in the area on your turn each round. In addition, the wall deals 2d6 points of fire damage + 1 point of fire damage per caster level (maximum +20) to any creature passing through it. The wall deals double damage to undead creatures.
 If you evoke the wall so that it appears where creatures are, each creature takes damage as if passing through the wall. If any 5-foot length of wall takes 20 points or more of cold damage in 1 round, that length goes away. (Do not divide cold damage by 2, as normal for objects.)</value>
   </data>
   <data name="WallOfFireAbilityName_info" xml:space="preserve">
     <value>Wall of Fire</value>
+  </data>
+  <data name="WeaponCategoryBastardSwordName_info" xml:space="preserve">
+    <value>a bastard sword</value>
+  </data>
+  <data name="WeaponCategoryBattleaxeName_info" xml:space="preserve">
+    <value>a battle axe</value>
+  </data>
+  <data name="WeaponCategoryClubName_info" xml:space="preserve">
+    <value>a club</value>
+  </data>
+  <data name="WeaponCategoryDaggerName_info" xml:space="preserve">
+    <value>a dagger</value>
+  </data>
+  <data name="WeaponCategoryDartName_info" xml:space="preserve">
+    <value>a dart</value>
+  </data>
+  <data name="WeaponCategoryDuelingSwordName_info" xml:space="preserve">
+    <value>a dueling sword</value>
+  </data>
+  <data name="WeaponCategoryDwarvenWaraxeName_info" xml:space="preserve">
+    <value>a dwarven waraxe</value>
+  </data>
+  <data name="WeaponCategoryElvenCurveBladeName_info" xml:space="preserve">
+    <value>a elven curve blade</value>
+  </data>
+  <data name="WeaponCategoryEstocName_info" xml:space="preserve">
+    <value>a estoc</value>
+  </data>
+  <data name="WeaponCategoryFalcataName_info" xml:space="preserve">
+    <value>a falcata</value>
+  </data>
+  <data name="WeaponCategoryFalchionName_info" xml:space="preserve">
+    <value>a falchion</value>
+  </data>
+  <data name="WeaponCategoryFlailName_info" xml:space="preserve">
+    <value>a flail</value>
+  </data>
+  <data name="WeaponCategoryGreataxeName_info" xml:space="preserve">
+    <value>a greataxe</value>
+  </data>
+  <data name="WeaponCategoryGreatclubName_info" xml:space="preserve">
+    <value>a greatclub</value>
+  </data>
+  <data name="WeaponCategoryGreatswordName_info" xml:space="preserve">
+    <value>a greatsword</value>
+  </data>
+  <data name="WeaponCategoryHandaxeName_info" xml:space="preserve">
+    <value>a handaxe</value>
+  </data>
+  <data name="WeaponCategoryHeavyFlailName_info" xml:space="preserve">
+    <value>a heavy flail</value>
+  </data>
+  <data name="WeaponCategoryHeavyMaceName_info" xml:space="preserve">
+    <value>a heavy mace</value>
+  </data>
+  <data name="WeaponCategoryHeavyPickName_info" xml:space="preserve">
+    <value>a heavy pick</value>
+  </data>
+  <data name="WeaponCategoryHeavyShieldName_info" xml:space="preserve">
+    <value>a heavy shield</value>
+  </data>
+  <data name="WeaponCategoryJavelinName_info" xml:space="preserve">
+    <value>a javelin</value>
+  </data>
+  <data name="WeaponCategoryKamaName_info" xml:space="preserve">
+    <value>a kama</value>
+  </data>
+  <data name="WeaponCategoryKukriName_info" xml:space="preserve">
+    <value>a kukri</value>
+  </data>
+  <data name="WeaponCategoryLightHammerName_info" xml:space="preserve">
+    <value>a light hammer</value>
+  </data>
+  <data name="WeaponCategoryLightMaceName_info" xml:space="preserve">
+    <value>a light mace</value>
+  </data>
+  <data name="WeaponCategoryLightPickName_info" xml:space="preserve">
+    <value>a light pick</value>
+  </data>
+  <data name="WeaponCategoryLightShieldName_info" xml:space="preserve">
+    <value>a light shield</value>
+  </data>
+  <data name="WeaponCategoryLongswordName_info" xml:space="preserve">
+    <value>a long sword</value>
+  </data>
+  <data name="WeaponCategoryNunchakuName_info" xml:space="preserve">
+    <value>a nunchaku</value>
+  </data>
+  <data name="WeaponCategoryRapierName_info" xml:space="preserve">
+    <value>a rapier</value>
+  </data>
+  <data name="WeaponCategorySaiName_info" xml:space="preserve">
+    <value>a sai</value>
+  </data>
+  <data name="WeaponCategoryScimitarName_info" xml:space="preserve">
+    <value>a scimitar</value>
+  </data>
+  <data name="WeaponCategoryScytheName_info" xml:space="preserve">
+    <value>a scythe</value>
+  </data>
+  <data name="WeaponCategoryShortswordName_info" xml:space="preserve">
+    <value>a short sword</value>
+  </data>
+  <data name="WeaponCategoryShurikenName_info" xml:space="preserve">
+    <value>a shuriken</value>
+  </data>
+  <data name="WeaponCategorySickleName_info" xml:space="preserve">
+    <value>a sickle</value>
+  </data>
+  <data name="WeaponCategorySlingName_info" xml:space="preserve">
+    <value>a sling</value>
+  </data>
+  <data name="WeaponCategorySpearName_info" xml:space="preserve">
+    <value>a spear</value>
+  </data>
+  <data name="WeaponCategoryStarknifeName_info" xml:space="preserve">
+    <value>a starknife</value>
+  </data>
+  <data name="WeaponCategoryThrowingAxeName_info" xml:space="preserve">
+    <value>a throwing axe</value>
+  </data>
+  <data name="WeaponCategoryTridentName_info" xml:space="preserve">
+    <value>a trident</value>
+  </data>
+  <data name="WeaponCategoryWarhammerName_info" xml:space="preserve">
+    <value>a warhammer</value>
   </data>
   <data name="WeaponOfAweAbilityDescription_info" xml:space="preserve">
     <value>You transform a single weapon into an awe-inspiring instrument. The weapon gains a +2 sacred bonus on damage rolls, and if the weapon scores a critical hit, the target of that critical hit becomes shaken for 1 round with no saving throw.

@@ -40,6 +40,8 @@ using System.IO;
 using System.Collections;
 using Kingmaker.Enums.Damage;
 
+using RES = EldritchArcana.Properties.Resources;
+
 namespace EldritchArcana
 {
     internal class PhysiqueDrawbacks
@@ -56,8 +58,8 @@ namespace EldritchArcana
             }
 
             var noFeature = Helpers.PrerequisiteNoFeature(null);
-            var PhysiqueDrawbacks = Helpers.CreateFeatureSelection("PhysiqueDrawback", "Physique Drawback",
-                "Physique Drawbacks puts the focus on bodily cripling aspects of your character’s background.",
+            var PhysiqueDrawbacks = Helpers.CreateFeatureSelection("PhysiqueDrawback", RES.PhysiqueDrawbackName_info,
+                RES.PhysiqueDrawbackDescription_info,
                 PhysiqueGuids[0], null, FeatureGroup.None, noFeature);
 
             noFeature.Feature = PhysiqueDrawbacks;
@@ -89,52 +91,40 @@ namespace EldritchArcana
             })));
 
             var choices = new List<BlueprintFeature>();
-            choices.Add(Helpers.CreateFeature("NatureWardDrawback", "Warded Against Nature",
-                "You look scary, Animals see you as a predator and do not willingly approach within 30 feet of you." +
-                "\nBenefit: Chance of wild animals not engaging you is greater." +//not actualy implemented but great for rp and you have an entire party 
-                "\nDrawback: You take a -2 penalty on AC against animal bites and claw attack, and for each animal you have you lose 2 AC.",//implemented
+            choices.Add(Helpers.CreateFeature("NatureWardDrawback", RES.PhysiqueDrawbackName_info,
+                RES.PhysiqueDrawbackDescription_info,
                 PhysiqueGuids[1],
                 Helpers.GetIcon("1670990255e4fe948a863bafd5dbda5d"), // Boon Companion
                 FeatureGroup.None,
                 components.ToArray()));
-
-            
             
             var burningHands = Traits.library.Get<BlueprintAbility>("4783c3709a74a794dbe7c8e7e0b1b038");
-            choices.Add(Helpers.CreateFeature("BurnedDrawback", "Burned",
-                "You were badly burned once by volcanic ash, torch-wielding mobs, or some fiery accident, and the scars pain you terribly you whenever you are too near to fire." +
-                "\nDrawback: You take a –2 penalty on saves against fire effects.",
+            choices.Add(Helpers.CreateFeature("BurnedDrawback", RES.BurnedDrawbackName_info,
+                RES.BurnedDrawbackDescription_info,
                 PhysiqueGuids[2],
                 burningHands.Icon,
                 FeatureGroup.None,
                 Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Fire; s.Value = -2; s.ModifierDescriptor = ModifierDescriptor.Penalty; })));
 
-
             //var burningHands = Traits.library.Get<BlueprintAbility>("4783c3709a74a794dbe7c8e7e0b1b038");
-            choices.Add(Helpers.CreateFeature("EntomophobeDrawback", "Entomophobe",
-                "A harrowing experience with insects when you were young instilled in you a deep-seated fear of vermin of all description, especially when they swarm together." +
-                "\nDrawback: You take a –2 penalty on attacks against vermin, and you take a –2 penalty on saving throws against the nauseated condition of a swarm’s distraction ability.",
+            choices.Add(Helpers.CreateFeature("EntomophobeDrawback", RES.EntomophobeDrawbackName_info,
+                RES.EntomophobeDrawbackDescription_info,
                 PhysiqueGuids[3],
                 Helpers.NiceIcons(8),//spider web//
                 FeatureGroup.None,
                 Helpers.Create<SwarmAoeVulnerability>(),
                 Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Poison; s.Value = -2; s.ModifierDescriptor = ModifierDescriptor.Penalty; })));
 
-
             //Family Ties is a little silly
-
-            choices.Add(Helpers.CreateFeature("OrphanDrawback", "Family Died",
-                "Your family is extremely important to you, and you feel disheartened becouse they died." +
-                "\nDrawback: You take a -2 penalty on Will saves.",
+            choices.Add(Helpers.CreateFeature("OrphanDrawback", RES.OrphanDrawbackName_info,
+                RES.OrphanDrawbackDescription_info,
                 PhysiqueGuids[4],
                 Helpers.NiceIcons(7), // Accomplished Sneak Attacker
                 FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.SaveWill, -2, ModifierDescriptor.Penalty)));
 
-
-            choices.Add(Helpers.CreateFeature("FeyTakenDrawback", "Fey-taken",
-                "As a child, you were whisked away by mischievous fey for a time. When you returned, you were ever after considered odd and distant. You long to return there, and find the mortal world dull and at times revolting, so you do not eat as you should and do not question strange visions." +
-                "\nDrawback: You take a –2 penalty on saving throws against disease, illusions, and poison of all kinds, as well as against the spells, spell-like abilities, and supernatural abilities of fey.",
+            choices.Add(Helpers.CreateFeature("FeyTakenDrawback", RES.Fey_takenDrawbackName_info,
+                RES.Fey_takenDrawbackDescription_info,
                 PhysiqueGuids[5],
                 Helpers.GetIcon("2483a523984f44944a7cf157b21bf79c"), // Elven Immunities
                 FeatureGroup.None,
@@ -144,64 +134,55 @@ namespace EldritchArcana
 
             //Foul Brand
             //As a child, you were whisked away by mischievous fey for a time. When you returned, you were ever after considered odd and distant. You long to return there, and find the mortal world dull and at times revolting, so you do not eat as you should and do not question strange visions.
-            var FoulBrand = Helpers.CreateFeatureSelection("FoulBrandDrawback", "Foul Brand",
-                "You have the symbol of an evil deity burned into your flesh. The place where the symbol is decides what the penalty is.",
+            var FoulBrand = Helpers.CreateFeatureSelection("FoulBrandDrawback", RES.FoulBrandDrawbackName,
+                RES.FoulBrandDrawbackDescription_info,
                 PhysiqueGuids[6],
                 burningHands.Icon,
                 FeatureGroup.None);
 
-
             var BrandedFeatures = new List<BlueprintFeature>()
             {
-
-                Helpers.CreateFeature("LegDrawback", "Leg",
-                "The symbol is on your leg." +
-                "\nDrawback: Your movement speed is 5ft slower.",
+                Helpers.CreateFeature("LegDrawback", RES.FoulBrandLegDrawbackName_info,
+                RES.FoulBrandLegDrawbackDescription_info,
                 PhysiqueGuids[7],
                 Helpers.NiceIcons(5), // Accomplished Sneak Attacker
                 FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.Speed, -5, ModifierDescriptor.Penalty))
                 ,
-                Helpers.CreateFeature("FaceDrawback", "Face",
-                "The symbol is on your face." +
-                "\nDrawback: You take a -2 penalty on Persuasion.",
+                Helpers.CreateFeature("FaceDrawback", RES.FoulBrandHandsDrawbackName_info,
+                RES.FoulBrandHandsDrawbackDescription_info,
                 PhysiqueGuids[8],
                 Helpers.NiceIcons(3), // fear
                 FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.SkillPersuasion, -2, ModifierDescriptor.Penalty))
                 ,
-                Helpers.CreateFeature("HandsDrawback", "Hands",
-                "The symbol is on your hands." +
-                "\nDrawback: You take a -2 penalty on Trickery.",
+                Helpers.CreateFeature("HandsDrawback", RES.FoulBrandHandsDrawbackName_info,
+                RES.FoulBrandHandsDrawbackDescription_info,
                 PhysiqueGuids[9],
                 Helpers.NiceIcons(13), // Accomplished Sneak Attacker
                 FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.SkillThievery, -2, ModifierDescriptor.Penalty))
-
             };
-
 
             FoulBrand.SetFeatures(BrandedFeatures);
             choices.Add(FoulBrand);
 
-            var Hedonisticdebuff = Helpers.CreateBuff("HedonisticDeBuff", "HedonisticDebuff",
-                "You have feel like you are fatigued.",
+            var Hedonisticdebuff = Helpers.CreateBuff("HedonisticDeBuff", RES.HedonisticDebuffName_info,
+                RES.HedonisticDebuffDescription_info,
                 PhysiqueGuids[10],
                 Helpers.NiceIcons(7), null,
                 Helpers.CreateAddStatBonus(StatType.Strength, -2, ModifierDescriptor.Penalty),
                 Helpers.CreateAddStatBonus(StatType.Dexterity, -2, ModifierDescriptor.Penalty));
 
-            choices.Add(Helpers.CreateFeature("HedonisticDrawback", "Hedonistic",
-                "You are a creature of pleasure and comfort." +
-                "\nDrawback: You take a -2 penalty on Strength and Dexterity if you do not possess at least 100 + 200 per level gold.",
+            choices.Add(Helpers.CreateFeature("HedonisticDrawback", RES.HedonisticDrawbackName_info,
+                RES.HedonisticDrawbackDescription_info,
                 PhysiqueGuids[11],
                 Helpers.NiceIcons(10), // needs sloth icon
                 FeatureGroup.None,
                 CovetousCurseLogic.Create(Hedonisticdebuff)));
 
-            choices.Add(Helpers.CreateFeature("HelplessDrawback", "Helpless",
-                "You once stood helpless as great harm befell a loved one, and that paralysis sometimes returns when an ally is in a dire position." +
-                "\nDrawback: You take a -2 penalty on saving throws vs paralysis and petrification.",
+            choices.Add(Helpers.CreateFeature("HelplessDrawback", RES.HelplessDrawbackName_info,
+                RES.HelplessDrawbackDescription_info,
                 PhysiqueGuids[12],
                 Helpers.NiceIcons(3),//spider web//
                 FeatureGroup.None,
@@ -228,8 +209,8 @@ namespace EldritchArcana
             //8791da25011fd1844ad61a3fea6ece54
 
 
-            var CurseOptions = Helpers.CreateFeatureSelection("CurseOptions", "You Were Cursed[HB]",
-                "You were cursed. Select a Curse.",
+            var CurseOptions = Helpers.CreateFeatureSelection("CurseOptions", RES.CurseDrawbackOptionsName_info,
+                RES.CurseDrawbackOptionsDescription_info,
                 PhysiqueGuids[14],
                 Helpers.NiceIcons(10),
                 FeatureGroup.None);
@@ -241,8 +222,6 @@ namespace EldritchArcana
                 DamageEnergyType.Divine,
             }).Select((element) =>
             Helpers.Create<AddEnergyVulnerability>(a => { a.Type = element; }));
-
-
 
             var RangedWeaponsDebuff = (new WeaponCategory[] {
                 WeaponCategory.LightCrossbow,
@@ -272,12 +251,10 @@ namespace EldritchArcana
             }).Select((WeapCat) =>
             Helpers.Create<WeaponCategoryAttackBonus>(a => { a.Category = WeapCat; a.AttackBonus = 1; }));
 
-
-
-            UndeadType.SetNameDescriptionIcon("Undead Curse", "This creature is Changed by Urgothoa to be an undead.\nCreature is vulnerable to Fire,Holy And divine attacks.", Helpers.NiceIcons(44));
-            Undeadcurse.SetNameDescriptionIcon("Undead Curse(inccorrect version)", "This version just changes con and cha the new version also changes necrotic and healing to function correctly this version still exists for save compatibility and its not a big deal.", Helpers.NiceIcons(44));
+            UndeadType.SetNameDescriptionIcon(RES.UndeadCurseDrawbackName_info, RES.UndeadCurseDrawbackDescription_info, Helpers.NiceIcons(44));
+            //Undeadcurse.SetNameDescriptionIcon("Undead Curse(inccorrect version)", "This version just changes con and cha the new version also changes necrotic and healing to function correctly this version still exists for save compatibility and its not a big deal.", Helpers.NiceIcons(44));
             //Undeadcurse.AddComponent(Helpers.PrerequisiteFeature(UrgathoaFeature));
-            var lijstjelief = new List<BlueprintFeature> { SpellFocus,SpellFocusNecromancy , UrgathoaFeature};
+            var lijstjelief = new List<BlueprintFeature> { SpellFocus, SpellFocusNecromancy, UrgathoaFeature };
             UndeadType.AddComponent(Helpers.PrerequisiteFeaturesFromList(lijstjelief,any:false));
             UndeadType.AddComponents(ElementalWeaknesListFeature);
             //Undeadcurse.SetFeatures(new List<BlueprintFeature> { UndeadImmunities});
@@ -303,10 +280,8 @@ namespace EldritchArcana
                 FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.SkillPersuasion, -2, ModifierDescriptor.Penalty))
                 ,*/
-                Helpers.CreateFeature("PolymorphDrawback",  "Witch's Curse",
-                "You were cursed by a witch to become a frog. You did not like this and you killed the witch."+
-                "The curse is almost broken, but if you are in a moment of weakness, you transform back into a frog."+
-                "Drawback: If you attack someone when you are below 40 % health, you are transformed into a frog for 2 rounds.",
+                Helpers.CreateFeature("PolymorphDrawback",  RES.PolymorphDrawbackName_info,
+                RES.PolymorphDrawbackDescription_info,
                 PhysiqueGuids[16],
                 Helpers.NiceIcons(45),
                 FeatureGroup.None,
@@ -320,8 +295,6 @@ namespace EldritchArcana
             };
             CurseOptions.SetFeatures(CurseFeatures);
             choices.Add(CurseOptions);
-
-
 
             choices.Add(Helpers.CreateFeature("AsthmaticDrawback", "Asthmatic",
                 "Asthma, because out of all the things you could be bad at... you suck at breathing." +

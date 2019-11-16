@@ -12,6 +12,8 @@ using Kingmaker.Blueprints.Items.Armors;
 using Kingmaker.Blueprints.Items.Equipment;
 using Kingmaker.Blueprints.Items.Shields;
 
+using RES = EldritchArcana.Properties.Resources;
+
 namespace EldritchArcana
 {
     internal class EquipmentTraits
@@ -19,8 +21,8 @@ namespace EldritchArcana
         public static BlueprintFeatureSelection CreateEquipmentTraits()
         {
             var noFeature = Helpers.PrerequisiteNoFeature(null);
-            var EquipmentTraits = Helpers.CreateFeatureSelection("EquipmentTrait", "Equipment Trait",
-                "Many adventurers come to rely on certain gear to the extent that the equipment and the adventurer each become something more when the other is present. The symbiosis between adventurers and their gear is varied and complex. Below are several traits and feats that help characters make the most of their equipment or use their equipment to make the most of their skills.",
+            var EquipmentTraits = Helpers.CreateFeatureSelection("EquipmentTrait", RES.EquipmentTraitName_info,
+                RES.EquipmentTraitDescription_info,
                 "2c32f22c222c45bc84ded746148c07ee", null, FeatureGroup.None, noFeature);
             noFeature.Feature = EquipmentTraits;
             var choices = new List<BlueprintFeature>();

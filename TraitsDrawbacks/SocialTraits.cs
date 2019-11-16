@@ -34,6 +34,8 @@ using Kingmaker.UnitLogic.FactLogic;
 using Kingmaker.UnitLogic.Mechanics;
 using Kingmaker.UnitLogic.Parts;
 
+using RES = EldritchArcana.Properties.Resources;
+
 namespace EldritchArcana
 {
     internal class SocialTraits
@@ -42,8 +44,8 @@ namespace EldritchArcana
         public static BlueprintFeatureSelection CreateSocialTraits(out BlueprintFeatureSelection adopted)
         {
             var noFeature = Helpers.PrerequisiteNoFeature(null);
-            var socialTraits = Helpers.CreateFeatureSelection("SocialTrait", "Social Trait",
-                "Social traits focus on your character’s social class or upbringing.",
+            var socialTraits = Helpers.CreateFeatureSelection("SocialTrait", RES.SocialTraitName_info,
+                RES.SocialTraitDescription_info,
                 "9e41e60c929e45bc84ded046148c07ec", null, FeatureGroup.None, noFeature);
             noFeature.Feature = socialTraits;
             var choices = new List<BlueprintFeature>();

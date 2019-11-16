@@ -35,6 +35,8 @@ using Kingmaker.UnitLogic.FactLogic;
 using Kingmaker.UnitLogic.Mechanics;
 using Kingmaker.UnitLogic.Parts;
 
+using RES = EldritchArcana.Properties.Resources;
+
 namespace EldritchArcana
 {
     internal class FaithTraits
@@ -42,8 +44,8 @@ namespace EldritchArcana
         public static BlueprintFeatureSelection CreateFaithTraits()
         {
             var noFeature = Helpers.PrerequisiteNoFeature(null);
-            var faithTraits = Helpers.CreateFeatureSelection("FaithTrait", "Faith Trait",
-                "Faith traits focus on the character's religious and philosophical leanings.",
+            var faithTraits = Helpers.CreateFeatureSelection("FaithTrait", RES.FaithTraitName_info,
+                RES.FaithTraitDescription_info,
                 "21d0fe2d88e44e5cbfb28becadf86110", null, FeatureGroup.None, noFeature);
             noFeature.Feature = faithTraits;
 

@@ -145,8 +145,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 The ancient lorekeeper is a repository for all the beliefs and vast knowledge of an elven people. They show a strong interest in and understanding of histories and creation legends at a young age, and as they mature their calling to serve as the memory of their long-lived people becomes clear to all who know them.
-        ///An ancient lorekeeper adds Knowledge (arcana) to their list of class skills. This replaces the bonus skills the ancient lorekeeper gains from their mystery. 的本地化字符串。
+        ///   查找类似 An ancient lorekeeper adds Knowledge (arcana) to their class skills. 的本地化字符串。
         /// </summary>
         internal static string AncientLorekeeperClassSkillsDescription_info {
             get {
@@ -155,7 +154,8 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 AncientLorekeeperClassSkills 的本地化字符串。
+        ///   查找类似 The ancient lorekeeper is a repository for all the beliefs and vast knowledge of an elven people. They show a strong interest in and understanding of histories and creation legends at a young age, and as they mature their calling to serve as the memory of their long-lived people becomes clear to all who know them.
+        ///An ancient lorekeeper adds Knowledge (arcana) to their list of class skills. This replaces the bonus skills the ancient lorekeeper gains from their mystery. 的本地化字符串。
         /// </summary>
         internal static string AncientLorekeeperDescription_info {
             get {
@@ -164,7 +164,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 At 2nd level, an ancient lorekeeper’s mastery of elven legends and philosophy has allowed them to master one spell used by elven wizards. They select one spell from the sorcerer/ wizard spell list that is at least one level lower than the highest-level oracle spell they can cast. The ancient lorekeeper gains this as a bonus spell known. The spell is treated as one level higher than its true level for all purposes. The ancient lorekeeper may choose an additional spell at 4th, 6th, 8th, 10th, 12th, 14th, 16th [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///   查找类似 At 2nd level, an ancient lorekeeper&apos;s mastery of elven legends and philosophy has allowed them to master one spell used by elven wizards. They select one spell from the sorcerer/ wizard spell list that is at least one level lower than the highest-level oracle spell they can cast. The ancient lorekeeper gains this as a bonus spell known. The spell is treated as one level higher than its true level for all purposes. The ancient lorekeeper may choose an additional spell at 4th, 6th, 8th, 10th, 12th, 14th, 16th [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string AncientLorekeeperElvenArcanaDescription_info {
             get {
@@ -316,6 +316,24 @@ namespace EldritchArcana.Properties {
         internal static string ArcaneSavantName_info {
             get {
                 return ResourceManager.GetString("ArcaneSavantName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 One of your parents was a member of one of the great families of Brevoy, perhaps even of the line of Rogarvia itself. Yet you have no substantive proof of your nobility, and you&apos;ve learned that claiming nobility without evidence makes you as good as a liar. While you might own a piece of jewelry, a scrap of once-rich fabric, or an aged confession of love, none of this directly supports your claim. Thus, you&apos;ve lived your life in the shadow of nobility, knowing that you deserve the comforts and esteem of the [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string BastardTraitDescription {
+            get {
+                return ResourceManager.GetString("BastardTraitDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Bastard 的本地化字符串。
+        /// </summary>
+        internal static string BastardTraitName_info {
+            get {
+                return ResourceManager.GetString("BastardTraitName_info", resourceCulture);
             }
         }
         
@@ -584,6 +602,43 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You were badly burned once by volcanic ash, torch-wielding mobs, or some fiery accident, and the scars pain you terribly you whenever you are too near to fire.
+        ///Drawback: You take a –2 penalty on saves against fire effects. 的本地化字符串。
+        /// </summary>
+        internal static string BurnedDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("BurnedDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Burned 的本地化字符串。
+        /// </summary>
+        internal static string BurnedDrawbackName_info {
+            get {
+                return ResourceManager.GetString("BurnedDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Campaign traits are specifically tailored to relate to the Kingmaker campaign. 的本地化字符串。
+        /// </summary>
+        internal static string CampaignTraitDescription_info {
+            get {
+                return ResourceManager.GetString("CampaignTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Campaign Trait 的本地化字符串。
+        /// </summary>
+        internal static string CampaignTraitName_info {
+            get {
+                return ResourceManager.GetString("CampaignTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Failed to patch LibraryScriptableObject.LoadDictionary(), cannot load mod! 的本地化字符串。
         /// </summary>
         internal static string cannotLoadMod_error {
@@ -639,6 +694,24 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Combat traits focus on martial and physical aspects of your character&apos;s background. 的本地化字符串。
+        /// </summary>
+        internal static string CombatTraitDescription_info {
+            get {
+                return ResourceManager.GetString("CombatTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Combat Trait 的本地化字符串。
+        /// </summary>
+        internal static string CombatTraitName_info {
+            get {
+                return ResourceManager.GetString("CombatTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 
         ///Choices for each bloodline: 的本地化字符串。
         /// </summary>
@@ -649,7 +722,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 The conflicting urges created by the divergent nature of the crossblooded sorcerer’s dual heritage forces them to constantly take some mental effort just to remain focused on their current situation and needs. This leaves them with less mental resolve to deal with external threats. A crossblooded sorcerer always takes a –2 penalty on Will saves. 的本地化字符串。
+        ///   查找类似 The conflicting urges created by the divergent nature of the crossblooded sorcerer&apos;s dual heritage forces them to constantly take some mental effort just to remain focused on their current situation and needs. This leaves them with less mental resolve to deal with external threats. A crossblooded sorcerer always takes a –2 penalty on Will saves. 的本地化字符串。
         /// </summary>
         internal static string CrossbloodedConflictingUrgesFeatureDescription_info {
             get {
@@ -700,6 +773,24 @@ namespace EldritchArcana.Properties {
         internal static string CrossBloodlineName_info {
             get {
                 return ResourceManager.GetString("CrossBloodlineName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You were cursed. Select a Curse. 的本地化字符串。
+        /// </summary>
+        internal static string CurseDrawbackOptionsDescription_info {
+            get {
+                return ResourceManager.GetString("CurseDrawbackOptionsDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You Were Cursed[HB] 的本地化字符串。
+        /// </summary>
+        internal static string CurseDrawbackOptionsName_info {
+            get {
+                return ResourceManager.GetString("CurseDrawbackOptionsName_info", resourceCulture);
             }
         }
         
@@ -1068,6 +1159,43 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 A harrowing experience with insects when you were young instilled in you a deep-seated fear of vermin of all description, especially when they swarm together.
+        ///Drawback: You take a –2 penalty on attacks against vermin, and you take a –2 penalty on saving throws against the nauseated condition of a swarm&apos;s distraction ability. 的本地化字符串。
+        /// </summary>
+        internal static string EntomophobeDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("EntomophobeDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Entomophobe 的本地化字符串。
+        /// </summary>
+        internal static string EntomophobeDrawbackName_info {
+            get {
+                return ResourceManager.GetString("EntomophobeDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Many adventurers come to rely on certain gear to the extent that the equipment and the adventurer each become something more when the other is present. The symbiosis between adventurers and their gear is varied and complex. Below are several traits and feats that help characters make the most of their equipment or use their equipment to make the most of their skills. 的本地化字符串。
+        /// </summary>
+        internal static string EquipmentTraitDescription_info {
+            get {
+                return ResourceManager.GetString("EquipmentTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Equipment Trait 的本地化字符串。
+        /// </summary>
+        internal static string EquipmentTraitName_info {
+            get {
+                return ResourceManager.GetString("EquipmentTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You have unlocked the secret of a new magus arcana. You gain one additional magus arcana. You must meet all the prerequisites for this magus arcana.
         ///Special: You can gain this feat multiple times. Its effects stack, granting a new arcana each time you gain this feat. 的本地化字符串。
         /// </summary>
@@ -1142,6 +1270,24 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Faith traits focus on the character&apos;s religious and philosophical leanings. 的本地化字符串。
+        /// </summary>
+        internal static string FaithTraitDescription_info {
+            get {
+                return ResourceManager.GetString("FaithTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Faith Trait 的本地化字符串。
+        /// </summary>
+        internal static string FaithTraitName_info {
+            get {
+                return ResourceManager.GetString("FaithTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 The favored class is automatically determined each level-up, and an extra hit point is awarded if gaining a level in that class. The favored class is your highest level non-prestige class. This is the default game behavior. 的本地化字符串。
         /// </summary>
         internal static string FavoredClassAnyFeatureDescription_info {
@@ -1198,7 +1344,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 You have come to favor a certain prestige class, either because you are particularly devoted to the class’s cause, have trained more than most others have for that specific role, or have simply been destined to excel in the prestige class all along. Regardless of the reason, levels gained in your favored prestige class grant additional benefits in a way similar to those you gain for taking levels in your base favored class.
+        ///   查找类似 You have come to favor a certain prestige class, either because you are particularly devoted to the class&apos;s cause, have trained more than most others have for that specific role, or have simply been destined to excel in the prestige class all along. Regardless of the reason, levels gained in your favored prestige class grant additional benefits in a way similar to those you gain for taking levels in your base favored class.
         ///You can select this feat before you gain levels in your chosen favored prestige cla [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string FavoredPresitgeClassFeatureDescription_info {
@@ -1231,6 +1377,25 @@ namespace EldritchArcana.Properties {
         internal static string featureNameAll_error {
             get {
                 return ResourceManager.GetString("featureNameAll_error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 As a child, you were whisked away by mischievous fey for a time. When you returned, you were ever after considered odd and distant. You long to return there, and find the mortal world dull and at times revolting, so you do not eat as you should and do not question strange visions.
+        ///Drawback: You take a –2 penalty on saving throws against disease, illusions, and poison of all kinds, as well as against the spells, spell-like abilities, and supernatural abilities of fey. 的本地化字符串。
+        /// </summary>
+        internal static string Fey_takenDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("Fey-takenDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Fey-taken 的本地化字符串。
+        /// </summary>
+        internal static string Fey_takenDrawbackName_info {
+            get {
+                return ResourceManager.GetString("Fey-takenDrawbackName_info", resourceCulture);
             }
         }
         
@@ -1480,6 +1645,81 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You have the symbol of an evil deity burned into your flesh. The place where the symbol is decides what the penalty is. 的本地化字符串。
+        /// </summary>
+        internal static string FoulBrandDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("FoulBrandDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Foul Brand 的本地化字符串。
+        /// </summary>
+        internal static string FoulBrandDrawbackName {
+            get {
+                return ResourceManager.GetString("FoulBrandDrawbackName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 The symbol is on your face.
+        ///Drawback: You take a -2 penalty on Persuasion. 的本地化字符串。
+        /// </summary>
+        internal static string FoulBrandFaceDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("FoulBrandFaceDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Face 的本地化字符串。
+        /// </summary>
+        internal static string FoulBrandFaceDrawbackName_info {
+            get {
+                return ResourceManager.GetString("FoulBrandFaceDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 The symbol is on your hands.
+        ///Drawback: You take a -2 penalty on Trickery. 的本地化字符串。
+        /// </summary>
+        internal static string FoulBrandHandsDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("FoulBrandHandsDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Hands 的本地化字符串。
+        /// </summary>
+        internal static string FoulBrandHandsDrawbackName_info {
+            get {
+                return ResourceManager.GetString("FoulBrandHandsDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 The symbol is on your leg.
+        ///Drawback: Your movement speed is 5ft slower. 的本地化字符串。
+        /// </summary>
+        internal static string FoulBrandLegDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("FoulBrandLegDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Leg 的本地化字符串。
+        /// </summary>
+        internal static string FoulBrandLegDrawbackName_info {
+            get {
+                return ResourceManager.GetString("FoulBrandLegDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Select this to go back to the previous selection, allowing you to pick something else. 的本地化字符串。
         /// </summary>
         internal static string GoBackDescription_info {
@@ -1571,6 +1811,62 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You have feel like you are fatigued. 的本地化字符串。
+        /// </summary>
+        internal static string HedonisticDebuffDescription_info {
+            get {
+                return ResourceManager.GetString("HedonisticDebuffDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Hedonistic Debuff 的本地化字符串。
+        /// </summary>
+        internal static string HedonisticDebuffName_info {
+            get {
+                return ResourceManager.GetString("HedonisticDebuffName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You are a creature of pleasure and comfort.
+        ///Drawback: You take a -2 penalty on Strength and Dexterity if you do not possess at least 100 + 200 per level gold. 的本地化字符串。
+        /// </summary>
+        internal static string HedonisticDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("HedonisticDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Hedonistic 的本地化字符串。
+        /// </summary>
+        internal static string HedonisticDrawbackName_info {
+            get {
+                return ResourceManager.GetString("HedonisticDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You once stood helpless as great harm befell a loved one, and that paralysis sometimes returns when an ally is in a dire position.
+        ///Drawback: You take a -2 penalty on saving throws vs paralysis and petrification. 的本地化字符串。
+        /// </summary>
+        internal static string HelplessDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("HelplessDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Helpless 的本地化字符串。
+        /// </summary>
+        internal static string HelplessDrawbackName_info {
+            get {
+                return ResourceManager.GetString("HelplessDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Outlander spells gain caster level and DC max (cheat) 的本地化字符串。
         /// </summary>
         internal static string HighDCl_info {
@@ -1627,7 +1923,7 @@ namespace EldritchArcana.Properties {
         
         /// <summary>
         ///   查找类似 An incendiary cloud spell creates a cloud of roiling smoke shot through with white-hot embers. The smoke obscures all sight as a fog cloud does. In addition, the white-hot embers within the cloud deal 6d6 points of fire damage to everything within the cloud on your turn each round. All targets can make Reflex saves each round to take half damage.
-        ///As with a cloudkill spell, the smoke moves away from you at 10 feet per round. Figure out the smoke’s new spread each round based on its new point of origin, whic [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///As with a cloudkill spell, the smoke moves away from you at 10 feet per round. Figure out the smoke&apos;s new spread each round based on its new point of origin, whic [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string IncendiaryCloudAbilityDescription_info {
             get {
@@ -1959,6 +2255,24 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Magic traits focus on any magical events or training your character may have had in their past. 的本地化字符串。
+        /// </summary>
+        internal static string MagicTraitDescription_info {
+            get {
+                return ResourceManager.GetString("MagicTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Magic Trait 的本地化字符串。
+        /// </summary>
+        internal static string MagicTraitName_info {
+            get {
+                return ResourceManager.GetString("MagicTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Magus Arcanas 的本地化字符串。
         /// </summary>
         internal static string MagusArcanasFeatureName_info {
@@ -2040,7 +2354,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Choose one energy type: acid, cold, electricity, fire, or force. You may replace a spell’s normal damage with that energy type.
+        ///   查找类似 Choose one energy type: acid, cold, electricity, fire, or force. You may replace a spell&apos;s normal damage with that energy type.
         ///Level Increase: +1 的本地化字符串。
         /// </summary>
         internal static string MetamagicElementalSpellSelectionDescription_info {
@@ -2078,7 +2392,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 You can manipulate the elemental nature of your spells. You may replace a spell’s normal damage with {0} damage.
+        ///   查找类似 You can manipulate the elemental nature of your spells. You may replace a spell&apos;s normal damage with {0} damage.
         ///Level Increase: +1 的本地化字符串。
         /// </summary>
         internal static string MetamagicFeatElementalSpellDescription_info {
@@ -2890,7 +3204,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Whenever a creature fails a saving throw and takes fire damage from one of your spells, it catches on fire. This fire deals 1 point of fire damage per spell level at the beginning of the burning creature’s turn. The fire lasts for 1d4 rounds, but it can be extinguished as a move action if the creature succeeds at a Reflex save (using the spell’s DC). Dousing the creature with water as a standard action grants a +2 bonus on this save, while immersing the creature in water automatically extinguishes the fire. [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///   查找类似 Whenever a creature fails a saving throw and takes fire damage from one of your spells, it catches on fire. This fire deals 1 point of fire damage per spell level at the beginning of the burning creature&apos;s turn. The fire lasts for 1d4 rounds, but it can be extinguished as a move action if the creature succeeds at a Reflex save (using the spell&apos;s DC). Dousing the creature with water as a standard action grants a +2 bonus on this save, while immersing the creature in water automatically extinguishes the fire. [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string MysteryFlameBurningMagicDescription_info {
             get {
@@ -3155,6 +3469,26 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You look scary. Animals see you as a predator and do not willingly approach within 30 feet of you.
+        ///Benefit: Chance of wild animals not engaging you is greater.
+        ///Drawback: You take a -2 penalty on AC against animal bites and claw attack, and for each animal you have you lose 2 AC. 的本地化字符串。
+        /// </summary>
+        internal static string NatureWardDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("NatureWardDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Warded Against Nature 的本地化字符串。
+        /// </summary>
+        internal static string NatureWardDrawbackName_info {
+            get {
+                return ResourceManager.GetString("NatureWardDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Dazing  的本地化字符串。
         /// </summary>
         internal static string NewMetamagicNamesDazing_info {
@@ -3227,6 +3561,105 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Noble Born(Human) 的本地化字符串。
+        /// </summary>
+        internal static string NobleBornTraitSelectionName_info {
+            get {
+                return ResourceManager.GetString("NobleBornTraitSelectionName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You claim a tangential but legitimate connection to one of Brevoy&apos;s noble families. If you aren&apos;t human, you were likely adopted by one of Brevoy&apos;s nobles or were instead a favored servant or even a childhood friend of a noble scion. Whatever the cause, you&apos;ve had a comfortable life, but one far from the dignity and decadence your distant cousins know. Although you are associated with an esteemed name, your immediate family is hardly well to do, and you&apos;ve found your name to be more of a burden to you than  [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyBornTraitDescription_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyBornTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Noble born 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyBornTraitName_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyBornTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Noble family — Garess 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyGaressTraitName_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyGaressTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Noble family — Khavortorov 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyKhavortorovTraitName_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyKhavortorovTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Noble family — Lebeda 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLebedaTraitName_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLebedaTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Noble family — Lodovka 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLodovkaTraitName_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLodovkaTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Noble family — Medvyed 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyNoneTraitName_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyNoneTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Noble family — Orlovsky 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyOrlovskyTraitName_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyOrlovskyTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Noble family — Rogarvia 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyRogarviaTraitName_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyRogarviaTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Noble family — Surtova 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilySurtovaTraitName_info {
+            get {
+                return ResourceManager.GetString("NobleFamilySurtovaTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Select one Wizard opposition school; preparing spells of this school now only requires one spell slot of the appropriate level instead of two, and you no longer have the –4 Spellcraft penalty for crafting items from that school. 的本地化字符串。
         /// </summary>
         internal static string OppositionResearchFeatureDescription_info {
@@ -3245,7 +3678,150 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Whenever you cast a cure spell (a spell with “cure” in its name), you can cast it as a swift action, as if using the Quicken Spell feat, by expending two spell slots. This does not increase the level of the spell. You can use this ability once per day at 7th level and one additional time per day for every four levels beyond 7th. 的本地化字符串。
+        ///   查找类似 Look at your stats and inventory or at your class ability usage stats and you will find out your bonus.
+        ///Or you won&apos;t. That&apos;s the thing. Sometimes you win, and sometimes you lose. But that&apos;s what you are all about.
+        ///Benefit: To know what type of bonus you get in advance, right-click on the trait and scroll down.
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///Note if you want a different bonus you need to restart the game, or this bonus will stay the same.
+        /// 的本地化字符串。
+        /// </summary>
+        internal static string OptimisticGamblerGmbldscDescription_info {
+            get {
+                return ResourceManager.GetString("OptimisticGamblerGmbldscDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Gain:  {0} 的本地化字符串。
+        /// </summary>
+        internal static string OptimisticGamblerTraitBonus_info {
+            get {
+                return ResourceManager.GetString("OptimisticGamblerTraitBonus_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You&apos;ve always seemed to have trouble keeping money. Worse, you always seem to have debts looming over your head. When you heard about the “Cheat the Devil and Take His Gold&quot; gambling tournament, you felt in your gut that your luck was about to change. You&apos;ve always been optimistic, in fact, and even though right now is one of those rare times where you don&apos;t owe anyone any money (you just paid off a recent loan from local moneylender Lymas Smeed), you know that&apos;ll change soon enough. Better to start amassin [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string OptimisticGamblerTraitDescription_info {
+            get {
+                return ResourceManager.GetString("OptimisticGamblerTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You start with a very good bow +2 enhancement and speed. 的本地化字符串。
+        /// </summary>
+        internal static string OptimisticGamblerTraitExtraBowBonus_info {
+            get {
+                return ResourceManager.GetString("OptimisticGamblerTraitExtraBowBonus_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 +3 healed by healspels 的本地化字符串。
+        /// </summary>
+        internal static string OptimisticGamblerTraitExtraHealBonus_info {
+            get {
+                return ResourceManager.GetString("OptimisticGamblerTraitExtraHealBonus_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 +3 healed by healspels per die 的本地化字符串。
+        /// </summary>
+        internal static string OptimisticGamblerTraitExtraHealDiceBonus_info {
+            get {
+                return ResourceManager.GetString("OptimisticGamblerTraitExtraHealDiceBonus_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 +1 damage on spells per damage die 的本地化字符串。
+        /// </summary>
+        internal static string OptimisticGamblerTraitExtraMagicDamageBonus_info {
+            get {
+                return ResourceManager.GetString("OptimisticGamblerTraitExtraMagicDamageBonus_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Optimistic Gambler 的本地化字符串。
+        /// </summary>
+        internal static string OptimisticGamblerTraitName_info {
+            get {
+                return ResourceManager.GetString("OptimisticGamblerTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 +3 {0} luck bonus 的本地化字符串。
+        /// </summary>
+        internal static string OptimisticGamblerTraitStatsBonus_info {
+            get {
+                return ResourceManager.GetString("OptimisticGamblerTraitStatsBonus_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You start with {0} and you have a +3 bonus on attack rolls with weapons of this type. 的本地化字符串。
+        /// </summary>
+        internal static string OptimisticGamblerTraitWeaponBonus_info {
+            get {
+                return ResourceManager.GetString("OptimisticGamblerTraitWeaponBonus_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 What will it be? 的本地化字符串。
+        /// </summary>
+        internal static string OptimisticGamblerTraitWWIB_info {
+            get {
+                return ResourceManager.GetString("OptimisticGamblerTraitWWIB_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Whenever you cast a cure spell (a spell with “cure&quot; in its name), you can cast it as a swift action, as if using the Quicken Spell feat, by expending two spell slots. This does not increase the level of the spell. You can use this ability once per day at 7th level and one additional time per day for every four levels beyond 7th. 的本地化字符串。
         /// </summary>
         internal static string OracleCombatHealerDescription_info {
             get {
@@ -3601,7 +4177,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Each oracle is cursed, but this curse comes with a benefit as well as a hindrance.This choice is made at 1st level, and once made, it cannot be changed.The oracle’s curse cannot be removed or dispelled without the aid of a deity.An oracle’s curse is based on her oracle level plus one for every two levels or Hit Dice other than oracle.Each oracle must choose one of the following curses. 的本地化字符串。
+        ///   查找类似 Each oracle is cursed, but this curse comes with a benefit as well as a hindrance.This choice is made at 1st level, and once made, it cannot be changed.The oracle&apos;s curse cannot be removed or dispelled without the aid of a deity.An oracle&apos;s curse is based on her oracle level plus one for every two levels or Hit Dice other than oracle.Each oracle must choose one of the following curses. 的本地化字符串。
         /// </summary>
         internal static string OracleCurseSelectionDescription_info {
             get {
@@ -3896,6 +4472,101 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Your family is extremely important to you, and you feel disheartened becouse they died.
+        ///Drawback: You take a -2 penalty on Will saves. 的本地化字符串。
+        /// </summary>
+        internal static string OrphanDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("OrphanDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Family Died 的本地化字符串。
+        /// </summary>
+        internal static string OrphanDrawbackName_info {
+            get {
+                return ResourceManager.GetString("OrphanDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 For whatever reason, you were forced to flee your homeland. Chance or fate has brought you here, and it&apos;s here that your money ran out, leaving you stranded in this small town. You are also being pursued by enemies from your homeland, and that has made you paranoid and quick to react to danger.
+        ///Benefit: You gain a +2 trait bonus on initiative checks. 的本地化字符串。
+        /// </summary>
+        internal static string OutlanderExileDescription_info {
+            get {
+                return ResourceManager.GetString("OutlanderExileDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Outlander: Exile 的本地化字符串。
+        /// </summary>
+        internal static string OutlanderExileName_info {
+            get {
+                return ResourceManager.GetString("OutlanderExileName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 The secrets of ancient fallen civilizations intrigue you, particularly magical traditions. You&apos;ve studied magic intensely, and hope to increase that knowledge by adding lost lore. You&apos;ve come to pursue that study, and chose this place as your base because it was out of the way of bigger cities—meaning less competition to study the ancient monuments in the region, you hope!
+        ///Benefit: Pick three spells when you choose this trait. From this point on, whenever you cast these spells, you get a +1 trait bonus to  [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string OutlanderLoreseekerDescription_info {
+            get {
+                return ResourceManager.GetString("OutlanderLoreseekerDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Outlander: Loreseeker 的本地化字符串。
+        /// </summary>
+        internal static string OutlanderLoreseekerName_info {
+            get {
+                return ResourceManager.GetString("OutlanderLoreseekerName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You have come here to see about expanding the presence of your chosen faith after receiving visions that told you your faith is needed—what that need is, though, you&apos;re not quite sure.
+        ///Benefit: Pick three spells when you choose this trait. From this point on, whenever you cast these spells, you get a +1 trait bonus to caster level and DC. You also gain a +1 trait bonus to lore (Religion). 的本地化字符串。
+        /// </summary>
+        internal static string OutlanderMissionaryDescription_info {
+            get {
+                return ResourceManager.GetString("OutlanderMissionaryDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Outlander: Missionary 的本地化字符串。
+        /// </summary>
+        internal static string OutlanderMissionaryName_info {
+            get {
+                return ResourceManager.GetString("OutlanderMissionaryName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You&apos;ve recently come from somewhere else and are hoping to make your fortune here.
+        ///Choose one of the following. 的本地化字符串。
+        /// </summary>
+        internal static string OutlanderTraitDescription_info {
+            get {
+                return ResourceManager.GetString("OutlanderTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Outlander 的本地化字符串。
+        /// </summary>
+        internal static string OutlanderTraitName_info {
+            get {
+                return ResourceManager.GetString("OutlanderTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 This spell grants you a pair of wings, increasing your movement speed is increased to 40 feet (30 feet if wearing medium or heavy armor, or if carrying a medium or heavy load). This spell is designed for long-distance movement, and prevents fatigue for the duration of the spell. 的本地化字符串。
         /// </summary>
         internal static string OverlandFlightSpellAbilityDescription_info {
@@ -3919,6 +4590,44 @@ namespace EldritchArcana.Properties {
         internal static string OverlandFlightSpellName_info {
             get {
                 return ResourceManager.GetString("OverlandFlightSpellName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Physique Drawbacks puts the focus on bodily cripling aspects of your character&apos;s background. 的本地化字符串。
+        /// </summary>
+        internal static string PhysiqueDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("PhysiqueDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Physique Drawback 的本地化字符串。
+        /// </summary>
+        internal static string PhysiqueDrawbackName_info {
+            get {
+                return ResourceManager.GetString("PhysiqueDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You were cursed by a witch to become a frog. You did not like this and you killed the witch.
+        ///The curse is almost broken, but if you are in a moment of weakness, you transform back into a frog.
+        ///Drawback: If you attack someone when you are below 40 % health, you are transformed into a frog for 2 rounds. 的本地化字符串。
+        /// </summary>
+        internal static string PolymorphDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("PolymorphDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Witch&apos;s Curse 的本地化字符串。
+        /// </summary>
+        internal static string PolymorphDrawbackName_info {
+            get {
+                return ResourceManager.GetString("PolymorphDrawbackName_info", resourceCulture);
             }
         }
         
@@ -3964,6 +4673,164 @@ namespace EldritchArcana.Properties {
         internal static string PrestigiousSpellcasterFeatureName_info {
             get {
                 return ResourceManager.GetString("PrestigiousSpellcasterFeatureName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your life as a member of an unpopular ethnic group has given you an uncanny knack for avoiding detection.
+        ///Benefit: You gain a +1 trait bonus to Will saves and a +2 trait bonus to saving throws versus divination effects. 的本地化字符串。
+        /// </summary>
+        internal static string RaceCarefullyHiddenTraitDescription_info {
+            get {
+                return ResourceManager.GetString("RaceCarefullyHiddenTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Carefully Hidden (Human) 的本地化字符串。
+        /// </summary>
+        internal static string RaceCarefullyHiddenTraitName_info {
+            get {
+                return ResourceManager.GetString("RaceCarefullyHiddenTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your years spent in libraries reading every musty tome you could find about ancient lost civilizations has given you insight into the subjects of history and the arcane. 的本地化字符串。
+        /// </summary>
+        internal static string RaceFanaticTraitDescription_info {
+            get {
+                return ResourceManager.GetString("RaceFanaticTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Fanatic (Human) 的本地化字符串。
+        /// </summary>
+        internal static string RaceFanaticTraitName_info {
+            get {
+                return ResourceManager.GetString("RaceFanaticTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your parents were scholars of history, whether genealogists of your own family tree, sages on the subject of ancient empires, or simply hobbyists with a deep and abiding love for the past.
+        ///Benefits: You gain a +1 trait bonus on Knowledge (world) checks and bardic knowledge checks, and Knowledge (world) is always a class skill for you. 的本地化字符串。
+        /// </summary>
+        internal static string RaceHistorianTraitDescription_info {
+            get {
+                return ResourceManager.GetString("RaceHistorianTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Historian (Human) 的本地化字符串。
+        /// </summary>
+        internal static string RaceHistorianTraitName_info {
+            get {
+                return ResourceManager.GetString("RaceHistorianTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You have survived many battles thanks to your skill with your shield.
+        ///Benefit: When performing a shield bash, you deal 1 additional point of damage. 的本地化字符串。
+        /// </summary>
+        internal static string RaceShieldBearerTraitDescription_info {
+            get {
+                return ResourceManager.GetString("RaceShieldBearerTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Shield Bearer (Human) 的本地化字符串。
+        /// </summary>
+        internal static string RaceShieldBearerTraitName_info {
+            get {
+                return ResourceManager.GetString("RaceShieldBearerTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You have a healthy fear of sorcerers&apos; speech and wizards&apos; words that has helped you to survive their charms.
+        ///Benefit: You gain a +1 trait bonus on saving throws against arcane spells. 的本地化字符串。
+        /// </summary>
+        internal static string RaceSuperstitiousTraitDescription_info {
+            get {
+                return ResourceManager.GetString("RaceSuperstitiousTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Superstitious (Human) 的本地化字符串。
+        /// </summary>
+        internal static string RaceSuperstitiousTraitName_info {
+            get {
+                return ResourceManager.GetString("RaceSuperstitiousTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Race traits are keyed to specific races or ethnicities, which your character must belong to in order to select the trait. 的本地化字符串。
+        /// </summary>
+        internal static string RaceTraitDescription_info {
+            get {
+                return ResourceManager.GetString("RaceTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Race Trait 的本地化字符串。
+        /// </summary>
+        internal static string RaceTraitName_info {
+            get {
+                return ResourceManager.GetString("RaceTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 
+        ///Benefits: Select one of the following skills: Persuasion, Knowledge (world), or Perception. You gain a +1 trait bonus on checks with that skill, and it is always a class skill for you. 的本地化字符串。
+        /// </summary>
+        internal static string RaceWorldTravelerTraitBenefit_info {
+            get {
+                return ResourceManager.GetString("RaceWorldTravelerTraitBenefit_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your family has taken the love of travel to an extreme, roaming the world extensively. You&apos;ve seen dozens of cultures and have learned to appreciate the diversity of what the world has to offer. 的本地化字符串。
+        /// </summary>
+        internal static string RaceWorldTravelerTraitDescription_info {
+            get {
+                return ResourceManager.GetString("RaceWorldTravelerTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 World Traveler (Human) 的本地化字符串。
+        /// </summary>
+        internal static string RaceWorldTravelerTraitName_info {
+            get {
+                return ResourceManager.GetString("RaceWorldTravelerTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Regional traits are keyed to specific regions, be they large (such as a nation or geographic region) or small (such as a city or a specific mountain). In order to select a regional trait, your PC must have spent at least a year living in that region. At 1st level, you can only select one regional trait (typically the one tied to your character&apos;s place of birth or homeland), despite the number of regions you might wish to write into your character&apos;s background. 的本地化字符串。
+        /// </summary>
+        internal static string RegionalTraitDescription_info {
+            get {
+                return ResourceManager.GetString("RegionalTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Regional Trait 的本地化字符串。
+        /// </summary>
+        internal static string RegionalTraitName_info {
+            get {
+                return ResourceManager.GetString("RegionalTraitName_info", resourceCulture);
             }
         }
         
@@ -4050,6 +4917,24 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You were raised in the south of Brevoy, a land of dense forests and rolling plains, of crystalline rivers and endless sapphire skies. You come from hearty stock and were raised with simple sensibilities of hard work winning well-deserved gains, the importance of charity and compassion, and the value of personal and familial honor. Yours is the country of the Aldori swordlords and the heroes who refused to bend before the armies of a violent conqueror. You care little for matters of politics and nobles or of [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string RostlanderTraitDescription_info {
+            get {
+                return ResourceManager.GetString("RostlanderTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Rostlander 的本地化字符串。
+        /// </summary>
+        internal static string RostlanderTraitName_info {
+            get {
+                return ResourceManager.GetString("RostlanderTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Whenever you cast a spell that cures the target of hit point damage, you do not provoke attacks of opportunity for spellcasting. 的本地化字符串。
         /// </summary>
         internal static string SafeCuringFeatureDescription_info {
@@ -4105,7 +4990,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 At 15th level, a seeker becomes skilled at modifying their mystery spells with metamagic. When a seeker applies a metamagic feat to any bonus spells granted by their mystery, they reduce the metamagic feat’s spell level adjustment by 1. Thus, applying a Metamagic feat like Extend Spell to a spell does not change its effective spell level at all, while applying Quicken Spell only increases the spell’s effective spell level by 3 instead of by 4. This reduction to the spell level adjustment for Metamagic feats [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///   查找类似 At 15th level, a seeker becomes skilled at modifying their mystery spells with metamagic. When a seeker applies a metamagic feat to any bonus spells granted by their mystery, they reduce the metamagic feat&apos;s spell level adjustment by 1. Thus, applying a Metamagic feat like Extend Spell to a spell does not change its effective spell level at all, while applying Quicken Spell only increases the spell&apos;s effective spell level by 3 instead of by 4. This reduction to the spell level adjustment for Metamagic feats [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string SeekerMagic_Description_info {
             get {
@@ -4210,6 +5095,24 @@ namespace EldritchArcana.Properties {
         internal static string SkipSelectionDescription_info {
             get {
                 return ResourceManager.GetString("SkipSelectionDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Social traits focus on your character&apos;s social class or upbringing. 的本地化字符串。
+        /// </summary>
+        internal static string SocialTraitDescription_info {
+            get {
+                return ResourceManager.GetString("SocialTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Social Trait 的本地化字符串。
+        /// </summary>
+        internal static string SocialTraitName_info {
+            get {
+                return ResourceManager.GetString("SocialTraitName_info", resourceCulture);
             }
         }
         
@@ -4361,6 +5264,24 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You have lived all your life in and around the city of Restov, growing up on tales of Baron Sirian Aldori and the exploits of your home city&apos;s heroic and legendary swordlords. Perhaps one of your family members was an Aldori swordlord, you have a contact among their members, or you have dreamed since childhood of joining. Regardless, you idolize the heroes, styles, and philosophies of the Aldori and have sought to mimic their vaunted art. Before you can petition to join their ranks, however, you feel that y [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string SwordScionTraitDescription_info {
+            get {
+                return ResourceManager.GetString("SwordScionTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Sword Scion 的本地化字符串。
+        /// </summary>
+        internal static string SwordScionTraitName_info {
+            get {
+                return ResourceManager.GetString("SwordScionTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 &lt;b&gt;This mod was tested against game version {0}, but you are running {1}.&lt;/b&gt; 的本地化字符串。
         /// </summary>
         internal static string testedGameVersion_warning {
@@ -4434,7 +5355,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Character traits are abilities that are not tied to your character’s race or class. They can enhance your character’s skills, racial abilities, class abilities, or other statistics, enabling you to further customize them. At its core, a character trait is approximately equal in power to half a feat, so two character traits are roughly equivalent to a bonus feat. Yet a character trait isn’t just another kind of power you can add on to your character—it’s a way to quantify (and encourage) building a character [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///   查找类似 Character traits are abilities that are not tied to your character&apos;s race or class. They can enhance your character&apos;s skills, racial abilities, class abilities, or other statistics, enabling you to further customize them. At its core, a character trait is approximately equal in power to half a feat, so two character traits are roughly equivalent to a bonus feat. Yet a character trait isn&apos;t just another kind of power you can add on to your character—it&apos;s a way to quantify (and encourage) building a character [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string TraitsSelectionDescription_info {
             get {
@@ -4461,6 +5382,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 This creature is changed by Urgothoa to be an undead.
+        ///Drawback: This creature is vulnerable to Fire, Holy and Divine attacks. 的本地化字符串。
+        /// </summary>
+        internal static string UndeadCurseDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("UndeadCurseDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Undead Curse 的本地化字符串。
+        /// </summary>
+        internal static string UndeadCurseDrawbackName_info {
+            get {
+                return ResourceManager.GetString("UndeadCurseDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 An immobile, blazing curtain of shimmering violet fire springs into existence. One side of the wall, selected by you, sends forth waves of heat, dealing 2d4 points of fire damage to creatures within 10 feet and 1d4 points of fire damage to those past 10 feet but within 20 feet. The wall deals this damage when it appears, and to all creatures in the area on your turn each round. In addition, the wall deals 2d6 points of fire damage + 1 point of fire damage per caster level (maximum +20) to any creature passi [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string WallOfFireAbilityDescription_info {
@@ -4475,6 +5415,384 @@ namespace EldritchArcana.Properties {
         internal static string WallOfFireAbilityName_info {
             get {
                 return ResourceManager.GetString("WallOfFireAbilityName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a bastard sword 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryBastardSwordName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryBastardSwordName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a battle axe 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryBattleaxeName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryBattleaxeName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a club 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryClubName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryClubName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a dagger 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryDaggerName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryDaggerName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a dart 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryDartName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryDartName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a dueling sword 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryDuelingSwordName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryDuelingSwordName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a dwarven waraxe 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryDwarvenWaraxeName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryDwarvenWaraxeName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a elven curve blade 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryElvenCurveBladeName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryElvenCurveBladeName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a estoc 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryEstocName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryEstocName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a falcata 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryFalcataName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryFalcataName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a falchion 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryFalchionName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryFalchionName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a flail 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryFlailName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryFlailName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a greataxe 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryGreataxeName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryGreataxeName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a greatclub 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryGreatclubName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryGreatclubName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a greatsword 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryGreatswordName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryGreatswordName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a handaxe 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryHandaxeName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryHandaxeName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a heavy flail 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryHeavyFlailName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryHeavyFlailName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a heavy mace 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryHeavyMaceName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryHeavyMaceName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a heavy pick 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryHeavyPickName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryHeavyPickName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a heavy shield 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryHeavyShieldName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryHeavyShieldName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a javelin 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryJavelinName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryJavelinName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a kama 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryKamaName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryKamaName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a kukri 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryKukriName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryKukriName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a light hammer 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryLightHammerName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryLightHammerName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a light mace 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryLightMaceName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryLightMaceName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a light pick 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryLightPickName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryLightPickName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a light shield 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryLightShieldName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryLightShieldName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a long sword 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryLongswordName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryLongswordName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a nunchaku 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryNunchakuName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryNunchakuName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a rapier 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryRapierName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryRapierName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a sai 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategorySaiName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategorySaiName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a scimitar 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryScimitarName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryScimitarName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a scythe 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryScytheName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryScytheName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a short sword 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryShortswordName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryShortswordName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a shuriken 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryShurikenName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryShurikenName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a sickle 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategorySickleName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategorySickleName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a sling 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategorySlingName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategorySlingName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a spear 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategorySpearName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategorySpearName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a starknife 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryStarknifeName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryStarknifeName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a throwing axe 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryThrowingAxeName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryThrowingAxeName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a trident 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryTridentName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryTridentName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 a warhammer 的本地化字符串。
+        /// </summary>
+        internal static string WeaponCategoryWarhammerName_info {
+            get {
+                return ResourceManager.GetString("WeaponCategoryWarhammerName_info", resourceCulture);
             }
         }
         

@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AbundantRevelationsFeatureDescription_info" xml:space="preserve">
-    <value>选择一个你每天可以多次使用的启示。你在启示中每天额外获得1次使用。
-特殊：你可以多次获得此专长。它的效果不会叠加。每次你获得这个专长，它都适用于一个新的启示。</value>
+    <value>选择一个你每天可以多次使用的启示，每天可以额外获得1次启示的使用次数。
+特殊：你可以多次选择此专长，但效果无法叠加。每当你获得此专长你都需要选择一个新启示。</value>
   </data>
   <data name="AbundantRevelationsFeatureName_info" xml:space="preserve">
     <value>充裕启示</value>
   </data>
   <data name="AdditionalTraitsFeatDescription_info" xml:space="preserve">
     <value>你将获得比通常更多的背景特性。
-效益：你可以选择两个额外的角色背景特性。你必须从两个不同的类型列表里选择这些额外的背景特性，并且你也无法从你之前已选取过背景特性的类型特性列表里选取。你还必须遵从你所选择的角色背景的其他所有限制——例如你无法为一个精灵角色选择一个矮人的角色特性。</value>
+效益：你可以选择两个额外的角色背景特性。你必须从两个不同的类型列表里选择这些额外的背景特性，并且你也无法从你之前已选取过的特性种类里选取。你还必须遵从你所选择的角色背景的其他所有限制——例如你无法为一个精灵角色选择一个矮人的角色特性。</value>
   </data>
   <data name="AdditionalTraitsFeatName_info" xml:space="preserve">
     <value>额外背景特性</value>
@@ -148,11 +148,11 @@
     <value>共用凌空而行</value>
   </data>
   <data name="AncientLorekeeperClassSkillsDescription_info" xml:space="preserve">
-    <value>传古学者将知识（奥术）加入其职业技能。</value>
+    <value>传古学者将知识（神秘）加入其职业技能。</value>
   </data>
   <data name="AncientLorekeeperDescription_info" xml:space="preserve">
     <value>传古学者是精灵一族广博知识和信仰的活图书馆。他们在年轻时就已对此展现出浓厚的兴趣，并能理解历史、续写传说；而当成年时，他们为自己这个长寿种族的久远记忆服务的意愿便已被所有认识他们的人所熟知。
-传古学者将知识（奥术）加入他们的职业技能列表中，这将取代他们从秘示域获得的奖励技能。</value>
+传古学者将知识（神秘）加入他们的职业技能列表中，这将取代他们从秘示域获得的奖励技能。</value>
   </data>
   <data name="AncientLorekeeperElvenArcanaDescription_info" xml:space="preserve">
     <value>2级时，传古学者对精灵传奇和哲学的精通使他们能够掌握一项精灵法师的法术。他们可以选择一个法师/术士列表中的法术，这一法术等级需比他们当前最高可施展的先知法术等级低至少一级。传古学者将这一法术作为额外可知法术。这一法术在任何情况下都被视为比起本身法术等级高一级的法术。传古学者在4级，6级，8级，10级，12级，14级，16级和18级可以再选择一项额外法术。
@@ -201,13 +201,19 @@
     <value>寻找刻文</value>
   </data>
   <data name="ArcaneSavantMasterScholarDescription_info" xml:space="preserve">
-    <value>奥术学者在“知识（奥术）”的技能等级上，以及进行使用魔法装置检定时将获得1/2其职业等级（最小为1）的加值，并且总能在知识（奥术）检定时投出10点，即便其处于扰乱或危险状态。</value>
+    <value>奥术学者在“知识（神秘）”的技能等级上，以及进行使用魔法装置检定时将获得1/2其职业等级（最小为1）的加值，并且总能在知识（神秘）检定时投出10点，即便其处于扰乱或危险状态。</value>
   </data>
   <data name="ArcaneSavantMasterScholarName_info" xml:space="preserve">
     <value>学术大师</value>
   </data>
   <data name="ArcaneSavantName_info" xml:space="preserve">
     <value>奥术学者</value>
+  </data>
+  <data name="BastardTraitDescription" xml:space="preserve">
+    <value>你父母其中之一曾是布雷沃几大家族之一的成员，甚或是罗嘉维亚家族的后裔。然而你没有任何关于你贵族血统的确凿证据，并且你也很清楚毫无根据地自称贵族只会让自己像是个骗徒。尽管你可能持有一件首饰，一片名贵的织物，亦或是一封年代久远的婚书，没有任何直接证据能证明你的身份。如此你长久以来一直活在贵族的阴影之中，你知道你本该享有精英阶层舒适而受人尊敬的生活，可命运的捉弄给你带来的却是人们的轻视。不论是因为你过去试图证明自己血统的努力已经惹恼了某个贵族家族的爪牙，还是你仅仅想证明你血管中流淌的血液并非毫无价值，你加入了前往失窃之地的探险队，期待让你自己的名号响彻天下。你在和布雷沃贵族进行交涉时，所有魅力相关技能检定受到-1减值，但在意志检定上由于你的倔强和个性获得+1背景加值（只要你成功使自己成为一名真正的贵族，背景特性的负面效果就会消失）。</value>
+  </data>
+  <data name="BastardTraitName_info" xml:space="preserve">
+    <value>私生子</value>
   </data>
   <data name="BloodHavocMutationFeatureDescription_info" xml:space="preserve">
     <value>每当血脉狂怒者或者术士获得一个新的血承能力，他可以将这个血承能力换成一个其满足先决条件的血统突变。一旦他作出这个选择就无法改变。血脉狂怒者或术士不能将一个已经被变体改变或取代的血承能力替换为血统突变。血脉狂怒者无须进入血怒来使用他的血统突变。另外，血脉狂怒者或术士可以选择一个血统突变来代替血承奖励专长，只要他的职业等级不低于该突变通常取代的血承能力的等级。
@@ -299,6 +305,19 @@
   <data name="BonusSpellLevelFeatureName_info" xml:space="preserve">
     <value>奖励已知法术（{0}级）</value>
   </data>
+  <data name="BurnedDrawbackDescription_info" xml:space="preserve">
+    <value>你曾经严重烧伤过，或许是因为火山灰，或许是因为挥舞着火把的暴民，或许是因为某些火灾。每当接近火焰，你的伤处都会再次剧烈疼痛起来。
+缺陷：你在对抗火焰效果的检定时都会受到-2减值。</value>
+  </data>
+  <data name="BurnedDrawbackName_info" xml:space="preserve">
+    <value>烧伤</value>
+  </data>
+  <data name="CampaignTraitDescription_info" xml:space="preserve">
+    <value>战役背景是为“拥王者”战役相关角色量身打造的特性。</value>
+  </data>
+  <data name="CampaignTraitName_info" xml:space="preserve">
+    <value>战役背景</value>
+  </data>
   <data name="cannotLoadMod_error" xml:space="preserve">
     <value>修补方法libraryscriptableobject.loadDictionary()失败，无法加载mod！</value>
   </data>
@@ -317,6 +336,12 @@
   </data>
   <data name="ChooseMysteryLocalized_info" xml:space="preserve">
     <value>选择秘视域</value>
+  </data>
+  <data name="CombatTraitDescription_info" xml:space="preserve">
+    <value>战斗背景聚焦于角色战技及肉体方面的相关背景。</value>
+  </data>
+  <data name="CombatTraitName_info" xml:space="preserve">
+    <value>战斗背景</value>
   </data>
   <data name="CrossbloodedChoicesFeatureDescription_info" xml:space="preserve">
     <value>
@@ -340,6 +365,12 @@
   </data>
   <data name="CrossBloodlineName_info" xml:space="preserve">
     <value>{0}（混血）</value>
+  </data>
+  <data name="CurseDrawbackOptionsDescription_info" xml:space="preserve">
+    <value>你受到诅咒。请选择一种诅咒。</value>
+  </data>
+  <data name="CurseDrawbackOptionsName_info" xml:space="preserve">
+    <value>你受到诅咒</value>
   </data>
   <data name="CustomTraitDescription_info" xml:space="preserve">
     <value>这些背景特性有些滥强，因此只能用来娱乐。如果你想好好玩游戏就别选这些。</value>
@@ -472,9 +503,22 @@
   <data name="EnhancedCuresFeatureName_info" xml:space="preserve">
     <value>强化治疗</value>
   </data>
+  <data name="EntomophobeDrawbackDescription_info" xml:space="preserve">
+    <value>你年少时关于昆虫的悲惨经历使你深深恐惧各种虫豸，尤其是当它们聚成一群时。
+缺陷：你对虫类的攻击检定受到-2减值，并且你在面对虫群的扰乱心神能力的反胃状态检定时受到-2减值。</value>
+  </data>
+  <data name="EntomophobeDrawbackName_info" xml:space="preserve">
+    <value>昆虫恐惧症</value>
+  </data>
+  <data name="EquipmentTraitDescription_info" xml:space="preserve">
+    <value>许多冒险者倾向于依赖某件特定的装备，当他们和装备合二为一之时将变得如虎添翼。冒险者与他们的装备之间的共生关系是多种多样且复杂的。以下是一些特性和专长，可以帮助角色充分利用自己的装备，或是利用装备来充分发挥自己的技能。</value>
+  </data>
+  <data name="EquipmentTraitName_info" xml:space="preserve">
+    <value>装备背景</value>
+  </data>
   <data name="ExtraArcanaFeatureDescription_info" xml:space="preserve">
     <value>你已经解锁了一个新的魔战士奥能。你获得一个额外的魔战士奥能，你必须满足这个奥能的所有先决条件。
-特殊：你可以多次选择这个专长，效果可以叠加。你每次选择这个专长都能选择一个新奥能。</value>
+特殊：你可以多次选择此专长，效果可以叠加。你每次选择这个专长都能选择一个新奥能。</value>
   </data>
   <data name="ExtraArcanaFeatureName_info" xml:space="preserve">
     <value>额外奥能</value>
@@ -497,6 +541,12 @@
   </data>
   <data name="failedPatches_error" xml:space="preserve">
     <value>&lt;b&gt;错误：某些修补方法无法应用。保存的这些方法将不起作用：&lt;/b&gt;</value>
+  </data>
+  <data name="FaithTraitDescription_info" xml:space="preserve">
+    <value>信仰背景聚焦于角色的宗教和哲学倾向。</value>
+  </data>
+  <data name="FaithTraitName_info" xml:space="preserve">
+    <value>信仰背景</value>
   </data>
   <data name="FavoredClassAnyFeatureDescription_info" xml:space="preserve">
     <value>每个等级自动确定天赋职业，如果选择此天赋职业，你就只能获得额外生命值。天赋职业为你最高等级的非进阶职业。此为默认的游戏设定。</value>
@@ -532,6 +582,13 @@
   </data>
   <data name="featureName_error" xml:space="preserve">
     <value>• &lt;b&gt;{0}&lt;/b&gt;</value>
+  </data>
+  <data name="Fey-takenDrawbackDescription_info" xml:space="preserve">
+    <value>你在孩童时曾被喜欢恶作剧的妖精带走了一段时间。当你回归现实世界后，你从此看起来奇怪且不合群。你觉得现实世界十分无趣，你渴望回到那里，因而时常反抗，因此你不会按原样进食，你也不会再对奇光异景产生疑问。
+缺陷：你对疾病，幻象及所有类型的毒，以及精类的法术，类法术能力和超自然能力都受到-2减值。</value>
+  </data>
+  <data name="Fey-takenDrawbackName_info" xml:space="preserve">
+    <value>神隐</value>
   </data>
   <data name="FeyFoundlingFeatureDescription_info" xml:space="preserve">
     <value>当你在野外被找到时你还是个孩子。
@@ -616,6 +673,33 @@
   <data name="FlyWingDraconicWhiteName_info" xml:space="preserve">
     <value>白龙</value>
   </data>
+  <data name="FoulBrandDrawbackDescription_info" xml:space="preserve">
+    <value>你身上留有邪神留下的烙印。烙印的位置决定了你遭受惩罚的类型。</value>
+  </data>
+  <data name="FoulBrandDrawbackName" xml:space="preserve">
+    <value>烙印</value>
+  </data>
+  <data name="FoulBrandFaceDrawbackDescription_info" xml:space="preserve">
+    <value>烙印在你的脸部。
+缺陷：你在沟通检定上受到-2减值。</value>
+  </data>
+  <data name="FoulBrandFaceDrawbackName_info" xml:space="preserve">
+    <value>脸部</value>
+  </data>
+  <data name="FoulBrandHandsDrawbackDescription_info" xml:space="preserve">
+    <value>烙印在你的手部。
+缺陷：你在巧手检定上受到-2减值</value>
+  </data>
+  <data name="FoulBrandHandsDrawbackName_info" xml:space="preserve">
+    <value>手部</value>
+  </data>
+  <data name="FoulBrandLegDrawbackDescription_info" xml:space="preserve">
+    <value>烙印在你的腿部。
+缺陷：你的移动速度下降5英尺。</value>
+  </data>
+  <data name="FoulBrandLegDrawbackName_info" xml:space="preserve">
+    <value>腿部</value>
+  </data>
   <data name="GoBackDescription_info" xml:space="preserve">
     <value>选此项返回前一选项，以便选择其他项目。</value>
   </data>
@@ -646,6 +730,26 @@
   </data>
   <data name="HealingHandsFeatureName_info" xml:space="preserve">
     <value>医疗之手</value>
+  </data>
+  <data name="HedonisticDebuffDescription_info" xml:space="preserve">
+    <value>你觉得自己已经是个废人了……</value>
+  </data>
+  <data name="HedonisticDebuffName_info" xml:space="preserve">
+    <value>享乐主义者的不满</value>
+  </data>
+  <data name="HedonisticDrawbackDescription_info" xml:space="preserve">
+    <value>你是那种离开了享受和舒适就活不下去的生物。
+缺陷：当你手里的钱少于100gp+200gp*（人物等级-1）的时候，你的力量和敏捷就会受到-2减值。</value>
+  </data>
+  <data name="HedonisticDrawbackName_info" xml:space="preserve">
+    <value>享乐主义</value>
+  </data>
+  <data name="HelplessDrawbackDescription_info" xml:space="preserve">
+    <value>你曾因所爱之人遭受不幸感受过极度无助，因此当盟友处于危险境地之时这种无法动弹的无助感有时又会降临在你身上。
+缺陷：你在对抗麻痹和石化的豁免检定上受到-2减值。</value>
+  </data>
+  <data name="HelplessDrawbackName_info" xml:space="preserve">
+    <value>无助</value>
   </data>
   <data name="HighDCl_info" xml:space="preserve">
     <value>外乡来客的法术获得最大的施法者等级和DC加值（作弊）</value>
@@ -785,6 +889,12 @@
   </data>
   <data name="MagesTattooFeatureName_info" xml:space="preserve">
     <value>法师刺青</value>
+  </data>
+  <data name="MagicTraitDescription_info" xml:space="preserve">
+    <value>魔法背景聚焦于角色在过去可能遭遇过的魔法事件或是进行过的魔法训练。</value>
+  </data>
+  <data name="MagicTraitName_info" xml:space="preserve">
+    <value>魔法背景</value>
   </data>
   <data name="MagusArcanasFeatureName_info" xml:space="preserve">
     <value>魔战士奥能</value>
@@ -1063,7 +1173,7 @@
     <value>2d6轮</value>
   </data>
   <data name="MysteryDragonPresenceDescription_info" xml:space="preserve">
-    <value>那些同你对抗的人必须克服对巨龙的恐惧，否则就将因为你的龙威而陷入恐慌。你能以迅捷动作在你身周展开蕴有龙力的灵光。当你激活此能力时，30英尺以内能目视你的敌人必须进行意志检定。成功意味着该生物对此能力免疫24小时，检定失败则陷入战栗2d6轮。此能力为影响心智的恐怖效果。1级时你每天能使用此能力1次，5级及5级之后每5级增加1次使用次数。</value>
+    <value>那些同你对抗的人必须克服对巨龙的恐惧，否则就将因为你的龙威而陷入恐慌。你能以迅捷动作在你身周展开蕴有龙力的灵光。当你激活此能力时，30英尺以内能目视你的敌人必须进行意志豁免检定。成功意味着该生物对此能力免疫24小时，检定失败则陷入战栗2d6轮。此能力为影响心智的恐怖效果。1级时你每天能使用此能力1次，5级及5级之后每5级增加1次使用次数。</value>
   </data>
   <data name="MysteryDragonPresenceImmuneForDayDescription_info" xml:space="preserve">
     <value>通过检定，对“龙威显现”免疫24小时。</value>
@@ -1210,6 +1320,14 @@
   <data name="MysteryTimeName_info" xml:space="preserve">
     <value>时光秘示域</value>
   </data>
+  <data name="NatureWardDrawbackDescription_info" xml:space="preserve">
+    <value>你容貌可怖。动物们将你看作天敌，不会靠近你身周30英尺之内。
+效益：野生动物攻击你的几率降低。
+缺陷：你在对抗动物的啮咬和爪抓攻击时AC受到-2减值，并且在对抗任何动物时AC都受到-2减值。</value>
+  </data>
+  <data name="NatureWardDrawbackName_info" xml:space="preserve">
+    <value>自然之敌</value>
+  </data>
   <data name="NewMetamagicNamesDazing_info" xml:space="preserve">
     <value>晕眩</value>
   </data>
@@ -1234,11 +1352,124 @@
   <data name="NewMetamagicNamesToppling_info" xml:space="preserve">
     <value>击倒</value>
   </data>
+  <data name="NobleBornTraitSelectionName_info" xml:space="preserve">
+    <value>贵种（人类）</value>
+  </data>
+  <data name="NobleFamilyBornTraitDescription_info" xml:space="preserve">
+    <value>你是布雷沃某个贵族家族的法理远亲。如果你并非人类，你可能是某个布雷沃贵族的养子，或是受宠的从者，甚或是某个贵族子裔的童年玩伴。无论原因如何，你享受着优渥的生活，但却与你远房亲戚们的兴衰罔替相距甚远。尽管你拥有一个令人肃然起敬的姓氏，但你的小家生活却并不如意，并且你感到你的家名在许多社交场合对你来说更像是负担而胜于助益。就在最近，你决定自我挑战，试看离开了你从未宣扬乃至介意过的家名——这巨大的保护伞，你是能否直面这个世界。一场深入失窃之地的探险似乎再适合不过检验你是否有资格拥有“贵族”的头衔了。
+效益：选择下列的贵族家族之一，获得其背景特性。</value>
+  </data>
+  <data name="NobleFamilyBornTraitName_info" xml:space="preserve">
+    <value>贵种</value>
+  </data>
+  <data name="NobleFamilyGaressTraitName_info" xml:space="preserve">
+    <value>盖雷斯家族</value>
+  </data>
+  <data name="NobleFamilyKhavortorovTraitName_info" xml:space="preserve">
+    <value>哈沃托罗夫家族</value>
+  </data>
+  <data name="NobleFamilyLebedaTraitName_info" xml:space="preserve">
+    <value>勒贝达家族</value>
+  </data>
+  <data name="NobleFamilyLodovkaTraitName_info" xml:space="preserve">
+    <value>洛多夫卡家族</value>
+  </data>
+  <data name="NobleFamilyNoneTraitName_info" xml:space="preserve">
+    <value>梅德伟耶德家族</value>
+  </data>
+  <data name="NobleFamilyOrlovskyTraitName_info" xml:space="preserve">
+    <value>奥洛夫斯基家族</value>
+  </data>
+  <data name="NobleFamilyRogarviaTraitName_info" xml:space="preserve">
+    <value>罗嘉维亚家族</value>
+  </data>
+  <data name="NobleFamilySurtovaTraitName_info" xml:space="preserve">
+    <value>瑟托瓦家族</value>
+  </data>
   <data name="OppositionResearchFeatureDescription_info" xml:space="preserve">
     <value>选择一个你的对立学派；现在你准备这个学派的法术只需要一个对应等级的法术位而非两个，并且你在制造此学派物品时不再承受-4豁免检定减值。</value>
   </data>
   <data name="OppositionResearchFeatureName_info" xml:space="preserve">
     <value>对立学派研究</value>
+  </data>
+  <data name="OptimisticGamblerGmbldscDescription_info" xml:space="preserve">
+    <value>进入游戏后查看你的属性，物品栏或职业能力。你会找到你的奖励。
+噢，或者你找不到。事情就是这样了，有时你赢，有时你输，但这就是你的人生。
+效益：想知道你具体获得了怎样的奖励？右击背景特性并滚动到底。
+（译者按：如果你想RP不推荐这么做）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+请注意，如果你想得到一个不同的奖励，需要重启游戏。否则奖励将固定不变。
+</value>
+  </data>
+  <data name="OptimisticGamblerTraitBonus_info" xml:space="preserve">
+    <value>获得：{0}</value>
+  </data>
+  <data name="OptimisticGamblerTraitDescription_info" xml:space="preserve">
+    <value>你似乎总是看上去囊中羞涩。更糟的是——你的欠债总是让你头疼不已。当你听说了“骗死那恶魔，拿光他的钱”赌博大赛的时候，你直觉地感到你时来运转的时候到了。事实上，你总是那么乐观，并且即便现在是你极为难得无债一身轻的时候（你刚还完了放贷头子莱马斯·斯威德的一笔贷款），你知道命运的转折就快要到来了。时来天地皆同力，现在就要赚大钱！你已付了1枚金币的入场费，并筹划着大赚一笔——你从骨子里就这么感觉。“这次一定会赚一票大的！”即使面对着绝望的场合，你无底线的乐观也能使你的灵魂坚强起来。
+效益：你有机会随机获得一种效益。</value>
+  </data>
+  <data name="OptimisticGamblerTraitExtraBowBonus_info" xml:space="preserve">
+    <value>在你开始游戏时将获得一把优质的 +2弓。</value>
+  </data>
+  <data name="OptimisticGamblerTraitExtraHealBonus_info" xml:space="preserve">
+    <value>治疗法术获得+3治疗量加值</value>
+  </data>
+  <data name="OptimisticGamblerTraitExtraHealDiceBonus_info" xml:space="preserve">
+    <value>治疗法术获得+3/每骰的治疗量加值</value>
+  </data>
+  <data name="OptimisticGamblerTraitExtraMagicDamageBonus_info" xml:space="preserve">
+    <value>法术获得+1/每伤害骰的伤害加值 </value>
+  </data>
+  <data name="OptimisticGamblerTraitName_info" xml:space="preserve">
+    <value>乐天赌徒</value>
+  </data>
+  <data name="OptimisticGamblerTraitStatsBonus_info" xml:space="preserve">
+    <value>获得+3{0}幸运加值</value>
+  </data>
+  <data name="OptimisticGamblerTraitWeaponBonus_info" xml:space="preserve">
+    <value>在你开始游戏时将获得{0}，并且你在该类型武器的攻击检定上享有+3背景加值。</value>
+  </data>
+  <data name="OptimisticGamblerTraitWWIB_info" xml:space="preserve">
+    <value>会是什么呢？</value>
   </data>
   <data name="OracleCombatHealerDescription_info" xml:space="preserve">
     <value>当你使用一个治疗法术（名称中带有“治疗”字样）时，你可以用一个迅捷动作来施放它，如同使用“法术瞬发”专长，但要花费两个法术位。这不会提升法术等级。7级时你可以每天使用此能力1次，并在之后每4级增加1次使用次数。</value>
@@ -1394,7 +1625,7 @@
     <value>奖励语言</value>
   </data>
   <data name="OracleCurseTonguesName_info" xml:space="preserve">
-    <value>口艺语</value>
+    <value>噫语</value>
   </data>
   <data name="OracleCurseWastingDescription_info" xml:space="preserve">
     <value>你的躯体正处于缓慢的腐烂状态。
@@ -1467,6 +1698,41 @@
   <data name="OrClassSkillName_info" xml:space="preserve">
     <value>或{0}</value>
   </data>
+  <data name="OrphanDrawbackDescription_info" xml:space="preserve">
+    <value>你无可取代的家人全都离你而去，这使你感到绝望而消沉。
+缺陷：你在意志豁免检定中受到-2的减值。</value>
+  </data>
+  <data name="OrphanDrawbackName_info" xml:space="preserve">
+    <value>天煞孤星</value>
+  </data>
+  <data name="OutlanderExileDescription_info" xml:space="preserve">
+    <value>出于某种理由，你被迫背井离乡。命运的齿轮指引你来到此地，而你的盘缠也恰好在此告罄；所以你不得不滞留在这个小镇。你仍在被来自故乡的敌人追杀，这使你产生受害妄想、并能快速应对危机。
+效益：你的先攻检定获得+2背景加值。</value>
+  </data>
+  <data name="OutlanderExileName_info" xml:space="preserve">
+    <value>流放者</value>
+  </data>
+  <data name="OutlanderLoreseekerDescription_info" xml:space="preserve">
+    <value>某个远古失落文明的秘密、尤其是其极度深邃的魔法传统深深地吸引着你。你专心研习魔法，并想要通过古代秘仪来强化自身知识。你为研究而来到这里，并且选择远离大都市的此地——意味着研究远古文明遗迹的同行较少——作为临时基地。
+效益：在你选择该背景特性后，从你的法术列表中选择3个法术。你对这些法术了熟于心，在施放它们时施法者等级+1，同时豁免DC（如果有豁免）+1。同时你的知识（神秘）检定获得+1背景加值。</value>
+  </data>
+  <data name="OutlanderLoreseekerName_info" xml:space="preserve">
+    <value>寻迹客</value>
+  </data>
+  <data name="OutlanderMissionaryDescription_info" xml:space="preserve">
+    <value>在受到神启、得知此地需要你的信仰——却不知具体需要何物之后，你决定来到这里，看看能否传播自己的信仰。
+效益：在你选择该背景特性后，从你的法术列表中选择3个法术。你对这些法术了熟于心，在施放它们时施法者等级+1，同时豁免DC（如果有豁免）+1。同时你的学识（宗教）检定获得+1背景加值。</value>
+  </data>
+  <data name="OutlanderMissionaryName_info" xml:space="preserve">
+    <value>传教士</value>
+  </data>
+  <data name="OutlanderTraitDescription_info" xml:space="preserve">
+    <value>你自他处而来，希冀在此地成就自己的命运。
+请在后续选择中选择一项背景。 </value>
+  </data>
+  <data name="OutlanderTraitName_info" xml:space="preserve">
+    <value>异乡来客</value>
+  </data>
   <data name="OverlandFlightSpellAbilityDescription_info" xml:space="preserve">
     <value>该法术给予你一双飞翼，使你能够以40英尺的速度飞行（如身穿中型或重型盔甲，或者负重为中度或重度负荷时，速度为30英尺）。该法术为长途飞行而设计，并能保证你在飞行期间不会疲劳。</value>
   </data>
@@ -1475,6 +1741,20 @@
   </data>
   <data name="OverlandFlightSpellName_info" xml:space="preserve">
     <value>跨陆飞行</value>
+  </data>
+  <data name="PhysiqueDrawbackDescription_info" xml:space="preserve">
+    <value>肉体缺陷重点描述角色背景的肉体方面的残缺。</value>
+  </data>
+  <data name="PhysiqueDrawbackName_info" xml:space="preserve">
+    <value>肉体缺陷</value>
+  </data>
+  <data name="PolymorphDrawbackDescription_info" xml:space="preserve">
+    <value>你曾被一名女巫诅咒，让你变成了一只青蛙。因此你出于愤怒斩杀了那名女巫。
+诅咒已经接近完全解除了，但一旦当你变得虚弱，你仍会被变成一只青蛙。
+缺陷：如果你在HP40%以下进行攻击，你将会被变形成一只青蛙达2轮。</value>
+  </data>
+  <data name="PolymorphDrawbackName_info" xml:space="preserve">
+    <value>女巫诅咒</value>
   </data>
   <data name="PrerequisiteCasterSpellLevelCaption_info" xml:space="preserve">
     <value>可施放 {1} 级{0}法术</value>
@@ -1490,6 +1770,63 @@
   </data>
   <data name="PrestigiousSpellcasterFeatureName_info" xml:space="preserve">
     <value>进阶施法者</value>
+  </data>
+  <data name="RaceCarefullyHiddenTraitDescription_info" xml:space="preserve">
+    <value>作为一个不受欢迎族裔的成员，你东躲西藏的生活带给你避免被发现的不可思议的诀窍。
+效益：你在意志豁免检定时获得+1背景加值，并且在对抗预言效果的豁免检定时获得+2背景加值。</value>
+  </data>
+  <data name="RaceCarefullyHiddenTraitName_info" xml:space="preserve">
+    <value>东躲西藏（人类）</value>
+  </data>
+  <data name="RaceFanaticTraitDescription_info" xml:space="preserve">
+    <value>你曾经年累月地泡在图书馆，阅读你能找到的每一本发霉的关于古代失落文明的大部头，这使你对历史和神秘事物有了深刻的了解。
+效益：你在知识（神秘）的检定上获得+1背景加值，并且知识（神秘）成为你的职业技能。</value>
+  </data>
+  <data name="RaceFanaticTraitName_info" xml:space="preserve">
+    <value>热衷求知（人类）</value>
+  </data>
+  <data name="RaceHistorianTraitDescription_info" xml:space="preserve">
+    <value>你的双亲是历史学者——或许是研究自家族谱的族谱学家，或许是研究古代帝国遗物的智者，亦或许仅仅是对过去有着深厚而持久的热爱的业余爱好者。
+效益：你在知识（世界）及所有逸闻见识类检定上获得+1背景加值，并且知识（世界）成为你的职业技能。</value>
+  </data>
+  <data name="RaceHistorianTraitName_info" xml:space="preserve">
+    <value>历史学者（人类）</value>
+  </data>
+  <data name="RaceShieldBearerTraitDescription_info" xml:space="preserve">
+    <value>你依靠你精湛的盾牌技巧久经沙场并且存活。
+效益：你在盾击时伤害额外+1。</value>
+  </data>
+  <data name="RaceShieldBearerTraitName_info" xml:space="preserve">
+    <value>持盾精英（人类）</value>
+  </data>
+  <data name="RaceSuperstitiousTraitDescription_info" xml:space="preserve">
+    <value>你对术士和法师的言语敬畏非常，这使他们的不太容易对你下手。
+效益：你在对抗奥术时豁免获得+1背景加值。</value>
+  </data>
+  <data name="RaceSuperstitiousTraitName_info" xml:space="preserve">
+    <value>迷信之徒（人类）</value>
+  </data>
+  <data name="RaceTraitDescription_info" xml:space="preserve">
+    <value>种族背景与特定种族或族群紧密相关。你的角色必须属于特定种族或族群才能够选择对应的种族背景。</value>
+  </data>
+  <data name="RaceTraitName_info" xml:space="preserve">
+    <value>种族背景</value>
+  </data>
+  <data name="RaceWorldTravelerTraitBenefit_info" xml:space="preserve">
+    <value>
+效益：从沟通，知识（世界）或察觉中选择一项作为你的职业技能，并且该项技能在检定中获得+1加值。</value>
+  </data>
+  <data name="RaceWorldTravelerTraitDescription_info" xml:space="preserve">
+    <value>你和家人痴迷于在世界各地旅行。你见识过种类繁多的不同文化，并且学会了欣赏世界所提供的多样性。</value>
+  </data>
+  <data name="RaceWorldTravelerTraitName_info" xml:space="preserve">
+    <value>世界旅者（人类）</value>
+  </data>
+  <data name="RegionalTraitDescription_info" xml:space="preserve">
+    <value>地区背景与特定的区域紧密相关，可能规模很大（如某些国家或地域）也可能很小（如某座城市或特定的一座山）。要选择某个地区背景，你的角色必须在当地生活一年以上。1级时你仅能选择一个地区背景（通常是角色的出生地或家乡），无论你希望给你的角色设定多少个地区背景。</value>
+  </data>
+  <data name="RegionalTraitName_info" xml:space="preserve">
+    <value>地区背景</value>
   </data>
   <data name="RelaxAncientLorekeeper_info" xml:space="preserve">
     <value>任何种族都可以选择变体职业“先知：传古学者”</value>
@@ -1519,6 +1856,12 @@
   </data>
   <data name="RollWithItFeatureName_info" xml:space="preserve">
     <value>逆来顺受</value>
+  </data>
+  <data name="RostlanderTraitDescription_info" xml:space="preserve">
+    <value>你生长于布雷沃南部，那里密林密布，平原起伏，河水潺潺，碧空如洗。你在热情洋溢的环境中长大，伴随着一些简单的价值观——多劳多得，慈善和同情的重要性，以及个人和家族荣誉的价值。你的国家是阿尔多瑞剑爵们的国度，是拒绝在暴力征服者的军队面前屈服的英雄们的国家。也因此你对所谓政治和贵族，欺骗和算计不屑一顾。由于你是个纯粹的布雷沃人，对有意将国家影响力延伸至失窃之地的英雄的召唤激发了你的爱国主义和荣誉感，因此你加入了一次向南开拓的探险。你强壮的天性使你在进行强韧检定时获得+1背景加值。</value>
+  </data>
+  <data name="RostlanderTraitName_info" xml:space="preserve">
+    <value>罗斯特兰人</value>
   </data>
   <data name="SafeCuringFeatureDescription_info" xml:space="preserve">
     <value>当你施放一个治疗目标生物生命值伤害的法术时，你不会引起对施法的借机攻击。</value>
@@ -1577,6 +1920,12 @@
   </data>
   <data name="SkipSelection_info" xml:space="preserve">
     <value>(跳过)</value>
+  </data>
+  <data name="SocialTraitDescription_info" xml:space="preserve">
+    <value>社会背景聚焦于角色的社会阶级或教养。</value>
+  </data>
+  <data name="SocialTraitName_info" xml:space="preserve">
+    <value>社会背景</value>
   </data>
   <data name="SpellBlendingFeatureDescription_info" xml:space="preserve">
     <value>选取此项奥能的魔战士可以选择一个法师法术列表中的法术，将其加入他的法术书和魔战士职业法术列表之中，此法术的法术等级必须在魔战士所能施展的法术等级之内。魔战士也可以选择以此方式添加两个法术，但这两个法术必须至少比他能施展的最高级法术低一级。。
@@ -1637,6 +1986,12 @@
   <data name="SummonWildhuntSpells_info" xml:space="preserve">
     <value>狂猎</value>
   </data>
+  <data name="SwordScionTraitDescription_info" xml:space="preserve">
+    <value>你自幼起一直生活在雷斯托夫市及其近郊。并在赛瑞安·阿尔多瑞男爵的传奇以及你所在城市的英雄和传奇剑爵的种种丰功伟绩的熏陶下成长。或许你家族中的一员就是一名阿尔多瑞剑爵，使你一直同他们保持着联系，亦或是你从小就梦想成为一名剑爵，无论如何，你都将阿尔多瑞的英雄，风格和哲学视为偶像，并一直努力模仿他们炫目的技艺。但是在你申请加入他们的行列之前，你觉得必须先测试下自己的能力。参加一次深入失窃之地的探险，似乎是提高自己技艺并开启与阿尔多瑞男爵相媲美传奇的完美途径。在你开始游戏时将获得一把长剑或是阿尔多瑞决斗剑，并在所有使用这两种武器的攻击及战技检定上获得+1背景加值。</value>
+  </data>
+  <data name="SwordScionTraitName_info" xml:space="preserve">
+    <value>剑之后裔</value>
+  </data>
   <data name="testedGameVersion_warning" xml:space="preserve">
     <value>&lt;b&gt;此Mod是基于游戏版本{0}测试的，但是正在运行的游戏版本为{1}。&lt;/b&gt;</value>
   </data>
@@ -1673,12 +2028,145 @@
   <data name="TypeHyphenSubtype_info" xml:space="preserve">
     <value>{0}—{1}</value>
   </data>
+  <data name="UndeadCurseDrawbackDescription_info" xml:space="preserve">
+    <value>此生物被乌伽娑婀转化为不死生物。
+缺陷：此生物害怕火焰，神圣和崇圣属性攻击。</value>
+  </data>
+  <data name="UndeadCurseDrawbackName_info" xml:space="preserve">
+    <value>不死诅咒</value>
+  </data>
   <data name="WallOfFireAbilityDescription_info" xml:space="preserve">
     <value>一道不可移动、散发出紫色光焰的炽热火墙凭空出现。你可以选择火墙的一侧对外散发出热量，对于该侧所有位于火墙10英尺内的生物都造成2d4点火焰伤害，并且对10-20英尺处的所有生物造成1d4点火焰伤害。火墙在出现时就立刻造成该伤害，并且在之后每一轮你行动之际对范围内的所有生物再次造成该伤害。此外，任何穿过火墙的人都会受到2d6+1/每施法者等级的火焰伤害（最大+20）。火墙对不死生物造成的伤害翻倍。
 如果你在生物所在的位置直接塑造火墙，那么这些生物受到的伤害如同他们穿越了火墙。如果5英尺长度的火墙在1轮之中受到了20点或以上的寒冷伤害，那么该段火墙就会熄灭。（此时寒冷伤害不像对于普通物品那样会减半。）</value>
   </data>
   <data name="WallOfFireAbilityName_info" xml:space="preserve">
     <value>火墙术</value>
+  </data>
+  <data name="WeaponCategoryBastardSwordName_info" xml:space="preserve">
+    <value>一把重剑</value>
+  </data>
+  <data name="WeaponCategoryBattleaxeName_info" xml:space="preserve">
+    <value>一把战斧</value>
+  </data>
+  <data name="WeaponCategoryClubName_info" xml:space="preserve">
+    <value>一根木棒</value>
+  </data>
+  <data name="WeaponCategoryDaggerName_info" xml:space="preserve">
+    <value>一把匕首</value>
+  </data>
+  <data name="WeaponCategoryDartName_info" xml:space="preserve">
+    <value>一支飞镖</value>
+  </data>
+  <data name="WeaponCategoryDuelingSwordName_info" xml:space="preserve">
+    <value>一柄决斗剑</value>
+  </data>
+  <data name="WeaponCategoryDwarvenWaraxeName_info" xml:space="preserve">
+    <value>一把矮人战斧</value>
+  </data>
+  <data name="WeaponCategoryElvenCurveBladeName_info" xml:space="preserve">
+    <value>一把精灵曲刃</value>
+  </data>
+  <data name="WeaponCategoryEstocName_info" xml:space="preserve">
+    <value>一柄刺剑</value>
+  </data>
+  <data name="WeaponCategoryFalcataName_info" xml:space="preserve">
+    <value>一把反曲剑</value>
+  </data>
+  <data name="WeaponCategoryFalchionName_info" xml:space="preserve">
+    <value>一把弯刃大刀</value>
+  </data>
+  <data name="WeaponCategoryFlailName_info" xml:space="preserve">
+    <value>一把链枷</value>
+  </data>
+  <data name="WeaponCategoryGreataxeName_info" xml:space="preserve">
+    <value>一把巨斧</value>
+  </data>
+  <data name="WeaponCategoryGreatclubName_info" xml:space="preserve">
+    <value>一根巨木棒</value>
+  </data>
+  <data name="WeaponCategoryGreatswordName_info" xml:space="preserve">
+    <value>一把巨剑</value>
+  </data>
+  <data name="WeaponCategoryHandaxeName_info" xml:space="preserve">
+    <value>一把手斧</value>
+  </data>
+  <data name="WeaponCategoryHeavyFlailName_info" xml:space="preserve">
+    <value>一把重型链枷</value>
+  </data>
+  <data name="WeaponCategoryHeavyMaceName_info" xml:space="preserve">
+    <value>一把重型硬头锤</value>
+  </data>
+  <data name="WeaponCategoryHeavyPickName_info" xml:space="preserve">
+    <value>一把重十字镐</value>
+  </data>
+  <data name="WeaponCategoryHeavyShieldName_info" xml:space="preserve">
+    <value>一面重型盾牌</value>
+  </data>
+  <data name="WeaponCategoryJavelinName_info" xml:space="preserve">
+    <value>一支标枪</value>
+  </data>
+  <data name="WeaponCategoryKamaName_info" xml:space="preserve">
+    <value>一把单镰</value>
+  </data>
+  <data name="WeaponCategoryKukriName_info" xml:space="preserve">
+    <value>一把反曲刀</value>
+  </data>
+  <data name="WeaponCategoryLightHammerName_info" xml:space="preserve">
+    <value>一把轻锤</value>
+  </data>
+  <data name="WeaponCategoryLightMaceName_info" xml:space="preserve">
+    <value>一把轻型硬头锤</value>
+  </data>
+  <data name="WeaponCategoryLightPickName_info" xml:space="preserve">
+    <value>一把轻十字镐</value>
+  </data>
+  <data name="WeaponCategoryLightShieldName_info" xml:space="preserve">
+    <value>一面轻型盾牌</value>
+  </data>
+  <data name="WeaponCategoryLongswordName_info" xml:space="preserve">
+    <value>一把长剑</value>
+  </data>
+  <data name="WeaponCategoryNunchakuName_info" xml:space="preserve">
+    <value>一对双截棍</value>
+  </data>
+  <data name="WeaponCategoryRapierName_info" xml:space="preserve">
+    <value>一把细剑</value>
+  </data>
+  <data name="WeaponCategorySaiName_info" xml:space="preserve">
+    <value>一把十手</value>
+  </data>
+  <data name="WeaponCategoryScimitarName_info" xml:space="preserve">
+    <value>一把弯刀</value>
+  </data>
+  <data name="WeaponCategoryScytheName_info" xml:space="preserve">
+    <value>一把巨镰</value>
+  </data>
+  <data name="WeaponCategoryShortswordName_info" xml:space="preserve">
+    <value>一把短剑</value>
+  </data>
+  <data name="WeaponCategoryShurikenName_info" xml:space="preserve">
+    <value>一支手里剑</value>
+  </data>
+  <data name="WeaponCategorySickleName_info" xml:space="preserve">
+    <value>一把镰刀</value>
+  </data>
+  <data name="WeaponCategorySlingName_info" xml:space="preserve">
+    <value>一根投石索</value>
+  </data>
+  <data name="WeaponCategorySpearName_info" xml:space="preserve">
+    <value>一根矛</value>
+  </data>
+  <data name="WeaponCategoryStarknifeName_info" xml:space="preserve">
+    <value>一把星刃</value>
+  </data>
+  <data name="WeaponCategoryThrowingAxeName_info" xml:space="preserve">
+    <value>一把投斧</value>
+  </data>
+  <data name="WeaponCategoryTridentName_info" xml:space="preserve">
+    <value>一把三叉戟</value>
+  </data>
+  <data name="WeaponCategoryWarhammerName_info" xml:space="preserve">
+    <value>一把战锤</value>
   </data>
   <data name="WeaponOfAweAbilityDescription_info" xml:space="preserve">
     <value>你将一件武器变成了令人敬畏的装备。该武器在伤害骰上获得+2崇圣加值，如果该武器造成重击，被重击的目标将无豁免处于战栗状态1轮。
