@@ -370,7 +370,7 @@ Choices for each bloodline:</value>
     <value>You were cursed. Select a Curse.</value>
   </data>
   <data name="CurseDrawbackOptionsName_info" xml:space="preserve">
-    <value>You Were Cursed[HB]</value>
+    <value>Cursed</value>
   </data>
   <data name="CustomTraitDescription_info" xml:space="preserve">
     <value>These traits are a little overpowered and are here just for fun, if you want to play fair don't pick em.</value>
@@ -1366,6 +1366,54 @@ Benefits: Select one of the following Royal families to gain its Traits.</value>
   </data>
   <data name="NobleFamilyKhavortorovTraitName_info" xml:space="preserve">
     <value>Noble family — Khavortorov</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraBondedDescription_info" xml:space="preserve">
+    <value>bonded object restore spell as a wizard</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraBondedName_info" xml:space="preserve">
+    <value>Bonded Object</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraEnhanceDescription_info" xml:space="preserve">
+    <value>arcane weapon enhancements as a magus</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraEnhanceName_info" xml:space="preserve">
+    <value>Arcane Weapon Enhancement</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraImpromptuDescription_info" xml:space="preserve">
+    <value>impromptu sneak attack as an arcane trickster</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraImpromptuName_info" xml:space="preserve">
+    <value>Impromptu Sneak Attack</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraJudgementDescription_info" xml:space="preserve">
+    <value>judgement ability as a inquisitor</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraJudgementName_info" xml:space="preserve">
+    <value>Judgement</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraKiDescription_info" xml:space="preserve">
+    <value>Ki power as a monk</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraKiName_info" xml:space="preserve">
+    <value>Ki Power</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraMutagenDescription_info" xml:space="preserve">
+    <value>alchemy mutagen as a alchemist</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraMutagenName_info" xml:space="preserve">
+    <value>Alchemy Mutagen</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraPerformanceDescription_info" xml:space="preserve">
+    <value>performances as a sensei</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraPerformanceName_info" xml:space="preserve">
+    <value>Sensei Performance</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraResourceDescription_info" xml:space="preserve">
+    <value>You are a resourceful family. Because of this, you gain {0} extra uses of {1}.</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraResourceName_info" xml:space="preserve">
+    <value>Extra {0}</value>
   </data>
   <data name="NobleFamilyLebedaTraitName_info" xml:space="preserve">
     <value>Noble family — Lebeda</value>

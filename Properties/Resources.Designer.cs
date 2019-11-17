@@ -786,7 +786,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 You Were Cursed[HB] 的本地化字符串。
+        ///   查找类似 Cursed 的本地化字符串。
         /// </summary>
         internal static string CurseDrawbackOptionsName_info {
             get {
@@ -3602,6 +3602,150 @@ namespace EldritchArcana.Properties {
         internal static string NobleFamilyKhavortorovTraitName_info {
             get {
                 return ResourceManager.GetString("NobleFamilyKhavortorovTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 bonded object restore spell as a wizard 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLebedaExtraBondedDescription_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLebedaExtraBondedDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Bonded Object 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLebedaExtraBondedName_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLebedaExtraBondedName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 arcane weapon enhancements as a magus 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLebedaExtraEnhanceDescription_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLebedaExtraEnhanceDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Arcane Weapon Enhancement 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLebedaExtraEnhanceName_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLebedaExtraEnhanceName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 impromptu sneak attack as an arcane trickster 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLebedaExtraImpromptuDescription_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLebedaExtraImpromptuDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Impromptu Sneak Attack 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLebedaExtraImpromptuName_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLebedaExtraImpromptuName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 judgement ability as a inquisitor 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLebedaExtraJudgementDescription_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLebedaExtraJudgementDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Judgement 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLebedaExtraJudgementName_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLebedaExtraJudgementName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Ki power as a monk 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLebedaExtraKiDescription_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLebedaExtraKiDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Ki Power 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLebedaExtraKiName_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLebedaExtraKiName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 alchemy mutagen as a alchemist 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLebedaExtraMutagenDescription_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLebedaExtraMutagenDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Alchemy Mutagen 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLebedaExtraMutagenName_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLebedaExtraMutagenName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 performances as a sensei 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLebedaExtraPerformanceDescription_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLebedaExtraPerformanceDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Sensei Performance 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLebedaExtraPerformanceName_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLebedaExtraPerformanceName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You are a resourceful family. Because of this, you gain {0} extra uses of {1}. 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLebedaExtraResourceDescription_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLebedaExtraResourceDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Extra {0} 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLebedaExtraResourceName_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLebedaExtraResourceName_info", resourceCulture);
             }
         }
         

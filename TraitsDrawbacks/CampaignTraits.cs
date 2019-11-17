@@ -86,7 +86,6 @@ namespace EldritchArcana
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/noble_houses.png"),
                 FeatureGroup.None);
 
-
             var Orlovski = Helpers.CreateFeatureSelection("NobleFamilyOrlovskyTrait", RES.NobleFamilyOrlovskyTraitName_info,
                 "Their motto is 'High Above.' \n" +
                 "House Orlovsky controls northeastern Brevoy from Eagle's Watch on Mount Veshka. They try to rise above petty political maneuvers. As staunch allies of the now disappeared House Rogarvia, this has landed them in a prickly situation." +
@@ -96,9 +95,7 @@ namespace EldritchArcana
                 FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.AdditionalCMD, 1, ModifierDescriptor.Trait));
 
-
             var OrlovskiFamilyFeats = new StatType[] {
-
                  StatType.SkillAthletics,
                  StatType.SkillPersuasion,
                  StatType.SkillStealth,
@@ -106,25 +103,12 @@ namespace EldritchArcana
                  //StatType.SneakAttack
              }.Select(skill => Traits.CreateAddStatBonus(
                 $"Orlovsky{skill}Trait",
-                $"{skill}",
+                $"{UIUtility.GetStatText(skill)}",
                 Orlovski.GetDescription(),
                 Helpers.MergeIds(Helpers.GetSkillFocus(skill).AssetGuid, "2b01b7ff17394007a3fbec18bb42203b"),
                 skill)).ToArray();
 
             //"0b183a3acaf5464eaad54276413fec08"
-
-
-            var Lebda = Helpers.CreateFeatureSelection("NobleFamilyLebedaTrait", RES.NobleFamilyLebedaTraitName_info,
-                "Family Motto: 'Success through Grace.'\n" +
-                "House Lebeda is based to the southwest of Lake Reykal in Brevoy, controlling the plains and significant portions of the lake's shipping. They are considered to be the Brevic noble family that epitomizes Rostland, having significant Taldan blood, an appreciation for fine things, and a love of sword fighting." +
-                "\nBenefit: You get a +1 trait bonus on Knowledge (Arcana), and select a resource for a usable ability. You can use it at least one additional time.",
-                Helpers.MergeIds(Helpers.getStattypeGuid(StatType.Intelligence), "9b03b7ff17394007a3fbec18bb42604c"),
-                Image2Sprite.Create("Mods/EldritchArcana/sprites/house_lebeda.png"),
-                FeatureGroup.None,
-                Helpers.CreateAddStatBonus(StatType.SkillKnowledgeArcana, 1, ModifierDescriptor.Trait));
-            //
-
-
             // var families = new List<BlueprintFeature>() { }
             //choices.Add( Helpers.CreateAddStatBonus(
             //Orlovski.SetFeatures(OrlovskiFeatures);
@@ -162,6 +146,7 @@ namespace EldritchArcana
                 "11f4072ea766a5840a46e6660894527d",
                 "NobleFamilyGaressTrait",
                 Helpers.MergeIds(Helpers.getStattypeGuid(StatType.Reach), "9b03b7ff17394007a3fbec18bb42604b"));
+
             BloodlineFeyWoodlandStride.SetNameDescriptionIcon(
                 RES.NobleFamilyGaressTraitName_info,
                 "Familty motto: 'Strong as the Mountains'\n" +
@@ -172,8 +157,35 @@ namespace EldritchArcana
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/house_garess.png")
                 );
             BloodlineFeyWoodlandStride.AddComponent(Helpers.CreateAddStatBonus(StatType.Speed, 5, ModifierDescriptor.Trait));
-            string[] Diffforhumans = new string[] { "Ki power as a monk", "Alchemy mutagen as a Alchemist", "Bonded item restore spell as a wizard", "Impromtu sneak attack as a acrane trickster", "Judgement ability as a inquisitor", "Arcane weapon enhancements as a magus", "Performances as a Sensei" };
-            string[] DiffforhumansT = new string[] { "Ki", "Alchemy Mutagen", "Bonded Item", "Impromtu Sneak Attack", "Judgement", "Arcane Weapon Enhancements", "Sensei Performances" };
+
+
+            var Lebda = Helpers.CreateFeatureSelection("NobleFamilyLebedaTrait", RES.NobleFamilyLebedaTraitName_info,
+                "Family Motto: 'Success through Grace.'\n" +
+                "House Lebeda is based to the southwest of Lake Reykal in Brevoy, controlling the plains and significant portions of the lake's shipping. They are considered to be the Brevic noble family that epitomizes Rostland, having significant Taldan blood, an appreciation for fine things, and a love of sword fighting." +
+                "\nBenefit: You get a +1 trait bonus on Knowledge (Arcana), and select a resource for a usable ability. You can use it at least one additional time.",
+                Helpers.MergeIds(Helpers.getStattypeGuid(StatType.Intelligence), "9b03b7ff17394007a3fbec18bb42604c"),
+                Image2Sprite.Create("Mods/EldritchArcana/sprites/house_lebeda.png"),
+                FeatureGroup.None,
+                Helpers.CreateAddStatBonus(StatType.SkillKnowledgeArcana, 1, ModifierDescriptor.Trait));
+
+            string[] Diffforhumans = new string[] {
+                RES.NobleFamilyLebedaExtraKiDescription_info,
+                RES.NobleFamilyLebedaExtraMutagenDescription_info,
+                RES.NobleFamilyLebedaExtraBondedDescription_info,
+                RES.NobleFamilyLebedaExtraImpromptuDescription_info,
+                RES.NobleFamilyLebedaExtraJudgementDescription_info,
+                RES.NobleFamilyLebedaExtraEnhanceDescription_info,
+                RES.NobleFamilyLebedaExtraPerformanceDescription_info
+            };
+            string[] DiffforhumansT = new string[] {
+                RES.NobleFamilyLebedaExtraKiName_info,
+                RES.NobleFamilyLebedaExtraMutagenName_info,
+                RES.NobleFamilyLebedaExtraBondedName_info,
+                RES.NobleFamilyLebedaExtraImpromptuName_info,
+                RES.NobleFamilyLebedaExtraJudgementName_info,
+                RES.NobleFamilyLebedaExtraEnhanceName_info,
+                RES.NobleFamilyLebedaExtraPerformanceName_info
+            };
             var LebdaFeatures = new List<BlueprintFeature>() { };
             var Resources = new List<BlueprintAbilityResource> { kiPowerResource, MutagenResource, ItemBondResource, ImpromptuSneakAttackResource, JudgmentResource, ArcanePoolResourse, SenseiPerformanceResource };
             //CreateIncreaseResourceAmount for a few different resources
@@ -185,14 +197,12 @@ namespace EldritchArcana
                 x++;
                 y = x < 3 ? 1 : x - 3;
                 if (y == 0) y = 1;
-                LebdaFeatures.Add(Helpers.CreateFeature($"NobleFamily{stat}Trait", $"extra {DiffforhumansT[x - 1]}",
-                $"You are a resourceful family. Because of this, you " +
-                $"gain {y} extra uses of {Diffforhumans[x - 1]}.",
-                Helpers.MergeIds(stat.AssetGuid, "9b03b7ff17394007a3fbec18bb42604c"),
-                Helpers.GetIcon(stat.AssetGuid), //
-                FeatureGroup.None,
-                stat.CreateIncreaseResourceAmount(y)));
-
+                LebdaFeatures.Add(Helpers.CreateFeature($"NobleFamily{stat}Trait", String.Format(RES.NobleFamilyLebedaExtraResourceName_info, DiffforhumansT[x - 1]),
+                    String.Format(RES.NobleFamilyLebedaExtraResourceDescription_info, y, Diffforhumans[x - 1]),
+                    Helpers.MergeIds(stat.AssetGuid, "9b03b7ff17394007a3fbec18bb42604c"),
+                    Helpers.GetIcon(stat.AssetGuid), //
+                    FeatureGroup.None,
+                    stat.CreateIncreaseResourceAmount(y)));
             };
             Lebda.SetFeatures(LebdaFeatures);
 
@@ -204,9 +214,10 @@ namespace EldritchArcana
                 "The house crest is a black bear with black antlers above its head in front of a red field.Their motto is 'Endurance Overcomes All.'" +
                 "\nBenefit: You can use Lay on Hands 4 times more per day, and you get a +1 trait bonus on saving throws vs compulsion effects from feys.",//bow of the true world
                 Helpers.MergeIds(Helpers.getStattypeGuid(StatType.AdditionalCMB), "9b03b7ff17394007a3fbec18bb42604b"),
-                Image2Sprite.Create("Mods/EldritchArcana/sprites/house_medvyed.png"),
-                FeatureGroup.None,
-                layonhandsResource.CreateIncreaseResourceAmount(4),Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Compulsion; s.Value = 1; s.ModifierDescriptor = ModifierDescriptor.Trait; })),
+                    Image2Sprite.Create("Mods/EldritchArcana/sprites/house_medvyed.png"),
+                    FeatureGroup.None,
+                    layonhandsResource.CreateIncreaseResourceAmount(4),
+                    Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Compulsion; s.Value = 1; s.ModifierDescriptor = ModifierDescriptor.Trait; })),
                 
                 //family lodovka + atletics and snowball
                 Helpers.CreateFeature("NobleFamilyLodovkaTrait", RES.NobleFamilyLodovkaTraitName_info,
@@ -328,7 +339,6 @@ namespace EldritchArcana
             hoi.Add(Lebda);
             NobleFamilyBorn.SetFeatures(hoi);
             choices.Add(NobleFamilyBorn);
-
 
             var miscdes = "Nobles think about you but they don't know:\n";
             choices.Add(Helpers.CreateFeatureSelection("NobleBornTrait", RES.NobleBornTraitSelectionName_info,

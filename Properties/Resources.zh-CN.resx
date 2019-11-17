@@ -370,7 +370,7 @@
     <value>你受到诅咒。请选择一种诅咒。</value>
   </data>
   <data name="CurseDrawbackOptionsName_info" xml:space="preserve">
-    <value>你受到诅咒</value>
+    <value>受诅咒</value>
   </data>
   <data name="CustomTraitDescription_info" xml:space="preserve">
     <value>这些背景特性有些滥强，因此只能用来娱乐。如果你想好好玩游戏就别选这些。</value>
@@ -677,7 +677,7 @@
     <value>你身上留有邪神留下的烙印。烙印的位置决定了你遭受惩罚的类型。</value>
   </data>
   <data name="FoulBrandDrawbackName" xml:space="preserve">
-    <value>烙印</value>
+    <value>禁忌烙印</value>
   </data>
   <data name="FoulBrandFaceDrawbackDescription_info" xml:space="preserve">
     <value>烙印在你的脸部。
@@ -1368,6 +1368,54 @@
   <data name="NobleFamilyKhavortorovTraitName_info" xml:space="preserve">
     <value>哈沃托罗夫家族</value>
   </data>
+  <data name="NobleFamilyLebedaExtraBondedDescription_info" xml:space="preserve">
+    <value>用来存储法术的法师魔契物</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraBondedName_info" xml:space="preserve">
+    <value>魔契物</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraEnhanceDescription_info" xml:space="preserve">
+    <value>魔战士的奥能武器增强</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraEnhanceName_info" xml:space="preserve">
+    <value>奥能武器增强</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraImpromptuDescription_info" xml:space="preserve">
+    <value>诡术师的即兴偷袭</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraImpromptuName_info" xml:space="preserve">
+    <value>即兴偷袭</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraJudgementDescription_info" xml:space="preserve">
+    <value>审判官的审判能力</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraJudgementName_info" xml:space="preserve">
+    <value>审判</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraKiDescription_info" xml:space="preserve">
+    <value>武僧气力</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraKiName_info" xml:space="preserve">
+    <value>气力</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraMutagenDescription_info" xml:space="preserve">
+    <value>炼金诱变剂</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraMutagenName_info" xml:space="preserve">
+    <value>炼金诱变剂</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraPerformanceDescription_info" xml:space="preserve">
+    <value>师范演艺</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraPerformanceName_info" xml:space="preserve">
+    <value>师范演艺</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraResourceDescription_info" xml:space="preserve">
+    <value>你出身于一个资源丰富的家庭，也因此你可以获得{0}次额外的{1}。</value>
+  </data>
+  <data name="NobleFamilyLebedaExtraResourceName_info" xml:space="preserve">
+    <value>额外{0}</value>
+  </data>
   <data name="NobleFamilyLebedaTraitName_info" xml:space="preserve">
     <value>勒贝达家族</value>
   </data>
@@ -1779,15 +1827,14 @@
     <value>东躲西藏（人类）</value>
   </data>
   <data name="RaceFanaticTraitDescription_info" xml:space="preserve">
-    <value>你曾经年累月地泡在图书馆，阅读你能找到的每一本发霉的关于古代失落文明的大部头，这使你对历史和神秘事物有了深刻的了解。
-效益：你在知识（神秘）的检定上获得+1背景加值，并且知识（神秘）成为你的职业技能。</value>
+    <value>你曾经年累月地泡在图书馆，阅读你能找到的每一本发霉的关于古代失落文明的大部头，这使你对历史和神秘事物有了深刻的了解。</value>
   </data>
   <data name="RaceFanaticTraitName_info" xml:space="preserve">
     <value>热衷求知（人类）</value>
   </data>
   <data name="RaceHistorianTraitDescription_info" xml:space="preserve">
     <value>你的双亲是历史学者——或许是研究自家族谱的族谱学家，或许是研究古代帝国遗物的智者，亦或许仅仅是对过去有着深厚而持久的热爱的业余爱好者。
-效益：你在知识（世界）及所有逸闻见识类检定上获得+1背景加值，并且知识（世界）成为你的职业技能。</value>
+效益：你在所有逸闻见识类检定上获得+1背景加值。</value>
   </data>
   <data name="RaceHistorianTraitName_info" xml:space="preserve">
     <value>历史学者（人类）</value>

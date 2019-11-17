@@ -149,8 +149,8 @@ namespace EldritchArcana
                 FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.Speed, -5, ModifierDescriptor.Penalty))
                 ,
-                Helpers.CreateFeature("FaceDrawback", RES.FoulBrandHandsDrawbackName_info,
-                RES.FoulBrandHandsDrawbackDescription_info,
+                Helpers.CreateFeature("FaceDrawback", RES.FoulBrandFaceDrawbackName_info,
+                RES.FoulBrandFaceDrawbackDescription_info,
                 PhysiqueGuids[8],
                 Helpers.NiceIcons(3), // fear
                 FeatureGroup.None,
@@ -352,9 +352,6 @@ namespace EldritchArcana
 
             Badvision.SetFeatures(BadvisionFeatures);
             choices.Add(Badvision);
-
-
-
 
             choices.Add(Helpers.CreateFeature("MisbegottenDrawback", "Misbegotten",
                 "Whether due to the influence of malign magic, disease, or the scorn of the gods, you were born with a troublesome deformity that interferes with your movement." +

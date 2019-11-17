@@ -91,8 +91,6 @@ namespace EldritchArcana
                 Helpers.CreateAddStatBonus(StatType.Speed, 10, ModifierDescriptor.Insight)));
 
 
-
-
             var dagger = Traits.library.Get<BlueprintWeaponType>("07cc1a7fceaee5b42b3e43da960fe76d");
 
             var riverrat = Traits.CreateAddStatBonus("DaggerboyTrait", "River Rat (Marsh or River)",
@@ -132,7 +130,7 @@ namespace EldritchArcana
 
             choices.Add(Helpers.CreateFeature("EmpathicDiplomatTrait", "Empathic Diplomat",
                 "You have long followed the path of common sense and empathic insight when using diplomacy. \n" +
-                "Benefit:You modify your Diplomacy checks using your Wisdom modifier, not your Charisma modifier.",
+                "Benefit: You modify your Diplomacy checks using your Wisdom modifier, not your Charisma modifier.",
                 "a987f5e69db44cdd88983985e37a6d2b",
                 Helpers.NiceIcons(999), // Weapon Specialization
                 FeatureGroup.None,
