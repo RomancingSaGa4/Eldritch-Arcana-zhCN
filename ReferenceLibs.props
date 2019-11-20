@@ -1,416 +1,420 @@
 <Project>
   <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>D:\UnityModManager\0Harmony-1.2.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
     <Reference Include="0Harmony12">
-      <HintPath>C:\Release\0Harmony12.dll</HintPath>
+      <HintPath>D:\UnityModManager\0Harmony12.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>C:\Release\Assembly-CSharp.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>C:\Release\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="AuraSupportPlugin">
-      <HintPath>C:\Release\AuraSupportPlugin.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\AuraSupportPlugin.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="Boo.Lang">
-      <HintPath>C:\Release\Boo.Lang.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\Boo.Lang.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="DemiLib">
-      <HintPath>C:\Release\DemiLib.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\DemiLib.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="DotNetZip">
-      <HintPath>C:\Release\DotNetZip.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\DotNetZip.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="DOTween">
-      <HintPath>C:\Release\DOTween.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\DOTween.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="DOTween43">
-      <HintPath>C:\Release\DOTween43.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\DOTween43.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="DOTween46">
-      <HintPath>C:\Release\DOTween46.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\DOTween46.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="DOTween50">
-      <HintPath>C:\Release\DOTween50.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\DOTween50.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="DOTweenPro">
-      <HintPath>C:\Release\DOTweenPro.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\DOTweenPro.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="GalaxyCSharp">
-      <HintPath>C:\Release\GalaxyCSharp.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\GalaxyCSharp.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="I18N">
-      <HintPath>C:\Release\I18N.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\I18N.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="I18N.CJK">
-      <HintPath>C:\Release\I18N.CJK.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\I18N.CJK.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="I18N.MidEast">
-      <HintPath>C:\Release\I18N.MidEast.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\I18N.MidEast.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="I18N.Other">
-      <HintPath>C:\Release\I18N.Other.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\I18N.Other.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="I18N.Rare">
-      <HintPath>C:\Release\I18N.Rare.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\I18N.Rare.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="I18N.West">
-      <HintPath>C:\Release\I18N.West.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\I18N.West.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="Interop.AuraServiceLib">
-      <HintPath>C:\Release\Interop.AuraServiceLib.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\Interop.AuraServiceLib.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="KDTree">
-      <HintPath>C:\Release\KDTree.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\KDTree.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="Kingmaker.Import">
-      <HintPath>C:\Release\Kingmaker.Import.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\Kingmaker.Import.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="Mono.Posix">
-      <HintPath>C:\Release\Mono.Posix.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\Mono.Posix.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="Mono.Security">
-      <HintPath>C:\Release\Mono.Security.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\Mono.Security.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="mscorlib">
-      <HintPath>C:\Release\mscorlib.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\mscorlib.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>C:\Release\Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:\UnityModManager\Newtonsoft.Json.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="Pathfinding.ClipperLib">
-      <HintPath>C:\Release\Pathfinding.ClipperLib.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\Pathfinding.ClipperLib.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-      <HintPath>C:\Release\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="Pathfinding.JsonFx">
-      <HintPath>C:\Release\Pathfinding.JsonFx.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\Pathfinding.JsonFx.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="Pathfinding.Poly2Tri">
-      <HintPath>C:\Release\Pathfinding.Poly2Tri.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\Pathfinding.Poly2Tri.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="ProBuilderCore-Unity5">
-      <HintPath>C:\Release\ProBuilderCore-Unity5.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\ProBuilderCore-Unity5.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="ProBuilderMeshOps-Unity5">
-      <HintPath>C:\Release\ProBuilderMeshOps-Unity5.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\ProBuilderMeshOps-Unity5.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="System.Configuration">
-      <HintPath>C:\Release\System.Configuration.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\System.Configuration.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Security">
-      <HintPath>C:\Release\System.Security.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\System.Security.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="System.ServiceModel.Internals">
-      <HintPath>C:\Release\System.ServiceModel.Internals.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\System.ServiceModel.Internals.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="Triangle">
-      <HintPath>C:\Release\Triangle.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\Triangle.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:\Release\Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\Unity.Analytics.DataPrivacy.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>C:\Release\UnityEngine.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.AccessibilityModule">
-      <HintPath>C:\Release\UnityEngine.AccessibilityModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
-      <HintPath>C:\Release\UnityEngine.AIModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.AIModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:\Release\UnityEngine.Analytics.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.Analytics.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.AnimationModule">
-      <HintPath>C:\Release\UnityEngine.AnimationModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.ARModule">
-      <HintPath>C:\Release\UnityEngine.ARModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.ARModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
-      <HintPath>C:\Release\UnityEngine.AssetBundleModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.AudioModule">
-      <HintPath>C:\Release\UnityEngine.AudioModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.BaselibModule">
-      <HintPath>C:\Release\UnityEngine.BaselibModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.BaselibModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
-      <HintPath>C:\Release\UnityEngine.ClothModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.ClothModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.CloudWebServicesModule">
-      <HintPath>C:\Release\UnityEngine.CloudWebServicesModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.CloudWebServicesModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.ClusterInputModule">
-      <HintPath>C:\Release\UnityEngine.ClusterInputModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.ClusterInputModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.ClusterRendererModule">
-      <HintPath>C:\Release\UnityEngine.ClusterRendererModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.ClusterRendererModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>C:\Release\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.CrashReportingModule">
-      <HintPath>C:\Release\UnityEngine.CrashReportingModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.DirectorModule">
-      <HintPath>C:\Release\UnityEngine.DirectorModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.DirectorModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.FacebookModule">
-      <HintPath>C:\Release\UnityEngine.FacebookModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.FacebookModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.GameCenterModule">
-      <HintPath>C:\Release\UnityEngine.GameCenterModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.GameCenterModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.GridModule">
-      <HintPath>C:\Release\UnityEngine.GridModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.GridModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.HotReloadModule">
-      <HintPath>C:\Release\UnityEngine.HotReloadModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.HotReloadModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.ImageConversionModule">
-      <HintPath>C:\Release\UnityEngine.ImageConversionModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>C:\Release\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.InputModule">
-      <HintPath>C:\Release\UnityEngine.InputModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.InputModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.JSONSerializeModule">
-      <HintPath>C:\Release\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.Networking">
-      <HintPath>C:\Release\UnityEngine.Networking.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.Networking.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.ParticlesLegacyModule">
-      <HintPath>C:\Release\UnityEngine.ParticlesLegacyModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.ParticlesLegacyModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
-      <HintPath>C:\Release\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.PerformanceReportingModule">
-      <HintPath>C:\Release\UnityEngine.PerformanceReportingModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.Physics2DModule">
-      <HintPath>C:\Release\UnityEngine.Physics2DModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>C:\Release\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.ScreenCaptureModule">
-      <HintPath>C:\Release\UnityEngine.ScreenCaptureModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.SharedInternalsModule">
-      <HintPath>C:\Release\UnityEngine.SharedInternalsModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>C:\Release\UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.SpatialTracking.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.SpatialTrackingModule">
-      <HintPath>C:\Release\UnityEngine.SpatialTrackingModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.SpatialTrackingModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.SpriteMaskModule">
-      <HintPath>C:\Release\UnityEngine.SpriteMaskModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.SpriteShapeModule">
-      <HintPath>C:\Release\UnityEngine.SpriteShapeModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
-      <HintPath>C:\Release\UnityEngine.StandardEvents.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.StandardEvents.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.StyleSheetsModule">
-      <HintPath>C:\Release\UnityEngine.StyleSheetsModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.StyleSheetsModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.SubstanceModule">
-      <HintPath>C:\Release\UnityEngine.SubstanceModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.SubstanceModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.TerrainModule">
-      <HintPath>C:\Release\UnityEngine.TerrainModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.TerrainModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.TerrainPhysicsModule">
-      <HintPath>C:\Release\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>C:\Release\UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.TilemapModule">
-      <HintPath>C:\Release\UnityEngine.TilemapModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.TilemapModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.Timeline">
-      <HintPath>C:\Release\UnityEngine.Timeline.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.Timeline.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.TimelineModule">
-      <HintPath>C:\Release\UnityEngine.TimelineModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.TimelineModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.TLSModule">
-      <HintPath>C:\Release\UnityEngine.TLSModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.TLSModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:\Release\UnityEngine.UI.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.UI.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>C:\Release\UnityEngine.UIElementsModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.UIModule">
-      <HintPath>C:\Release\UnityEngine.UIModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.UIModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.UmbraModule">
-      <HintPath>C:\Release\UnityEngine.UmbraModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.UmbraModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.UNETModule">
-      <HintPath>C:\Release\UnityEngine.UNETModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.UNETModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityAnalyticsModule">
-      <HintPath>C:\Release\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityConnectModule">
-      <HintPath>C:\Release\UnityEngine.UnityConnectModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
-      <HintPath>C:\Release\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAudioModule">
-      <HintPath>C:\Release\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule">
-      <HintPath>C:\Release\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestTextureModule">
-      <HintPath>C:\Release\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestWWWModule">
-      <HintPath>C:\Release\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.VehiclesModule">
-      <HintPath>C:\Release\UnityEngine.VehiclesModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.VehiclesModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.VideoModule">
-      <HintPath>C:\Release\UnityEngine.VideoModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.VRModule">
-      <HintPath>C:\Release\UnityEngine.VRModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.VRModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.WebModule">
-      <HintPath>C:\Release\UnityEngine.WebModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.WebModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.WindModule">
-      <HintPath>C:\Release\UnityEngine.WindModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.WindModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityEngine.XRModule">
-      <HintPath>C:\Release\UnityEngine.XRModule.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityEngine.XRModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityFbxPrefab">
-      <HintPath>C:\Release\UnityFbxPrefab.dll</HintPath>
+      <HintPath>E:\Pathfinder.Kingmaker.Imperial.Edition.v2.0.7\Kingmaker_Data\Managed\UnityFbxPrefab.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="UnityModManager">
-      <HintPath>C:\Release\UnityModManager.dll</HintPath>
+      <HintPath>D:\UnityModManager\UnityModManager.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

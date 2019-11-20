@@ -45,7 +45,7 @@ namespace EldritchArcana
             eldritchKnightClass = Helpers.GetClass(eldritchKnightId);
             // NOTE: this order must match the order used in the feats.
             prestigiousSpellcasterClasses = Helpers.prestigeClassesSkipLevels.ToArray();
-            //prestigiousSpellcasterClasses = new BlueprintCharacterClass[] { eldritchKnightClass, dragonDiscipleClass };
+            // prestigiousSpellcasterClasses = new BlueprintCharacterClass[] { eldritchKnightClass, dragonDiscipleClass };
 
             FixEldritchKnightPrereq();
 
@@ -56,11 +56,11 @@ namespace EldritchArcana
                 "30e9a3fcdb0446aa87f45d0f50b3b3fc",
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/prestigious_spellcaster.png"),
                 FeatureGroup.Feat);
-            /*
-            prestigiousSpell.SetFeatures(
-                CreatePrestigiousSpellcaster(eldritchKnightClass, "dc3ab8d0484467a4787979d93114ebc3"  ),//*EldritchKnightSpellbookSelection
-                CreatePrestigiousSpellcaster(dragonDiscipleClass, "8c1ba14c0b6dcdb439c56341385ee474"  ));//*DragonDiscipleSpellbookSelection
-            //start*/
+            
+            //prestigiousSpell.SetFeatures(
+            //    CreatePrestigiousSpellcaster(eldritchKnightClass, "dc3ab8d0484467a4787979d93114ebc3"  ),//*EldritchKnightSpellbookSelection
+            //    CreatePrestigiousSpellcaster(dragonDiscipleClass, "8c1ba14c0b6dcdb439c56341385ee474"  ));//*DragonDiscipleSpellbookSelection
+            //start
             foreach (BlueprintCharacterClass c in prestigiousSpellcasterClasses)
             {
                 var spellbookguid = "";
@@ -85,7 +85,7 @@ namespace EldritchArcana
                     try
                     {
                         var feat = CreatePrestigiousSpellcaster(c, spellbookguid);
-                        prestigiousSpell.Features.AddToArray(feat);
+                        prestigiousSpell.SetFeatures(feat);
                     }
                     catch (System.Exception)
                     {
@@ -101,7 +101,7 @@ namespace EldritchArcana
             components.Add(Helpers.PrerequisiteFeature(FavoredClassBonus.favoredPrestigeClass));
             components.Add(Helpers.Create<PrestigiousSpellcasterRecommendation>());
             prestigiousSpell.SetComponents(components);
-            prestigiousSpell.AllFeatures = prestigiousSpell.Features;
+            // prestigiousSpell.AllFeatures = prestigiousSpell.Features;
             // Log.Write(prestigiousSpell, "", true);
 
             library.AddFeats(prestigiousSpell);
@@ -113,6 +113,7 @@ namespace EldritchArcana
 
             // Set this last, so it won't be set if we failed to initialize.
             prestigiousSpellcaster = prestigiousSpell;
+            //prestigiousSpellcaster.AllFeatures = prestigiousSpell.Features;
         }
 
         static void FixEldritchKnightPrereq()
@@ -227,7 +228,7 @@ namespace EldritchArcana
             return false;
         }
 
-        // TODO: this unfortunately duplicates a lot of ApplySpellbook.Apply, but it's needed because:
+        // TODO: this unfortunately duplicates a lot of ApplySpellbook. Apply, but it's needed because:
         // - Apply checks the skip spell levels internally, so we can't prevent the skip without mutating data structures.
         // - Apply only knows how to add one level, but sometimes we need to gain 2 (if Prestigious Spellcaster fills in
         //   a previous missing level, and another one is gained normally).
@@ -306,7 +307,7 @@ namespace EldritchArcana
         internal const String martialWeaponProfId = "203992ef5b35c864390b4e4a1e200629";
     }
 
-    // This intercepts ApplySpellbook.Apply, so we can update the spellbook whenever
+    // This intercepts ApplySpellbook. Apply, so we can update the spellbook whenever
     // Prestigious Spellcaster causes us to gain a casting level that otherwise would
     // not have been gained.
     //

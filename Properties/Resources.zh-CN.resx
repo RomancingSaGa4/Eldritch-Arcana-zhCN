@@ -2049,7 +2049,7 @@
   </data>
   <data name="SkillBonusProgressionDescription_info" xml:space="preserve">
     <value>{0}
-使用你从声望职业的职业技能中选择的技能，您在检定上获得+2加值。如果你在这些技能中有10个或更多的等级，该技能的加值将增加到+4。此加值与技能专攻给予的加值叠加，但不与任何其他技能给予的加值叠加（如魔法天赋或说服）。</value>
+你在你选择的进阶职业的职业技能的检定上获得+2加值。如果这些技能为10级或以上，加值增至+4。该加值可以和技能专攻叠加，但无法和其他专长提供的加值叠加（如魔法天赋或善于沟通）。</value>
   </data>
   <data name="SkipDeityFeatureDescription_info" xml:space="preserve">
     <value>选择此选项可跳过在角色创建时选择神祗。如果你获得了一个需要选择神祗的职业等级（如牧师、审判官或圣骑士），你可以在之后再选择神祗。</value>
