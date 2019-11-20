@@ -209,6 +209,42 @@
   <data name="ArcaneSavantName_info" xml:space="preserve">
     <value>奥术学者</value>
   </data>
+  <data name="AsthmaticDrawbackDescription_info" xml:space="preserve">
+    <value>你身患哮喘，呼吸困难。
+缺陷：你在对造成疲劳及力竭的效果，以及名称中包含“云”、“尘”、“雾”、“烟”的效果进行豁免检定时受到-2减值。你的屏息时间是正常的一半。此外，穿着轻甲及以上甲胄休息会使你疲劳。</value>
+  </data>
+  <data name="AsthmaticDrawbackName_info" xml:space="preserve">
+    <value>哮喘</value>
+  </data>
+  <data name="BadvisionDrawbackBookwormDescription_info" xml:space="preserve">
+    <value>你曾在无数个夜里捧着书本挑灯夜读，因此你的视力已经惨不忍睹。但你能做到按照书里的知识按图索骥而非你的视力来观察视物。
+效益：你在察觉技能检定上使用智力调整值而非察觉。
+缺陷：你在察觉技能检定上的减值再额外-1。</value>
+  </data>
+  <data name="BadvisionDrawbackBookwormName_info" xml:space="preserve">
+    <value>书虫</value>
+  </data>
+  <data name="BadvisionDrawbackDescription_info" xml:space="preserve">
+    <value>你无法如正常人一样视物。
+缺陷：你在察觉技能检定上受到-1减值，并且因你弱视的种类受到另一种惩罚。请在后续选择中选择一项。</value>
+  </data>
+  <data name="BadvisionDrawbackFarDescription_info" xml:space="preserve">
+    <value>你视近不清。
+缺陷：破敌：你的所有近战攻击受到-1减值。</value>
+  </data>
+  <data name="BadvisionDrawbackFarName_info" xml:space="preserve">
+    <value>远视</value>
+  </data>
+  <data name="BadvisionDrawbackName_info" xml:space="preserve">
+    <value>弱视</value>
+  </data>
+  <data name="BadvisionDrawbackNearDescription_info" xml:space="preserve">
+    <value>你视远不清。
+缺陷：破敌：你的所有远程攻击受到-2减值。</value>
+  </data>
+  <data name="BadvisionDrawbackNearName_info" xml:space="preserve">
+    <value>近视</value>
+  </data>
   <data name="BastardTraitDescription" xml:space="preserve">
     <value>你父母其中之一曾是布雷沃几大家族之一的成员，甚或是罗嘉维亚家族的后裔。然而你没有任何关于你贵族血统的确凿证据，并且你也很清楚毫无根据地自称贵族只会让自己像是个骗徒。尽管你可能持有一件首饰，一片名贵的织物，亦或是一封年代久远的婚书，没有任何直接证据能证明你的身份。如此你长久以来一直活在贵族的阴影之中，你知道你本该享有精英阶层舒适而受人尊敬的生活，可命运的捉弄给你带来的却是人们的轻视。不论是因为你过去试图证明自己血统的努力已经惹恼了某个贵族家族的爪牙，还是你仅仅想证明你血管中流淌的血液并非毫无价值，你加入了前往失窃之地的探险队，期待让你自己的名号响彻天下。你在和布雷沃贵族进行交涉时，所有魅力相关技能检定受到-1减值，但在意志检定上由于你的倔强和个性获得+1背景加值（只要你成功使自己成为一名真正的贵族，背景特性的负面效果就会消失）。</value>
   </data>
@@ -1048,6 +1084,13 @@
   <data name="MiracleSpells_info" xml:space="preserve">
     <value>奇迹术</value>
   </data>
+  <data name="MisbegottenDrawbackDescription_info" xml:space="preserve">
+    <value>无论是由于恶意的魔法，疾病，还是诸神的，你与生俱来身有残缺，并展现在你的不良于行上。
+缺陷：所有敏捷相关的技能检定受到-2减值。</value>
+  </data>
+  <data name="MisbegottenDrawbackName_info" xml:space="preserve">
+    <value>天残地缺</value>
+  </data>
   <data name="MysteryBattleBattlecryDescription_info" xml:space="preserve">
     <value>你能够以一个标准动作释放一个充满激励的战吼。100英尺内所有听到战吼的队友在攻击检定，技能检定和豁免检定上获得+1士气加值，持续轮数等同于你的魅力调整值。10级后检定加值变为+2。每天你可以使用此能力1次，并在5级以及之后每5级增加1次使用次数。</value>
   </data>
@@ -1478,6 +1521,13 @@
   </data>
   <data name="NobleFamilySurtovaTraitName_info" xml:space="preserve">
     <value>瑟托瓦家族</value>
+  </data>
+  <data name="OccultBargainDrawbackDescription_info" xml:space="preserve">
+    <value>你从一个坚持它的身份是秘密的来源获得魔法力量。
+缺陷：你在专注技能检定上受到-1减值。并且当面对拉玛什图信徒时你的所有AC和所有豁免都受到-2减值。</value>
+  </data>
+  <data name="OccultBargainDrawbackName_info" xml:space="preserve">
+    <value>神秘交易</value>
   </data>
   <data name="OppositionResearchFeatureDescription_info" xml:space="preserve">
     <value>选择一个你的对立学派；现在你准备这个学派的法术只需要一个对应等级的法术位而非两个，并且你在制造此学派物品时不再承受-4豁免检定减值。</value>
@@ -2065,6 +2115,13 @@
   </data>
   <data name="SpiritualWeaponAbilityName_info" xml:space="preserve">
     <value>灵能武器</value>
+  </data>
+  <data name="SpookedDrawbackDescription_info" xml:space="preserve">
+    <value>你在年幼时曾经历过一段关于精怪的不愿回首的记忆，时至今日这段经历仍然让你对此类存在心有余悸。
+缺陷：你在面对精类生物时攻击检定受到-4减值，在对恐惧效果的豁免检定上受到-2减值。</value>
+  </data>
+  <data name="SpookedDrawbackName_info" xml:space="preserve">
+    <value>怕鬼</value>
   </data>
   <data name="SpritualWeaponSpells_info" xml:space="preserve">
     <value>灵能武器</value>

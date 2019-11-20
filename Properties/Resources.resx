@@ -209,6 +209,42 @@ This skill also makes savants quite valuable to adventuring parties, both in the
   <data name="ArcaneSavantName_info" xml:space="preserve">
     <value>Arcane Savant</value>
   </data>
+  <data name="AsthmaticDrawbackDescription_info" xml:space="preserve">
+    <value>Asthma, because out of all the things you could be bad at... you suck at breathing.
+Drawback: You suffer a -2 penalty against any effect that will cause you to be fatigued or exhausted, and any effect with cloud, dust, fog, or smoke in its name. You hold your breath for only half the normal duration. Additionally, sleeping in light or heavier armor fatigues you.</value>
+  </data>
+  <data name="AsthmaticDrawbackName_info" xml:space="preserve">
+    <value>Asthmatic</value>
+  </data>
+  <data name="BadvisionDrawbackBookwormDescription_info" xml:space="preserve">
+    <value>You have spent way to much time reading up close with bad light and it ruined your eyesight. You can however fill in the blanks in your vision by recognizing paterns you have learned from books.
+Benefit: You use your inteligence modefier instead of wisdom on perception checks.
+Drawback: You take an additional -1 on perception checks.</value>
+  </data>
+  <data name="BadvisionDrawbackBookwormName_info" xml:space="preserve">
+    <value>Bookworm[hb]</value>
+  </data>
+  <data name="BadvisionDrawbackDescription_info" xml:space="preserve">
+    <value>You cannot see as well as others.
+Drawback: You take a –1 penalty on Perception checks, and you gain an other penalty depending on the type of bad vision you have. Select from the options.</value>
+  </data>
+  <data name="BadvisionDrawbackFarDescription_info" xml:space="preserve">
+    <value>You cannot see well close to you.
+Drawback: Bane: All melee attacks you make suffer a -1 attack penalty.</value>
+  </data>
+  <data name="BadvisionDrawbackFarName_info" xml:space="preserve">
+    <value>Farsighted</value>
+  </data>
+  <data name="BadvisionDrawbackName_info" xml:space="preserve">
+    <value>Bad Vision</value>
+  </data>
+  <data name="BadvisionDrawbackNearDescription_info" xml:space="preserve">
+    <value>You cannot see well far in the distance.
+Drawback: Bane: All ranged attacks you make suffer an -2 penalty.</value>
+  </data>
+  <data name="BadvisionDrawbackNearName_info" xml:space="preserve">
+    <value>Nearsighted</value>
+  </data>
   <data name="BastardTraitDescription" xml:space="preserve">
     <value>One of your parents was a member of one of the great families of Brevoy, perhaps even of the line of Rogarvia itself. Yet you have no substantive proof of your nobility, and you've learned that claiming nobility without evidence makes you as good as a liar. While you might own a piece of jewelry, a scrap of once-rich fabric, or an aged confession of love, none of this directly supports your claim. Thus, you've lived your life in the shadow of nobility, knowing that you deserve the comforts and esteem of the elite, even though the contempt of fate brings you nothing but their scorn. Whether a recent attempt to prove your heritage has brought down the wrath of a noble family's henchmen or you merely seek to prove the worth of the blood in your veins, you've joined an expedition into the Stolen Lands, hoping to make a name all your own. You take a –1 penalty on all Charisma-based skill checks made when dealing with members of Brevic nobility but gain a +1 trait bonus on Will saves as a result of your stubbornness and individuality. (The penalty aspect of this trait is removed if you ever manage to establish yourself as a true noble.)</value>
   </data>
@@ -1047,6 +1083,13 @@ A duplicated spell allows saving throws and spell resistance as normal, but the 
   <data name="MiracleSpells_info" xml:space="preserve">
     <value>Miracle</value>
   </data>
+  <data name="MisbegottenDrawbackDescription_info" xml:space="preserve">
+    <value>Whether due to the influence of malign magic, disease, or the scorn of the gods, you were born with a troublesome deformity that interferes with your movement.
+Drawback: You take a –2 penalty on all Dexterity-based skill checks.</value>
+  </data>
+  <data name="MisbegottenDrawbackName_info" xml:space="preserve">
+    <value>Misbegotten</value>
+  </data>
   <data name="MysteryBattleBattlecryDescription_info" xml:space="preserve">
     <value>As a standard action, you can unleash an inspiring battlecry. All allies within 100 feet who hear your cry gain a +1 morale bonus on attack rolls, skill checks, and saving throws for a number of rounds equal to your Charisma modifier. At 10th level, this bonus increases to +2. You can use this ability once per day, plus one additional time per day at 5th level and for every five levels thereafter.</value>
   </data>
@@ -1477,6 +1520,13 @@ Benefit: You get a +2 trait bonus on damage against flanked targets.</value>
   </data>
   <data name="NobleFamilySurtovaTraitName_info" xml:space="preserve">
     <value>Noble family — Surtova</value>
+  </data>
+  <data name="OccultBargainDrawbackDescription_info" xml:space="preserve">
+    <value>You draw magical power from a source who insists that its identity remains secret.
+Drawback: You take a –1 penalty on concentration checks. And you have - 2 on saves and ac vs people that worship Lamashtu.</value>
+  </data>
+  <data name="OccultBargainDrawbackName_info" xml:space="preserve">
+    <value>Occult Bargain</value>
   </data>
   <data name="OppositionResearchFeatureDescription_info" xml:space="preserve">
     <value>Select one Wizard opposition school; preparing spells of this school now only requires one spell slot of the appropriate level instead of two, and you no longer have the –4 Spellcraft penalty for crafting items from that school.</value>
@@ -2064,6 +2114,13 @@ The weapon that you get is often a force replica of your deity's own personal we
   </data>
   <data name="SpiritualWeaponAbilityName_info" xml:space="preserve">
     <value>Spiritual Weapon</value>
+  </data>
+  <data name="SpookedDrawbackDescription_info" xml:space="preserve">
+    <value>You had a traumatic experience with a spirit at a young age that colors your reactions to such creatures even to this day.
+Drawback: You take a –4 penalty on attack rolls vs fey creatures, and a -2 on rolls vs fear.</value>
+  </data>
+  <data name="SpookedDrawbackName_info" xml:space="preserve">
+    <value>Spooked</value>
   </data>
   <data name="SpritualWeaponSpells_info" xml:space="preserve">
     <value>Spiritual Weapon</value>

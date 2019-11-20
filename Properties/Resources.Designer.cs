@@ -320,6 +320,102 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Asthma, because out of all the things you could be bad at... you suck at breathing.
+        ///Drawback: You suffer a -2 penalty against any effect that will cause you to be fatigued or exhausted, and any effect with cloud, dust, fog, or smoke in its name. You hold your breath for only half the normal duration. Additionally, sleeping in light or heavier armor fatigues you. 的本地化字符串。
+        /// </summary>
+        internal static string AsthmaticDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("AsthmaticDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Asthmatic 的本地化字符串。
+        /// </summary>
+        internal static string AsthmaticDrawbackName_info {
+            get {
+                return ResourceManager.GetString("AsthmaticDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You have spent way to much time reading up close with bad light and it ruined your eyesight. You can however fill in the blanks in your vision by recognizing paterns you have learned from books.
+        ///Benefit: You use your inteligence modefier instead of wisdom on perception checks.
+        ///Drawback: You take an additional -1 on perception checks. 的本地化字符串。
+        /// </summary>
+        internal static string BadvisionDrawbackBookwormDescription_info {
+            get {
+                return ResourceManager.GetString("BadvisionDrawbackBookwormDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Bookworm[hb] 的本地化字符串。
+        /// </summary>
+        internal static string BadvisionDrawbackBookwormName_info {
+            get {
+                return ResourceManager.GetString("BadvisionDrawbackBookwormName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You cannot see as well as others.
+        ///Drawback: You take a –1 penalty on Perception checks, and you gain an other penalty depending on the type of bad vision you have. Select from the options. 的本地化字符串。
+        /// </summary>
+        internal static string BadvisionDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("BadvisionDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You cannot see well close to you.
+        ///Drawback: Bane: All melee attacks you make suffer a -1 attack penalty. 的本地化字符串。
+        /// </summary>
+        internal static string BadvisionDrawbackFarDescription_info {
+            get {
+                return ResourceManager.GetString("BadvisionDrawbackFarDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Farsighted 的本地化字符串。
+        /// </summary>
+        internal static string BadvisionDrawbackFarName_info {
+            get {
+                return ResourceManager.GetString("BadvisionDrawbackFarName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Bad Vision 的本地化字符串。
+        /// </summary>
+        internal static string BadvisionDrawbackName_info {
+            get {
+                return ResourceManager.GetString("BadvisionDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You cannot see well far in the distance.
+        ///Drawback: Bane: All ranged attacks you make suffer an -2 penalty. 的本地化字符串。
+        /// </summary>
+        internal static string BadvisionDrawbackNearDescription_info {
+            get {
+                return ResourceManager.GetString("BadvisionDrawbackNearDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Nearsighted 的本地化字符串。
+        /// </summary>
+        internal static string BadvisionDrawbackNearName_info {
+            get {
+                return ResourceManager.GetString("BadvisionDrawbackNearName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 One of your parents was a member of one of the great families of Brevoy, perhaps even of the line of Rogarvia itself. Yet you have no substantive proof of your nobility, and you&apos;ve learned that claiming nobility without evidence makes you as good as a liar. While you might own a piece of jewelry, a scrap of once-rich fabric, or an aged confession of love, none of this directly supports your claim. Thus, you&apos;ve lived your life in the shadow of nobility, knowing that you deserve the comforts and esteem of the [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string BastardTraitDescription {
@@ -2669,6 +2765,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Whether due to the influence of malign magic, disease, or the scorn of the gods, you were born with a troublesome deformity that interferes with your movement.
+        ///Drawback: You take a –2 penalty on all Dexterity-based skill checks. 的本地化字符串。
+        /// </summary>
+        internal static string MisbegottenDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("MisbegottenDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Misbegotten 的本地化字符串。
+        /// </summary>
+        internal static string MisbegottenDrawbackName_info {
+            get {
+                return ResourceManager.GetString("MisbegottenDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 As a standard action, you can unleash an inspiring battlecry. All allies within 100 feet who hear your cry gain a +1 morale bonus on attack rolls, skill checks, and saving throws for a number of rounds equal to your Charisma modifier. At 10th level, this bonus increases to +2. You can use this ability once per day, plus one additional time per day at 5th level and for every five levels thereafter. 的本地化字符串。
         /// </summary>
         internal static string MysteryBattleBattlecryDescription_info {
@@ -3852,7 +3967,7 @@ namespace EldritchArcana.Properties {
         
         /// <summary>
         ///   查找类似 Family Motto: &apos;With Sword and Flame.&apos;
-        ///The former ruling house of Brevoy, House Rogarvia was founded by the descendants of Choral the Conqueror and Myrna Rogarvia, daughter of Nikos Surtova. Choral united Rostland and Issia into the kingdom of Brevoy after invading from Iobaria, accompanied by dragons. Most members of the House, including King Urzen Rogarvia, disappeared mysteriously in 4699 AR, in an event called the Vanishing. Their loss is not greatly mourned by the Brevic people and loyalists are calling [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///The former ruling house of Brevoy, House Rogarvia was founded by the descendants of Choral the Conqueror and Myrna Rogarvia, daughter of Nikos Surtova. Choral united Rostland and Issia into the kingdom of Brevoy after invading from Iobaria, accompanied by dragons. Most members of the House, including King Urzen Rogarvia, disappeared mysteriously in 4699 AR, in an event called the Vanishing. Their loss is not greatly mourned by the Brevic people and loyalists are callin [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string NobleFamilyRogarviaTraitDescription_info {
             get {
@@ -3871,7 +3986,7 @@ namespace EldritchArcana.Properties {
         
         /// <summary>
         ///   查找类似 Family Motto: &apos;Ours Is the Right.&apos;
-        ///House Surtova is the current ruling family of Brevoy is the oldest Brevic noble family and the most influential. Their original holdings are the environs of Port Ice in northern Issia on the shores of the Lake of Mists and Veils. Their claim to the throne is linked to Nikos Surtova giving the hand of his daughter, Myrna Surtova, to Choral the Conqueror in marriage. This marriage allowed the house to keep its power as a staunch ally of House Rogarvia. In 4699 AR, during the [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///House Surtova is the current ruling family of Brevoy is the oldest Brevic noble family and the most influential. Their original holdings are the environs of Port Ice in northern Issia on the shores of the Lake of Mists and Veils. Their claim to the throne is linked to Nikos Surtova giving the hand of his daughter, Myrna Surtova, to Choral the Conqueror in marriage. This marriage allowed the house to keep its power as a staunch ally of House Rogarvia. In 4699 AR, during th [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string NobleFamilySurtovaDescriptionName_info {
             get {
@@ -3885,6 +4000,25 @@ namespace EldritchArcana.Properties {
         internal static string NobleFamilySurtovaTraitName_info {
             get {
                 return ResourceManager.GetString("NobleFamilySurtovaTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You draw magical power from a source who insists that its identity remains secret.
+        ///Drawback: You take a –1 penalty on concentration checks. And you have - 2 on saves and ac vs people that worship Lamashtu. 的本地化字符串。
+        /// </summary>
+        internal static string OccultBargainDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("OccultBargainDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Occult Bargain 的本地化字符串。
+        /// </summary>
+        internal static string OccultBargainDrawbackName_info {
+            get {
+                return ResourceManager.GetString("OccultBargainDrawbackName_info", resourceCulture);
             }
         }
         
@@ -5453,6 +5587,25 @@ namespace EldritchArcana.Properties {
         internal static string SpiritualWeaponAbilityName_info {
             get {
                 return ResourceManager.GetString("SpiritualWeaponAbilityName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You had a traumatic experience with a spirit at a young age that colors your reactions to such creatures even to this day.
+        ///Drawback: You take a –4 penalty on attackrolls vs fey creatures, and a -2 on rolls vs fear. 的本地化字符串。
+        /// </summary>
+        internal static string SpookedDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("SpookedDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Spooked 的本地化字符串。
+        /// </summary>
+        internal static string SpookedDrawbackName_info {
+            get {
+                return ResourceManager.GetString("SpookedDrawbackName_info", resourceCulture);
             }
         }
         

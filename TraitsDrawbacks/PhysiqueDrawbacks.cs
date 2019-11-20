@@ -70,7 +70,7 @@ namespace EldritchArcana
                 Helpers.GetIcon("1670990255e4fe948a863bafd5dbda5d"), // Boon Companion
                 FeatureGroup.None,
                 components.ToArray()));
-            
+
             var burningHands = Traits.library.Get<BlueprintAbility>("4783c3709a74a794dbe7c8e7e0b1b038");
             choices.Add(Helpers.CreateFeature("BurnedDrawback", RES.BurnedDrawbackName_info,
                 RES.BurnedDrawbackDescription_info,
@@ -176,7 +176,7 @@ namespace EldritchArcana
             var SpellFocus = Traits.library.Get<BlueprintFeature>("16fa59cc9a72a6043b566b49184f53fe");
             var SpellFocusNecromancy = Traits.library.Get<BlueprintFeature>("8791da25011fd1844ad61a3fea6ece54");
             //var AsmodeusFeature = Traits.library.Get<BlueprintFeature>("a3a5ccc9c670e6f4ca4a686d23b89900");
-            
+
             //Zon - Kuthon.aae911217c5105244bbfddca6a58d77c
             //NorgorberFeature.805b6bdc8c96f4749afc687a003f9628
             //8791da25011fd1844ad61a3fea6ece54
@@ -228,11 +228,11 @@ namespace EldritchArcana
             //Undeadcurse.SetNameDescriptionIcon("Undead Curse(inccorrect version)", "This version just changes con and cha the new version also changes necrotic and healing to function correctly this version still exists for save compatibility and its not a big deal.", Helpers.NiceIcons(44));
             //Undeadcurse.AddComponent(Helpers.PrerequisiteFeature(UrgathoaFeature));
             var lijstjelief = new List<BlueprintFeature> { SpellFocus, SpellFocusNecromancy, UrgathoaFeature };
-            UndeadType.AddComponent(Helpers.PrerequisiteFeaturesFromList(lijstjelief,any:false));
+            UndeadType.AddComponent(Helpers.PrerequisiteFeaturesFromList(lijstjelief, any: false));
             UndeadType.AddComponents(ElementalWeaknesListFeature);
             //Undeadcurse.SetFeatures(new List<BlueprintFeature> { UndeadImmunities});
             //Undeadcurse.SetNameDescription("","You where cursed to be an undead");
-            foreach(BlueprintComponent bob in UndeadImmunities.GetComponents<BlueprintComponent>())
+            foreach (BlueprintComponent bob in UndeadImmunities.GetComponents<BlueprintComponent>())
             {
                 Undeadcurse.AddComponent(bob);
             }
@@ -259,7 +259,7 @@ namespace EldritchArcana
                 Helpers.NiceIcons(45),
                 FeatureGroup.None,
                 Helpers.Create<BuffIfHealth>(a =>
-                {                   
+                {
                     a.Descriptor = ModifierDescriptor.Penalty;
                     a.Value = -2;
                     a.HitPointPercent = 0.5f;
@@ -269,46 +269,40 @@ namespace EldritchArcana
             CurseOptions.SetFeatures(CurseFeatures);
             choices.Add(CurseOptions);
 
-            choices.Add(Helpers.CreateFeature("AsthmaticDrawback", "Asthmatic",
-                "Asthma, because out of all the things you could be bad at... you suck at breathing." +
-                "\nDrawback: You suffer a -2 penalty against any effect that will cause you to be fatigued or exhausted, and any effect with cloud, dust, fog, or smoke in its name. You hold your breath for only half the normal duration. Additionally, sleeping in light or heavier armor fatigues you.",
+            choices.Add(Helpers.CreateFeature("AsthmaticDrawback", RES.AsthmaticDrawbackName_info,
+                RES.AsthmaticDrawbackDescription_info,
                 PhysiqueGuids[17],
                 Helpers.NiceIcons(7),
                 FeatureGroup.None,
                 Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Fatigue; s.Value = -2; s.ModifierDescriptor = ModifierDescriptor.Penalty; }),
                 Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Bomb; s.Value = -2; s.ModifierDescriptor = ModifierDescriptor.Penalty; })));
 
-            var Badvision = Helpers.CreateFeatureSelection("BadvisionDrawback", "Bad Vision",
-                "You cannot see as well as others." +
-                "\nDrawback: You take a –1 penalty on Perception checks. and you gain an other penalty depending on the type of bad vision you have. select from the options",
+            var Badvision = Helpers.CreateFeatureSelection("BadvisionDrawback", RES.BadvisionDrawbackName_info,
+                RES.BadvisionDrawbackDescription_info,
                 PhysiqueGuids[18],
                 Helpers.NiceIcons(46),
-                FeatureGroup.None,        
+                FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.SkillPerception, -1, ModifierDescriptor.Crippled));
 
             var BadvisionFeatures = new List<BlueprintFeature>()
             {
 
-                Helpers.CreateFeature("BadvisionDrawbackNear", "Nearsighted",
-                "You cannot see well far in the distance." +
-                "\nDrawback: All ranged attacks you make suffer an -2 penalty.",
+                Helpers.CreateFeature("BadvisionDrawbackNear", RES.BadvisionDrawbackNearName_info,
+                RES.BadvisionDrawbackNearDescription_info,
                 PhysiqueGuids[19],
-                Helpers.NiceIcons(46), 
+                Helpers.NiceIcons(46),
                 FeatureGroup.None
                 )
                 ,
-                Helpers.CreateFeature("BadvisionDrawbackFar", "Farsighted",
-                "You cannot see well close to you." +
-                "\nDrawback:Bane: All melee attacks you make suffer a -1 attack penalty.",
+                Helpers.CreateFeature("BadvisionDrawbackFar", RES.BadvisionDrawbackFarName_info,
+                RES.BadvisionDrawbackFarDescription_info,
                 PhysiqueGuids[20],
                 Helpers.NiceIcons(46),
                 FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.AdditionalAttackBonus, -1, ModifierDescriptor.Penalty))
                 ,
-                Helpers.CreateFeature("BadvisionDrawbackBookwurm", "Bookworm[hb]",
-                "You have spent way to much time reading up close with bad light and it ruined your eyesight. you can however fill in the blanks in your vision by recognizing paterns you have learned from books." +
-                "\nBenefit: You use your inteligence modefier instead of wisdom on perception checks" +
-                "\nDrawback: You take an additional -1 on perception checks.",
+                Helpers.CreateFeature("BadvisionDrawbackBookworm", RES.BadvisionDrawbackBookwormName_info,
+                RES.BadvisionDrawbackBookwormDescription_info,
                 PhysiqueGuids[21],
                 Helpers.NiceIcons(46),
                 FeatureGroup.None,
@@ -326,9 +320,8 @@ namespace EldritchArcana
             Badvision.SetFeatures(BadvisionFeatures);
             choices.Add(Badvision);
 
-            choices.Add(Helpers.CreateFeature("MisbegottenDrawback", "Misbegotten",
-                "Whether due to the influence of malign magic, disease, or the scorn of the gods, you were born with a troublesome deformity that interferes with your movement." +
-                "\nDrawback: You take a –2 penalty on all Dexterity-based skill checks.",
+            choices.Add(Helpers.CreateFeature("MisbegottenDrawback", RES.MisbegottenDrawbackName_info,
+                RES.MisbegottenDrawbackDescription_info,
                 PhysiqueGuids[22],
                 Helpers.NiceIcons(29),
                 FeatureGroup.None,
@@ -340,25 +333,23 @@ namespace EldritchArcana
             //choices.Add(
             //var CultistsVillage_Cultists = Traits.library.Get<BlueprintFaction>("0dd3f77814cc7bf4e9cfb1c96f2a4b4e");
             var LamashtusCurse = Traits.library.Get<BlueprintFeature>("ef3c653365c4a0a46b0d43a44f930186");
-            var Occult = Helpers.CreateFeature("OccultBargainDrawback", "Occult Bargain",
-                            "You draw magical power from a source who insists that its identity remains secret." +
-                            "\nDrawback: You take a –1 penalty on concentration checks. and you have - 2 on saves and ac vs people that worship lamashtus",
+            var Occult = Helpers.CreateFeature("OccultBargainDrawback", RES.OccultBargainDrawbackName_info,
+                            RES.OccultBargainDrawbackDescription_info,
                             PhysiqueGuids[23],
                             Helpers.NiceIcons(47),
                             FeatureGroup.None,
                             Helpers.Create<ConcentrationBonus>(a => { a.Value = -1; a.CheckFact = true; }),
-                            Helpers.Create<ACBonusAgainstFactOwner>(t => { t.CheckedFact = LamashtusCurse;t.Bonus = -2; }));
+                            Helpers.Create<ACBonusAgainstFactOwner>(t => { t.CheckedFact = LamashtusCurse; t.Bonus = -2; }));
             //occult.pre
             choices.Add(Occult);
 
             var feyfeature = Traits.library.Get<BlueprintFeature>("018af8005220ac94a9a4f47b3e9c2b4e");//FeyType.
-            choices.Add(Helpers.CreateFeature("SpookedDrawback", "Spooked",
-                "You had a traumatic experience with a spirit at a young age that colors your reactions to such creatures even to this day." +
-                "\nDrawback: You take a –4 penalty on attackrolls vs fey creatures. and a -2 on rolls vs fear",
+            choices.Add(Helpers.CreateFeature("SpookedDrawback", RES.SpookedDrawbackName_info,
+                RES.SpookedDrawbackDescription_info,
                 PhysiqueGuids[24],
                 Helpers.NiceIcons(39),
                 FeatureGroup.None,
-                Helpers.Create<AttackBonusAgainstFactOwner>(a=> { a.Bonus = -4; a.CheckedFact = feyfeature; }),
+                Helpers.Create<AttackBonusAgainstFactOwner>(a => { a.Bonus = -4; a.CheckedFact = feyfeature; }),
                 Helpers.Create<SavingThrowBonusAgainstDescriptor>(f => { f.Bonus = -2; f.SpellDescriptor = SpellDescriptor.Fear; })));
 
             PhysiqueDrawbacks.SetFeatures(choices);
