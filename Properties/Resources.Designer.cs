@@ -19,7 +19,7 @@ namespace EldritchArcana.Properties {
     // 类通过类似于 ResGen 或 Visual Studio 的工具自动生成的。
     // 若要添加或移除成员，请编辑 .ResX 文件，然后重新运行 ResGen
     // (以 /str 作为命令选项)，或重新生成 VS 项目。
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -3579,11 +3579,21 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Noble born 的本地化字符串。
+        ///   查找类似 Noble Born 的本地化字符串。
         /// </summary>
         internal static string NobleFamilyBornTraitName_info {
             get {
                 return ResourceManager.GetString("NobleFamilyBornTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Family Motto: &apos;Strong as the Mountains&apos;
+        ///House Garess is based in the western part of Brevoy, in the foothills of the Golushkin Mountains.  House Garess&apos;s crest is that of a snow-capped mountain peak in gray set against a dark blue field. There is a silvery crescent moon in the upper right corner, and there is a black hammer across the base of the peak. The Houses motto is Strong as the Mountains.  House Garess had a good relationship with the Golka dwarves until the dwarves vanished. Members of the house w [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyGaressTraitDescription_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyGaressTraitDescription_info", resourceCulture);
             }
         }
         
@@ -3593,6 +3603,19 @@ namespace EldritchArcana.Properties {
         internal static string NobleFamilyGaressTraitName_info {
             get {
                 return ResourceManager.GetString("NobleFamilyGaressTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Family Motto: &apos;We Won&apos;t be Saddled.&apos;
+        ///Khavortorov are hot-tempered family that has produced knights for many generations.
+        ///They are trying to better establish themselves as a great house of Brevoy now that their lieges, the Rogarvias, have disappeared. 
+        ///Their crest is a white dragon with a helmet embedded in its chest. Many of the Khavortorov&apos;s are experts with the Aldori dueling sword.
+        ///Benefit: Dueling sword and longsword deal 1 extra damage and you start with one of both. 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyKhavortorovTraitDescription_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyKhavortorovTraitDescription_info", resourceCulture);
             }
         }
         
@@ -3750,11 +3773,33 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Family Motto: &apos;Success through Grace.&apos;
+        ///House Lebeda is based to the southwest of Lake Reykal in Brevoy, controlling the plains and significant portions of the lake&apos;s shipping. They are considered to be the Brevic noble family that epitomizes Rostland, having significant Taldan blood, an appreciation for fine things, and a love of sword fighting.
+        ///Benefit: You get a +1 trait bonus on Knowledge (Arcana), and select a resource for a usable ability. You can use it at least one additional time. 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLebedaTraitDescription_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLebedaTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Noble family — Lebeda 的本地化字符串。
         /// </summary>
         internal static string NobleFamilyLebedaTraitName_info {
             get {
                 return ResourceManager.GetString("NobleFamilyLebedaTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Family Motto: &apos;The Waters, Our Fields&apos; 
+        ///House Lodovka is a noble family of Brevoy with their headquarters on Acuben Isle on the Lake of Mists and Veils. They have traditionally been a power on the lake.Led by Lord Kozek Lodovka, both their fleet size and influence along the lake continue to increase. The fleet primarily catches fish and freshwater crabs.  The house&apos;s crest includes a green crab climbing out of the water towards a gray tower/keep.
+        ///Benefit: You get a +2 trait bonus on Athletics checks. If y [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyLodovkaTraitDescription_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyLodovkaTraitDescription_info", resourceCulture);
             }
         }
         
@@ -3768,11 +3813,31 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Family Motto:  &apos;Endurance Overcomes All.&apos;
+        ///House Medvyed is a noble house of Brevoy that holds authority over the eastern lands that border and contain the Icerime Peaks and Gronzi Forest. They have maintained the traditions of worshiping nature, the &apos;Old Way&apos;. Lord Gurev Medyed heads the Stoneclimb-based house. The people of the area raise mountain goats and sheep. They hunt in the forest and farm what little good land is on the edges of their concerns. Religion in this area tends to be more centralized on [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyNoneTraitDescription_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyNoneTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Noble family — Medvyed 的本地化字符串。
         /// </summary>
         internal static string NobleFamilyNoneTraitName_info {
             get {
                 return ResourceManager.GetString("NobleFamilyNoneTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Family Motto:  &apos;High Above.&apos; 
+        ///House Orlovsky controls northeastern Brevoy from Eagle&apos;s Watch on Mount Veshka. They try to rise above petty political maneuvers. As staunch allies of the now disappeared House Rogarvia, this has landed them in a prickly situation. If Lord Poul Orlovsky chooses to rebel against Noleski Surtova, they could potentially align with House Garess and House Medvyed. These three houses could disrupt supply and travel routes between House Surtova&apos;s two power bases, Port Ice and New Ste [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyOrlovskyTraitDescription_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyOrlovskyTraitDescription_info", resourceCulture);
             }
         }
         
@@ -3786,11 +3851,31 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Family Motto: &apos;With Sword and Flame.&apos;
+        ///The former ruling house of Brevoy, House Rogarvia was founded by the descendants of Choral the Conqueror and Myrna Rogarvia, daughter of Nikos Surtova. Choral united Rostland and Issia into the kingdom of Brevoy after invading from Iobaria, accompanied by dragons. Most members of the House, including King Urzen Rogarvia, disappeared mysteriously in 4699 AR, in an event called the Vanishing. Their loss is not greatly mourned by the Brevic people and loyalists are calling [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilyRogarviaTraitDescription_info {
+            get {
+                return ResourceManager.GetString("NobleFamilyRogarviaTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Noble family — Rogarvia 的本地化字符串。
         /// </summary>
         internal static string NobleFamilyRogarviaTraitName_info {
             get {
                 return ResourceManager.GetString("NobleFamilyRogarviaTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Family Motto: &apos;Ours Is the Right.&apos;
+        ///House Surtova is the current ruling family of Brevoy is the oldest Brevic noble family and the most influential. Their original holdings are the environs of Port Ice in northern Issia on the shores of the Lake of Mists and Veils. Their claim to the throne is linked to Nikos Surtova giving the hand of his daughter, Myrna Surtova, to Choral the Conqueror in marriage. This marriage allowed the house to keep its power as a staunch ally of House Rogarvia. In 4699 AR, during the [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string NobleFamilySurtovaDescriptionName_info {
+            get {
+                return ResourceManager.GetString("NobleFamilySurtovaDescriptionName_info", resourceCulture);
             }
         }
         
