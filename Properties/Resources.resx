@@ -251,6 +251,13 @@ Drawback: Bane: All ranged attacks you make suffer an -2 penalty.</value>
   <data name="BastardTraitName_info" xml:space="preserve">
     <value>Bastard</value>
   </data>
+  <data name="BirthmarkTraitDescription_info" xml:space="preserve">
+    <value>You were born with a strange birthmark that looks very similar to the holy symbol of the god you chose to worship later in life.
+Benefits: This birthmark increases your devotion to your god. You gain a +2 trait bonus on all saving throws against charm and compulsion effects.</value>
+  </data>
+  <data name="BirthmarkTraitName_info" xml:space="preserve">
+    <value>Birthmark</value>
+  </data>
   <data name="BloodHavocMutationFeatureDescription_info" xml:space="preserve">
     <value>A bloodrager need not be in a bloodrage to use her bloodline mutation powers. Alternatively, a bloodrager or sorcerer can select a bloodline mutation in place of a bloodline bonus feat, provided her class level is at least equal to the level of the bloodline ability the mutation normally replaces.
 Bloodline Mutation: Blood havoc
@@ -367,6 +374,12 @@ You can use this ability a number of times per day equal to 1+your Charisma modi
   <data name="CheatCustomTraits_info" xml:space="preserve">
     <value>Enable Show all traits, spells even custom and homebrew(if changed, requires restart for changes to show up)</value>
   </data>
+  <data name="ChildOfTheTempleTraitDescription_info" xml:space="preserve">
+    <value>You have long served at a temple in a city, where you picked up on many of the nobility’s customs in addition to spending much time in the temple libraries studying your faith.</value>
+  </data>
+  <data name="ChildOfTheTempleTraitName_info" xml:space="preserve">
+    <value>Child of the Temple</value>
+  </data>
   <data name="ChooseFavoredClassLocalized_info" xml:space="preserve">
     <value>Choose Favored Class Bonus</value>
   </data>
@@ -414,6 +427,13 @@ Choices for each bloodline:</value>
   <data name="CustomTraitName_info" xml:space="preserve">
     <value>Custom Trait{cheat}</value>
   </data>
+  <data name="DefyMadnessTraitDescription_info" xml:space="preserve">
+    <value>Your direct involvement with supernatural and alien forces has left you less vulnerable to the insanity they cause.
+Benefit: You gain a +1 trait bonus on any saving throws against confusion, insanity, madness, and Wisdom damage and drain.</value>
+  </data>
+  <data name="DefyMadnessTraitName_info" xml:space="preserve">
+    <value>Defy Madness (Old Cults)</value>
+  </data>
   <data name="DelayAfflictionFeatureDescription_info" xml:space="preserve">
     <value>Once per day as an immediate action, whenever you fail a saving throw against a disease or poison, you may ignore its effects for 1 hour per level. At 7th and 15th level, you can use this ability one additional time per day.</value>
   </data>
@@ -453,6 +473,12 @@ Each round, you can turn to detect secret doors in a new area. This spell requir
   </data>
   <data name="DetectSecretDoorsSpells_info" xml:space="preserve">
     <value>Detect Secret Doors</value>
+  </data>
+  <data name="DevoteeOfTheGreenTraitDescription_info" xml:space="preserve">
+    <value>Your faith in the natural world or one of the gods of nature makes it easy for you to pick up on related concepts.</value>
+  </data>
+  <data name="DevoteeOfTheGreenTraitName_info" xml:space="preserve">
+    <value>Devotee of the Green</value>
   </data>
   <data name="DismissAreaEffectAbilityDescription_info" xml:space="preserve">
     <value>Some spells can be dismissed at will, others when you are out of combat. You must be within range of the spell's effect. Dismissing a spell is a standard action that does not provoke attacks of opportunity.
@@ -501,6 +527,12 @@ Bane: choose a spellschool you have {0} on saves vs that spellschool.</value>
   </data>
   <data name="Drawbacks_info" xml:space="preserve">
     <value>Drawbacks</value>
+  </data>
+  <data name="EaseOfFaithTraitDescription_info" xml:space="preserve">
+    <value>Your mentor, the person who invested your faith in you from an early age, took steps to ensure you understood that what powers your divine magic is no different from that which powers the magic of other religions. This philosophy makes it easier for you to interact with others who may not share your views.</value>
+  </data>
+  <data name="EaseOfFaithTraitName_info" xml:space="preserve">
+    <value>Ease of Faith</value>
   </data>
   <data name="EldritchHeritageFeatDescription_info" xml:space="preserve">
     <value>
@@ -552,6 +584,13 @@ Drawback: You take a –2 penalty on attacks against vermin, and you take a –2
   <data name="EquipmentTraitName_info" xml:space="preserve">
     <value>Equipment Trait</value>
   </data>
+  <data name="ExaltedOfTheSocietyTraitDescription" xml:space="preserve">
+    <value>The vaults of the great city contain many secrets of the divine powers of the gods, and you have studied your god extensively.
+Benefit: You may channel energy 1 additional time per day.</value>
+  </data>
+  <data name="ExaltedOfTheSocietyTraitName_info" xml:space="preserve">
+    <value>Exalted of the Society</value>
+  </data>
   <data name="ExtraArcanaFeatureDescription_info" xml:space="preserve">
     <value>You have unlocked the secret of a new magus arcana. You gain one additional magus arcana. You must meet all the prerequisites for this magus arcana.
 Special: You can gain this feat multiple times. Its effects stack, granting a new arcana each time you gain this feat.</value>
@@ -583,6 +622,12 @@ Special: You can gain Extra Revelation multiple times.</value>
   </data>
   <data name="FaithTraitName_info" xml:space="preserve">
     <value>Faith Trait</value>
+  </data>
+  <data name="FatesFavoredTraitDescription_info" xml:space="preserve">
+    <value>Whenever you are under the effect of a luck bonus of any kind, that bonus increases by 1.</value>
+  </data>
+  <data name="FatesFavoredTraitName_info" xml:space="preserve">
+    <value>Fate's Favored</value>
   </data>
   <data name="FavoredClassAnyFeatureDescription_info" xml:space="preserve">
     <value>The favored class is automatically determined each level-up, and an extra hit point is awarded if gaining a level in that class. The favored class is your highest level non-prestige class. This is the default game behavior.</value>
@@ -1890,6 +1935,27 @@ Choose one of the following.</value>
   <data name="PhysiqueDrawbackName_info" xml:space="preserve">
     <value>Physique Drawback</value>
   </data>
+  <data name="PlanarSavantTraitArcanaDescription_info" xml:space="preserve">
+    <value>Use Charisma for calculating Knowledge (Arcana).
+Benefit: You modify your Knowledge (Arcana) using your Charisma modifier, insted of your Inteligence.</value>
+  </data>
+  <data name="PlanarSavantTraitArcanaName_info" xml:space="preserve">
+    <value>Knowledge (Arcana)</value>
+  </data>
+  <data name="PlanarSavantTraitDescription_info" xml:space="preserve">
+    <value>You have always had an innate sense of the workings of the planes and their denizens.
+Benefit: You may use your Charisma modifier when making Knowledge checks instead of your Intelligence modifier. Choose a knowledge to replace.</value>
+  </data>
+  <data name="PlanarSavantTraitName_info" xml:space="preserve">
+    <value>Planar Savant</value>
+  </data>
+  <data name="PlanarSavantTraitWorldDescription_info" xml:space="preserve">
+    <value>Use Charisma for calculating Knowledge (World).
+Benefit: You modify your Knowledge (World) using your Charisma modifier. insted of your Inteligence</value>
+  </data>
+  <data name="PlanarSavantTraitWorldName_info" xml:space="preserve">
+    <value>Knowledge (World)</value>
+  </data>
   <data name="PolymorphDrawbackDescription_info" xml:space="preserve">
     <value>You were cursed by a witch to become a frog. You did not like this and you killed the witch.
 The curse is almost broken, but if you are in a moment of weakness, you transform back into a frog.
@@ -2003,6 +2069,13 @@ Benefit: If you are struck by a melee weapon you can try to convert some of that
   </data>
   <data name="RostlanderTraitName_info" xml:space="preserve">
     <value>Rostlander</value>
+  </data>
+  <data name="SacredConduitTraitDescription_info" xml:space="preserve">
+    <value>Your birth was particularly painful and difficult for your mother, who needed potent divine magic to ensure that you survived (your mother may or may not have survived). In any event, that magic infused you from an early age, and you now use divine energy with greater ease than most.
+Benefit: Whenever you use healing energy, you gain a +1 trait bonus to its save DC vs undead.</value>
+  </data>
+  <data name="SacredConduitTraitName_info" xml:space="preserve">
+    <value>Sacred Conduit</value>
   </data>
   <data name="SafeCuringFeatureDescription_info" xml:space="preserve">
     <value>Whenever you cast a spell that cures the target of hit point damage, you do not provoke attacks of opportunity for spellcasting.</value>

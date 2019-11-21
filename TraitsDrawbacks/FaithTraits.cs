@@ -1,40 +1,14 @@
 ﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using Kingmaker;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
-using Kingmaker.Blueprints.Classes.Prerequisites;
 using Kingmaker.Blueprints.Classes.Selection;
 using Kingmaker.Blueprints.Classes.Spells;
-using Kingmaker.Blueprints.Facts;
-using Kingmaker.Blueprints.Items;
-using Kingmaker.Blueprints.Items.Armors;
-using Kingmaker.Blueprints.Items.Weapons;
-using Kingmaker.Controllers.Combat;
-using Kingmaker.Designers.Mechanics.Buffs;
 using Kingmaker.Designers.Mechanics.Facts;
-using Kingmaker.EntitySystem.Entities;
 using Kingmaker.EntitySystem.Stats;
 using Kingmaker.Enums;
-using Kingmaker.PubSubSystem;
-using Kingmaker.RuleSystem;
-using Kingmaker.RuleSystem.Rules;
-using Kingmaker.RuleSystem.Rules.Abilities;
-using Kingmaker.RuleSystem.Rules.Damage;
-using Kingmaker.UI.Common;
-using Kingmaker.UI.ServiceWindow;
-using Kingmaker.UnitLogic;
-using Kingmaker.UnitLogic.Abilities;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
-using Kingmaker.UnitLogic.Abilities.Components;
-using Kingmaker.UnitLogic.Class.LevelUp;
-using Kingmaker.UnitLogic.Class.LevelUp.Actions;
-using Kingmaker.UnitLogic.FactLogic;
-using Kingmaker.UnitLogic.Mechanics;
-using Kingmaker.UnitLogic.Parts;
-
+using System;
+using System.Collections.Generic;
 using RES = EldritchArcana.Properties.Resources;
 
 namespace EldritchArcana
@@ -50,8 +24,8 @@ namespace EldritchArcana
             noFeature.Feature = faithTraits;
 
             var choices = new List<BlueprintFeature>();
-            choices.Add(Helpers.CreateFeature("BirthmarkTrait", "Birthmark",
-                "You were born with a strange birthmark that looks very similar to the holy symbol of the god you chose to worship later in life.\nBenefits: This birthmark increases your devotion to your god. You gain a +2 trait bonus on all saving throws against charm and compulsion effects.",
+            choices.Add(Helpers.CreateFeature("BirthmarkTrait", RES.BirthmarkTraitName_info,
+                RES.BirthmarkTraitDescription_info,
                 "ebf720b1589d43a2b6cfad26aeda34f9",
                 Helpers.GetIcon("2483a523984f44944a7cf157b21bf79c"), // Elven Immunities
                 FeatureGroup.None,
@@ -62,10 +36,8 @@ namespace EldritchArcana
                     a.ModifierDescriptor = ModifierDescriptor.Trait;
                 })));
 
-
-            choices.Add(Helpers.CreateFeature("DefyMadnessTrait", "Defy Madness (Old Cults)",
-                "Your direct involvement with supernatural and alien forces has left you less vulnerable to the insanity they cause." +
-                "\nBenefit: You gain a +1 trait bonus on any saving throws against confusion, insanity, madness, and Wisdom damage and drain.",
+            choices.Add(Helpers.CreateFeature("DefyMadnessTrait", RES.DefyMadnessTraitName_info,
+                RES.DefyMadnessTraitDescription_info,
                 "fdc612c0789d43a2b6cfad26aeda34f9",
                 Helpers.GetIcon("2483a523984f44944a7cf157b21bf79c"), // Elven Immunities
                 FeatureGroup.None,
@@ -76,21 +48,18 @@ namespace EldritchArcana
                     a.ModifierDescriptor = ModifierDescriptor.Trait;
                 })));
 
-
-
-            choices.Add(Traits.CreateAddStatBonus("ChildOfTheTempleTrait", "Child of the Temple",
-                "You have long served at a temple in a city, where you picked up on many of the nobility’s customs in addition to spending much time in the temple libraries studying your faith.",
+            choices.Add(Traits.CreateAddStatBonus("ChildOfTheTempleTrait", RES.ChildOfTheTempleTraitName_info,
+                RES.ChildOfTheTempleTraitDescription_info,
                 "cb79816f17d84a51b173ef74aa325561",
                 StatType.SkillLoreReligion));
 
-
-            choices.Add(Traits.CreateAddStatBonus("DevoteeOfTheGreenTrait", "Devotee of the Green",
-                "Your faith in the natural world or one of the gods of nature makes it easy for you to pick up on related concepts.",
+            choices.Add(Traits.CreateAddStatBonus("DevoteeOfTheGreenTrait", RES.DevoteeOfTheGreenTraitName_info,
+                RES.DevoteeOfTheGreenTraitDescription_info,
                 "6b8e68de9fc04139af0f1127d2a33984",
                 StatType.SkillLoreNature));
 
-            choices.Add(Traits.CreateAddStatBonus("EaseOfFaithTrait", "Ease of Faith",
-                "Your mentor, the person who invested your faith in you from an early age, took steps to ensure you understood that what powers your divine magic is no different from that which powers the magic of other religions. This philosophy makes it easier for you to interact with others who may not share your views.",
+            choices.Add(Traits.CreateAddStatBonus("EaseOfFaithTrait", RES.EaseOfFaithTraitName_info,
+                RES.EaseOfFaithTraitDescription_info,
                 "300d727a858d4992a3e01c8165a4c25f",
                 StatType.SkillPersuasion));
 
@@ -98,8 +67,8 @@ namespace EldritchArcana
             var channelEnergy = Traits.library.Get<BlueprintAbility>("f5fc9a1a2a3c1a946a31b320d1dd31b2");
             var channelEnergyEmpyrealResource = Traits.library.Get<BlueprintAbilityResource>("f9af9354fb8a79649a6e512569387dc5");
             var channelEnergyHospitalerResource = Traits.library.Get<BlueprintAbilityResource>("b0e0c7716ab27c64fb4b131c9845c596");
-            choices.Add(Helpers.CreateFeature("ExaltedOfTheSocietyTrait", "Exalted of the Society",
-                "The vaults of the great city contain many secrets of the divine powers of the gods, and you have studied your god extensively.\nBenefit: You may channel energy 1 additional time per day.",
+            choices.Add(Helpers.CreateFeature("ExaltedOfTheSocietyTrait", RES.ExaltedOfTheSocietyTraitName_info,
+                RES.ExaltedOfTheSocietyTraitDescription,
                 "3bb1b077ad0845b59663c0e1b343011a",
                 Helpers.GetIcon("cd9f19775bd9d3343a31a065e93f0c47"), // Extra Channel
                 FeatureGroup.None,
@@ -108,29 +77,27 @@ namespace EldritchArcana
                 channelEnergyHospitalerResource.CreateIncreaseResourceAmount(1),
                 LifeMystery.channelResource.CreateIncreaseResourceAmount(1)));
 
-            choices.Add(Helpers.CreateFeature("SacredConduitTrait", "Sacred Conduit",
-                "Your birth was particularly painful and difficult for your mother, who needed potent divine magic to ensure that you survived (your mother may or may not have survived). In any event, that magic infused you from an early age, and you now use divine energy with greater ease than most." +
-                "\nBenefit: Whenever you use healing energy, you gain a +1 trait bonus to its save DC vs undead.",
+            choices.Add(Helpers.CreateFeature("SacredConduitTrait", RES.SacredConduitTraitName_info,
+                RES.SacredConduitTraitDescription_info,
                 "bd9c29875bd9d3343a31a065e93f0c28",
                 Helpers.GetIcon("cd9f19775bd9d3343a31a065e93f0c47"), // Extra Channel
                 FeatureGroup.None,
 
                 Helpers.Create<ReplaceAbilityDC>(r => { r.Ability = channelEnergy; r.Stat = StatType.Wisdom; }),
                 //Helpers.Create<ability>(r => { r.Ability = channelEnergy; r.Stat = StatType.Wisdom; }),
-                Helpers.Create<IncreaseSpellDescriptorDC>(r => { r.Descriptor = SpellDescriptor.Cure; r.BonusDC = 1;})
+                Helpers.Create<IncreaseSpellDescriptorDC>(r => { r.Descriptor = SpellDescriptor.Cure; r.BonusDC = 1; })
                 //Helpers.Create<IncreaseSpellDescriptorDC>(r => { r.Descriptor = SpellDescriptor.; r.BonusDC = 1; })
                 ));
 
-            choices.Add(Helpers.CreateFeature("FatesFavoredTrait", "Fate's Favored",
-                "Whenever you are under the effect of a luck bonus of any kind, that bonus increases by 1.",
+            choices.Add(Helpers.CreateFeature("FatesFavoredTrait", RES.FatesFavoredTraitName_info,
+                RES.FatesFavoredTraitDescription_info,
                 "0c5dcccc21e148cdaf0fb3c643249bfb",
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/fey_foundling.png"), // blessing luck & resolve
                 FeatureGroup.None,
                 Helpers.Create<ExtraLuckBonus>()));
 
-            var planar = Helpers.CreateFeatureSelection("PlanarSavantTrait", "Planar Savant",
-                "You have always had an innate sense of the workings of the planes and their denizens." +
-                "\nBenefit: You may use your Charisma modifier when making Knowledge checks instead of your Intelligence modifier. choose a knowledge to replace.",
+            var planar = Helpers.CreateFeatureSelection("PlanarSavantTrait", RES.PlanarSavantTraitName_info,
+                RES.PlanarSavantTraitDescription_info,
                 "2e4dcecc32e148cbaf0fb3c643249cbf",
                 Helpers.NiceIcons(19),
                 FeatureGroup.None, Helpers.Create<ReplaceBaseStatForStatTypeLogic>(x =>
@@ -140,14 +107,9 @@ namespace EldritchArcana
                 })
                 );
 
-
-
-
             var planarOptions = new List<BlueprintFeature>(){
-
-                Helpers.CreateFeature("PlanarArcana", "Knowledge Arcana",
-                    "Use Charisma for calculating Knowledge (Arcana)\n" +
-                    "Benefit: You modify your Knowledge (Arcana) using your Charisma modifier. insted of your Inteligence",
+                Helpers.CreateFeature("PlanarSavantTraitArcana", RES.PlanarSavantTraitArcanaName_info,
+                    RES.PlanarSavantTraitArcanaDescription_info,
                     $"a982f3e69db44cdd33963985e37a6d2b",
                     Helpers.NiceIcons(32),
                     FeatureGroup.None,
@@ -156,9 +118,8 @@ namespace EldritchArcana
                         x.StatTypeToReplaceBastStatFor = StatType.SkillKnowledgeArcana;
                         x.NewBaseStatType = StatType.Charisma;
                     })
-                  ),Helpers.CreateFeature("PlanarWorld", "Knowledge World",
-                    "Use Charisma for calculating Knowledge (World)\n" +
-                    "Benefit: You modify your Knowledge (World) using your Charisma modifier. insted of your Inteligence",
+                  ),Helpers.CreateFeature("PlanarSavantTraitWorld", RES.PlanarSavantTraitWorldName_info,
+                    RES.PlanarSavantTraitWorldDescription_info,
                     $"b234f3e69db44cdd33963985e37a6d1b",
                     Helpers.NiceIcons(32),
                     FeatureGroup.None,
@@ -171,7 +132,6 @@ namespace EldritchArcana
 
             };
 
-
             planar.SetFeatures(planarOptions);
             choices.Add(planar);
 
@@ -183,7 +143,7 @@ namespace EldritchArcana
                 FeatureGroup.None);
 
             var WisFleshOptions = new BlueprintFeature[6];
-            var icons = new int[] {0,1,24,2,25,6,22 };
+            var icons = new int[] { 0, 1, 24, 2, 25, 6, 22 };
             var OldStats = new StatType[] {
                 StatType.Dexterity,
                 StatType.Dexterity,
@@ -204,19 +164,20 @@ namespace EldritchArcana
                 StatType.SkillStealth,
                 StatType.SkillPersuasion,
             };
-            for (int i = 0; i < 6; i++) {                
-                WisFleshOptions[i]= Helpers.CreateFeature($"EmpathicDiplomatTrait{Stats[i]}", $"Use Wisdom for calculating {Stats[i]}",
+            for (int i = 0; i < 6; i++)
+            {
+                WisFleshOptions[i] = Helpers.CreateFeature($"EmpathicDiplomatTrait{Stats[i]}", $"Use Wisdom for calculating {Stats[i]}",
                     "Your hours of meditation on inner perfection and the nature of strength and speed allow you to focus your thoughts to achieve things your body might not normally be able to do on its own. \n" +
                     $"Benefit: You modify your {Stats[i]} using your Wisdom modifier. insted of your {OldStats[i]}",
                     $"a98{i}f{i}e69db44cdd889{i}3985e37a6d2b",
                     Helpers.NiceIcons(i),
-                    FeatureGroup.None,                   
+                    FeatureGroup.None,
                     Helpers.Create<ReplaceBaseStatForStatTypeLogic>(x =>
                     {
                         x.StatTypeToReplaceBastStatFor = Stats[i];
                         x.NewBaseStatType = StatType.Wisdom;
-                    })                    
-                    );                
+                    })
+                    );
             }
             WisFlesh.SetFeatures(WisFleshOptions);
             choices.Add(WisFlesh);
@@ -236,7 +197,7 @@ namespace EldritchArcana
                                              null
                                              );
             LessonResource.SetFixedResource(0);
-            int rnd = DateTime.Now.Millisecond % 17+3;
+            int rnd = DateTime.Now.Millisecond % 17 + 3;
 
             var Chaldira = Helpers.CreateFeatureSelection("ChaldiraTrait", "Lessons of Faith",
                 "Your studies have given you a knack for avoiding trouble." +
@@ -247,7 +208,7 @@ namespace EldritchArcana
                 "This is why there is an option to gain a flat bonus to the first few saves. this is not in the normal tabletop version.",
                 "f51acadad65b4028884dd4a74f14e817",
                 Helpers.GetIcon("175d1577bb6c9a04baf88eec99c66334"), // Iron Will
-                FeatureGroup.None,                
+                FeatureGroup.None,
                 Helpers.CreateAddAbilityResource(LessonResource));
 
             //
@@ -267,7 +228,7 @@ namespace EldritchArcana
             {
                 ChaldiraOptions.Add(Helpers.CreateFeature($"ChaldiraEffectnumber{i}", $"Chaldira {i}[HB]",
                 "Your studies have given you a knack for avoiding trouble." +
-                $"\nBenefit: Each day add a {(int)(12/i)} Sacred bonus to the first {i} save(s).",
+                $"\nBenefit: Each day add a {(int)(12 / i)} Sacred bonus to the first {i} save(s).",
                 $"f5{i}acadad65b40{i}8884dd4a74f14e{i}17",
                 Helpers.GetIcon("175d1577bb6c9a04baf88eec99c66334"), // Iron Will
                 FeatureGroup.None,

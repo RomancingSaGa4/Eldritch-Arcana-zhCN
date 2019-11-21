@@ -434,6 +434,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You were born with a strange birthmark that looks very similar to the holy symbol of the god you chose to worship later in life.
+        ///Benefits: This birthmark increases your devotion to your god. You gain a +2 trait bonus on all saving throws against charm and compulsion effects. 的本地化字符串。
+        /// </summary>
+        internal static string BirthmarkTraitDescription_info {
+            get {
+                return ResourceManager.GetString("BirthmarkTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Birthmark 的本地化字符串。
+        /// </summary>
+        internal static string BirthmarkTraitName_info {
+            get {
+                return ResourceManager.GetString("BirthmarkTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 A bloodrager need not be in a bloodrage to use her bloodline mutation powers. Alternatively, a bloodrager or sorcerer can select a bloodline mutation in place of a bloodline bonus feat, provided her class level is at least equal to the level of the bloodline ability the mutation normally replaces.
         ///Bloodline Mutation: Blood havoc
         ///Whenever you cast a bloodrager or sorcerer spell that deals damage, add 1 point of damage per die rolled.  的本地化字符串。
@@ -772,6 +791,24 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You have long served at a temple in a city, where you picked up on many of the nobility’s customs in addition to spending much time in the temple libraries studying your faith. 的本地化字符串。
+        /// </summary>
+        internal static string ChildOfTheTempleTraitDescription_info {
+            get {
+                return ResourceManager.GetString("ChildOfTheTempleTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Child of the Temple 的本地化字符串。
+        /// </summary>
+        internal static string ChildOfTheTempleTraitName_info {
+            get {
+                return ResourceManager.GetString("ChildOfTheTempleTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Choose Favored Class Bonus 的本地化字符串。
         /// </summary>
         internal static string ChooseFavoredClassLocalized_info {
@@ -909,6 +946,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Your direct involvement with supernatural and alien forces has left you less vulnerable to the insanity they cause.
+        ///Benefit: You gain a +1 trait bonus on any saving throws against confusion, insanity, madness, and Wisdom damage and drain. 的本地化字符串。
+        /// </summary>
+        internal static string DefyMadnessTraitDescription_info {
+            get {
+                return ResourceManager.GetString("DefyMadnessTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Defy Madness (Old Cults) 的本地化字符串。
+        /// </summary>
+        internal static string DefyMadnessTraitName_info {
+            get {
+                return ResourceManager.GetString("DefyMadnessTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Once per day as an immediate action, whenever you fail a saving throw against a disease or poison, you may ignore its effects for 1 hour per level. At 7th and 15th level, you can use this ability one additional time per day. 的本地化字符串。
         /// </summary>
         internal static string DelayAfflictionFeatureDescription_info {
@@ -1023,6 +1079,24 @@ namespace EldritchArcana.Properties {
         internal static string DetectSecretDoorsSpells_info {
             get {
                 return ResourceManager.GetString("DetectSecretDoorsSpells_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your faith in the natural world or one of the gods of nature makes it easy for you to pick up on related concepts. 的本地化字符串。
+        /// </summary>
+        internal static string DevoteeOfTheGreenTraitDescription_info {
+            get {
+                return ResourceManager.GetString("DevoteeOfTheGreenTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Devotee of the Green 的本地化字符串。
+        /// </summary>
+        internal static string DevoteeOfTheGreenTraitName_info {
+            get {
+                return ResourceManager.GetString("DevoteeOfTheGreenTraitName_info", resourceCulture);
             }
         }
         
@@ -1149,6 +1223,24 @@ namespace EldritchArcana.Properties {
         internal static string DrawbackSpellVulnerabilityFeatureName_info {
             get {
                 return ResourceManager.GetString("DrawbackSpellVulnerabilityFeatureName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your mentor, the person who invested your faith in you from an early age, took steps to ensure you understood that what powers your divine magic is no different from that which powers the magic of other religions. This philosophy makes it easier for you to interact with others who may not share your views. 的本地化字符串。
+        /// </summary>
+        internal static string EaseOfFaithTraitDescription_info {
+            get {
+                return ResourceManager.GetString("EaseOfFaithTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Ease of Faith 的本地化字符串。
+        /// </summary>
+        internal static string EaseOfFaithTraitName_info {
+            get {
+                return ResourceManager.GetString("EaseOfFaithTraitName_info", resourceCulture);
             }
         }
         
@@ -1292,6 +1384,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 The vaults of the great city contain many secrets of the divine powers of the gods, and you have studied your god extensively.
+        ///Benefit: You may channel energy 1 additional time per day. 的本地化字符串。
+        /// </summary>
+        internal static string ExaltedOfTheSocietyTraitDescription {
+            get {
+                return ResourceManager.GetString("ExaltedOfTheSocietyTraitDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Exalted of the Society 的本地化字符串。
+        /// </summary>
+        internal static string ExaltedOfTheSocietyTraitName_info {
+            get {
+                return ResourceManager.GetString("ExaltedOfTheSocietyTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You have unlocked the secret of a new magus arcana. You gain one additional magus arcana. You must meet all the prerequisites for this magus arcana.
         ///Special: You can gain this feat multiple times. Its effects stack, granting a new arcana each time you gain this feat. 的本地化字符串。
         /// </summary>
@@ -1380,6 +1491,24 @@ namespace EldritchArcana.Properties {
         internal static string FaithTraitName_info {
             get {
                 return ResourceManager.GetString("FaithTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Whenever you are under the effect of a luck bonus of any kind, that bonus increases by 1. 的本地化字符串。
+        /// </summary>
+        internal static string FatesFavoredTraitDescription_info {
+            get {
+                return ResourceManager.GetString("FatesFavoredTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Fate&apos;s Favored 的本地化字符串。
+        /// </summary>
+        internal static string FatesFavoredTraitName_info {
+            get {
+                return ResourceManager.GetString("FatesFavoredTraitName_info", resourceCulture);
             }
         }
         
@@ -4975,6 +5104,63 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Use Charisma for calculating Knowledge (Arcana).
+        ///Benefit: You modify your Knowledge (Arcana) using your Charisma modifier, insted of your Inteligence. 的本地化字符串。
+        /// </summary>
+        internal static string PlanarSavantTraitArcanaDescription_info {
+            get {
+                return ResourceManager.GetString("PlanarSavantTraitArcanaDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Knowledge (Arcana) 的本地化字符串。
+        /// </summary>
+        internal static string PlanarSavantTraitArcanaName_info {
+            get {
+                return ResourceManager.GetString("PlanarSavantTraitArcanaName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You have always had an innate sense of the workings of the planes and their denizens.
+        ///Benefit: You may use your Charisma modifier when making Knowledge checks instead of your Intelligence modifier. Choose a knowledge to replace. 的本地化字符串。
+        /// </summary>
+        internal static string PlanarSavantTraitDescription_info {
+            get {
+                return ResourceManager.GetString("PlanarSavantTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Planar Savant 的本地化字符串。
+        /// </summary>
+        internal static string PlanarSavantTraitName_info {
+            get {
+                return ResourceManager.GetString("PlanarSavantTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Use Charisma for calculating Knowledge (World).
+        ///Benefit: You modify your Knowledge (World) using your Charisma modifier. insted of your Inteligence 的本地化字符串。
+        /// </summary>
+        internal static string PlanarSavantTraitWorldDescription_info {
+            get {
+                return ResourceManager.GetString("PlanarSavantTraitWorldDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Knowledge (World) 的本地化字符串。
+        /// </summary>
+        internal static string PlanarSavantTraitWorldName_info {
+            get {
+                return ResourceManager.GetString("PlanarSavantTraitWorldName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You were cursed by a witch to become a frog. You did not like this and you killed the witch.
         ///The curse is almost broken, but if you are in a moment of weakness, you transform back into a frog.
         ///Drawback: If you attack someone when you are below 40 % health, you are transformed into a frog for 2 rounds. 的本地化字符串。
@@ -5298,6 +5484,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Your birth was particularly painful and difficult for your mother, who needed potent divine magic to ensure that you survived (your mother may or may not have survived). In any event, that magic infused you from an early age, and you now use divine energy with greater ease than most.
+        ///Benefit: Whenever you use healing energy, you gain a +1 trait bonus to its save DC vs undead. 的本地化字符串。
+        /// </summary>
+        internal static string SacredConduitTraitDescription_info {
+            get {
+                return ResourceManager.GetString("SacredConduitTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Sacred Conduit 的本地化字符串。
+        /// </summary>
+        internal static string SacredConduitTraitName_info {
+            get {
+                return ResourceManager.GetString("SacredConduitTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Whenever you cast a spell that cures the target of hit point damage, you do not provoke attacks of opportunity for spellcasting. 的本地化字符串。
         /// </summary>
         internal static string SafeCuringFeatureDescription_info {
@@ -5592,7 +5797,7 @@ namespace EldritchArcana.Properties {
         
         /// <summary>
         ///   查找类似 You had a traumatic experience with a spirit at a young age that colors your reactions to such creatures even to this day.
-        ///Drawback: You take a –4 penalty on attackrolls vs fey creatures, and a -2 on rolls vs fear. 的本地化字符串。
+        ///Drawback: You take a –4 penalty on attack rolls vs fey creatures, and a -2 on rolls vs fear. 的本地化字符串。
         /// </summary>
         internal static string SpookedDrawbackDescription_info {
             get {

@@ -251,6 +251,13 @@
   <data name="BastardTraitName_info" xml:space="preserve">
     <value>私生子</value>
   </data>
+  <data name="BirthmarkTraitDescription_info" xml:space="preserve">
+    <value>你与生俱来拥有一块奇怪的胎记，看起来就像你日后入信的神祗的圣徽。
+效益：这个胎记会增加你对神祗的虔诚。你在对抗魅惑与胁迫效果时豁免检定获得+2背景加值。</value>
+  </data>
+  <data name="BirthmarkTraitName_info" xml:space="preserve">
+    <value>胎记</value>
+  </data>
   <data name="BloodHavocMutationFeatureDescription_info" xml:space="preserve">
     <value>每当血脉狂怒者或者术士获得一个新的血承能力，他可以将这个血承能力换成一个其满足先决条件的血统突变。一旦他作出这个选择就无法改变。血脉狂怒者或术士不能将一个已经被变体改变或取代的血承能力替换为血统突变。血脉狂怒者无须进入血怒来使用他的血统突变。另外，血脉狂怒者或术士可以选择一个血统突变来代替血承奖励专长，只要他的职业等级不低于该突变通常取代的血承能力的等级。
 血统突变：血之毁灭
@@ -367,6 +374,12 @@
   <data name="CheatCustomTraits_info" xml:space="preserve">
     <value>显示所有背景特性及法术，包括作弊和自制内容（需要重新启动游戏才能生效）</value>
   </data>
+  <data name="ChildOfTheTempleTraitDescription_info" xml:space="preserve">
+    <value>你长期服务于某个城市的一座神殿，在那里你学会了很多贵族的习俗，此外还花了很多时间在神殿的图书馆里研究自己的信仰。</value>
+  </data>
+  <data name="ChildOfTheTempleTraitName_info" xml:space="preserve">
+    <value>神殿之子</value>
+  </data>
   <data name="ChooseFavoredClassLocalized_info" xml:space="preserve">
     <value>选择天赋职业奖励</value>
   </data>
@@ -414,6 +427,13 @@
   <data name="CustomTraitName_info" xml:space="preserve">
     <value>自定义特性｛作弊｝</value>
   </data>
+  <data name="DefyMadnessTraitDescription_info" xml:space="preserve">
+    <value>你和某些超常存在和异星力量的直接接触使你更不容易受到他们造成的神智错乱的影响。
+效益：你在对抗混乱、神智错乱、疯狂、感知伤害和吸取效果的豁免检定时获得+1背景加值。</value>
+  </data>
+  <data name="DefyMadnessTraitName_info" xml:space="preserve">
+    <value>疯狂抗性（旧神）</value>
+  </data>
   <data name="DelayAfflictionFeatureDescription_info" xml:space="preserve">
     <value>每天1次，当你对某种疾病或毒素的豁免失败时，你能以一个即时动作忽略它的影响，每级1小时。在7级和15级时，你每天可以使用本能力的次数再增加1次。</value>
   </data>
@@ -453,6 +473,12 @@
   </data>
   <data name="DetectSecretDoorsSpells_info" xml:space="preserve">
     <value>侦测密门</value>
+  </data>
+  <data name="DevoteeOfTheGreenTraitDescription_info" xml:space="preserve">
+    <value>你对于自然世界或某位自然之神的信仰使你很容易了解相关概念。</value>
+  </data>
+  <data name="DevoteeOfTheGreenTraitName_info" xml:space="preserve">
+    <value>绿色信徒</value>
   </data>
   <data name="DismissAreaEffectAbilityDescription_info" xml:space="preserve">
     <value>某些法术可以任意驱散，而另一些法术则必须在结束战斗后才能驱散。要驱散法术效果你必须位于法术效果范围内。驱散法术效果是一个不会引发借机攻击的标准动作。
@@ -501,6 +527,12 @@
   </data>
   <data name="Drawbacks_info" xml:space="preserve">
     <value>缺陷特性</value>
+  </data>
+  <data name="EaseOfFaithTraitDescription_info" xml:space="preserve">
+    <value>你的导师，也就是从小就带你入信的人，采取了一些措施，以确保你了解赋予你神力的神祗与其他信仰的神祗并没有什么不同。这种理念使你更容易与可能并不赞同你信仰的人进行互动。</value>
+  </data>
+  <data name="EaseOfFaithTraitName_info" xml:space="preserve">
+    <value>变通信仰</value>
   </data>
   <data name="EldritchHeritageFeatDescription_info" xml:space="preserve">
     <value>
@@ -552,6 +584,13 @@
   <data name="EquipmentTraitName_info" xml:space="preserve">
     <value>装备背景</value>
   </data>
+  <data name="ExaltedOfTheSocietyTraitDescription" xml:space="preserve">
+    <value>大城市中往往隐藏着许多诸神神力的秘密，因此你曲线救国，来研习你敬奉的神祗。
+效益：你每天可以额外多使用1次导能。</value>
+  </data>
+  <data name="ExaltedOfTheSocietyTraitName_info" xml:space="preserve">
+    <value>社会名流</value>
+  </data>
   <data name="ExtraArcanaFeatureDescription_info" xml:space="preserve">
     <value>你已经解锁了一个新的魔战士奥能。你获得一个额外的魔战士奥能，你必须满足这个奥能的所有先决条件。
 特殊：你可以多次选择此专长，效果可以叠加。你每次选择这个专长都能选择一个新奥能。</value>
@@ -583,6 +622,12 @@
   </data>
   <data name="FaithTraitName_info" xml:space="preserve">
     <value>信仰背景</value>
+  </data>
+  <data name="FatesFavoredTraitDescription_info" xml:space="preserve">
+    <value>你在获得拥有“幸运”描述符的加值时，加值再+1。</value>
+  </data>
+  <data name="FatesFavoredTraitName_info" xml:space="preserve">
+    <value>命运宠儿</value>
   </data>
   <data name="FavoredClassAnyFeatureDescription_info" xml:space="preserve">
     <value>每个等级自动确定天赋职业，如果选择此天赋职业，你就只能获得额外生命值。天赋职业为你最高等级的非进阶职业。此为默认的游戏设定。</value>
@@ -1891,6 +1936,27 @@
   <data name="PhysiqueDrawbackName_info" xml:space="preserve">
     <value>肉体缺陷</value>
   </data>
+  <data name="PlanarSavantTraitArcanaDescription_info" xml:space="preserve">
+    <value>使用魅力修正值进行知识（神秘）的检定。
+效益：效益：你在进行知识（神秘）的技能检定时可以使用魅力修正值而非智力。</value>
+  </data>
+  <data name="PlanarSavantTraitArcanaName_info" xml:space="preserve">
+    <value>知识（神秘）</value>
+  </data>
+  <data name="PlanarSavantTraitDescription_info" xml:space="preserve">
+    <value>当着手于各位面及其原住民的工作时，你察觉到自己有着天生的灵感。
+效益：你在进行知识的技能检定时可以使用魅力修正值而非智力。请选择需要取代的对象。</value>
+  </data>
+  <data name="PlanarSavantTraitName_info" xml:space="preserve">
+    <value>位面学者</value>
+  </data>
+  <data name="PlanarSavantTraitWorldDescription_info" xml:space="preserve">
+    <value>使用魅力修正值进行知识（世界）的检定。
+效益：你在进行知识（世界）的技能检定时可以使用魅力修正值而非智力。</value>
+  </data>
+  <data name="PlanarSavantTraitWorldName_info" xml:space="preserve">
+    <value>知识（世界）</value>
+  </data>
   <data name="PolymorphDrawbackDescription_info" xml:space="preserve">
     <value>你曾被一名女巫诅咒，让你变成了一只青蛙。因此你出于愤怒斩杀了那名女巫。
 诅咒已经接近完全解除了，但一旦当你变得虚弱，你仍会被变成一只青蛙。
@@ -2004,6 +2070,13 @@
   </data>
   <data name="RostlanderTraitName_info" xml:space="preserve">
     <value>罗斯特兰人</value>
+  </data>
+  <data name="SacredConduitTraitDescription_info" xml:space="preserve">
+    <value>你的降生对母亲而言痛苦而又艰辛，以致需要借助圣能来确保你顺利存活（你的母亲则不一定有如此幸运）。那种魔法能量从儿时便萦绕在你身畔，如今你可以轻松自如地引导神圣能量。
+效益：你使用正向能量伤害不死生物时，其豁免DC获得+1背景加值。</value>
+  </data>
+  <data name="SacredConduitTraitName_info" xml:space="preserve">
+    <value>圣能通道</value>
   </data>
   <data name="SafeCuringFeatureDescription_info" xml:space="preserve">
     <value>当你施放一个治疗目标生物生命值伤害的法术时，你不会引起对施法的借机攻击。</value>
