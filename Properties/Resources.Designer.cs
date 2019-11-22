@@ -61,6 +61,15 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似  的本地化字符串。
+        /// </summary>
+        internal static string _Empty_1_ {
+            get {
+                return ResourceManager.GetString("_Empty[1]", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Choose one of your revelations that has a number of uses per day. You gain 1 additional use per day of that revelation.
         ///Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new revelation.  的本地化字符串。
         /// </summary>
@@ -763,6 +772,64 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Your studies have given you a knack for avoiding trouble.
+        ///Benefit: Your first few saves have are better.
+        ///Choose how to apply the original version from tabletop is there but in tabletop you can choose if you want to reroll and if you roll a 18 you might not want to reroll becouse the chance you roll better is small. And if you have a save you know has a verry low dc you might not want to reroll even a 2 becouse you are going to succeed anyway. This is why there is an option to gain a flat bonus to the firs [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string ChaldiraTraitDescription {
+            get {
+                return ResourceManager.GetString("ChaldiraTraitDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your studies have given you a knack for avoiding trouble.
+        ///Benefit: Each day add a {0} Sacred bonus to the first {1} save(s). 的本地化字符串。
+        /// </summary>
+        internal static string ChaldiraTraitHBDescription_info {
+            get {
+                return ResourceManager.GetString("ChaldiraTraitHBDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Chaldira {0}[HB] 的本地化字符串。
+        /// </summary>
+        internal static string ChaldiraTraitHBName_info {
+            get {
+                return ResourceManager.GetString("ChaldiraTraitHBName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Lessons of Faith 的本地化字符串。
+        /// </summary>
+        internal static string ChaldiraTraitName_info {
+            get {
+                return ResourceManager.GetString("ChaldiraTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your studies have given you a knack for avoiding trouble.
+        ///Benefit: The first time you have to roll a save you roll the d20 2 times and pick the best this can be used once per day 的本地化字符串。
+        /// </summary>
+        internal static string ChaldiraTraitOriginalDescription_info {
+            get {
+                return ResourceManager.GetString("ChaldiraTraitOriginalDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Chaldira(original) 的本地化字符串。
+        /// </summary>
+        internal static string ChaldiraTraitOriginalName_info {
+            get {
+                return ResourceManager.GetString("ChaldiraTraitOriginalName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You can channel positive energy like a cleric, using your oracle level as your effective cleric level when determining the amount of damage healed (or caused to undead) and the DC.
         ///You can use this ability a number of times per day equal to 1+your Charisma modifier. 的本地化字符串。
         /// </summary>
@@ -1101,6 +1168,24 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Art for you is a social gateway and you use it to influence and penetrate high society. 的本地化字符串。
+        /// </summary>
+        internal static string DilettanteArtistTraitDescription_info {
+            get {
+                return ResourceManager.GetString("DilettanteArtistTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Dilettante Artist (Elf) 的本地化字符串。
+        /// </summary>
+        internal static string DilettanteArtistTraitName_info {
+            get {
+                return ResourceManager.GetString("DilettanteArtistTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Some spells can be dismissed at will, others when you are out of combat. You must be within range of the spell&apos;s effect. Dismissing a spell is a standard action that does not provoke attacks of opportunity.
         ///A spell that depends on concentration is dismissible by its very nature, and dismissing it does not take an action, since all you have to do to end the spell is to stop concentrating on your turn.
         ///If this ability is enabled, it means you have a currently active effect spell that can be dismissed. 的本地化字符串。
@@ -1307,6 +1392,25 @@ namespace EldritchArcana.Properties {
         internal static string EmergencyForceSphereSpells_info {
             get {
                 return ResourceManager.GetString("EmergencyForceSphereSpells_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your hours of meditation on inner perfection and the nature of strength and speed allow you to focus your thoughts to achieve things your body might not normally be able to do on its own. 
+        ///Benefit: You modify your {0} using your Wisdom modifier, insted of your {1}. 的本地化字符串。
+        /// </summary>
+        internal static string EmpathicDiplomatStatTraitDescription_info {
+            get {
+                return ResourceManager.GetString("EmpathicDiplomatStatTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Use Wisdom for calculating {0} 的本地化字符串。
+        /// </summary>
+        internal static string EmpathicDiplomatStatTraitName_info {
+            get {
+                return ResourceManager.GetString("EmpathicDiplomatStatTraitName_info", resourceCulture);
             }
         }
         
@@ -1870,6 +1974,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Having lived outside of traditional elf society for much or all of your life, you know the world can be cruel, dangerous, and unforgiving of the weak.
+        ///Benefit: You gain a +1 trait bonus on Fortitude saving throws. 的本地化字符串。
+        /// </summary>
+        internal static string ForlornTraitDescription_info {
+            get {
+                return ResourceManager.GetString("ForlornTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Forlorn (Elf) 的本地化字符串。
+        /// </summary>
+        internal static string ForlornTraitName_info {
+            get {
+                return ResourceManager.GetString("ForlornTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You have the symbol of an evil deity burned into your flesh. The place where the symbol is decides what the penalty is. 的本地化字符串。
         /// </summary>
         internal static string FoulBrandDrawbackDescription_info {
@@ -2162,6 +2285,25 @@ namespace EldritchArcana.Properties {
         internal static string IncendiaryCloudAbilityName_info {
             get {
                 return ResourceManager.GetString("IncendiaryCloudAbilityName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You were born in a region where your faith was not popular, but you still have never abandoned it. Your constant struggle to maintain your own faith has bolstered your drive.
+        ///Benefit: You gain a +1 trait bonus on Will saves. 的本地化字符串。
+        /// </summary>
+        internal static string IndomitableFaithTraitDescription_info {
+            get {
+                return ResourceManager.GetString("IndomitableFaithTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Indomitable Faith 的本地化字符串。
+        /// </summary>
+        internal static string IndomitableFaithTraitName_info {
+            get {
+                return ResourceManager.GetString("IndomitableFaithTraitName_info", resourceCulture);
             }
         }
         
@@ -5521,6 +5663,24 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Your greatest interests as a child did not lie with current events or the mundane—you have always felt out of place, as if you were born in the wrong era. You take to philosophical discussions of the Great Beyond and of historical events with ease. 的本地化字符串。
+        /// </summary>
+        internal static string ScholarOfTheGreatBeyondTraitDescription_info {
+            get {
+                return ResourceManager.GetString("ScholarOfTheGreatBeyondTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Scholar of the Great Beyond 的本地化字符串。
+        /// </summary>
+        internal static string ScholarOfTheGreatBeyondTraitName_info {
+            get {
+                return ResourceManager.GetString("ScholarOfTheGreatBeyondTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Extra Arcana ({0}) 的本地化字符串。
         /// </summary>
         internal static string ScionExtraArcanaFeatureName_info {
@@ -6006,6 +6166,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 As a child, you put in long hours on combat drills, and though time has made this training a dim memory, you still have a knack for quickly responding to trouble.
+        ///Benefit: You gain a +2 trait bonus on initiative checks. 的本地化字符串。
+        /// </summary>
+        internal static string WarriorOfOldTraitDescription_info {
+            get {
+                return ResourceManager.GetString("WarriorOfOldTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Warrior of Old (Elf) 的本地化字符串。
+        /// </summary>
+        internal static string WarriorOfOldTraitName_info {
+            get {
+                return ResourceManager.GetString("WarriorOfOldTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 a bastard sword 的本地化字符串。
         /// </summary>
         internal static string WeaponCategoryBastardSwordName_info {
@@ -6413,6 +6592,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Your hours of meditation on inner perfection and the nature of strength and speed allow you to focus your thoughts to achieve things your body might not normally be able to do on its own.
+        ///Benefit: Choose a skill normally decided by Strength, Charisma, or Dexterity, and use Wisdom instead. 的本地化字符串。
+        /// </summary>
+        internal static string WisdomintheFleshTraitDescription_info {
+            get {
+                return ResourceManager.GetString("WisdomintheFleshTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Wisdom in the Flesh 的本地化字符串。
+        /// </summary>
+        internal static string WisdomintheFleshTraitName_info {
+            get {
+                return ResourceManager.GetString("WisdomintheFleshTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Wish is the mightiest spell a wizard or sorcerer can cast. By simply speaking aloud, you can alter reality to better suit you. Even wish, however, has its limits. A wish can produce any one of the following effects.
         ///• Duplicate any sorcerer/wizard spell of 8th level or lower, provided the spell does not belong to one of your opposition schools.
         ///• Duplicate any non-sorcerer/wizard spell of 7th level or lower, provided the spell does not belong to one of your opposition schools.
@@ -6508,6 +6706,25 @@ namespace EldritchArcana.Properties {
         internal static string WishSpellsSpellName_info {
             get {
                 return ResourceManager.GetString("WishSpellsSpellName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Though you gave up the life of a padfoot, scout, or minstrel decades before, you still know how to roll with the punches when things turn sour.
+        ///Benefit: You gain a +1 trait bonus on Reflex saves. 的本地化字符串。
+        /// </summary>
+        internal static string YouthfulMischiefTraitDescription_info {
+            get {
+                return ResourceManager.GetString("YouthfulMischiefTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Youthful Mischief (Elf) 的本地化字符串。
+        /// </summary>
+        internal static string YouthfulMischiefTraitName_info {
+            get {
+                return ResourceManager.GetString("YouthfulMischiefTraitName_info", resourceCulture);
             }
         }
     }

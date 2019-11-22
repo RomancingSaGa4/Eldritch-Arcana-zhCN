@@ -175,15 +175,13 @@ namespace EldritchArcana
             // - Forlorn (+1 fort save)
             // - Warrior of the Old (+2 init)
             // - Youthful Mischief (+1 ref)
-            choices.Add(Traits.CreateAddStatBonus("DilettanteArtistTrait", "Dilettante Artist (Elf)",
-                "Art for you is a social gateway and you use it to influence and penetrate high society.",
-                "ac5a16e72ef74b4884c674dcbb61692c", StatType.SkillPersuasion, elfReq));
+            choices.Add(Traits.CreateAddStatBonus("DilettanteArtistTrait", RES.DilettanteArtistTraitName_info,
+                RES.DilettanteArtistTraitDescription_info,
+                "ac5a16e72ef74b4884c674dcbb61692c",
+                StatType.SkillPersuasion, elfReq));
 
-            BlueprintItemWeapon bite = Traits.library.CopyAndAdd<BlueprintItemWeapon>("35dfad6517f401145af54111be04d6cf", "Tusked",
-                "44dfad6517f401145af54111be04d644");
-
-            choices.Add(Helpers.CreateFeature("ForlornTrait", "Forlorn (Elf)",
-                "Having lived outside of traditional elf society for much or all of your life, you know the world can be cruel, dangerous, and unforgiving of the weak.\nBenefit: You gain a +1 trait bonus on Fortitude saving throws.",
+            choices.Add(Helpers.CreateFeature("ForlornTrait", RES.ForlornTraitName_info,
+                RES.ForlornTraitDescription_info,
                 "1511289c92ea4233b14c4f51072ea10f",
                 Helpers.GetIcon("79042cb55f030614ea29956177977c52"), // Great Fortitude
                 FeatureGroup.None,
@@ -191,25 +189,16 @@ namespace EldritchArcana
                 Helpers.CreateAddStatBonus(StatType.SaveFortitude, 1, ModifierDescriptor.Trait)
                 ));
 
-            choices.Add(Helpers.CreateFeature("TuskedTrait", "Tusked (Half-orc)",
-                "Benefit: Huge, sharp tusks bulge from your mouth, and you receive a bite attack (1d4 damage for Medium characters). If used as part of a full attack action, the bite attack is made at your full base attack bonus –5.",
-                "1511289c92ea4233b14c4f51072ea09g",
-                Image2Sprite.Create("Mods/EldritchArcana/sprites/halforc_tusked.png"), // Great Fortitude
-                FeatureGroup.None,
-                halfOrcReq,
-                Helpers.Create<AddAdditionalLimb>(x => x.Weapon = bite)
-                ));
-
-            choices.Add(Helpers.CreateFeature("WarriorOfOldTrait", "Warrior of Old (Elf)",
-                "As a child, you put in long hours on combat drills, and though time has made this training a dim memory, you still have a knack for quickly responding to trouble.\nBenefit: You gain a +2 trait bonus on initiative checks.",
+            choices.Add(Helpers.CreateFeature("WarriorOfOldTrait", RES.WarriorOfOldTraitName_info,
+                RES.WarriorOfOldTraitDescription_info,
                 "dc36a2c52abb4e6dbff549ac65a5a171",
                 Helpers.GetIcon("797f25d709f559546b29e7bcb181cc74"), // Improved Initiative
                 FeatureGroup.None,
                 elfReq,
                 Helpers.CreateAddStatBonus(StatType.Initiative, 2, ModifierDescriptor.Trait)));
 
-            choices.Add(Helpers.CreateFeature("YouthfulMischiefTrait", "Youthful Mischeif (Elf)",
-                "Though you gave up the life of a padfoot, scout, or minstrel decades before, you still know how to roll with the punches when things turn sour.\nBenefit: You gain a +1 trait bonus on Reflex saves.",
+            choices.Add(Helpers.CreateFeature("YouthfulMischiefTrait", RES.YouthfulMischiefTraitName_info,
+                RES.YouthfulMischiefTraitDescription_info,
                 "bfcc574d1f214455ac369fa46e07200e",
                 Helpers.GetIcon("15e7da6645a7f3d41bdad7c8c4b9de1e"), // Lightning Reflexes
                 FeatureGroup.None,
@@ -224,6 +213,18 @@ namespace EldritchArcana
                 "1ee0ce55ace74ccbb798e2fdc13181f6", StatType.SkillPersuasion, halfOrcReq);
             brute.SetIcon(Helpers.GetIcon("885f478dff2e39442a0f64ceea6339c9")); // Intimidating
             choices.Add(brute);
+
+            BlueprintItemWeapon bite = Traits.library.CopyAndAdd<BlueprintItemWeapon>("35dfad6517f401145af54111be04d6cf", "Tusked",
+                "44dfad6517f401145af54111be04d644");
+
+            choices.Add(Helpers.CreateFeature("TuskedTrait", "Tusked (Half-orc)",
+                "Benefit: Huge, sharp tusks bulge from your mouth, and you receive a bite attack (1d4 damage for Medium characters). If used as part of a full attack action, the bite attack is made at your full base attack bonus –5.",
+                "1511289c92ea4233b14c4f51072ea09g",
+                Image2Sprite.Create("Mods/EldritchArcana/sprites/halforc_tusked.png"), // Great Fortitude
+                FeatureGroup.None,
+                halfOrcReq,
+                Helpers.Create<AddAdditionalLimb>(x => x.Weapon = bite)
+                ));
 
             var GloryOfOld = Helpers.CreateFeature("GloryOfOldTrait", "Glory of Old (Dwarf)",
                 "You are part of the old Guard" +

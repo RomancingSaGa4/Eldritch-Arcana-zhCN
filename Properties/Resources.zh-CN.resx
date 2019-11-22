@@ -364,6 +364,28 @@
   <data name="cannotLoadMod_error" xml:space="preserve">
     <value>修补方法libraryscriptableobject.loadDictionary()失败，无法加载mod！</value>
   </data>
+  <data name="ChaldiraTraitDescription" xml:space="preserve">
+    <value>你对信仰的学习教会你一个免除麻烦的小诀窍。
+效益：你每天的第一次检定结果会变得更好。
+由于游戏机制的问题，原来在桌游版你可以选择是否重掷第二次骰，如果你投出18，你可能并不会想再重投；或者如果对象的豁免DC非常低，你也不会想重投（即便你只投了个2），因为反正不论如何都会过。因此Mod给了另一个选择，就是给第一次掷骰一个纯粹的加值。当然这并不是原先桌游版本身的设定。</value>
+  </data>
+  <data name="ChaldiraTraitHBDescription_info" xml:space="preserve">
+    <value>你对信仰的学习教会你一个免除麻烦的小诀窍。
+效益：每天最开始{1}次的豁免骰获得+{0}的崇圣加值。</value>
+  </data>
+  <data name="ChaldiraTraitHBName_info" xml:space="preserve">
+    <value>查尔迪菈（{0}次）[HB]</value>
+  </data>
+  <data name="ChaldiraTraitName_info" xml:space="preserve">
+    <value>信仰课程</value>
+  </data>
+  <data name="ChaldiraTraitOriginalDescription_info" xml:space="preserve">
+    <value>你对信仰的学习教会你一个免除麻烦的小诀窍。
+效益：每天第1次掷豁免骰时你可以掷2次D20，选取更好的结果。</value>
+  </data>
+  <data name="ChaldiraTraitOriginalName_info" xml:space="preserve">
+    <value>查尔迪菈（原版）</value>
+  </data>
   <data name="ChannelEnergyFeatureDescription_info" xml:space="preserve">
     <value>你可以像牧师一样引导正向能量，在确定治愈（或伤害不死生物）的生命值和DC时，使用你的先知等级作为你的有效牧师等级。
 你每天可以多次使用这个能力，次数等于“魅力调整值+1”。</value>
@@ -480,6 +502,12 @@
   <data name="DevoteeOfTheGreenTraitName_info" xml:space="preserve">
     <value>绿色信徒</value>
   </data>
+  <data name="DilettanteArtistTraitDescription_info" xml:space="preserve">
+    <value>艺术对你来说是一块社交的敲门砖，你可以用它来影响和渗透上流社会。</value>
+  </data>
+  <data name="DilettanteArtistTraitName_info" xml:space="preserve">
+    <value>业余艺术家（精灵）</value>
+  </data>
   <data name="DismissAreaEffectAbilityDescription_info" xml:space="preserve">
     <value>某些法术可以任意驱散，而另一些法术则必须在结束战斗后才能驱散。要驱散法术效果你必须位于法术效果范围内。驱散法术效果是一个不会引发借机攻击的标准动作。
 依赖于专注的法术效果将会自然散去，驱散并不会发生任何动作，因为你只需在行动时停止专注就能结束法术的效果。
@@ -558,6 +586,13 @@
   </data>
   <data name="EmergencyForceSphereSpells_info" xml:space="preserve">
     <value>紧急力场护罩</value>
+  </data>
+  <data name="EmpathicDiplomatStatTraitDescription_info" xml:space="preserve">
+    <value>你对内在完美、力量与速度本质的长时冥思，使你能将精神与思考高度集中，完成那些仅凭肉体无法办到的事情。
+效益：你在进行{0}的技能检定时可以使用感知修正值而非{1}。</value>
+  </data>
+  <data name="EmpathicDiplomatStatTraitName_info" xml:space="preserve">
+    <value>使用感知修正值进行{0}的检定。</value>
   </data>
   <data name="EnergyBodyFeatureDescription_info" xml:space="preserve">
     <value>你能以一个标准动作将自己的身体化为纯净的生命能量，在外观上看来就如同一个金光闪闪的火元素一般。在此形态下，你获得元素亚种特性，并且你浑身散发的怡人暖光会使得身周10英尺范围内的光照等级上升一级，最高到正常光照水平。任何用自己的身体部分或持有武器近战攻击你的不死生物都能正常造成伤害，但同时也会受到1d6+每先知等级1点的正向能量伤害。用长触及武器攻击你的生物不受此效果影响。如果你在此状态下擒抱或者通过天生武器或徒手击打攻击不死生物，你也可以选择造成此伤害而非你的正常攻击伤害。每轮一次，如果你穿越一个盟友占据的方格或者一个盟友穿越你占据的方格，同时治疗他1d6+每先知等级1点的伤害，你也可以通过一个移动动作以此能力治疗自己，并且你自己可以选择是否治疗穿过你的盟友。你可以以一个自由动作返回正常形态，你每天可以转换为能量形态的轮数等同于你的先知等级。</value>
@@ -754,6 +789,13 @@
   <data name="FlyWingDraconicWhiteName_info" xml:space="preserve">
     <value>白龙</value>
   </data>
+  <data name="ForlornTraitDescription_info" xml:space="preserve">
+    <value>你的大半生都生活在远离精灵传统社会的荒野。你了解世界的残酷与危险，身为弱者则不可原谅。
+效益：你在强韧豁免检定时获得+1背景加值。</value>
+  </data>
+  <data name="ForlornTraitName_info" xml:space="preserve">
+    <value>荒野独行客（精灵）</value>
+  </data>
   <data name="FoulBrandDrawbackDescription_info" xml:space="preserve">
     <value>你身上留有邪神留下的烙印。烙印的位置决定了你遭受惩罚的类型。</value>
   </data>
@@ -858,6 +900,13 @@
   </data>
   <data name="IncendiaryCloudAbilityName_info" xml:space="preserve">
     <value>焚云术</value>
+  </data>
+  <data name="IndomitableFaithTraitDescription_info" xml:space="preserve">
+    <value>你出生在自己的信仰并不受欢迎的地区，但你决不背弃信仰。为保持信仰所付出的持之以恒的努力，鞭策着你一路前行。
+效益：你在进行意志豁免检定时获得+1背景加值。</value>
+  </data>
+  <data name="IndomitableFaithTraitName_info" xml:space="preserve">
+    <value>坚贞信仰</value>
   </data>
   <data name="KeepAllSpellsFeatureDescription_info" xml:space="preserve">
     <value>选择此选项可略过替换此级别的已知法术。</value>
@@ -1938,7 +1987,7 @@
   </data>
   <data name="PlanarSavantTraitArcanaDescription_info" xml:space="preserve">
     <value>使用魅力修正值进行知识（神秘）的检定。
-效益：效益：你在进行知识（神秘）的技能检定时可以使用魅力修正值而非智力。</value>
+效益：你在进行知识（神秘）的技能检定时可以使用魅力修正值而非智力。</value>
   </data>
   <data name="PlanarSavantTraitArcanaName_info" xml:space="preserve">
     <value>知识（神秘）</value>
@@ -2005,7 +2054,7 @@
 效益：你在盾击时伤害额外+1。</value>
   </data>
   <data name="RaceShieldBearerTraitName_info" xml:space="preserve">
-    <value>持盾精英（人类）</value>
+    <value>持盾菁英（人类）</value>
   </data>
   <data name="RaceSuperstitiousTraitDescription_info" xml:space="preserve">
     <value>你对术士和法师的言语敬畏非常，这使他们的不太容易对你下手。
@@ -2083,6 +2132,12 @@
   </data>
   <data name="SafeCuringFeatureName_info" xml:space="preserve">
     <value>安全治愈</value>
+  </data>
+  <data name="ScholarOfTheGreatBeyondTraitDescription_info" xml:space="preserve">
+    <value>从幼时起，你的兴趣便不在身边凡俗之事——你时常感到不自在，仿佛自己生错了时空。你的哲学理念使你更易于理解遥远星界的彼端、或是历史长河的波涛。</value>
+  </data>
+  <data name="ScholarOfTheGreatBeyondTraitName_info" xml:space="preserve">
+    <value>越空学者</value>
   </data>
   <data name="ScionExtraArcanaFeatureName_info" xml:space="preserve">
     <value>额外奥术（{0}）</value>
@@ -2264,6 +2319,13 @@
   <data name="WallOfFireAbilityName_info" xml:space="preserve">
     <value>火墙术</value>
   </data>
+  <data name="WarriorOfOldTraitDescription_info" xml:space="preserve">
+    <value>你从小就花费大量时间进行格斗训练。尽管岁月让那些训练成为了模糊的记忆，你依然从中学会如何快速应对麻烦。
+效益：你在先攻检定时获得+2背景加值。</value>
+  </data>
+  <data name="WarriorOfOldTraitName_info" xml:space="preserve">
+    <value>历战老兵（精灵）</value>
+  </data>
   <data name="WeaponCategoryBastardSwordName_info" xml:space="preserve">
     <value>一把重剑</value>
   </data>
@@ -2401,6 +2463,13 @@
   <data name="WeaponOfAweSpells_info" xml:space="preserve">
     <value>惊畏武器</value>
   </data>
+  <data name="WisdomintheFleshTraitDescription_info" xml:space="preserve">
+    <value>你对内在完美、力量与速度本质的长时冥思，使你能将精神与思考高度集中，完成那些仅凭肉体无法办到的事情。
+效益：选择一项基于力量、敏捷或体质的技能。进行该技能的检定时，你可以使用感知修正值取代原本的属性。</value>
+  </data>
+  <data name="WisdomintheFleshTraitName_info" xml:space="preserve">
+    <value>以心御体</value>
+  </data>
   <data name="WishAbilityDescription_info" xml:space="preserve">
     <value>祈愿术是法师或术士所能施放的最强力的法术。只需要简单地大声说出你的愿望，你就能让现实变得更符合你的心意。但即便是祈愿术也有其极限。祈愿术可以产生下列效果中的其中一种。
 • 复制任何一个不超过8级的术士/法师法术，但是该法术不能属于你的对立学派。
@@ -2448,5 +2517,12 @@
   </data>
   <data name="WishSpells_info" xml:space="preserve">
     <value>祈愿术</value>
+  </data>
+  <data name="YouthfulMischiefTraitDescription_info" xml:space="preserve">
+    <value>虽然你已经不做大脚板、斥候或者吟游诗人的生计很久了，但你依然还记得在危机来临时该如何应对。
+效益：你在进行反射豁免检定时获得+1背景加值。</value>
+  </data>
+  <data name="YouthfulMischiefTraitName_info" xml:space="preserve">
+    <value>年轻的恶作剧（精灵）</value>
   </data>
 </root>

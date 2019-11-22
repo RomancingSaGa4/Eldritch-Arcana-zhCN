@@ -364,6 +364,28 @@ Drawback: You take a –2 penalty on saves against fire effects.</value>
   <data name="cannotLoadMod_error" xml:space="preserve">
     <value>Failed to patch LibraryScriptableObject.LoadDictionary(), cannot load mod!</value>
   </data>
+  <data name="ChaldiraTraitDescription" xml:space="preserve">
+    <value>Your studies have given you a knack for avoiding trouble.
+Benefit: Your first few saves have are better.
+Choose how to apply the original version from tabletop is there but in tabletop you can choose if you want to reroll and if you roll a 18 you might not want to reroll becouse the chance you roll better is small. And if you have a save you know has a verry low dc you might not want to reroll even a 2 becouse you are going to succeed anyway. This is why there is an option to gain a flat bonus to the first few saves. This is not in the normal tabletop version.</value>
+  </data>
+  <data name="ChaldiraTraitHBDescription_info" xml:space="preserve">
+    <value>Your studies have given you a knack for avoiding trouble.
+Benefit: Each day add a {0} Sacred bonus to the first {1} save(s).</value>
+  </data>
+  <data name="ChaldiraTraitHBName_info" xml:space="preserve">
+    <value>Chaldira {0}[HB]</value>
+  </data>
+  <data name="ChaldiraTraitName_info" xml:space="preserve">
+    <value>Lessons of Faith</value>
+  </data>
+  <data name="ChaldiraTraitOriginalDescription_info" xml:space="preserve">
+    <value>Your studies have given you a knack for avoiding trouble.
+Benefit: The first time you have to roll a save you roll the d20 2 times and pick the best this can be used once per day</value>
+  </data>
+  <data name="ChaldiraTraitOriginalName_info" xml:space="preserve">
+    <value>Chaldira(original)</value>
+  </data>
   <data name="ChannelEnergyFeatureDescription_info" xml:space="preserve">
     <value>You can channel positive energy like a cleric, using your oracle level as your effective cleric level when determining the amount of damage healed (or caused to undead) and the DC.
 You can use this ability a number of times per day equal to 1+your Charisma modifier.</value>
@@ -480,6 +502,12 @@ Each round, you can turn to detect secret doors in a new area. This spell requir
   <data name="DevoteeOfTheGreenTraitName_info" xml:space="preserve">
     <value>Devotee of the Green</value>
   </data>
+  <data name="DilettanteArtistTraitDescription_info" xml:space="preserve">
+    <value>Art for you is a social gateway and you use it to influence and penetrate high society.</value>
+  </data>
+  <data name="DilettanteArtistTraitName_info" xml:space="preserve">
+    <value>Dilettante Artist (Elf)</value>
+  </data>
   <data name="DismissAreaEffectAbilityDescription_info" xml:space="preserve">
     <value>Some spells can be dismissed at will, others when you are out of combat. You must be within range of the spell's effect. Dismissing a spell is a standard action that does not provoke attacks of opportunity.
 A spell that depends on concentration is dismissible by its very nature, and dismissing it does not take an action, since all you have to do to end the spell is to stop concentrating on your turn.
@@ -558,6 +586,13 @@ Normally this spell is used to buy time for dealing with avalanches, floods, and
   </data>
   <data name="EmergencyForceSphereSpells_info" xml:space="preserve">
     <value>Emergency force sphere</value>
+  </data>
+  <data name="EmpathicDiplomatStatTraitDescription_info" xml:space="preserve">
+    <value>Your hours of meditation on inner perfection and the nature of strength and speed allow you to focus your thoughts to achieve things your body might not normally be able to do on its own. 
+Benefit: You modify your {0} using your Wisdom modifier, insted of your {1}.</value>
+  </data>
+  <data name="EmpathicDiplomatStatTraitName_info" xml:space="preserve">
+    <value>Use Wisdom for calculating {0}</value>
   </data>
   <data name="EnergyBodyFeatureDescription_info" xml:space="preserve">
     <value>As a standard action, you can transform your body into pure life energy, resembling a golden-white fire elemental. In this form, you gain the elemental subtype and give off a warm, welcoming light that increases the light level within 10 feet by one step, up to normal light. Any undead creature striking you with its body or a handheld weapon deals normal damage, but at the same time the attacker takes 1d6 points of positive energy damage + 1 point per oracle level. Creatures wielding melee weapons with reach are not subject to this damage if they attack you. If you grapple or attack an undead creature using unarmed strikes or natural weapons, you may deal this damage in place of the normal damage for the attack. Once per round, if you pass through a living allied creature's square or the ally passes through your square, it heals 1d6 hit points + 1 per oracle level. You may use this ability to heal yourself as a move action. You choose whether or not to heal a creature when it passes through your space. You may return to your normal form as a free action. You may remain in energy body form for a number of rounds per day equal to your oracle level.</value>
@@ -752,6 +787,13 @@ Whenever you receive magical healing, you heal an additional 2 points per die ro
   <data name="FlyWingDraconicWhiteName_info" xml:space="preserve">
     <value>White Dragon</value>
   </data>
+  <data name="ForlornTraitDescription_info" xml:space="preserve">
+    <value>Having lived outside of traditional elf society for much or all of your life, you know the world can be cruel, dangerous, and unforgiving of the weak.
+Benefit: You gain a +1 trait bonus on Fortitude saving throws.</value>
+  </data>
+  <data name="ForlornTraitName_info" xml:space="preserve">
+    <value>Forlorn (Elf)</value>
+  </data>
   <data name="FoulBrandDrawbackDescription_info" xml:space="preserve">
     <value>You have the symbol of an evil deity burned into your flesh. The place where the symbol is decides what the penalty is.</value>
   </data>
@@ -856,6 +898,13 @@ As with fog cloud, wind disperses the smoke, and the spell can't be cast underwa
   </data>
   <data name="IncendiaryCloudAbilityName_info" xml:space="preserve">
     <value>Incendiary Cloud</value>
+  </data>
+  <data name="IndomitableFaithTraitDescription_info" xml:space="preserve">
+    <value>You were born in a region where your faith was not popular, but you still have never abandoned it. Your constant struggle to maintain your own faith has bolstered your drive.
+Benefit: You gain a +1 trait bonus on Will saves.</value>
+  </data>
+  <data name="IndomitableFaithTraitName_info" xml:space="preserve">
+    <value>Indomitable Faith</value>
   </data>
   <data name="KeepAllSpellsFeatureDescription_info" xml:space="preserve">
     <value>Choose this to skip replacing a known spell this level.</value>
@@ -2083,6 +2132,12 @@ Benefit: Whenever you use healing energy, you gain a +1 trait bonus to its save 
   <data name="SafeCuringFeatureName_info" xml:space="preserve">
     <value>Safe Curing</value>
   </data>
+  <data name="ScholarOfTheGreatBeyondTraitDescription_info" xml:space="preserve">
+    <value>Your greatest interests as a child did not lie with current events or the mundane—you have always felt out of place, as if you were born in the wrong era. You take to philosophical discussions of the Great Beyond and of historical events with ease.</value>
+  </data>
+  <data name="ScholarOfTheGreatBeyondTraitName_info" xml:space="preserve">
+    <value>Scholar of the Great Beyond</value>
+  </data>
   <data name="ScionExtraArcanaFeatureName_info" xml:space="preserve">
     <value>Extra Arcana ({0})</value>
   </data>
@@ -2263,6 +2318,13 @@ If you evoke the wall so that it appears where creatures are, each creature take
   <data name="WallOfFireAbilityName_info" xml:space="preserve">
     <value>Wall of Fire</value>
   </data>
+  <data name="WarriorOfOldTraitDescription_info" xml:space="preserve">
+    <value>As a child, you put in long hours on combat drills, and though time has made this training a dim memory, you still have a knack for quickly responding to trouble.
+Benefit: You gain a +2 trait bonus on initiative checks.</value>
+  </data>
+  <data name="WarriorOfOldTraitName_info" xml:space="preserve">
+    <value>Warrior of Old (Elf)</value>
+  </data>
   <data name="WeaponCategoryBastardSwordName_info" xml:space="preserve">
     <value>a bastard sword</value>
   </data>
@@ -2400,6 +2462,13 @@ You can't cast this spell on a natural weapon, but you can cast it on an unarmed
   <data name="WeaponOfAweSpells_info" xml:space="preserve">
     <value>Weapon Of Awe</value>
   </data>
+  <data name="WisdomintheFleshTraitDescription_info" xml:space="preserve">
+    <value>Your hours of meditation on inner perfection and the nature of strength and speed allow you to focus your thoughts to achieve things your body might not normally be able to do on its own.
+Benefit: Choose a skill normally decided by Strength, Charisma, or Dexterity, and use Wisdom instead.</value>
+  </data>
+  <data name="WisdomintheFleshTraitName_info" xml:space="preserve">
+    <value>Wisdom in the Flesh</value>
+  </data>
   <data name="WishAbilityDescription_info" xml:space="preserve">
     <value>Wish is the mightiest spell a wizard or sorcerer can cast. By simply speaking aloud, you can alter reality to better suit you. Even wish, however, has its limits. A wish can produce any one of the following effects.
 • Duplicate any sorcerer/wizard spell of 8th level or lower, provided the spell does not belong to one of your opposition schools.
@@ -2448,5 +2517,15 @@ Two to five wish spells cast in immediate succession can grant a creature a +2 t
   </data>
   <data name="WishSpells_info" xml:space="preserve">
     <value>Wish</value>
+  </data>
+  <data name="YouthfulMischiefTraitDescription_info" xml:space="preserve">
+    <value>Though you gave up the life of a padfoot, scout, or minstrel decades before, you still know how to roll with the punches when things turn sour.
+Benefit: You gain a +1 trait bonus on Reflex saves.</value>
+  </data>
+  <data name="YouthfulMischiefTraitName_info" xml:space="preserve">
+    <value>Youthful Mischief (Elf)</value>
+  </data>
+  <data name="_Empty[1]" xml:space="preserve">
+    <value></value>
   </data>
 </root>

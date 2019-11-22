@@ -6,6 +6,7 @@ using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.Designers.Mechanics.Facts;
 using Kingmaker.EntitySystem.Stats;
 using Kingmaker.Enums;
+using Kingmaker.UI.Common;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
 using System;
 using System.Collections.Generic;
@@ -135,9 +136,8 @@ namespace EldritchArcana
             planar.SetFeatures(planarOptions);
             choices.Add(planar);
 
-            var WisFlesh = Helpers.CreateFeatureSelection("WisdomintheFleshTrait", "Wisdom in the Flesh",
-                "Your hours of meditation on inner perfection and the nature of strength and speed allow you to focus your thoughts to achieve things your body might not normally be able to do on its own.\n" +
-                "Benefit: Choose a skill normally decided by Strength, Charisma, or Dexterity, and use Wisdom instead.",
+            var WisFlesh = Helpers.CreateFeatureSelection("WisdomintheFleshTrait", RES.WisdomintheFleshTraitName_info,
+                RES.WisdomintheFleshTraitDescription_info,
                 "1d4dcccc21e148cdaf0fb3c643249cbf",
                 Helpers.NiceIcons(43), // wisman
                 FeatureGroup.None);
@@ -166,9 +166,9 @@ namespace EldritchArcana
             };
             for (int i = 0; i < 6; i++)
             {
-                WisFleshOptions[i] = Helpers.CreateFeature($"EmpathicDiplomatTrait{Stats[i]}", $"Use Wisdom for calculating {Stats[i]}",
-                    "Your hours of meditation on inner perfection and the nature of strength and speed allow you to focus your thoughts to achieve things your body might not normally be able to do on its own. \n" +
-                    $"Benefit: You modify your {Stats[i]} using your Wisdom modifier. insted of your {OldStats[i]}",
+                WisFleshOptions[i] = Helpers.CreateFeature($"EmpathicDiplomatTrait{Stats[i]}", 
+                    String.Format(RES.EmpathicDiplomatStatTraitName_info, UIUtility.GetStatText(Stats[i])),
+                    String.Format(RES.EmpathicDiplomatStatTraitDescription_info, UIUtility.GetStatText(Stats[i]), UIUtility.GetStatText(OldStats[i])),
                     $"a98{i}f{i}e69db44cdd889{i}3985e37a6d2b",
                     Helpers.NiceIcons(i),
                     FeatureGroup.None,
@@ -182,13 +182,13 @@ namespace EldritchArcana
             WisFlesh.SetFeatures(WisFleshOptions);
             choices.Add(WisFlesh);
 
-
-            choices.Add(Helpers.CreateFeature("IndomitableFaithTrait", "Indomitable Faith",
-                "You were born in a region where your faith was not popular, but you still have never abandoned it. Your constant struggle to maintain your own faith has bolstered your drive.\nBenefit: You gain a +1 trait bonus on Will saves.",
+            choices.Add(Helpers.CreateFeature("IndomitableFaithTrait", RES.IndomitableFaithTraitName_info,
+                RES.IndomitableFaithTraitDescription_info,
                 "e50acadad65b4028884dd4a74f14e727",
                 Helpers.GetIcon("175d1577bb6c9a04baf88eec99c66334"), // Iron Will
                 FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.SaveWill, 1, ModifierDescriptor.Trait)));
+
 
             var LessonResource = Helpers.CreateAbilityResource("ChaldiraResource", "Chaldira charge",
                                              "One charge Chaldira",
@@ -197,15 +197,13 @@ namespace EldritchArcana
                                              null
                                              );
             LessonResource.SetFixedResource(0);
-            int rnd = DateTime.Now.Millisecond % 17 + 3;
+            //随机修正
+            //int rnd = DateTime.Now.Millisecond % 17 + 3;
+            Random ran = new Random();
+            int rnd = ran.Next(3, 20);
 
-            var Chaldira = Helpers.CreateFeatureSelection("ChaldiraTrait", "Lessons of Faith",
-                "Your studies have given you a knack for avoiding trouble." +
-                "\nBenefit: Your first few saves have are better" +
-                "\nChoose how to apply " +
-                "the original version from tabletop is there but in tabletop you can choose if you want to reroll and if you roll a 18 you might not want to reroll becouse the chance you roll better is small." +
-                "And if you have a save you know has a verry low dc you might not want to reroll even a 2 becouse you are going to succeed anyway." +
-                "This is why there is an option to gain a flat bonus to the first few saves. this is not in the normal tabletop version.",
+            var Chaldira = Helpers.CreateFeatureSelection("ChaldiraTrait", RES.ChaldiraTraitName_info,
+                RES.ChaldiraTraitDescription,
                 "f51acadad65b4028884dd4a74f14e817",
                 Helpers.GetIcon("175d1577bb6c9a04baf88eec99c66334"), // Iron Will
                 FeatureGroup.None,
@@ -215,9 +213,8 @@ namespace EldritchArcana
             int len = 5;
             var ChaldiraOptions = new List<BlueprintFeature>(len);
 
-            ChaldiraOptions.Add(Helpers.CreateFeature($"ChaldiraEffectnumber", $"Chaldira(original)",
-                "Your studies have given you a knack for avoiding trouble." +
-                "\nBenefit: The first time you have to roll a save you roll the d20 2 times and pick the best this can be used once per day",
+            ChaldiraOptions.Add(Helpers.CreateFeature($"ChaldiraEffectnumber", RES.ChaldiraTraitOriginalName_info,
+                RES.ChaldiraTraitOriginalDescription_info,
                 $"f53acadad65b4048884dd4a74f14e617",
                 Helpers.GetIcon("175d1577bb6c9a04baf88eec99c66334"), // Iron Will
                 FeatureGroup.None,
@@ -226,21 +223,21 @@ namespace EldritchArcana
 
             for (int i = 1; i < len; i++)
             {
-                ChaldiraOptions.Add(Helpers.CreateFeature($"ChaldiraEffectnumber{i}", $"Chaldira {i}[HB]",
-                "Your studies have given you a knack for avoiding trouble." +
-                $"\nBenefit: Each day add a {(int)(12 / i)} Sacred bonus to the first {i} save(s).",
-                $"f5{i}acadad65b40{i}8884dd4a74f14e{i}17",
-                Helpers.GetIcon("175d1577bb6c9a04baf88eec99c66334"), // Iron Will
-                FeatureGroup.None,
-                Helpers.Create<NewMechanics.SavingThrowReroll>(a => { a.Descriptor = ModifierDescriptor.Sacred; a.Value = (int)(12 / i); a.resource = LessonResource; }),
-                LessonResource.CreateIncreaseResourceAmount(i)));
+                ChaldiraOptions.Add(Helpers.CreateFeature($"ChaldiraEffectnumber{i}", 
+                    String.Format(RES.ChaldiraTraitHBName_info, i),
+                    String.Format(RES.ChaldiraTraitHBDescription_info, (int)(12 / i), i),
+                    $"f5{i}acadad65b40{i}8884dd4a74f14e{i}17",
+                    Helpers.GetIcon("175d1577bb6c9a04baf88eec99c66334"), // Iron Will
+                    FeatureGroup.None,
+                    Helpers.Create<NewMechanics.SavingThrowReroll>(a => { a.Descriptor = ModifierDescriptor.Sacred; a.Value = (int)(12 / i); a.resource = LessonResource; }),
+                    LessonResource.CreateIncreaseResourceAmount(i)));
             }
 
             Chaldira.SetFeatures(ChaldiraOptions);
             choices.Add(Chaldira);
 
-            choices.Add(Traits.CreateAddStatBonus("ScholarOfTheGreatBeyondTrait", "Scholar of the Great Beyond",
-                "Your greatest interests as a child did not lie with current events or the mundane—you have always felt out of place, as if you were born in the wrong era. You take to philosophical discussions of the Great Beyond and of historical events with ease.",
+            choices.Add(Traits.CreateAddStatBonus("ScholarOfTheGreatBeyondTrait", RES.ScholarOfTheGreatBeyondTraitName_info,
+                RES.ScholarOfTheGreatBeyondTraitDescription_info,
                 "0896fea4f7ca4635aa4e5338a673610d",
                 StatType.SkillKnowledgeWorld));
 
