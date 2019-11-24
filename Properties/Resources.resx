@@ -2132,6 +2132,9 @@ Benefit: Whenever you use healing energy, you gain a +1 trait bonus to its save 
   <data name="SafeCuringFeatureName_info" xml:space="preserve">
     <value>Safe Curing</value>
   </data>
+  <data name="SavingThrowNone_info" xml:space="preserve">
+    <value>None</value>
+  </data>
   <data name="ScholarOfTheGreatBeyondTraitDescription_info" xml:space="preserve">
     <value>Your greatest interests as a child did not lie with current events or the mundane—you have always felt out of place, as if you were born in the wrong era. You take to philosophical discussions of the Great Beyond and of historical events with ease.</value>
   </data>
@@ -2208,6 +2211,9 @@ Special: A magus can select this magus arcana more than once.</value>
   </data>
   <data name="SpellBlendingFeatureTwoSpellProgression_info" xml:space="preserve">
     <value>{0} (two spells)</value>
+  </data>
+  <data name="RoundsPerLevel_info" xml:space="preserve">
+    <value>{0} round/level</value>
   </data>
   <data name="SpellPerfectionFeatureDescription_info" xml:space="preserve">
     <value>Pick one spell which you have the ability to cast. Whenever you cast that spell you may apply any one metamagic feat you have to that spell without affecting its level or casting time, as long as the total modified level of the spell does not use a spell slot above 9th level. In addition, if you have other feats which allow you to apply a set numerical bonus to any aspect of this spell (such as Spell Focus, Spell Penetration, Weapon Focus [ray], and so on), double the bonus granted by that feat when applied to this spell.</value>
@@ -2524,8 +2530,5 @@ Benefit: You gain a +1 trait bonus on Reflex saves.</value>
   </data>
   <data name="YouthfulMischiefTraitName_info" xml:space="preserve">
     <value>Youthful Mischief (Elf)</value>
-  </data>
-  <data name="_Empty[1]" xml:space="preserve">
-    <value></value>
   </data>
 </root>

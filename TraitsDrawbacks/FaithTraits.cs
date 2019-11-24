@@ -101,12 +101,7 @@ namespace EldritchArcana
                 RES.PlanarSavantTraitDescription_info,
                 "2e4dcecc32e148cbaf0fb3c643249cbf",
                 Helpers.NiceIcons(19),
-                FeatureGroup.None, Helpers.Create<ReplaceBaseStatForStatTypeLogic>(x =>
-                {
-                    x.StatTypeToReplaceBastStatFor = StatType.SkillKnowledgeArcana;
-                    x.NewBaseStatType = StatType.Wisdom;
-                })
-                );
+                FeatureGroup.None);
 
             var planarOptions = new List<BlueprintFeature>(){
                 Helpers.CreateFeature("PlanarSavantTraitArcana", RES.PlanarSavantTraitArcanaName_info,
@@ -241,8 +236,8 @@ namespace EldritchArcana
                 "0896fea4f7ca4635aa4e5338a673610d",
                 StatType.SkillKnowledgeWorld));
 
+            choices.Add(UndoSelection.Feature.Value);
             // TODO: Stalwart of the Society
-
             faithTraits.SetFeatures(choices);
             return faithTraits;
         }

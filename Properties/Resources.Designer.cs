@@ -61,15 +61,6 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似  的本地化字符串。
-        /// </summary>
-        internal static string _Empty_1_ {
-            get {
-                return ResourceManager.GetString("_Empty[1]", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查找类似 Choose one of your revelations that has a number of uses per day. You gain 1 additional use per day of that revelation.
         ///Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new revelation.  的本地化字符串。
         /// </summary>
@@ -5626,6 +5617,15 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 {0} round/level 的本地化字符串。
+        /// </summary>
+        internal static string RoundsPerLevel_info {
+            get {
+                return ResourceManager.GetString("RoundsPerLevel_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Your birth was particularly painful and difficult for your mother, who needed potent divine magic to ensure that you survived (your mother may or may not have survived). In any event, that magic infused you from an early age, and you now use divine energy with greater ease than most.
         ///Benefit: Whenever you use healing energy, you gain a +1 trait bonus to its save DC vs undead. 的本地化字符串。
         /// </summary>
@@ -5659,6 +5659,15 @@ namespace EldritchArcana.Properties {
         internal static string SafeCuringFeatureName_info {
             get {
                 return ResourceManager.GetString("SafeCuringFeatureName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 None 的本地化字符串。
+        /// </summary>
+        internal static string SavingThrowNone_info {
+            get {
+                return ResourceManager.GetString("SavingThrowNone_info", resourceCulture);
             }
         }
         

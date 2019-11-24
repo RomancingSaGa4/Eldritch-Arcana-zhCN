@@ -115,7 +115,6 @@ namespace EldritchArcana
                     })
                   ));
 
-
             choices.Add(UndoSelection.Feature.Value);
             magicTraits.SetFeatures(choices);
             return magicTraits;

@@ -139,6 +139,7 @@ namespace EldritchArcana
                 "c6dbc457c5de40dbb4cb9fe4d7706cd9",
                 StatType.SkillPersuasion));
 
+            choices.Add(UndoSelection.Feature.Value);
             combatTraits.SetFeatures(choices);
             return combatTraits;
         }

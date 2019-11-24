@@ -347,9 +347,9 @@ namespace EldritchArcana
             spell.Range = AbilityRange.Personal;
             spell.CanTargetSelf = true;
             // TODO: Figure out how to get this text, maybe copy from another spell?
-            spell.LocalizedDuration = Helpers.CreateString("Spell.Duration.RoundsPerLevel", "1 round/level");
+            spell.LocalizedDuration = Helpers.CreateString("Spell.Duration.RoundsPerLevel", String.Format(RES.RoundsPerLevel_info, "1"));
             // TODO: Figure out how to hide this for personal spells.
-            spell.LocalizedSavingThrow = Helpers.CreateString("Spell.SavingThrow.None", "None");
+            spell.LocalizedSavingThrow = Helpers.CreateString("Spell.SavingThrow.None", RES.SavingThrowNone_info);
             spell.name = "EmergencyForceSphere";
             spell.SetNameDescriptionIcon(RES.EmergencyForceSphereSpells_info,
                 RES.EmergencyForceSphereBuffDescription_info,

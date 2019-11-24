@@ -352,6 +352,7 @@ namespace EldritchArcana
                 Helpers.Create<AttackBonusAgainstFactOwner>(a => { a.Bonus = -4; a.CheckedFact = feyfeature; }),
                 Helpers.Create<SavingThrowBonusAgainstDescriptor>(f => { f.Bonus = -2; f.SpellDescriptor = SpellDescriptor.Fear; })));
 
+            choices.Add(UndoSelection.Feature.Value);
             PhysiqueDrawbacks.SetFeatures(choices);
             return PhysiqueDrawbacks;
         }

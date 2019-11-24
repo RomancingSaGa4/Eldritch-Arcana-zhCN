@@ -256,7 +256,6 @@ namespace EldritchArcana
             debuff2.AddComponents(components);
             ShadowSensitivity.ShadowBuff = debuff2;
 
-
             x++;
             choices.Add(Helpers.CreateFeature("SleepyDrawback", "Sleepy",
                  "You must sleep or rest for at least 8 hours each night to get the benefits of a full night’s rest." +
@@ -277,10 +276,10 @@ namespace EldritchArcana
                  Helpers.CreateAddStatBonus(StatType.AdditionalDamage, 2, ModifierDescriptor.Sacred)
                  ));
 
-            
-
             Fraud.SetFeatures(hoi);
             choices.Add(Fraud);
+
+            choices.Add(UndoSelection.Feature.Value);
             EmotionDrawbacks.SetFeatures(choices);
             return EmotionDrawbacks;
         }

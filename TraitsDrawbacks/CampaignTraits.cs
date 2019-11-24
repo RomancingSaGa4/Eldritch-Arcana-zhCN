@@ -638,6 +638,7 @@ namespace EldritchArcana
                 //Helpers.Create<WeaponAttackAndCombatManeuverBonus>(a => { a.WeaponType = dagger; a.AttackBonus = 1; a.Descriptor = ModifierDescriptor.Trait; }),
                 Helpers.Create<WeaponAttackAndCombatManeuverBonus>(a => { a.WeaponType = longsword; a.AttackBonus = 1; a.Descriptor = ModifierDescriptor.Trait; })));
 
+            choices.Add(UndoSelection.Feature.Value);
             campaignTraits.SetFeatures(choices);
             return campaignTraits;
         }

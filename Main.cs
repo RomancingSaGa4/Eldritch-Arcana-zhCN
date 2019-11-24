@@ -75,7 +75,7 @@ namespace EldritchArcana
                 SafeLoad(PrestigiousSpellcaster.Load, RES.PrestigiousSpellcasterFeatureName_info);
 
                 // Note: needs to run after we create Favored Prestige Class above.
-                //SafeLoad(WarpriestClass.Load, "Arcane Savant");
+                //SafeLoad(ArcaneSavantClass.Load, "Arcane Savant");
 
                 //SafeLoad(WarpriestClass.Load, "warpriest");                
                 //SafeLoad(ArcanistClass.Load, "Arcanist");

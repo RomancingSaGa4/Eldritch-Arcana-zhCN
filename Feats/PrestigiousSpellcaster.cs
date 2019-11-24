@@ -44,6 +44,9 @@ namespace EldritchArcana
             dragonDiscipleClass = Helpers.GetClass(dragonDiscipleId);
             eldritchKnightClass = Helpers.GetClass(eldritchKnightId);
             // NOTE: this order must match the order used in the feats.
+            // 不知道为啥GetComponent<SkipLevelsForSpellProgression>()拿出来的没有奥法骑士，只有龙脉
+            // 临时措施，奥法骑士按顺序追加在最前，不match the order used in the feats会bug显示为空，按照看后续作者修正了
+            prestigiousSpellcasterClasses.Append(eldritchKnightClass);
             prestigiousSpellcasterClasses = Helpers.prestigeClassesSkipLevels.ToArray();
             // prestigiousSpellcasterClasses = new BlueprintCharacterClass[] { eldritchKnightClass, dragonDiscipleClass };
 
@@ -56,9 +59,10 @@ namespace EldritchArcana
                 "30e9a3fcdb0446aa87f45d0f50b3b3fc",
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/prestigious_spellcaster.png"),
                 FeatureGroup.Feat);
-            
-            //prestigiousSpell.SetFeatures(
-            //    CreatePrestigiousSpellcaster(eldritchKnightClass, "dc3ab8d0484467a4787979d93114ebc3"  ),//*EldritchKnightSpellbookSelection
+
+            // 同上，同样处理
+            prestigiousSpell.SetFeatures(
+                CreatePrestigiousSpellcaster(eldritchKnightClass, "dc3ab8d0484467a4787979d93114ebc3")); //*EldritchKnightSpellbookSelection
             //    CreatePrestigiousSpellcaster(dragonDiscipleClass, "8c1ba14c0b6dcdb439c56341385ee474"  ));//*DragonDiscipleSpellbookSelection
             //start
             foreach (BlueprintCharacterClass c in prestigiousSpellcasterClasses)
