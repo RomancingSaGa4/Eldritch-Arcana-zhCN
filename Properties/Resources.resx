@@ -1449,12 +1449,34 @@ Class skills: {0}, {1}</value>
   <data name="MysteryHeavensName_info" xml:space="preserve">
     <value>Heavens Mystery</value>
   </data>
+  <data name="MysteryTimeAgingTouchDescription_info" xml:space="preserve">
+    <value>Your touch ages living creatures and objects. As a melee touch attack, you can deal 1 point of Strength damage for every two oracle levels you possess to living creatures. 
+Against objects or constructs, you can deal 1d6 points of damage per oracle level. You can use this ability once per day, plus one additional time per day for every five oracle levels you possess.</value>
+  </data>
+  <data name="MysteryTimeAgingTouchName_info" xml:space="preserve">
+    <value>Aging Touch</value>
+  </data>
   <data name="MysteryTimeDescription_info" xml:space="preserve">
     <value>Class skills: {0}, {1}
 An oracle with the time mystery can choose from any of the following revelations:</value>
   </data>
+  <data name="MysteryTimeEraseDescription_info" xml:space="preserve">
+    <value>As a melee touch attack, you can temporarily remove a creature from time altogether. The target creature must make a Fortitude save or vanish completely for a number of rounds equal to 1/2 your oracle level (minimum 1 round). No magic or divinations can detect the creature during this time, as it exists outside of time and space—in effect, the creature ceases to exist for the duration of this ability. At the end of the duration, the creature reappears unharmed in the space it last occupied (or the nearest possible space, if the original space is now occupied). You can use this ability once per day, plus one additional time per day at 11th level.</value>
+  </data>
+  <data name="MysteryTimeEraseName_info" xml:space="preserve">
+    <value>Erase From Time</value>
+  </data>
+  <data name="MysteryTimeKnowledgeOfTheAgesDescription_info" xml:space="preserve">
+    <value>You can search through time to recall some bit of forgotten lore or information. If this ability is active, you automatically retry any Knowledge skill check you fail, gaining an insight bonus on the check equal to your Charisma modifier. You can use this ability a number times per day equal to your Charisma modifier.</value>
+  </data>
+  <data name="MysteryTimeKnowledgeOfTheAgesName_info" xml:space="preserve">
+    <value>Knowledge of the Ages</value>
+  </data>
   <data name="MysteryTimeName_info" xml:space="preserve">
     <value>Time Mystery</value>
+  </data>
+  <data name="MysteryTimeRevelationName_info" xml:space="preserve">
+    <value>Time Revelation</value>
   </data>
   <data name="NatureWardDrawbackDescription_info" xml:space="preserve">
     <value>You look scary. Animals see you as a predator and do not willingly approach within 30 feet of you.
@@ -2119,6 +2141,9 @@ Benefit: If you are struck by a melee weapon you can try to convert some of that
   <data name="RostlanderTraitName_info" xml:space="preserve">
     <value>Rostlander</value>
   </data>
+  <data name="RoundsPerLevel_info" xml:space="preserve">
+    <value>{0} round/level</value>
+  </data>
   <data name="SacredConduitTraitDescription_info" xml:space="preserve">
     <value>Your birth was particularly painful and difficult for your mother, who needed potent divine magic to ensure that you survived (your mother may or may not have survived). In any event, that magic infused you from an early age, and you now use divine energy with greater ease than most.
 Benefit: Whenever you use healing energy, you gain a +1 trait bonus to its save DC vs undead.</value>
@@ -2211,9 +2236,6 @@ Special: A magus can select this magus arcana more than once.</value>
   </data>
   <data name="SpellBlendingFeatureTwoSpellProgression_info" xml:space="preserve">
     <value>{0} (two spells)</value>
-  </data>
-  <data name="RoundsPerLevel_info" xml:space="preserve">
-    <value>{0} round/level</value>
   </data>
   <data name="SpellPerfectionFeatureDescription_info" xml:space="preserve">
     <value>Pick one spell which you have the ability to cast. Whenever you cast that spell you may apply any one metamagic feat you have to that spell without affecting its level or casting time, as long as the total modified level of the spell does not use a spell slot above 9th level. In addition, if you have other feats which allow you to apply a set numerical bonus to any aspect of this spell (such as Spell Focus, Spell Penetration, Weapon Focus [ray], and so on), double the bonus granted by that feat when applied to this spell.</value>

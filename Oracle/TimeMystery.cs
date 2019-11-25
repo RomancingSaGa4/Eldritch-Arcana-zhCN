@@ -125,7 +125,7 @@ namespace EldritchArcana
             var finalRevelation = CreateFinalRevelation();
             mystery.LevelEntries = new LevelEntry[] { Helpers.LevelEntry(20, finalRevelation) };
 
-            var revelation = Helpers.CreateFeatureSelection("MysteryTimeRevelation", "Time Revelation",
+            var revelation = Helpers.CreateFeatureSelection("MysteryTimeRevelation", RES.MysteryTimeRevelationName_info,
                 mystery.Description, "d9a38bc21fd6441094e4a48de1aa4fad", null, FeatureGroup.None,
                 mystery.PrerequisiteFeature());
             revelation.Mode = SelectionMode.OnlyNew;
@@ -143,9 +143,8 @@ namespace EldritchArcana
             var constructType = library.Get<BlueprintFeature>("fd389783027d63343b4a5634bd81645f");
             var undeadType = library.Get<BlueprintFeature>("734a29b693e9ec346ba2951b27987e33");
 
-            var ability = Helpers.CreateAbility($"{name}Ability", "Aging Touch",
-                "Your touch ages living creatures and objects. As a melee touch attack, you can deal 1 point of Strength damage for every two oracle levels you possess to living creatures. " +
-                "Against objects or constructs, you can deal 1d6 points of damage per oracle level. You can use this ability once per day, plus one additional time per day for every five oracle levels you possess.",
+            var ability = Helpers.CreateAbility($"{name}Ability", RES.MysteryTimeAgingTouchName_info,
+                RES.MysteryTimeAgingTouchDescription_info,
                 "15b84f000f6449abb34f52c093957389",
                 Helpers.GetIcon("5bf3315ce1ed4d94e8805706820ef64d"), // touch of fatigue
                 AbilityType.Supernatural, CommandType.Standard, AbilityRange.Touch,
@@ -178,16 +177,16 @@ namespace EldritchArcana
         static BlueprintFeature CreateEraseFromTime()
         {
             var name = "MysteryTimeErase";
-            var displayName = "Erase From Time";
-            var description = "As a melee touch attack, you can temporarily remove a creature from time altogether. The target creature must make a Fortitude save or vanish completely for a number of rounds equal to 1/2 your oracle level (minimum 1 round). " +
-                "No magic or divinations can detect the creature during this time, as it exists outside of time and space—in effect, the creature ceases to exist for the duration of this ability. " +
-                "At the end of the duration, the creature reappears unharmed in the space it last occupied (or the nearest possible space, if the original space is now occupied). You can use this ability once per day, plus one additional time per day at 11th level.";
+            //var displayName = "Erase From Time";
+            //var description = "As a melee touch attack, you can temporarily remove a creature from time altogether. The target creature must make a Fortitude save or vanish completely for a number of rounds equal to 1/2 your oracle level (minimum 1 round). " +
+            //    "No magic or divinations can detect the creature during this time, as it exists outside of time and space—in effect, the creature ceases to exist for the duration of this ability. " +
+            //    "At the end of the duration, the creature reappears unharmed in the space it last occupied (or the nearest possible space, if the original space is now occupied). You can use this ability once per day, plus one additional time per day at 11th level.";
             var icon = Helpers.GetIcon("f001c73999fb5a543a199f890108d936"); // vanish, TODO: better icon.
 
             var resource = Helpers.CreateAbilityResource($"{name}Resource", "", "", "24ec4a772de14e65840e4848748e0d55", null);
             resource.SetIncreasedByLevelStartPlusDivStep(1, 11, 1, 11, 1, 0, 0, oracleArray);
 
-            var buff = Helpers.CreateBuff($"{name}Buff", displayName, description, "39572b0d463644bc83335850275e28a1", icon,
+            var buff = Helpers.CreateBuff($"{name}Buff", RES.MysteryTimeEraseName_info, RES.MysteryTimeEraseDescription_info, "39572b0d463644bc83335850275e28a1", icon,
                 null,
                 UnitCondition.CantAct.CreateAddCondition(),
                 UnitCondition.CantMove.CreateAddCondition(),
@@ -195,7 +194,7 @@ namespace EldritchArcana
                 Helpers.Create<Untargetable>(),
                 Helpers.Create<EraseFromTimeEffect>(e => e.MakeInvisible = true));
 
-            var ability = Helpers.CreateAbility($"{name}Ability", displayName, description,
+            var ability = Helpers.CreateAbility($"{name}Ability", RES.MysteryTimeEraseName_info, RES.MysteryTimeEraseDescription_info,
                 "b04b9fb50e8e4e71a614773ab73e1d07", icon,
                 AbilityType.Supernatural, CommandType.Standard, AbilityRange.Touch,
                 "", "Fortitude negates",
@@ -210,7 +209,7 @@ namespace EldritchArcana
             ability.CanTargetFriends = true;
             ability.EffectOnEnemy = AbilityEffectOnUnit.Harmful;
 
-            var feat = Helpers.CreateFeature(name, displayName, description, "54a50c9b626a434eb56817e7503866f3",
+            var feat = Helpers.CreateFeature(name, RES.MysteryTimeEraseName_info, RES.MysteryTimeEraseDescription_info, "54a50c9b626a434eb56817e7503866f3",
                 ability.Icon, FeatureGroup.None,
                 resource.CreateAddAbilityResource(),
                 ability.CreateTouchSpellCast(resource).CreateAddFact());
@@ -219,8 +218,8 @@ namespace EldritchArcana
 
         static BlueprintFeature CreateKnowledgeOfTheAges()
         {
-            var feat = Helpers.CreateFeature("MysteryTimeKnowledgeOfTheAges", "Knowledge of the Ages",
-                "You can search through time to recall some bit of forgotten lore or information. If this ability is active, you automatically retry any Knowledge skill check you fail, gaining an insight bonus on the check equal to your Charisma modifier. You can use this ability a number times per day equal to your Charisma modifier.",
+            var feat = Helpers.CreateFeature("MysteryTimeKnowledgeOfTheAges", RES.MysteryTimeKnowledgeOfTheAgesName_info,
+                RES.MysteryTimeKnowledgeOfTheAgesDescription_info,
                 "4b2c7a1b5cd74658a88283c02fa0bb3e",
                 Helpers.GetIcon("3adf9274a210b164cb68f472dc1e4544"), // human skilled
                 FeatureGroup.None);

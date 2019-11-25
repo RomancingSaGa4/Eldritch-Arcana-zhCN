@@ -307,7 +307,7 @@
     <value>野兽蛮力</value>
   </data>
   <data name="BloodlineOrcTouchOfRageBuffDescription_info" xml:space="preserve">
-    <value>自1级起，你能以一个标准动作触摸一个生物，使该生物在攻击、伤害和意志豁免检定上获得相当于你的术士等级1/2的加值（至少为1），持续1轮。你每天可以多次使用这个能力，次数为“魅力调整值+3”。</value>
+    <value>自1级起，你能以一个标准动作触摸一个生物，使该生物在攻击、伤害和意志豁免检定上获得相当于你的术士等级1/2的加值（至少为1），持续1轮。你每天可以多次使用这个能力，次数等于“魅力调整值+3”。</value>
   </data>
   <data name="BloodlineOrcTouchOfRageBuffName_info" xml:space="preserve">
     <value>狂暴之触</value>
@@ -469,7 +469,7 @@
     <value>延迟爆裂火球</value>
   </data>
   <data name="DelayedBlastFireballDelayRoundsDescription_info" xml:space="preserve">
-    <value>至多5轮；参见说明</value>
+    <value>至多5轮；见正文</value>
   </data>
   <data name="DelaySpellName_info" xml:space="preserve">
     <value>{0} （{1}轮）</value>
@@ -1450,12 +1450,34 @@
   <data name="MysteryHeavensName_info" xml:space="preserve">
     <value>苍天秘示域</value>
   </data>
+  <data name="MysteryTimeAgingTouchDescription_info" xml:space="preserve">
+    <value>你的触摸使生物的光阴飞速流逝。你能以一次近战接触攻击对生物造成每2个先知等级1点力量属性伤害。
+对于其他对象或构装体，你造成每2个先知等级1d6点伤害。每天你可以使用此能力1次，并在之后每5级增加1次使用次数。</value>
+  </data>
+  <data name="MysteryTimeAgingTouchName_info" xml:space="preserve">
+    <value>光阴之触</value>
+  </data>
   <data name="MysteryTimeDescription_info" xml:space="preserve">
     <value>职业技能：{0}，{1}
 选择了时光秘示域的先知可以获得以下启示：</value>
   </data>
+  <data name="MysteryTimeEraseDescription_info" xml:space="preserve">
+    <value>你能以一次近战接触攻击暂时将一个生物从时间里抹除。对象生物必须通过强韧豁免检定，否则将在你先知等级1/2的轮数（最小为1）内完全消失。在这段时间内，没有任何魔法或预言可以检测到该生物，因为它存在于时间和空间之外——实际上，该生物在此能力持续时间内不再存在。在持续时间结束时，该生物在其最后所在的空间处无伤出现（如果原来的空间已被占据，则为最近的可能空间）。你每天可以使用此启示1次，在11级时可以再额外获得1次使用次数。</value>
+  </data>
+  <data name="MysteryTimeEraseName_info" xml:space="preserve">
+    <value>时光抹除</value>
+  </data>
+  <data name="MysteryTimeKnowledgeOfTheAgesDescription_info" xml:space="preserve">
+    <value>你可以从时光长河中检索一些被遗忘的知识或信息。如果此能力被激活，你能在知识技能的检定失败时自动重试一次，同时在再次检定中将你的魅力调整值作为洞察加值附加上去。你每天可以多次使用这个能力，次数等于魅力修正值。</value>
+  </data>
+  <data name="MysteryTimeKnowledgeOfTheAgesName_info" xml:space="preserve">
+    <value>光阴之智</value>
+  </data>
   <data name="MysteryTimeName_info" xml:space="preserve">
     <value>时光秘示域</value>
+  </data>
+  <data name="MysteryTimeRevelationName_info" xml:space="preserve">
+    <value>时光启示</value>
   </data>
   <data name="NatureWardDrawbackDescription_info" xml:space="preserve">
     <value>你容貌可怖。动物们将你看作天敌，不会靠近你身周30英尺之内。
@@ -1500,7 +1522,7 @@
     <value>贵种</value>
   </data>
   <data name="NobleFamilyGaressTraitDescription_info" xml:space="preserve">
-    <value>家族格言：“如山脉一样强大”
+    <value><b>家族格言：“如山脉一样强大”</b>
 盖雷斯家族聚居于布雷沃的西部，戈鲁什金山脉之麓。这个家族的族长是郝兰·盖雷斯爵士，他是一名鳏夫。他收养了托瓦尔·戈尔卡，这名矮人是戈尔卡矮人要塞的氏族族长之子。在戈尔卡矮人消失之前，盖雷斯家族一直和他们保持着非常良好的关系。这个家族的成员负责加工矮人们开采的金属。家族在戈鲁什金山脉之麓建有数个要塞城市，如高穴和灰港。
 效益：你的移动速度上升5英尺。并且你不受非魔法的困难地形的影响。</value>
   </data>
@@ -1508,7 +1530,7 @@
     <value>盖雷斯家族</value>
   </data>
   <data name="NobleFamilyKhavortorovTraitDescription_info" xml:space="preserve">
-    <value>家族格言：“我们永不驯服”
+    <value><b>家族格言：“我们永不驯服”</b>
 哈沃托罗夫家族以暴脾气闻名，也是一个代代骑士辈出的家族。
 自从其共主，罗嘉维亚家族失踪之后，他们更加致力于将自己的家族推上布雷沃大贵族的位置。
 哈沃托罗夫家族的纹章是一条胸口嵌入一顶头盔的白龙。许多哈沃托罗夫族人都精于使用阿尔多瑞决斗剑。
@@ -1566,7 +1588,7 @@
     <value>额外{0}</value>
   </data>
   <data name="NobleFamilyLebedaTraitDescription_info" xml:space="preserve">
-    <value>家族格言：“优雅地成功”
+    <value><b>家族格言：“优雅地成功”</b>
 勒贝达家族聚居于布雷沃雷卡尔湖的西南方，掌控着那里的平原以及湖上航运的绝大部分份额。人们将这个布雷沃贵族家族视为整个罗斯特兰的代表，他们拥有非常显著的塔尔多血统，对美好事物的品味以及对剑斗的热爱。
 效益：你在知识（神秘）检定上获得+1背景加值，并且可以选择一项可用技能的资源。该技能的使用次数增加至少1次。（如你无法使用列表中的技能则无效）</value>
   </data>
@@ -1574,7 +1596,7 @@
     <value>勒贝达家族</value>
   </data>
   <data name="NobleFamilyLodovkaTraitDescription_info" xml:space="preserve">
-    <value>家族格言：“水域，我们的领域”
+    <value><b>家族格言：“水域，我们的领域”</b>
 洛多夫卡家族是一支布雷沃的贵族家族，总部位于缥缈湖的阿库本岛上。他们是湖上的一支传统势力。在寇泽科·洛多夫卡爵士的带领下，他们的舰队规模和在湖区的影响力都在稳固提升。这支家族舰队的主要工作是捕捞鱼和淡水蟹。洛多夫卡家族的纹章是一只爬出水面朝向一座灰色高塔/要塞的绿色螃蟹。
 效益：你在运动检定上获得+2背景加值。如果你拥有施法能力，雪球术将加入你的已知法术列表，即便你原本无法学会该法术。</value>
   </data>
@@ -1582,7 +1604,7 @@
     <value>洛多夫卡家族</value>
   </data>
   <data name="NobleFamilyNoneTraitDescription_info" xml:space="preserve">
-    <value>家族格言：“以耐力克服一切”
+    <value><b>家族格言：“以耐力克服一切”</b>
 梅德伟耶德家族是一支布雷沃的贵族家族，掌控着东部包含冰凇峰和格隆兹森林在内的边境地区。他们一直维持着崇敬自然的传统，也就是所谓的“古老生活方式”。这支总部耸立于巨石之上的家族由古雷夫・梅德伟耶德爵士领导。该地区的居民以畜牧山羊和绵羊为主，也会于林中狩猎或者在这片近乎寸草不生的不毛之地上耕作。该地区的信仰对象主要是艾若斯提，但也有传闻有祭拜拉玛什图的秘密神龛存在。梅德伟耶德家族的家族纹章是红色背景上一只头生黑色鹿角的黑熊。
 效益：你每天可以额外使用4次圣疗，并且在对抗精类的胁迫效果时豁免检定获得+1背景加值。</value>
   </data>
@@ -1590,7 +1612,7 @@
     <value>梅德伟耶德家族</value>
   </data>
   <data name="NobleFamilyOrlovskyTraitDescription_info" xml:space="preserve">
-    <value>家族格言：“高高在上”
+    <value><b>家族格言：“高高在上”</b>
 奥洛夫斯基家族在维什卡山顶的鹰栖城掌控着布雷沃的东北部地区。他们向来对于琐碎的政治斗争不屑一顾。作为现在已经消失的罗嘉维亚家族坚实的盟友，他们现在有些蠢蠢欲动。如果波尔·奥洛夫斯基爵士选择站出来反叛诺雷奇·瑟托瓦，他们可以选择先与盖雷斯家族和梅德伟耶德家族结盟。三大家族联手，将破坏瑟托瓦家族的两大重要基石——冰港和新斯特文之间的补给和运输路线。
 效益：你在战技防御上获得+1背景加值。你可以在沟通、运动和隐匿中选择一项，在该技能检定上获得+1背景加值，并且该技能成为你的职业技能。</value>
   </data>
@@ -1598,7 +1620,7 @@
     <value>奥洛夫斯基家族</value>
   </data>
   <data name="NobleFamilyRogarviaTraitDescription_info" xml:space="preserve">
-    <value>家族格言：“以剑与火焰”
+    <value><b>家族格言：“以剑与火焰”</b>
 作为布雷沃过去的统治者，罗嘉维亚家族是由征服者科洛尔和尼科斯・瑟托瓦的女儿——麦尔娜・罗嘉维亚的后人所建立。这个家族的绝大多数成员都在安布萨朗纪年4699年神秘消失了，这一事件被称为“匿迹”。他们的失踪并未引发布雷沃人民的多大哀悼，王室的效忠者们则呼吁进行调查，而非盲目效忠诺雷奇·瑟托瓦——后者宣称自己是国王。
 罗嘉维亚一族非常强硬，在统治期间竭尽所能地地将布雷沃各个行事风格大相径庭的家族和派系捏合在一起。家族的纹章是一条双头红龙，一个头喷火，另一个头挥剑。
 缺陷：你在对布雷沃贵族使用沟通技能时检定受到-4减值（他们恨你）。
@@ -1608,7 +1630,7 @@
     <value>罗嘉维亚家族</value>
   </data>
   <data name="NobleFamilySurtovaDescriptionName_info" xml:space="preserve">
-    <value>家族格言：“我们所做的都是正确的”
+    <value><b>家族格言：“我们所做的都是正确的”</b>
 瑟托瓦家族是布雷沃当前的统治者，也是布雷沃最古老、最具影响力的一个家族。他们最初的领地位于缥缈湖湖畔，伊西亚北部的冰港以及周边地区。他们对王位的宣称权可以追溯到尼科斯・瑟托瓦将自己的女儿——麦尔娜・罗嘉维亚嫁给征服者科洛尔。这段联姻使得家族成为了罗嘉维亚家族的坚定盟友，并得以保存自己的实力。安布萨朗纪年4699年，在“匿迹”事件中，瑟托瓦家族利用其身居高位，迅速宣称瑟托瓦将成为王国的摄政王，直至罗嘉维亚族人回归为止。
 瑟托瓦家族成员以谨慎、狡诈的外交家所闻名于世。在征服者科洛尔入侵之前，瑟托瓦族人曾经是这里的水盗和劫掠者。时至今日，这个家族依然与该地区的水盗和匪帮有着千丝万缕的联系，这些强盗势力中许多都与瑟托瓦家族有着亲属关系。瓦利・都伯斯船长，缥缈湖流域活跃的水盗势力中最有名的一支，就传闻和瑟托瓦家族关系密切，尽管他隐藏了自己的血统。他们的家族格言“我们所做的都是正确的”，在某种程度上反应了他们对布雷沃统治权的确信，一如他们曾作为一群水盗之王统治伊西亚时一样。瑟托瓦家族的纹章背景下部是蓝色海洋，上部是黑夜繁星，背景之上是一艘灰色航船。
 效益：你在面对被夹击目标时获得+2伤害背景加值。</value>
@@ -1617,11 +1639,11 @@
     <value>瑟托瓦家族</value>
   </data>
   <data name="OccultBargainDrawbackDescription_info" xml:space="preserve">
-    <value>你从一个坚持它的身份是秘密的来源获得魔法力量。
+    <value>你从一个坚持祂的身份是秘密的来源获得魔法力量。
 缺陷：你在专注技能检定上受到-1减值。并且当面对拉玛什图信徒时你的所有AC和所有豁免都受到-2减值。</value>
   </data>
   <data name="OccultBargainDrawbackName_info" xml:space="preserve">
-    <value>神秘交易</value>
+    <value>诡秘交易</value>
   </data>
   <data name="OppositionResearchFeatureDescription_info" xml:space="preserve">
     <value>选择一个你的对立学派；现在你准备这个学派的法术只需要一个对应等级的法术位而非两个，并且你在制造此学派物品时不再承受-4豁免检定减值。</value>
@@ -1862,7 +1884,7 @@
     <value>奖励语言</value>
   </data>
   <data name="OracleCurseTonguesName_info" xml:space="preserve">
-    <value>噫语</value>
+    <value>呓语</value>
   </data>
   <data name="OracleCurseWastingDescription_info" xml:space="preserve">
     <value>你的躯体正处于缓慢的腐烂状态。
@@ -2525,7 +2547,7 @@
     <value>祈愿术</value>
   </data>
   <data name="YouthfulMischiefTraitDescription_info" xml:space="preserve">
-    <value>虽然你已经不做大脚板、斥候或者吟游诗人的生计很久了，但你依然还记得在危机来临时该如何应对。
+    <value>虽然你已经不做大脚板、斥候或者吟游诗人的营生很久了，但你依然还记得在危机来临时该如何应对。
 效益：你在进行反射豁免检定时获得+1背景加值。</value>
   </data>
   <data name="YouthfulMischiefTraitName_info" xml:space="preserve">

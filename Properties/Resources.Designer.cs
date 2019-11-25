@@ -3827,6 +3827,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Your touch ages living creatures and objects. As a melee touch attack, you can deal 1 point of Strength damage for every two oracle levels you possess to living creatures. 
+        ///Against objects or constructs, you can deal 1d6 points of damage per oracle level. You can use this ability once per day, plus one additional time per day for every five oracle levels you possess. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeAgingTouchDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeAgingTouchDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Aging Touch 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeAgingTouchName_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeAgingTouchName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Class skills: {0}, {1}
         ///An oracle with the time mystery can choose from any of the following revelations: 的本地化字符串。
         /// </summary>
@@ -3837,11 +3856,56 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 As a melee touch attack, you can temporarily remove a creature from time altogether. The target creature must make a Fortitude save or vanish completely for a number of rounds equal to 1/2 your oracle level (minimum 1 round). No magic or divinations can detect the creature during this time, as it exists outside of time and space—in effect, the creature ceases to exist for the duration of this ability. At the end of the duration, the creature reappears unharmed in the space it last occupied (or the nearest p [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeEraseDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeEraseDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Erase From Time 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeEraseName_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeEraseName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You can search through time to recall some bit of forgotten lore or information. If this ability is active, you automatically retry any Knowledge skill check you fail, gaining an insight bonus on the check equal to your Charisma modifier. You can use this ability a number times per day equal to your Charisma modifier. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeKnowledgeOfTheAgesDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeKnowledgeOfTheAgesDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Knowledge of the Ages 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeKnowledgeOfTheAgesName_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeKnowledgeOfTheAgesName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Time Mystery 的本地化字符串。
         /// </summary>
         internal static string MysteryTimeName_info {
             get {
                 return ResourceManager.GetString("MysteryTimeName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Time Revelation 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeRevelationName_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeRevelationName_info", resourceCulture);
             }
         }
         
