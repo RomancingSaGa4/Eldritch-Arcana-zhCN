@@ -44,11 +44,8 @@ namespace EldritchArcana
             dragonDiscipleClass = Helpers.GetClass(dragonDiscipleId);
             eldritchKnightClass = Helpers.GetClass(eldritchKnightId);
             // NOTE: this order must match the order used in the feats.
-            // 不知道为啥GetComponent<SkipLevelsForSpellProgression>()拿出来的没有奥法骑士，只有龙脉
-            // 临时措施，奥法骑士按顺序追加在最前，不match the order used in the feats会bug显示为空，按照看后续作者修正了
-            prestigiousSpellcasterClasses.Append(eldritchKnightClass);
-            prestigiousSpellcasterClasses = Helpers.prestigeClassesSkipLevels.ToArray();
-            // prestigiousSpellcasterClasses = new BlueprintCharacterClass[] { eldritchKnightClass, dragonDiscipleClass };
+            // prestigiousSpellcasterClasses = Helpers.prestigeClassesSkipLevels.ToArray();
+            prestigiousSpellcasterClasses = new BlueprintCharacterClass[] { eldritchKnightClass, dragonDiscipleClass };
 
             FixEldritchKnightPrereq();
 
@@ -60,44 +57,43 @@ namespace EldritchArcana
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/prestigious_spellcaster.png"),
                 FeatureGroup.Feat);
 
-            // 同上，同样处理
             prestigiousSpell.SetFeatures(
-                CreatePrestigiousSpellcaster(eldritchKnightClass, "dc3ab8d0484467a4787979d93114ebc3")); //*EldritchKnightSpellbookSelection
-            //    CreatePrestigiousSpellcaster(dragonDiscipleClass, "8c1ba14c0b6dcdb439c56341385ee474"  ));//*DragonDiscipleSpellbookSelection
+                CreatePrestigiousSpellcaster(eldritchKnightClass, "dc3ab8d0484467a4787979d93114ebc3"), //*EldritchKnightSpellbookSelection
+                CreatePrestigiousSpellcaster(dragonDiscipleClass, "8c1ba14c0b6dcdb439c56341385ee474"  ));//*DragonDiscipleSpellbookSelection
             //start
-            foreach (BlueprintCharacterClass c in prestigiousSpellcasterClasses)
-            {
-                var spellbookguid = "";
-                for (int i = 1; i < 11; i++)
-                {
-                    var entry = c.Progression.GetLevelEntry(i);
-                    foreach (BlueprintFeatureBase f in entry.Features)
-                    {
-                        if (f.name.ToUpper().Contains("SPELLBOOK"))
-                        {
-                            spellbookguid = f.AssetGuid;
-                            break;
-                        }
-                    }
-                    if (spellbookguid != "" && spellbookguid != null)
-                    {
-                        break;
-                    }
-                }
-                if (spellbookguid != "" && spellbookguid != null)
-                {
-                    try
-                    {
-                        var feat = CreatePrestigiousSpellcaster(c, spellbookguid);
-                        prestigiousSpell.SetFeatures(feat);
-                    }
-                    catch (System.Exception)
-                    {
-                        Log.Write("There was an issue with " + c.name + " unable to add to prestigious spellcaster");
-                    }
+            //foreach (blueprintcharacterclass c in prestigiousspellcasterclasses)
+            //{
+            //    var spellbookguid = "";
+            //    for (int i = 1; i < 11; i++)
+            //    {
+            //        var entry = c.progression.getlevelentry(i);
+            //        foreach (blueprintfeaturebase f in entry.features)
+            //        {
+            //            if (f.name.toupper().contains("spellbook"))
+            //            {
+            //                spellbookguid = f.assetguid;
+            //                break;
+            //            }
+            //        }
+            //        if (spellbookguid != "" && spellbookguid != null)
+            //        {
+            //            break;
+            //        }
+            //    }
+            //    if (spellbookguid != "" && spellbookguid != null)
+            //    {
+            //        try
+            //        {
+            //            var feat = createprestigiousspellcaster(c, spellbookguid);
+            //            prestigiousspell.setfeatures(feat);
+            //        }
+            //        catch (system.exception)
+            //        {
+            //            log.write("there was an issue with " + c.name + " unable to add to prestigious spellcaster");
+            //        }
 
-                }
-            }
+            //    }
+            //}
             //end
 
             var components = new List<BlueprintComponent>(prestigiousSpellcasterClasses.Select(
