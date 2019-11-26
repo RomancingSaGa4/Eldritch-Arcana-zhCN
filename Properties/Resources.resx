@@ -1466,17 +1466,59 @@ An oracle with the time mystery can choose from any of the following revelations
   <data name="MysteryTimeEraseName_info" xml:space="preserve">
     <value>Erase From Time</value>
   </data>
+  <data name="MysteryTimeFlickerDescription_info" xml:space="preserve">
+    <value>As a standard action, you can flicker in and out of time, gaining concealment (as the blur spell). You can use this ability for 1 minute per oracle level that you possess per day. This duration does not need to be consecutive, but it must be spent in 1-minute increments. At 7th level, each time you activate this ability, you can treat it as the displacement spell, though each round spent this way counts as 1 minute of your normal time flicker duration. You must be at least 3rd level to select this revelation.</value>
+  </data>
+  <data name="MysteryTimeFlickerName_info" xml:space="preserve">
+    <value>Time Flicker</value>
+  </data>
   <data name="MysteryTimeKnowledgeOfTheAgesDescription_info" xml:space="preserve">
     <value>You can search through time to recall some bit of forgotten lore or information. If this ability is active, you automatically retry any Knowledge skill check you fail, gaining an insight bonus on the check equal to your Charisma modifier. You can use this ability a number times per day equal to your Charisma modifier.</value>
   </data>
   <data name="MysteryTimeKnowledgeOfTheAgesName_info" xml:space="preserve">
     <value>Knowledge of the Ages</value>
   </data>
+  <data name="MysteryTimeMomentaryGlimpseDescription_info" xml:space="preserve">
+    <value>Once per day, you can gain a glimpse into your immediate future. On the round after you use this ability, you gain a +2 insight bonus on attack rolls, saving throws, skill checks and to your Armor Class until the start of your next turn. At 5th level, and every four levels thereafter, you can use this ability one additional time per day.</value>
+  </data>
+  <data name="MysteryTimeMomentaryGlimpseName_info" xml:space="preserve">
+    <value>Momentary Glimpse</value>
+  </data>
   <data name="MysteryTimeName_info" xml:space="preserve">
     <value>Time Mystery</value>
   </data>
   <data name="MysteryTimeRevelationName_info" xml:space="preserve">
     <value>Time Revelation</value>
+  </data>
+  <data name="MysteryTimeRewindAttackRoll_info" xml:space="preserve">
+    <value>Attack Rolls</value>
+  </data>
+  <data name="MysteryTimeRewindDescription_info" xml:space="preserve">
+    <value>Twice per day as an immediate action, this ability will automatically reroll any one d20 roll that failed. You can choose the type of rolls to anticipate (such as Attack Rolls, Saving Throws, Skill Checks, etc). You must take the result of the reroll, even if it’s worse than the original roll. You can use this ability twice per day, and an additional time per day at 9th level, and every two levels thereafter. You must be at least 7th level to select this revelation.</value>
+  </data>
+  <data name="MysteryTimeRewindIntiative_info" xml:space="preserve">
+    <value>Intiative</value>
+  </data>
+  <data name="MysteryTimeRewindManeuver_info" xml:space="preserve">
+    <value>Combat Maneuver</value>
+  </data>
+  <data name="MysteryTimeRewindName_info" xml:space="preserve">
+    <value>Rewind Time</value>
+  </data>
+  <data name="MysteryTimeRewindSavingThrow_info" xml:space="preserve">
+    <value>Saving Throw</value>
+  </data>
+  <data name="MysteryTimeRewindSkillCheck_info" xml:space="preserve">
+    <value>Skill Check</value>
+  </data>
+  <data name="MysteryTimeRewindSpellResistance_info" xml:space="preserve">
+    <value>Spell Resistance</value>
+  </data>
+  <data name="MysteryTimeSpeedOrSlowDescription_info" xml:space="preserve">
+    <value>As a standard action, you can speed up or slow down time, as either the haste or slow spell. You can use this ability once per day, plus one additional time per day at 12th level and 17th level. You must be at least 7th level before selecting this revelation.</value>
+  </data>
+  <data name="MysteryTimeSpeedOrSlowName_info" xml:space="preserve">
+    <value>Speed or Slow Time</value>
   </data>
   <data name="NatureWardDrawbackDescription_info" xml:space="preserve">
     <value>You look scary. Animals see you as a predator and do not willingly approach within 30 feet of you.

@@ -248,10 +248,8 @@ namespace EldritchArcana
         {
             // Note: for simplicity this gives all of the +2 bonuses for 1 round, instead of to 1 roll.
             // (It's still not a great ability in combat, due to the standard action requirement.)
-            var feat = Helpers.CreateFeature("MysteryTimeMomentaryGlimpse", "Momentary Glimpse",
-                "Once per day, you can gain a glimpse into your immediate future. " +
-                "On the round after you use this ability, you gain a +2 insight bonus on attack rolls, saving throws, skill checks and to your Armor Class until the start of your next turn. " +
-                "At 5th level, and every four levels thereafter, you can use this ability one additional time per day.",
+            var feat = Helpers.CreateFeature("MysteryTimeMomentaryGlimpse", RES.MysteryTimeMomentaryGlimpseName_info,
+                RES.MysteryTimeMomentaryGlimpseDescription_info,
                 "b192d167fd874508b78acdabc0850bfe",
                 Helpers.GetIcon("2483a523984f44944a7cf157b21bf79c"), // elven immunities
                 FeatureGroup.None);
@@ -298,12 +296,8 @@ namespace EldritchArcana
         {
             // Note: reworked slightly so you get toggles to select what to reroll.
             // Because you have to anticipate the need for a reroll (which is less useful) the uses per day are doubled.
-            var feat = Helpers.CreateFeature("MysteryTimeRewind", "Rewind Time",
-                "Once per day as an immediate action, this ability will automatically reroll any one d20 roll that failed. " +
-                "You can choose the type of rolls to anticipate (such as Attack Rolls, Saving Throws, Skill Checks, etc). " +
-                "You must take the result of the reroll, even if it’s worse than the original roll. " +
-                "You can use this ability twice per day, and an additional time per day at 9th level, and every two levels thereafter. " +
-                "You must be at least 7th level to select this revelation.",
+            var feat = Helpers.CreateFeature("MysteryTimeRewind", RES.MysteryTimeRewindName_info,
+                RES.MysteryTimeRewindDescription_info,
                 "1ae499fda64f4a2c990e04361cdf351e",
                 Helpers.GetIcon("576933720c440aa4d8d42b0c54b77e80"), // evasion
                 FeatureGroup.None);
@@ -322,18 +316,19 @@ namespace EldritchArcana
 
             feat.SetComponents(resource.CreateAddAbilityResource(),
                 oracle.PrerequisiteClassLevel(7),
-                CreateRewindTime(feat, resource, ids[0], RuleType.AttackRoll, "Attack Rolls").CreateAddFact(),
-                CreateRewindTime(feat, resource, ids[1], RuleType.Intiative, "Intiative").CreateAddFact(),
-                CreateRewindTime(feat, resource, ids[2], RuleType.Maneuver, "Combat Maneuver").CreateAddFact(),
-                CreateRewindTime(feat, resource, ids[3], RuleType.SavingThrow, "Saving Throw").CreateAddFact(),
-                CreateRewindTime(feat, resource, ids[4], RuleType.SkillCheck, "Skill Check").CreateAddFact(),
-                CreateRewindTime(feat, resource, ids[5], RuleType.SpellResistance, "Spell Resistance").CreateAddFact());
+                CreateRewindTime(feat, resource, ids[0], RuleType.AttackRoll, RES.MysteryTimeRewindAttackRoll_info).CreateAddFact(),
+                CreateRewindTime(feat, resource, ids[1], RuleType.Intiative, RES.MysteryTimeRewindIntiative_info).CreateAddFact(),
+                CreateRewindTime(feat, resource, ids[2], RuleType.Maneuver, RES.MysteryTimeRewindManeuver_info).CreateAddFact(),
+                CreateRewindTime(feat, resource, ids[3], RuleType.SavingThrow, RES.MysteryTimeRewindSavingThrow_info).CreateAddFact(),
+                CreateRewindTime(feat, resource, ids[4], RuleType.SkillCheck, RES.MysteryTimeRewindSkillCheck_info).CreateAddFact(),
+                CreateRewindTime(feat, resource, ids[5], RuleType.SpellResistance, RES.MysteryTimeRewindSpellResistance_info).CreateAddFact());
             return feat;
         }
 
         static BlueprintActivatableAbility CreateRewindTime(BlueprintFeature feat, BlueprintAbilityResource resource, String assetId, RuleType ruleType, String displayName)
         {
-            var buff = Helpers.CreateBuff($"{feat.name}{ruleType}Buff", $"{feat.Name} — {displayName}", feat.Description,
+            var buff = Helpers.CreateBuff($"{feat.name}{ruleType}Buff", 
+                String.Format(RES.TypeHyphenSubtype_info, feat.Name, displayName), feat.Description,
                 Helpers.MergeIds("a1dcc2e1a0884123a6fc85f831e033e2", assetId),
                 null, null,
                 Helpers.Create<ModifyD20AndSpendResource>(m =>
@@ -361,8 +356,8 @@ namespace EldritchArcana
             var haste = library.Get<BlueprintAbility>("486eaff58293f6441a5c2759c4872f98");
             var slow = library.Get<BlueprintAbility>("f492622e473d34747806bdb39356eb89");
 
-            var feat = Helpers.CreateFeature("MysteryTimeSpeedOrSlow", "Speed or Slow Time",
-                "As a standard action, you can speed up or slow down time, as either the haste or slow spell. You can use this ability once per day, plus one additional time per day at 12th level and 17th level. You must be at least 7th level before selecting this revelation.",
+            var feat = Helpers.CreateFeature("MysteryTimeSpeedOrSlow", RES.MysteryTimeSpeedOrSlowName_info,
+                RES.MysteryTimeSpeedOrSlowDescription_info,
                 "4df30dbc2ad147a995fce23e765b9726", haste.Icon, FeatureGroup.None);
             var resource = Helpers.CreateAbilityResource($"{feat.name}Resource", "", "", "3388b2b6812246ea801c0f4140192a66", null);
             resource.SetIncreasedByLevelStartPlusDivStep(1, 7, 1, 5, 1, 0, 0, oracleArray);
@@ -390,14 +385,14 @@ namespace EldritchArcana
             var displacement = library.Get<BlueprintAbility>("903092f6488f9ce45a80943923576ab3");
             var displacementBuff = library.Get<BlueprintBuff>("00402bae4442a854081264e498e7a833");
 
-            var feat = Helpers.CreateFeature("MysteryTimeFlicker", "Time Flicker",
-                "As a standard action, you can flicker in and out of time, gaining concealment (as the blur spell). You can use this ability for 1 minute per oracle level that you possess per day. This duration does not need to be consecutive, but it must be spent in 1-minute increments. At 7th level, each time you activate this ability, you can treat it as the displacement spell, though each round spent this way counts as 1 minute of your normal time flicker duration. You must be at least 3rd level to select this revelation.",
+            var feat = Helpers.CreateFeature("MysteryTimeFlicker", RES.MysteryTimeFlickerName_info,
+                RES.MysteryTimeFlickerDescription_info,
                 "76384613da7f419dbda62cf482343ef8", displacement.Icon, FeatureGroup.None);
             var resource = Helpers.CreateAbilityResource($"{feat.name}Resource", "", "", "c8fba597ff6545afa4b5567a663dc4eb", null);
             resource.SetIncreasedByLevel(0, 1, oracleArray);
 
-            var blurAbility = CreateAbilityForBuff(feat, resource, blurBuff, DurationRate.Minutes, " — " + blurBuff.Name);
-            var displacementAbility = CreateAbilityForBuff(feat, resource, displacementBuff, DurationRate.Rounds, " — " + displacement.Name);
+            var blurAbility = CreateAbilityForBuff(feat, resource, blurBuff, DurationRate.Minutes, String.Format(RES.TypeHyphenSubtype_info, "", blurBuff.Name));
+            var displacementAbility = CreateAbilityForBuff(feat, resource, displacementBuff, DurationRate.Rounds, String.Format(RES.TypeHyphenSubtype_info, "", displacement.Name));
 
             ExclusiveAbilityToggle.AddToAbilities(blurAbility, displacementAbility);
             feat.SetComponents(

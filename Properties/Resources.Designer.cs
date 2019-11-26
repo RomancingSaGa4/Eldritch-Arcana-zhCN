@@ -3874,6 +3874,24 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 As a standard action, you can flicker in and out of time, gaining concealment (as the blur spell). You can use this ability for 1 minute per oracle level that you possess per day. This duration does not need to be consecutive, but it must be spent in 1-minute increments. At 7th level, each time you activate this ability, you can treat it as the displacement spell, though each round spent this way counts as 1 minute of your normal time flicker duration. You must be at least 3rd level to select this revelatio [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeFlickerDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeFlickerDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Time Flicker 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeFlickerName_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeFlickerName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You can search through time to recall some bit of forgotten lore or information. If this ability is active, you automatically retry any Knowledge skill check you fail, gaining an insight bonus on the check equal to your Charisma modifier. You can use this ability a number times per day equal to your Charisma modifier. 的本地化字符串。
         /// </summary>
         internal static string MysteryTimeKnowledgeOfTheAgesDescription_info {
@@ -3892,6 +3910,24 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Once per day, you can gain a glimpse into your immediate future. On the round after you use this ability, you gain a +2 insight bonus on attack rolls, saving throws, skill checks and to your Armor Class until the start of your next turn. At 5th level, and every four levels thereafter, you can use this ability one additional time per day. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeMomentaryGlimpseDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeMomentaryGlimpseDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Momentary Glimpse 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeMomentaryGlimpseName_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeMomentaryGlimpseName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Time Mystery 的本地化字符串。
         /// </summary>
         internal static string MysteryTimeName_info {
@@ -3906,6 +3942,96 @@ namespace EldritchArcana.Properties {
         internal static string MysteryTimeRevelationName_info {
             get {
                 return ResourceManager.GetString("MysteryTimeRevelationName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Attack Rolls 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeRewindAttackRoll_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeRewindAttackRoll_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Twice per day as an immediate action, this ability will automatically reroll any one d20 roll that failed. You can choose the type of rolls to anticipate (such as Attack Rolls, Saving Throws, Skill Checks, etc). You must take the result of the reroll, even if it’s worse than the original roll. You can use this ability twice per day, and an additional time per day at 9th level, and every two levels thereafter. You must be at least 7th level to select this revelation. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeRewindDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeRewindDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Intiative 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeRewindIntiative_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeRewindIntiative_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Combat Maneuver 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeRewindManeuver_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeRewindManeuver_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Rewind Time 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeRewindName_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeRewindName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Saving Throw 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeRewindSavingThrow_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeRewindSavingThrow_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Skill Check 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeRewindSkillCheck_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeRewindSkillCheck_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Spell Resistance 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeRewindSpellResistance_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeRewindSpellResistance_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 As a standard action, you can speed up or slow down time, as either the haste or slow spell. You can use this ability once per day, plus one additional time per day at 12th level and 17th level. You must be at least 7th level before selecting this revelation. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeSpeedOrSlowDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeSpeedOrSlowDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Speed or Slow Time 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeSpeedOrSlowName_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeSpeedOrSlowName_info", resourceCulture);
             }
         }
         

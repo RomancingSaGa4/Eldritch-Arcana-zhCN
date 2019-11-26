@@ -381,7 +381,7 @@
   </data>
   <data name="ChaldiraTraitOriginalDescription_info" xml:space="preserve">
     <value>你对信仰的学习教会你一个免除麻烦的小诀窍。
-效益：每天第1次掷豁免骰时你可以掷2次D20，选取更好的结果。</value>
+效益：每天第1次掷豁免骰时你可以掷2次d20，选取更好的结果。</value>
   </data>
   <data name="ChaldiraTraitOriginalName_info" xml:space="preserve">
     <value>查尔迪菈（原版）</value>
@@ -1467,17 +1467,59 @@
   <data name="MysteryTimeEraseName_info" xml:space="preserve">
     <value>时光抹除</value>
   </data>
+  <data name="MysteryTimeFlickerDescription_info" xml:space="preserve">
+    <value>你能以一个标准动作在时间轴上忽隐忽现，产生隐蔽的效果（一如朦胧术）。你每天可以维持该效果达1分钟/每先知等级；你无须一次性用完这段持续时间，但必须至少以1分钟为单位来使用这段时间。7级后你使用该能力时，能选择将效果视同移位术，但生效时间缩短为1轮/每先知等级。你必须达到3级才能选择本启示。</value>
+  </data>
+  <data name="MysteryTimeFlickerName_info" xml:space="preserve">
+    <value>时间闪现</value>
+  </data>
   <data name="MysteryTimeKnowledgeOfTheAgesDescription_info" xml:space="preserve">
     <value>你可以从时光长河中检索一些被遗忘的知识或信息。如果此能力被激活，你能在知识技能的检定失败时自动重试一次，同时在再次检定中将你的魅力调整值作为洞察加值附加上去。你每天可以多次使用这个能力，次数等于魅力修正值。</value>
   </data>
   <data name="MysteryTimeKnowledgeOfTheAgesName_info" xml:space="preserve">
     <value>光阴之智</value>
   </data>
+  <data name="MysteryTimeMomentaryGlimpseDescription_info" xml:space="preserve">
+    <value>每天1次，你能窥见近未来的一瞬。自你使用该技能的那轮起，直至下回合开始前为止，你在攻击检定，豁免检定，技能检定和AC上获得+2洞察加值。5级以及之后每4级你再获得每天1次使用次数。</value>
+  </data>
+  <data name="MysteryTimeMomentaryGlimpseName_info" xml:space="preserve">
+    <value>未来视</value>
+  </data>
   <data name="MysteryTimeName_info" xml:space="preserve">
     <value>时光秘示域</value>
   </data>
   <data name="MysteryTimeRevelationName_info" xml:space="preserve">
     <value>时光启示</value>
+  </data>
+  <data name="MysteryTimeRewindAttackRoll_info" xml:space="preserve">
+    <value>攻击检定</value>
+  </data>
+  <data name="MysteryTimeRewindDescription_info" xml:space="preserve">
+    <value>每天2次，你能以即时动作自动重掷一个失败的d20骰。你可以预先选择重掷的骰子类型（例如攻击检定，豁免检定或者技能检定等等）。即使重掷的结果比第一次掷骰的结果更糟，你也必须接受重掷的结果。每天你可以使用此能力2次，并在9级以及之后每2级增加1次使用次数。你必须达到7级才能选择本启示。</value>
+  </data>
+  <data name="MysteryTimeRewindIntiative_info" xml:space="preserve">
+    <value>先攻检定</value>
+  </data>
+  <data name="MysteryTimeRewindManeuver_info" xml:space="preserve">
+    <value>战技检定</value>
+  </data>
+  <data name="MysteryTimeRewindName_info" xml:space="preserve">
+    <value>时光回溯</value>
+  </data>
+  <data name="MysteryTimeRewindSavingThrow_info" xml:space="preserve">
+    <value>豁免检定</value>
+  </data>
+  <data name="MysteryTimeRewindSkillCheck_info" xml:space="preserve">
+    <value>技能检定</value>
+  </data>
+  <data name="MysteryTimeRewindSpellResistance_info" xml:space="preserve">
+    <value>法术抗力</value>
+  </data>
+  <data name="MysteryTimeSpeedOrSlowDescription_info" xml:space="preserve">
+    <value>你能以一个标准动作加速或减速时间，一如加速术或缓慢术的效果。每天你可以使用此能力1次，并在12级和17级各增加1次使用次数。你必须达到7级才能选择本启示。</value>
+  </data>
+  <data name="MysteryTimeSpeedOrSlowName_info" xml:space="preserve">
+    <value>时间操作</value>
   </data>
   <data name="NatureWardDrawbackDescription_info" xml:space="preserve">
     <value>你容貌可怖。动物们将你看作天敌，不会靠近你身周30英尺之内。
@@ -1632,7 +1674,7 @@
   <data name="NobleFamilySurtovaDescriptionName_info" xml:space="preserve">
     <value>家族格言：“我们所做的都是正确的”
 瑟托瓦家族是布雷沃当前的统治者，也是布雷沃最古老、最具影响力的一个家族。他们最初的领地位于缥缈湖湖畔，伊西亚北部的冰港以及周边地区。他们对王位的宣称权可以追溯到尼科斯・瑟托瓦将自己的女儿——麦尔娜・罗嘉维亚嫁给征服者科洛尔。这段联姻使得家族成为了罗嘉维亚家族的坚定盟友，并得以保存自己的实力。安布萨朗纪年4699年，在“匿迹”事件中，瑟托瓦家族利用其身居高位，迅速宣称瑟托瓦将成为王国的摄政王，直至罗嘉维亚族人回归为止。
-瑟托瓦家族成员以谨慎、狡诈的外交家所闻名于世。在征服者科洛尔入侵之前，瑟托瓦族人曾经是这里的水盗和劫掠者。时至今日，这个家族依然与该地区的水盗和匪帮有着千丝万缕的联系，这些强盗势力中许多都与瑟托瓦家族有着亲属关系。瓦利・都伯斯船长，缥缈湖流域活跃的水盗势力中最有名的一支，就传闻和瑟托瓦家族关系密切，尽管他隐藏了自己的血统。他们的家族格言“我们所做的都是正确的”，在某种程度上反应了他们对布雷沃统治权的确信，一如他们曾作为一群水盗之王统治伊西亚时一样。瑟托瓦家族的纹章背景下部是蓝色海洋，上部是黑夜繁星，背景之上是一艘灰色航船。
+瑟托瓦家族成员以谨慎、狡诈的外交家所闻名于世。在征服者科洛尔入侵之前，瑟托瓦族人曾经是这里的河盗和劫掠者。时至今日，这个家族依然与该地区的河盗和匪帮有着千丝万缕的联系，这些强盗势力中许多都与瑟托瓦家族有着亲属关系。瓦利・都伯斯船长，缥缈湖流域活跃的河盗势力中最有名的一支，就传闻和瑟托瓦家族关系密切——尽管他隐藏了自己的血统。他们的家族格言“我们所做的都是正确的”，在某种程度上反应了他们对布雷沃统治权的确信，一如他们曾作为一群河盗之王统治伊西亚时一样。瑟托瓦家族的纹章背景下部是蓝色湖泊，上部是黑夜繁星，背景之上是一艘灰色航船。
 效益：你在面对被夹击目标时获得+2伤害背景加值。</value>
   </data>
   <data name="NobleFamilySurtovaTraitName_info" xml:space="preserve">
