@@ -496,7 +496,7 @@ namespace EldritchArcana
             var resource = Helpers.CreateAbilityResource($"{name}Resource", "", "", "372c0f8d0b1241a6a3c0ef2c5b8ad459", timeStop.Icon);
             resource.SetFixedResource(1);
             var feat = Helpers.CreateFeature(name, RES.FinalRevelationFeatureName_info,
-                "Upon reaching 20th level, you become a true master of time and stop aging. You cannot be magically aged and no longer take penalties to your ability scores for aging. Age bonuses still accrue, and any aging penalties that you have already accrued remain in place. You cannot die of old age, but you can be killed or die through accident, disease, poison, or other external effects. In addition, you can cast time stop once per day as a spell-like ability.",
+                RES.MysteryTimeFinalRevelationDescription_info,
                 "6a3786190da74a5d9e71d83c1c327a15", timeStop.Icon, FeatureGroup.None,
                 resource.CreateAddAbilityResource(),
                 DragonMystery.CopyBuffSpellToAbility(timeStop, $"{name}Spell", "c85dfa2de6fb472ebc79c0802df0cefb",

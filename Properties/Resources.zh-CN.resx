@@ -1467,6 +1467,9 @@
   <data name="MysteryTimeEraseName_info" xml:space="preserve">
     <value>时光抹除</value>
   </data>
+  <data name="MysteryTimeFinalRevelationDescription_info" xml:space="preserve">
+    <value>达到20级时，你成为了真正的时间掌控者，并且永葆青春。增减年龄的魔法效果对你不再有效，并且你的能力属性不再因能力增长而遭受减值。年龄相关的加值依然会生效，而你已受到的年龄相关的减值效果依然会留存。你不再会因衰老而死，但仍会死于事故，疾病，毒素，以及除此之外的原因。此外，你每天能以类法术能力使用1次时间停止。</value>
+  </data>
   <data name="MysteryTimeFlickerDescription_info" xml:space="preserve">
     <value>你能以一个标准动作在时间轴上忽隐忽现，产生隐蔽的效果（一如朦胧术）。你每天可以维持该效果达1分钟/每先知等级；你无须一次性用完这段持续时间，但必须至少以1分钟为单位来使用这段时间。7级后你使用该能力时，能选择将效果视同移位术，但生效时间缩短为1轮/每先知等级。你必须达到3级才能选择本启示。</value>
   </data>
@@ -1474,7 +1477,7 @@
     <value>时间闪现</value>
   </data>
   <data name="MysteryTimeHopDescription_info" xml:space="preserve">
-    <value>你能以一个移动动作瞬移每3个先知等级50英尺的距离，如同次元门。该行动不会造成借机攻击。你的移动目标地点必须是你视野内直线可达。你也可以带上身边的友善生物一起传送，但这样你就需要消耗2次该能力。你必须达到7级才能选择本启示。</value>
+    <value>你能以一个移动动作瞬移每3个先知等级50英尺的距离，如同次元门。该行动不会造成借机攻击。你的移动目标地点必须是你视野内直线可达的。你也可以带上身边的友善生物一起传送，但这样你就需要消耗2次该能力。你必须达到7级才能选择本启示。</value>
   </data>
   <data name="MysteryTimeHopName_info" xml:space="preserve">
     <value>时间跳跃</value>

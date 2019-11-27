@@ -3874,6 +3874,15 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Upon reaching 20th level, you become a true master of time and stop aging. You cannot be magically aged and no longer take penalties to your ability scores for aging. Age bonuses still accrue, and any aging penalties that you have already accrued remain in place. You cannot die of old age, but you can be killed or die through accident, disease, poison, or other external effects. In addition, you can cast time stop once per day as a spell-like ability. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeFinalRevelationDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeFinalRevelationDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 As a standard action, you can flicker in and out of time, gaining concealment (as the blur spell). You can use this ability for 1 minute per oracle level that you possess per day. This duration does not need to be consecutive, but it must be spent in 1-minute increments. At 7th level, each time you activate this ability, you can treat it as the displacement spell, though each round spent this way counts as 1 minute of your normal time flicker duration. You must be at least 3rd level to select this revelatio [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string MysteryTimeFlickerDescription_info {
@@ -4036,7 +4045,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 You can peer through the mists of time to see things as they truly are, as if using the true seeing spell. &quot;At 18th level, this functions like foresight. You can use this ability for a number of minutes per day equal to your oracle level, but these minutes do not need to be consecutive. You must be at least 11th level to select this revelation.
+        ///   查找类似 You can peer through the mists of time to see things as they truly are, as if using the true seeing spell. At 18th level, this functions like foresight. You can use this ability for a number of minutes per day equal to your oracle level, but these minutes do not need to be consecutive. You must be at least 11th level to select this revelation.
         ///{0}: {1}
         ///{2}: {3} 的本地化字符串。
         /// </summary>

@@ -1466,6 +1466,9 @@ An oracle with the time mystery can choose from any of the following revelations
   <data name="MysteryTimeEraseName_info" xml:space="preserve">
     <value>Erase From Time</value>
   </data>
+  <data name="MysteryTimeFinalRevelationDescription_info" xml:space="preserve">
+    <value>Upon reaching 20th level, you become a true master of time and stop aging. You cannot be magically aged and no longer take penalties to your ability scores for aging. Age bonuses still accrue, and any aging penalties that you have already accrued remain in place. You cannot die of old age, but you can be killed or die through accident, disease, poison, or other external effects. In addition, you can cast time stop once per day as a spell-like ability.</value>
+  </data>
   <data name="MysteryTimeFlickerDescription_info" xml:space="preserve">
     <value>As a standard action, you can flicker in and out of time, gaining concealment (as the blur spell). You can use this ability for 1 minute per oracle level that you possess per day. This duration does not need to be consecutive, but it must be spent in 1-minute increments. At 7th level, each time you activate this ability, you can treat it as the displacement spell, though each round spent this way counts as 1 minute of your normal time flicker duration. You must be at least 3rd level to select this revelation.</value>
   </data>
