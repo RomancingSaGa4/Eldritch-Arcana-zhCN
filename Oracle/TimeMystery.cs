@@ -421,7 +421,7 @@ namespace EldritchArcana
 
         static BlueprintFeature CreateTemporalClarity()
         {
-            return BattleMystery.CreateRerollInitiative("MysteryTimeTemporalClarity", "Temporal Clarity", "5f41b06772ca43c3bcd1b6f2cdca4735");
+            return BattleMystery.CreateRerollInitiative("MysteryTimeTemporalClarity", RES.MysteryTimeTemporalClarityName_info, "5f41b06772ca43c3bcd1b6f2cdca4735");
         }
 
         static BlueprintFeature CreateTimeHop()
@@ -432,8 +432,8 @@ namespace EldritchArcana
             var dimensionDoor = library.Get<BlueprintAbility>("5bdc37e4acfa209408334326076a43bc");
             var dimensionDoorCaster = library.Get<BlueprintAbility>("a9b8be9b87865744382f7c64e599aeb2");
 
-            var feat = Helpers.CreateFeature("MysteryTimeHop", "Time Hop",
-                "As a move action, you can teleport up to 50 feet per 3 oracle levels, as the dimension door spell. This movement does not provoke attacks of opportunity. You must have line of sight to your destination to use this ability. You can bring other willing creatures with you, but you must expend 2 uses of this ability. You must be at least 7th level before selecting this revelation.",
+            var feat = Helpers.CreateFeature("MysteryTimeHop", RES.MysteryTimeHopName_info,
+                RES.MysteryTimeHopDescription_info,
                 "5ba08ff4d852464a9bee80442deda276", dimensionDoor.Icon, FeatureGroup.None);
             var resource = Helpers.CreateAbilityResource($"{feat.name}Resource", "", "", "239347ee299945fabc0e8e18402104ab", null);
             resource.SetIncreasedByLevelStartPlusDivStep(1, 3, 1, 3, 1, 0, 0, oracleArray);
@@ -464,11 +464,8 @@ namespace EldritchArcana
             var resource = Helpers.CreateAbilityResource($"{name}Resource", "", "", "6aba92b9f4b34548b485d0131433367b", null);
             resource.SetIncreasedByLevel(0, 1, oracleArray);
 
-            var feat = Helpers.CreateFeature(name, "Time Sight",
-                "You can peer through the mists of time to see things as they truly are, as if using the true seeing spell. " +
-                //"At 15th level, this functions like moment of prescience. " +
-                "At 18th level, this functions like foresight. You can use this ability for a number of minutes per day equal to your oracle level, but these minutes do not need to be consecutive. You must be at least 11th level to select this revelation.\n" +
-                $"{trueSeeing.Name}: {trueSeeing.Description}\n{foresight.Name}: {foresight.Description}",
+            var feat = Helpers.CreateFeature(name, RES.MysteryTimeSightName_info,
+                String.Format(RES.MysteryTimeSightDescription_info, trueSeeing.Name, trueSeeing.Description, foresight.Name, foresight.Description),
                 "a4334c2d0c094b6183a3c94bfeafae50", trueSeeing.Icon, FeatureGroup.None);
 
             var buff = library.CopyAndAdd(trueSeeingBuff, $"{name}Buff", "5ed3aa55269447c3837d9582a3b81b4c");

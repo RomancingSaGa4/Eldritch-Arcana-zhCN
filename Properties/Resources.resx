@@ -1472,6 +1472,12 @@ An oracle with the time mystery can choose from any of the following revelations
   <data name="MysteryTimeFlickerName_info" xml:space="preserve">
     <value>Time Flicker</value>
   </data>
+  <data name="MysteryTimeHopDescription_info" xml:space="preserve">
+    <value>As a move action, you can teleport up to 50 feet per 3 oracle levels, as the dimension door spell. This movement does not provoke attacks of opportunity. You must have line of sight to your destination to use this ability. You can bring other willing creatures with you, but you must expend 2 uses of this ability. You must be at least 7th level before selecting this revelation.</value>
+  </data>
+  <data name="MysteryTimeHopName_info" xml:space="preserve">
+    <value>Time Hop</value>
+  </data>
   <data name="MysteryTimeKnowledgeOfTheAgesDescription_info" xml:space="preserve">
     <value>You can search through time to recall some bit of forgotten lore or information. If this ability is active, you automatically retry any Knowledge skill check you fail, gaining an insight bonus on the check equal to your Charisma modifier. You can use this ability a number times per day equal to your Charisma modifier.</value>
   </data>
@@ -1514,11 +1520,22 @@ An oracle with the time mystery can choose from any of the following revelations
   <data name="MysteryTimeRewindSpellResistance_info" xml:space="preserve">
     <value>Spell Resistance</value>
   </data>
+  <data name="MysteryTimeSightDescription_info" xml:space="preserve">
+    <value>You can peer through the mists of time to see things as they truly are, as if using the true seeing spell. At 18th level, this functions like foresight. You can use this ability for a number of minutes per day equal to your oracle level, but these minutes do not need to be consecutive. You must be at least 11th level to select this revelation.
+{0}: {1}
+{2}: {3}</value>
+  </data>
+  <data name="MysteryTimeSightName_info" xml:space="preserve">
+    <value>Time Sight</value>
+  </data>
   <data name="MysteryTimeSpeedOrSlowDescription_info" xml:space="preserve">
     <value>As a standard action, you can speed up or slow down time, as either the haste or slow spell. You can use this ability once per day, plus one additional time per day at 12th level and 17th level. You must be at least 7th level before selecting this revelation.</value>
   </data>
   <data name="MysteryTimeSpeedOrSlowName_info" xml:space="preserve">
     <value>Speed or Slow Time</value>
+  </data>
+  <data name="MysteryTimeTemporalClarityName_info" xml:space="preserve">
+    <value>Temporal Clarity</value>
   </data>
   <data name="NatureWardDrawbackDescription_info" xml:space="preserve">
     <value>You look scary. Animals see you as a predator and do not willingly approach within 30 feet of you.

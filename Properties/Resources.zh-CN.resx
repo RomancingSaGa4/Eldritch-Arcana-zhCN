@@ -1473,6 +1473,12 @@
   <data name="MysteryTimeFlickerName_info" xml:space="preserve">
     <value>时间闪现</value>
   </data>
+  <data name="MysteryTimeHopDescription_info" xml:space="preserve">
+    <value>你能以一个移动动作瞬移每3个先知等级50英尺的距离，如同次元门。该行动不会造成借机攻击。你的移动目标地点必须是你视野内直线可达。你也可以带上身边的友善生物一起传送，但这样你就需要消耗2次该能力。你必须达到7级才能选择本启示。</value>
+  </data>
+  <data name="MysteryTimeHopName_info" xml:space="preserve">
+    <value>时间跳跃</value>
+  </data>
   <data name="MysteryTimeKnowledgeOfTheAgesDescription_info" xml:space="preserve">
     <value>你可以从时光长河中检索一些被遗忘的知识或信息。如果此能力被激活，你能在知识技能的检定失败时自动重试一次，同时在再次检定中将你的魅力调整值作为洞察加值附加上去。你每天可以多次使用这个能力，次数等于魅力修正值。</value>
   </data>
@@ -1495,7 +1501,7 @@
     <value>攻击检定</value>
   </data>
   <data name="MysteryTimeRewindDescription_info" xml:space="preserve">
-    <value>每天2次，你能以即时动作自动重掷一个失败的d20骰。你可以预先选择重掷的骰子类型（例如攻击检定，豁免检定或者技能检定等等）。即使重掷的结果比第一次掷骰的结果更糟，你也必须接受重掷的结果。每天你可以使用此能力2次，并在9级以及之后每2级增加1次使用次数。你必须达到7级才能选择本启示。</value>
+    <value>每天2次，你能以即时动作自动重掷一个失败的d20骰。你可以预先选择重新检定的类型（例如攻击检定，豁免检定或者技能检定等等）。即使重掷的结果比第一次掷骰的结果更糟，你也必须接受重掷的结果。每天你可以使用此能力2次，并在9级以及之后每2级增加1次使用次数。你必须达到7级才能选择本启示。</value>
   </data>
   <data name="MysteryTimeRewindIntiative_info" xml:space="preserve">
     <value>先攻检定</value>
@@ -1515,11 +1521,22 @@
   <data name="MysteryTimeRewindSpellResistance_info" xml:space="preserve">
     <value>法术抗力</value>
   </data>
+  <data name="MysteryTimeSightDescription_info" xml:space="preserve">
+    <value>你能透过时间的迷雾，看清事物的真实面貌，如同使用了真知术。18级时，该能力效果如同预警术。你每天可以维持该效果达1分钟/每先知等级；你无须一次性用完这段持续时间，但必须至少以1分钟为单位来使用这段时间。你必须达到11级才能选择本启示。
+{0}：{1}
+{2}：{3}</value>
+  </data>
+  <data name="MysteryTimeSightName_info" xml:space="preserve">
+    <value>时光之视</value>
+  </data>
   <data name="MysteryTimeSpeedOrSlowDescription_info" xml:space="preserve">
     <value>你能以一个标准动作加速或减速时间，一如加速术或缓慢术的效果。每天你可以使用此能力1次，并在12级和17级各增加1次使用次数。你必须达到7级才能选择本启示。</value>
   </data>
   <data name="MysteryTimeSpeedOrSlowName_info" xml:space="preserve">
     <value>时间操作</value>
+  </data>
+  <data name="MysteryTimeTemporalClarityName_info" xml:space="preserve">
+    <value>时间明晰</value>
   </data>
   <data name="NatureWardDrawbackDescription_info" xml:space="preserve">
     <value>你容貌可怖。动物们将你看作天敌，不会靠近你身周30英尺之内。

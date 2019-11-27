@@ -3892,6 +3892,24 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 As a move action, you can teleport up to 50 feet per 3 oracle levels, as the dimension door spell. This movement does not provoke attacks of opportunity. You must have line of sight to your destination to use this ability. You can bring other willing creatures with you, but you must expend 2 uses of this ability. You must be at least 7th level before selecting this revelation. 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeHopDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeHopDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Time Hop 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeHopName_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeHopName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You can search through time to recall some bit of forgotten lore or information. If this ability is active, you automatically retry any Knowledge skill check you fail, gaining an insight bonus on the check equal to your Charisma modifier. You can use this ability a number times per day equal to your Charisma modifier. 的本地化字符串。
         /// </summary>
         internal static string MysteryTimeKnowledgeOfTheAgesDescription_info {
@@ -4018,6 +4036,26 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You can peer through the mists of time to see things as they truly are, as if using the true seeing spell. &quot;At 18th level, this functions like foresight. You can use this ability for a number of minutes per day equal to your oracle level, but these minutes do not need to be consecutive. You must be at least 11th level to select this revelation.
+        ///{0}: {1}
+        ///{2}: {3} 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeSightDescription_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeSightDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Time Sight 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeSightName_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeSightName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 As a standard action, you can speed up or slow down time, as either the haste or slow spell. You can use this ability once per day, plus one additional time per day at 12th level and 17th level. You must be at least 7th level before selecting this revelation. 的本地化字符串。
         /// </summary>
         internal static string MysteryTimeSpeedOrSlowDescription_info {
@@ -4032,6 +4070,15 @@ namespace EldritchArcana.Properties {
         internal static string MysteryTimeSpeedOrSlowName_info {
             get {
                 return ResourceManager.GetString("MysteryTimeSpeedOrSlowName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Temporal Clarity 的本地化字符串。
+        /// </summary>
+        internal static string MysteryTimeTemporalClarityName_info {
+            get {
+                return ResourceManager.GetString("MysteryTimeTemporalClarityName_info", resourceCulture);
             }
         }
         
