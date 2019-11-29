@@ -348,6 +348,12 @@ Whenever you cast a bloodrager or sorcerer spell that deals damage, add 1 point 
   <data name="BonusSpellLevelFeatureName_info" xml:space="preserve">
     <value>Bonus Known Spell (Level {0})</value>
   </data>
+  <data name="BruteTraitDescription_info" xml:space="preserve">
+    <value>You have worked for a crime lord, either as a low-level enforcer or as a guard, and are adept at frightening away people.</value>
+  </data>
+  <data name="BruteTraitName_info" xml:space="preserve">
+    <value>Brute (Half-Orc)</value>
+  </data>
   <data name="BurnedDrawbackDescription_info" xml:space="preserve">
     <value>You were badly burned once by volcanic ash, torch-wielding mobs, or some fiery accident, and the scars pain you terribly you whenever you are too near to fire.
 Drawback: You take a –2 penalty on saves against fire effects.</value>
@@ -821,6 +827,14 @@ Drawback: Your movement speed is 5ft slower.</value>
   <data name="FoulBrandLegDrawbackName_info" xml:space="preserve">
     <value>Leg</value>
   </data>
+  <data name="GloryOfOldTraitDescription_info" xml:space="preserve">
+    <value>You are part of the old Guard.
+You belong to the elite veteran regiments of the old king and his army and are intensely loyal to him. It was you who made the last charge at the dwarven kingdom.
+Benefit: You receive a +1 trait bonus on saving throws against spells, spell-like abilities, and poison</value>
+  </data>
+  <data name="GloryOfOldTraitName_info" xml:space="preserve">
+    <value>Glory of Old (Dwarf)</value>
+  </data>
   <data name="GoBackDescription_info" xml:space="preserve">
     <value>Select this to go back to the previous selection, allowing you to pick something else.</value>
   </data>
@@ -938,6 +952,13 @@ Difficulty Class (DC): {3}.
   </data>
   <data name="KnockSpells_info" xml:space="preserve">
     <value>Knock</value>
+  </data>
+  <data name="LegacyOfSandTraitDescription_info" xml:space="preserve">
+    <value>A large tribe of orcs adapted to life in the desert once dwelt in southeastern Katapesh. Although this tribe is long extinct, some half-orcs of Katapesh carry the traits of this tribe in their particularly large jaws, broad shoulders, and shockingly pale eyes. You often have dreams of hunts and strange ceremonies held under moonlight in the desert sands. Some ascribe these dreams to racial memory, others to visions or prophecies. These dreams have instilled in you a fierce sense of tradition.
+Benefit: You gain a +1 trait bonus on all Will saving throws.</value>
+  </data>
+  <data name="LegacyOfSandTraitName_info" xml:space="preserve">
+    <value>Legacy of Sand (Half-Orc)</value>
   </data>
   <data name="LesserMiracleSpells_info" xml:space="preserve">
     <value>Miracle preloading</value>
@@ -2390,6 +2411,12 @@ Benefits: You gain a +1 trait bonus on {1} checks, and {2} is always a class ski
   </data>
   <data name="TrueResurrectionSpells_info" xml:space="preserve">
     <value>True resurrection</value>
+  </data>
+  <data name="TuskedTraitDescription_info" xml:space="preserve">
+    <value>Benefit: Huge, sharp tusks bulge from your mouth, and you receive a bite attack (1d4 damage for Medium characters). If used as part of a full attack action, the bite attack is made at your full base attack bonus –5.</value>
+  </data>
+  <data name="TuskedTraitName_info" xml:space="preserve">
+    <value>Tusked (Half-orc)</value>
   </data>
   <data name="TypeHyphenSubtype_info" xml:space="preserve">
     <value>{0} — {1}</value>

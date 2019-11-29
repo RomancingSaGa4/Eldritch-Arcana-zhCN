@@ -208,8 +208,8 @@ namespace EldritchArcana
             // Half-orc:
             // - Brute (persuasion)
             // - Legacy of Sand (+1 will save)
-            var brute = Traits.CreateAddStatBonus("BruteTrait", "Brute (Half-Orc)",
-                "You have worked for a crime lord, either as a low-level enforcer or as a guard, and are adept at frightening away people.",
+            var brute = Traits.CreateAddStatBonus("BruteTrait", RES.BruteTraitName_info,
+                RES.BruteTraitDescription_info,
                 "1ee0ce55ace74ccbb798e2fdc13181f6", StatType.SkillPersuasion, halfOrcReq);
             brute.SetIcon(Helpers.GetIcon("885f478dff2e39442a0f64ceea6339c9")); // Intimidating
             choices.Add(brute);
@@ -217,8 +217,8 @@ namespace EldritchArcana
             BlueprintItemWeapon bite = Traits.library.CopyAndAdd<BlueprintItemWeapon>("35dfad6517f401145af54111be04d6cf", "Tusked",
                 "44dfad6517f401145af54111be04d644");
 
-            choices.Add(Helpers.CreateFeature("TuskedTrait", "Tusked (Half-orc)",
-                "Benefit: Huge, sharp tusks bulge from your mouth, and you receive a bite attack (1d4 damage for Medium characters). If used as part of a full attack action, the bite attack is made at your full base attack bonus –5.",
+            choices.Add(Helpers.CreateFeature("TuskedTrait", RES.TuskedTraitName_info,
+                RES.TuskedTraitDescription_info,
                 "1511289c92ea4233b14c4f51072ea09g",
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/halforc_tusked.png"), // Great Fortitude
                 FeatureGroup.None,
@@ -226,41 +226,8 @@ namespace EldritchArcana
                 Helpers.Create<AddAdditionalLimb>(x => x.Weapon = bite)
                 ));
 
-            var GloryOfOld = Helpers.CreateFeature("GloryOfOldTrait", "Glory of Old (Dwarf)",
-                "You are part of the old Guard" +
-                "\nYou belong to the elite veteran regiments of The old king and his army and are intensely loyal to him. It was you who made the last charge at the dwarven kingdom." +
-                "Benefit: You receive a +1 trait bonus on saving throws against spells, spell-like abilities, and poison",
-                "4283a523984f44944a7cf157b21bf7c9",
-                Image2Sprite.Create("Mods/EldritchArcana/sprites/spell_perfection.png"),
-                FeatureGroup.None,
-                dwarfReq,                
-                Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Poison; s.Value = 1; s.ModifierDescriptor = ModifierDescriptor.Racial; }),
-                Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.BreathWeapon; s.Value = 1; s.ModifierDescriptor = ModifierDescriptor.Trait; }));
-            components.Clear();
-            components.AddRange((new SpellSchool[]
-            {
-                SpellSchool.Abjuration,
-                SpellSchool.Conjuration,
-                SpellSchool.Divination,
-                SpellSchool.Enchantment,
-                SpellSchool.Evocation,
-                SpellSchool.Illusion,
-                SpellSchool.Necromancy,
-                SpellSchool.Transmutation,
-                SpellSchool.Universalist
-            }).Select((school) => Helpers.Create<SavingThrowBonusAgainstSchool>(a =>
-            {
-                a.School = school;
-                a.Value = 1;
-                a.ModifierDescriptor = ModifierDescriptor.Racial;
-            })));
-
-            GloryOfOld.AddComponents(components);
-
-            choices.Add(GloryOfOld);
-
-            choices.Add(Helpers.CreateFeature("LegacyOfSandTrait", "Legacy of Sand (Half-Orc)",
-                "A large tribe of orcs adapted to life in the desert once dwelt in southeastern Katapesh. Although this tribe is long extinct, some half-orcs of Katapesh carry the traits of this tribe in their particularly large jaws, broad shoulders, and shockingly pale eyes. You often have dreams of hunts and strange ceremonies held under moonlight in the desert sands. Some ascribe these dreams to racial memory, others to visions or prophecies. These dreams have instilled in you a fierce sense of tradition.\nBenefit: You gain a +1 trait bonus on all Will saving throws.",
+            choices.Add(Helpers.CreateFeature("LegacyOfSandTrait", RES.LegacyOfSandTraitName_info,
+                RES.LegacyOfSandTraitDescription_info,
                 "e5fb1675eb6e4ef9accef7eb3a10862a",
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/halforc_legacy_of_sand.png"),
                 FeatureGroup.None,
@@ -305,6 +272,38 @@ namespace EldritchArcana
             // - Militant Merchant (perception)Owner.HPLeft
             // - Ruthless (+1 confirm crits)
             // - Zest for Battle (+1 trait dmg if has morale attack bonus)
+
+            var GloryOfOld = Helpers.CreateFeature("GloryOfOldTrait", RES.GloryOfOldTraitName_info,
+                            RES.GloryOfOldTraitDescription_info,
+                            "4283a523984f44944a7cf157b21bf7c9",
+                            Image2Sprite.Create("Mods/EldritchArcana/sprites/spell_perfection.png"),
+                            FeatureGroup.None,
+                            dwarfReq,
+                            Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Poison; s.Value = 1; s.ModifierDescriptor = ModifierDescriptor.Racial; }),
+                            Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.BreathWeapon; s.Value = 1; s.ModifierDescriptor = ModifierDescriptor.Trait; }));
+            components.Clear();
+            components.AddRange((new SpellSchool[]
+            {
+                SpellSchool.Abjuration,
+                SpellSchool.Conjuration,
+                SpellSchool.Divination,
+                SpellSchool.Enchantment,
+                SpellSchool.Evocation,
+                SpellSchool.Illusion,
+                SpellSchool.Necromancy,
+                SpellSchool.Transmutation,
+                SpellSchool.Universalist
+            }).Select((school) => Helpers.Create<SavingThrowBonusAgainstSchool>(a =>
+            {
+                a.School = school;
+                a.Value = 1;
+                a.ModifierDescriptor = ModifierDescriptor.Racial;
+            })));
+
+            GloryOfOld.AddComponents(components);
+
+            choices.Add(GloryOfOld);
+
             choices.Add(Helpers.CreateFeature("GroundedTrait", "Grounded (Dwarf)",
                 "You are well balanced, both physically and mentally.\nBenefit: You gain a +2 trait bonus on Mobility checks, and a +1 trait bonus on Reflex saves.",
                 "9b13923527a64c3bbf8de904c5a9ef8b",

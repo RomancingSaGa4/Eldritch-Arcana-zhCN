@@ -348,6 +348,12 @@
   <data name="BonusSpellLevelFeatureName_info" xml:space="preserve">
     <value>奖励已知法术（{0}级）</value>
   </data>
+  <data name="BruteTraitDescription_info" xml:space="preserve">
+    <value>你作为打手或者门卫为一位罪恶领主卖命，并精于吓跑人群。你的威吓检定获得+1背景加值，并且总能将威吓视为你的职业技能。</value>
+  </data>
+  <data name="BruteTraitName_info" xml:space="preserve">
+    <value>狗腿子（半兽人）</value>
+  </data>
   <data name="BurnedDrawbackDescription_info" xml:space="preserve">
     <value>你曾经严重烧伤过，或许是因为火山灰，或许是因为挥舞着火把的暴民，或许是因为某些火灾。每当接近火焰，你的伤处都会再次剧烈疼痛起来。
 缺陷：你在对抗火焰效果的检定时都会受到-2减值。</value>
@@ -823,6 +829,14 @@
   <data name="FoulBrandLegDrawbackName_info" xml:space="preserve">
     <value>腿部</value>
   </data>
+  <data name="GloryOfOldTraitDescription_info" xml:space="preserve">
+    <value>你曾是一名王国近卫。
+你从属于老王和他的军队的精锐老兵团，并且效忠于他。正是你对矮人王国发动了最后的冲锋。
+效益：你在对抗法术，类法术能力与毒素的豁免检定时获得+1背景加值。</value>
+  </data>
+  <data name="GloryOfOldTraitName_info" xml:space="preserve">
+    <value>旧日荣光（矮人）</value>
+  </data>
   <data name="GoBackDescription_info" xml:space="preserve">
     <value>选此项返回前一选项，以便选择其他项目。</value>
   </data>
@@ -939,6 +953,13 @@
   </data>
   <data name="KnockSpells_info" xml:space="preserve">
     <value>敲击术</value>
+  </data>
+  <data name="LegacyOfSandTraitDescription_info" xml:space="preserve">
+    <value>在卡塔佩什东南部，曾有一个大型的兽人部落生活在沙漠中。尽管这个部落已经灭绝很久了，但卡塔佩什的一些半兽人却拥有特别大的下巴，宽阔的肩膀和让人吃惊的苍白双眼等特征。你经常梦到狩猎和沙漠月光下的奇怪仪式。有些人将这些梦想归因于种族记忆，另一些人将其归因于异象或预言。这些梦境给你灌输了强烈的传统感。
+效益：你在意志豁免检定中获得+1背景加值。</value>
+  </data>
+  <data name="LegacyOfSandTraitName_info" xml:space="preserve">
+    <value>沙之遗产（半兽人）</value>
   </data>
   <data name="LesserMiracleSpells_info" xml:space="preserve">
     <value>奇迹术预载</value>
@@ -2392,6 +2413,12 @@
   <data name="TrueResurrectionSpells_info" xml:space="preserve">
     <value>完全复原术</value>
   </data>
+  <data name="TuskedTraitDescription_info" xml:space="preserve">
+    <value>效益：你有一对巨大而尖利的獠牙，你能进行啮咬攻击（中体型生物可以造成1d4伤害）。作为整轮攻击行动的一部分，你在最高基础攻击加值受到-5减值的情况下进行啮咬攻击。</value>
+  </data>
+  <data name="TuskedTraitName_info" xml:space="preserve">
+    <value>獠牙（半兽人）</value>
+  </data>
   <data name="TypeHyphenSubtype_info" xml:space="preserve">
     <value>{0}—{1}</value>
   </data>
@@ -2613,6 +2640,6 @@
 效益：你在进行反射豁免检定时获得+1背景加值。</value>
   </data>
   <data name="YouthfulMischiefTraitName_info" xml:space="preserve">
-    <value>年轻的恶作剧（精灵）</value>
+    <value>人生经验（精灵）</value>
   </data>
 </root>

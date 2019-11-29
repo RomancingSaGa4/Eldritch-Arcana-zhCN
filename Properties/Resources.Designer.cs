@@ -717,6 +717,24 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You have worked for a crime lord, either as a low-level enforcer or as a guard, and are adept at frightening away people. 的本地化字符串。
+        /// </summary>
+        internal static string BruteTraitDescription_info {
+            get {
+                return ResourceManager.GetString("BruteTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Brute (Half-Orc) 的本地化字符串。
+        /// </summary>
+        internal static string BruteTraitName_info {
+            get {
+                return ResourceManager.GetString("BruteTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You were badly burned once by volcanic ash, torch-wielding mobs, or some fiery accident, and the scars pain you terribly you whenever you are too near to fire.
         ///Drawback: You take a –2 penalty on saves against fire effects. 的本地化字符串。
         /// </summary>
@@ -2059,6 +2077,26 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You are part of the old Guard.
+        ///You belong to the elite veteran regiments of the old king and his army and are intensely loyal to him. It was you who made the last charge at the dwarven kingdom.
+        ///Benefit: You receive a +1 trait bonus on saving throws against spells, spell-like abilities, and poison 的本地化字符串。
+        /// </summary>
+        internal static string GloryOfOldTraitDescription_info {
+            get {
+                return ResourceManager.GetString("GloryOfOldTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Glory of Old (Dwarf) 的本地化字符串。
+        /// </summary>
+        internal static string GloryOfOldTraitName_info {
+            get {
+                return ResourceManager.GetString("GloryOfOldTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Select this to go back to the previous selection, allowing you to pick something else. 的本地化字符串。
         /// </summary>
         internal static string GoBackDescription_info {
@@ -2388,6 +2426,25 @@ namespace EldritchArcana.Properties {
         internal static string KnockSpells_info {
             get {
                 return ResourceManager.GetString("KnockSpells_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 A large tribe of orcs adapted to life in the desert once dwelt in southeastern Katapesh. Although this tribe is long extinct, some half-orcs of Katapesh carry the traits of this tribe in their particularly large jaws, broad shoulders, and shockingly pale eyes. You often have dreams of hunts and strange ceremonies held under moonlight in the desert sands. Some ascribe these dreams to racial memory, others to visions or prophecies. These dreams have instilled in you a fierce sense of tradition.
+        ///Benefit: You  [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string LegacyOfSandTraitDescription_info {
+            get {
+                return ResourceManager.GetString("LegacyOfSandTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Legacy of Sand (Half-Orc) 的本地化字符串。
+        /// </summary>
+        internal static string LegacyOfSandTraitName_info {
+            get {
+                return ResourceManager.GetString("LegacyOfSandTraitName_info", resourceCulture);
             }
         }
         
@@ -6371,6 +6428,24 @@ namespace EldritchArcana.Properties {
         internal static string TrueResurrectionSpells_info {
             get {
                 return ResourceManager.GetString("TrueResurrectionSpells_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Benefit: Huge, sharp tusks bulge from your mouth, and you receive a bite attack (1d4 damage for Medium characters). If used as part of a full attack action, the bite attack is made at your full base attack bonus –5. 的本地化字符串。
+        /// </summary>
+        internal static string TuskedTraitDescription_info {
+            get {
+                return ResourceManager.GetString("TuskedTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Tusked (Half-orc) 的本地化字符串。
+        /// </summary>
+        internal static string TuskedTraitName_info {
+            get {
+                return ResourceManager.GetString("TuskedTraitName_info", resourceCulture);
             }
         }
         
