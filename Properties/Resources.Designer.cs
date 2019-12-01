@@ -1387,6 +1387,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 One of your parents was a member of a wild elven tribe, and you’ve inherited a portion of your elven parent’s quick reflexes.
+        ///Benefit: You gain a +2 trait bonus on initiative checks. 的本地化字符串。
+        /// </summary>
+        internal static string ElvenReflexsTraitDescription_info {
+            get {
+                return ResourceManager.GetString("ElvenReflexsTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Elven Reflexes (Half-Elf) 的本地化字符串。
+        /// </summary>
+        internal static string ElvenReflexsTraitName_info {
+            get {
+                return ResourceManager.GetString("ElvenReflexsTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 As wall of force, except you create a hemispherical dome of force with hardness 20 and a number of hit points equal to 10 per caster level. The bottom edge of the dome forms a relatively watertight space if you are standing on a reasonably flat surface. The dome shape means that falling debris (such as rocks from a collapsing ceiling) tend to tumble to the side and pile up around the base of the dome. If you make a DC 20 Craft (stonemasonry), Knowledge (engineering), or Profession (architect or engineer) ch [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string EmergencyForceSphereBuffDescription_info {
@@ -1550,6 +1569,25 @@ namespace EldritchArcana.Properties {
         internal static string ExtraRevelationFeatureName_info {
             get {
                 return ResourceManager.GetString("ExtraRevelationFeatureName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 As a child, your parents sent you to a distant wizard’s tower as an apprentice so that you could learn the arcane arts. Unfortunately, you had no arcane talent whatsoever, though you did learn a great deal about the workings of spells and how to resist them.
+        ///Benefit: You gain a +1 trait bonus on saves against arcane spells. 的本地化字符串。
+        /// </summary>
+        internal static string FailedAprenticeTraitDescription_info {
+            get {
+                return ResourceManager.GetString("FailedAprenticeTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Failed Apprentice (Half-Elf) 的本地化字符串。
+        /// </summary>
+        internal static string FailedAprenticeTraitName_info {
+            get {
+                return ResourceManager.GetString("FailedAprenticeTraitName_info", resourceCulture);
             }
         }
         
@@ -2747,6 +2785,25 @@ namespace EldritchArcana.Properties {
         internal static string MagusMagicLevelFeatureDescription_info {
             get {
                 return ResourceManager.GetString("MagusMagicLevelFeatureDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You carry the blood of a self-sacrificing celestial, and strive to live up to your potential for heroism.
+        ///Benefit(s): As long as your current hit point total is less than half of your maximum hit points possible, you gain a +1 trait bonus on attack rolls against evil foes. 的本地化字符串。
+        /// </summary>
+        internal static string MartyrsBloodTraitDescription_info {
+            get {
+                return ResourceManager.GetString("MartyrsBloodTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Martyr&apos;s Blood (Aasimar) 的本地化字符串。
+        /// </summary>
+        internal static string MartyrsBloodTraitName_info {
+            get {
+                return ResourceManager.GetString("MartyrsBloodTraitName_info", resourceCulture);
             }
         }
         
@@ -6395,6 +6452,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You&apos;ve inherited some of your celestial ancestor&apos;s prowess with the bow.
+        ///Benefit: You gain a +2 trait bonus on attack rolls made to confirm critical hits with bows. 的本地化字符串。
+        /// </summary>
+        internal static string ToxophiliteTraitDescription_info {
+            get {
+                return ResourceManager.GetString("ToxophiliteTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Toxophilite (Aasimar) 的本地化字符串。
+        /// </summary>
+        internal static string ToxophiliteTraitName_info {
+            get {
+                return ResourceManager.GetString("ToxophiliteTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 {0}
         ///Benefits: You gain a +1 trait bonus on {1} checks, and {2} is always a class skill for you. 的本地化字符串。
         /// </summary>
@@ -6511,6 +6587,24 @@ namespace EldritchArcana.Properties {
         internal static string WarriorOfOldTraitName_info {
             get {
                 return ResourceManager.GetString("WarriorOfOldTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You grew up around people who were jealous of and hostile toward you. Perhaps your parents were not pleased to have a child touched by the divine—they may have berated or beaten you, or even sold you into slavery for an exorbitant price. You grew up mistrustful of others and believing your unique appearance to be a curse. 的本地化字符串。
+        /// </summary>
+        internal static string WaryTraitDescription_info {
+            get {
+                return ResourceManager.GetString("WaryTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Wary (Aasimar) 的本地化字符串。
+        /// </summary>
+        internal static string WaryTraitName_info {
+            get {
+                return ResourceManager.GetString("WaryTraitName_info", resourceCulture);
             }
         }
         

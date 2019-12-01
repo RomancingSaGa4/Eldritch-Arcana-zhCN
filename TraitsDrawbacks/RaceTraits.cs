@@ -146,7 +146,7 @@ namespace EldritchArcana
                 humanReq,
                 Helpers.Create<SavingThrowBonusAgainstSpellSource>()));
 
-            //var travelerDescription = "Your family has taken the love of travel to an extreme, roaming the world extensively. You’ve seen dozens of cultures and have learned to appreciate the diversity of what the world has to offer.";
+            //var travelerDescription = "Your family has taken the love of travel to an extreme, roaming the world extensively. You've seen dozens of cultures and have learned to appreciate the diversity of what the world has to offer.";
             var worldTraveler = Helpers.CreateFeatureSelection("WorldTravelerTrait", RES.RaceWorldTravelerTraitName_info,
                 RES.RaceWorldTravelerTraitDescription_info + RES.RaceWorldTravelerTraitBenefit_info,
                 "ecacfcbeddfe453cafc8d60fc1db7d34",
@@ -237,16 +237,16 @@ namespace EldritchArcana
             // Half-elf:
             // - Elven Relexes (+2 initiative)
             // - Failed Apprentice (+1 save arcane spells)
-            choices.Add(Helpers.CreateFeature("ElvenReflexsTrait", "Elven Reflexes (Half-Elf)",
-                "One of your parents was a member of a wild elven tribe, and you’ve inherited a portion of your elven parent’s quick reflexes.\nBenefit: You gain a +2 trait bonus on initiative checks.",
+            choices.Add(Helpers.CreateFeature("ElvenReflexsTrait", RES.ElvenReflexsTraitName_info,
+                RES.ElvenReflexsTraitDescription_info,
                 "9975678ce2fc420da9cd6ec4fe8c8b9b",
                 Helpers.GetIcon("797f25d709f559546b29e7bcb181cc74"), // Improved Initiative
                 FeatureGroup.None,
                 halfElfReq,
                 Helpers.CreateAddStatBonus(StatType.Initiative, 2, ModifierDescriptor.Trait)));
 
-            choices.Add(Helpers.CreateFeature("FailedAprenticeTrait", "Failed Apprentice (Half-Elf)",
-                "You have a healthy fear of sorcerers’ speech and wizards’ words that has helped you to survivAs a child, your parents sent you to a distant wizard’s tower as an apprentice so that you could learn the arcane arts. Unfortunately, you had no arcane talent whatsoever, though you did learn a great deal about the workings of spells and how to resist them.\nBenefit: You gain a +1 trait bonus on saves against arcane spells.",
+            choices.Add(Helpers.CreateFeature("FailedAprenticeTrait", RES.FailedAprenticeTraitName_info,
+                RES.FailedAprenticeTraitDescription_info,
                 "8ed66066751f43c2920055dd6358adc8",
                 Helpers.GetIcon("2483a523984f44944a7cf157b21bf79c"), // Elven Immunities
                 FeatureGroup.None,
@@ -261,7 +261,7 @@ namespace EldritchArcana
                 "You grew up as a slave and know the ins and outs of nobility better than most.",
                 "d2fc5fe0c64142a79e0ebee18f14b0be", StatType.SkillKnowledgeWorld, halflingReq));
             choices.Add(Traits.CreateAddStatBonus("FreedomFighterTrait", "Freedom Fighter (Halfling)",
-                "Your parents allowed escaping slaves to hide in your home, and the stories you’ve heard from them instilled into you a deep loathing of slavery, and a desire to help slaves evade capture and escape.",
+                "Your parents allowed escaping slaves to hide in your home, and the stories you've heard from them instilled into you a deep loathing of slavery, and a desire to help slaves evade capture and escape.",
                 "3a4d2cd14dc446319085c865570ccc3d", StatType.SkillMobility, halflingReq));
             choices.Add(Traits.CreateAddStatBonus("WellInformedTrait", "Well-Informed (Halfling)",
                 "You make it a point to know everyone and to be connected to everything around you. You frequent the best taverns, attend all of the right events, and graciously help anyone who needs it.",
@@ -389,14 +389,14 @@ namespace EldritchArcana
             })));
 
             choices.Add(Helpers.CreateFeature("AnimalFriendTrait", "Animal Friend (Gnome)",
-                "You’ve long been a friend to animals, and feel safer when animals are nearby.\nBenefits: You gain a +1 trait bonus on Will saving throws as long as you have an animal companion or familiar, and Lore (Nature) is always a class skill for you.",
+                "You've long been a friend to animals, and feel safer when animals are nearby.\nBenefits: You gain a +1 trait bonus on Will saving throws as long as you have an animal companion or familiar, and Lore (Nature) is always a class skill for you.",
                 "91c612b225d54adaa4ce4c633501b58e",
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/gnome_animal_friend.png"),//Helpers.GetIcon("1670990255e4fe948a863bafd5dbda5d"), // Boon Companion
                 FeatureGroup.None,
                 components.ToArray()));
 
             choices.Add(Helpers.CreateFeature("Rapscallion", "Rapscallion (Gnome)",
-                "You’ve spent your entire life thumbing your nose at the establishment and take pride in your run-ins with the law. Somehow, despite all your mischievous behavior, you’ve never been caught.\nBenefits: You gain a +1 trait bonus on Mobility checks and a +1 trait bonus on initiative checks.",
+                "You've spent your entire life thumbing your nose at the establishment and take pride in your run-ins with the law. Somehow, despite all your mischievous behavior, you've never been caught.\nBenefits: You gain a +1 trait bonus on Mobility checks and a +1 trait bonus on initiative checks.",
                 "4f95abdcc70e4bda818be5b8860585c5",
                 Helpers.GetSkillFocus(StatType.SkillMobility).Icon,
                 FeatureGroup.None,
@@ -405,14 +405,14 @@ namespace EldritchArcana
                 Helpers.CreateAddStatBonus(StatType.Initiative, 1, ModifierDescriptor.Trait)));
 
             // Aasimar:
-            // - Martyr’s Blood (+1 attack if HP below half).
+            // - Martyr's Blood (+1 attack if HP below half).
             // - Toxophilite (+2 crit confirm with bows)
             // - Wary (+1 perception/persuasion)
 
             // TODO: Enlightened Warrior
 
-            choices.Add(Helpers.CreateFeature("MartyrsBloodTrait", "Martyr’s Blood (Aasimar)",
-                "You carry the blood of a self-sacrificing celestial, and strive to live up to your potential for heroism.\nBenefit(s): As long as your current hit point total is less than half of your maximum hit points possible, you gain a +1 trait bonus on attack rolls against evil foes.",
+            choices.Add(Helpers.CreateFeature("MartyrsBloodTrait", RES.MartyrsBloodTraitName_info,
+                RES.MartyrsBloodTraitDescription_info,
                 "729d27ad020d485f843264844f0f2155",
                 Helpers.GetIcon("3ea2215150a1c8a4a9bfed9d9023903e"), // Iron Will Improved
                 FeatureGroup.None,
@@ -425,8 +425,8 @@ namespace EldritchArcana
                     a.HitPointPercent = 0.5f;
                 })));
 
-            choices.Add(Helpers.CreateFeature("ToxophiliteTrait", "Toxophilite (Aasimar)",
-                "You’ve inherited some of your celestial ancestor’s prowess with the bow.\nBenefit: You gain a +2 trait bonus on attack rolls made to confirm critical hits with bows.",
+            choices.Add(Helpers.CreateFeature("ToxophiliteTrait", RES.ToxophiliteTraitName_info,
+                RES.ToxophiliteTraitDescription_info,
                 "6c434f07c8984971b1d842cecdf144c6",
                 Helpers.GetIcon("f4201c85a991369408740c6888362e20"), // Improved Critical
                 FeatureGroup.None,
@@ -439,8 +439,8 @@ namespace EldritchArcana
                     a.Type = AttackTypeAttackBonus.WeaponRangeType.RangedNormal;
                 })));
 
-            choices.Add(Helpers.CreateFeature("WaryTrait", "Wary (Aasimar)",
-                "You grew up around people who were jealous of and hostile toward you. Perhaps your parents were not pleased to have a child touched by the divine—they may have berated or beaten you, or even sold you into slavery for an exorbitant price. You grew up mistrustful of others and believing your unique appearance to be a curse.\nBenefit: You gain a +1 trait bonus on Persuasion and Perception checks.",
+            choices.Add(Helpers.CreateFeature("WaryTrait", RES.WaryTraitName_info,
+                RES.WaryTraitDescription_info,
                 "7a72a0e956784cc38ea049e503189810",
                 Helpers.GetIcon("86d93a5891d299d4983bdc6ef3987afd"), // Persuasive
                 FeatureGroup.None,

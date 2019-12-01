@@ -115,7 +115,7 @@ namespace EldritchArcana
         {
             var goblinReq = Helpers.PrerequisiteFeature(Helpers.goblin);
             var feat = Helpers.CreateFeature("RollWithIt", RES.RollWithItFeatureName_info,
-                RES.SafeCuringFeatureDescription_info,
+                RES.RollWithItFeatureDescription_info,
                 "1249556638b04ecc85e069e230751bfa",
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/optimistic_gambler.png"),
                 FeatureGroup.Feat,
@@ -160,12 +160,12 @@ namespace EldritchArcana
             metamagicDescriptor += metamagicDescriptor.EndsWith("e") ? "d" : "ed";
             // Log.Write(metamagicDescriptor + ":" + metamagicName);
             var feat = metamagic == Metamagic.Quicken ? Helpers.CreateFeature($"Magus{metamagicDescriptor}Magic", string.Format(RES.MagusMagicFeatureName_info, metamagicName),
-                    RES.MagusMagicFeatureDescription_info + "\n" + RES.MagusMagicLevelFeatureDescription_info,
+                    String.Format(RES.MagusMagicFeatureDescription_info, metamagicName) + "\n" + RES.MagusMagicLevelFeatureDescription_info,
                 Helpers.MergeIds(metamagicFeat.AssetGuid, "65768d69b6b84954b3d6a1d1dc265cf8"),
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/extra_arcana.png"),//metamagicFeat.Icon,
                 FeatureGroup.MagusArcana)
                 : Helpers.CreateFeature($"Magus{metamagicDescriptor}Magic", string.Format(RES.MagusMagicFeatureName_info, metamagicName),
-                    RES.MagusMagicFeatureDescription_info + "\n" + RES.MagusMagicCastTimeLevelFeatureDescription_info,
+                    String.Format(RES.MagusMagicFeatureDescription_info, metamagicName) + "\n" + RES.MagusMagicCastTimeLevelFeatureDescription_info,
                     Helpers.MergeIds(metamagicFeat.AssetGuid, "65768d69b6b84954b3d6a1d1dc265cf8"),
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/extra_arcana.png"),//metamagicFeat.Icon,
                     FeatureGroup.MagusArcana);

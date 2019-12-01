@@ -586,6 +586,13 @@
   <data name="EldritchKnightFix_info" xml:space="preserve">
     <value>兼职奥法骑士需要已拥有战士类职业（例如：野蛮人、战士、圣武士、巡林客，不影响已创建的角色）</value>
   </data>
+  <data name="ElvenReflexsTraitDescription_info" xml:space="preserve">
+    <value>你的双亲之一来自野精灵部落，你也从精灵亲族中遗传到了快速的反应力。
+效益：你的先攻检定获得+2背景加值。</value>
+  </data>
+  <data name="ElvenReflexsTraitName_info" xml:space="preserve">
+    <value>精灵反应（半精灵）</value>
+  </data>
   <data name="EmergencyForceSphereBuffDescription_info" xml:space="preserve">
     <value>如同力墙术一样，你可以创造一个拥有20硬度和10HP/每施法者等级的半球型的力场穹顶。如果你站在一个相当平坦的平面上，穹顶内下部切面以上会形成一个密闭空间。穹顶的形状意味着坠落物（比如从倒塌的天花板上坠落的岩石）会滑到侧面并逐渐堆积于穹顶之上。如果你通过一个DC20的工艺（石匠），知识（工程学）或者专业（建筑师或工程师）检定，在法术结束时，碎片会趋于稳定并保留穹顶状的构造，否则它就将崩溃。
 通常情况下这个法术被利用于在雪崩，洪水和泥石流中争取时间，其次也常用于应对伏击。</value>
@@ -645,6 +652,13 @@
   </data>
   <data name="ExtraRevelationFeatureName_info" xml:space="preserve">
     <value>额外启示</value>
+  </data>
+  <data name="FailedAprenticeTraitDescription_info" xml:space="preserve">
+    <value>小时候父母就送你到远方的法师塔去做学徒，以便学习奥术技巧。不幸的是你的奥术天赋略尴尬，尽管你还是从中学到了很多法术原理、以及如何加以抵抗。
+效益：你对抗奥术的豁免获得+1背景加值。</value>
+  </data>
+  <data name="FailedAprenticeTraitName_info" xml:space="preserve">
+    <value>半吊子学徒（半精灵）</value>
   </data>
   <data name="failedFindEntries_error" xml:space="preserve">
     <value>找不到{0}的条目（GUID：{1}）</value>
@@ -1063,10 +1077,17 @@
     <value>魔战士每天可以施放一个如同被超魔专长“{0}”调整过一般的法术。</value>
   </data>
   <data name="MagusMagicFeatureName_info" xml:space="preserve">
-    <value>{0}法术</value>
+    <value>{0}魔法</value>
   </data>
   <data name="MagusMagicLevelFeatureDescription_info" xml:space="preserve">
     <value>这不会增加法术等级。</value>
+  </data>
+  <data name="MartyrsBloodTraitDescription_info" xml:space="preserve">
+    <value>你的血管中流淌着一位曾经为惩恶而殉道的天人之血，而你也努力发挥你的这项英雄潜质。
+效益：当你的生命值降至1/2以下，你在面对邪恶时获得+1攻击检定加值。</value>
+  </data>
+  <data name="MartyrsBloodTraitName_info" xml:space="preserve">
+    <value>殉道之血（神裔）</value>
   </data>
   <data name="MetamagicAdeptFeatureDescription_info" xml:space="preserve">
     <value>3级时，你可以在不增加施法时间的情况下，将你知道的任何一个超魔专长应用到你即将施放的法术上。你仍必须花费一个更高级别的法术位来施放这个法术。你可以在3级时每天使用一次该能力，3级之后每4个施法者等级可每天额外使用一次，19级时每天最多使用五次。达到20级后，该能力被奥法巅峰替代。</value>
@@ -2400,6 +2421,13 @@
   <data name="TimeStopSpells_info" xml:space="preserve">
     <value>时间停止</value>
   </data>
+  <data name="ToxophiliteTraitDescription_info" xml:space="preserve">
+    <value>你继承了你的天界祖先的某些弓箭才能。
+效益：使用弓箭时你在确认重击的检定上获得+2背景加值。</value>
+  </data>
+  <data name="ToxophiliteTraitName_info" xml:space="preserve">
+    <value>射艺大师（神裔）</value>
+  </data>
   <data name="TraitsAddStatBonusDescription_info" xml:space="preserve">
     <value>{0}
 效益：你在{1}检定上获得+1背景加值，并且{2}成为你的职业技能。</value>
@@ -2442,6 +2470,12 @@
   </data>
   <data name="WarriorOfOldTraitName_info" xml:space="preserve">
     <value>历战老兵（精灵）</value>
+  </data>
+  <data name="WaryTraitDescription_info" xml:space="preserve">
+    <value>你在嫉妒和敌视你的人环绕下长大。或许你的父母对拥有一个神裔孩子并不高兴——他们可能对你打骂不断，甚至以高昂的价格将你贩卖为奴。这些都导致你长大后不信任任何人，并认为自己的外貌是个诅咒。</value>
+  </data>
+  <data name="WaryTraitName_info" xml:space="preserve">
+    <value>警觉（神裔）</value>
   </data>
   <data name="WeaponCategoryBastardSwordName_info" xml:space="preserve">
     <value>一把重剑</value>

@@ -239,7 +239,7 @@ namespace EldritchArcana
             var power = GetBloodlinePower(bloodline, powerLevel);
             return CreateHeritageFeat(bloodline, power, powerLevel,
                 $"{bloodline.name.Replace("Progression", "")}EldritchHeritage",
-                string.Format(RES.TypeHyphenSubtype_info, RES.EldritchHeritageFeatureName_info, bloodline.name),
+                string.Format(RES.TypeHyphenSubtype_info, RES.EldritchHeritageFeatureName_info, bloodline.Name),
                 bloodline.Icon,
                 Helpers.MergeIds(bloodline.AssetGuid, "7114742a530d4946ba36888247422abe"),
                 components);

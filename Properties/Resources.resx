@@ -586,6 +586,13 @@ Select one sorcerer bloodline. You must have Skill focus in the class skill that
   <data name="EldritchKnightFix_info" xml:space="preserve">
     <value>Eldritch Knight requires martial class (doesn't affect existing EKs)</value>
   </data>
+  <data name="ElvenReflexsTraitDescription_info" xml:space="preserve">
+    <value>One of your parents was a member of a wild elven tribe, and you’ve inherited a portion of your elven parent’s quick reflexes.
+Benefit: You gain a +2 trait bonus on initiative checks.</value>
+  </data>
+  <data name="ElvenReflexsTraitName_info" xml:space="preserve">
+    <value>Elven Reflexes (Half-Elf)</value>
+  </data>
   <data name="EmergencyForceSphereBuffDescription_info" xml:space="preserve">
     <value>As wall of force, except you create a hemispherical dome of force with hardness 20 and a number of hit points equal to 10 per caster level. The bottom edge of the dome forms a relatively watertight space if you are standing on a reasonably flat surface. The dome shape means that falling debris (such as rocks from a collapsing ceiling) tend to tumble to the side and pile up around the base of the dome. If you make a DC 20 Craft (stonemasonry), Knowledge (engineering), or Profession (architect or engineer) check, the debris is stable enough that it retains its dome-like configuration when the spell ends, otherwise it collapses.
 Normally this spell is used to buy time for dealing with avalanches, floods, and rock-slides, though it is also handy in dealing with ambushes.</value>
@@ -645,6 +652,13 @@ Special: You can gain Extra Revelation multiple times.</value>
   </data>
   <data name="ExtraRevelationFeatureName_info" xml:space="preserve">
     <value>Extra Revelation</value>
+  </data>
+  <data name="FailedAprenticeTraitDescription_info" xml:space="preserve">
+    <value>As a child, your parents sent you to a distant wizard’s tower as an apprentice so that you could learn the arcane arts. Unfortunately, you had no arcane talent whatsoever, though you did learn a great deal about the workings of spells and how to resist them.
+Benefit: You gain a +1 trait bonus on saves against arcane spells.</value>
+  </data>
+  <data name="FailedAprenticeTraitName_info" xml:space="preserve">
+    <value>Failed Apprentice (Half-Elf)</value>
   </data>
   <data name="failedFindEntries_error" xml:space="preserve">
     <value>Failed to find the entries for {0} (guid {1})</value>
@@ -1066,6 +1080,13 @@ A duplicated spell allows saving throws and spell resistance as normal, but the 
   </data>
   <data name="MagusMagicLevelFeatureDescription_info" xml:space="preserve">
     <value>This does not increase the level of the spell.</value>
+  </data>
+  <data name="MartyrsBloodTraitDescription_info" xml:space="preserve">
+    <value>You carry the blood of a self-sacrificing celestial, and strive to live up to your potential for heroism.
+Benefit(s): As long as your current hit point total is less than half of your maximum hit points possible, you gain a +1 trait bonus on attack rolls against evil foes.</value>
+  </data>
+  <data name="MartyrsBloodTraitName_info" xml:space="preserve">
+    <value>Martyr's Blood (Aasimar)</value>
   </data>
   <data name="MetamagicAdeptFeatureDescription_info" xml:space="preserve">
     <value>At 3rd level, you can apply any one metamagic feat you know to a spell you are about to cast without increasing the casting time. You must still expend a higher-level spell slot to cast this spell. You can use this ability once per day at 3rd level and one additional time per day for every four sorcerer levels you possess beyond 3rd, up to five times per day at 19th level. At 20th level, this ability is replaced by arcane apotheosis.</value>
@@ -2399,6 +2420,13 @@ You are undetectable while time stop lasts. You cannot enter an area protected b
   <data name="TimeStopSpells_info" xml:space="preserve">
     <value>Time Stop</value>
   </data>
+  <data name="ToxophiliteTraitDescription_info" xml:space="preserve">
+    <value>You've inherited some of your celestial ancestor's prowess with the bow.
+Benefit: You gain a +2 trait bonus on attack rolls made to confirm critical hits with bows.</value>
+  </data>
+  <data name="ToxophiliteTraitName_info" xml:space="preserve">
+    <value>Toxophilite (Aasimar)</value>
+  </data>
   <data name="TraitsAddStatBonusDescription_info" xml:space="preserve">
     <value>{0}
 Benefits: You gain a +1 trait bonus on {1} checks, and {2} is always a class skill for you.</value>
@@ -2441,6 +2469,12 @@ Benefit: You gain a +2 trait bonus on initiative checks.</value>
   </data>
   <data name="WarriorOfOldTraitName_info" xml:space="preserve">
     <value>Warrior of Old (Elf)</value>
+  </data>
+  <data name="WaryTraitDescription_info" xml:space="preserve">
+    <value>You grew up around people who were jealous of and hostile toward you. Perhaps your parents were not pleased to have a child touched by the divine—they may have berated or beaten you, or even sold you into slavery for an exorbitant price. You grew up mistrustful of others and believing your unique appearance to be a curse.</value>
+  </data>
+  <data name="WaryTraitName_info" xml:space="preserve">
+    <value>Wary (Aasimar)</value>
   </data>
   <data name="WeaponCategoryBastardSwordName_info" xml:space="preserve">
     <value>a bastard sword</value>
