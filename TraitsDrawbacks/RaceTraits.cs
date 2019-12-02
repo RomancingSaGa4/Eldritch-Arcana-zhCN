@@ -257,14 +257,14 @@ namespace EldritchArcana
             // - Freed Slave (world)
             // - Freedom Fighter (mobility)
             // - Well-Informed (persuasion)
-            choices.Add(Traits.CreateAddStatBonus("FreedSlaveTrait", "Freed Slave (Halfling)",
-                "You grew up as a slave and know the ins and outs of nobility better than most.",
+            choices.Add(Traits.CreateAddStatBonus("FreedSlaveTrait", RES.FreedSlaveTraitName_info,
+                RES.FreedSlaveTraitDescription_info,
                 "d2fc5fe0c64142a79e0ebee18f14b0be", StatType.SkillKnowledgeWorld, halflingReq));
-            choices.Add(Traits.CreateAddStatBonus("FreedomFighterTrait", "Freedom Fighter (Halfling)",
-                "Your parents allowed escaping slaves to hide in your home, and the stories you've heard from them instilled into you a deep loathing of slavery, and a desire to help slaves evade capture and escape.",
+            choices.Add(Traits.CreateAddStatBonus("FreedomFighterTrait", RES.FreedomFighterTraitName_info,
+                RES.FreedomFighterTraitDescription_info,
                 "3a4d2cd14dc446319085c865570ccc3d", StatType.SkillMobility, halflingReq));
-            choices.Add(Traits.CreateAddStatBonus("WellInformedTrait", "Well-Informed (Halfling)",
-                "You make it a point to know everyone and to be connected to everything around you. You frequent the best taverns, attend all of the right events, and graciously help anyone who needs it.",
+            choices.Add(Traits.CreateAddStatBonus("WellInformedTrait", RES.WellInformedTraitName_info,
+                RES.WellInformedTraitDescription_info,
                 "940ced5d41594b9aa22ee22217fbd46f", StatType.SkillPersuasion, halflingReq));
 
             // Dwarf:

@@ -584,7 +584,7 @@
   血承—先决{0}：</value>
   </data>
   <data name="EldritchKnightFix_info" xml:space="preserve">
-    <value>兼职奥法骑士需要已拥有战士类职业（例如：野蛮人、战士、圣武士、巡林客，不影响已创建的角色）</value>
+    <value>兼职奥法骑士需要已拥有战士类职业（例如：野蛮人、战士、圣武士、游侠，不影响已创建的角色）</value>
   </data>
   <data name="ElvenReflexsTraitDescription_info" xml:space="preserve">
     <value>你的双亲之一来自野精灵部落，你也从精灵亲族中遗传到了快速的反应力。
@@ -594,7 +594,7 @@
     <value>精灵反应（半精灵）</value>
   </data>
   <data name="EmergencyForceSphereBuffDescription_info" xml:space="preserve">
-    <value>如同力墙术一样，你可以创造一个拥有20硬度和10HP/每施法者等级的半球型的力场穹顶。如果你站在一个相当平坦的平面上，穹顶内下部切面以上会形成一个密闭空间。穹顶的形状意味着坠落物（比如从倒塌的天花板上坠落的岩石）会滑到侧面并逐渐堆积于穹顶之上。如果你通过一个DC20的工艺（石匠），知识（工程学）或者专业（建筑师或工程师）检定，在法术结束时，碎片会趋于稳定并保留穹顶状的构造，否则它就将崩溃。
+    <value>你能以即时动作创造一个如同力墙术一样，拥有20硬度和10HP/每施法者等级的半球型的力场穹顶。如果你站在一个相当平坦的平面上，穹顶内下部切面以上会形成一个密闭空间。穹顶的形状意味着坠落物（比如从倒塌的天花板上坠落的岩石）会滑到侧面并逐渐堆积于穹顶之上。如果你通过一个DC20的工艺（石匠），知识（工程学）或者专业（建筑师或工程师）检定，在法术结束时，碎片会趋于稳定并保留穹顶状的构造，否则它就将崩溃。
 通常情况下这个法术被利用于在雪崩，洪水和泥石流中争取时间，其次也常用于应对伏击。</value>
   </data>
   <data name="EmergencyForceSphereSpells_info" xml:space="preserve">
@@ -843,6 +843,18 @@
   <data name="FoulBrandLegDrawbackName_info" xml:space="preserve">
     <value>腿部</value>
   </data>
+  <data name="FreedomFighterTraitDescription_info" xml:space="preserve">
+    <value>你的父母将逃脱的奴隶藏匿在家中，而他们所讲述的故事让你对蓄奴制度恨之入骨，并致力于解放奴隶、或是协助奴隶逃跑。</value>
+  </data>
+  <data name="FreedomFighterTraitName_info" xml:space="preserve">
+    <value>自由斗士（半身人）</value>
+  </data>
+  <data name="FreedSlaveTraitDescription_info" xml:space="preserve">
+    <value>你一出生就是一个奴隶，也因此你比常人更清楚那些贵族们的门门道道。</value>
+  </data>
+  <data name="FreedSlaveTraitName_info" xml:space="preserve">
+    <value>获释奴隶（半身人）</value>
+  </data>
   <data name="GloryOfOldTraitDescription_info" xml:space="preserve">
     <value>你曾是一名王国近卫。
 你从属于老王和他的军队的精锐老兵团，并且效忠于他。正是你对矮人王国发动了最后的冲锋。
@@ -903,7 +915,7 @@
     <value>无助</value>
   </data>
   <data name="HighDCl_info" xml:space="preserve">
-    <value>外乡来客的法术获得最大的施法者等级和DC加值（作弊）</value>
+    <value>异乡来客的法术获得最大的施法者等级和DC加值（作弊）</value>
   </data>
   <data name="HypnoticDurationLocalized_info" xml:space="preserve">
     <value>专注+2轮</value>
@@ -2147,7 +2159,10 @@
     <value>{0}为{1}级</value>
   </data>
   <data name="PrestigiousSpellcasterFeatureDescription_info" xml:space="preserve">
-    <value>对你来说，转换到进阶施法者职业的难度并不算大，也因此你从进阶施法者职业等级中获得1个额外的有效施法者等级。</value>
+    <value>转职为能够施法的进阶职业对你来说并不困难，因此你可以在获取进阶职业等级时获得1个额外的有效施法者等级。
+效益：当你首次获得天赋进阶职业的等级，并且该拥有“每日法术”特性的进阶职业在此等级并不会增加你的有效施法者等级之时，选择该专长让你同样能获得新的有效施法者等级，如同该职业在该等级具有“+1现有施法职业等级”能力一般。即便你选取该专长时已经过了天赋进阶职业未能提高你的施法能力的等级，效果也依然可以追溯生效。
+如果你的天赋进阶职业不具有“每日法术”的特性、或者尽管具有“每日法术”的特性但是进阶职业本身每级都会增加有效施法者等级（如诡术师或博学士），进阶施法者专长不会产生任何效果。
+特殊：你可以多次选取进阶施法者专长。每次选取该专长，你的有效施法者等级都会+1级。但无论你选取多少次该专长，它对你的有效施法者等级的总提升值不会超过你当前的进阶职业等级</value>
   </data>
   <data name="PrestigiousSpellcasterFeatureName_error" xml:space="preserve">
     <value>进阶施法者，自发施法者的法术替换</value>
@@ -2613,6 +2628,12 @@
   </data>
   <data name="WeaponOfAweSpells_info" xml:space="preserve">
     <value>惊畏武器</value>
+  </data>
+  <data name="WellInformedTraitDescription_info" xml:space="preserve">
+    <value>你致力于结交众人，并将周围的人脉从点连为线。你常造访酒馆获悉时事，并慷慨地向他人伸出援手。</value>
+  </data>
+  <data name="WellInformedTraitName_info" xml:space="preserve">
+    <value>包打听（半身人）</value>
   </data>
   <data name="WisdomintheFleshTraitDescription_info" xml:space="preserve">
     <value>你对内在完美、力量与速度本质的长时冥思，使你能将精神与思考高度集中，完成那些仅凭肉体无法办到的事情。

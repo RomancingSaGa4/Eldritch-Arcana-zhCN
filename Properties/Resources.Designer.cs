@@ -2115,6 +2115,42 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Your parents allowed escaping slaves to hide in your home, and the stories you&apos;ve heard from them instilled into you a deep loathing of slavery, and a desire to help slaves evade capture and escape. 的本地化字符串。
+        /// </summary>
+        internal static string FreedomFighterTraitDescription_info {
+            get {
+                return ResourceManager.GetString("FreedomFighterTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Freedom Fighter (Halfling) 的本地化字符串。
+        /// </summary>
+        internal static string FreedomFighterTraitName_info {
+            get {
+                return ResourceManager.GetString("FreedomFighterTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You grew up as a slave and know the ins and outs of nobility better than most. 的本地化字符串。
+        /// </summary>
+        internal static string FreedSlaveTraitDescription_info {
+            get {
+                return ResourceManager.GetString("FreedSlaveTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Freed Slave (Halfling) 的本地化字符串。
+        /// </summary>
+        internal static string FreedSlaveTraitName_info {
+            get {
+                return ResourceManager.GetString("FreedSlaveTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You are part of the old Guard.
         ///You belong to the elite veteran regiments of the old king and his army and are intensely loyal to him. It was you who made the last charge at the dwarven kingdom.
         ///Benefit: You receive a +1 trait bonus on saving throws against spells, spell-like abilities, and poison 的本地化字符串。
@@ -7012,6 +7048,24 @@ namespace EldritchArcana.Properties {
         internal static string WeaponOfAweSpells_info {
             get {
                 return ResourceManager.GetString("WeaponOfAweSpells_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You make it a point to know everyone and to be connected to everything around you. You frequent the best taverns, attend all of the right events, and graciously help anyone who needs it. 的本地化字符串。
+        /// </summary>
+        internal static string WellInformedTraitDescription_info {
+            get {
+                return ResourceManager.GetString("WellInformedTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Well-Informed (Halfling) 的本地化字符串。
+        /// </summary>
+        internal static string WellInformedTraitName_info {
+            get {
+                return ResourceManager.GetString("WellInformedTraitName_info", resourceCulture);
             }
         }
         
