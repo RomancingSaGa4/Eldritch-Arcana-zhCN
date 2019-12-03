@@ -164,6 +164,13 @@
   <data name="AncientLorekeeperName_info" xml:space="preserve">
     <value>传古学者</value>
   </data>
+  <data name="AnimalFriendTraitDescription_info" xml:space="preserve">
+    <value>你一直都是动物的朋友，并且会在附近有动物时感到安心。
+效益：如果你有动物伙伴或者使魔，你的意志豁免检定获得+1背景加值，并且学识（自然）成为你的职业技能。</value>
+  </data>
+  <data name="AnimalFriendTraitName_info" xml:space="preserve">
+    <value>动物之友（侏儒）</value>
+  </data>
   <data name="AnyClassSkillName_info" xml:space="preserve">
     <value>任何知识/学识技能</value>
   </data>
@@ -432,7 +439,7 @@
   </data>
   <data name="CrossbloodedDisplayDescribeChoices_info" xml:space="preserve">
     <value>
-• {0}：{1}</value>
+- {0}：{1}</value>
   </data>
   <data name="CrossbloodedSorcererLocalizedDescription_info" xml:space="preserve">
     <value>混血术士可以选择两种不同的血承。术士能够从他的两种血脉分别继承技能，专长，以及某些源自血缘的力量，但也会付出一些代价，如容易头脑混乱以及选择局限。</value>
@@ -570,7 +577,7 @@
   </data>
   <data name="EldritchHeritageFeatDescription_info" xml:space="preserve">
     <value>
-• {0}—{1}</value>
+- {0}—{1}</value>
   </data>
   <data name="EldritchHeritageFeatureDescription_info" xml:space="preserve">
     <value>你是一个术士家族的八辈子孙，有一些源于你祖先的力量流淌在你的血液之中。
@@ -694,7 +701,7 @@
     <value>
 每当此角色提升 {0} 级后, 你可以获得+1生命值，+1技能点，或者基于他们天赋职业的种族奖励。
 种族奖励：
-• 人类（及半精灵，半兽人，神裔）——从{0}法术列表中获得一个额外已知法术。这个法术必须比你当前所能施展的最高级{1}法术低1级。</value>
+- 人类（及半精灵，半兽人，神裔）——从{0}法术列表中获得一个额外已知法术。这个法术必须比你当前所能施展的最高级{1}法术低1级。</value>
   </data>
   <data name="FavoredClassFeatureDescription_info" xml:space="preserve">
     <value>每个角色以他选择的一个天赋职业开始游戏，通常这会是他们在1级时选择的职业。
@@ -717,7 +724,7 @@
     <value>所有mod功能</value>
   </data>
   <data name="featureName_error" xml:space="preserve">
-    <value>• &lt;b&gt;{0}&lt;/b&gt;</value>
+    <value>- &lt;b&gt;{0}&lt;/b&gt;</value>
   </data>
   <data name="Fey-takenDrawbackDescription_info" xml:space="preserve">
     <value>你在孩童时曾被喜欢恶作剧的妖精带走了一段时间。当你回归现实世界后，你从此看起来奇怪且不合群。你觉得现实世界十分无趣，你渴望回到那里，因而时常反抗，因此你不会按原样进食，你也不会再对奇光异景产生疑问。
@@ -855,6 +862,13 @@
   <data name="FreedSlaveTraitName_info" xml:space="preserve">
     <value>获释奴隶（半身人）</value>
   </data>
+  <data name="FrostbornTraitDescription_info" xml:space="preserve">
+    <value>你在冰冷的苔原上长大。
+效益：你获得+4背景加值来抵抗寒冷环境的影响，并且在所有对寒冷效果的豁免检定中获得+1背景加值。</value>
+  </data>
+  <data name="FrostbornTraitName_info" xml:space="preserve">
+    <value>霜脉（矮人）</value>
+  </data>
   <data name="GloryOfOldTraitDescription_info" xml:space="preserve">
     <value>你曾是一名王国近卫。
 你从属于老王和他的军队的精锐老兵团，并且效忠于他。正是你对矮人王国发动了最后的冲锋。
@@ -887,6 +901,13 @@
   </data>
   <data name="GreaterMagicWeaponSpells_info" xml:space="preserve">
     <value>高等魔化武器</value>
+  </data>
+  <data name="GroundedTraitDescription_info" xml:space="preserve">
+    <value>你德智体全面发展。
+效益：你在灵巧检定上获得+2背景加值，并在反射豁免检定时获得+1背景加值。</value>
+  </data>
+  <data name="GroundedTraitName_info" xml:space="preserve">
+    <value>理性（矮人）</value>
   </data>
   <data name="HealingHandsFeatureDescription_info" xml:space="preserve">
     <value>你在医疗检定上获得+4加值。你能以一个迅捷动作使用{0}。</value>
@@ -1017,12 +1038,12 @@
   </data>
   <data name="LimitedWishAbilityDescription_info" xml:space="preserve">
     <value>有限祈愿术能够让你创造出几乎任何类型的效果。比如说有限祈愿术可以做到下列事情：
-• 复制任何一个不超过6级的术士/法师法术，但是这个法术不能属于你的对立学派。
-• 复制任何一个不超过5级的非术士/法师法术，但是这个法术不能属于你的对立学派。
-• 复制任何一个不超过5级的术士/法师法术，哪怕这个法术属于你的对立学派。
-• 复制任何一个不超过4级的非术士/法师法术，哪怕这个法术属于你的对立学派。
-• 取消许多法术的有害效果，如神智错乱。
-• 创造出其它效果，其强度等级不超过上述的效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定中受到-7的减值等等。
+- 复制任何一个不超过6级的术士/法师法术，但是这个法术不能属于你的对立学派。
+- 复制任何一个不超过5级的非术士/法师法术，但是这个法术不能属于你的对立学派。
+- 复制任何一个不超过5级的术士/法师法术，哪怕这个法术属于你的对立学派。
+- 复制任何一个不超过4级的非术士/法师法术，哪怕这个法术属于你的对立学派。
+- 消除许多法术的有害效果，如神智错乱。
+- 创造出其它效果，其强度等级不超过上述的效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定中受到-7的减值等等。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照7级法术计算。如果有限祈愿术复制的法术含有价格超过1000金币的材料成分，那么你就必须提供这些材料（这并不包含在法术本身价值1500金币的材料费内）。</value>
   </data>
   <data name="LimitedWishSpells_info" xml:space="preserve">
@@ -1212,17 +1233,23 @@
   <data name="MeteorSwarmSavingThrowDescription_info" xml:space="preserve">
     <value>无豁免或反射减半，参见说明</value>
   </data>
+  <data name="MilitantMerchantTraitDescription_info" xml:space="preserve">
+    <value>你知道将商品推向市场所需的一切，并会全力以赴保护你的商品。多年抵御小偷，凶犯和强盗的手段使你对危险有了敏锐的直觉。</value>
+  </data>
+  <data name="MilitantMerchantTraitName_info" xml:space="preserve">
+    <value>武装商人（矮人）</value>
+  </data>
   <data name="MiracleAbilityDescription_info" xml:space="preserve">
     <value>准确地说，你并非“施放”奇迹术，而是请求奇迹发生。你声明你希望发生什么样的事情，并且向你的神祇（或者你祈祷获得法术能力的其它力量）请求神迹降临。
 奇迹术可以做到以下任意一点：
-• 复制任何不超过8级的牧师法术。
-• 复制任何不超过7级的其它法术。
-• 取消特定法术的有害效果，诸如弱智或是神智错乱。
-• 获得任何强度不超过上述效果的其它效果。
+- 复制任何不超过8级的牧师法术。
+- 复制任何不超过7级的其它法术。
+- 取消特定法术的有害效果，诸如弱智或是神智错乱。
+- 获得任何强度不超过上述效果的其它效果。
 此外，牧师还可以请求一个非常强力的神迹。施放这样的奇迹术将耗费牧师价值25000金币的钻石粉末，因为这会涉及非常强大的神圣能量。这类特殊的强力奇迹可能包含下列情况：
-• 让阵亡的盟友重新复活，继续战斗，从而让战局变得对你有利。
-• 让你和你的盟友带着所有的装备从某个位面前往一个特定位置，并且在穿过位面之间的屏障时不会出现任何错误。
-• 保护一座城市免受地震、火山爆发、洪水或其他重大自然灾害的影响。
+- 让阵亡的盟友重新复活，继续战斗，从而让战局变得对你有利。
+- 让你和你的盟友带着所有的装备从某个位面前往一个特定位置，并且在穿过位面之间的屏障时不会出现任何错误。
+- 保护一座城市免受地震、火山爆发、洪水或其他重大自然灾害的影响。
 无论情况为何，超出神祇本性（或者阵营）的要求都会被拒绝。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照9级法术计算。如果奇迹术复制的法术含有价格超过100金币的材料成分，那么你就必须提供这些材料。</value>
   </data>
@@ -2220,6 +2247,13 @@
   <data name="RaceWorldTravelerTraitName_info" xml:space="preserve">
     <value>世界旅者（人类）</value>
   </data>
+  <data name="RapscallionTraitDescription_info" xml:space="preserve">
+    <value>你的一生都致力于和当权派作对，并且对自己游走于法律边缘颇感自得。然而尽管你恶行累累，你却从未被捕。
+效益：你在灵巧检定上获得+1背景加值，在先攻检定上获得+1背景加值。</value>
+  </data>
+  <data name="RapscallionTraitName_info" xml:space="preserve">
+    <value>恶棍（侏儒）</value>
+  </data>
   <data name="RegionalTraitDescription_info" xml:space="preserve">
     <value>地区背景与特定的区域紧密相关，可能规模很大（如某些国家或地域）也可能很小（如某座城市或特定的一座山）。要选择某个地区背景，你的角色必须在当地生活一年以上。1级时你仅能选择一个地区背景（通常是角色的出生地或家乡），无论你希望给你的角色设定多少个地区背景。</value>
   </data>
@@ -2263,6 +2297,13 @@
   </data>
   <data name="RoundsPerLevel_info" xml:space="preserve">
     <value>{0}轮/级</value>
+  </data>
+  <data name="RuthlessTraitDescription_info" xml:space="preserve">
+    <value>你对痛下杀手从来没有心理负担。
+效益：你在确认重击的检定上获得+1背景加值。</value>
+  </data>
+  <data name="RuthlessTraitName_info" xml:space="preserve">
+    <value>残忍（矮人）</value>
   </data>
   <data name="SacredConduitTraitDescription_info" xml:space="preserve">
     <value>你的降生对母亲而言痛苦而又艰辛，以致需要借助圣能来确保你顺利存活（你的母亲则不一定有如此幸运）。那种魔法能量从儿时便萦绕在你身畔，如今你可以轻松自如地引导神圣能量。
@@ -2320,7 +2361,7 @@
     <value>创建角色时在肖像列表中显示自定义肖像（需要重新启动游戏才能生效）</value>
   </data>
   <data name="SingleLineDescription_info" xml:space="preserve">
-    <value>• {0}</value>
+    <value>- {0}</value>
   </data>
   <data name="SkillBonusProgressionDescription_info" xml:space="preserve">
     <value>{0}
@@ -2644,24 +2685,24 @@
   </data>
   <data name="WishAbilityDescription_info" xml:space="preserve">
     <value>祈愿术是法师或术士所能施放的最强力的法术。只需要简单地大声说出你的愿望，你就能让现实变得更符合你的心意。但即便是祈愿术也有其极限。祈愿术可以产生下列效果中的其中一种。
-• 复制任何一个不超过8级的术士/法师法术，但是该法术不能属于你的对立学派。
-• 复制任何一个不超过7级的非术士/法师法术，但是该法术不能属于你的对立学派。
-• 复制任何一个不超过7级的术士/法师学派，哪怕该法术属于你的对立学派。
-• 复制任何一个不超过6级的非术士/法师法术，哪怕该法术属于你的对立学派。
-• 取消许多其他法术的有害效果，诸如指使术或是神智错乱。
-• 给予一个生物的某项属性值+1的天赋加值。连续不断地施放2到5个祈愿术可以给予生物的某项属性值+2到+5的天赋加值（两个祈愿术获得+2天赋加值，三个祈愿术获得+3天赋加值，以此类推）。天赋加值即刻生效，因此无法被解除。注意：对于任何一项属性，天赋加值最大不能超过+5，并且天赋加值的效果无法叠加，只能应用最大加值。
-• 移除受伤和疾病。单个祈愿术可以帮助1个/每施法者等级的生物，所有目标的同一类病症都将得到治疗。例如你可以治疗自己和同伴受到的所有伤害，或者移除队伍中每个人受到的中毒效果，但是不能用1个祈愿术来同时得到两种效果。
-• 死者重生。一个祈愿术可以通过复制死者复活法术来复活一个死去的生物。如果死去的生物已然尸骨无存，祈愿术依旧可以复活它，但是这需要两个祈愿术：一个用来创造其身体，另外一个让该身体重新获得生命的活力。祈愿术复活的生物仍然无可避免地会损失一个等级。
+- 复制任何一个不超过8级的术士/法师法术，但是该法术不能属于你的对立学派。
+- 复制任何一个不超过7级的非术士/法师法术，但是该法术不能属于你的对立学派。
+- 复制任何一个不超过7级的术士/法师学派，哪怕该法术属于你的对立学派。
+- 复制任何一个不超过6级的非术士/法师法术，哪怕该法术属于你的对立学派。
+- 取消许多其他法术的有害效果，诸如指使术或是神智错乱。
+- 给予一个生物的某项属性值+1的天赋加值。连续不断地施放2到5个祈愿术可以给予生物的某项属性值+2到+5的天赋加值（两个祈愿术获得+2天赋加值，三个祈愿术获得+3天赋加值，以此类推）。天赋加值即刻生效，因此无法被解除。注意：对于任何一项属性，天赋加值最大不能超过+5，并且天赋加值的效果无法叠加，只能应用最大加值。
+- 移除受伤和疾病。单个祈愿术可以帮助1个/每施法者等级的生物，所有目标的同一类病症都将得到治疗。例如你可以治疗自己和同伴受到的所有伤害，或者移除队伍中每个人受到的中毒效果，但是不能用1个祈愿术来同时得到两种效果。
+- 死者重生。一个祈愿术可以通过复制死者复活法术来复活一个死去的生物。如果死去的生物已然尸骨无存，祈愿术依旧可以复活它，但是这需要两个祈愿术：一个用来创造其身体，另外一个让该身体重新获得生命的活力。祈愿术复活的生物仍然无可避免地会损失一个等级。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照9级法术计算。如果祈愿术复制的法术含有价格超过10000金币的材料成分，那么你就必须提供这些材料（这并不包含在法术本身价值25000金币的材料费内）。</value>
   </data>
   <data name="WishArcaneAbilityDescription_info" xml:space="preserve">
     <value>奥术祈愿术能够让你创造出几乎任何类型的效果，只需要你提供5颗钻石。
-• 复制任何一个不超过6级的术士/法师法术，但是这个法术不能属于你的对立学派。
-• 复制任何一个不超过5级的非术士/法师法术，但是这个法术不能属于你的对立学派。
-• 复制任何一个不超过5级的术士/法师法术，哪怕这个法术属于你的对立学派。
-• 复制任何一个不超过4级的非术士/法师法术，哪怕这个法术属于你的对立学派。
-• 取消许多法术的有害效果，如神智错乱。
-• 创造出其它效果，其强度等级不能超过上述的效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定中受到-7的减值等等。
+- 复制任何一个不超过6级的术士/法师法术，但是这个法术不能属于你的对立学派。
+- 复制任何一个不超过5级的非术士/法师法术，但是这个法术不能属于你的对立学派。
+- 复制任何一个不超过5级的术士/法师法术，哪怕这个法术属于你的对立学派。
+- 复制任何一个不超过4级的非术士/法师法术，哪怕这个法术属于你的对立学派。
+- 取消许多法术的有害效果，如神智错乱。
+- 创造出其它效果，其强度等级不能超过上述的效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定中受到-7的减值等等。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照7级法术计算。如果有限祈愿术复制的法术含有价格超过1000金币的材料成分，那么你就必须提供这些材料（这并不包含在法术本身价值1500金币的材料费内）。</value>
   </data>
   <data name="WishBuffDescription_info" xml:space="preserve">
@@ -2696,5 +2737,12 @@
   </data>
   <data name="YouthfulMischiefTraitName_info" xml:space="preserve">
     <value>人生经验（精灵）</value>
+  </data>
+  <data name="ZestForBattleTraitDescription_info" xml:space="preserve">
+    <value>你最大的乐趣就是在激烈的战斗中，为正义甚至卑鄙的事业而打击敌人。
+效益：每当武器攻击检定获得士气加值时，武器伤害检定也会获得+1背景加值。</value>
+  </data>
+  <data name="ZestForBattleTraitName_info" xml:space="preserve">
+    <value>战斗热情（矮人）</value>
   </data>
 </root>

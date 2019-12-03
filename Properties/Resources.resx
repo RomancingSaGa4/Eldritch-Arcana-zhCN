@@ -164,6 +164,13 @@ This ability replaces the bonus spells they would normally gain at these levels 
   <data name="AncientLorekeeperName_info" xml:space="preserve">
     <value>Ancient Lorekeeper</value>
   </data>
+  <data name="AnimalFriendTraitDescription_info" xml:space="preserve">
+    <value>You've long been a friend to animals, and feel safer when animals are nearby.
+Benefits: You gain a +1 trait bonus on Will saving throws as long as you have an animal companion or familiar, and Lore (Nature) is always a class skill for you.</value>
+  </data>
+  <data name="AnimalFriendTraitName_info" xml:space="preserve">
+    <value>Animal Friend (Gnome)</value>
+  </data>
   <data name="AnyClassSkillName_info" xml:space="preserve">
     <value>Any Lore/Knowledge Skill</value>
   </data>
@@ -853,6 +860,13 @@ Drawback: Your movement speed is 5ft slower.</value>
   <data name="FreedSlaveTraitName_info" xml:space="preserve">
     <value>Freed Slave (Halfling)</value>
   </data>
+  <data name="FrostbornTraitDescription_info" xml:space="preserve">
+    <value>You were raised in the icy tundra.
+Benefit: You gain a +4 trait bonus to resist the effects of cold environments, as well as a +1 trait bonus on all saving throws against cold effects.</value>
+  </data>
+  <data name="FrostbornTraitName_info" xml:space="preserve">
+    <value>Frostborn (Dwarf)</value>
+  </data>
   <data name="GloryOfOldTraitDescription_info" xml:space="preserve">
     <value>You are part of the old Guard.
 You belong to the elite veteran regiments of the old king and his army and are intensely loyal to him. It was you who made the last charge at the dwarven kingdom.
@@ -885,6 +899,13 @@ You gain an additional power from the bloodline you selected with the Eldritch H
   </data>
   <data name="GreaterMagicWeaponSpells_info" xml:space="preserve">
     <value>Greater Magic Weapon</value>
+  </data>
+  <data name="GroundedTraitDescription_info" xml:space="preserve">
+    <value>You are well balanced, both physically and mentally.
+Benefit: You gain a +2 trait bonus on Mobility checks, and a +1 trait bonus on Reflex saves.</value>
+  </data>
+  <data name="GroundedTraitName_info" xml:space="preserve">
+    <value>Grounded (Dwarf)</value>
   </data>
   <data name="HealingHandsFeatureDescription_info" xml:space="preserve">
     <value>You gain a +4 bonus on Heal checks. You may use {0} as a swift action.</value>
@@ -1210,6 +1231,12 @@ Once a sphere reaches its destination, it explodes in a 40-foot-radius spread, d
   </data>
   <data name="MeteorSwarmSavingThrowDescription_info" xml:space="preserve">
     <value>None or Reflex half, see text</value>
+  </data>
+  <data name="MilitantMerchantTraitDescription_info" xml:space="preserve">
+    <value>You know what it takes to get your goods to market and will stop at nothing to protect your products. Years of fending off thieves, cutthroats, and brigands have given you a sixth sense when it comes to danger.</value>
+  </data>
+  <data name="MilitantMerchantTraitName_info" xml:space="preserve">
+    <value>Militant Merchant (Dwarf)</value>
   </data>
   <data name="MiracleAbilityDescription_info" xml:space="preserve">
     <value>You don't so much cast a miracle as request one. You state what you would like to have happen and request that your deity (or the power you pray to for spells) intercede.
@@ -2216,6 +2243,13 @@ Benefits: Select one of the following skills: Persuasion, Knowledge (world), or 
   <data name="RaceWorldTravelerTraitName_info" xml:space="preserve">
     <value>World Traveler (Human)</value>
   </data>
+  <data name="RapscallionTraitDescription_info" xml:space="preserve">
+    <value>You've spent your entire life thumbing your nose at the establishment and take pride in your run-ins with the law. Somehow, despite all your mischievous behavior, you've never been caught.
+Benefits: You gain a +1 trait bonus on Mobility checks and a +1 trait bonus on initiative checks.</value>
+  </data>
+  <data name="RapscallionTraitName_info" xml:space="preserve">
+    <value>Rapscallion (Gnome)</value>
+  </data>
   <data name="RegionalTraitDescription_info" xml:space="preserve">
     <value>Regional traits are keyed to specific regions, be they large (such as a nation or geographic region) or small (such as a city or a specific mountain). In order to select a regional trait, your PC must have spent at least a year living in that region. At 1st level, you can only select one regional trait (typically the one tied to your character's place of birth or homeland), despite the number of regions you might wish to write into your character's background.</value>
   </data>
@@ -2259,6 +2293,13 @@ Benefit: If you are struck by a melee weapon you can try to convert some of that
   </data>
   <data name="RoundsPerLevel_info" xml:space="preserve">
     <value>{0} round/level</value>
+  </data>
+  <data name="RuthlessTraitDescription_info" xml:space="preserve">
+    <value>You never hesitate to strike a killing blow.
+Benefit: You gain a +1 trait bonus on attack rolls to confirm critical hits.</value>
+  </data>
+  <data name="RuthlessTraitName_info" xml:space="preserve">
+    <value>Ruthless (Dwarf)</value>
   </data>
   <data name="SacredConduitTraitDescription_info" xml:space="preserve">
     <value>Your birth was particularly painful and difficult for your mother, who needed potent divine magic to ensure that you survived (your mother may or may not have survived). In any event, that magic infused you from an early age, and you now use divine energy with greater ease than most.
@@ -2693,5 +2734,12 @@ Benefit: You gain a +1 trait bonus on Reflex saves.</value>
   </data>
   <data name="YouthfulMischiefTraitName_info" xml:space="preserve">
     <value>Youthful Mischief (Elf)</value>
+  </data>
+  <data name="ZestForBattleTraitDescription_info" xml:space="preserve">
+    <value>Your greatest joy is being in the thick of battle, and smiting your enemies for a righteous or even dastardly cause.
+Benefit: Whenever you have a morale bonus to weapon attack rolls, you also receive a +1 trait bonus on weapon damage rolls.</value>
+  </data>
+  <data name="ZestForBattleTraitName_info" xml:space="preserve">
+    <value>Zest for Battle (Dwarf)</value>
   </data>
 </root>

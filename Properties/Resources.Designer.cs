@@ -191,6 +191,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You&apos;ve long been a friend to animals, and feel safer when animals are nearby.
+        ///Benefits: You gain a +1 trait bonus on Will saving throws as long as you have an animal companion or familiar, and Lore (Nature) is always a class skill for you. 的本地化字符串。
+        /// </summary>
+        internal static string AnimalFriendTraitDescription_info {
+            get {
+                return ResourceManager.GetString("AnimalFriendTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Animal Friend (Gnome) 的本地化字符串。
+        /// </summary>
+        internal static string AnimalFriendTraitName_info {
+            get {
+                return ResourceManager.GetString("AnimalFriendTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Any Lore/Knowledge Skill 的本地化字符串。
         /// </summary>
         internal static string AnyClassSkillName_info {
@@ -2151,6 +2170,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You were raised in the icy tundra.
+        ///Benefit: You gain a +4 trait bonus to resist the effects of cold environments, as well as a +1 trait bonus on all saving throws against cold effects. 的本地化字符串。
+        /// </summary>
+        internal static string FrostbornTraitDescription_info {
+            get {
+                return ResourceManager.GetString("FrostbornTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Frostborn (Dwarf) 的本地化字符串。
+        /// </summary>
+        internal static string FrostbornTraitName_info {
+            get {
+                return ResourceManager.GetString("FrostbornTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You are part of the old Guard.
         ///You belong to the elite veteran regiments of the old king and his army and are intensely loyal to him. It was you who made the last charge at the dwarven kingdom.
         ///Benefit: You receive a +1 trait bonus on saving throws against spells, spell-like abilities, and poison 的本地化字符串。
@@ -2240,6 +2278,25 @@ namespace EldritchArcana.Properties {
         internal static string GreaterMagicWeaponSpells_info {
             get {
                 return ResourceManager.GetString("GreaterMagicWeaponSpells_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You are well balanced, both physically and mentally.
+        ///Benefit: You gain a +2 trait bonus on Mobility checks, and a +1 trait bonus on Reflex saves. 的本地化字符串。
+        /// </summary>
+        internal static string GroundedTraitDescription_info {
+            get {
+                return ResourceManager.GetString("GroundedTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Grounded (Dwarf) 的本地化字符串。
+        /// </summary>
+        internal static string GroundedTraitName_info {
+            get {
+                return ResourceManager.GetString("GroundedTraitName_info", resourceCulture);
             }
         }
         
@@ -3140,6 +3197,24 @@ namespace EldritchArcana.Properties {
         internal static string MeteorSwarmSavingThrowDescription_info {
             get {
                 return ResourceManager.GetString("MeteorSwarmSavingThrowDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You know what it takes to get your goods to market and will stop at nothing to protect your products. Years of fending off thieves, cutthroats, and brigands have given you a sixth sense when it comes to danger. 的本地化字符串。
+        /// </summary>
+        internal static string MilitantMerchantTraitDescription_info {
+            get {
+                return ResourceManager.GetString("MilitantMerchantTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Militant Merchant (Dwarf) 的本地化字符串。
+        /// </summary>
+        internal static string MilitantMerchantTraitName_info {
+            get {
+                return ResourceManager.GetString("MilitantMerchantTraitName_info", resourceCulture);
             }
         }
         
@@ -5895,6 +5970,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You&apos;ve spent your entire life thumbing your nose at the establishment and take pride in your run-ins with the law. Somehow, despite all your mischievous behavior, you&apos;ve never been caught.
+        ///Benefits: You gain a +1 trait bonus on Mobility checks and a +1 trait bonus on initiative checks. 的本地化字符串。
+        /// </summary>
+        internal static string RapscallionTraitDescription_info {
+            get {
+                return ResourceManager.GetString("RapscallionTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Rapscallion (Gnome) 的本地化字符串。
+        /// </summary>
+        internal static string RapscallionTraitName_info {
+            get {
+                return ResourceManager.GetString("RapscallionTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Regional traits are keyed to specific regions, be they large (such as a nation or geographic region) or small (such as a city or a specific mountain). In order to select a regional trait, your PC must have spent at least a year living in that region. At 1st level, you can only select one regional trait (typically the one tied to your character&apos;s place of birth or homeland), despite the number of regions you might wish to write into your character&apos;s background. 的本地化字符串。
         /// </summary>
         internal static string RegionalTraitDescription_info {
@@ -6018,6 +6112,25 @@ namespace EldritchArcana.Properties {
         internal static string RoundsPerLevel_info {
             get {
                 return ResourceManager.GetString("RoundsPerLevel_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You never hesitate to strike a killing blow.
+        ///Benefit: You gain a +1 trait bonus on attack rolls to confirm critical hits. 的本地化字符串。
+        /// </summary>
+        internal static string RuthlessTraitDescription_info {
+            get {
+                return ResourceManager.GetString("RuthlessTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Ruthless (Dwarf) 的本地化字符串。
+        /// </summary>
+        internal static string RuthlessTraitName_info {
+            get {
+                return ResourceManager.GetString("RuthlessTraitName_info", resourceCulture);
             }
         }
         
@@ -7203,6 +7316,25 @@ namespace EldritchArcana.Properties {
         internal static string YouthfulMischiefTraitName_info {
             get {
                 return ResourceManager.GetString("YouthfulMischiefTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your greatest joy is being in the thick of battle, and smiting your enemies for a righteous or even dastardly cause.
+        ///Benefit: Whenever you have a morale bonus to weapon attack rolls, you also receive a +1 trait bonus on weapon damage rolls. 的本地化字符串。
+        /// </summary>
+        internal static string ZestForBattleTraitDescription_info {
+            get {
+                return ResourceManager.GetString("ZestForBattleTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Zest for Battle (Dwarf) 的本地化字符串。
+        /// </summary>
+        internal static string ZestForBattleTraitName_info {
+            get {
+                return ResourceManager.GetString("ZestForBattleTraitName_info", resourceCulture);
             }
         }
     }

@@ -304,8 +304,8 @@ namespace EldritchArcana
 
             choices.Add(GloryOfOld);
 
-            choices.Add(Helpers.CreateFeature("GroundedTrait", "Grounded (Dwarf)",
-                "You are well balanced, both physically and mentally.\nBenefit: You gain a +2 trait bonus on Mobility checks, and a +1 trait bonus on Reflex saves.",
+            choices.Add(Helpers.CreateFeature("GroundedTrait", RES.GroundedTraitName_info,
+                RES.GroundedTraitDescription_info,
                 "9b13923527a64c3bbf8de904c5a9ef8b",
                 Helpers.GetIcon("3a8d34905eae4a74892aae37df3352b9"), // Skill Focus Stealth (mobility)
                 FeatureGroup.None,
@@ -313,12 +313,12 @@ namespace EldritchArcana
                 Helpers.CreateAddStatBonus(StatType.SkillMobility, 2, ModifierDescriptor.Racial),
                 Helpers.CreateAddStatBonus(StatType.SaveReflex, 1, ModifierDescriptor.Racial)));
 
-            choices.Add(Traits.CreateAddStatBonus("MilitantMerchantTrait", "Militant Merchant (Dwarf)",
-                "You know what it takes to get your goods to market and will stop at nothing to protect your products. Years of fending off thieves, cutthroats, and brigands have given you a sixth sense when it comes to danger.",
+            choices.Add(Traits.CreateAddStatBonus("MilitantMerchantTrait", RES.MilitantMerchantTraitName_info,
+                RES.MilitantMerchantTraitDescription_info,
                 "38226f4ad9ed4211878ef95497d01857", StatType.SkillPerception, dwarfReq));
 
-            choices.Add(Helpers.CreateFeature("RuthlessTrait", "Ruthless (Dwarf)",
-                "You never hesitate to strike a killing blow.\nBenefit: You gain a +1 trait bonus on attack rolls to confirm critical hits.",
+            choices.Add(Helpers.CreateFeature("RuthlessTrait", RES.RuthlessTraitName_info,
+                RES.RuthlessTraitDescription_info,
                 "58d18289cb7f4ad4a690d9502d397a3a",
                 Helpers.GetIcon("f4201c85a991369408740c6888362e20"), // Improved Critical
                 FeatureGroup.None,
@@ -326,8 +326,8 @@ namespace EldritchArcana
                 Helpers.Create<CriticalConfirmationBonus>(a => { a.Bonus = 1; a.Value = 0; })));
 
             
-            var Frostborn = Helpers.CreateFeature("FrostbornTrait", "Frostborn (Dwarf)",
-                "You were raised in the icy tundra\nBenefit:Benefit: You gain a +4 trait bonus to resist the effects of cold environments, as well as a +1 trait bonus on all saving throws against cold effects.",
+            var Frostborn = Helpers.CreateFeature("FrostbornTrait", RES.FrostbornTraitName_info,
+                RES.FrostbornTraitDescription_info,
                 "f987f5e69db44cdd99983985e37a6c3c",
                 Helpers.GetIcon("121811173a614534e8720d7550aae253"), // Weapon Specialization
                 FeatureGroup.None,
@@ -336,8 +336,8 @@ namespace EldritchArcana
             Frostborn.AddComponent(Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Cold; s.ModifierDescriptor=ModifierDescriptor.Racial; s.Bonus = 1; }));
             choices.Add(Frostborn);
 
-            choices.Add(Helpers.CreateFeature("ZestForBattleTrait", "Zest for Battle (Dwarf)",
-                "Your greatest joy is being in the thick of battle, and smiting your enemies for a righteous or even dastardly cause.\nBenefit: Whenever you have a morale bonus to weapon attack rolls, you also receive a +1 trait bonus on weapon damage rolls.",
+            choices.Add(Helpers.CreateFeature("ZestForBattleTrait", RES.ZestForBattleTraitName_info,
+                RES.ZestForBattleTraitDescription_info,
                 "a987f5e69db44cdd98983985e37a6c2a",
                 Helpers.GetIcon("31470b17e8446ae4ea0dacd6c5817d86"), // Weapon Specialization
                 FeatureGroup.None,
@@ -388,15 +388,15 @@ namespace EldritchArcana
                 a.CheckedFact =Traits.library.Get<BlueprintFeature>(id);
             })));
 
-            choices.Add(Helpers.CreateFeature("AnimalFriendTrait", "Animal Friend (Gnome)",
-                "You've long been a friend to animals, and feel safer when animals are nearby.\nBenefits: You gain a +1 trait bonus on Will saving throws as long as you have an animal companion or familiar, and Lore (Nature) is always a class skill for you.",
+            choices.Add(Helpers.CreateFeature("AnimalFriendTrait", RES.AnimalFriendTraitName_info,
+                RES.AnimalFriendTraitDescription_info,
                 "91c612b225d54adaa4ce4c633501b58e",
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/gnome_animal_friend.png"),//Helpers.GetIcon("1670990255e4fe948a863bafd5dbda5d"), // Boon Companion
                 FeatureGroup.None,
                 components.ToArray()));
 
-            choices.Add(Helpers.CreateFeature("Rapscallion", "Rapscallion (Gnome)",
-                "You've spent your entire life thumbing your nose at the establishment and take pride in your run-ins with the law. Somehow, despite all your mischievous behavior, you've never been caught.\nBenefits: You gain a +1 trait bonus on Mobility checks and a +1 trait bonus on initiative checks.",
+            choices.Add(Helpers.CreateFeature("RapscallionTrait", RES.RapscallionTraitName_info,
+                RES.RapscallionTraitDescription_info,
                 "4f95abdcc70e4bda818be5b8860585c5",
                 Helpers.GetSkillFocus(StatType.SkillMobility).Icon,
                 FeatureGroup.None,
