@@ -134,6 +134,13 @@ Benefit: You gain two character traits of your choice. These traits must be chos
   <data name="AddSpellScrollsFeatureName_info" xml:space="preserve">
     <value>Scrolls for new spells</value>
   </data>
+  <data name="AdoptedTraitDescription_info" xml:space="preserve">
+    <value>You were adopted and raised by someone not of your race, and raised in a society not your own.
+Benefit: As a result, you picked up a race trait from your adoptive parents and society, and may immediately select a race trait from your adoptive parents' race.</value>
+  </data>
+  <data name="AdoptedTraitName_info" xml:space="preserve">
+    <value>Adopted</value>
+  </data>
   <data name="AirWalkAbilityDescription_info" xml:space="preserve">
     <value>The subject can tread on air as if walking on solid ground. This grants a +3 dodge bonus to AC against melee attacks, immunity to difficult terrain, and +10 to Mobility skill checks. This does not stack with other spells that grant wings or flight.</value>
   </data>
@@ -639,6 +646,13 @@ Drawback: You take a –2 penalty on attacks against vermin, and you take a –2
   <data name="EquipmentTraitName_info" xml:space="preserve">
     <value>Equipment Trait</value>
   </data>
+  <data name="EverWaryTraitDescripton_info" xml:space="preserve">
+    <value>Constant fear that your fiendish nature might provoke a sudden attack ensures that you never completely let down your guard.
+Benefit: During the surprise round and before your first action in combat, you can apply half your Dexterity bonus (if any) to your AC. You still count as flat-footed for the purposes of attacks and effects.</value>
+  </data>
+  <data name="EverWaryTraitName_info" xml:space="preserve">
+    <value>Ever wary (Tiefling)</value>
+  </data>
   <data name="ExaltedOfTheSocietyTraitDescription" xml:space="preserve">
     <value>The vaults of the great city contain many secrets of the divine powers of the gods, and you have studied your god extensively.
 Benefit: You may channel energy 1 additional time per day.</value>
@@ -886,6 +900,13 @@ Benefit: You receive a +1 trait bonus on saving throws against spells, spell-lik
   </data>
   <data name="GoblinSpellName_info" xml:space="preserve">
     <value>Summon Six Goblins</value>
+  </data>
+  <data name="GodScornTraitDescription_info" xml:space="preserve">
+    <value>Your contempt for the gods and their sad little priests makes it easier to shake off the effects of their prayers.
+Benefit: You gain a +1 trait bonus on saving throws against divine spells.</value>
+  </data>
+  <data name="GodScornTraitName_info" xml:space="preserve">
+    <value>God Scorn (Demodand Tiefling)</value>
   </data>
   <data name="GreaterEldritchHeritageFeatureDescription_info" xml:space="preserve">
     <value>Your discovered bloodline power reaches its zenith.
@@ -2193,6 +2214,13 @@ Drawback: If you attack someone when you are below 40 % health, you are transfor
   <data name="PrestigiousSpellcasterFeatureName_info" xml:space="preserve">
     <value>Prestigious Spellcaster</value>
   </data>
+  <data name="ProlongMagicTraitDescription_info" xml:space="preserve">
+    <value>Constant drills and preparation allow you to get more out of your innate magic.
+Benefit: Whenever you use a spell - like ability gained through your tiefling heritage, it automatically acts as if affected by the Extend Spell metamagic feat.</value>
+  </data>
+  <data name="ProlongMagicTraitName_info" xml:space="preserve">
+    <value>Prolong Magic (Tiefling)</value>
+  </data>
   <data name="RaceCarefullyHiddenTraitDescription_info" xml:space="preserve">
     <value>Your life as a member of an unpopular ethnic group has given you an uncanny knack for avoiding detection.
 Benefit: You gain a +1 trait bonus to Will saves and a +2 trait bonus to saving throws versus divination effects.</value>
@@ -2352,6 +2380,13 @@ This ability replaces all of the bonus class skills they would otherwise normall
   </data>
   <data name="SeekerTinkeringName_info" xml:space="preserve">
     <value>Tinkering</value>
+  </data>
+  <data name="ShadowStabberTraitDescription_info" xml:space="preserve">
+    <value>An instinct for dishonorable conduct serves you well when fighting opponents who are blind, oblivious, or blundering around in the dark.
+Benefit: You gain a +2 trait bonus on melee weapon damage rolls made against foes that cannot see you.</value>
+  </data>
+  <data name="ShadowStabberTraitName_info" xml:space="preserve">
+    <value>Shadow Stabber (Tiefling)</value>
   </data>
   <data name="ShowCustomPortraits_info" xml:space="preserve">
     <value>Show custom portraits in the portrait list at character creation (if changed, requires restart)</value>

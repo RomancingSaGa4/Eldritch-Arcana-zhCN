@@ -108,6 +108,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You were adopted and raised by someone not of your race, and raised in a society not your own.
+        ///Benefit: As a result, you picked up a race trait from your adoptive parents and society, and may immediately select a race trait from your adoptive parents&apos; race. 的本地化字符串。
+        /// </summary>
+        internal static string AdoptedTraitDescription_info {
+            get {
+                return ResourceManager.GetString("AdoptedTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Adopted 的本地化字符串。
+        /// </summary>
+        internal static string AdoptedTraitName_info {
+            get {
+                return ResourceManager.GetString("AdoptedTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 The subject can tread on air as if walking on solid ground. This grants a +3 dodge bonus to AC against melee attacks, immunity to difficult terrain, and +10 to Mobility skill checks. This does not stack with other spells that grant wings or flight. 的本地化字符串。
         /// </summary>
         internal static string AirWalkAbilityDescription_info {
@@ -1535,6 +1554,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Constant fear that your fiendish nature might provoke a sudden attack ensures that you never completely let down your guard.
+        ///Benefit: During the surprise round and before your first action in combat, you can apply half your Dexterity bonus (if any) to your AC. You still count as flat-footed for the purposes of attacks and effects. 的本地化字符串。
+        /// </summary>
+        internal static string EverWaryTraitDescripton_info {
+            get {
+                return ResourceManager.GetString("EverWaryTraitDescripton_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Ever wary (Tiefling) 的本地化字符串。
+        /// </summary>
+        internal static string EverWaryTraitName_info {
+            get {
+                return ResourceManager.GetString("EverWaryTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 The vaults of the great city contain many secrets of the divine powers of the gods, and you have studied your god extensively.
         ///Benefit: You may channel energy 1 additional time per day. 的本地化字符串。
         /// </summary>
@@ -2241,6 +2279,25 @@ namespace EldritchArcana.Properties {
         internal static string GoblinSpellName_info {
             get {
                 return ResourceManager.GetString("GoblinSpellName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your contempt for the gods and their sad little priests makes it easier to shake off the effects of their prayers.
+        ///Benefit: You gain a +1 trait bonus on saving throws against divine spells. 的本地化字符串。
+        /// </summary>
+        internal static string GodScornTraitDescription_info {
+            get {
+                return ResourceManager.GetString("GodScornTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 God Scorn (Demodand Tiefling) 的本地化字符串。
+        /// </summary>
+        internal static string GodScornTraitName_info {
+            get {
+                return ResourceManager.GetString("GodScornTraitName_info", resourceCulture);
             }
         }
         
@@ -5830,6 +5887,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Constant drills and preparation allow you to get more out of your innate magic.
+        ///Benefit: Whenever you use a spell - like ability gained through your tiefling heritage, it automatically acts as if affected by the Extend Spell metamagic feat. 的本地化字符串。
+        /// </summary>
+        internal static string ProlongMagicTraitDescription_info {
+            get {
+                return ResourceManager.GetString("ProlongMagicTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Prolong Magic (Tiefling) 的本地化字符串。
+        /// </summary>
+        internal static string ProlongMagicTraitName_info {
+            get {
+                return ResourceManager.GetString("ProlongMagicTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Your life as a member of an unpopular ethnic group has given you an uncanny knack for avoiding detection.
         ///Benefit: You gain a +1 trait bonus to Will saves and a +2 trait bonus to saving throws versus divination effects. 的本地化字符串。
         /// </summary>
@@ -6277,6 +6353,25 @@ namespace EldritchArcana.Properties {
         internal static string SeekerTinkeringName_info {
             get {
                 return ResourceManager.GetString("SeekerTinkeringName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 An instinct for dishonorable conduct serves you well when fighting opponents who are blind, oblivious, or blundering around in the dark.
+        ///Benefit: You gain a +2 trait bonus on melee weapon damage rolls made against foes that cannot see you. 的本地化字符串。
+        /// </summary>
+        internal static string ShadowStabberTraitDescription_info {
+            get {
+                return ResourceManager.GetString("ShadowStabberTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Shadow Stabber (Tiefling) 的本地化字符串。
+        /// </summary>
+        internal static string ShadowStabberTraitName_info {
+            get {
+                return ResourceManager.GetString("ShadowStabberTraitName_info", resourceCulture);
             }
         }
         

@@ -445,7 +445,7 @@ namespace EldritchArcana
                 Helpers.GetIcon("86d93a5891d299d4983bdc6ef3987afd"), // Persuasive
                 FeatureGroup.None,
                 aasimarReq,
-                Helpers.CreateAddStatBonus(StatType.SkillPersuasion, 1, ModifierDescriptor.Trait),
+                Helpers.CreateAddStatBonus(StatType.SkillPerception, 1, ModifierDescriptor.Trait),
                 Helpers.CreateAddStatBonus(StatType.SkillPerception, 1, ModifierDescriptor.Trait)));
 
             // Tiefling:
@@ -454,8 +454,8 @@ namespace EldritchArcana
             // - God Scorn (Demodand heritage; +1 saves vs divine spells)
             // - Shadow Stabber (+2 damage if opponent can't see you)
 
-            choices.Add(Helpers.CreateFeature("EverWaryTrait", "Ever wary (Tiefling)",
-                "Constant fear that your fiendish nature might provoke a sudden attack ensures that you never completely let down your guard.\nBenefit During the surprise round and before your first action in combat, you can apply half your Dexterity bonus (if any) to your AC. You still count as flat-footed for the purposes of attacks and effects.",
+            choices.Add(Helpers.CreateFeature("EverWaryTrait", RES.EverWaryTraitName_info,
+                RES.EverWaryTraitDescripton_info,
                 "0400c9c99e704a1f81a769aa88044a03",
                 Helpers.GetIcon("3c08d842e802c3e4eb19d15496145709"), // uncanny dodge
                 FeatureGroup.None,
@@ -463,8 +463,8 @@ namespace EldritchArcana
                 Helpers.Create<ACBonusDuringSurpriseRound>()));
 
             var tieflingHeritageDemodand =Traits.library.Get<BlueprintFeature>("a53d760a364cd90429e16aa1e7048d0a");
-            choices.Add(Helpers.CreateFeature("GodScornTrait", "God Scorn (Demodand Tiefling)",
-                "Your contempt for the gods and their sad little priests makes it easier to shake off the effects of their prayers.\nBenefit You gain a +1 trait bonus on saving throws against divine spells.",
+            choices.Add(Helpers.CreateFeature("GodScornTrait", RES.GodScornTraitName_info,
+                RES.GodScornTraitDescription_info,
                 "db41263f6fd3450ea0a3bc45c98330f7",
                 Helpers.GetIcon("2483a523984f44944a7cf157b21bf79c"), // Elven Immunities
                 FeatureGroup.None,
@@ -472,8 +472,8 @@ namespace EldritchArcana
                 Helpers.Create<SavingThrowBonusAgainstSpellSource>(s => s.Source = SpellSource.Divine)));
 
             var tieflingHeritageSelection =Traits.library.Get<BlueprintFeatureSelection>("c862fd0e4046d2d4d9702dd60474a181");
-            choices.Add(Helpers.CreateFeature("ProlongMagicTrait", "Prolong Magic (Tiefling)",
-                "Constant drills and preparation allow you to get more out of your innate magic.\nBenefit Whenever you use a spell - like ability gained through your tiefling heritage, it automatically acts as if affected by the Extend Spell metamagic feat.",
+            choices.Add(Helpers.CreateFeature("ProlongMagicTrait", RES.ProlongMagicTraitName_info,
+                RES.ProlongMagicTraitDescription_info,
                 "820f697f59114993a55c46044c98bf9c",
                 tieflingHeritageSelection.Icon,
                 FeatureGroup.None,
@@ -481,8 +481,8 @@ namespace EldritchArcana
                 // TODO: double check that this actually works for SLAs.
                 Helpers.Create<AutoMetamagic>(a => { a.Metamagic = Metamagic.Extend; a.Abilities = Traits.CollectTieflingAbilities(tieflingHeritageSelection); })));
 
-            choices.Add(Helpers.CreateFeature("ShadowStabberTrait", "Shadow Stabber (Tiefling)",
-                "An instinct for dishonorable conduct serves you well when fighting opponents who are blind, oblivious, or blundering around in the dark.\nBenefit You gain a +2 trait bonus on melee weapon damage rolls made against foes that cannot see you.",
+            choices.Add(Helpers.CreateFeature("ShadowStabberTrait", RES.ShadowStabberTraitName_info,
+                RES.ShadowStabberTraitDescription_info,
                 "b67d04e21a9147e3b8f9bd81ba36f409",
                 Helpers.GetIcon("9f0187869dc23744292c0e5bb364464e"), // accomplished sneak attacker
                 FeatureGroup.None,

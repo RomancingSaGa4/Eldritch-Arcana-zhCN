@@ -21,8 +21,8 @@ namespace EldritchArcana
             var choices = new List<BlueprintFeature>();
 
             // This trait is finished by CreateRaceTraits.
-            adopted = Helpers.CreateFeatureSelection("AdoptedTrait", "Adopted",
-                "You were adopted and raised by someone not of your race, and raised in a society not your own.\nBenefit: As a result, you picked up a race trait from your adoptive parents and society, and may immediately select a race trait from your adoptive parents’ race.",
+            adopted = Helpers.CreateFeatureSelection("AdoptedTrait", RES.AdoptedTraitName_info,
+                RES.AdoptedTraitDescription_info,
                 "b4b37968273b4782b29d31c0ca215f41",
                 Helpers.GetIcon("26a668c5a8c22354bac67bcd42e09a3f"), // Adaptability
                 FeatureGroup.None);
@@ -55,7 +55,7 @@ namespace EldritchArcana
             //var performanceResource = Traits.library.Get<BlueprintAbilityResource>("e190ba276831b5c4fa28737e5e49e6a6");
             var MutagenResource = Traits.library.Get<BlueprintAbilityResource>("3b163587f010382408142fc8a97852b6");
             choices.Add(Helpers.CreateFeature("GnomishAlchemistTrait", "Gnomish Alchemist",
-                "a Gnomish alchemist discovers how to create a special elixir that he can imbibe in order to heighten his ability This is so potent it can be used an extra time. When consumed, the elixir causes the Alchemist’s skin to change color to match the background and causes his hands and feet to secrete a sticky residue.\n" +
+                "a Gnomish alchemist discovers how to create a special elixir that he can imbibe in order to heighten his ability This is so potent it can be used an extra time. When consumed, the elixir causes the Alchemist's skin to change color to match the background and causes his hands and feet to secrete a sticky residue.\n" +
                 "Benfefit:you can use your mutagen an additinal 2 times per day.",
                 "125cdf262e4147cda2c670db81852c69",
                 Helpers.GetIcon("0d3651b2cb0d89448b112e23214e744e"),
@@ -70,7 +70,7 @@ namespace EldritchArcana
                 StatType.SkillPerception));
 
             var AvidReader = Helpers.CreateFeatureSelection("AvidReaderTrait", "Avid Reader",
-                "As a youth, you voraciously consumed books and scrolls provided by a member of an adventurer’s guild or a learned organization like the Pathfinder Society, and you have internalized these stories of bold adventurers." +
+                "As a youth, you voraciously consumed books and scrolls provided by a member of an adventurer's guild or a learned organization like the Pathfinder Society, and you have internalized these stories of bold adventurers." +
                 "\nBenefit: Choose one Knowledge skill. You always choose to take 10 on checks with the chosen Knowledge skill, even when distracted or threatened.",
                 "2e4dcdce32e159cbaf0fb3c641249cbf",
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/opposition_research.png"), FeatureGroup.None);
