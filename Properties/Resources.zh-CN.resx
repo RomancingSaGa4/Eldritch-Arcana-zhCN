@@ -134,6 +134,13 @@
   <data name="AddSpellScrollsFeatureName_info" xml:space="preserve">
     <value>新增法术的卷轴</value>
   </data>
+  <data name="AdoptedTraitDescription_info" xml:space="preserve">
+    <value>你被非你族裔的某人收养，并在非你族裔的社会环境中长大。
+效益：作为结果，你从养父母和其氏族社会中获得了种族特性，并能立即从你养父母的种族中选择种族特性。</value>
+  </data>
+  <data name="AdoptedTraitName_info" xml:space="preserve">
+    <value>养子（女）</value>
+  </data>
   <data name="AirWalkAbilityDescription_info" xml:space="preserve">
     <value>目标能在空中步行，一如其脚踏坚硬的地面。这让其获得对抗近战攻击的防御等级+3的闪避加值，对如困难地形等造成的地面效果免疫，并获得一个相当于1/2施法者等级的灵巧技能检定加值。该效果不会与其他法术给予的飞翼或飞行能力的效果叠加。</value>
   </data>
@@ -432,7 +439,7 @@
 当前等级的可选列表如下：</value>
   </data>
   <data name="CrossbloodedConflictingUrgesFeatureDescription_info" xml:space="preserve">
-    <value>混血术士的双重血脉带来不同的天性，造成他们内心本能的互相冲突，这使得他们需要不断进行一些精神上的努力来保持对他们当前情势的专注。这也让他们无法花费太大的精力来应对外部的威胁。混血术士在意志豁免检定中承受-2的减值。</value>
+    <value>混血术士的双重血脉带来不同的天性，造成他们内心本能的互相冲突，这使得他们需要不断进行一些精神上的努力来保持对他们当前情势的专注。这也让他们无法花费太大的精力来应对外部的威胁。混血术士在意志豁免检定时承受-2的减值。</value>
   </data>
   <data name="CrossbloodedConflictingUrgesFeatureName_info" xml:space="preserve">
     <value>混血（矛盾冲动）</value>
@@ -595,7 +602,7 @@
   </data>
   <data name="ElvenReflexsTraitDescription_info" xml:space="preserve">
     <value>你的双亲之一来自野精灵部落，你也从精灵亲族中遗传到了快速的反应力。
-效益：你的先攻检定获得+2背景加值。</value>
+效益：你在进行先攻检定时获得+2背景加值。</value>
   </data>
   <data name="ElvenReflexsTraitName_info" xml:space="preserve">
     <value>精灵反应（半精灵）</value>
@@ -638,6 +645,13 @@
   </data>
   <data name="EquipmentTraitName_info" xml:space="preserve">
     <value>装备背景</value>
+  </data>
+  <data name="EverWaryTraitDescripton_info" xml:space="preserve">
+    <value>你不断担心自己的邪恶天性可能会引来突如其来的攻击，因此你几乎从不放松警惕。
+效益：在突袭轮及战斗中你第一次行动之前，你能将敏捷调整值（如有）的1/2加至AC上。你作为攻击和其他效果的目标时仍算作措手不及。</value>
+  </data>
+  <data name="EverWaryTraitName_info" xml:space="preserve">
+    <value>恒久警觉（魔裔）</value>
   </data>
   <data name="ExaltedOfTheSocietyTraitDescription" xml:space="preserve">
     <value>大城市中往往隐藏着许多诸神神力的秘密，因此你曲线救国，来研习你敬奉的神祇。
@@ -735,7 +749,7 @@
   </data>
   <data name="FeyFoundlingFeatureDescription_info" xml:space="preserve">
     <value>当你在野外被找到时你还是个孩子。
-无论何时，当你受到魔法治疗时，你受到的治愈效果在每次掷骰时都将额外+2。你在对抗死亡效果的所有豁免检定中均获得2点加值。不幸的是，在你受到寒铁武器造成的伤害时，将额外增加1点伤害（尽管你仍旧可以使用寒铁武器而不会感到明显的不适）。</value>
+无论何时，当你受到魔法治疗时，你受到的治愈效果在每次掷骰时都将额外+2。你在对抗死亡效果的所有豁免检定时均获得2点加值。不幸的是，在你受到寒铁武器造成的伤害时，将额外增加1点伤害（尽管你仍旧可以使用寒铁武器而不会感到明显的不适）。</value>
   </data>
   <data name="FeyFoundlingFeatureName_info" xml:space="preserve">
     <value>精类遗孤</value>
@@ -864,7 +878,7 @@
   </data>
   <data name="FrostbornTraitDescription_info" xml:space="preserve">
     <value>你在冰冷的苔原上长大。
-效益：你获得+4背景加值来抵抗寒冷环境的影响，并且在所有对寒冷效果的豁免检定中获得+1背景加值。</value>
+效益：你在抵抗寒冷环境的影响时获得+4背景加值，并且在所有对寒冷效果的豁免检定时获得+1背景加值。</value>
   </data>
   <data name="FrostbornTraitName_info" xml:space="preserve">
     <value>霜脉（矮人）</value>
@@ -888,6 +902,13 @@
   </data>
   <data name="GoblinSpellName_info" xml:space="preserve">
     <value>召唤六只地精</value>
+  </data>
+  <data name="GodScornTraitDescription_info" xml:space="preserve">
+    <value>你对诸神和他们那些可怜小祭司的蔑视使你摆脱他们祈祷的影响变得更加容易。
+效益：你在对抗神术的豁免检定上获得+1背景加值。</value>
+  </data>
+  <data name="GodScornTraitName_info" xml:space="preserve">
+    <value>轻神蔑佛（魔孽魔裔）</value>
   </data>
   <data name="GreaterEldritchHeritageFeatureDescription_info" xml:space="preserve">
     <value>你身上的血脉之力达到了顶峰。
@@ -1003,7 +1024,7 @@
   </data>
   <data name="LegacyOfSandTraitDescription_info" xml:space="preserve">
     <value>在卡塔佩什东南部，曾有一个大型的兽人部落生活在沙漠中。尽管这个部落已经灭绝很久了，但卡塔佩什的一些半兽人却拥有特别大的下巴，宽阔的肩膀和让人吃惊的苍白双眼等特征。你经常梦到狩猎和沙漠月光下的奇怪仪式。有些人将这些梦想归因于种族记忆，另一些人将其归因于异象或预言。这些梦境给你灌输了强烈的传统感。
-效益：你在意志豁免检定中获得+1背景加值。</value>
+效益：你在进行意志豁免检定时获得+1背景加值。</value>
   </data>
   <data name="LegacyOfSandTraitName_info" xml:space="preserve">
     <value>沙之遗产（半兽人）</value>
@@ -1043,7 +1064,7 @@
 - 复制任何一个不超过5级的术士/法师法术，哪怕这个法术属于你的对立学派。
 - 复制任何一个不超过4级的非术士/法师法术，哪怕这个法术属于你的对立学派。
 - 消除许多法术的有害效果，如神智错乱。
-- 创造出其它效果，其强度等级不超过上述的效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定中受到-7的减值等等。
+- 创造出其它效果，其强度等级不超过上述的效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定时受到-7的减值等等。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照7级法术计算。如果有限祈愿术复制的法术含有价格超过1000金币的材料成分，那么你就必须提供这些材料（这并不包含在法术本身价值1500金币的材料费内）。</value>
   </data>
   <data name="LimitedWishSpells_info" xml:space="preserve">
@@ -1564,7 +1585,7 @@
     <value>时间跳跃</value>
   </data>
   <data name="MysteryTimeKnowledgeOfTheAgesDescription_info" xml:space="preserve">
-    <value>你可以从时光长河中检索一些被遗忘的知识或信息。如果此能力被激活，你能在知识技能的检定失败时自动重试一次，同时在再次检定中将你的魅力调整值作为洞察加值附加上去。你每天可以多次使用这个能力，次数等于魅力修正值。</value>
+    <value>你可以从时光长河中检索一些被遗忘的知识或信息。如果此能力被激活，你能在知识技能的检定失败时自动重试一次，同时在再次检定时将你的魅力调整值作为洞察加值附加上去。你每天可以多次使用这个能力，次数等于魅力修正值。</value>
   </data>
   <data name="MysteryTimeKnowledgeOfTheAgesName_info" xml:space="preserve">
     <value>光阴之智</value>
@@ -1666,7 +1687,7 @@
   </data>
   <data name="NobleFamilyGaressTraitDescription_info" xml:space="preserve">
     <value>家族格言：“如山脉一样强大”
-盖雷斯家族聚居于布雷沃的西部，戈鲁什金山脉之麓。这个家族的族长是郝兰·盖雷斯爵士，他是一名鳏夫。他收养了托瓦尔·戈尔卡，这名矮人是戈尔卡矮人要塞的氏族族长之子。在戈尔卡矮人消失之前，盖雷斯家族一直和他们保持着非常良好的关系。这个家族的成员负责加工矮人们开采的金属。家族在戈鲁什金山脉之麓建有数个要塞城市，如高穴和灰港。
+盖雷斯家族聚居于布雷沃的西部，戈鲁什金山脉之麓。这个家族的族长是郝兰・盖雷斯爵士，他是一名鳏夫。他收养了托瓦尔・戈尔卡，这名矮人是戈尔卡矮人要塞的氏族族长之子。在戈尔卡矮人消失之前，盖雷斯家族一直和他们保持着非常良好的关系。这个家族的成员负责加工矮人们开采的金属。家族在戈鲁什金山脉之麓建有数个要塞城市，如高穴和灰港。
 效益：你的移动速度上升5英尺。并且你不受非魔法的困难地形的影响。</value>
   </data>
   <data name="NobleFamilyGaressTraitName_info" xml:space="preserve">
@@ -1740,7 +1761,7 @@
   </data>
   <data name="NobleFamilyLodovkaTraitDescription_info" xml:space="preserve">
     <value>家族格言：“水域，我们的领域”
-洛多夫卡家族是一支布雷沃的贵族家族，总部位于缥缈湖的阿库本岛上。他们是湖上的一支传统势力。在寇泽科·洛多夫卡爵士的带领下，他们的舰队规模和在湖区的影响力都在稳固提升。这支家族舰队的主要工作是捕捞鱼和淡水蟹。洛多夫卡家族的纹章是一只爬出水面朝向一座灰色高塔/要塞的绿色螃蟹。
+洛多夫卡家族是一支布雷沃的贵族家族，总部位于缥缈湖的阿库本岛上。他们是湖上的一支传统势力。在寇泽科・洛多夫卡爵士的带领下，他们的舰队规模和在湖区的影响力都在稳固提升。这支家族舰队的主要工作是捕捞鱼和淡水蟹。洛多夫卡家族的纹章是一只爬出水面朝向一座灰色高塔/要塞的绿色螃蟹。
 效益：你在运动检定上获得+2背景加值。如果你拥有施法能力，雪球术将加入你的已知法术列表，即便你原本无法学会该法术。</value>
   </data>
   <data name="NobleFamilyLodovkaTraitName_info" xml:space="preserve">
@@ -1756,7 +1777,7 @@
   </data>
   <data name="NobleFamilyOrlovskyTraitDescription_info" xml:space="preserve">
     <value>家族格言：“高高在上”
-奥洛夫斯基家族在维什卡山顶的鹰栖城掌控着布雷沃的东北部地区。他们向来对于琐碎的政治斗争不屑一顾。作为现在已经消失的罗嘉维亚家族坚实的盟友，他们现在有些蠢蠢欲动。如果波尔·奥洛夫斯基爵士选择站出来反叛诺雷奇·瑟托瓦，他们可以选择先与盖雷斯家族和梅德伟耶德家族结盟。三大家族联手，将破坏瑟托瓦家族的两大重要基石——冰港和新斯特文之间的补给和运输路线。
+奥洛夫斯基家族在维什卡山顶的鹰栖城掌控着布雷沃的东北部地区。他们向来对于琐碎的政治斗争不屑一顾。作为现在已经消失的罗嘉维亚家族坚实的盟友，他们现在有些蠢蠢欲动。如果波尔・奥洛夫斯基爵士选择站出来反叛诺雷奇・瑟托瓦，他们可以选择先与盖雷斯家族和梅德伟耶德家族结盟。三大家族联手，将破坏瑟托瓦家族的两大重要基石——冰港和新斯特文之间的补给和运输路线。
 效益：你在战技防御上获得+1背景加值。你可以在沟通、运动和隐匿中选择一项，在该技能检定上获得+1背景加值，并且该技能成为你的职业技能。</value>
   </data>
   <data name="NobleFamilyOrlovskyTraitName_info" xml:space="preserve">
@@ -1764,7 +1785,7 @@
   </data>
   <data name="NobleFamilyRogarviaTraitDescription_info" xml:space="preserve">
     <value>家族格言：“以剑与火焰”
-作为布雷沃过去的统治者，罗嘉维亚家族是由征服者科洛尔和尼科斯・瑟托瓦的女儿——麦尔娜・罗嘉维亚的后人所建立。这个家族的绝大多数成员都在安布萨朗纪年4699年神秘消失了，这一事件被称为“匿迹”。他们的失踪并未引发布雷沃人民的多大哀悼，王室的效忠者们则呼吁进行调查，而非盲目效忠诺雷奇·瑟托瓦——后者宣称自己是国王。
+作为布雷沃过去的统治者，罗嘉维亚家族是由征服者科洛尔和尼科斯・瑟托瓦的女儿——麦尔娜・罗嘉维亚的后人所建立。这个家族的绝大多数成员都在安布萨朗纪年4699年神秘消失了，这一事件被称为“匿迹”。他们的失踪并未引发布雷沃人民的多大哀悼，王室的效忠者们则呼吁进行调查，而非盲目效忠诺雷奇・瑟托瓦——后者宣称自己是国王。
 罗嘉维亚一族非常强硬，在统治期间竭尽所能地地将布雷沃各个行事风格大相径庭的家族和派系捏合在一起。家族的纹章是一条双头红龙，一个头喷火，另一个头挥剑。
 缺陷：你在对布雷沃贵族使用沟通技能时检定受到-4减值（他们恨你）。
 效益：如果你拥有施法能力，火球术将加入你的已知法术列表，即便你原本无法学会该法术。</value>
@@ -1846,7 +1867,7 @@
     <value>获得：{0}</value>
   </data>
   <data name="OptimisticGamblerTraitDescription_info" xml:space="preserve">
-    <value>你似乎总是看上去囊中羞涩。更糟的是——你的欠债总是让你头疼不已。当你听说了“骗死那恶魔，拿光他的钱”赌博大赛的时候，你直觉地感到你时来运转的时候到了。事实上，你总是那么乐观，并且即便现在是你极为难得无债一身轻的时候（你刚还完了放贷头子莱马斯·斯威德的一笔贷款），你知道命运的转折就快要到来了。时来天地皆同力，现在就要赚大钱！你已付了1枚金币的入场费，并筹划着大赚一笔——你从骨子里就这么感觉。“这次一定会赚一票大的！”即使面对着绝望的场合，你无底线的乐观也能使你的灵魂坚强起来。
+    <value>你似乎总是看上去囊中羞涩。更糟的是——你的欠债总是让你头疼不已。当你听说了“骗死那恶魔，拿光他的钱”赌博大赛的时候，你直觉地感到你时来运转的时候到了。事实上，你总是那么乐观，并且即便现在是你极为难得无债一身轻的时候（你刚还完了放贷头子莱马斯・斯威德的一笔贷款），你知道命运的转折就快要到来了。时来天地皆同力，现在就要赚大钱！你已付了1枚金币的入场费，并筹划着大赚一笔——你从骨子里就这么感觉。“这次一定会赚一票大的！”即使面对着绝望的场合，你无底线的乐观也能使你的灵魂坚强起来。
 效益：你有机会随机获得一种效益。</value>
   </data>
   <data name="OptimisticGamblerTraitExtraBowBonus_info" xml:space="preserve">
@@ -1889,7 +1910,7 @@
     <value>治疗法术</value>
   </data>
   <data name="OracleCurseBlackenedDescription_info" xml:space="preserve">
-    <value>你的手掌与前臂干瘪发黑，就如同你曾经把手臂插入熊熊火焰中一样。你那薄如纸张的皮肤对碰触极为敏感。你在武器攻击检定中受到-4减值，不过你能够将燃烧之手加入你的已知法术列表。</value>
+    <value>你的手掌与前臂干瘪发黑，就如同你曾经把手臂插入熊熊火焰中一样。你那薄如纸张的皮肤对碰触极为敏感。你在武器攻击检定时受到-4减值，不过你能够将燃烧之手加入你的已知法术列表。</value>
   </data>
   <data name="OracleCurseBlackenedLevel10Description_info" xml:space="preserve">
     <value>10级时，将火墙术加入你的已知法术列表。并且你受到的武器攻击检定减值降低到-2。</value>
@@ -2102,14 +2123,14 @@
   </data>
   <data name="OrphanDrawbackDescription_info" xml:space="preserve">
     <value>你无可取代的家人全都离你而去，这使你感到绝望而消沉。
-缺陷：你在意志豁免检定中受到-2的减值。</value>
+缺陷：你在进行意志豁免检定时受到-2的减值。</value>
   </data>
   <data name="OrphanDrawbackName_info" xml:space="preserve">
     <value>天煞孤星</value>
   </data>
   <data name="OutlanderExileDescription_info" xml:space="preserve">
     <value>出于某种理由，你被迫背井离乡。命运的齿轮指引你来到此地，而你的盘缠也恰好在此告罄；所以你不得不滞留在这个小镇。你仍在被来自故乡的敌人追杀，这使你产生受害妄想、并能快速应对危机。
-效益：你的先攻检定获得+2背景加值。</value>
+效益：你在进行先攻检定时获得+2背景加值。</value>
   </data>
   <data name="OutlanderExileName_info" xml:space="preserve">
     <value>流放者</value>
@@ -2197,6 +2218,13 @@
   <data name="PrestigiousSpellcasterFeatureName_info" xml:space="preserve">
     <value>进阶施法者</value>
   </data>
+  <data name="ProlongMagicTraitDescription_info" xml:space="preserve">
+    <value>持续不断的训练和准备可以使你从先天魔法中获得更多收益。
+效益：当你施展法术时——如同你使用源自你魔裔血承的能力一样，将会自动对其应用超魔专长“法术延时”的效果。</value>
+  </data>
+  <data name="ProlongMagicTraitName_info" xml:space="preserve">
+    <value>延长魔法（魔裔）</value>
+  </data>
   <data name="RaceCarefullyHiddenTraitDescription_info" xml:space="preserve">
     <value>作为一个不受欢迎族裔的成员，你东躲西藏的生活带给你避免被发现的不可思议的诀窍。
 效益：你在意志豁免检定时获得+1背景加值，并且在对抗预言效果的豁免检定时获得+2背景加值。</value>
@@ -2211,7 +2239,7 @@
     <value>热衷求知（人类）</value>
   </data>
   <data name="RaceHistorianTraitDescription_info" xml:space="preserve">
-    <value>你的双亲是历史学者——或许是研究自家族谱的族谱学家，或许是研究古代帝国遗物的智者，亦或许仅仅是对过去有着深厚而持久的热爱的业余爱好者。
+    <value>你的双亲是历史学者——或许是研究自家族谱的族谱学家，或许是研究古代帝国遗物的智者，亦或许仅仅是对过去有着深厚而持久热爱的业余爱好者。
 效益：你在所有逸闻见识类检定上获得+1背景加值。</value>
   </data>
   <data name="RaceHistorianTraitName_info" xml:space="preserve">
@@ -2239,7 +2267,7 @@
   </data>
   <data name="RaceWorldTravelerTraitBenefit_info" xml:space="preserve">
     <value>
-效益：从沟通，知识（世界）或察觉中选择一项作为你的职业技能，并且该项技能在检定中获得+1加值。</value>
+效益：从沟通，知识（世界）或察觉中选择一项作为你的职业技能，并且该项技能在进行检定时获得+1加值。</value>
   </data>
   <data name="RaceWorldTravelerTraitDescription_info" xml:space="preserve">
     <value>你和家人痴迷于在世界各地旅行。你见识过种类繁多的不同文化，并且学会了欣赏世界所提供的多样性。</value>
@@ -2357,6 +2385,13 @@
   <data name="SeekerTinkeringName_info" xml:space="preserve">
     <value>修修补补</value>
   </data>
+  <data name="ShadowStabberTraitDescription_info" xml:space="preserve">
+    <value>在与盲目，未察觉或在黑暗中致命失误的对手战斗时，你惯于下三滥行为的本能让你如鱼得水。
+效益：你在对无法看见你的敌人发动近战攻击时伤害获得+2背景加值。</value>
+  </data>
+  <data name="ShadowStabberTraitName_info" xml:space="preserve">
+    <value>阴影背刺者（魔裔）</value>
+  </data>
   <data name="ShowCustomPortraits_info" xml:space="preserve">
     <value>创建角色时在肖像列表中显示自定义肖像（需要重新启动游戏才能生效）</value>
   </data>
@@ -2452,7 +2487,7 @@
     <value>狂猎</value>
   </data>
   <data name="SwordScionTraitDescription_info" xml:space="preserve">
-    <value>你自幼起一直生活在雷斯托夫市及其近郊。并在赛瑞安·阿尔多瑞男爵的传奇以及你所在城市的英雄和传奇剑爵的种种丰功伟绩的熏陶下成长。或许你家族中的一员就是一名阿尔多瑞剑爵，使你一直同他们保持着联系，亦或是你从小就梦想成为一名剑爵，无论如何，你都将阿尔多瑞的英雄，风格和哲学视为偶像，并一直努力模仿他们炫目的技艺。但是在你申请加入他们的行列之前，你觉得必须先测试下自己的能力。参加一次深入失窃之地的探险，似乎是提高自己技艺并开启与阿尔多瑞男爵相媲美传奇的完美途径。在你开始游戏时将获得一把长剑或是阿尔多瑞决斗剑，并在所有使用这两种武器的攻击及战技检定上获得+1背景加值。</value>
+    <value>你自幼起一直生活在雷斯托夫市及其近郊。并在赛瑞安・阿尔多瑞男爵的传奇以及你所在城市的英雄和传奇剑爵的种种丰功伟绩的熏陶下成长。或许你家族中的一员就是一名阿尔多瑞剑爵，使你一直同他们保持着联系，亦或是你从小就梦想成为一名剑爵，无论如何，你都将阿尔多瑞的英雄，风格和哲学视为偶像，并一直努力模仿他们炫目的技艺。但是在你申请加入他们的行列之前，你觉得必须先测试下自己的能力。参加一次深入失窃之地的探险，似乎是提高自己技艺并开启与阿尔多瑞男爵相媲美传奇的完美途径。在你开始游戏时将获得一把长剑或是阿尔多瑞决斗剑，并在所有使用这两种武器的攻击及战技检定上获得+1背景加值。</value>
   </data>
   <data name="SwordScionTraitName_info" xml:space="preserve">
     <value>剑之后裔</value>
@@ -2522,13 +2557,14 @@
   </data>
   <data name="WarriorOfOldTraitDescription_info" xml:space="preserve">
     <value>你从小就花费大量时间进行格斗训练。尽管岁月让那些训练成为了模糊的记忆，你依然从中学会如何快速应对麻烦。
-效益：你在先攻检定时获得+2背景加值。</value>
+效益：你在进行先攻检定时获得+2背景加值。</value>
   </data>
   <data name="WarriorOfOldTraitName_info" xml:space="preserve">
     <value>历战老兵（精灵）</value>
   </data>
   <data name="WaryTraitDescription_info" xml:space="preserve">
-    <value>你在嫉妒和敌视你的人环绕下长大。或许你的父母对拥有一个神裔孩子并不高兴——他们可能对你打骂不断，甚至以高昂的价格将你贩卖为奴。这些都导致你长大后不信任任何人，并认为自己的外貌是个诅咒。</value>
+    <value>你在嫉妒和敌视你的人环绕下长大。或许你的父母对拥有一个神裔孩子并不高兴——他们可能对你打骂不断，甚至以高昂的价格将你贩卖为奴。这些都导致你长大后不信任任何人，并认为自己的外貌是个诅咒。
+效益：你在进行沟通和察觉的技能检定时获得+1背景加值。</value>
   </data>
   <data name="WaryTraitName_info" xml:space="preserve">
     <value>警觉（神裔）</value>
@@ -2702,7 +2738,7 @@
 - 复制任何一个不超过5级的术士/法师法术，哪怕这个法术属于你的对立学派。
 - 复制任何一个不超过4级的非术士/法师法术，哪怕这个法术属于你的对立学派。
 - 取消许多法术的有害效果，如神智错乱。
-- 创造出其它效果，其强度等级不能超过上述的效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定中受到-7的减值等等。
+- 创造出其它效果，其强度等级不能超过上述的效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定时受到-7的减值等等。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照7级法术计算。如果有限祈愿术复制的法术含有价格超过1000金币的材料成分，那么你就必须提供这些材料（这并不包含在法术本身价值1500金币的材料费内）。</value>
   </data>
   <data name="WishBuffDescription_info" xml:space="preserve">
