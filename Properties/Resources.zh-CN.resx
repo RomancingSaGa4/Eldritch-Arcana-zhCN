@@ -230,6 +230,21 @@
   <data name="AsthmaticDrawbackName_info" xml:space="preserve">
     <value>哮喘</value>
   </data>
+  <data name="AvidReaderArcanaDescription_info" xml:space="preserve">
+    <value>你是个魔法书虫。
+效益：即便在受到威胁或被被扰乱时，你在知识（神秘）的技能检定中仍能始终投出10。</value>
+  </data>
+  <data name="AvidReaderTraitDescription_info" xml:space="preserve">
+    <value>青年时，你如痴如狂地阅读诸如冒险家行会的成员，或是开拓者协会之类博学组织提供的书本和卷轴。你把这些勇敢冒险者的故事牢牢印在了脑海里。
+效益：选择一项知识技能。即便在受到威胁或被被扰乱时，你在该项知识技能的检定中仍能始终投出10。</value>
+  </data>
+  <data name="AvidReaderTraitName_info" xml:space="preserve">
+    <value>书痴</value>
+  </data>
+  <data name="AvidReaderWorldDescription_info" xml:space="preserve">
+    <value>你是个书虫。
+效益：即便在受到威胁或被被扰乱时，你在知识（世界）的技能检定中仍能始终投出10。</value>
+  </data>
   <data name="BadvisionDrawbackBookwormDescription_info" xml:space="preserve">
     <value>你曾在无数个夜里捧着书本挑灯夜读，因此你的视力已经惨不忍睹。但你能做到按照书里的知识按图索骥而非你的视力来观察视物。
 效益：你在察觉技能检定上使用智力调整值而非察觉。
@@ -415,6 +430,12 @@
   </data>
   <data name="CheatCustomTraits_info" xml:space="preserve">
     <value>显示所有背景特性及法术，包括作弊和自制内容（需要重新启动游戏才能生效）</value>
+  </data>
+  <data name="ChildOfTheStreetsTraitDescription_info" xml:space="preserve">
+    <value>你在大城市的街头长大，因此精于顺手牵羊和藏匿小物件。</value>
+  </data>
+  <data name="ChildOfTheStreetsTraitName_info" xml:space="preserve">
+    <value>街头小贼</value>
   </data>
   <data name="ChildOfTheTempleTraitDescription_info" xml:space="preserve">
     <value>你长期服务于某个城市的一座神殿，在那里你学会了很多贵族的习俗，此外还花了很多时间在神殿的图书馆里研究自己的信仰。</value>
@@ -699,6 +720,12 @@
   <data name="FaithTraitName_info" xml:space="preserve">
     <value>信仰背景</value>
   </data>
+  <data name="FastTalkerTraitDescription_info" xml:space="preserve">
+    <value>你还是个熊孩子时超会惹麻烦，但为了让屁股不挨板子，你早早地练就了三寸不烂之舌。</value>
+  </data>
+  <data name="FastTalkerTraitName_info" xml:space="preserve">
+    <value>口若悬河</value>
+  </data>
   <data name="FatesFavoredTraitDescription_info" xml:space="preserve">
     <value>你在获得拥有“幸运”描述符的加值时，加值再+1。</value>
   </data>
@@ -890,6 +917,13 @@
   </data>
   <data name="GloryOfOldTraitName_info" xml:space="preserve">
     <value>旧日荣光（矮人）</value>
+  </data>
+  <data name="GnomishAlchemistTraitDescription_info" xml:space="preserve">
+    <value>一位侏儒炼金术士发现了创造一种特殊灵药的方法，他可以服用它来增强自己的能力。这种灵药强大到可以多次使用。当你服用这种灵药时，它会使炼金术士的皮肤变色以匹配背景，并导致其手脚分泌出粘性残留物。
+效益：你每天能额外获得2次诱变剂的使用次数。</value>
+  </data>
+  <data name="GnomishAlchemistTraitName_info" xml:space="preserve">
+    <value>侏儒炼金术士</value>
   </data>
   <data name="GoBackDescription_info" xml:space="preserve">
     <value>选此项返回前一选项，以便选择其他项目。</value>
@@ -1102,6 +1136,13 @@
   </data>
   <data name="loadWishSpells_error" xml:space="preserve">
     <value>许愿法术</value>
+  </data>
+  <data name="MaestroOfTheSocietyTraitDescription_info" xml:space="preserve">
+    <value>多亏了你可以接触到那些馆藏的丰富音乐知识瑰宝，最伟大音乐家的才能在你的指尖流淌。
+效益：你每天可以多使用3轮吟游诗人演艺。</value>
+  </data>
+  <data name="MaestroOfTheSocietyTraitName_info" xml:space="preserve">
+    <value>音乐大师</value>
   </data>
   <data name="MagesTattooFeatureDescription_info" xml:space="preserve">
     <value>选择一个你专精的法术学派，你能以施法者等级+1施放该学派的法术。</value>
@@ -2485,6 +2526,12 @@
   </data>
   <data name="SummonWildhuntSpells_info" xml:space="preserve">
     <value>狂猎</value>
+  </data>
+  <data name="SuspiciousTraitDescription_info" xml:space="preserve">
+    <value>你在幼时便发现某位你信任的兄长或亲属常常信口开河、令你困惑不已；很快你就开始质疑他人的任何话语。</value>
+  </data>
+  <data name="SuspiciousTraitName_info" xml:space="preserve">
+    <value>多疑</value>
   </data>
   <data name="SwordScionTraitDescription_info" xml:space="preserve">
     <value>你自幼起一直生活在雷斯托夫市及其近郊。并在赛瑞安・阿尔多瑞男爵的传奇以及你所在城市的英雄和传奇剑爵的种种丰功伟绩的熏陶下成长。或许你家族中的一员就是一名阿尔多瑞剑爵，使你一直同他们保持着联系，亦或是你从小就梦想成为一名剑爵，无论如何，你都将阿尔多瑞的英雄，风格和哲学视为偶像，并一直努力模仿他们炫目的技艺。但是在你申请加入他们的行列之前，你觉得必须先测试下自己的能力。参加一次深入失窃之地的探险，似乎是提高自己技艺并开启与阿尔多瑞男爵相媲美传奇的完美途径。在你开始游戏时将获得一把长剑或是阿尔多瑞决斗剑，并在所有使用这两种武器的攻击及战技检定上获得+1背景加值。</value>

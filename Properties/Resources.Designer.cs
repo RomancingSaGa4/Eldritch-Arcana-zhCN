@@ -377,6 +377,45 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Because you are a magic bookworm.
+        ///Benefit: You can always choose to take 10 on checks with knowledge arcana, even when distracted or threatened. 的本地化字符串。
+        /// </summary>
+        internal static string AvidReaderArcanaDescription_info {
+            get {
+                return ResourceManager.GetString("AvidReaderArcanaDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 As a youth, you voraciously consumed books and scrolls provided by a member of an adventurer&apos;s guild or a learned organization like the Pathfinder Society, and you have internalized these stories of bold adventurers.
+        ///Benefit: Choose one Knowledge skill. You always choose to take 10 on checks with the chosen Knowledge skill, even when distracted or threatened. 的本地化字符串。
+        /// </summary>
+        internal static string AvidReaderTraitDescription_info {
+            get {
+                return ResourceManager.GetString("AvidReaderTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Avid Reader 的本地化字符串。
+        /// </summary>
+        internal static string AvidReaderTraitName_info {
+            get {
+                return ResourceManager.GetString("AvidReaderTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Becouse you are a bookworm.
+        ///Benefit: You can always choose to take 10 on checks with knowledge world, even when distracted or threatened. 的本地化字符串。
+        /// </summary>
+        internal static string AvidReaderWorldDescription_info {
+            get {
+                return ResourceManager.GetString("AvidReaderWorldDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You have spent way to much time reading up close with bad light and it ruined your eyesight. You can however fill in the blanks in your vision by recognizing paterns you have learned from books.
         ///Benefit: You use your inteligence modefier instead of wisdom on perception checks.
         ///Drawback: You take an additional -1 on perception checks. 的本地化字符串。
@@ -901,6 +940,24 @@ namespace EldritchArcana.Properties {
         internal static string CheatCustomTraits_info {
             get {
                 return ResourceManager.GetString("CheatCustomTraits_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You grew up on the streets of a large city, and as a result you have developed a knack for picking pockets and hiding small objects on your person. 的本地化字符串。
+        /// </summary>
+        internal static string ChildOfTheStreetsTraitDescription_info {
+            get {
+                return ResourceManager.GetString("ChildOfTheStreetsTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Child of the Streets 的本地化字符串。
+        /// </summary>
+        internal static string ChildOfTheStreetsTraitName_info {
+            get {
+                return ResourceManager.GetString("ChildOfTheStreetsTraitName_info", resourceCulture);
             }
         }
         
@@ -1703,6 +1760,24 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You had a knack for getting yourself into trouble as a child, and as a result developed a silver tongue at an early age. 的本地化字符串。
+        /// </summary>
+        internal static string FastTalkerTraitDescription_info {
+            get {
+                return ResourceManager.GetString("FastTalkerTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Fast-Talker 的本地化字符串。
+        /// </summary>
+        internal static string FastTalkerTraitName_info {
+            get {
+                return ResourceManager.GetString("FastTalkerTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Whenever you are under the effect of a luck bonus of any kind, that bonus increases by 1. 的本地化字符串。
         /// </summary>
         internal static string FatesFavoredTraitDescription_info {
@@ -2243,6 +2318,25 @@ namespace EldritchArcana.Properties {
         internal static string GloryOfOldTraitName_info {
             get {
                 return ResourceManager.GetString("GloryOfOldTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 A Gnomish alchemist discovers how to create a special elixir that he can imbibe in order to heighten his ability. This is so potent it can be used an extra time. When consumed, the elixir causes the Alchemist&apos;s skin to change color to match the background and causes his hands and feet to secrete a sticky residue.
+        ///Benfefit: you can use your mutagen an additinal 2 times per day. 的本地化字符串。
+        /// </summary>
+        internal static string GnomishAlchemistTraitDescription_info {
+            get {
+                return ResourceManager.GetString("GnomishAlchemistTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Gnomish Alchemist 的本地化字符串。
+        /// </summary>
+        internal static string GnomishAlchemistTraitName_info {
+            get {
+                return ResourceManager.GetString("GnomishAlchemistTraitName_info", resourceCulture);
             }
         }
         
@@ -2836,6 +2930,25 @@ namespace EldritchArcana.Properties {
         internal static string loadWishSpells_error {
             get {
                 return ResourceManager.GetString("loadWishSpells_error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 The skills of the greatest musicians are at your fingertips, thanks to the vast treasure trove of musical knowledge in the vaults you have access to.
+        ///Benefit: You may use bardic performance 3 additional rounds per day. 的本地化字符串。
+        /// </summary>
+        internal static string MaestroOfTheSocietyTraitDescription_info {
+            get {
+                return ResourceManager.GetString("MaestroOfTheSocietyTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Maestro of the Society 的本地化字符串。
+        /// </summary>
+        internal static string MaestroOfTheSocietyTraitName_info {
+            get {
+                return ResourceManager.GetString("MaestroOfTheSocietyTraitName_info", resourceCulture);
             }
         }
         
@@ -6620,6 +6733,24 @@ namespace EldritchArcana.Properties {
         internal static string SummonWildhuntSpells_info {
             get {
                 return ResourceManager.GetString("SummonWildhuntSpells_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You discovered at an early age that someone you trusted, perhaps an older sibling or a parent, had lied to you, and lied often, about something you had taken for granted, leaving you quick to question the claims of others. 的本地化字符串。
+        /// </summary>
+        internal static string SuspiciousTraitDescription_info {
+            get {
+                return ResourceManager.GetString("SuspiciousTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Suspicious 的本地化字符串。
+        /// </summary>
+        internal static string SuspiciousTraitName_info {
+            get {
+                return ResourceManager.GetString("SuspiciousTraitName_info", resourceCulture);
             }
         }
         

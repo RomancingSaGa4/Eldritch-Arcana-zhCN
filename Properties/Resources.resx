@@ -230,6 +230,21 @@ Drawback: You suffer a -2 penalty against any effect that will cause you to be f
   <data name="AsthmaticDrawbackName_info" xml:space="preserve">
     <value>Asthmatic</value>
   </data>
+  <data name="AvidReaderArcanaDescription_info" xml:space="preserve">
+    <value>Because you are a magic bookworm.
+Benefit: You can always choose to take 10 on checks with knowledge arcana, even when distracted or threatened.</value>
+  </data>
+  <data name="AvidReaderTraitDescription_info" xml:space="preserve">
+    <value>As a youth, you voraciously consumed books and scrolls provided by a member of an adventurer's guild or a learned organization like the Pathfinder Society, and you have internalized these stories of bold adventurers.
+Benefit: Choose one Knowledge skill. You always choose to take 10 on checks with the chosen Knowledge skill, even when distracted or threatened.</value>
+  </data>
+  <data name="AvidReaderTraitName_info" xml:space="preserve">
+    <value>Avid Reader</value>
+  </data>
+  <data name="AvidReaderWorldDescription_info" xml:space="preserve">
+    <value>Becouse you are a bookworm.
+Benefit: You can always choose to take 10 on checks with knowledge world, even when distracted or threatened.</value>
+  </data>
   <data name="BadvisionDrawbackBookwormDescription_info" xml:space="preserve">
     <value>You have spent way to much time reading up close with bad light and it ruined your eyesight. You can however fill in the blanks in your vision by recognizing paterns you have learned from books.
 Benefit: You use your inteligence modefier instead of wisdom on perception checks.
@@ -415,6 +430,12 @@ You can use this ability a number of times per day equal to 1+your Charisma modi
   </data>
   <data name="CheatCustomTraits_info" xml:space="preserve">
     <value>Enable Show all traits, spells even custom and homebrew(if changed, requires restart for changes to show up)</value>
+  </data>
+  <data name="ChildOfTheStreetsTraitDescription_info" xml:space="preserve">
+    <value>You grew up on the streets of a large city, and as a result you have developed a knack for picking pockets and hiding small objects on your person.</value>
+  </data>
+  <data name="ChildOfTheStreetsTraitName_info" xml:space="preserve">
+    <value>Child of the Streets</value>
   </data>
   <data name="ChildOfTheTempleTraitDescription_info" xml:space="preserve">
     <value>You have long served at a temple in a city, where you picked up on many of the nobility’s customs in addition to spending much time in the temple libraries studying your faith.</value>
@@ -699,6 +720,12 @@ Benefit: You gain a +1 trait bonus on saves against arcane spells.</value>
   <data name="FaithTraitName_info" xml:space="preserve">
     <value>Faith Trait</value>
   </data>
+  <data name="FastTalkerTraitDescription_info" xml:space="preserve">
+    <value>You had a knack for getting yourself into trouble as a child, and as a result developed a silver tongue at an early age.</value>
+  </data>
+  <data name="FastTalkerTraitName_info" xml:space="preserve">
+    <value>Fast-Talker</value>
+  </data>
   <data name="FatesFavoredTraitDescription_info" xml:space="preserve">
     <value>Whenever you are under the effect of a luck bonus of any kind, that bonus increases by 1.</value>
   </data>
@@ -888,6 +915,13 @@ Benefit: You receive a +1 trait bonus on saving throws against spells, spell-lik
   </data>
   <data name="GloryOfOldTraitName_info" xml:space="preserve">
     <value>Glory of Old (Dwarf)</value>
+  </data>
+  <data name="GnomishAlchemistTraitDescription_info" xml:space="preserve">
+    <value>A Gnomish alchemist discovers how to create a special elixir that he can imbibe in order to heighten his ability. This is so potent it can be used an extra time. When consumed, the elixir causes the Alchemist's skin to change color to match the background and causes his hands and feet to secrete a sticky residue.
+Benfefit: you can use your mutagen an additinal 2 times per day.</value>
+  </data>
+  <data name="GnomishAlchemistTraitName_info" xml:space="preserve">
+    <value>Gnomish Alchemist</value>
   </data>
   <data name="GoBackDescription_info" xml:space="preserve">
     <value>Select this to go back to the previous selection, allowing you to pick something else.</value>
@@ -1101,6 +1135,13 @@ A duplicated spell allows saving throws and spell resistance as normal, but the 
   </data>
   <data name="loadWishSpells_error" xml:space="preserve">
     <value>Wish spells</value>
+  </data>
+  <data name="MaestroOfTheSocietyTraitDescription_info" xml:space="preserve">
+    <value>The skills of the greatest musicians are at your fingertips, thanks to the vast treasure trove of musical knowledge in the vaults you have access to.
+Benefit: You may use bardic performance 3 additional rounds per day.</value>
+  </data>
+  <data name="MaestroOfTheSocietyTraitName_info" xml:space="preserve">
+    <value>Maestro of the Society</value>
   </data>
   <data name="MagesTattooFeatureDescription_info" xml:space="preserve">
     <value>Select a school of magic in which you have Spell Focus—you cast spells from this school at +1 caster level.</value>
@@ -2481,6 +2522,12 @@ Drawback: You take a –4 penalty on attack rolls vs fey creatures, and a -2 on 
   </data>
   <data name="SummonWildhuntSpells_info" xml:space="preserve">
     <value>Wild Hunt</value>
+  </data>
+  <data name="SuspiciousTraitDescription_info" xml:space="preserve">
+    <value>You discovered at an early age that someone you trusted, perhaps an older sibling or a parent, had lied to you, and lied often, about something you had taken for granted, leaving you quick to question the claims of others.</value>
+  </data>
+  <data name="SuspiciousTraitName_info" xml:space="preserve">
+    <value>Suspicious</value>
   </data>
   <data name="SwordScionTraitDescription_info" xml:space="preserve">
     <value>You have lived all your life in and around the city of Restov, growing up on tales of Baron Sirian Aldori and the exploits of your home city's heroic and legendary swordlords. Perhaps one of your family members was an Aldori swordlord, you have a contact among their members, or you have dreamed since childhood of joining. Regardless, you idolize the heroes, styles, and philosophies of the Aldori and have sought to mimic their vaunted art. Before you can petition to join their ranks, however, you feel that you must test your mettle. Joining an expedition into the Stolen Lands seems like a perfect way to improve your skills and begin a legend comparable to that of Baron Aldori. You begin play with a longsword or Aldori dueling sword and gain a +1 trait bonus on all attacks and combat maneuvers made with such weapons.</value>
