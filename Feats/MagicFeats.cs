@@ -134,13 +134,13 @@ namespace EldritchArcana
                 CreateMagusFamiliar()
             };
 
-            var empowerSpell = library.Get<BlueprintFeature>("a1de1e4f92195b442adb946f0e2b9d4e");
-            var maximizeSpell = library.Get<BlueprintFeature>("7f2b282626862e345935bbea5e66424b");
-            var quickenSpell = library.Get<BlueprintFeature>("ef7ece7bb5bb66a41b256976b27f424e");
+            //var empowerSpell = library.Get<BlueprintFeature>("a1de1e4f92195b442adb946f0e2b9d4e");
+            //var maximizeSpell = library.Get<BlueprintFeature>("7f2b282626862e345935bbea5e66424b");
+            //var quickenSpell = library.Get<BlueprintFeature>("ef7ece7bb5bb66a41b256976b27f424e");
 
-            var metamagic = new BlueprintFeature[] { empowerSpell, maximizeSpell, quickenSpell };
-            var requiredLevels = new int[] { 6, 12, 15 };
-            arcanas.AddRange(metamagic.Zip(requiredLevels, CreateMagusArcanaMetamagic));
+            //var metamagic = new BlueprintFeature[] { empowerSpell, maximizeSpell, quickenSpell };
+            //var requiredLevels = new int[] { 6, 12, 15 };
+            //arcanas.AddRange(metamagic.Zip(requiredLevels, CreateMagusArcanaMetamagic));
 
             var magusArcanas = library.Get<BlueprintFeatureSelection>("e9dc4dfc73eaaf94aae27e0ed6cc9ada");
             var scionArcanas = library.Get<BlueprintFeatureSelection>("d4b54d9db4932454ab2899f931c2042c");

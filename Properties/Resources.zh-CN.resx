@@ -1169,13 +1169,13 @@
     <value>这不会增加施法时间或法术等级。</value>
   </data>
   <data name="MagusMagicFeatureDescription_info" xml:space="preserve">
-    <value>魔战士每天可以施放一个如同被超魔专长“{0}”调整过一般的法术。</value>
+    <value>每天一次，魔战士可以如同运用专长“{0}”一般施放法术。</value>
   </data>
   <data name="MagusMagicFeatureName_info" xml:space="preserve">
     <value>{0}魔法</value>
   </data>
   <data name="MagusMagicLevelFeatureDescription_info" xml:space="preserve">
-    <value>这不会增加法术等级。</value>
+    <value>这不会增加施法时间或是法术等级。</value>
   </data>
   <data name="MartyrsBloodTraitDescription_info" xml:space="preserve">
     <value>你的血管中流淌着一位曾经为惩恶而殉道的天人之血，而你也努力发挥你的这项英雄潜质。
@@ -2397,7 +2397,7 @@
     <value>越空学者</value>
   </data>
   <data name="ScionExtraArcanaFeatureName_info" xml:space="preserve">
-    <value>额外奥术（{0}）</value>
+    <value>额外奥能（{0}）</value>
   </data>
   <data name="SeekerDescription_info" xml:space="preserve">
     <value>被命运和血脉所选中的先知透过神秘又奇异的方式获得他的魔法。虽然大多数的先知满足于自身的神秘力量，但是有些先知加入了开拓者组织，致力于究明秘示域的奥秘，以及确认其诡异能力的起源和历史。这些施法者广为人知的名称就是探求者，他们研究古代典籍和晦涩的废墟，痴迷于任何可以协助他们找到过去遗产和历史的线索。</value>
