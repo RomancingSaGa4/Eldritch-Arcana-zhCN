@@ -62,7 +62,7 @@ namespace EldritchArcana.Properties {
         
         /// <summary>
         ///   查找类似 Choose one of your revelations that has a number of uses per day. You gain 1 additional use per day of that revelation.
-        ///Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new revelation.  的本地化字符串。
+        ///Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new revelation. 的本地化字符串。
         /// </summary>
         internal static string AbundantRevelationsFeatureDescription_info {
             get {
@@ -532,7 +532,7 @@ namespace EldritchArcana.Properties {
         /// <summary>
         ///   查找类似 A bloodrager need not be in a bloodrage to use her bloodline mutation powers. Alternatively, a bloodrager or sorcerer can select a bloodline mutation in place of a bloodline bonus feat, provided her class level is at least equal to the level of the bloodline ability the mutation normally replaces.
         ///Bloodline Mutation: Blood havoc
-        ///Whenever you cast a bloodrager or sorcerer spell that deals damage, add 1 point of damage per die rolled.  的本地化字符串。
+        ///Whenever you cast a bloodrager or sorcerer spell that deals damage, add 1 point of damage per die rolled. 的本地化字符串。
         /// </summary>
         internal static string BloodHavocMutationFeatureDescription_info {
             get {
@@ -898,7 +898,7 @@ namespace EldritchArcana.Properties {
         
         /// <summary>
         ///   查找类似 Your studies have given you a knack for avoiding trouble.
-        ///Benefit: The first time you have to roll a save you roll the d20 2 times and pick the best this can be used once per day 的本地化字符串。
+        ///Benefit: The first time you have to roll a save you roll the d20 2 times and pick the best this can be used once per day. 的本地化字符串。
         /// </summary>
         internal static string ChaldiraTraitOriginalDescription_info {
             get {
@@ -1388,7 +1388,7 @@ namespace EldritchArcana.Properties {
         /// <summary>
         ///   查找类似 Drawbacks are traits in reverse. Instead of granting you a boon, they grant you a negative effect, typically in particular circumstances. 
         ///If you choose to take a drawback, you can take a third trait that you have access to. 
-        ///You are not required to take a drawback.(disable in eldrich arcana menu and restart game) 的本地化字符串。
+        ///You are not required to take a drawback.(disable in eldrich arcana menu and restart game). 的本地化字符串。
         /// </summary>
         internal static string DrawbacksDescription_info {
             get {
@@ -1529,7 +1529,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Use Wisdom for calculating {0} 的本地化字符串。
+        ///   查找类似 Use Wisdom for calculating {0}. 的本地化字符串。
         /// </summary>
         internal static string EmpathicDiplomatStatTraitName_info {
             get {
@@ -2304,7 +2304,7 @@ namespace EldritchArcana.Properties {
         /// <summary>
         ///   查找类似 You are part of the old Guard.
         ///You belong to the elite veteran regiments of the old king and his army and are intensely loyal to him. It was you who made the last charge at the dwarven kingdom.
-        ///Benefit: You receive a +1 trait bonus on saving throws against spells, spell-like abilities, and poison 的本地化字符串。
+        ///Benefit: You receive a +1 trait bonus on saving throws against spells, spell-like abilities, and poison. 的本地化字符串。
         /// </summary>
         internal static string GloryOfOldTraitDescription_info {
             get {
@@ -3025,7 +3025,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 The magus can cast one spell per day as if it were modified by the {0} Spell feat.  的本地化字符串。
+        ///   查找类似 The magus can cast one spell per day as if it were modified by the {0} Spell feat. 的本地化字符串。
         /// </summary>
         internal static string MagusMagicFeatureDescription_info {
             get {
@@ -3479,7 +3479,7 @@ namespace EldritchArcana.Properties {
         /// <summary>
         ///   查找类似 
         ///Class skills: {0}, {1}
-        ///An oracle with the battle mystery can choose from any of the following revelations:  的本地化字符串。
+        ///An oracle with the battle mystery can choose from any of the following revelations: 的本地化字符串。
         /// </summary>
         internal static string MysteryBattleDescription_info {
             get {
@@ -4076,7 +4076,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 As a standard action, you can assume the form of a small fire elemental, as Elemental Body I. At 9th level, you can assume the form of a medium fire elemental, as Elemental Body II. At 11th level, you can assume the form of a large fire elemental, as Elemental Body III. At 13th level, you can assume the form of a huge fire elemental, as Elemental Body IV. You can use this ability once per day, but the duration is 1 hour/level. You must be at least 7th level to select this revelation.&quot; 的本地化字符串。
+        ///   查找类似 As a standard action, you can assume the form of a small fire elemental, as Elemental Body I. At 9th level, you can assume the form of a medium fire elemental, as Elemental Body II. At 11th level, you can assume the form of a large fire elemental, as Elemental Body III. At 13th level, you can assume the form of a huge fire elemental, as Elemental Body IV. You can use this ability once per day, but the duration is 1 hour/level. You must be at least 7th level to select this revelation. 的本地化字符串。
         /// </summary>
         internal static string MysteryFlameFormDescription_info {
             get {
@@ -5917,7 +5917,7 @@ namespace EldritchArcana.Properties {
         
         /// <summary>
         ///   查找类似 Use Charisma for calculating Knowledge (World).
-        ///Benefit: You modify your Knowledge (World) using your Charisma modifier. insted of your Inteligence 的本地化字符串。
+        ///Benefit: You modify your Knowledge (World) using your Charisma modifier insted of your Inteligence. 的本地化字符串。
         /// </summary>
         internal static string PlanarSavantTraitWorldDescription_info {
             get {

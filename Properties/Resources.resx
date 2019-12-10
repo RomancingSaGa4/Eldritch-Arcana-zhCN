@@ -119,7 +119,7 @@
   </resheader>
   <data name="AbundantRevelationsFeatureDescription_info" xml:space="preserve">
     <value>Choose one of your revelations that has a number of uses per day. You gain 1 additional use per day of that revelation.
-Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new revelation. </value>
+Special: You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new revelation.</value>
   </data>
   <data name="AbundantRevelationsFeatureName_info" xml:space="preserve">
     <value>Abundant Revelations</value>
@@ -275,7 +275,7 @@ Drawback: Bane: All ranged attacks you make suffer an -2 penalty.</value>
     <value>Nearsighted</value>
   </data>
   <data name="BastardTraitDescription" xml:space="preserve">
-    <value>One of your parents was a member of one of the great families of Brevoy, perhaps even of the line of Rogarvia itself. Yet you have no substantive proof of your nobility, and you've learned that claiming nobility without evidence makes you as good as a liar. While you might own a piece of jewelry, a scrap of once-rich fabric, or an aged confession of love, none of this directly supports your claim. Thus, you've lived your life in the shadow of nobility, knowing that you deserve the comforts and esteem of the elite, even though the contempt of fate brings you nothing but their scorn. Whether a recent attempt to prove your heritage has brought down the wrath of a noble family's henchmen or you merely seek to prove the worth of the blood in your veins, you've joined an expedition into the Stolen Lands, hoping to make a name all your own. You take a –1 penalty on all Charisma-based skill checks made when dealing with members of Brevic nobility but gain a +1 trait bonus on Will saves as a result of your stubbornness and individuality. (The penalty aspect of this trait is removed if you ever manage to establish yourself as a true noble.)</value>
+    <value>One of your parents was a member of one of the great families of Brevoy, perhaps even of the line of Rogarvia itself. Yet you have no substantive proof of your nobility, and you've learned that claiming nobility without evidence makes you as good as a liar. While you might own a piece of jewelry, a scrap of once-rich fabric, or an aged confession of love, none of this directly supports your claim. Thus, you've lived your life in the shadow of nobility, knowing that you deserve the comforts and esteem of the elite, even though the contempt of fate brings you nothing but their scorn. Whether a recent attempt to prove your heritage has brought down the wrath of a noble family's henchmen or you merely seek to prove the worth of the blood in your veins, you've joined an expedition into the Stolen Lands, hoping to make a name all your own. You take a –1 penalty on all Charisma-based skill checks made when dealing with members of Brevic nobility but gain a +1 trait bonus on Will saves as a result of your stubbornness and individuality. (The penalty aspect of this trait is removed if you ever manage to establish yourself as a true noble).</value>
   </data>
   <data name="BastardTraitName_info" xml:space="preserve">
     <value>Bastard</value>
@@ -290,7 +290,7 @@ Benefits: This birthmark increases your devotion to your god. You gain a +2 trai
   <data name="BloodHavocMutationFeatureDescription_info" xml:space="preserve">
     <value>A bloodrager need not be in a bloodrage to use her bloodline mutation powers. Alternatively, a bloodrager or sorcerer can select a bloodline mutation in place of a bloodline bonus feat, provided her class level is at least equal to the level of the bloodline ability the mutation normally replaces.
 Bloodline Mutation: Blood havoc
-Whenever you cast a bloodrager or sorcerer spell that deals damage, add 1 point of damage per die rolled. </value>
+Whenever you cast a bloodrager or sorcerer spell that deals damage, add 1 point of damage per die rolled.</value>
   </data>
   <data name="BloodHavocMutationFeatureName_info" xml:space="preserve">
     <value>Blood Havoc Mutation ({0})</value>
@@ -416,7 +416,7 @@ Benefit: Each day add a {0} Sacred bonus to the first {1} save(s).</value>
   </data>
   <data name="ChaldiraTraitOriginalDescription_info" xml:space="preserve">
     <value>Your studies have given you a knack for avoiding trouble.
-Benefit: The first time you have to roll a save you roll the d20 2 times and pick the best this can be used once per day</value>
+Benefit: The first time you have to roll a save you roll the d20 2 times and pick the best this can be used once per day.</value>
   </data>
   <data name="ChaldiraTraitOriginalName_info" xml:space="preserve">
     <value>Chaldira(original)</value>
@@ -585,7 +585,7 @@ Drawback: You lose 2 initiative.</value>
   <data name="DrawbacksDescription_info" xml:space="preserve">
     <value>Drawbacks are traits in reverse. Instead of granting you a boon, they grant you a negative effect, typically in particular circumstances. 
 If you choose to take a drawback, you can take a third trait that you have access to. 
-You are not required to take a drawback.(disable in eldrich arcana menu and restart game)</value>
+You are not required to take a drawback.(disable in eldrich arcana menu and restart game).</value>
   </data>
   <data name="DrawbackSpellVulnerabilityFeatureDescription_info" xml:space="preserve">
     <value>If you pick a Drawback at level one you can choose an extra feat on top.
@@ -640,7 +640,7 @@ Normally this spell is used to buy time for dealing with avalanches, floods, and
 Benefit: You modify your {0} using your Wisdom modifier, insted of your {1}.</value>
   </data>
   <data name="EmpathicDiplomatStatTraitName_info" xml:space="preserve">
-    <value>Use Wisdom for calculating {0}</value>
+    <value>Use Wisdom for calculating {0}.</value>
   </data>
   <data name="EnergyBodyFeatureDescription_info" xml:space="preserve">
     <value>As a standard action, you can transform your body into pure life energy, resembling a golden-white fire elemental. In this form, you gain the elemental subtype and give off a warm, welcoming light that increases the light level within 10 feet by one step, up to normal light. Any undead creature striking you with its body or a handheld weapon deals normal damage, but at the same time the attacker takes 1d6 points of positive energy damage + 1 point per oracle level. Creatures wielding melee weapons with reach are not subject to this damage if they attack you. If you grapple or attack an undead creature using unarmed strikes or natural weapons, you may deal this damage in place of the normal damage for the attack. Once per round, if you pass through a living allied creature's square or the ally passes through your square, it heals 1d6 hit points + 1 per oracle level. You may use this ability to heal yourself as a move action. You choose whether or not to heal a creature when it passes through your space. You may return to your normal form as a free action. You may remain in energy body form for a number of rounds per day equal to your oracle level.</value>
@@ -911,7 +911,7 @@ Benefit: You gain a +4 trait bonus to resist the effects of cold environments, a
   <data name="GloryOfOldTraitDescription_info" xml:space="preserve">
     <value>You are part of the old Guard.
 You belong to the elite veteran regiments of the old king and his army and are intensely loyal to him. It was you who made the last charge at the dwarven kingdom.
-Benefit: You receive a +1 trait bonus on saving throws against spells, spell-like abilities, and poison</value>
+Benefit: You receive a +1 trait bonus on saving throws against spells, spell-like abilities, and poison.</value>
   </data>
   <data name="GloryOfOldTraitName_info" xml:space="preserve">
     <value>Glory of Old (Dwarf)</value>
@@ -1168,7 +1168,7 @@ Benefit: You may use bardic performance 3 additional rounds per day.</value>
     <value>This does not increase the casting time or the level of the spell.</value>
   </data>
   <data name="MagusMagicFeatureDescription_info" xml:space="preserve">
-    <value>The magus can cast one spell per day as if it were modified by the {0} Spell feat. </value>
+    <value>The magus can cast one spell per day as if it were modified by the {0} Spell feat.</value>
   </data>
   <data name="MagusMagicFeatureName_info" xml:space="preserve">
     <value>{0} Magic</value>
@@ -1198,8 +1198,7 @@ Level Increase: +1</value>
   </data>
   <data name="MetamagicFeatDazingSpellDescription_info" xml:space="preserve">
     <value>You can modify a spell to daze a creature damaged by the spell. When a creature takes damage from this spell, they become dazed for a number of rounds equal to the original level of the spell. If the spell allows a saving throw, a successful save negates the daze effect. If the spell does not allow a save, the target can make a Will save to negate the daze effect. If the spell effect also causes the creature to become dazed, the duration of this metamagic effect is added to the duration of the spell.
-Level Increase: +3
-</value>
+Level Increase: +3</value>
   </data>
   <data name="MetamagicFeatDazingSpellName_info" xml:space="preserve">
     <value>Dazing Spell</value>
@@ -1342,7 +1341,7 @@ Drawback: You take a –2 penalty on all Dexterity-based skill checks.</value>
   <data name="MysteryBattleDescription_info" xml:space="preserve">
     <value>
 Class skills: {0}, {1}
-An oracle with the battle mystery can choose from any of the following revelations: </value>
+An oracle with the battle mystery can choose from any of the following revelations:</value>
   </data>
   <data name="MysteryBattleFinalRevelationDescription_info" xml:space="preserve">
     <value>Upon reaching 20th level, you become an avatar of battle. You can take a full-attack action and move up to your speed as a full-round action (you can move before or after the attacks). Whenever you score a critical hit, you can ignore any DR the target might possess. You gain a +4 insight bonus to your AC for the purpose of confirming critical hits against you.</value>
@@ -1543,7 +1542,7 @@ An oracle with the flame mystery can choose from any of the following revelation
     <value>Firestorm</value>
   </data>
   <data name="MysteryFlameFormDescription_info" xml:space="preserve">
-    <value>As a standard action, you can assume the form of a small fire elemental, as Elemental Body I. At 9th level, you can assume the form of a medium fire elemental, as Elemental Body II. At 11th level, you can assume the form of a large fire elemental, as Elemental Body III. At 13th level, you can assume the form of a huge fire elemental, as Elemental Body IV. You can use this ability once per day, but the duration is 1 hour/level. You must be at least 7th level to select this revelation."</value>
+    <value>As a standard action, you can assume the form of a small fire elemental, as Elemental Body I. At 9th level, you can assume the form of a medium fire elemental, as Elemental Body II. At 11th level, you can assume the form of a large fire elemental, as Elemental Body III. At 13th level, you can assume the form of a huge fire elemental, as Elemental Body IV. You can use this ability once per day, but the duration is 1 hour/level. You must be at least 7th level to select this revelation.</value>
   </data>
   <data name="MysteryFlameFormName_info" xml:space="preserve">
     <value>Form of the Flame</value>
@@ -1802,7 +1801,7 @@ Benefit: You get a +1 trait bonus on Knowledge (Arcana), and select a resource f
   <data name="NobleFamilyLodovkaTraitDescription_info" xml:space="preserve">
     <value>Family Motto: 'The Waters, Our Fields' 
 House Lodovka is a noble family of Brevoy with their headquarters on Acuben Isle on the Lake of Mists and Veils. They have traditionally been a power on the lake.Led by Lord Kozek Lodovka, both their fleet size and influence along the lake continue to increase. The fleet primarily catches fish and freshwater crabs.  The house's crest includes a green crab climbing out of the water towards a gray tower/keep.
-Benefit: You get a +2 trait bonus on Athletics checks. If you are a spellcaster, you know the spell Snowball."</value>
+Benefit: You get a +2 trait bonus on Athletics checks. If you are a spellcaster, you know the spell Snowball.</value>
   </data>
   <data name="NobleFamilyLodovkaTraitName_info" xml:space="preserve">
     <value>Noble family — Lodovka</value>
@@ -2227,7 +2226,7 @@ Benefit: You may use your Charisma modifier when making Knowledge checks instead
   </data>
   <data name="PlanarSavantTraitWorldDescription_info" xml:space="preserve">
     <value>Use Charisma for calculating Knowledge (World).
-Benefit: You modify your Knowledge (World) using your Charisma modifier. insted of your Inteligence</value>
+Benefit: You modify your Knowledge (World) using your Charisma modifier insted of your Inteligence.</value>
   </data>
   <data name="PlanarSavantTraitWorldName_info" xml:space="preserve">
     <value>Knowledge (World)</value>

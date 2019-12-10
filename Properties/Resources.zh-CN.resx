@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
+  <!-• 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -40,7 +40,7 @@
     ResXResourceReader how to depersist the object. This is currently not 
     extensible. For a given mimetype the value must be set accordingly:
     
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    Note • application/x-microsoft.net.object.binary.base64 is the format 
     that the ResXResourceWriter will generate, however the reader can 
     read any of the formats listed below.
     
@@ -467,7 +467,7 @@
   </data>
   <data name="CrossbloodedDisplayDescribeChoices_info" xml:space="preserve">
     <value>
-- {0}：{1}</value>
+• {0}：{1}</value>
   </data>
   <data name="CrossbloodedSorcererLocalizedDescription_info" xml:space="preserve">
     <value>混血术士可以选择两种不同的血承。术士能够从他的两种血脉分别继承技能，专长，以及某些源自血缘的力量，但也会付出一些代价，如容易头脑混乱以及选择局限。</value>
@@ -605,7 +605,7 @@
   </data>
   <data name="EldritchHeritageFeatDescription_info" xml:space="preserve">
     <value>
-- {0}—{1}</value>
+• {0}—{1}</value>
   </data>
   <data name="EldritchHeritageFeatureDescription_info" xml:space="preserve">
     <value>你是一个术士家族的八辈子孙，有一些源于你祖先的力量流淌在你的血液之中。
@@ -742,7 +742,7 @@
     <value>
 每当此角色提升 {0} 级后, 你可以获得+1生命值，+1技能点，或者基于他们天赋职业的种族奖励。
 种族奖励：
-- 人类（及半精灵，半兽人，神裔）——从{0}法术列表中获得一个额外已知法术。这个法术必须比你当前所能施展的最高级{1}法术低1级。</value>
+• 人类（及半精灵，半兽人，神裔）——从{0}法术列表中获得一个额外已知法术。这个法术必须比你当前所能施展的最高级{1}法术低1级。</value>
   </data>
   <data name="FavoredClassFeatureDescription_info" xml:space="preserve">
     <value>每个角色以他选择的一个天赋职业开始游戏，通常这会是他们在1级时选择的职业。
@@ -765,7 +765,7 @@
     <value>所有mod功能</value>
   </data>
   <data name="featureName_error" xml:space="preserve">
-    <value>- &lt;b&gt;{0}&lt;/b&gt;</value>
+    <value>• &lt;b&gt;{0}&lt;/b&gt;</value>
   </data>
   <data name="Fey-takenDrawbackDescription_info" xml:space="preserve">
     <value>你在孩童时曾被喜欢恶作剧的妖精带走了一段时间。当你回归现实世界后，你从此看起来奇怪且不合群。你觉得现实世界十分无趣，你渴望回到那里，因而时常反抗，因此你不会按原样进食，你也不会再对奇光异景产生疑问。
@@ -879,7 +879,7 @@
   </data>
   <data name="FoulBrandHandsDrawbackDescription_info" xml:space="preserve">
     <value>烙印在你的手部。
-缺陷：你在巧手检定上受到-2减值</value>
+缺陷：你在巧手检定上受到-2减值。</value>
   </data>
   <data name="FoulBrandHandsDrawbackName_info" xml:space="preserve">
     <value>手部</value>
@@ -1051,7 +1051,8 @@
   </data>
   <data name="KnockResultLog_info" xml:space="preserve">
     <value>敲击术结果：{0}（投掷{1} + 施法者等级{2} + 加值10）。
-难度级别（DC）：{3}。</value>
+难度级别（DC）：{3}。
+</value>
   </data>
   <data name="KnockSpells_info" xml:space="preserve">
     <value>敲击术</value>
@@ -1093,12 +1094,12 @@
   </data>
   <data name="LimitedWishAbilityDescription_info" xml:space="preserve">
     <value>有限祈愿术能够让你创造出几乎任何类型的效果。比如说有限祈愿术可以做到下列事情：
-- 复制任何一个不超过6级的术士/法师法术，但是这个法术不能属于你的对立学派。
-- 复制任何一个不超过5级的非术士/法师法术，但是这个法术不能属于你的对立学派。
-- 复制任何一个不超过5级的术士/法师法术，哪怕这个法术属于你的对立学派。
-- 复制任何一个不超过4级的非术士/法师法术，哪怕这个法术属于你的对立学派。
-- 消除许多法术的有害效果，如神智错乱。
-- 创造出其它效果，其强度等级不超过上述的效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定时受到-7的减值等等。
+• 复制任何一个不超过6级的术士/法师法术，但是这个法术不能属于你的对立学派。
+• 复制任何一个不超过5级的非术士/法师法术，但是这个法术不能属于你的对立学派。
+• 复制任何一个不超过5级的术士/法师法术，哪怕这个法术属于你的对立学派。
+• 复制任何一个不超过4级的非术士/法师法术，哪怕这个法术属于你的对立学派。
+• 消除许多法术的有害效果，如神智错乱。
+• 创造出其它效果，其强度等级不超过上述的效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定时受到-7的减值等等。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照7级法术计算。如果有限祈愿术复制的法术含有价格超过1000金币的材料成分，那么你就必须提供这些材料（这并不包含在法术本身价值1500金币的材料费内）。</value>
   </data>
   <data name="LimitedWishSpells_info" xml:space="preserve">
@@ -1249,8 +1250,7 @@
   <data name="MetamagicFeatTopplingSpellDescription_info" xml:space="preserve">
     <value>你的力场法术造成的冲击足以将对手击倒在地。如果目标受到法术伤害，豁免失败，或者被你的力场法术所移动，你可以应用你的施法者等级加上施法能力调整值（如牧师的感知，法师的智力等）发起一次对于目标的绊摔检定。这并不会引发对方的借机攻击，即便检定失败，对方也无法反过来绊摔你或对你施予力场效果。
 该专长仅作用于带有力场描述符的法术。
-等级提升：+1（法术击倒耗用的法术位比实际法术等级高1级）
-</value>
+等级提升：+1（法术击倒耗用的法术位比实际法术等级高1级）</value>
   </data>
   <data name="MetamagicFeatTopplingSpellName_info" xml:space="preserve">
     <value>法术击倒</value>
@@ -1304,14 +1304,14 @@
   <data name="MiracleAbilityDescription_info" xml:space="preserve">
     <value>准确地说，你并非“施放”奇迹术，而是请求奇迹发生。你声明你希望发生什么样的事情，并且向你的神祇（或者你祈祷获得法术能力的其它力量）请求神迹降临。
 奇迹术可以做到以下任意一点：
-- 复制任何不超过8级的牧师法术。
-- 复制任何不超过7级的其它法术。
-- 取消特定法术的有害效果，诸如弱智或是神智错乱。
-- 获得任何强度不超过上述效果的其它效果。
+• 复制任何不超过8级的牧师法术。
+• 复制任何不超过7级的其它法术。
+• 取消特定法术的有害效果，诸如弱智或是神智错乱。
+• 获得任何强度不超过上述效果的其它效果。
 此外，牧师还可以请求一个非常强力的神迹。施放这样的奇迹术将耗费牧师价值25000金币的钻石粉末，因为这会涉及非常强大的神圣能量。这类特殊的强力奇迹可能包含下列情况：
-- 让阵亡的盟友重新复活，继续战斗，从而让战局变得对你有利。
-- 让你和你的盟友带着所有的装备从某个位面前往一个特定位置，并且在穿过位面之间的屏障时不会出现任何错误。
-- 保护一座城市免受地震、火山爆发、洪水或其他重大自然灾害的影响。
+• 让阵亡的盟友重新复活，继续战斗，从而让战局变得对你有利。
+• 让你和你的盟友带着所有的装备从某个位面前往一个特定位置，并且在穿过位面之间的屏障时不会出现任何错误。
+• 保护一座城市免受地震、火山爆发、洪水或其他重大自然灾害的影响。
 无论情况为何，超出神祇本性（或者阵营）的要求都会被拒绝。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照9级法术计算。如果奇迹术复制的法术含有价格超过100金币的材料成分，那么你就必须提供这些材料。</value>
   </data>
@@ -1392,13 +1392,13 @@
     <value>战阵先决</value>
   </data>
   <data name="MysteryBattleWeaponMasteryDescription_info" xml:space="preserve">
-    <value>选择一种你擅长的武器，你获得此武器的“武器专攻”专长。8级时你获得此武器的“精通重击”专长。12级时你获得此武器的“高等武器专攻”专长。你无需满足这些专长的先决条件。",</value>
+    <value>选择一种你擅长的武器，你获得此武器的“武器专攻”专长。8级时你获得此武器的“精通重击”专长。12级时你获得此武器的“高等武器专攻”专长。你无需满足这些专长的先决条件。</value>
   </data>
   <data name="MysteryBattleWeaponMasteryName_info" xml:space="preserve">
     <value>武器大师</value>
   </data>
   <data name="MysteryClassSkillsFeatureDescription_info" xml:space="preserve">
-    <value>先知可以获得源于其秘示域的额外职业技能</value>
+    <value>先知可以获得源于其秘示域的额外职业技能。</value>
   </data>
   <data name="MysteryClassSkillsFeatureName_info" xml:space="preserve">
     <value>职业技能奖励</value>
@@ -1795,7 +1795,7 @@
   <data name="NobleFamilyLebedaTraitDescription_info" xml:space="preserve">
     <value>家族格言：“优雅地成功”
 勒贝达家族聚居于布雷沃雷卡尔湖的西南方，掌控着那里的平原以及湖上航运的绝大部分份额。人们将这个布雷沃贵族家族视为整个罗斯特兰的代表，他们拥有非常显著的塔尔多血统，对美好事物的品味以及对剑斗的热爱。
-效益：你在知识（神秘）检定上获得+1背景加值，并且可以选择一项可用技能的资源。该技能的使用次数增加至少1次。（如你无法使用列表中的技能则无效）</value>
+效益：你在知识（神秘）检定上获得+1背景加值，并且可以选择一项可用技能的资源。该技能的使用次数增加至少1次。（如你无法使用列表中的技能则无效）。</value>
   </data>
   <data name="NobleFamilyLebedaTraitName_info" xml:space="preserve">
     <value>勒贝达家族</value>
@@ -1921,7 +1921,7 @@
     <value>治疗法术获得+3/每骰的治疗量加值</value>
   </data>
   <data name="OptimisticGamblerTraitExtraMagicDamageBonus_info" xml:space="preserve">
-    <value>法术获得+1/每伤害骰的伤害加值 </value>
+    <value>法术获得+1/每伤害骰的伤害加值</value>
   </data>
   <data name="OptimisticGamblerTraitName_info" xml:space="preserve">
     <value>乐天赌徒</value>
@@ -2192,7 +2192,7 @@
   </data>
   <data name="OutlanderTraitDescription_info" xml:space="preserve">
     <value>你自他处而来，希冀在此地成就自己的命运。
-请在后续选择中选择一项背景。 </value>
+请在后续选择中选择一项背景。</value>
   </data>
   <data name="OutlanderTraitName_info" xml:space="preserve">
     <value>异乡来客</value>
@@ -2251,7 +2251,7 @@
     <value>转职为能够施法的进阶职业对你来说并不困难，因此你可以在获取进阶职业等级时获得1个额外的有效施法者等级。
 效益：当你首次获得天赋进阶职业的等级，并且该拥有“每日法术”特性的进阶职业在此等级并不会增加你的有效施法者等级之时，选择该专长让你同样能获得新的有效施法者等级，如同该职业在该等级具有“+1现有施法职业等级”能力一般。即便你选取该专长时已经过了天赋进阶职业未能提高你的施法能力的等级，效果也依然可以追溯生效。
 如果你的天赋进阶职业不具有“每日法术”的特性、或者尽管具有“每日法术”的特性但是进阶职业本身每级都会增加有效施法者等级（如诡术师或博学士），进阶施法者专长不会产生任何效果。
-特殊：你可以多次选取进阶施法者专长。每次选取该专长，你的有效施法者等级都会+1级。但无论你选取多少次该专长，它对你的有效施法者等级的总提升值不会超过你当前的进阶职业等级</value>
+特殊：你可以多次选取进阶施法者专长。每次选取该专长，你的有效施法者等级都会+1级。但无论你选取多少次该专长，它对你的有效施法者等级的总提升值不会超过你当前的进阶职业等级。</value>
   </data>
   <data name="PrestigiousSpellcasterFeatureName_error" xml:space="preserve">
     <value>进阶施法者，自发施法者的法术替换</value>
@@ -2437,7 +2437,7 @@
     <value>创建角色时在肖像列表中显示自定义肖像（需要重新启动游戏才能生效）</value>
   </data>
   <data name="SingleLineDescription_info" xml:space="preserve">
-    <value>- {0}</value>
+    <value>• {0}</value>
   </data>
   <data name="SkillBonusProgressionDescription_info" xml:space="preserve">
     <value>{0}
@@ -2768,24 +2768,24 @@
   </data>
   <data name="WishAbilityDescription_info" xml:space="preserve">
     <value>祈愿术是法师或术士所能施放的最强力的法术。只需要简单地大声说出你的愿望，你就能让现实变得更符合你的心意。但即便是祈愿术也有其极限。祈愿术可以产生下列效果中的其中一种。
-- 复制任何一个不超过8级的术士/法师法术，但是该法术不能属于你的对立学派。
-- 复制任何一个不超过7级的非术士/法师法术，但是该法术不能属于你的对立学派。
-- 复制任何一个不超过7级的术士/法师学派，哪怕该法术属于你的对立学派。
-- 复制任何一个不超过6级的非术士/法师法术，哪怕该法术属于你的对立学派。
-- 取消许多其他法术的有害效果，诸如指使术或是神智错乱。
-- 给予一个生物的某项属性值+1的天赋加值。连续不断地施放2到5个祈愿术可以给予生物的某项属性值+2到+5的天赋加值（两个祈愿术获得+2天赋加值，三个祈愿术获得+3天赋加值，以此类推）。天赋加值即刻生效，因此无法被解除。注意：对于任何一项属性，天赋加值最大不能超过+5，并且天赋加值的效果无法叠加，只能应用最大加值。
-- 移除受伤和疾病。单个祈愿术可以帮助1个/每施法者等级的生物，所有目标的同一类病症都将得到治疗。例如你可以治疗自己和同伴受到的所有伤害，或者移除队伍中每个人受到的中毒效果，但是不能用1个祈愿术来同时得到两种效果。
-- 死者重生。一个祈愿术可以通过复制死者复活法术来复活一个死去的生物。如果死去的生物已然尸骨无存，祈愿术依旧可以复活它，但是这需要两个祈愿术：一个用来创造其身体，另外一个让该身体重新获得生命的活力。祈愿术复活的生物仍然无可避免地会损失一个等级。
+• 复制任何一个不超过8级的术士/法师法术，但是该法术不能属于你的对立学派。
+• 复制任何一个不超过7级的非术士/法师法术，但是该法术不能属于你的对立学派。
+• 复制任何一个不超过7级的术士/法师学派，哪怕该法术属于你的对立学派。
+• 复制任何一个不超过6级的非术士/法师法术，哪怕该法术属于你的对立学派。
+• 取消许多其他法术的有害效果，诸如指使术或是神智错乱。
+• 给予一个生物的某项属性值+1的天赋加值。连续不断地施放2到5个祈愿术可以给予生物的某项属性值+2到+5的天赋加值（两个祈愿术获得+2天赋加值，三个祈愿术获得+3天赋加值，以此类推）。天赋加值即刻生效，因此无法被解除。注意：对于任何一项属性，天赋加值最大不能超过+5，并且天赋加值的效果无法叠加，只能应用最大加值。
+• 移除受伤和疾病。单个祈愿术可以帮助1个/每施法者等级的生物，所有目标的同一类病症都将得到治疗。例如你可以治疗自己和同伴受到的所有伤害，或者移除队伍中每个人受到的中毒效果，但是不能用1个祈愿术来同时得到两种效果。
+• 死者重生。一个祈愿术可以通过复制死者复活法术来复活一个死去的生物。如果死去的生物已然尸骨无存，祈愿术依旧可以复活它，但是这需要两个祈愿术：一个用来创造其身体，另外一个让该身体重新获得生命的活力。祈愿术复活的生物仍然无可避免地会损失一个等级。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照9级法术计算。如果祈愿术复制的法术含有价格超过10000金币的材料成分，那么你就必须提供这些材料（这并不包含在法术本身价值25000金币的材料费内）。</value>
   </data>
   <data name="WishArcaneAbilityDescription_info" xml:space="preserve">
     <value>奥术祈愿术能够让你创造出几乎任何类型的效果，只需要你提供5颗钻石。
-- 复制任何一个不超过6级的术士/法师法术，但是这个法术不能属于你的对立学派。
-- 复制任何一个不超过5级的非术士/法师法术，但是这个法术不能属于你的对立学派。
-- 复制任何一个不超过5级的术士/法师法术，哪怕这个法术属于你的对立学派。
-- 复制任何一个不超过4级的非术士/法师法术，哪怕这个法术属于你的对立学派。
-- 取消许多法术的有害效果，如神智错乱。
-- 创造出其它效果，其强度等级不能超过上述的效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定时受到-7的减值等等。
+• 复制任何一个不超过6级的术士/法师法术，但是这个法术不能属于你的对立学派。
+• 复制任何一个不超过5级的非术士/法师法术，但是这个法术不能属于你的对立学派。
+• 复制任何一个不超过5级的术士/法师法术，哪怕这个法术属于你的对立学派。
+• 复制任何一个不超过4级的非术士/法师法术，哪怕这个法术属于你的对立学派。
+• 取消许多法术的有害效果，如神智错乱。
+• 创造出其它效果，其强度等级不能超过上述的效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定时受到-7的减值等等。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照7级法术计算。如果有限祈愿术复制的法术含有价格超过1000金币的材料成分，那么你就必须提供这些材料（这并不包含在法术本身价值1500金币的材料费内）。</value>
   </data>
   <data name="WishBuffDescription_info" xml:space="preserve">
