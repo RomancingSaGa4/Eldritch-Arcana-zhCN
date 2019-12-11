@@ -1349,7 +1349,7 @@
     <value>达到20级时，你成为了战斗的化身。你能以整轮动作进行一次全力攻击，并移动相当于你速度的距离（你可以在攻击之前或之后移动）。当你造成重击时，你可以忽略目标可能拥有的伤害减免。在进行重击确认时你在AC上获得+4的洞察加值。</value>
   </data>
   <data name="MysteryBattleIronSkinDescription_info" xml:space="preserve">
-    <value>每天1次，你的皮肤可以变得如同钢铁一般坚硬，使你获得伤害减免“10/精金”。这项能力作用如同“石肤术”，并使用你的先知等级作为施法者等级。15级后你每天可以使用此能力2次。</value>
+    <value>每天1次，你的皮肤可以变得如同钢铁一般坚硬，使你获得伤害减免“10/精金”。该能力的效果如同“石肤术”，并使用你的先知等级作为施法者等级。15级后你每天可以使用此能力2次。</value>
   </data>
   <data name="MysteryBattleIronSkinName_info" xml:space="preserve">
     <value>铁布衫</value>
@@ -1769,10 +1769,10 @@
     <value>审判</value>
   </data>
   <data name="NobleFamilyLebedaExtraKiDescription_info" xml:space="preserve">
-    <value>武僧气力</value>
+    <value>武僧的气功</value>
   </data>
   <data name="NobleFamilyLebedaExtraKiName_info" xml:space="preserve">
-    <value>气力</value>
+    <value>气功</value>
   </data>
   <data name="NobleFamilyLebedaExtraMutagenDescription_info" xml:space="preserve">
     <value>炼金诱变剂</value>
