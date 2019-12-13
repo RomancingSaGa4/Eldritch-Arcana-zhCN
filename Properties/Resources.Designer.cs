@@ -164,6 +164,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Anatomist 的本地化字符串。
+        /// </summary>
+        internal static string AnatomistTraitDescription_info {
+            get {
+                return ResourceManager.GetString("AnatomistTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You have studied the workings of anatomy, either as a student at university or as an apprentice mortician or necromancer. You know where to aim your blows to strike vital organs.
+        ///Benefit: You gain a +1 trait bonus on all rolls made to confirm critical hits. 的本地化字符串。
+        /// </summary>
+        internal static string AnatomistTraitName_info {
+            get {
+                return ResourceManager.GetString("AnatomistTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 An ancient lorekeeper adds Knowledge (arcana) to their class skills. 的本地化字符串。
         /// </summary>
         internal static string AncientLorekeeperClassSkillsDescription_info {
@@ -358,6 +377,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Armor Expert 的本地化字符串。
+        /// </summary>
+        internal static string ArmorExpertTraitDescription_info {
+            get {
+                return ResourceManager.GetString("ArmorExpertTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You have worn armor as long as you can remember, either as part of your training to become a knight’s squire or simply because you were seeking to emulate a hero. Your childhood armor wasn’t the real thing as far as protection, but it did encumber you as much as real armor would have, and you’ve grown used to moving in such suits with relative grace.
+        ///Benefit: When you wear armor of any sort, reduce that suit’s armor check penalty by 1, to a minimum check penalty of 0. 的本地化字符串。
+        /// </summary>
+        internal static string ArmorExpertTraitName_info {
+            get {
+                return ResourceManager.GetString("ArmorExpertTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Asthma, because out of all the things you could be bad at... you suck at breathing.
         ///Drawback: You suffer a -2 penalty against any effect that will cause you to be fatigued or exhausted, and any effect with cloud, dust, fog, or smoke in its name. You hold your breath for only half the normal duration. Additionally, sleeping in light or heavier armor fatigues you. 的本地化字符串。
         /// </summary>
@@ -511,6 +549,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Your time spent as a society member has taught you new truths about the origins of the your rage ability.
+        ///Benefit: You may use your rage ability for 3 additional rounds per day. 的本地化字符串。
+        /// </summary>
+        internal static string BerserkerOfTheSocietyTraitDescription_info {
+            get {
+                return ResourceManager.GetString("BerserkerOfTheSocietyTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Berserker of the Society 的本地化字符串。
+        /// </summary>
+        internal static string BerserkerOfTheSocietyTraitName_info {
+            get {
+                return ResourceManager.GetString("BerserkerOfTheSocietyTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You were born with a strange birthmark that looks very similar to the holy symbol of the god you chose to worship later in life.
         ///Benefits: This birthmark increases your devotion to your god. You gain a +2 trait bonus on all saving throws against charm and compulsion effects. 的本地化字符串。
         /// </summary>
@@ -526,6 +583,25 @@ namespace EldritchArcana.Properties {
         internal static string BirthmarkTraitName_info {
             get {
                 return ResourceManager.GetString("BirthmarkTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You have studied and learned the weak spots of many humanoids and monsters.
+        ///Benefit: you are able to sneak attack at level 3 even if your class normaly does not and You gain a +1 trait bonus to damage rolls from sneak attacks. 的本地化字符串。
+        /// </summary>
+        internal static string BladeOfTheSocietyTraitDescription_info {
+            get {
+                return ResourceManager.GetString("BladeOfTheSocietyTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Blade Of the Society 的本地化字符串。
+        /// </summary>
+        internal static string BladeOfTheSocietyTraitName_info {
+            get {
+                return ResourceManager.GetString("BladeOfTheSocietyTraitName_info", resourceCulture);
             }
         }
         
@@ -962,7 +1038,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 You have long served at a temple in a city, where you picked up on many of the nobility’s customs in addition to spending much time in the temple libraries studying your faith. 的本地化字符串。
+        ///   查找类似 You have long served at a temple in a city, where you picked up on many of the nobility&apos;s customs in addition to spending much time in the temple libraries studying your faith. 的本地化字符串。
         /// </summary>
         internal static string ChildOfTheTempleTraitDescription_info {
             get {
@@ -1113,6 +1189,44 @@ namespace EldritchArcana.Properties {
         internal static string CustomTraitName_info {
             get {
                 return ResourceManager.GetString("CustomTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your time spent fighting and studying the greatest warriors of the society has taught you new defensive skills while wearing armor.
+        ///Benefit: You gain a +1 trait bonus to Armor Class when wearing medium or heavy armor. 的本地化字符串。
+        /// </summary>
+        internal static string DefenderOfTheSocietyTraitDescription_info {
+            get {
+                return ResourceManager.GetString("DefenderOfTheSocietyTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Defender of the Society 的本地化字符串。
+        /// </summary>
+        internal static string DefenderOfTheSocietyTraitName_info {
+            get {
+                return ResourceManager.GetString("DefenderOfTheSocietyTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Growing up in a rough neighborhood or a dangerous environment has honed your senses.
+        ///Benefit: You gain a +1 trait bonus on Reflex saves. 的本地化字符串。
+        /// </summary>
+        internal static string DeftDodgerTraitDescription_info {
+            get {
+                return ResourceManager.GetString("DeftDodgerTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Deft Dodger 的本地化字符串。
+        /// </summary>
+        internal static string DeftDodgerTraitName_info {
+            get {
+                return ResourceManager.GetString("DeftDodgerTraitName_info", resourceCulture);
             }
         }
         
@@ -1286,6 +1400,25 @@ namespace EldritchArcana.Properties {
         internal static string DilettanteArtistTraitName_info {
             get {
                 return ResourceManager.GetString("DilettanteArtistTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You wouldn&apos;t have lived to make it out of childhood without the aid of a sibling, friend, or companion you could always count on to distract your enemies long enough for you to do a little bit more damage than normal. That companion may be another PC or an NPC (who may even be recently departed from your side).
+        ///Benefit: When you hit a foe you are flanking, you deal 1 additional point of damage (this damage is added to your base damage, and is multiplied on a critical hit). This additional damage is a trait [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string DirtyFighterTraitDescription_info {
+            get {
+                return ResourceManager.GetString("DirtyFighterTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Dirty Fighter 的本地化字符串。
+        /// </summary>
+        internal static string DirtyFighterTraitName_info {
+            get {
+                return ResourceManager.GetString("DirtyFighterTraitName_info", resourceCulture);
             }
         }
         
@@ -1482,7 +1615,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 One of your parents was a member of a wild elven tribe, and you’ve inherited a portion of your elven parent’s quick reflexes.
+        ///   查找类似 One of your parents was a member of a wild elven tribe, and you&apos;ve inherited a portion of your elven parent&apos;s quick reflexes.
         ///Benefit: You gain a +2 trait bonus on initiative checks. 的本地化字符串。
         /// </summary>
         internal static string ElvenReflexsTraitDescription_info {
@@ -1687,7 +1820,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 As a child, your parents sent you to a distant wizard’s tower as an apprentice so that you could learn the arcane arts. Unfortunately, you had no arcane talent whatsoever, though you did learn a great deal about the workings of spells and how to resist them.
+        ///   查找类似 As a child, your parents sent you to a distant wizard&apos;s tower as an apprentice so that you could learn the arcane arts. Unfortunately, you had no arcane talent whatsoever, though you did learn a great deal about the workings of spells and how to resist them.
         ///Benefit: You gain a +1 trait bonus on saves against arcane spells. 的本地化字符串。
         /// </summary>
         internal static string FailedAprenticeTraitDescription_info {
@@ -2531,6 +2664,25 @@ namespace EldritchArcana.Properties {
         internal static string HighDCl_info {
             get {
                 return ResourceManager.GetString("HighDCl_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You have studied dozens of ancient texts on martial arts that only the Society possesses, and are more learned in these arts than most.
+        ///Benefit: You increase your ki pool by 1 point. 的本地化字符串。
+        /// </summary>
+        internal static string HonoredFistOfTheSocietyTraitDescription_info {
+            get {
+                return ResourceManager.GetString("HonoredFistOfTheSocietyTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Honored First of the Society 的本地化字符串。
+        /// </summary>
+        internal static string HonoredFistOfTheSocietyTraitName_info {
+            get {
+                return ResourceManager.GetString("HonoredFistOfTheSocietyTraitName_info", resourceCulture);
             }
         }
         
@@ -4377,7 +4529,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Twice per day as an immediate action, this ability will automatically reroll any one d20 roll that failed. You can choose the type of rolls to anticipate (such as Attack Rolls, Saving Throws, Skill Checks, etc). You must take the result of the reroll, even if it’s worse than the original roll. You can use this ability twice per day, and an additional time per day at 9th level, and every two levels thereafter. You must be at least 7th level to select this revelation. 的本地化字符串。
+        ///   查找类似 Twice per day as an immediate action, this ability will automatically reroll any one d20 roll that failed. You can choose the type of rolls to anticipate (such as Attack Rolls, Saving Throws, Skill Checks, etc). You must take the result of the reroll, even if it&apos;s worse than the original roll. You can use this ability twice per day, and an additional time per day at 9th level, and every two levels thereafter. You must be at least 7th level to select this revelation. 的本地化字符串。
         /// </summary>
         internal static string MysteryTimeRewindDescription_info {
             get {
@@ -6178,6 +6330,43 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You were bullied often as a child, but never quite developed an offensive response. Instead, you became adept at anticipating sudden attacks and reacting to danger quickly.
+        ///Benefit: You gain a +2 trait bonus on initiative checks. 的本地化字符串。
+        /// </summary>
+        internal static string ReactionaryTraitDescription_info {
+            get {
+                return ResourceManager.GetString("ReactionaryTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Reactionary 的本地化字符串。
+        /// </summary>
+        internal static string ReactionaryTraitName_info {
+            get {
+                return ResourceManager.GetString("ReactionaryTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You have a tendency for rash behavior, often disregarding your own safety as you move across the battlefield. 的本地化字符串。
+        /// </summary>
+        internal static string RecklessTraitDescription_info {
+            get {
+                return ResourceManager.GetString("RecklessTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Reckless 的本地化字符串。
+        /// </summary>
+        internal static string RecklessTraitName_info {
+            get {
+                return ResourceManager.GetString("RecklessTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Regional traits are keyed to specific regions, be they large (such as a nation or geographic region) or small (such as a city or a specific mountain). In order to select a regional trait, your PC must have spent at least a year living in that region. At 1st level, you can only select one regional trait (typically the one tied to your character&apos;s place of birth or homeland), despite the number of regions you might wish to write into your character&apos;s background. 的本地化字符串。
         /// </summary>
         internal static string RegionalTraitDescription_info {
@@ -6228,6 +6417,25 @@ namespace EldritchArcana.Properties {
         internal static string ReplacementFeatureName_info {
             get {
                 return ResourceManager.GetString("ReplacementFeatureName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Growing up in a poor neighborhood or in the unforgiving wilds often forced you to subsist on food and water from doubtful sources. You&apos;ve built up your constitution as a result.
+        ///Benefit: You gain a +1 trait bonus on Fortitude saves. 的本地化字符串。
+        /// </summary>
+        internal static string ResilientTraitDescription_info {
+            get {
+                return ResourceManager.GetString("ResilientTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Resilient 的本地化字符串。
+        /// </summary>
+        internal static string ResilientTraitName_info {
+            get {
+                return ResourceManager.GetString("ResilientTraitName_info", resourceCulture);
             }
         }
         
@@ -7523,6 +7731,24 @@ namespace EldritchArcana.Properties {
         internal static string WishSpellsSpellName_info {
             get {
                 return ResourceManager.GetString("WishSpellsSpellName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You are quick with your tongue and have always possessed the talent to quickly admonish your enemies. 的本地化字符串。
+        /// </summary>
+        internal static string WittyReparteeTraitDescription_info {
+            get {
+                return ResourceManager.GetString("WittyReparteeTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Witty Repartee 的本地化字符串。
+        /// </summary>
+        internal static string WittyReparteeTraitName_info {
+            get {
+                return ResourceManager.GetString("WittyReparteeTraitName_info", resourceCulture);
             }
         }
         

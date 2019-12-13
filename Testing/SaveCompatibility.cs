@@ -1,6 +1,8 @@
 // Copyright (c) 2019 Jennifer Messerly
 // This code is licensed under MIT license (see LICENSE for details)
 
+using Kingmaker.Blueprints;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -8,16 +10,6 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using Kingmaker;
-using Kingmaker.Blueprints;
-using Kingmaker.Blueprints.Root;
-using Kingmaker.UI.Common.Animations;
-using Kingmaker.UI.LevelUp;
-using Newtonsoft.Json;
-using UnityEngine;
-using UnityModManagerNet;
 
 namespace EldritchArcana
 {

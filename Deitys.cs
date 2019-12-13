@@ -1,30 +1,4 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using Kingmaker.Blueprints;
-using Kingmaker.Blueprints.Classes;
-using Kingmaker.Blueprints.Classes.Selection;
-using Kingmaker.Blueprints.Classes.Spells;
-using Kingmaker.Blueprints.Facts;
-using Kingmaker.Blueprints.Root;
-using Kingmaker.Designers.Mechanics.Facts;
-using Kingmaker.EntitySystem.Stats;
-using Kingmaker.PubSubSystem;
-using Kingmaker.RuleSystem;
-using Kingmaker.UnitLogic;
-using Kingmaker.UnitLogic.Abilities.Blueprints;
-using Kingmaker.UnitLogic.Abilities.Components;
-using Kingmaker.UnitLogic.FactLogic;
-using Kingmaker.Utility;
-using Newtonsoft.Json;
-using Kingmaker.UnitLogic.Buffs.Blueprints;
-using Kingmaker.UnitLogic.Mechanics;
-using Kingmaker.Enums;
-using Kingmaker.UnitLogic.Mechanics.Components;
-using static Kingmaker.UnitLogic.ActivatableAbilities.ActivatableAbilityResourceLogic;
-using Kingmaker.UnitLogic.ActivatableAbilities;
-using static Kingmaker.UnitLogic.Commands.Base.UnitCommand;
+﻿using Kingmaker.Blueprints;
 
 namespace EldritchArcana.Warpriest
 {

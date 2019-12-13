@@ -1,9 +1,6 @@
 // Copyright (c) 2019 Jennifer Messerly
 // This code is licensed under MIT license (see LICENSE for details)
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using HighlightingSystem;
 using Kingmaker;
 using Kingmaker.Blueprints;
@@ -25,6 +22,9 @@ using Kingmaker.Utility;
 using Kingmaker.View.MapObjects;
 using Kingmaker.View.MapObjects.InteractionRestrictions;
 using Kingmaker.Visual.FogOfWar;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using static Kingmaker.UnitLogic.Commands.Base.UnitCommand;
 using RES = EldritchArcana.Properties.Resources;

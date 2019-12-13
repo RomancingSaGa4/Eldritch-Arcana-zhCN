@@ -44,9 +44,6 @@ using System.Linq;
 using UnityEngine;
 
 using static Kingmaker.UnitLogic.Commands.Base.UnitCommand;
-
-using GC = UnityEngine.GUIContent;
-using GL = UnityEngine.GUILayout;
 using UnityModManager = UnityModManagerNet.UnityModManager;
 
 namespace EldritchArcana

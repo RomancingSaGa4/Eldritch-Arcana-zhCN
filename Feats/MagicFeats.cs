@@ -1,9 +1,6 @@
 // Copyright (c) 2019 Jennifer Messerly
 // This code is licensed under MIT license (see LICENSE for details)
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Prerequisites;
@@ -34,6 +31,9 @@ using Kingmaker.UnitLogic.Mechanics.Components;
 using Kingmaker.UnitLogic.Parts;
 using Kingmaker.Utility;
 using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using static Kingmaker.UnitLogic.Commands.Base.UnitCommand;
 using RES = EldritchArcana.Properties.Resources;
 
@@ -120,10 +120,10 @@ namespace EldritchArcana
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/optimistic_gambler.png"),
                 FeatureGroup.Feat,
                 Helpers.Create<AddDamageResistancePhysical>(s => { s.Value = 13; }),
-                Helpers.PrerequisiteStatValue(StatType.SkillMobility,5),
+                Helpers.PrerequisiteStatValue(StatType.SkillMobility, 5),
                 Helpers.Create<RecommendationHasFeature>(r => r.Feature = Helpers.goblin)
                 , goblinReq);
-            
+
             return feat;
         }
 

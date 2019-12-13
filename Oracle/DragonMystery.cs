@@ -1,13 +1,8 @@
 // Copyright (c) 2019 Jennifer Messerly
 // This code is licensed under MIT license (see LICENSE for details)
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
-using Kingmaker.Blueprints.Classes.Prerequisites;
 using Kingmaker.Blueprints.Classes.Selection;
 using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.Blueprints.Facts;
@@ -16,7 +11,6 @@ using Kingmaker.Designers.Mechanics.Facts;
 using Kingmaker.EntitySystem.Stats;
 using Kingmaker.Enums;
 using Kingmaker.Enums.Damage;
-using Kingmaker.Localization;
 using Kingmaker.RuleSystem;
 using Kingmaker.UI.Common;
 using Kingmaker.UnitLogic;
@@ -25,17 +19,18 @@ using Kingmaker.UnitLogic.Abilities.Components;
 using Kingmaker.UnitLogic.Abilities.Components.CasterCheckers;
 using Kingmaker.UnitLogic.ActivatableAbilities;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
-using Kingmaker.UnitLogic.Commands.Base;
 using Kingmaker.UnitLogic.FactLogic;
 using Kingmaker.UnitLogic.Mechanics;
 using Kingmaker.UnitLogic.Mechanics.Actions;
 using Kingmaker.UnitLogic.Mechanics.Components;
 using Kingmaker.UnitLogic.Parts;
 using Kingmaker.Utility;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using static Kingmaker.UnitLogic.ActivatableAbilities.ActivatableAbilityResourceLogic;
 using static Kingmaker.UnitLogic.Commands.Base.UnitCommand;
-using Newtonsoft.Json;
-
 using RES = EldritchArcana.Properties.Resources;
 
 namespace EldritchArcana
@@ -172,7 +167,7 @@ namespace EldritchArcana
         static BlueprintFeatureSelection CreateDragonMagicSpellSelection(BlueprintFeature feat, int index, String assetId)
         {
             var pickSpell = Helpers.CreateFeatureSelection($"{feat.name}Spell{index}",
-                    RES.MysteryDragonMagicName_info, RES.MysteryDragonMagicDescription_info, 
+                    RES.MysteryDragonMagicName_info, RES.MysteryDragonMagicDescription_info,
                     assetId, feat.Icon, FeatureGroup.None);
             var wizardList = Helpers.wizardSpellList;
             Traits.FillSpellSelection(pickSpell, 1, 6, wizardList, (level) => new BlueprintComponent[] {
@@ -326,7 +321,7 @@ namespace EldritchArcana
             resource.SetIncreasedByLevelStartPlusDivStep(1, 5, 1, 5, 1, 0, 0, oracleArray);
 
             var presenceImmunity = Helpers.CreateBuff($"{feat.name}ImmuneForDay",
-                RES.MysteryDragonPresenceImmuneForDayName_info, 
+                RES.MysteryDragonPresenceImmuneForDayName_info,
                 RES.MysteryDragonPresenceImmuneForDayDescription_info,
                 "a2c921fde72c40b3baccca9a54beafbd",
                 Helpers.GetIcon("55a037e514c0ee14a8e3ed14b47061de"), // remove fear
@@ -334,10 +329,10 @@ namespace EldritchArcana
 
             var shaken = library.Get<BlueprintBuff>("25ec6cb6ab1845c48a95f9c20b034220");
             var ability = Helpers.CreateAbility($"{feat.name}Ability", RES.MysteryDragonPresenceName_info,
-                RES.MysteryDragonPresenceDescription_info, 
+                RES.MysteryDragonPresenceDescription_info,
                 "ff6b4f892a8c4f489d13a42f748c7a11",
                 feat.Icon, AbilityType.Supernatural, CommandType.Swift,
-                AbilityRange.Medium, RES.MysteryDragonPresenceAbilityDuration_info, 
+                AbilityRange.Medium, RES.MysteryDragonPresenceAbilityDuration_info,
                 RES.MysteryDragonPresenceAbilityCheck_info,
                 Helpers.CreateAbilityTargetsAround(30.Feet(), TargetType.Enemy),
                 Helpers.CreateSpellDescriptor(SpellDescriptor.Fear | SpellDescriptor.MindAffecting),
@@ -472,7 +467,7 @@ namespace EldritchArcana
                 "ed6599167d3841ccafeeac5297546963",
                 Helpers.GetIcon("e0bdad79800cbfd40afdbe7fdec2441e"), // Black dragon wings
                 FeatureGroup.None,
-                Helpers.PrerequisiteClassLevel(oracle, 7 ),
+                Helpers.PrerequisiteClassLevel(oracle, 7),
                 noFeature);
             noFeature.Feature = revelation;
 
@@ -583,14 +578,14 @@ namespace EldritchArcana
             return feat;
         }
 
-        static BlueprintFeature CreateBreathWeaponFeature(String existingId, BlueprintFeature energyFeat, String energyName,String shapeName, BlueprintAbilityResource resource)
+        static BlueprintFeature CreateBreathWeaponFeature(String existingId, BlueprintFeature energyFeat, String energyName, String shapeName, BlueprintAbilityResource resource)
         {
             var name = $"{energyFeat.name.Replace("Progression", "")}{shapeName}Breath";
             // Log.Write(name);
             var assetId = shapeName == "Line" ? "9cc10f40f706427daff880074c1c423c" : "99bee4ae51af40839154c17c434bca17";
             var feat = library.CopyAndAdd<BlueprintFeature>(existingId,
                 $"{name}Feature", assetId, energyFeat.AssetGuid);
-            feat.SetName(String.Format(RES.TypeHyphenSubtype_info, RES.MysteryDragonBreathWeaponName_info, 
+            feat.SetName(String.Format(RES.TypeHyphenSubtype_info, RES.MysteryDragonBreathWeaponName_info,
                 String.Format(shapeName == "Line" ? RES.MysteryDragonBreathWeaponLineOfEnergyType_info : RES.MysteryDragonBreathWeaponConeOfEnergyType_info, energyName)));
             var ability = library.CopyAndAdd(feat.GetComponent<AddFacts>().Facts[0] as BlueprintAbility,
                 $"{name}Ability", feat.AssetGuid, "56e4f7ee4085483ab996b65b24671d8b");

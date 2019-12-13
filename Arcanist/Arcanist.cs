@@ -1,31 +1,20 @@
 // Copyright (c) 2019 Jennifer Messerly
 // This code is licensed under MIT license (see LICENSE for details)
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Selection;
 using Kingmaker.Blueprints.Classes.Spells;
-using Kingmaker.Blueprints.Facts;
-using Kingmaker.Blueprints.Root;
-using Kingmaker.Designers.Mechanics.Facts;
 using Kingmaker.EntitySystem.Stats;
-using Kingmaker.PubSubSystem;
-using Kingmaker.RuleSystem;
-using Kingmaker.UnitLogic;
-using Kingmaker.UnitLogic.Abilities.Blueprints;
-using Kingmaker.UnitLogic.Abilities.Components;
-using Kingmaker.UnitLogic.FactLogic;
-using Kingmaker.Utility;
-using Newtonsoft.Json;
-using Kingmaker.UnitLogic.Buffs.Blueprints;
-using Kingmaker.UnitLogic.Mechanics;
 using Kingmaker.Enums;
-using Kingmaker.UnitLogic.Mechanics.Components;
-using static Kingmaker.UnitLogic.ActivatableAbilities.ActivatableAbilityResourceLogic;
+using Kingmaker.RuleSystem;
+using Kingmaker.UnitLogic.Abilities.Blueprints;
 using Kingmaker.UnitLogic.ActivatableAbilities;
+using Kingmaker.UnitLogic.Mechanics;
+using Kingmaker.UnitLogic.Mechanics.Components;
+using System;
+using System.Collections.Generic;
+using static Kingmaker.UnitLogic.ActivatableAbilities.ActivatableAbilityResourceLogic;
 using static Kingmaker.UnitLogic.Commands.Base.UnitCommand;
 
 namespace EldritchArcana
@@ -103,7 +92,7 @@ namespace EldritchArcana
                 // Warpriests have Survial and Handle Animal
                 StatType.SkillLoreNature
             };
-            
+
 
 
             ArcanistClass.arcanist.IsDivineCaster = false;
@@ -115,20 +104,20 @@ namespace EldritchArcana
             ArcanistClass.arcanist.PrimaryColor = paladin.PrimaryColor;
             ArcanistClass.arcanist.SecondaryColor = paladin.SecondaryColor;
 
-            ArcanistClass.arcanist.RecommendedAttributes = new StatType[] { StatType.Intelligence,StatType.Dexterity };
+            ArcanistClass.arcanist.RecommendedAttributes = new StatType[] { StatType.Intelligence, StatType.Dexterity };
             ArcanistClass.arcanist.NotRecommendedAttributes = new StatType[] { StatType.Strength };
 
             ArcanistClass.arcanist.EquipmentEntities = wizard.EquipmentEntities;
             ArcanistClass.arcanist.MaleEquipmentEntities = wizard.MaleEquipmentEntities;
             ArcanistClass.arcanist.FemaleEquipmentEntities = sorcerer.FemaleEquipmentEntities;
-            
+
             // Both of the restrictions here are relevant (no atheism feature, no animal class).
             ArcanistClass.arcanist.ComponentsArray = wizard.ComponentsArray;
             ArcanistClass.arcanist.HideIfRestricted = true;
             ArcanistClass.arcanist.AddComponent(ArcanistClass.arcanist.PrerequisiteClassLevel(1));
 
             ArcanistClass.arcanist.StartingItems = wizard.StartingItems;
-            
+
             var progression = Helpers.CreateProgression("ArcanistProgression",
                 ArcanistClass.arcanist.Name,
                 ArcanistClass.arcanist.Description,
@@ -141,7 +130,7 @@ namespace EldritchArcana
 
             //cantrips.SetDescription("arcanists learn a number of cantrips, or 0-level spells. These spells are cast like any other spell, but they do not consume any slots and may be used again.");
             //
-            
+
 
             var cantrips = Helpers.createCantrips("ArcanistCantripsFeature",
                                                    "Cantrips",
@@ -151,8 +140,8 @@ namespace EldritchArcana
                                                    arcanist,
                                                    StatType.Intelligence,
                                                    arcanist.Spellbook.SpellList.SpellsByLevel[0].Spells.ToArray());
-        
-            
+
+
 
             var proficiencies = library.CopyAndAdd<BlueprintFeature>(
                 "a98d7cc4e30fe6c4bb3a2c2f69acc3fe", // wizard proficiencies
@@ -165,8 +154,8 @@ namespace EldritchArcana
             var deitySelection = library.Get<BlueprintFeatureSelection>("59e7a76987fe3b547b9cce045f4db3e4");
 
 
-            var MagusSpellRecallFeature = library.CopyAndAdd<BlueprintFeature>("61fc0521e9992624e9c518060bf89c0f", "ArcanistPool",Arcanistguidlist[1]);
-            var MagusSpellRecall = library.CopyAndAdd<BlueprintAbility>("1bd76e00b6e056d42a8ecc1031dd43b4","ArcanistSpellrecall", Arcanistguidlist[2]);
+            var MagusSpellRecallFeature = library.CopyAndAdd<BlueprintFeature>("61fc0521e9992624e9c518060bf89c0f", "ArcanistPool", Arcanistguidlist[1]);
+            var MagusSpellRecall = library.CopyAndAdd<BlueprintAbility>("1bd76e00b6e056d42a8ecc1031dd43b4", "ArcanistSpellrecall", Arcanistguidlist[2]);
             MagusSpellRecallFeature.SetDescription("Arcanist Reservoir use this reservoir to empower your spells through varius means.");
             createArcaneReservoir();
             var Yog = library.CopyAndAdd<BlueprintFeature>("a3a5ccc9c670e6f4ca4a686d23b89900", "Yog", Arcanistguidlist[98]);
@@ -196,22 +185,22 @@ namespace EldritchArcana
             //entries.Add(Helpers.LevelEntry(2)); 
             entries.Add(Helpers.LevelEntry(3, ExploitSelection, WizardFeatSelection));
             //entries.Add(Helpers.LevelEntry(4)); 
-            entries.Add(Helpers.LevelEntry(5, ExploitSelection, WizardFeatSelection)); 
+            entries.Add(Helpers.LevelEntry(5, ExploitSelection, WizardFeatSelection));
             //entries.Add(Helpers.LevelEntry(6));
-            entries.Add(Helpers.LevelEntry(7, ExploitSelection, WizardFeatSelection)); 
+            entries.Add(Helpers.LevelEntry(7, ExploitSelection, WizardFeatSelection));
             //entries.Add(Helpers.LevelEntry(8)); 
             entries.Add(Helpers.LevelEntry(9, ExploitSelection, WizardFeatSelection));
             //entries.Add(Helpers.LevelEntry(10)); 
-            entries.Add(Helpers.LevelEntry(11, ExploitSelection, WizardFeatSelection)); 
+            entries.Add(Helpers.LevelEntry(11, ExploitSelection, WizardFeatSelection));
             //entries.Add(Helpers.LevelEntry(12));
-            entries.Add(Helpers.LevelEntry(13, ExploitSelection, WizardFeatSelection)); 
+            entries.Add(Helpers.LevelEntry(13, ExploitSelection, WizardFeatSelection));
             //entries.Add(Helpers.LevelEntry(14)); 
             entries.Add(Helpers.LevelEntry(15, ExploitSelection, WizardFeatSelection));
             //entries.Add(Helpers.LevelEntry(16)); 
-            entries.Add(Helpers.LevelEntry(17, ExploitSelection, WizardFeatSelection)); 
+            entries.Add(Helpers.LevelEntry(17, ExploitSelection, WizardFeatSelection));
             //entries.Add(Helpers.LevelEntry(18));
-            entries.Add(Helpers.LevelEntry(19, ExploitSelection, WizardFeatSelection)); 
-            entries.Add(Helpers.LevelEntry(20,Yog)); 
+            entries.Add(Helpers.LevelEntry(19, ExploitSelection, WizardFeatSelection));
+            entries.Add(Helpers.LevelEntry(20, Yog));
             progression.UIDeterminatorsGroup = new BlueprintFeatureBase[] {
                 // TODO: 1st level stuff
             };
@@ -223,7 +212,7 @@ namespace EldritchArcana
             ArcanistClass.arcanist.Archetypes = Array.Empty<BlueprintArchetype>();
 
             ArcanistClass.arcanist.RegisterClass();
-            
+
         }
 
 
@@ -241,7 +230,7 @@ namespace EldritchArcana
                 "4e685b25900246939394662b7faac125",
                 null,
                 UpdateLevelUpDeterminatorText.Group);
-            
+
 
             var choices = new List<BlueprintFeature>();
             //var fam = library.Get<BlueprintFeatureSelection>("363cab72f77c47745bf3a8807074d183");
@@ -273,14 +262,14 @@ namespace EldritchArcana
             string abilitydescription = "An arcanist has an innate pool of magical energy that she can draw upon to fuel her arcanist exploits and enhance her spells. The arcanist�s arcane reservoir can hold a maximum amount of magical energy.\n" +
                 "Points from the arcanist reservoir are used to fuel many of the arcanist�s powers. In addition, the arcanist can expend 1 point from her arcane reservoir as a free action whenever she casts an arcanist spell. If she does, she can choose to increase the caster level by 1 or increase the spell�s DC by 1.\n" +
                 "You gain 3 at the minimum and extra charges based on your arcanist level.";
-            var resource = Helpers.CreateAbilityResource("ArcanistReservoirResource","Reservoir charge",
+            var resource = Helpers.CreateAbilityResource("ArcanistReservoirResource", "Reservoir charge",
                                              "One charge from the reservoir",
                                              "0dc32000b6e056d42a8ecc9921dd43c1",
                                              Helpers.NiceIcons(3),
                                              null
                                              );
             //resource.SetIncreasedByStat(3, StatType.SkillKnowledgeArcana);
-            resource.SetIncreasedByLevel(3, 1,new BlueprintCharacterClass[] { arcanist });
+            resource.SetIncreasedByLevel(3, 1, new BlueprintCharacterClass[] { arcanist });
 
             var surge = Helpers.Create<NewMechanics.ArcaneEmpowermentLevel>();
             var surge2 = Helpers.Create<NewMechanics.ArcaneEmpowermentDC>();
@@ -304,7 +293,7 @@ namespace EldritchArcana
                               surge,
                               Helpers.CreateContextRankConfig(baseValueType: Kingmaker.UnitLogic.Mechanics.Components.ContextRankBaseValueType.ClassLevel, classes: arcanistArray,
                                                               progression: ContextRankProgression.Custom, type: AbilityRankType.DamageBonus,
-                                                              customProgression: new(int, int)[] {
+                                                              customProgression: new (int, int)[] {
                                                                             (7, -1),
                                                                             (20, 0)
                                                                 })
@@ -318,7 +307,7 @@ namespace EldritchArcana
                               surge2,
                               Helpers.CreateContextRankConfig(baseValueType: Kingmaker.UnitLogic.Mechanics.Components.ContextRankBaseValueType.ClassLevel, classes: arcanistArray,
                                                               progression: ContextRankProgression.Custom, type: AbilityRankType.DamageBonus,
-                                                              customProgression: new(int, int)[] {
+                                                              customProgression: new (int, int)[] {
                                                                             (7, -1),
                                                                             (20, 0)
                                                                 })

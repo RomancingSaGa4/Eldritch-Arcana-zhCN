@@ -80,7 +80,7 @@ namespace EldritchArcana
         {
             get
             {
-                if(index < m_dataUsed) return m_data[index];
+                if (index < m_dataUsed) return m_data[index];
                 return (IsNegative ? (DType)AllBits : (DType)0);
             }
             set { m_data[index] = value; }
@@ -111,7 +111,7 @@ namespace EldritchArcana
         internal string GetDataAsString()
         {
             string result = "";
-            foreach(DType data in m_data)
+            foreach (DType data in m_data)
             {
                 result += data + " ";
             }
@@ -121,9 +121,9 @@ namespace EldritchArcana
         internal void ResetDataUsed()
         {
             m_dataUsed = m_data.Length;
-            if(IsNegative)
+            if (IsNegative)
             {
-                while(m_dataUsed > 1 && m_data[m_dataUsed - 1] == AllBits)
+                while (m_dataUsed > 1 && m_data[m_dataUsed - 1] == AllBits)
                 {
                     --m_dataUsed;
                 }
@@ -131,11 +131,11 @@ namespace EldritchArcana
             }
             else
             {
-                while(m_dataUsed > 1 && m_data[m_dataUsed - 1] == 0)
+                while (m_dataUsed > 1 && m_data[m_dataUsed - 1] == 0)
                 {
                     --m_dataUsed;
                 }
-                if(m_dataUsed == 0)
+                if (m_dataUsed == 0)
                 {
                     m_dataUsed = 1;
                 }
@@ -153,21 +153,21 @@ namespace EldritchArcana
             int invShift = 0;
             int bufLen = buffer.Length;
 
-            while(bufLen > 1 && buffer[bufLen - 1] == 0)
+            while (bufLen > 1 && buffer[bufLen - 1] == 0)
             {
                 bufLen--;
             }
 
-            for(int count = shiftCount; count > 0; count -= shiftAmount)
+            for (int count = shiftCount; count > 0; count -= shiftAmount)
             {
-                if(count < shiftAmount)
+                if (count < shiftAmount)
                 {
                     shiftAmount = count;
                     invShift = DigitsArray.DataSizeBits - shiftAmount;
                 }
 
                 ulong carry = 0;
-                for(int i = bufLen - 1; i >= 0; i--)
+                for (int i = bufLen - 1; i >= 0; i--)
                 {
                     ulong val = ((ulong)buffer[i]) >> shiftAmount;
                     val |= carry;
@@ -177,7 +177,7 @@ namespace EldritchArcana
                 }
             }
 
-            while(bufLen > 1 && buffer[bufLen - 1] == 0)
+            while (bufLen > 1 && buffer[bufLen - 1] == 0)
             {
                 bufLen--;
             }
@@ -195,20 +195,20 @@ namespace EldritchArcana
             int shiftAmount = DigitsArray.DataSizeBits;
             int bufLen = buffer.Length;
 
-            while(bufLen > 1 && buffer[bufLen - 1] == 0)
+            while (bufLen > 1 && buffer[bufLen - 1] == 0)
             {
                 bufLen--;
             }
 
-            for(int count = shiftCount; count > 0; count -= shiftAmount)
+            for (int count = shiftCount; count > 0; count -= shiftAmount)
             {
-                if(count < shiftAmount)
+                if (count < shiftAmount)
                 {
                     shiftAmount = count;
                 }
 
                 ulong carry = 0;
-                for(int i = 0; i < bufLen; i++)
+                for (int i = 0; i < bufLen; i++)
                 {
                     ulong val = ((ulong)buffer[i]) << shiftAmount;
                     val |= carry;
@@ -217,9 +217,9 @@ namespace EldritchArcana
                     carry = (val >> DigitsArray.DataSizeBits);
                 }
 
-                if(carry != 0)
+                if (carry != 0)
                 {
-                    if(bufLen + 1 <= buffer.Length)
+                    if (bufLen + 1 <= buffer.Length)
                     {
                         buffer[bufLen] = (DType)carry;
                         bufLen++;
@@ -236,20 +236,20 @@ namespace EldritchArcana
 
         internal int ShiftLeftWithoutOverflow(int shiftCount)
         {
-            if(shiftCount == 0) return m_data.Length;
+            if (shiftCount == 0) return m_data.Length;
 
             List<DType> temporary = new List<DType>(m_data);
             int shiftAmount = DigitsArray.DataSizeBits;
 
-            for(int count = shiftCount; count > 0; count -= shiftAmount)
+            for (int count = shiftCount; count > 0; count -= shiftAmount)
             {
-                if(count < shiftAmount)
+                if (count < shiftAmount)
                 {
                     shiftAmount = count;
                 }
 
                 ulong carry = 0;
-                for(int i = 0; i < temporary.Count; i++)
+                for (int i = 0; i < temporary.Count; i++)
                 {
                     ulong val = ((ulong)temporary[i]) << shiftAmount;
                     val |= carry;
@@ -258,10 +258,10 @@ namespace EldritchArcana
                     carry = (val >> DigitsArray.DataSizeBits);
                 }
 
-                if(carry != 0)
+                if (carry != 0)
                 {
                     DType lastNum = (DType)carry;
-                    if(IsNegative)
+                    if (IsNegative)
                     {
                         int byteCount = (int)Math.Floor(Math.Log(carry, 2));
                         lastNum = (0xffffffff << byteCount) | (DType)carry;
@@ -333,7 +333,7 @@ namespace EldritchArcana
         public BigInteger(long number)
         {
             m_digits = new DigitsArray((8 / DigitsArray.DataSizeOf) + 1, 0);
-            while(number != 0 && m_digits.DataUsed < m_digits.Count)
+            while (number != 0 && m_digits.DataUsed < m_digits.Count)
             {
                 m_digits[m_digits.DataUsed] = (DType)(number & DigitsArray.AllBits);
                 number >>= DigitsArray.DataSizeBits;
@@ -349,7 +349,7 @@ namespace EldritchArcana
         public BigInteger(ulong number)
         {
             m_digits = new DigitsArray((8 / DigitsArray.DataSizeOf) + 1, 0);
-            while(number != 0 && m_digits.DataUsed < m_digits.Count)
+            while (number != 0 && m_digits.DataUsed < m_digits.Count)
             {
                 m_digits[m_digits.DataUsed] = (DType)(number & DigitsArray.AllBits);
                 number >>= DigitsArray.DataSizeBits;
@@ -391,36 +391,36 @@ namespace EldritchArcana
 
         private void ConstructFrom(byte[] array, int offset, int length)
         {
-            if(array == null)
+            if (array == null)
             {
                 throw new ArgumentNullException("array");
             }
-            if(offset > array.Length || length > array.Length)
+            if (offset > array.Length || length > array.Length)
             {
                 throw new ArgumentOutOfRangeException("offset");
             }
-            if(length > array.Length || (offset + length) > array.Length)
+            if (length > array.Length || (offset + length) > array.Length)
             {
                 throw new ArgumentOutOfRangeException("length");
             }
 
             int estSize = length / 4;
             int leftOver = length & 3;
-            if(leftOver != 0)
+            if (leftOver != 0)
             {
                 ++estSize;
             }
 
             m_digits = new DigitsArray(estSize + 1, 0); // alloc one extra since we can't init -'s from here.
 
-            for(int i = offset + length - 1, j = 0; (i - offset) >= 3; i -= 4, j++)
+            for (int i = offset + length - 1, j = 0; (i - offset) >= 3; i -= 4, j++)
             {
                 m_digits[j] = (DType)((array[i - 3] << 24) + (array[i - 2] << 16) + (array[i - 1] << 8) + array[i]);
                 m_digits.DataUsed++;
             }
 
             DType accumulator = 0;
-            for(int i = leftOver; i > 0; i--)
+            for (int i = leftOver; i > 0; i--)
             {
                 DType digit = array[offset + leftOver - i];
                 digit = (digit << ((i - 1) * 8));
@@ -458,7 +458,7 @@ namespace EldritchArcana
 
         private void Construct(string digits, int radix)
         {
-            if(digits == null)
+            if (digits == null)
             {
                 throw new ArgumentNullException("digits");
             }
@@ -469,14 +469,14 @@ namespace EldritchArcana
 
             int nDigits = (digits[0] == '-' ? 1 : 0);
 
-            for(int idx = digits.Length - 1; idx >= nDigits; idx--)
+            for (int idx = digits.Length - 1; idx >= nDigits; idx--)
             {
                 int d = (int)digits[idx];
-                if(d >= '0' && d <= '9')
+                if (d >= '0' && d <= '9')
                 {
                     d -= '0';
                 }
-                else if(d >= 'A' && d <= 'Z')
+                else if (d >= 'A' && d <= 'Z')
                 {
                     d = (d - 'A') + 10;
                 }
@@ -485,7 +485,7 @@ namespace EldritchArcana
                     throw new ArgumentOutOfRangeException("digits");
                 }
 
-                if(d >= radix)
+                if (d >= radix)
                 {
                     throw new ArgumentOutOfRangeException("digits");
                 }
@@ -493,7 +493,7 @@ namespace EldritchArcana
                 multiplier *= radix;
             }
 
-            if(digits[0] == '-')
+            if (digits[0] == '-')
             {
                 result = -result;
             }
@@ -587,7 +587,7 @@ namespace EldritchArcana
             DigitsArray da = new DigitsArray(size + 1);
 
             long carry = 0;
-            for(int i = 0; i < da.Count; i++)
+            for (int i = 0; i < da.Count; i++)
             {
                 long sum = (long)leftSide.m_digits[i] + (long)rightSide.m_digits[i] + carry;
                 carry = (long)(sum >> DigitsArray.DataSizeBits);
@@ -640,7 +640,7 @@ namespace EldritchArcana
             DigitsArray da = new DigitsArray(size);
 
             long carry = 0;
-            for(int i = 0; i < da.Count; i++)
+            for (int i = 0; i < da.Count; i++)
             {
                 long diff = (long)leftSide.m_digits[i] - (long)rightSide.m_digits[i] - carry;
                 da[i] = (DType)(diff & DigitsArray.AllBits);
@@ -691,19 +691,19 @@ namespace EldritchArcana
         /// <returns>The value of the <paramref name="this" /> negated.</returns>
         public static BigInteger operator -(BigInteger leftSide)
         {
-            if(object.ReferenceEquals(leftSide, null))
+            if (object.ReferenceEquals(leftSide, null))
             {
                 throw new ArgumentNullException("leftSide");
             }
 
-            if(leftSide.IsZero)
+            if (leftSide.IsZero)
             {
                 return new BigInteger(0);
             }
 
             DigitsArray da = new DigitsArray(leftSide.m_digits.DataUsed + 1, leftSide.m_digits.DataUsed + 1);
 
-            for(int i = 0; i < da.Count; i++)
+            for (int i = 0; i < da.Count; i++)
             {
                 da[i] = (DType)(~(leftSide.m_digits[i]));
             }
@@ -711,7 +711,7 @@ namespace EldritchArcana
             // add one to result (1's complement + 1)
             bool carry = true;
             int index = 0;
-            while(carry && index < da.Count)
+            while (carry && index < da.Count)
             {
                 long val = (long)da[index] + 1;
                 da[index] = (DType)(val & DigitsArray.AllBits);
@@ -739,11 +739,11 @@ namespace EldritchArcana
         /// <returns>A BigInteger that represents the absolute value of <paramref name="leftSide" />.</returns>
         public static BigInteger Abs(BigInteger leftSide)
         {
-            if(object.ReferenceEquals(leftSide, null))
+            if (object.ReferenceEquals(leftSide, null))
             {
                 throw new ArgumentNullException("leftSide");
             }
-            if(leftSide.IsNegative)
+            if (leftSide.IsNegative)
             {
                 return -leftSide;
             }
@@ -763,11 +763,11 @@ namespace EldritchArcana
         /// <returns></returns>
         public static BigInteger operator *(BigInteger leftSide, BigInteger rightSide)
         {
-            if(object.ReferenceEquals(leftSide, null))
+            if (object.ReferenceEquals(leftSide, null))
             {
                 throw new ArgumentNullException("leftSide");
             }
-            if(object.ReferenceEquals(rightSide, null))
+            if (object.ReferenceEquals(rightSide, null))
             {
                 throw new ArgumentNullException("rightSide");
             }
@@ -781,10 +781,10 @@ namespace EldritchArcana
             DigitsArray da = new DigitsArray(leftSide.m_digits.DataUsed + rightSide.m_digits.DataUsed);
             da.DataUsed = da.Count;
 
-            for(int i = 0; i < leftSide.m_digits.DataUsed; i++)
+            for (int i = 0; i < leftSide.m_digits.DataUsed; i++)
             {
                 ulong carry = 0;
-                for(int j = 0, k = i; j < rightSide.m_digits.DataUsed; j++, k++)
+                for (int j = 0, k = i; j < rightSide.m_digits.DataUsed; j++, k++)
                 {
                     ulong val = ((ulong)leftSide.m_digits[i] * (ulong)rightSide.m_digits[j]) + (ulong)da[k] + carry;
 
@@ -792,7 +792,7 @@ namespace EldritchArcana
                     carry = (val >> DigitsArray.DataSizeBits);
                 }
 
-                if(carry != 0)
+                if (carry != 0)
                 {
                     da[i + rightSide.m_digits.DataUsed] = (DType)carry;
                 }
@@ -822,16 +822,16 @@ namespace EldritchArcana
         /// <returns>The BigInteger result.</returns>
         public static BigInteger operator /(BigInteger leftSide, BigInteger rightSide)
         {
-            if(leftSide == null)
+            if (leftSide == null)
             {
                 throw new ArgumentNullException("leftSide");
             }
-            if(rightSide == null)
+            if (rightSide == null)
             {
                 throw new ArgumentNullException("rightSide");
             }
 
-            if(rightSide.IsZero)
+            if (rightSide.IsZero)
             {
                 throw new DivideByZeroException();
             }
@@ -842,7 +842,7 @@ namespace EldritchArcana
             leftSide = Abs(leftSide);
             rightSide = Abs(rightSide);
 
-            if(leftSide < rightSide)
+            if (leftSide < rightSide)
             {
                 return new BigInteger(0);
             }
@@ -867,14 +867,14 @@ namespace EldritchArcana
 
         private static void Divide(BigInteger leftSide, BigInteger rightSide, out BigInteger quotient, out BigInteger remainder)
         {
-            if(leftSide.IsZero)
+            if (leftSide.IsZero)
             {
                 quotient = new BigInteger();
                 remainder = new BigInteger();
                 return;
             }
 
-            if(rightSide.m_digits.DataUsed == 1)
+            if (rightSide.m_digits.DataUsed == 1)
             {
                 SingleDivide(leftSide, rightSide, out quotient, out remainder);
             }
@@ -886,14 +886,14 @@ namespace EldritchArcana
 
         private static void MultiDivide(BigInteger leftSide, BigInteger rightSide, out BigInteger quotient, out BigInteger remainder)
         {
-            if(rightSide.IsZero)
+            if (rightSide.IsZero)
             {
                 throw new DivideByZeroException();
             }
 
             DType val = rightSide.m_digits[rightSide.m_digits.DataUsed - 1];
             int d = 0;
-            for(uint mask = DigitsArray.HiBitSet; mask != 0 && (val & mask) == 0; mask >>= 1)
+            for (uint mask = DigitsArray.HiBitSet; mask != 0 && (val & mask) == 0; mask >>= 1)
             {
                 d++;
             }
@@ -914,19 +914,19 @@ namespace EldritchArcana
             int resultPos = 0;
 
             ulong carryBit = (ulong)0x1 << DigitsArray.DataSizeBits; // 0x100000000
-            for(int j = remainderLen - rightSide.m_digits.DataUsed, pos = remainderLen - 1; j > 0; j--, pos--)
+            for (int j = remainderLen - rightSide.m_digits.DataUsed, pos = remainderLen - 1; j > 0; j--, pos--)
             {
                 ulong dividend = ((ulong)remainderDat[pos] << DigitsArray.DataSizeBits) + (ulong)remainderDat[pos - 1];
                 ulong qHat = (dividend / firstDivisor);
                 ulong rHat = (dividend % firstDivisor);
 
-                while(pos >= 2)
+                while (pos >= 2)
                 {
-                    if(qHat == carryBit || (qHat * secondDivisor) > ((rHat << DigitsArray.DataSizeBits) + remainderDat[pos - 2]))
+                    if (qHat == carryBit || (qHat * secondDivisor) > ((rHat << DigitsArray.DataSizeBits) + remainderDat[pos - 2]))
                     {
                         qHat--;
                         rHat += firstDivisor;
-                        if(rHat < carryBit)
+                        if (rHat < carryBit)
                         {
                             continue;
                         }
@@ -934,21 +934,21 @@ namespace EldritchArcana
                     break;
                 }
 
-                for(int h = 0; h < divisorLen; h++)
+                for (int h = 0; h < divisorLen; h++)
                 {
                     dividendPart[divisorLen - h - 1] = remainderDat[pos - h];
                 }
 
                 BigInteger dTemp = new BigInteger(dividendPart);
                 BigInteger rTemp = rightSide * (long)qHat;
-                while(rTemp > dTemp)
+                while (rTemp > dTemp)
                 {
                     qHat--;
                     rTemp -= rightSide;
                 }
 
                 rTemp = dTemp - rTemp;
-                for(int h = 0; h < divisorLen; h++)
+                for (int h = 0; h < divisorLen; h++)
                 {
                     remainderDat[pos - h] = rTemp.m_digits[rightSide.m_digits.DataUsed - h];
                 }
@@ -967,7 +967,7 @@ namespace EldritchArcana
 
         private static void SingleDivide(BigInteger leftSide, BigInteger rightSide, out BigInteger quotient, out BigInteger remainder)
         {
-            if(rightSide.IsZero)
+            if (rightSide.IsZero)
             {
                 throw new DivideByZeroException();
             }
@@ -983,14 +983,14 @@ namespace EldritchArcana
             leftSide.m_digits.CopyTo(result, 0, result.Length);
             int resultPos = 0;
 
-            if(dividend >= divisor)
+            if (dividend >= divisor)
             {
                 result[resultPos++] = (DType)(dividend / divisor);
                 remainderDigits[pos] = (DType)(dividend % divisor);
             }
             pos--;
 
-            while(pos >= 0)
+            while (pos >= 0)
             {
                 dividend = ((ulong)(remainderDigits[pos + 1]) << DigitsArray.DataSizeBits) + (ulong)remainderDigits[pos];
                 result[resultPos++] = (DType)(dividend / divisor);
@@ -1001,7 +1001,7 @@ namespace EldritchArcana
 
             DigitsArray quotientDigits = new DigitsArray(resultPos + 1, resultPos);
             int j = 0;
-            for(int i = quotientDigits.DataUsed - 1; i >= 0; i--, j++)
+            for (int i = quotientDigits.DataUsed - 1; i >= 0; i--, j++)
             {
                 quotientDigits[j] = result[i];
             }
@@ -1016,17 +1016,17 @@ namespace EldritchArcana
         /// <returns>The BigInteger result.</returns>
         public static BigInteger operator %(BigInteger leftSide, BigInteger rightSide)
         {
-            if(leftSide == null)
+            if (leftSide == null)
             {
                 throw new ArgumentNullException("leftSide");
             }
 
-            if(rightSide == null)
+            if (rightSide == null)
             {
                 throw new ArgumentNullException("rightSide");
             }
 
-            if(rightSide.IsZero)
+            if (rightSide.IsZero)
             {
                 throw new DivideByZeroException();
             }
@@ -1038,7 +1038,7 @@ namespace EldritchArcana
             leftSide = Abs(leftSide);
             rightSide = Abs(rightSide);
 
-            if(leftSide < rightSide)
+            if (leftSide < rightSide)
             {
                 return leftSide;
             }
@@ -1077,27 +1077,27 @@ namespace EldritchArcana
         public static BigInteger Pow(BigInteger b, BigInteger power)
         {
 
-            if(b == null)
+            if (b == null)
             {
                 throw new ArgumentNullException("b");
             }
 
-            if(power == null)
+            if (power == null)
             {
                 throw new ArgumentNullException("power");
             }
 
-            if(power < 0)
+            if (power < 0)
             {
                 throw new ArgumentOutOfRangeException("power", "Currently negative exponents are not supported");
             }
 
 
             BigInteger result = 1;
-            while(power != 0)
+            while (power != 0)
             {
 
-                if((power & 1) != 0)
+                if ((power & 1) != 0)
                     result *= b;
                 power >>= 1;
                 b *= b;
@@ -1114,7 +1114,7 @@ namespace EldritchArcana
         {
             int len = System.Math.Max(leftSide.m_digits.DataUsed, rightSide.m_digits.DataUsed);
             DigitsArray da = new DigitsArray(len, len);
-            for(int idx = 0; idx < len; idx++)
+            for (int idx = 0; idx < len; idx++)
             {
                 da[idx] = (DType)(leftSide.m_digits[idx] & rightSide.m_digits[idx]);
             }
@@ -1130,7 +1130,7 @@ namespace EldritchArcana
         {
             int len = System.Math.Max(leftSide.m_digits.DataUsed, rightSide.m_digits.DataUsed);
             DigitsArray da = new DigitsArray(len, len);
-            for(int idx = 0; idx < len; idx++)
+            for (int idx = 0; idx < len; idx++)
             {
                 da[idx] = (DType)(leftSide.m_digits[idx] | rightSide.m_digits[idx]);
             }
@@ -1146,7 +1146,7 @@ namespace EldritchArcana
         {
             int len = System.Math.Max(leftSide.m_digits.DataUsed, rightSide.m_digits.DataUsed);
             DigitsArray da = new DigitsArray(len, len);
-            for(int idx = 0; idx < len; idx++)
+            for (int idx = 0; idx < len; idx++)
             {
                 da[idx] = (DType)(leftSide.m_digits[idx] ^ rightSide.m_digits[idx]);
             }
@@ -1161,7 +1161,7 @@ namespace EldritchArcana
         public static BigInteger operator ~(BigInteger leftSide)
         {
             DigitsArray da = new DigitsArray(leftSide.m_digits.Count);
-            for(int idx = 0; idx < da.Count; idx++)
+            for (int idx = 0; idx < da.Count; idx++)
             {
                 da[idx] = (DType)(~(leftSide.m_digits[idx]));
             }
@@ -1179,7 +1179,7 @@ namespace EldritchArcana
         #region Left and Right Shift Operator Overloads
         public static BigInteger operator <<(BigInteger leftSide, int shiftCount)
         {
-            if(leftSide == null)
+            if (leftSide == null)
             {
                 throw new ArgumentNullException("leftSide");
             }
@@ -1197,7 +1197,7 @@ namespace EldritchArcana
 
         public static BigInteger operator >>(BigInteger leftSide, int shiftCount)
         {
-            if(leftSide == null)
+            if (leftSide == null)
             {
                 throw new ArgumentNullException("leftSide");
             }
@@ -1205,17 +1205,17 @@ namespace EldritchArcana
             DigitsArray da = new DigitsArray(leftSide.m_digits);
             da.DataUsed = da.ShiftRight(shiftCount);
 
-            if(leftSide.IsNegative)
+            if (leftSide.IsNegative)
             {
-                for(int i = da.Count - 1; i >= da.DataUsed; i--)
+                for (int i = da.Count - 1; i >= da.DataUsed; i--)
                 {
                     da[i] = DigitsArray.AllBits;
                 }
 
                 DType mask = DigitsArray.HiBitSet;
-                for(int i = 0; i < DigitsArray.DataSizeBits; i++)
+                for (int i = 0; i < DigitsArray.DataSizeBits; i++)
                 {
-                    if((da[da.DataUsed - 1] & mask) == DigitsArray.HiBitSet)
+                    if ((da[da.DataUsed - 1] & mask) == DigitsArray.HiBitSet)
                     {
                         break;
                     }
@@ -1230,7 +1230,7 @@ namespace EldritchArcana
 
         public static BigInteger RightShift(BigInteger leftSide, int shiftCount)
         {
-            if(leftSide == null)
+            if (leftSide == null)
             {
                 throw new ArgumentNullException("leftSide");
             }
@@ -1305,39 +1305,39 @@ namespace EldritchArcana
         /// </returns>
         public static int Compare(BigInteger leftSide, BigInteger rightSide)
         {
-            if(object.ReferenceEquals(leftSide, rightSide))
+            if (object.ReferenceEquals(leftSide, rightSide))
             {
                 return 0;
             }
 
-            if(object.ReferenceEquals(leftSide, null))
+            if (object.ReferenceEquals(leftSide, null))
             {
                 throw new ArgumentNullException("leftSide");
             }
 
-            if(object.ReferenceEquals(rightSide, null))
+            if (object.ReferenceEquals(rightSide, null))
             {
                 throw new ArgumentNullException("rightSide");
             }
 
-            if(leftSide > rightSide) return 1;
-            if(leftSide == rightSide) return 0;
+            if (leftSide > rightSide) return 1;
+            if (leftSide == rightSide) return 0;
             return -1;
         }
 
         public static bool operator ==(BigInteger leftSide, BigInteger rightSide)
         {
-            if(object.ReferenceEquals(leftSide, rightSide))
+            if (object.ReferenceEquals(leftSide, rightSide))
             {
                 return true;
             }
 
-            if(object.ReferenceEquals(leftSide, null) || object.ReferenceEquals(rightSide, null))
+            if (object.ReferenceEquals(leftSide, null) || object.ReferenceEquals(rightSide, null))
             {
                 return false;
             }
 
-            if(leftSide.IsNegative != rightSide.IsNegative)
+            if (leftSide.IsNegative != rightSide.IsNegative)
             {
                 return false;
             }
@@ -1352,29 +1352,29 @@ namespace EldritchArcana
 
         public static bool operator >(BigInteger leftSide, BigInteger rightSide)
         {
-            if(object.ReferenceEquals(leftSide, null))
+            if (object.ReferenceEquals(leftSide, null))
             {
                 throw new ArgumentNullException("leftSide");
             }
 
-            if(object.ReferenceEquals(rightSide, null))
+            if (object.ReferenceEquals(rightSide, null))
             {
                 throw new ArgumentNullException("rightSide");
             }
 
-            if(leftSide.IsNegative != rightSide.IsNegative)
+            if (leftSide.IsNegative != rightSide.IsNegative)
             {
                 return rightSide.IsNegative;
             }
 
-            if(leftSide.m_digits.DataUsed != rightSide.m_digits.DataUsed)
+            if (leftSide.m_digits.DataUsed != rightSide.m_digits.DataUsed)
             {
                 return leftSide.m_digits.DataUsed > rightSide.m_digits.DataUsed;
             }
 
-            for(int idx = leftSide.m_digits.DataUsed - 1; idx >= 0; idx--)
+            for (int idx = leftSide.m_digits.DataUsed - 1; idx >= 0; idx--)
             {
-                if(leftSide.m_digits[idx] != rightSide.m_digits[idx])
+                if (leftSide.m_digits[idx] != rightSide.m_digits[idx])
                 {
                     return (leftSide.m_digits[idx] > rightSide.m_digits[idx]);
                 }
@@ -1384,29 +1384,29 @@ namespace EldritchArcana
 
         public static bool operator <(BigInteger leftSide, BigInteger rightSide)
         {
-            if(object.ReferenceEquals(leftSide, null))
+            if (object.ReferenceEquals(leftSide, null))
             {
                 throw new ArgumentNullException("leftSide");
             }
 
-            if(object.ReferenceEquals(rightSide, null))
+            if (object.ReferenceEquals(rightSide, null))
             {
                 throw new ArgumentNullException("rightSide");
             }
 
-            if(leftSide.IsNegative != rightSide.IsNegative)
+            if (leftSide.IsNegative != rightSide.IsNegative)
             {
                 return leftSide.IsNegative;
             }
 
-            if(leftSide.m_digits.DataUsed != rightSide.m_digits.DataUsed)
+            if (leftSide.m_digits.DataUsed != rightSide.m_digits.DataUsed)
             {
                 return leftSide.m_digits.DataUsed < rightSide.m_digits.DataUsed;
             }
 
-            for(int idx = leftSide.m_digits.DataUsed - 1; idx >= 0; idx--)
+            for (int idx = leftSide.m_digits.DataUsed - 1; idx >= 0; idx--)
             {
-                if(leftSide.m_digits[idx] != rightSide.m_digits[idx])
+                if (leftSide.m_digits[idx] != rightSide.m_digits[idx])
                 {
                     return (leftSide.m_digits[idx] < rightSide.m_digits[idx]);
                 }
@@ -1434,25 +1434,25 @@ namespace EldritchArcana
         /// <seealso cref="System.Object">System.Object</seealso> 
         public override bool Equals(object obj)
         {
-            if(object.ReferenceEquals(obj, null))
+            if (object.ReferenceEquals(obj, null))
             {
                 return false;
             }
 
-            if(object.ReferenceEquals(this, obj))
+            if (object.ReferenceEquals(this, obj))
             {
                 return true;
             }
 
             BigInteger c = (BigInteger)obj;
-            if(this.m_digits.DataUsed != c.m_digits.DataUsed)
+            if (this.m_digits.DataUsed != c.m_digits.DataUsed)
             {
                 return false;
             }
 
-            for(int idx = 0; idx < this.m_digits.DataUsed; idx++)
+            for (int idx = 0; idx < this.m_digits.DataUsed; idx++)
             {
-                if(this.m_digits[idx] != c.m_digits[idx])
+                if (this.m_digits[idx] != c.m_digits[idx])
                 {
                     return false;
                 }
@@ -1498,12 +1498,12 @@ namespace EldritchArcana
         /// <returns>A string.</returns>
         public string ToString(int radix)
         {
-            if(radix < 2 || radix > 36)
+            if (radix < 2 || radix > 36)
             {
                 throw new ArgumentOutOfRangeException("radix");
             }
 
-            if(IsZero)
+            if (IsZero)
             {
                 return "0";
             }
@@ -1518,7 +1518,7 @@ namespace EldritchArcana
 
             const string charSet = "0123456789abcdefghijklmnopqrstuvwxyz";
             System.Collections.ArrayList al = new System.Collections.ArrayList();
-            while(a.m_digits.DataUsed > 1 || (a.m_digits.DataUsed == 1 && a.m_digits[0] != 0))
+            while (a.m_digits.DataUsed > 1 || (a.m_digits.DataUsed == 1 && a.m_digits[0] != 0))
             {
                 Divide(a, biRadix, out quotient, out remainder);
                 al.Insert(0, charSet[(int)remainder.m_digits[0]]);
@@ -1526,7 +1526,7 @@ namespace EldritchArcana
             }
 
             string result = new String((char[])al.ToArray(typeof(char)));
-            if(radix == 10 && negative)
+            if (radix == 10 && negative)
             {
                 return "-" + result;
             }
@@ -1548,7 +1548,7 @@ namespace EldritchArcana
             sb.AppendFormat("{0:X}", m_digits[m_digits.DataUsed - 1]);
 
             string f = "{0:X" + (2 * DigitsArray.DataSizeOf) + "}";
-            for(int i = m_digits.DataUsed - 2; i >= 0; i--)
+            for (int i = m_digits.DataUsed - 2; i >= 0; i--)
             {
                 sb.AppendFormat(f, m_digits[i]);
             }
@@ -1564,7 +1564,7 @@ namespace EldritchArcana
         /// <exception cref="System.Exception">When BigInteger is too large to fit into System.Int16</exception>
         public static int ToInt16(BigInteger value)
         {
-            if(object.ReferenceEquals(value, null))
+            if (object.ReferenceEquals(value, null))
             {
                 throw new ArgumentNullException("value");
             }
@@ -1579,7 +1579,7 @@ namespace EldritchArcana
         /// <exception cref="System.Exception">When BigInteger is too large to fit into System.UInt16</exception>
         public static uint ToUInt16(BigInteger value)
         {
-            if(object.ReferenceEquals(value, null))
+            if (object.ReferenceEquals(value, null))
             {
                 throw new ArgumentNullException("value");
             }
@@ -1594,7 +1594,7 @@ namespace EldritchArcana
         /// <exception cref="System.Exception">When BigInteger is too large to fit into System.Int32</exception>
         public static int ToInt32(BigInteger value)
         {
-            if(object.ReferenceEquals(value, null))
+            if (object.ReferenceEquals(value, null))
             {
                 throw new ArgumentNullException("value");
             }
@@ -1609,7 +1609,7 @@ namespace EldritchArcana
         /// <exception cref="System.Exception">When BigInteger is too large to fit into System.UInt32</exception>
         public static uint ToUInt32(BigInteger value)
         {
-            if(object.ReferenceEquals(value, null))
+            if (object.ReferenceEquals(value, null))
             {
                 throw new ArgumentNullException("value");
             }
@@ -1624,7 +1624,7 @@ namespace EldritchArcana
         /// <exception cref="System.Exception">When BigInteger is too large to fit into System.Int64</exception>
         public static long ToInt64(BigInteger value)
         {
-            if(object.ReferenceEquals(value, null))
+            if (object.ReferenceEquals(value, null))
             {
                 throw new ArgumentNullException("value");
             }
@@ -1639,7 +1639,7 @@ namespace EldritchArcana
         /// <exception cref="System.Exception">When BigInteger is too large to fit into System.UInt64</exception>
         public static ulong ToUInt64(BigInteger value)
         {
-            if(object.ReferenceEquals(value, null))
+            if (object.ReferenceEquals(value, null))
             {
                 throw new ArgumentNullException("value");
             }

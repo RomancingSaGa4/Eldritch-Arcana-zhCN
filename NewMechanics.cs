@@ -1,61 +1,53 @@
-﻿using System.Linq;
+﻿using Kingmaker;
 using Kingmaker.Blueprints;
-using Kingmaker.PubSubSystem;
-using Kingmaker.RuleSystem.Rules.Abilities;
-using Kingmaker.UnitLogic.Abilities;
-using Kingmaker.UnitLogic.Abilities.Blueprints;
-using Kingmaker.UnitLogic.Buffs.Blueprints;
-using Kingmaker.UnitLogic.Buffs.Components;
-using Kingmaker.UnitLogic.Parts;
-using UnityEngine;
-using Kingmaker.RuleSystem.Rules.Damage;
-using Kingmaker.RuleSystem;
-using Kingmaker.Visual.HitSystem;
-using System;
-using Kingmaker.EntitySystem.Stats;
+using Kingmaker.Blueprints.Classes;
+using Kingmaker.Blueprints.Classes.Selection;
+using Kingmaker.Blueprints.Classes.Spells;
+using Kingmaker.Blueprints.Facts;
+using Kingmaker.Blueprints.Items.Ecnchantments;
+using Kingmaker.Blueprints.Items.Weapons;
+using Kingmaker.Blueprints.Root;
+using Kingmaker.Blueprints.Validation;
+using Kingmaker.Controllers.Projectiles;
 using Kingmaker.Controllers.Units;
 using Kingmaker.Designers;
-using Kingmaker.UnitLogic.Mechanics;
-using Kingmaker.RuleSystem.Rules;
-using Kingmaker.Blueprints.Facts;
-using Kingmaker.Blueprints.Classes;
-using Kingmaker.Enums;
-using Kingmaker.UnitLogic;
-using Kingmaker.UnitLogic.Mechanics.Actions;
-using Kingmaker.Blueprints.Items.Ecnchantments;
-using Newtonsoft.Json;
-using Kingmaker.Utility;
-using Kingmaker.UI.GenericSlot;
-using Kingmaker.Items;
-using Kingmaker.UnitLogic.Abilities.Components.Base;
-using Kingmaker.EntitySystem.Entities;
-using System.Collections.Generic;
-using Kingmaker.UnitLogic.Mechanics.Components;
-using Kingmaker.UnitLogic.Class.Kineticist;
-using Kingmaker.Blueprints.Validation;
-using Kingmaker.Blueprints.Root;
-using Kingmaker.Blueprints.Classes.Spells;
-using Kingmaker.UnitLogic.Buffs;
-using Kingmaker.Blueprints.Items.Weapons;
 using Kingmaker.ElementsSystem;
-using Kingmaker.Controllers;
-using Kingmaker;
-using static Kingmaker.UnitLogic.Abilities.Components.AbilityCustomMeleeAttack;
-using Kingmaker.UnitLogic.Mechanics.ContextData;
-using Kingmaker.Controllers.Projectiles;
-using Kingmaker.Designers.Mechanics.Facts;
-using Kingmaker.UnitLogic.ActivatableAbilities;
-using Kingmaker.UnitLogic.Commands.Base;
-using Kingmaker.EntitySystem;
-using Kingmaker.Blueprints.Classes.Selection;
-using Kingmaker.UnitLogic.ActivatableAbilities.Restrictions;
-using Kingmaker.UnitLogic.Alignments;
-using Kingmaker.UnitLogic.Mechanics.Properties;
-using Kingmaker.UnitLogic.Abilities.Components;
+using Kingmaker.EntitySystem.Entities;
 using Kingmaker.EntitySystem.Persistence.Versioning;
-using JetBrains.Annotations;
+using Kingmaker.EntitySystem.Stats;
+using Kingmaker.Enums;
 using Kingmaker.Enums.Damage;
 using Kingmaker.Inspect;
+using Kingmaker.Items;
+using Kingmaker.PubSubSystem;
+using Kingmaker.RuleSystem;
+using Kingmaker.RuleSystem.Rules;
+using Kingmaker.RuleSystem.Rules.Abilities;
+using Kingmaker.RuleSystem.Rules.Damage;
+using Kingmaker.UnitLogic;
+using Kingmaker.UnitLogic.Abilities;
+using Kingmaker.UnitLogic.Abilities.Blueprints;
+using Kingmaker.UnitLogic.Abilities.Components;
+using Kingmaker.UnitLogic.Abilities.Components.Base;
+using Kingmaker.UnitLogic.ActivatableAbilities;
+using Kingmaker.UnitLogic.ActivatableAbilities.Restrictions;
+using Kingmaker.UnitLogic.Alignments;
+using Kingmaker.UnitLogic.Buffs;
+using Kingmaker.UnitLogic.Buffs.Blueprints;
+using Kingmaker.UnitLogic.Buffs.Components;
+using Kingmaker.UnitLogic.Class.Kineticist;
+using Kingmaker.UnitLogic.Mechanics;
+using Kingmaker.UnitLogic.Mechanics.Actions;
+using Kingmaker.UnitLogic.Mechanics.Components;
+using Kingmaker.UnitLogic.Mechanics.ContextData;
+using Kingmaker.UnitLogic.Parts;
+using Kingmaker.Utility;
+using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+using static Kingmaker.UnitLogic.Abilities.Components.AbilityCustomMeleeAttack;
 
 //file barrowed from hollic96
 namespace EldritchArcana
@@ -79,7 +71,7 @@ namespace EldritchArcana
 
             public void OnEventAboutToTrigger(RuleCalculateAbilityParams evt)
             {
-                bool is_metamagic_available = evt.Spell == null || evt.Spellbook == null || evt.Spell.Type != AbilityType.Spell  
+                bool is_metamagic_available = evt.Spell == null || evt.Spellbook == null || evt.Spell.Type != AbilityType.Spell
                                               || ((evt.Spell.AvailableMetamagic & metamagic) == 0 && evt.HasMetamagic(metamagic));
                 if (!is_metamagic_available)
                 {
@@ -344,17 +336,18 @@ namespace EldritchArcana
 
             public override void OnEventAboutToTrigger(RuleSavingThrow evt)
             {
-                if (this.Owner.Resources.GetResourceAmount((BlueprintScriptableObject)this.resource) == 0||evt.IsPassed)
+                if (this.Owner.Resources.GetResourceAmount((BlueprintScriptableObject)this.resource) == 0 || evt.IsPassed)
                     return;
                 //this.Value = this.Owner.Stats.SkillLoreReligion;
                 this.Owner.Resources.Spend((BlueprintScriptableObject)this.resource, 1);
-                if (original) {
+                if (original)
+                {
                     int maxy = Math.Max(evt.RollResult, Value);
                     int d1 = evt.D20;
                     Common.AddBattleLogMessage($"{Owner.CharacterName}: Your first roll was a {d1} and your reroll was a {Value} so you get a {Value} bonus to your save");
                     //evt.BaseRollResult=maxy;
                     //if (evt.RollResult >= Value) { return; }
-                    
+
                     //evt.ro
                     //evt.Initiator.Stats.SaveFortitude.
                     //var x = evt.DifficultyClass;
@@ -375,10 +368,10 @@ namespace EldritchArcana
 
             public override void OnEventDidTrigger(RuleSavingThrow evt)
             {
-                
+
                 //if (resource != null)
                 //{
-                   
+
                 //}
             }
         }
@@ -1884,7 +1877,7 @@ namespace EldritchArcana
             }
         }
 
-        
+
 
         public class ActivatableAbilityAlignmentRestriction : ActivatableAbilityRestriction
         {
@@ -2051,7 +2044,7 @@ namespace EldritchArcana
                         return false;
                     return evt.Target.HPLeft + evt.MeleeDamage.Damage > 0;
                 }
-                
+
                 return true;
             }
         }
@@ -2456,13 +2449,13 @@ namespace EldritchArcana
 
             public void OnEventDidTrigger(RuleCalculateAbilityParams evt)
             {
-              
+
             }
 
             public void OnEventAboutToTrigger(RuleCastSpell evt)
             {
-              
-                if(cost_to_pay == 0)
+
+                if (cost_to_pay == 0)
                 {
                     return;
                 }

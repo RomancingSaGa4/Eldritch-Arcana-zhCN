@@ -1,39 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Kingmaker;
-using Kingmaker.Blueprints;
+﻿using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
-using Kingmaker.Blueprints.Classes.Prerequisites;
 using Kingmaker.Blueprints.Classes.Selection;
-using Kingmaker.Blueprints.Classes.Spells;
-using Kingmaker.Blueprints.Facts;
-using Kingmaker.Blueprints.Items;
-using Kingmaker.Blueprints.Items.Armors;
-using Kingmaker.Blueprints.Items.Weapons;
-using Kingmaker.Controllers.Combat;
-using Kingmaker.Designers.Mechanics.Buffs;
 using Kingmaker.Designers.Mechanics.Facts;
-using Kingmaker.EntitySystem.Entities;
 using Kingmaker.EntitySystem.Stats;
-using Kingmaker.Enums;
-using Kingmaker.PubSubSystem;
-using Kingmaker.RuleSystem;
-using Kingmaker.RuleSystem.Rules;
-using Kingmaker.RuleSystem.Rules.Abilities;
-using Kingmaker.RuleSystem.Rules.Damage;
-using Kingmaker.UI.Common;
-using Kingmaker.UI.ServiceWindow;
-using Kingmaker.UnitLogic;
-using Kingmaker.UnitLogic.Abilities;
-using Kingmaker.UnitLogic.Abilities.Blueprints;
-using Kingmaker.UnitLogic.Abilities.Components;
-using Kingmaker.UnitLogic.Class.LevelUp;
-using Kingmaker.UnitLogic.Class.LevelUp.Actions;
-using Kingmaker.UnitLogic.FactLogic;
-using Kingmaker.UnitLogic.Mechanics;
-using Kingmaker.UnitLogic.Parts;
-
+using System.Collections.Generic;
 using RES = EldritchArcana.Properties.Resources;
 
 namespace EldritchArcana
@@ -55,7 +25,7 @@ namespace EldritchArcana
                 StatType.SkillKnowledgeArcana));
 
             choices.Add(Traits.CreateAddStatBonus("DangerouslyCuriousTrait", "Dangerously Curious",
-                "You have always been intrigued by magic, possibly because you were the child of a magician or priest. You often snuck into your parent’s laboratory or shrine to tinker with spell components and magic devices, and frequently caused quite a bit of damage and headaches for your parent as a result.",
+                "You have always been intrigued by magic, possibly because you were the child of a magician or priest. You often snuck into your parent's laboratory or shrine to tinker with spell components and magic devices, and frequently caused quite a bit of damage and headaches for your parent as a result.",
                 "0c72c573cc404b42916dc7265ea6f59a",
                 StatType.SkillUseMagicDevice));
 
@@ -87,7 +57,7 @@ namespace EldritchArcana
             choices.Add(giftedAdept);
 
             choices.Add(Helpers.CreateFeature("MagicalKnackTrait", "Magical Knack",
-                "You were raised, either wholly or in part, by a magical creature, either after it found you abandoned in the woods or because your parents often left you in the care of a magical minion. This constant exposure to magic has made its mysteries easy for you to understand, even when you turn your mind to other devotions and tasks.\nBenefit: Pick a class when you gain this trait—your caster level in that class gains a +2 trait bonus as long as this bonus doesn’t raise your caster level above your current Hit Dice.",
+                "You were raised, either wholly or in part, by a magical creature, either after it found you abandoned in the woods or because your parents often left you in the care of a magical minion. This constant exposure to magic has made its mysteries easy for you to understand, even when you turn your mind to other devotions and tasks.\nBenefit: Pick a class when you gain this trait—your caster level in that class gains a +2 trait bonus as long as this bonus doesn't raise your caster level above your current Hit Dice.",
                 "8fd15d5aa003497aa7f976530d21e430",
                 Helpers.GetIcon("16fa59cc9a72a6043b566b49184f53fe"), // Spell Focus
                 FeatureGroup.None,
@@ -95,7 +65,7 @@ namespace EldritchArcana
                 Helpers.Create<IncreaseCasterLevelUpToCharacterLevel>()));
 
             var magicalLineage = Helpers.CreateFeatureSelection("MagicalLineageTrait", "Magical Lineage",
-                "One of your parents was a gifted spellcaster who not only used metamagic often, but also developed many magical items and perhaps even a new spell or two—and you have inherited a fragment of this greatness.\nBenefit: Pick one spell when you choose this trait. When you apply metamagic feats to this spell that add at least 1 level to the spell, treat its actual level as 1 lower for determining the spell’s final adjusted level.",
+                "One of your parents was a gifted spellcaster who not only used metamagic often, but also developed many magical items and perhaps even a new spell or two—and you have inherited a fragment of this greatness.\nBenefit: Pick one spell when you choose this trait. When you apply metamagic feats to this spell that add at least 1 level to the spell, treat its actual level as 1 lower for determining the spell's final adjusted level.",
                 "1785787fb62a4c529104ba53d0de99af",
                 Helpers.GetIcon("ee7dc126939e4d9438357fbd5980d459"), // Spell Penetration
                 FeatureGroup.None);

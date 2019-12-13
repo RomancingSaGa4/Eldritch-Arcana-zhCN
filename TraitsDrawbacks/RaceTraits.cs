@@ -1,39 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Kingmaker;
-using Kingmaker.Blueprints;
+﻿using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
-using Kingmaker.Blueprints.Classes.Prerequisites;
 using Kingmaker.Blueprints.Classes.Selection;
 using Kingmaker.Blueprints.Classes.Spells;
-using Kingmaker.Blueprints.Facts;
-using Kingmaker.Blueprints.Items;
-using Kingmaker.Blueprints.Items.Armors;
 using Kingmaker.Blueprints.Items.Weapons;
-using Kingmaker.Controllers.Combat;
 using Kingmaker.Designers.Mechanics.Buffs;
 using Kingmaker.Designers.Mechanics.Facts;
-using Kingmaker.EntitySystem.Entities;
 using Kingmaker.EntitySystem.Stats;
 using Kingmaker.Enums;
-using Kingmaker.PubSubSystem;
-using Kingmaker.RuleSystem;
-using Kingmaker.RuleSystem.Rules;
-using Kingmaker.RuleSystem.Rules.Abilities;
-using Kingmaker.RuleSystem.Rules.Damage;
 using Kingmaker.UI.Common;
-using Kingmaker.UI.ServiceWindow;
-using Kingmaker.UnitLogic;
 using Kingmaker.UnitLogic.Abilities;
-using Kingmaker.UnitLogic.Abilities.Blueprints;
-using Kingmaker.UnitLogic.Abilities.Components;
-using Kingmaker.UnitLogic.Class.LevelUp;
-using Kingmaker.UnitLogic.Class.LevelUp.Actions;
 using Kingmaker.UnitLogic.FactLogic;
-using Kingmaker.UnitLogic.Mechanics;
-using Kingmaker.UnitLogic.Parts;
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using RES = EldritchArcana.Properties.Resources;
 
 namespace EldritchArcana
@@ -99,7 +78,7 @@ namespace EldritchArcana
                 StatType.SkillKnowledgeArcana,
                 humanReq));
 
-            var bardicKnowledge =Traits.library.Get<BlueprintFeature>("65cff8410a336654486c98fd3bacd8c5");
+            var bardicKnowledge = Traits.library.Get<BlueprintFeature>("65cff8410a336654486c98fd3bacd8c5");
             components.Clear();
             components.Add(humanReq);
             components.AddRange((new StatType[] {
@@ -129,7 +108,7 @@ namespace EldritchArcana
                 "1fd965e522502fe479fdd423cca07684", // WeaponLightShield
                 "a1b85d048fb5003438f34356df938a9f", // SpikedHeavyShield
                 "be9b6408e6101cb4997a8996484baf19"  // WeaponHeavyShield
-            }.Select(id => Helpers.Create<WeaponTypeDamageBonus>(w => { w.DamageBonus = 1; w.WeaponType =Traits.library.Get<BlueprintWeaponType>(id); })));
+            }.Select(id => Helpers.Create<WeaponTypeDamageBonus>(w => { w.DamageBonus = 1; w.WeaponType = Traits.library.Get<BlueprintWeaponType>(id); })));
 
             choices.Add(Helpers.CreateFeature("ShieldBearerTrait", RES.RaceShieldBearerTraitName_info,
                 RES.RaceShieldBearerTraitDescription_info,
@@ -160,9 +139,9 @@ namespace EldritchArcana
                 StatType.SkillPerception
             }.Select(skill => Traits.CreateAddStatBonus(
                 $"WorldTraveler{skill}Trait",
-                String.Format(RES.TypeHyphenSubtype_info, 
-                    RES.RaceWorldTravelerTraitName_info.Substring(0, RES.RaceWorldTravelerTraitName_info.IndexOf("(") >= 0 ? 
-                        RES.RaceWorldTravelerTraitName_info.IndexOf("(") : RES.RaceWorldTravelerTraitName_info.IndexOf("（")), 
+                String.Format(RES.TypeHyphenSubtype_info,
+                    RES.RaceWorldTravelerTraitName_info.Substring(0, RES.RaceWorldTravelerTraitName_info.IndexOf("(") >= 0 ?
+                        RES.RaceWorldTravelerTraitName_info.IndexOf("(") : RES.RaceWorldTravelerTraitName_info.IndexOf("（")),
                     UIUtility.GetStatText(skill)),
                 RES.RaceWorldTravelerTraitDescription_info,
                 Helpers.MergeIds(Helpers.GetSkillFocus(skill).AssetGuid, "9b03b7ff17394007a3fbec18aa42604b"),
@@ -325,15 +304,15 @@ namespace EldritchArcana
                 dwarfReq,
                 Helpers.Create<CriticalConfirmationBonus>(a => { a.Bonus = 1; a.Value = 0; })));
 
-            
+
             var Frostborn = Helpers.CreateFeature("FrostbornTrait", RES.FrostbornTraitName_info,
                 RES.FrostbornTraitDescription_info,
                 "f987f5e69db44cdd99983985e37a6c3c",
                 Helpers.GetIcon("121811173a614534e8720d7550aae253"), // Weapon Specialization
                 FeatureGroup.None,
                 dwarfReq);
-            Frostborn.AddComponent(Helpers.Create<AddDamageResistanceEnergy>(r=> { r.Type = Kingmaker.Enums.Damage.DamageEnergyType.Cold; r.Value = 4; }));
-            Frostborn.AddComponent(Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Cold; s.ModifierDescriptor=ModifierDescriptor.Racial; s.Bonus = 1; }));
+            Frostborn.AddComponent(Helpers.Create<AddDamageResistanceEnergy>(r => { r.Type = Kingmaker.Enums.Damage.DamageEnergyType.Cold; r.Value = 4; }));
+            Frostborn.AddComponent(Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Cold; s.ModifierDescriptor = ModifierDescriptor.Racial; s.Bonus = 1; }));
             choices.Add(Frostborn);
 
             choices.Add(Helpers.CreateFeature("ZestForBattleTrait", RES.ZestForBattleTraitName_info,
@@ -385,7 +364,7 @@ namespace EldritchArcana
                 a.Stat = StatType.SaveWill;
                 a.Value = 1;
                 a.Descriptor = ModifierDescriptor.Trait;
-                a.CheckedFact =Traits.library.Get<BlueprintFeature>(id);
+                a.CheckedFact = Traits.library.Get<BlueprintFeature>(id);
             })));
 
             choices.Add(Helpers.CreateFeature("AnimalFriendTrait", RES.AnimalFriendTraitName_info,
@@ -462,7 +441,7 @@ namespace EldritchArcana
                 tieflingReq,
                 Helpers.Create<ACBonusDuringSurpriseRound>()));
 
-            var tieflingHeritageDemodand =Traits.library.Get<BlueprintFeature>("a53d760a364cd90429e16aa1e7048d0a");
+            var tieflingHeritageDemodand = Traits.library.Get<BlueprintFeature>("a53d760a364cd90429e16aa1e7048d0a");
             choices.Add(Helpers.CreateFeature("GodScornTrait", RES.GodScornTraitName_info,
                 RES.GodScornTraitDescription_info,
                 "db41263f6fd3450ea0a3bc45c98330f7",
@@ -471,7 +450,7 @@ namespace EldritchArcana
                 Helpers.PrerequisiteFeature(tieflingHeritageDemodand),
                 Helpers.Create<SavingThrowBonusAgainstSpellSource>(s => s.Source = SpellSource.Divine)));
 
-            var tieflingHeritageSelection =Traits.library.Get<BlueprintFeatureSelection>("c862fd0e4046d2d4d9702dd60474a181");
+            var tieflingHeritageSelection = Traits.library.Get<BlueprintFeatureSelection>("c862fd0e4046d2d4d9702dd60474a181");
             choices.Add(Helpers.CreateFeature("ProlongMagicTrait", RES.ProlongMagicTraitName_info,
                 RES.ProlongMagicTraitDescription_info,
                 "820f697f59114993a55c46044c98bf9c",

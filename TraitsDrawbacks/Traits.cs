@@ -97,7 +97,7 @@ namespace EldritchArcana
             choices.Add(RegionalTraits.CreateRegionalTraits());
             // if main settings cheatcustomtrait = false it won't be added just be initialized
             var x = CreateCustomTraits(Main.settings.CheatCustomTraits);
-            if(Main.settings.CheatCustomTraits) choices.Add(x);
+            if (Main.settings.CheatCustomTraits) choices.Add(x);
 
             traitSelection.SetFeatures(choices);
 
@@ -157,8 +157,8 @@ namespace EldritchArcana
 
             library.AddFeats(additionalTraits);
         }
-       
-       
+
+
         public static List<BlueprintAbility> CollectTieflingAbilities(BlueprintFeatureSelection selection)
         {
             var result = new List<BlueprintAbility>();
@@ -171,7 +171,7 @@ namespace EldritchArcana
             }
             return result;
         }
-       
+
         static BlueprintFeatureSelection CreateCustomTraits(Boolean optedin)
         {
             var noFeature = Helpers.PrerequisiteNoFeature(null);
@@ -204,7 +204,7 @@ namespace EldritchArcana
                 ));
 
             var magicalStrongLineage = Helpers.CreateFeatureSelection("MagicalStrongLineageTrait", "Magical Strong Lineage({cheat})",
-                "One of your parents was a gifted spellcaster who not only used metamagic often, but also developed many magical items and perhaps even a new spell or two—and you have inherited a fragment of this greatness.\nBenefit: Pick one spell when you choose this trait. When you apply metamagic feats to this spell that add at least 1 level to the spell, treat its actual level as 1 lower up to 2 for determining the spell’s final adjusted level.",
+                "One of your parents was a gifted spellcaster who not only used metamagic often, but also developed many magical items and perhaps even a new spell or two—and you have inherited a fragment of this greatness.\nBenefit: Pick one spell when you choose this trait. When you apply metamagic feats to this spell that add at least 1 level to the spell, treat its actual level as 1 lower up to 2 for determining the spell's final adjusted level.",
                 "1785787fb62a4c529104ba53d0de99ae",
                 Helpers.GetIcon("ee7dc126939e4d9438357fbd5980d459"), // Spell Penetration
                 FeatureGroup.None);
@@ -291,7 +291,7 @@ namespace EldritchArcana
         internal static List<BlueprintFeature> FillTripleSpellSelection(BlueprintFeatureSelection selection, int minLevel, int maxLevel, BlueprintSpellList spellList, Func<int, BlueprintComponent[]> createComponents, BlueprintCharacterClass learnSpellClass = null)
         {
             var choices = new List<BlueprintFeature>();
-            
+
             //var choicelist = new List<BlueprintFeature>();
             string[] GuidList = new string[]
             {
@@ -304,12 +304,12 @@ namespace EldritchArcana
             for (int level = minLevel; level <= maxLevel; level++)
             {
                 var spellArrayAll = Helpers.Create<SelectAnySpellAtLevel>();
-                
+
                 var spellChoice = Helpers.CreateParamSelection<SelectAnySpellAtLevel>(
                     $"{selection.name}Level{level}",
                     String.Format(RES.TraitsFillSpellSelection_info, selection.Name, level),
                     selection.Description,
-                    Helpers.MergeIds(selection.AssetGuid, FavoredClassBonus.spellLevelGuids[level - 1],GuidList[2]),
+                    Helpers.MergeIds(selection.AssetGuid, FavoredClassBonus.spellLevelGuids[level - 1], GuidList[2]),
                     null,
                     FeatureGroup.None,
                     createComponents(level));
@@ -319,12 +319,12 @@ namespace EldritchArcana
                 spellChoice.CheckNotKnown = learnSpellClass != null;
                 choices.Add(spellChoice);
 
-                
+
             }
             choices.Add(UndoSelection.Feature.Value);
             return choices;
         }
-        
+
         public static BlueprintFeature CreateAddStatBonus(String name, String displayName, String description, String assetId, StatType skill, params BlueprintComponent[] extraComponents)
         {
             var components = extraComponents.ToList();
@@ -683,7 +683,7 @@ namespace EldritchArcana
             if (hpPercent < HitPointPercent)
             {
                 // TODO: this bonus should be a "trait" bonus. But doing it this way shows up in the UI.
-                appliedBuff = Owner.AddBuff(FrogPolymorphBuff,Owner.Unit,TimeSpan.FromSeconds(12.0));
+                appliedBuff = Owner.AddBuff(FrogPolymorphBuff, Owner.Unit, TimeSpan.FromSeconds(12.0));
                 evt.AddBonus(Value, Fact);
 
                 //evt.AddTemporaryModifier(evt.Initiator.Stats.AdditionalAttackBonus.AddModifier(Value, this, Descriptor));
@@ -694,7 +694,7 @@ namespace EldritchArcana
     }
 
 
-    
+
 
     public class ReplaceBaseStatForStatTypeLogic : OwnedGameLogicComponent<UnitDescriptor>
     {
@@ -740,22 +740,22 @@ namespace EldritchArcana
         }
     }
 
-// This adds support for a feat adding additional selections  (e.g. Additional Traits, Dragon Magic).
-//
-// The game doesn't natively support this, except via BlueprintProgression. However,
-// BlueprintProgression doesn't work for things you select later, because it only adds
-// the current level's features. Essentially, progressions are only designed to work for
-// class features awarded at fixed levels (typically 1st level). There isn't a notion of
-// progressions that are relative to the level you picked them at.
-//
-// So to support adding selections, we patch SelectFeature.Apply to add the follow-up features.
-//
-// However that wouldn't work for cases where a feat can change the progression level, as with
-// Greater Eldritch Heritage.
-//
-// TODO: alternative design2: use IUnitGainFactHandler. I think I tried that and it didn't work,
-// but don't recall why (unit not active during chargen?).
-[Harmony12.HarmonyPatch(typeof(SelectFeature), "Apply", new Type[] { typeof(LevelUpState), typeof(UnitDescriptor) })]
+    // This adds support for a feat adding additional selections  (e.g. Additional Traits, Dragon Magic).
+    //
+    // The game doesn't natively support this, except via BlueprintProgression. However,
+    // BlueprintProgression doesn't work for things you select later, because it only adds
+    // the current level's features. Essentially, progressions are only designed to work for
+    // class features awarded at fixed levels (typically 1st level). There isn't a notion of
+    // progressions that are relative to the level you picked them at.
+    //
+    // So to support adding selections, we patch SelectFeature.Apply to add the follow-up features.
+    //
+    // However that wouldn't work for cases where a feat can change the progression level, as with
+    // Greater Eldritch Heritage.
+    //
+    // TODO: alternative design2: use IUnitGainFactHandler. I think I tried that and it didn't work,
+    // but don't recall why (unit not active during chargen?).
+    [Harmony12.HarmonyPatch(typeof(SelectFeature), "Apply", new Type[] { typeof(LevelUpState), typeof(UnitDescriptor) })]
     static class SelectFeature_Apply_Patch
     {
         internal static Dictionary<BlueprintFeature, Action<LevelUpState, UnitDescriptor>> onApplyFeature = new Dictionary<BlueprintFeature, Action<LevelUpState, UnitDescriptor>>();

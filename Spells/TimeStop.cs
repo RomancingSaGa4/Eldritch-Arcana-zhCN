@@ -1,11 +1,9 @@
 // Copyright (c) 2019 Jennifer Messerly
 // This code is licensed under MIT license (see LICENSE for details)
 
-using System.Collections.Generic;
 using Kingmaker;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes.Spells;
-using Kingmaker.EntitySystem;
 using Kingmaker.EntitySystem.Entities;
 using Kingmaker.PubSubSystem;
 using Kingmaker.RuleSystem;
@@ -22,8 +20,8 @@ using Kingmaker.UnitLogic.Buffs.Components;
 using Kingmaker.UnitLogic.FactLogic;
 using Kingmaker.Utility;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 using static Kingmaker.UnitLogic.Commands.Base.UnitCommand;
-
 using RES = EldritchArcana.Properties.Resources;
 
 namespace EldritchArcana

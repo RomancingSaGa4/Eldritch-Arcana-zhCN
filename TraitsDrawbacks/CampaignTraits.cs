@@ -293,7 +293,7 @@ namespace EldritchArcana
 
             var miscdes = "Nobles think about you but they don't know:\n";
             choices.Add(Helpers.CreateFeatureSelection("NobleBornTrait", RES.NobleBornTraitSelectionName_info,
-                miscdes + "You claim a tangential but legitimate connection to one of Brevoy’s noble families. you’ve had a comfortable life, one you exploited untill you where send off to the be a monk and your luxury life ended.\nBenefits:you will start out with a bab penalty that will become a massive boon if you live the tale starts at -2 ends at +4",
+                miscdes + "You claim a tangential but legitimate connection to one of Brevoy's noble families. you've had a comfortable life, one you exploited untill you where send off to the be a monk and your luxury life ended.\nBenefits:you will start out with a bab penalty that will become a massive boon if you live the tale starts at -2 ends at +4",
                 "a820521d923f4e569c3c69d091bf8865",
                 Helpers.GetIcon("3adf9274a210b164cb68f472dc1e4544"), // Human Skilled
                 FeatureGroup.None,
@@ -317,7 +317,7 @@ namespace EldritchArcana
             Traits.FillSpellSelection(SpellExpertise, 1, 9, Helpers.Create<IncreaseCasterLevelForSpellMax>());
             //choices.Add(SpellExpertise);
             /*var newthiny = CreateFeature("OutlanderLoreseeker", "Outlander:Loreseeker",
-                "You have come here to see about expanding the presence of your chosen faith after receiving visions that told you your faith is needed—what that need is, though, you’re not quite sure.\nBenefit: Pick one spell when you choose this trait—from this point on, whenever you cast that spell, you do so at caster level max.",
+                "You have come here to see about expanding the presence of your chosen faith after receiving visions that told you your faith is needed—what that need is, though, you're not quite sure.\nBenefit: Pick one spell when you choose this trait—from this point on, whenever you cast that spell, you do so at caster level max.",
                 "6a3dfe274f45432b85361bdbb0a3010c",
                 Helpers.GetIcon("fe9220cdc16e5f444a84d85d5fa8e3d5");*/
             var SpellExpertise2 = Helpers.CreateFeatureSelection("OutlanderLoreseeker", RES.OutlanderLoreseekerName_info,
@@ -366,7 +366,7 @@ namespace EldritchArcana
 
             /* TODO: Noble Born. This will require some adaptation to the game. *
             var nobleBorn = Helpers.CreateFeatureSelection("NobleBornTrait", "Noble Born",
-                "You claim a tangential but legitimate connection to one of Brevoy’s noble families. If you aren’t human, you were likely adopted by one of Brevoy’s nobles or were instead a favored servant or even a childhood friend of a noble scion. Whatever the cause, you’ve had a comfortable life, but one far from the dignity and decadence your distant cousins know. Although you are associated with an esteemed name, your immediate family is hardly well to do, and you’ve found your name to be more of a burden to you than a boon in many social situations. You’ve recently decided to test yourself, to see if you can face the world without the aegis of a name you have little real claim or care for. An expedition into the storied Stolen Lands seems like just the test to see if you really are worth the title “noble.”",
+                "You claim a tangential but legitimate connection to one of Brevoy's noble families. If you aren't human, you were likely adopted by one of Brevoy's nobles or were instead a favored servant or even a childhood friend of a noble scion. Whatever the cause, you've had a comfortable life, but one far from the dignity and decadence your distant cousins know. Although you are associated with an esteemed name, your immediate family is hardly well to do, and you've found your name to be more of a burden to you than a boon in many social situations. You've recently decided to test yourself, to see if you can face the world without the aegis of a name you have little real claim or care for. An expedition into the storied Stolen Lands seems like just the test to see if you really are worth the title “noble.”",
                 "a820521d923f4e569c3c69d091bf8865",
                 null,
                 FeatureGroup.None);

@@ -567,7 +567,7 @@ namespace EldritchArcana
                         appliedBuff.Remove();
                         appliedBuff = null;
                     }
-                    
+
                 }
                 else if (appliedBuff == null)
                 {

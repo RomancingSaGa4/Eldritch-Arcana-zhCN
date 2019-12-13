@@ -43,7 +43,7 @@ namespace EldritchArcana
                 StatType.SkillPersuasion));
 
             //var ArchaeologistCleverExplorer = Traits.library.Get<BlueprintFeature>("1322e50d2b36aba45ab5405db43c53a3");
-            
+
             var performanceResource = Traits.library.Get<BlueprintAbilityResource>("e190ba276831b5c4fa28737e5e49e6a6");
             choices.Add(Helpers.CreateFeature("MaestroOfTheSocietyTrait", RES.MaestroOfTheSocietyTraitName_info,
                 RES.MaestroOfTheSocietyTraitDescription_info,
@@ -100,4 +100,3 @@ namespace EldritchArcana
         }
     }
 }
- 

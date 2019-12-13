@@ -161,7 +161,7 @@ namespace EldritchArcana
             };
             for (int i = 0; i < 6; i++)
             {
-                WisFleshOptions[i] = Helpers.CreateFeature($"EmpathicDiplomatTrait{Stats[i]}", 
+                WisFleshOptions[i] = Helpers.CreateFeature($"EmpathicDiplomatTrait{Stats[i]}",
                     String.Format(RES.EmpathicDiplomatStatTraitName_info, UIUtility.GetStatText(Stats[i])),
                     String.Format(RES.EmpathicDiplomatStatTraitDescription_info, UIUtility.GetStatText(Stats[i]), UIUtility.GetStatText(OldStats[i])),
                     $"a98{i}f{i}e69db44cdd889{i}3985e37a6d2b",
@@ -218,7 +218,7 @@ namespace EldritchArcana
 
             for (int i = 1; i < len; i++)
             {
-                ChaldiraOptions.Add(Helpers.CreateFeature($"ChaldiraEffectnumber{i}", 
+                ChaldiraOptions.Add(Helpers.CreateFeature($"ChaldiraEffectnumber{i}",
                     String.Format(RES.ChaldiraTraitHBName_info, i),
                     String.Format(RES.ChaldiraTraitHBDescription_info, (int)(12 / i), i),
                     $"f5{i}acadad65b40{i}8884dd4a74f14e{i}17",

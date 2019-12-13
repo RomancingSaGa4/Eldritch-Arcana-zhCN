@@ -59,7 +59,7 @@ namespace EldritchArcana
 
             prestigiousSpell.SetFeatures(
                 CreatePrestigiousSpellcaster(eldritchKnightClass, "dc3ab8d0484467a4787979d93114ebc3"), //*EldritchKnightSpellbookSelection
-                CreatePrestigiousSpellcaster(dragonDiscipleClass, "8c1ba14c0b6dcdb439c56341385ee474"  ));//*DragonDiscipleSpellbookSelection
+                CreatePrestigiousSpellcaster(dragonDiscipleClass, "8c1ba14c0b6dcdb439c56341385ee474"));//*DragonDiscipleSpellbookSelection
             //start
             //foreach (blueprintcharacterclass c in prestigiousspellcasterclasses)
             //{

@@ -31,7 +31,7 @@ namespace EldritchArcana
 
             var noFeature = Helpers.PrerequisiteNoFeature(null);
             var EmotionDrawbacks = Helpers.CreateFeatureSelection("EmotionDrawback", "Emotion Drawback",
-                "Emotion Drawbacks put the focus on mental aspects of your character’s background.",
+                "Emotion Drawbacks put the focus on mental aspects of your character's background.",
                 EmotionGuids[0], null, FeatureGroup.None, noFeature);
 
             noFeature.Feature = EmotionDrawbacks;
@@ -47,7 +47,7 @@ namespace EldritchArcana
 
             //var tieflingHeritageDemodand = library.Get<BlueprintFeature>("a53d760a364cd90429e16aa1e7048d0a");
             choices.Add(Helpers.CreateFeature("AttachedDrawback", "Attached",
-                "You are attached to yourself. Whenever the object of your attachment is either threatened, in danger, or in someone else’s possession, you take a –1 penalty on Will saves and a –2 penalty on saves against fear effects." +
+                "You are attached to yourself. Whenever the object of your attachment is either threatened, in danger, or in someone else's possession, you take a –1 penalty on Will saves and a –2 penalty on saves against fear effects." +
                 "\nDrawback: You take a –1 penalty on Will saves and a –2 penalty on saves against fear effects.",
                 EmotionGuids[2],
                 Helpers.GetIcon("2483a523984f44944a7cf157b21bf79c"), // Elven Immunities
@@ -67,7 +67,7 @@ namespace EldritchArcana
 
             choices.Add(Helpers.CreateFeature("BitterDrawback", "Bitter",
                 "You have been hurt repeatedly by those you trusted, and it has become difficult for you to accept help." +
-                "\nDrawback: When you receive healing from an ally’s class feature, spell, or spell-like ability, reduce the amount of that healing by 1 hit point.",
+                "\nDrawback: When you receive healing from an ally's class feature, spell, or spell-like ability, reduce the amount of that healing by 1 hit point.",
                 EmotionGuids[4],
                 Helpers.NiceIcons(5), // great fortitude
                 FeatureGroup.None,
@@ -95,7 +95,7 @@ namespace EldritchArcana
                 Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Fear; s.Value = -4; s.ModifierDescriptor = ModifierDescriptor.Penalty; })));
 
             choices.Add(Helpers.CreateFeature("CrueltyDrawback", "Cruelty",
-                "You were rewarded as a child for flaunting your victory over others as completely as possible, and you discovered you enjoyed the feeling of rubbing your foes’ faces in the dirt." +
+                "You were rewarded as a child for flaunting your victory over others as completely as possible, and you discovered you enjoyed the feeling of rubbing your foes' faces in the dirt." +
                 "\nBenefit: You have +2 on attack rolls against flanked targets." +
                 "\nDrawback: You take a –2 penalty on attack rolls against someone that is not flanked.",
                 EmotionGuids[7],
@@ -258,7 +258,7 @@ namespace EldritchArcana
 
             x++;
             choices.Add(Helpers.CreateFeature("SleepyDrawback", "Sleepy",
-                 "You must sleep or rest for at least 8 hours each night to get the benefits of a full night’s rest." +
+                 "You must sleep or rest for at least 8 hours each night to get the benefits of a full night's rest." +
                  "\nDrawback: You take a –2 penalty on saving throws against sleep effects.",
                  EmotionGuids[x],
                  Helpers.NiceIcons(7),

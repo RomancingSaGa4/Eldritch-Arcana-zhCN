@@ -324,11 +324,11 @@ namespace EldritchArcana
                 {
                     GUILayout.Label(string.Format(RES.featureName_error, featureName), fixedWidth);
                 }
-				GUILayout.EndVertical();				
+                GUILayout.EndVertical();
             }
             if (failedLoading.Count > 0)
             {
-                GUILayout.BeginVertical();									  
+                GUILayout.BeginVertical();
                 GUILayout.Label(RES.failedLoading_error, fixedWidth);
                 foreach (var featureName in failedLoading)
                 {

@@ -49,7 +49,6 @@ using static Kingmaker.UI.GenericSlot.EquipSlotBase;
 using static Kingmaker.UnitLogic.Commands.Base.UnitCommand;
 
 using RES = EldritchArcana.Properties.Resources;
-using static EldritchArcana.Common;
 
 namespace EldritchArcana
 {

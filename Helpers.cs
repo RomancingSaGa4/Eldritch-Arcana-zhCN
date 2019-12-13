@@ -1,14 +1,6 @@
 // Copyright (c) 2019 Jennifer Messerly
 // This code is licensed under MIT license (see LICENSE for details)
 
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Globalization;
-using System.Linq;
-using System.Reflection;
-using System.Security.Cryptography;
-using System.Text;
 using Kingmaker;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
@@ -32,7 +24,6 @@ using Kingmaker.EntitySystem.Stats;
 using Kingmaker.Enums;
 using Kingmaker.Enums.Damage;
 using Kingmaker.Localization;
-using Kingmaker.PubSubSystem;
 using Kingmaker.ResourceLinks;
 using Kingmaker.RuleSystem;
 using Kingmaker.RuleSystem.Rules.Damage;
@@ -47,7 +38,6 @@ using Kingmaker.UnitLogic.ActivatableAbilities;
 using Kingmaker.UnitLogic.Buffs;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Kingmaker.UnitLogic.Class.LevelUp;
-using Kingmaker.UnitLogic.Commands.Base;
 using Kingmaker.UnitLogic.FactLogic;
 using Kingmaker.UnitLogic.Mechanics;
 using Kingmaker.UnitLogic.Mechanics.Actions;
@@ -55,7 +45,11 @@ using Kingmaker.UnitLogic.Mechanics.Components;
 using Kingmaker.UnitLogic.Mechanics.Conditions;
 using Kingmaker.UnitLogic.Mechanics.Properties;
 using Kingmaker.Utility;
-using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using UnityEngine;
 using static Kingmaker.UnitLogic.ActivatableAbilities.ActivatableAbilityResourceLogic;
 using static Kingmaker.UnitLogic.Commands.Base.UnitCommand;
@@ -443,13 +437,13 @@ namespace EldritchArcana
             spells.Add(spell);
         }
 
-        
 
-    // Similar to `metamagic.DefaultCost()`, but returns the result before Bag of Tricks
-    // modifies it to 0.
 
-    
-    public static int OriginalCost(this Metamagic metamagic)
+        // Similar to `metamagic.DefaultCost()`, but returns the result before Bag of Tricks
+        // modifies it to 0.
+
+
+        public static int OriginalCost(this Metamagic metamagic)
         {
             // Inline this so Bag of Tricks can't mutate it.
             switch (metamagic)
@@ -697,14 +691,14 @@ namespace EldritchArcana
         const String basicFeatSelection = "247a4068296e8be42890143f451b4b45";
         public const String magusFeatSelection = "66befe7b24c42dd458952e3c47c93563";
 
-        public static BlueprintRace human, halfElf, halfOrc, elf, dwarf, halfling, gnome, aasimar, tiefling,goblin;
+        public static BlueprintRace human, halfElf, halfOrc, elf, dwarf, halfling, gnome, aasimar, tiefling, goblin;
 
         public static LocalizedString tenMinPerLevelDuration, minutesPerLevelDuration, hourPerLevelDuration, roundsPerLevelDuration, oneRoundDuration;
 
         public static LocalizedString reflexHalfDamage, savingThrowNone;
 
         public static BlueprintSpellList wizardSpellList, magusSpellList, druidSpellList, clericSpellList, paladinSpellList, inquisitorSpellList,
-            alchemistSpellList, bardSpellList, fireDomainSpellList,healingDomainSpellList,
+            alchemistSpellList, bardSpellList, fireDomainSpellList, healingDomainSpellList,
             protectionDomainSpellList;
 
         public static BlueprintItemWeapon touchWeapon;
@@ -1549,18 +1543,18 @@ namespace EldritchArcana
 
             switch (skill)
             {
-                case StatType.AC:                     return "0b183a3acaf5464eaad54276413fec04";
-                case StatType.AdditionalAttackBonus:  return "0b183a3acaf5464ecad54276414fec09";//(1.2.4)
-                case StatType.AdditionalCMB:          return "0b183a3acaf5464eaad54276413fec09";
-                case StatType.AdditionalCMD:          return "1b194a3acaf5464eaad54276413fec08";//(1.2.4)
-                case StatType.Charisma:               return "2b194a3acaf5464eaad54376413fec23";//(1.2.4)
-                case StatType.BaseAttackBonus:        return "0b183a3acaf5464eaad54276413fec08";
-                case StatType.Intelligence:           return "0b183a3acaf5464eaad54276413fec07";
-                case StatType.Reach:                  return "0b183a3acaf5464eaad54276413fec05";
-                case StatType.SneakAttack:            return "0b183a3acaf5464eaad54276413fec06";
-                case StatType.Strength:               return "0b183a3acaf5464eabd44276413fec17";//(1.2.4)
-                case StatType.Wisdom:                 return "2b194a3acaf5464eaad54276413fec18";//(1.2.4)
-                default:                              return "0b183a3acaf5464eaad54286413fec14";
+                case StatType.AC: return "0b183a3acaf5464eaad54276413fec04";
+                case StatType.AdditionalAttackBonus: return "0b183a3acaf5464ecad54276414fec09";//(1.2.4)
+                case StatType.AdditionalCMB: return "0b183a3acaf5464eaad54276413fec09";
+                case StatType.AdditionalCMD: return "1b194a3acaf5464eaad54276413fec08";//(1.2.4)
+                case StatType.Charisma: return "2b194a3acaf5464eaad54376413fec23";//(1.2.4)
+                case StatType.BaseAttackBonus: return "0b183a3acaf5464eaad54276413fec08";
+                case StatType.Intelligence: return "0b183a3acaf5464eaad54276413fec07";
+                case StatType.Reach: return "0b183a3acaf5464eaad54276413fec05";
+                case StatType.SneakAttack: return "0b183a3acaf5464eaad54276413fec06";
+                case StatType.Strength: return "0b183a3acaf5464eabd44276413fec17";//(1.2.4)
+                case StatType.Wisdom: return "2b194a3acaf5464eaad54276413fec18";//(1.2.4)
+                default: return "0b183a3acaf5464eaad54286413fec14";
             }
         }
 
@@ -2319,8 +2313,8 @@ namespace EldritchArcana
                 default:
                     return Helpers.GetIcon("0f5bd128c76dd374b8cb9111e3b5186b");//balans
             }
-            
-             
+
+
         }
 
         internal static object CreateConditional(ContextConditionHasFact[] condition, GameAction[] gameAction)

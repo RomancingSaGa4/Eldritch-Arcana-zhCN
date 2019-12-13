@@ -154,6 +154,13 @@
   <data name="AirWalkCommunalAbilityName_info" xml:space="preserve">
     <value>共用凌空而行</value>
   </data>
+  <data name="AnatomistTraitDescription_info" xml:space="preserve">
+    <value>解剖学家</value>
+  </data>
+  <data name="AnatomistTraitName_info" xml:space="preserve">
+    <value>作为一介大学医科生或是死灵师学徒，你接受过解剖学的系统训练。你知晓如何瞄准对方最致命的器官。
+效益：你在确认重击的检定中获得+1背景加值。</value>
+  </data>
   <data name="AncientLorekeeperClassSkillsDescription_info" xml:space="preserve">
     <value>传古学者将知识（神秘）加入其职业技能。</value>
   </data>
@@ -223,6 +230,13 @@
   <data name="ArcaneSavantName_info" xml:space="preserve">
     <value>奥术学者</value>
   </data>
+  <data name="ArmorExpertTraitDescription_info" xml:space="preserve">
+    <value>披甲专家</value>
+  </data>
+  <data name="ArmorExpertTraitName_info" xml:space="preserve">
+    <value>无论是作为见习骑士的训练、或单纯地出于对英雄的模仿，从记事起你便身披甲胄。儿时所穿的铠甲未必真具备防护力，但这种仿真的负重练习毕竟是一种磨练，使长大的你如今披甲行动时姿态更加优雅。
+效益：你身穿任何种类的盔甲时，该盔甲的防具检定减值下降1点，最低为0。</value>
+  </data>
   <data name="AsthmaticDrawbackDescription_info" xml:space="preserve">
     <value>你身患哮喘，呼吸困难。
 缺陷：你在对造成疲劳及力竭的效果，以及名称中包含“云”、“尘”、“雾”、“烟”的效果进行豁免检定时受到-2减值。你的屏息时间是正常的一半。此外，穿着轻甲及以上甲胄休息会使你疲劳。</value>
@@ -280,12 +294,26 @@
   <data name="BastardTraitName_info" xml:space="preserve">
     <value>私生子</value>
   </data>
+  <data name="BerserkerOfTheSocietyTraitDescription_info" xml:space="preserve">
+    <value>你长期在社群中的奉献使你对狂暴的渊源的有了更深刻的理解。
+效益：你每天能使用狂暴技能的轮数延长3轮。</value>
+  </data>
+  <data name="BerserkerOfTheSocietyTraitName_info" xml:space="preserve">
+    <value>社群战狂</value>
+  </data>
   <data name="BirthmarkTraitDescription_info" xml:space="preserve">
     <value>你与生俱来拥有一块奇怪的胎记，看起来就像你日后入信的神祇的圣徽。
 效益：这个胎记会增加你对神祇的虔诚。你在对抗魅惑与胁迫效果时豁免检定获得+2背景加值。</value>
   </data>
   <data name="BirthmarkTraitName_info" xml:space="preserve">
     <value>胎记</value>
+  </data>
+  <data name="BladeOfTheSocietyTraitDescription_info" xml:space="preserve">
+    <value>你研究了很多类人生物和怪物，清楚了解他们的弱点为何。
+效益：你在3级时就能学会偷袭，无论你的职业能否进行偷袭。并且你在偷袭时造成的伤害获得+1背景加值。</value>
+  </data>
+  <data name="BladeOfTheSocietyTraitName_info" xml:space="preserve">
+    <value>社群利刃</value>
   </data>
   <data name="BloodHavocMutationFeatureDescription_info" xml:space="preserve">
     <value>每当血脉狂怒者或者术士获得一个新的血承能力，他可以将这个血承能力换成一个其满足先决条件的血统突变。一旦他作出这个选择就无法改变。血脉狂怒者或术士不能将一个已经被变体改变或取代的血承能力替换为血统突变。血脉狂怒者无须进入血怒来使用他的血统突变。另外，血脉狂怒者或术士可以选择一个血统突变来代替血承奖励专长，只要他的职业等级不低于该突变通常取代的血承能力的等级。
@@ -490,6 +518,20 @@
   <data name="CustomTraitName_info" xml:space="preserve">
     <value>自定义特性｛作弊｝</value>
   </data>
+  <data name="DefenderOfTheSocietyTraitDescription_info" xml:space="preserve">
+    <value>你在与社群中最强的战士们搏斗和学习的过程中，对披甲时的防御技能有了更深刻的理解。
+效益：你在穿着中甲或重甲时防御等级获得+1背景加值。</value>
+  </data>
+  <data name="DefenderOfTheSocietyTraitName_info" xml:space="preserve">
+    <value>社群之盾</value>
+  </data>
+  <data name="DeftDodgerTraitDescription_info" xml:space="preserve">
+    <value>在危险环境或恶邻之侧长大的你不断地磨练自己的感官与直觉。
+效益：你在反射豁免检定时获得+1背景加值。</value>
+  </data>
+  <data name="DeftDodgerTraitName_info" xml:space="preserve">
+    <value>机灵鬼</value>
+  </data>
   <data name="DefyMadnessTraitDescription_info" xml:space="preserve">
     <value>你和某些超常存在和异星力量的直接接触使你更不容易受到他们造成的神智错乱的影响。
 效益：你在对抗混乱、神智错乱、疯狂、感知伤害和吸取效果的豁免检定时获得+1背景加值。</value>
@@ -548,6 +590,13 @@
   </data>
   <data name="DilettanteArtistTraitName_info" xml:space="preserve">
     <value>业余艺术家（精灵）</value>
+  </data>
+  <data name="DirtyFighterTraitDescription_info" xml:space="preserve">
+    <value>若是没有那个可靠的兄弟、朋友或是伙伴帮你牵制敌人、让你将对方揍得更痛，你根本不可能长大成人活到今天。这名伙伴可以是另一位玩家或一个NPC（可以是在当前情况下没有和你在一起的人物）。
+效益：当你们夹击敌人时，你对攻击命中的敌人造成1点额外伤害（该伤害计入你的基础伤害并可以在重击时加倍）。该额外伤害是一项背景加值。</value>
+  </data>
+  <data name="DirtyFighterTraitName_info" xml:space="preserve">
+    <value>群架王</value>
   </data>
   <data name="DismissAreaEffectAbilityDescription_info" xml:space="preserve">
     <value>某些法术可以任意驱散，而另一些法术则必须在结束战斗后才能驱散。要驱散法术效果你必须位于法术效果范围内。驱散法术效果是一个不会引发借机攻击的标准动作。
@@ -992,6 +1041,13 @@
   </data>
   <data name="HighDCl_info" xml:space="preserve">
     <value>异乡来客的法术获得最大的施法者等级和DC加值（作弊）</value>
+  </data>
+  <data name="HonoredFistOfTheSocietyTraitDescription_info" xml:space="preserve">
+    <value>你精研某些只为本社群保有的古典秘笈，造诣远超同侪。
+效益：你气海的真气容量增加1点。</value>
+  </data>
+  <data name="HonoredFistOfTheSocietyTraitName_info" xml:space="preserve">
+    <value>社群武圣</value>
   </data>
   <data name="HypnoticDurationLocalized_info" xml:space="preserve">
     <value>专注+2轮</value>
@@ -2323,6 +2379,19 @@
   <data name="RapscallionTraitName_info" xml:space="preserve">
     <value>恶棍（侏儒）</value>
   </data>
+  <data name="ReactionaryTraitDescription_info" xml:space="preserve">
+    <value>你幼时饱受欺凌，但从来都不会主动发难。取而代之的是你精于预见突然袭击，并能够快速应对威胁。
+效益：你在先攻检定时获得+2背景加值。</value>
+  </data>
+  <data name="ReactionaryTraitName_info" xml:space="preserve">
+    <value>后发制人</value>
+  </data>
+  <data name="RecklessTraitDescription_info" xml:space="preserve">
+    <value>你喜欢在战场上身先士卒，经常忽视自身安全。</value>
+  </data>
+  <data name="RecklessTraitName_info" xml:space="preserve">
+    <value>急性子</value>
+  </data>
   <data name="RegionalTraitDescription_info" xml:space="preserve">
     <value>地区背景与特定的区域紧密相关，可能规模很大（如某些国家或地域）也可能很小（如某座城市或特定的一座山）。要选择某个地区背景，你的角色必须在当地生活一年以上。1级时你仅能选择一个地区背景（通常是角色的出生地或家乡），无论你希望给你的角色设定多少个地区背景。</value>
   </data>
@@ -2340,6 +2409,13 @@
   </data>
   <data name="ReplacementFeatureName_info" xml:space="preserve">
     <value>替换法术（{0}）</value>
+  </data>
+  <data name="ResilientTraitDescription_info" xml:space="preserve">
+    <value>在穷困环境或贫瘠荒野中长大的你，经常强迫自己摄取来源可疑的食物和水。这造就了你强悍的体质。
+效益：你在强韧检定时获得+1背景加值。</value>
+  </data>
+  <data name="ResilientTraitName_info" xml:space="preserve">
+    <value>强适应性</value>
   </data>
   <data name="ResultFailLog_info" xml:space="preserve">
     <value>结果：失败。</value>
@@ -2813,6 +2889,12 @@
   </data>
   <data name="WishSpells_info" xml:space="preserve">
     <value>祈愿术</value>
+  </data>
+  <data name="WittyReparteeTraitDescription_info" xml:space="preserve">
+    <value>你口舌便给，总能摇动三寸不烂之舌把敌人忽悠得晕头转向。</value>
+  </data>
+  <data name="WittyReparteeTraitName_info" xml:space="preserve">
+    <value>舌灿莲花</value>
   </data>
   <data name="YouthfulMischiefTraitDescription_info" xml:space="preserve">
     <value>虽然你已经不做大脚板、斥候或者吟游诗人的营生很久了，但你依然还记得在危机来临时该如何应对。

@@ -1,10 +1,6 @@
 // Copyright (c) 2019 Jennifer Messerly
 // This code is licensed under MIT license (see LICENSE for details)
 
-using System;
-using System.Collections.Generic;
-// using System.Linq;
-using System.Text;
 using Kingmaker;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
@@ -16,7 +12,6 @@ using Kingmaker.Blueprints.Items.Armors;
 using Kingmaker.Controllers.Combat;
 using Kingmaker.Designers.Mechanics.Buffs;
 using Kingmaker.Designers.Mechanics.Facts;
-using Kingmaker.ElementsSystem;
 using Kingmaker.EntitySystem.Entities;
 using Kingmaker.EntitySystem.Stats;
 using Kingmaker.Enums;
@@ -37,16 +32,17 @@ using Kingmaker.UnitLogic.Buffs.Components;
 using Kingmaker.UnitLogic.Class.LevelUp;
 using Kingmaker.UnitLogic.FactLogic;
 using Kingmaker.UnitLogic.Mechanics;
-using Kingmaker.UnitLogic.Mechanics.Actions;
 using Kingmaker.UnitLogic.Mechanics.Components;
 using Kingmaker.Utility;
 using Kingmaker.View;
 using Pathfinding;
+using System;
+using System.Collections.Generic;
+// using System.Linq;
+using System.Text;
 using UnityEngine;
-using static Kingmaker.RuleSystem.RulebookEvent;
 using static Kingmaker.UnitLogic.ActivatableAbilities.ActivatableAbilityResourceLogic;
 using static Kingmaker.UnitLogic.Commands.Base.UnitCommand;
-
 using RES = EldritchArcana.Properties.Resources;
 
 namespace EldritchArcana
@@ -287,7 +283,7 @@ namespace EldritchArcana
             var noFeature = Helpers.PrerequisiteNoFeature(null);
             var feat = Helpers.CreateFeatureSelection("MysteryBattleManeuverMastery",
                 RES.MysteryBattleManeuverMasteryName_info,
-                RES.MysteryBattleManeuverMasteryDescription_info, 
+                RES.MysteryBattleManeuverMasteryDescription_info,
                 "44f54173a6cc4111af4e9e5c2c86a036",
                 Helpers.GetIcon("4c44724ffa8844f4d9bedb5bb27d144a"), // combat expertise
                 FeatureGroup.None,

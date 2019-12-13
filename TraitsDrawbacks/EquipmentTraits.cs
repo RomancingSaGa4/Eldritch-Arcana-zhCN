@@ -1,17 +1,16 @@
-﻿using System;
+﻿using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Selection;
-using Kingmaker.Blueprints.Classes;
-using System.Collections.Generic;
-using Kingmaker.Blueprints.Items.Weapons;
-using Kingmaker.Blueprints.Items;
-using Kingmaker.UnitLogic.FactLogic;
-using Kingmaker.Enums;
-using Kingmaker.Designers.Mechanics.Facts;
 using Kingmaker.Blueprints.Classes.Spells;
+using Kingmaker.Blueprints.Items;
 using Kingmaker.Blueprints.Items.Armors;
 using Kingmaker.Blueprints.Items.Equipment;
 using Kingmaker.Blueprints.Items.Shields;
-
+using Kingmaker.Blueprints.Items.Weapons;
+using Kingmaker.Designers.Mechanics.Facts;
+using Kingmaker.Enums;
+using Kingmaker.UnitLogic.FactLogic;
+using System;
+using System.Collections.Generic;
 using RES = EldritchArcana.Properties.Resources;
 
 namespace EldritchArcana
@@ -36,7 +35,7 @@ namespace EldritchArcana
             var MithralBreastplate = Traits.library.Get<BlueprintItemArmor>("ac740e390d8e3e44ab99e961d660a633");
             var ShadowLeatherPlus1 = Traits.library.Get<BlueprintItemArmor>("ee429a40453dcac43b4d272bdf35a0fe");
 
-            
+
             //var ArmorRobeItem = Traits.library.Get<BlueprintItemArmor>("a15cc28e6328f024183c7e7a9707304b");//test
 
             var HeavyShield = Traits.library.Get<BlueprintItemShield>("f4cef3ba1a15b0f4fa7fd66b602ff32b");
@@ -48,7 +47,7 @@ namespace EldritchArcana
             var CloakOfSparklesItem = Traits.library.Get<BlueprintItemEquipmentShoulders>("5dbe5da0779cb7b47b742ac3f56f1086");//450
             var ExplorersBeltItem = Traits.library.Get<BlueprintItemEquipmentBelt>("ec34985b81b9f744488456e7009044ee");//625
 
-            
+
 
             //bonus1 items
             var BracersOfArmor1 = Traits.library.Get<BlueprintItemEquipmentWrist>("9482c62934be44044918c3aac3730232");
@@ -108,7 +107,7 @@ namespace EldritchArcana
 
 
             var WellProvisionedTrait = Helpers.CreateFeatureSelection("ProvisionedAdventurerTrait", "Well-Provisioned Adventurer",
-                "You always knew you’d leave your humble beginnings behind and become an adventurer, so you scrimped and saved, buying the necessary equipment one piece at a time until you had everything you needed.Select one of the equipment packages in the section that just popped up.\n" +
+                "You always knew you'd leave your humble beginnings behind and become an adventurer, so you scrimped and saved, buying the necessary equipment one piece at a time until you had everything you needed.Select one of the equipment packages in the section that just popped up.\n" +
                 "Benefit: You start the game with a backpack full of equipment with an averidge combined worth of 900 gp",
                 PackGuids[0],
                 LargeBagOfHolding.Icon,
@@ -184,7 +183,7 @@ namespace EldritchArcana
                 })),
             //bravo
             Helpers.CreateFeature("ProvisionedAdventurerTraitBravo", "Daring Bravo Package",
-                "The daring bravo is equally adept in social situations and combat, with the right equipment to move fluidly from one to the other. Such adventurers are known as much for their flair and panache as their martial prowess, and the daring bravo’s equipment is often ornately ornamented or personalized. This equipment package is good for a bard, fighter, rogue, swashbuckler, or vigilante. Certain cavaliers, investigators, skalds, or even paladins may also find it appealing." +
+                "The daring bravo is equally adept in social situations and combat, with the right equipment to move fluidly from one to the other. Such adventurers are known as much for their flair and panache as their martial prowess, and the daring bravo's equipment is often ornately ornamented or personalized. This equipment package is good for a bard, fighter, rogue, swashbuckler, or vigilante. Certain cavaliers, investigators, skalds, or even paladins may also find it appealing." +
                 "\nBenefit: You start the game with some extra stuff:" +
                 " a cape that makes you more heroic, a mithral chainshirt, a crossbow, a rapier, a healing potion, a lantern and three rations.",
                 PackGuids[6],
@@ -225,7 +224,7 @@ namespace EldritchArcana
             
             //holywar
             Helpers.CreateFeature("ProvisionedAdventurerTraitHolywar", "Holy Warrior Package",
-                "The holy warrior is prepared to use her might and zeal to take the fight to the enemy, but she understands the importance of having the right equipment to overcome the resistances of her monstrous foes. This equipment package is well-suited to a cleric, inquisitor, paladin, warpriest, or even a fighter with a religious background. It’s especially suited to characters who focus on supporting their party members and making them more effective in a fight." +
+                "The holy warrior is prepared to use her might and zeal to take the fight to the enemy, but she understands the importance of having the right equipment to overcome the resistances of her monstrous foes. This equipment package is well-suited to a cleric, inquisitor, paladin, warpriest, or even a fighter with a religious background. It's especially suited to characters who focus on supporting their party members and making them more effective in a fight." +
                 "\nBenefit: You start the game with some extra stuff:" +
                 " A mithral brestplate, a masterwork longsword, a heavy shield, three healthpotions, a potion of shield of faith, three rations, and some paper to write on.",
                 PackGuids[9],
@@ -239,7 +238,7 @@ namespace EldritchArcana
             
             //holywar
             Helpers.CreateFeature("ProvisionedAdventurerTraitUnHolywar", "Unholy Warrior Package",
-                "The Unholy warrior is prepared to use his might and zeal to take the fight to the enemy, but he understands the importance of having the right equipment to overcome the resistances of her monstrous foes. This equipment package is well-suited to an undead of the following classes: cleric, inquisitor, paladin, warpriest, or even a fighter with a religious background. It’s especially suited to characters who focus on supporting their party members and making them more effective in a fight." +
+                "The Unholy warrior is prepared to use his might and zeal to take the fight to the enemy, but he understands the importance of having the right equipment to overcome the resistances of her monstrous foes. This equipment package is well-suited to an undead of the following classes: cleric, inquisitor, paladin, warpriest, or even a fighter with a religious background. It's especially suited to characters who focus on supporting their party members and making them more effective in a fight." +
                 "\nBenefit: You start the game with some extra stuff:" +
                 " A mithral brestplate, a masterwork longsword, a heavy shield, three potions of heal undead, a potion of shield of faith, three rations, and some paper to write on.",
                 PackGuids[10],
@@ -330,7 +329,7 @@ namespace EldritchArcana
 
 
             };
-            
+
 
             WellProvisionedTrait.SetFeatures(EquipmentPacks);
 
@@ -380,8 +379,8 @@ namespace EldritchArcana
 
             var HandCrossbowProficiency = Traits.library.Get<BlueprintFeature>("8504fe61874f6a244886cca32e93b563");
             HandCrossbowProficiency.AddComponent(Helpers.Create<WeaponAttackAndCombatManeuverBonus>(a => { a.WeaponType = HandCrossbow; a.AttackBonus = 1; a.Descriptor = ModifierDescriptor.Trait; }));
-            HandCrossbowProficiency.AddComponent(Helpers.Create<AddStartingEquipment>(a => { a.CategoryItems = Array.Empty<WeaponCategory>(); a.RestrictedByClass = Array.Empty<BlueprintCharacterClass>(); a.BasicItems = new BlueprintItem[] { HandCrossbowPlus1,HandCrossbowPlus1 }; }));
-            
+            HandCrossbowProficiency.AddComponent(Helpers.Create<AddStartingEquipment>(a => { a.CategoryItems = Array.Empty<WeaponCategory>(); a.RestrictedByClass = Array.Empty<BlueprintCharacterClass>(); a.BasicItems = new BlueprintItem[] { HandCrossbowPlus1, HandCrossbowPlus1 }; }));
+
             HandCrossbowProficiency.SetNameDescriptionIcon("Family Heirloom Hand Crossbow", "You got this hand crossbow from your family for hunting for food for your family." +
                 "\nBenefit: You are proficient with hand crosbows.", HandCrossbowPlus1.Icon);
 
@@ -393,7 +392,7 @@ namespace EldritchArcana
                 Helpers.NiceIcons(37),
                 FeatureGroup.None);
             FamilyHeirloomTrait.IgnorePrerequisites = true;
-            
+
             //int rnd = DateTime.Now.Millisecond % 64;
             var HeirloomWeapons = new BlueprintFeature[]
             {
@@ -560,7 +559,7 @@ namespace EldritchArcana
                     a.CategoryItems = Array.Empty<WeaponCategory>();
                     a.RestrictedByClass = Array.Empty<BlueprintCharacterClass>();
                     a.BasicItems = new BlueprintItem[] { ScythePlus1 };
-                    
+
                 }),
                 Helpers.Create<WeaponAttackAndCombatManeuverBonus>(a => { a.WeaponType = Scythe; a.AttackBonus = 1; a.Descriptor = ModifierDescriptor.Trait; })
                 ),
@@ -591,7 +590,7 @@ namespace EldritchArcana
                     a.BasicItems = new BlueprintItem[] { DwarvenWaraxePlus1 };
                 }),
                 Helpers.Create<WeaponAttackAndCombatManeuverBonus>(a => { a.WeaponType = DwarvenWaraxe; a.AttackBonus = 1; a.Descriptor = ModifierDescriptor.Trait; })
-                
+
 
                 ),
                 Helpers.CreateFeature("HairloomTraitKukri", "Family Heirloom Kukri",
@@ -606,7 +605,7 @@ namespace EldritchArcana
                     a.BasicItems = new BlueprintItem[] { KukriPlus1 };
                 }),
                 Helpers.Create<WeaponAttackAndCombatManeuverBonus>(a => { a.WeaponType = Kukri; a.AttackBonus = 1; a.Descriptor = ModifierDescriptor.Trait; })
-                
+
 
                 ),
                 Helpers.CreateFeature("HairloomTraitRapier", "Family Heirloom Rapier",
@@ -621,8 +620,8 @@ namespace EldritchArcana
                     a.BasicItems = new BlueprintItem[] { RapierPlus1 };
                 }),
                 Helpers.Create<WeaponAttackAndCombatManeuverBonus>(a => { a.WeaponType = Rapier; a.AttackBonus = 1; a.Descriptor = ModifierDescriptor.Trait; })
-                
-            
+
+
                 ),
                 Helpers.CreateFeature("HairloomTraitBsword", "Family Heirloom Bastard Sword",
                 "When your father and you started to practice he gave you a bastard sword the first time you could defeat him" +

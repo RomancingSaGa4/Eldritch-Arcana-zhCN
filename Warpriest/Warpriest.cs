@@ -1,25 +1,16 @@
 // Copyright (c) 2019 Jennifer Messerly
 // This code is licensed under MIT license (see LICENSE for details)
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Selection;
 using Kingmaker.Blueprints.Classes.Spells;
-using Kingmaker.Blueprints.Facts;
-using Kingmaker.Blueprints.Root;
 using Kingmaker.Designers.Mechanics.Facts;
 using Kingmaker.EntitySystem.Stats;
-using Kingmaker.PubSubSystem;
 using Kingmaker.RuleSystem;
-using Kingmaker.UnitLogic;
-using Kingmaker.UnitLogic.Abilities.Blueprints;
-using Kingmaker.UnitLogic.Abilities.Components;
-using Kingmaker.UnitLogic.FactLogic;
-using Kingmaker.Utility;
-using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace EldritchArcana
 {
@@ -40,9 +31,9 @@ namespace EldritchArcana
             warpriest.name = "WarpriestClass";
             library.AddAsset(warpriest, "38856a7c382e42caa5b605bc17bcc787");
             warpriest.LocalizedName = Helpers.CreateString("Warpriest.Name", "Warpriest");
-            warpriest.LocalizedDescription = Helpers.CreateString("Warpriest.Description", "Capable of calling upon the power of the gods in the form of blessings and spells, warpriests blend divine magic with martial skill. They are unflinching bastions of their faith, shouting gospel as they pummel foes into submission, and never shy away from a challenge to their beliefs. While clerics might be subtle and use diplomacy to accomplish their aims, warpriests aren’t above using violence whenever the situation warrants it. In many faiths, warpriests form the core of the church’s martial forces—reclaiming lost relics, rescuing captured clergy, and defending the church’s tenets from all challenges.\n" +
+            warpriest.LocalizedDescription = Helpers.CreateString("Warpriest.Description", "Capable of calling upon the power of the gods in the form of blessings and spells, warpriests blend divine magic with martial skill. They are unflinching bastions of their faith, shouting gospel as they pummel foes into submission, and never shy away from a challenge to their beliefs. While clerics might be subtle and use diplomacy to accomplish their aims, warpriests aren't above using violence whenever the situation warrants it. In many faiths, warpriests form the core of the church's martial forces—reclaiming lost relics, rescuing captured clergy, and defending the church's tenets from all challenges.\n" +
                 "Role: Warpriests can serve as capable healers or spellcasters, calling upon their divine powers from the center of the fight, where their armor and martial skills are put to the test.\n" +
-                "Alignment: A warpriest’s alignment must be within one step of their deity’s, along either the law/chaos axis or the good/evil axis.");
+                "Alignment: A warpriest's alignment must be within one step of their deity's, along either the law/chaos axis or the good/evil axis.");
             warpriest.m_Icon = cleric.Icon;
             warpriest.SkillPoints = 2;
             warpriest.HitDie = DiceType.D8;
@@ -131,7 +122,7 @@ namespace EldritchArcana
             var detectMagic = library.Get<BlueprintFeature>("ee0b69e90bac14446a4cf9a050f87f2e");
             var deitySelection = library.Get<BlueprintFeatureSelection>("59e7a76987fe3b547b9cce045f4db3e4");
             //var Asmodeus = library.Get<BlueprintFeature>("66eacc4a718b4534f9e9016b58851a98");
-            
+
             //Helpers.
             //Asmodeus.
             // TODO: blessings. There are 37, so 74 abilities total (PF:K only implements 33 domains).

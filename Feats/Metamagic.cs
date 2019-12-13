@@ -117,7 +117,7 @@ namespace EldritchArcana
                         newMetamagic |= (Metamagic)ModMetamagic.Toppling;
                     }
                 }
-                
+
                 spell.AvailableMetamagic |= newMetamagic;
                 if (spell.Parent != null) spell.Parent.AvailableMetamagic |= newMetamagic;
             }
@@ -187,7 +187,7 @@ namespace EldritchArcana
             //string plaatje1 = powerplaatje.GetInstanceID().ToString();
 
             elementalSpellFeat.SetFeatures(
-                CreateElementalMetamagicFeat(ModMetamagic.ElementalFire, DamageEnergyType.Fire, "8fe8989edd8847968d36c57f90a1f344", fire ),
+                CreateElementalMetamagicFeat(ModMetamagic.ElementalFire, DamageEnergyType.Fire, "8fe8989edd8847968d36c57f90a1f344", fire),
                 CreateElementalMetamagicFeat(ModMetamagic.ElementalCold, DamageEnergyType.Cold, "9fafef03ad234c389b36e9c13199e60a", cold),
                 CreateElementalMetamagicFeat(ModMetamagic.ElementalElectricity, DamageEnergyType.Electricity, "f506a40aa32440839ba83177781d18b5", shoc),
                 CreateElementalMetamagicFeat(ModMetamagic.ElementalForce, DamageEnergyType.Magic, "f506a40cb32440839ba83177781d18b5", forc),
@@ -202,8 +202,8 @@ namespace EldritchArcana
 
         static BlueprintFeature CreateElementalMetamagicFeat(ModMetamagic metamagic, DamageEnergyType energyType, String assetId, Sprite icon)
         {
-            
-            var displayName = energyType.ToString().ToLower() == "magic" ? RES.NewMetamagicNamesElementalForcePrefix_info : 
+
+            var displayName = energyType.ToString().ToLower() == "magic" ? RES.NewMetamagicNamesElementalForcePrefix_info :
                 LocalizedTexts.Instance.DamageEnergy.GetText(energyType);
             var friendlyName = string.Format(RES.MetamagicFeatElementalSpellName_info, displayName);
             var description = string.Format(RES.MetamagicFeatElementalSpellDescription_info, displayName);
@@ -372,7 +372,7 @@ namespace EldritchArcana
         {
             try
             {
-                
+
                 var context = evt.Context;
                 if (context.AbilityBlueprint.Type == AbilityType.Spell &&
                     (context.Params.Metamagic & (Metamagic)ModMetamagic.Elemental) != 0)
@@ -463,7 +463,7 @@ namespace EldritchArcana
                 if (spellContext == null || target == null) return;
 
                 var spellbook = spellContext.Ability.Spellbook;
-                
+
                 if (evt.Damage > 0 && context.HasMetamagic((Metamagic)ModMetamagic.Dazing))
                 {
                     var savingThrow = context.SavingThrow;
@@ -502,7 +502,7 @@ namespace EldritchArcana
                 var spellContext = context?.SourceAbilityContext;
                 var target = Helpers.GetTargetWrapper()?.Unit;
                 if (spellContext == null || target == null) return;
-                
+
                 if (evt.Damage > 0 && context.HasMetamagic((Metamagic)ModMetamagic.Rime) &&
                     evt.DamageBundle.Any(b => (b as EnergyDamage)?.EnergyType == DamageEnergyType.Cold))
                 {

@@ -1,31 +1,20 @@
 // Copyright (c) 2019 Jennifer Messerly
 // This code is licensed under MIT license (see LICENSE for details)
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Prerequisites;
 using Kingmaker.Blueprints.Classes.Selection;
-using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.Blueprints.Facts;
-using Kingmaker.Controllers.MapObjects;
-using Kingmaker.EntitySystem;
-using Kingmaker.EntitySystem.Entities;
 using Kingmaker.EntitySystem.Stats;
 using Kingmaker.Enums;
-using Kingmaker.PubSubSystem;
 using Kingmaker.RuleSystem;
 using Kingmaker.RuleSystem.Rules;
 using Kingmaker.UI.Common;
-using Kingmaker.UnitLogic;
-using Kingmaker.UnitLogic.Abilities.Blueprints;
-using Kingmaker.UnitLogic.Class.LevelUp;
-using Kingmaker.UnitLogic.Class.LevelUp.Actions;
-using Kingmaker.UnitLogic.FactLogic;
 using Kingmaker.UnitLogic.Mechanics.Components;
 using Kingmaker.View.MapObjects;
+using System;
+using System.Collections.Generic;
 
 namespace EldritchArcana
 {

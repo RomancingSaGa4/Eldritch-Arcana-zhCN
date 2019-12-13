@@ -1,9 +1,6 @@
 // Copyright (c) 2019 Jennifer Messerly
 // This code is licensed under MIT license (see LICENSE for details)
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.ElementsSystem;
@@ -21,6 +18,9 @@ using Kingmaker.UnitLogic.Mechanics.Actions;
 using Kingmaker.UnitLogic.Mechanics.Components;
 using Kingmaker.UnitLogic.Mechanics.Conditions;
 using Kingmaker.Utility;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using static Kingmaker.UnitLogic.Commands.Base.UnitCommand;
 using RES = EldritchArcana.Properties.Resources;
 
@@ -169,7 +169,7 @@ namespace EldritchArcana
             var spell = library.CopyAndAdd(fireball, "MeteorSwarm", "2d18f8a4de6742e2ba954da0f19a4957");
             spell.SetNameDescriptionIcon(RES.MeteorSwarmAbilityName_info,
                 RES.MeteorSwarmAbilityDescription_info,
-                Image2Sprite.Create("Mods/EldritchArcana/sprites/meteor_swarm.png")); 
+                Image2Sprite.Create("Mods/EldritchArcana/sprites/meteor_swarm.png"));
             spell.LocalizedSavingThrow = Helpers.CreateString($"{spell.name}.SavingThrow", RES.MeteorSwarmSavingThrowDescription_info);
 
             var deliverProjectile = UnityEngine.Object.Instantiate(fireball.GetComponent<AbilityDeliverProjectile>());
