@@ -64,8 +64,8 @@ namespace EldritchArcana
             })));
 
             var choices = new List<BlueprintFeature>();
-            choices.Add(Helpers.CreateFeature("NatureWardDrawback", RES.PhysiqueDrawbackName_info,
-                RES.PhysiqueDrawbackDescription_info,
+            choices.Add(Helpers.CreateFeature("NatureWardDrawback", RES.NatureWardDrawbackName_info,
+                RES.NatureWardDrawbackDescription_info,
                 PhysiqueGuids[1],
                 Helpers.GetIcon("1670990255e4fe948a863bafd5dbda5d"), // Boon Companion
                 FeatureGroup.None,

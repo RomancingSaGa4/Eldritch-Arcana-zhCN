@@ -148,25 +148,25 @@
     <value>凌空而行</value>
   </data>
   <data name="AirWalkCommunalAbilityDescription_info" xml:space="preserve">
-    <value>施法者及其半径30英尺范围内的队友获得“凌空而行”的效果：
+    <value>施法者及其半径30英尺范围内的盟友获得“凌空而行”的效果：
 {0}</value>
   </data>
   <data name="AirWalkCommunalAbilityName_info" xml:space="preserve">
     <value>共用凌空而行</value>
   </data>
   <data name="AnatomistTraitDescription_info" xml:space="preserve">
-    <value>解剖学家</value>
+    <value>作为一介大学医科生或是死灵师学徒，你接受过解剖学的系统训练。你知晓如何瞄准对方最致命的器官。
+效益：你在进行确认重击的检定时获得+1背景加值。</value>
   </data>
   <data name="AnatomistTraitName_info" xml:space="preserve">
-    <value>作为一介大学医科生或是死灵师学徒，你接受过解剖学的系统训练。你知晓如何瞄准对方最致命的器官。
-效益：你在确认重击的检定中获得+1背景加值。</value>
+    <value>解剖学家</value>
   </data>
   <data name="AncientLorekeeperClassSkillsDescription_info" xml:space="preserve">
-    <value>传古学者将知识（神秘）加入其职业技能。</value>
+    <value>传古学者将知识（神秘）加入其本职技能。</value>
   </data>
   <data name="AncientLorekeeperDescription_info" xml:space="preserve">
     <value>传古学者是精灵一族广博知识和信仰的活图书馆。他们在年轻时就已对此展现出浓厚的兴趣，并能理解历史、续写传说；而当成年时，他们为自己这个长寿种族的久远记忆服务的意愿便已被所有认识他们的人所熟知。
-传古学者将知识（神秘）加入他们的职业技能列表中，这将取代他们从秘示域获得的奖励技能。</value>
+传古学者将知识（神秘）加入他们的本职技能列表中，这将取代他们从秘示域获得的奖励技能。</value>
   </data>
   <data name="AncientLorekeeperElvenArcanaDescription_info" xml:space="preserve">
     <value>2级时，传古学者对精灵传奇和哲学的精通使他们能够掌握一项精灵法师的法术。他们可以选择一个法师/术士列表中的法术，这一法术等级需比他们当前最高可施展的先知法术等级低至少一级。传古学者将这一法术作为额外可知法术。这一法术在任何情况下都被视为比起本身法术等级高一级的法术。传古学者在4级，6级，8级，10级，12级，14级，16级和18级可以再选择一项额外法术。
@@ -180,7 +180,7 @@
   </data>
   <data name="AnimalFriendTraitDescription_info" xml:space="preserve">
     <value>你一直都是动物的朋友，并且会在附近有动物时感到安心。
-效益：如果你有动物伙伴或者使魔，你的意志豁免检定获得+1背景加值，并且学识（自然）成为你的职业技能。</value>
+效益：如果你有动物伙伴或者使魔，你的意志豁免检定获得+1背景加值，并且学识（自然）成为你的本职技能。</value>
   </data>
   <data name="AnimalFriendTraitName_info" xml:space="preserve">
     <value>动物之友（侏儒）</value>
@@ -189,16 +189,16 @@
     <value>任何知识/学识技能</value>
   </data>
   <data name="applyPatch_error" xml:space="preserve">
-    <value>应用补丁：{0}失败：{1}！</value>
+    <value>应用补丁：{0}失败：{1}</value>
   </data>
   <data name="applyPathHarmony_error" xml:space="preserve">
-    <value>应用补丁：{0}失败：找不到Harmony属性！</value>
+    <value>应用补丁：{0}失败：找不到Harmony属性</value>
   </data>
   <data name="applyPathMethod" xml:space="preserve">
-    <value>应用补丁：{0}失败：没有生成动态方法！</value>
+    <value>应用补丁：{0}失败：没有生成动态方法</value>
   </data>
   <data name="applyPath_warning" xml:space="preserve">
-    <value>无法应用补丁：{0}！</value>
+    <value>无法应用补丁：{0}</value>
   </data>
   <data name="ArcaneApotheosisFeatureDescription_info" xml:space="preserve">
     <value>
@@ -231,11 +231,11 @@
     <value>奥术学者</value>
   </data>
   <data name="ArmorExpertTraitDescription_info" xml:space="preserve">
-    <value>披甲专家</value>
-  </data>
-  <data name="ArmorExpertTraitName_info" xml:space="preserve">
     <value>无论是作为见习骑士的训练、或单纯地出于对英雄的模仿，从记事起你便身披甲胄。儿时所穿的铠甲未必真具备防护力，但这种仿真的负重练习毕竟是一种磨练，使长大的你如今披甲行动时姿态更加优雅。
 效益：你身穿任何种类的盔甲时，该盔甲的防具检定减值下降1点，最低为0。</value>
+  </data>
+  <data name="ArmorExpertTraitName_info" xml:space="preserve">
+    <value>披甲专家</value>
   </data>
   <data name="AsthmaticDrawbackDescription_info" xml:space="preserve">
     <value>你身患哮喘，呼吸困难。
@@ -250,7 +250,7 @@
   </data>
   <data name="AvidReaderTraitDescription_info" xml:space="preserve">
     <value>青年时，你如痴如狂地阅读诸如冒险家行会的成员，或是开拓者协会之类博学组织提供的书本和卷轴。你把这些勇敢冒险者的故事牢牢印在了脑海里。
-效益：选择一项知识技能。即便在受到威胁或被被扰乱时，你在该项知识技能的检定中仍能始终投出10。</value>
+效益：选择一项知识技能。即便在受到威胁或被被扰乱时，你在进行该项知识技能的检定时仍能取10作为掷骰结果。</value>
   </data>
   <data name="AvidReaderTraitName_info" xml:space="preserve">
     <value>书痴</value>
@@ -294,6 +294,13 @@
   <data name="BastardTraitName_info" xml:space="preserve">
     <value>私生子</value>
   </data>
+  <data name="BeastOfSocietyTraitDescription_info" xml:space="preserve">
+    <value>一位德鲁伊大师向你揭示了如何在变身为动物时更为专注的秘法。
+效益：你每天获得4次额外的野性变身能力。</value>
+  </data>
+  <data name="BeastOfSocietyTraitName_info" xml:space="preserve">
+    <value>社群之兽</value>
+  </data>
   <data name="BerserkerOfTheSocietyTraitDescription_info" xml:space="preserve">
     <value>你长期在社群中的奉献使你对狂暴的渊源的有了更深刻的理解。
 效益：你每天能使用狂暴技能的轮数延长3轮。</value>
@@ -314,6 +321,13 @@
   </data>
   <data name="BladeOfTheSocietyTraitName_info" xml:space="preserve">
     <value>社群利刃</value>
+  </data>
+  <data name="BlightedTraitDescription_info" xml:space="preserve">
+    <value>你经常暴露在瘴气之中，这改变了你的体质，使你形容枯槁，皮肤硬化。
+效益：你的天生防御等级获得+1加值，但是你的体质产生了变异。你在受到魔法治疗时每个治疗骰的回复值受到-1减值。</value>
+  </data>
+  <data name="BlightedTraitName_info" xml:space="preserve">
+    <value>枯萎身形</value>
   </data>
   <data name="BloodHavocMutationFeatureDescription_info" xml:space="preserve">
     <value>每当血脉狂怒者或者术士获得一个新的血承能力，他可以将这个血承能力换成一个其满足先决条件的血统突变。一旦他作出这个选择就无法改变。血脉狂怒者或术士不能将一个已经被变体改变或取代的血承能力替换为血统突变。血脉狂怒者无须进入血怒来使用他的血统突变。另外，血脉狂怒者或术士可以选择一个血统突变来代替血承奖励专长，只要他的职业等级不低于该突变通常取代的血承能力的等级。
@@ -345,7 +359,7 @@
     <value>2级时，以及之后每提升2级，先知都可以额外学习一个源于他们秘示域的法术。</value>
   </data>
   <data name="BloodlineOrcPowerOfGiantsBuffDescription_info" xml:space="preserve">
-    <value>达到15级时，你可以用一个标准动作使体型变大。你的力量获得+6体型加值，敏捷承受-2体型减值，体质获得+4体型加值，+4天生防御加值。你也可以用一个标准动作恢复到正常体型。你每天可以维持该巨大体型达1分钟/每角色等级；你无须一次性用完这段持续时间，但必须至少以1分钟为单位来使用这段时间。</value>
+    <value>15级起，你可以用一个标准动作使体型变大。你的力量获得+6体型加值，敏捷承受-2体型减值，体质获得+4体型加值，+4天生防御加值。你也可以用一个标准动作恢复到正常体型。你每天可以维持该巨大体型达1分钟/每角色等级；你无须一次性用完这段持续时间，但必须至少以1分钟为单位来使用这段时间。</value>
   </data>
   <data name="BloodlineOrcPowerOfGiantsBuffName_info" xml:space="preserve">
     <value>巨人之力</value>
@@ -370,7 +384,7 @@
     <value>狂暴之触</value>
   </data>
   <data name="BloodlineOrcWarlordRebornFeatureDescription_info" xml:space="preserve">
-    <value>达到20级时，你成为了一个真正的传说中的兽人军阀。你获得火焰免疫和伤害减免5/-。你能够以类法术能力每天施放1次战法转换，使用术士等级作为施法者等级。</value>
+    <value>达到20级后，你成为了一个真正的传说中的兽人军阀。你获得火焰免疫和伤害减免5/-。你能够以类法术能力每天施放1次战法转换，使用术士等级作为施法者等级。</value>
   </data>
   <data name="BloodlineOrcWarlordRebornFeatureName_info" xml:space="preserve">
     <value>军神重生</value>
@@ -405,8 +419,15 @@
   <data name="BonusSpellLevelFeatureName_info" xml:space="preserve">
     <value>奖励已知法术（{0}级）</value>
   </data>
+  <data name="BruisingIntellectTraitDescription_info" xml:space="preserve">
+    <value>你锋芒毕露的智慧和针刺般锋锐的直觉使对手难以招架。
+效益：威吓成为你的本职技能，并且你在进行威吓技能检定时可以使用智力修正值而非魅力。</value>
+  </data>
+  <data name="BruisingIntellectTraitName_info" xml:space="preserve">
+    <value>锋芒之智</value>
+  </data>
   <data name="BruteTraitDescription_info" xml:space="preserve">
-    <value>你作为打手或者门卫为一位罪恶领主卖命，并精于吓跑人群。你的威吓检定获得+1背景加值，并且总能将威吓视为你的职业技能。</value>
+    <value>你作为打手或者门卫为一位罪恶领主卖命，并精于吓跑人群。你的威吓检定获得+1背景加值，并且总能将威吓视为你的本职技能。</value>
   </data>
   <data name="BruteTraitName_info" xml:space="preserve">
     <value>狗腿子（半兽人）</value>
@@ -477,6 +498,12 @@
   <data name="ChooseMysteryLocalized_info" xml:space="preserve">
     <value>选择秘视域</value>
   </data>
+  <data name="ClassicallySchooledTraitDescription_info" xml:space="preserve">
+    <value>你小时候最大的兴趣并不在于时事或世俗——你一直感觉自己不合时宜，就好像出生在错误的时代一样。但反之你可以轻松地进行关于浩瀚众界和历史事件的哲学讨论。</value>
+  </data>
+  <data name="ClassicallySchooledTraitName_info" xml:space="preserve">
+    <value>学院派</value>
+  </data>
   <data name="CombatTraitDescription_info" xml:space="preserve">
     <value>战斗背景聚焦于角色战技及肉体方面的相关背景。</value>
   </data>
@@ -517,6 +544,19 @@
   </data>
   <data name="CustomTraitName_info" xml:space="preserve">
     <value>自定义特性｛作弊｝</value>
+  </data>
+  <data name="DaggerboyTraitDescription_info" xml:space="preserve">
+    <value>你自幼水性了得，下水宛如吃饭呼吸。你还曾跟着一群河盗做过夜间水上杀人越货的买卖。你甚至可以咬着一把匕首在水下割断商船的缆绳。
+效益：你在进行游泳（运动作为本职技能）检定时获得+1背景加值，在使用匕首时伤害检定获得+1背景加值，并且你在开始游戏时获得一把匕首。</value>
+  </data>
+  <data name="DaggerboyTraitName_info" xml:space="preserve">
+    <value>翻江鼠</value>
+  </data>
+  <data name="DangerouslyCuriousTraitDescription_info" xml:space="preserve">
+    <value>你总是被魔法所吸引，这也许由于你出身于魔法师或神仆家庭。你经常偷偷摸进父母的实验室或神庙去捣蛋，把玩法术材料或是魔法装置，并且频繁地造成小破坏，令你的父母头痛不已。</value>
+  </data>
+  <data name="DangerouslyCuriousTraitName_info" xml:space="preserve">
+    <value>致命好奇</value>
   </data>
   <data name="DefenderOfTheSocietyTraitDescription_info" xml:space="preserve">
     <value>你在与社群中最强的战士们搏斗和学习的过程中，对披甲时的防御技能有了更深刻的理解。
@@ -658,7 +698,7 @@
   </data>
   <data name="EldritchHeritageFeatureDescription_info" xml:space="preserve">
     <value>你是一个术士家族的八辈子孙，有一些源于你祖先的力量流淌在你的血液之中。
-你需要选择一个术士血承，并且你必须在该血承1级时给予术士的职业技能上有技能专攻（例如天界血承的“医疗技能”，见下）。如果你已有一个血承，那这个血承不能是你已选择的血承。如此你就能获得对应血承的1级血承能力。你在使用该能力时职业等级视为角色等级-2，而非你的术士等级（即便你有）。你也无法获得你选择的这个血承的其他血承能力。</value>
+你需要选择一个术士血承，并且你必须在该血承1级时给予术士的本职技能上有技能专攻（例如天界血承的“医疗技能”，见下）。如果你已有一个血承，那这个血承不能是你已选择的血承。如此你就能获得对应血承的1级血承能力。你在使用该能力时职业等级视为角色等级-2，而非你的术士等级（即便你有）。你也无法获得你选择的这个血承的其他血承能力。</value>
   </data>
   <data name="EldritchHeritageFeatureName_info" xml:space="preserve">
     <value>悠远血脉</value>
@@ -684,12 +724,25 @@
   <data name="EmergencyForceSphereSpells_info" xml:space="preserve">
     <value>紧急力场护罩</value>
   </data>
+  <data name="EmotionDrawbackDescription_info" xml:space="preserve">
+    <value>情感缺陷着重于描述角色背景的精神方面的残缺。</value>
+  </data>
+  <data name="EmotionDrawbackName_info" xml:space="preserve">
+    <value>情感缺陷</value>
+  </data>
   <data name="EmpathicDiplomatStatTraitDescription_info" xml:space="preserve">
     <value>你对内在完美、力量与速度本质的长时冥思，使你能将精神与思考高度集中，完成那些仅凭肉体无法办到的事情。
 效益：你在进行{0}的技能检定时可以使用感知修正值而非{1}。</value>
   </data>
   <data name="EmpathicDiplomatStatTraitName_info" xml:space="preserve">
-    <value>使用感知修正值进行{0}的检定。</value>
+    <value>使用感知修正值进行{0}检定</value>
+  </data>
+  <data name="EmpathicDiplomatTraitDescription_info" xml:space="preserve">
+    <value>使用沟通技能时，你长期遵守常识和同理心的视点。
+效益：你在进行沟通技能检定时可以使用感知修正值而非魅力。</value>
+  </data>
+  <data name="EmpathicDiplomatTraitName_info" xml:space="preserve">
+    <value>共情交际</value>
   </data>
   <data name="EnergyBodyFeatureDescription_info" xml:space="preserve">
     <value>你能以一个标准动作将自己的身体化为纯净的生命能量，在外观上看来就如同一个金光闪闪的火元素一般。在此形态下，你获得元素亚种特性，并且你浑身散发的怡人暖光会使得身周10英尺范围内的光照等级上升一级，最高到正常光照水平。任何用自己的身体部分或持有武器近战攻击你的不死生物都能正常造成伤害，但同时也会受到1d6+每先知等级1点的正向能量伤害。用长触及武器攻击你的生物不受此效果影响。如果你在此状态下擒抱或者通过天生武器或徒手击打攻击不死生物，你也可以选择造成此伤害而非你的正常攻击伤害。每轮一次，如果你穿越一个盟友占据的方格或者一个盟友穿越你占据的方格，同时治疗他1d6+每先知等级1点的伤害，你也可以通过一个移动动作以此能力治疗自己，并且你自己可以选择是否治疗穿过你的盟友。你可以以一个自由动作返回正常形态，你每天可以转换为能量形态的轮数等同于你的先知等级。</value>
@@ -825,13 +878,13 @@
   </data>
   <data name="FeyFoundlingFeatureDescription_info" xml:space="preserve">
     <value>当你在野外被找到时你还是个孩子。
-无论何时，当你受到魔法治疗时，你受到的治愈效果在每次掷骰时都将额外+2。你在对抗死亡效果的所有豁免检定时均获得2点加值。不幸的是，在你受到寒铁武器造成的伤害时，将额外增加1点伤害（尽管你仍旧可以使用寒铁武器而不会感到明显的不适）。</value>
+你在受到魔法治疗时每个治疗骰的回复值受到+2加值。你在对抗死亡效果的所有豁免检定时均获得+2点加值。但相对的，你在受到寒铁武器造成的伤害时，将额外受到1点伤害（尽管你仍旧可以使用寒铁武器而不会感到明显的不适）。</value>
   </data>
   <data name="FeyFoundlingFeatureName_info" xml:space="preserve">
     <value>精类遗孤</value>
   </data>
   <data name="FinalRevelationFeatureDescription_info" xml:space="preserve">
-    <value>达到20级时，你成为了生命能量的完美通道。你免疫流血，死亡，力竭，疲劳，反胃，负向等级和恶心效果。属性伤害和吸取无法将你的任何属性降低到1以下。</value>
+    <value>达到20级后，你成为了生命能量的完美通道。你免疫流血，死亡，力竭，疲劳，反胃，负向等级和恶心效果。属性伤害和吸取无法将你的任何属性降低到1以下。</value>
   </data>
   <data name="FinalRevelationFeatureName_info" xml:space="preserve">
     <value>最终启示</value>
@@ -840,7 +893,7 @@
     <value>火焰法术</value>
   </data>
   <data name="FixBloodlineSpellDescription_info" xml:space="preserve">
-    <value>达到3级时，以及之后每升2级，术士都可以额外学习一个来自于血承的法术。该法术不计入新等级赋予的法术数量。
+    <value>3级时，以及之后每升2级，术士都可以额外学习一个来自于血承的法术。该法术不计入新等级赋予的法术数量。
 {0}</value>
   </data>
   <data name="FixElementalSpells_info" xml:space="preserve">
@@ -906,6 +959,13 @@
   <data name="FlyWingDraconicWhiteName_info" xml:space="preserve">
     <value>白龙</value>
   </data>
+  <data name="FocusedMindTraitDescription_info" xml:space="preserve">
+    <value>你的童年可能被某种科班课程（音乐、学术等等）所占据；又或是糟糕的家庭氛围迫使你专注于手头的工作、锻炼了你不被干扰的本领。
+效益：你在进行专注检定时获得+2背景加值。</value>
+  </data>
+  <data name="FocusedMindTraitName_info" xml:space="preserve">
+    <value>心无旁骛</value>
+  </data>
   <data name="ForlornTraitDescription_info" xml:space="preserve">
     <value>你的大半生都生活在远离精灵传统社会的荒野。你了解世界的残酷与危险，身为弱者则不可原谅。
 效益：你在强韧豁免检定时获得+1背景加值。</value>
@@ -958,6 +1018,13 @@
   </data>
   <data name="FrostbornTraitName_info" xml:space="preserve">
     <value>霜脉（矮人）</value>
+  </data>
+  <data name="GiftedAdeptTraitDescription_info" xml:space="preserve">
+    <value>你对魔法的兴趣，可能是在目击了某次以特别拉风的手段施法后被激发的，这种偏好也许在肉体和精神上都影响着你。这种早期对魔法的接触，使得你在自己施展类似法术时也更易上手。
+效益：在你选择该背景特性时，指定一个法术。当你施展该法术时，施法者等级+1。</value>
+  </data>
+  <data name="GiftedAdeptTraitName_info" xml:space="preserve">
+    <value>天赋异禀</value>
   </data>
   <data name="GloryOfOldTraitDescription_info" xml:space="preserve">
     <value>你曾是一名王国近卫。
@@ -1013,6 +1080,14 @@
   <data name="GroundedTraitName_info" xml:space="preserve">
     <value>理性（矮人）</value>
   </data>
+  <data name="HairloomTraitDescription_info" xml:space="preserve">
+    <value>你从某人那里继承来一把兵刃。
+效益：你可以选择某种武器，开始游戏时你获得一把+1附魔的该种武器。
+效益：当你使用选择的武器种类时，你在攻击检定和战技检定上获得+1背景加值。</value>
+  </data>
+  <data name="HairloomTraitName_info" xml:space="preserve">
+    <value>家传兵刃</value>
+  </data>
   <data name="HealingHandsFeatureDescription_info" xml:space="preserve">
     <value>你在医疗检定上获得+4加值。你能以一个迅捷动作使用{0}。</value>
   </data>
@@ -1043,7 +1118,7 @@
     <value>异乡来客的法术获得最大的施法者等级和DC加值（作弊）</value>
   </data>
   <data name="HonoredFistOfTheSocietyTraitDescription_info" xml:space="preserve">
-    <value>你精研某些只为本社群保有的古典秘笈，造诣远超同侪。
+    <value>你精研某些仅为本社群保有的古典秘笈，造诣远超同侪。
 效益：你气海的真气容量增加1点。</value>
   </data>
   <data name="HonoredFistOfTheSocietyTraitName_info" xml:space="preserve">
@@ -1079,6 +1154,13 @@
   </data>
   <data name="IndomitableFaithTraitName_info" xml:space="preserve">
     <value>坚贞信仰</value>
+  </data>
+  <data name="IronLiverTraitDescription_info" xml:space="preserve">
+    <value>由于你天生体质强健，亦或是得益于你长期的野外行动，你对毒素产生了抗性，这其中包括药物或是酒精。
+效益：你在进行毒素和药物的强韧检定时获得+2背景加值，醉酒的强韧检定时获得+4背景加值。</value>
+  </data>
+  <data name="IronLiverTraitName_info" xml:space="preserve">
+    <value>铁铸肝脏</value>
   </data>
   <data name="KeepAllSpellsFeatureDescription_info" xml:space="preserve">
     <value>选择此选项可略过替换此级别的已知法术。</value>
@@ -1130,7 +1212,7 @@
     <value>生命链接</value>
   </data>
   <data name="LifeMysteryProgressionDescription_info" xml:space="preserve">
-    <value>职业技能：{0}，{1}
+    <value>本职技能：{0}，{1}
 选择了生命秘示域的先知可以选择以下启示：</value>
   </data>
   <data name="LifeMysteryProgressionName_info" xml:space="preserve">
@@ -1207,6 +1289,20 @@
   <data name="MagesTattooFeatureName_info" xml:space="preserve">
     <value>法师刺青</value>
   </data>
+  <data name="MagicalKnackTraitDescription_info" xml:space="preserve">
+    <value>你的全部或部分童年，是由某位魔法生物陪伴度过的——也许是它发现了被遗弃在林中的你，又或许是父母常把你丢给魔宠照顾。这种成长环境使你更易于理解魔法的神秘所在，哪怕你早已投身其他行业。
+效益：在你选择此背景特性时，指定一个职业。你在该职业的施法者等级获得+2背景加值，合计施法者等级不超过你当前的生命骰数。</value>
+  </data>
+  <data name="MagicalKnackTraitName_info" xml:space="preserve">
+    <value>施法诀窍</value>
+  </data>
+  <data name="MagicalLineageTraitDescription_info" xml:space="preserve">
+    <value>你的双亲之一是一位天才施法者，不仅精于超魔技巧，甚至还能自行制作魔法物品乃至创造新法术，而你遗传了一部分双亲的伟大天赋。
+效益：在你选择此背景特性时，指定一个法术。当你对该法术施以超魔强化时，其最终法术等级视为比正常情况低1级（超魔强化后仅增加1级的情况除外）。</value>
+  </data>
+  <data name="MagicalLineageTraitName_info" xml:space="preserve">
+    <value>魔力血脉</value>
+  </data>
   <data name="MagicTraitDescription_info" xml:space="preserve">
     <value>魔法背景聚焦于角色在过去可能遭遇过的魔法事件或是进行过的魔法训练。</value>
   </data>
@@ -1246,6 +1342,13 @@
   </data>
   <data name="MetamagicAdeptFeatureName_info" xml:space="preserve">
     <value>超魔专擅（奥术血承）</value>
+  </data>
+  <data name="MetamagicApprenticeTraitDescription_info" xml:space="preserve">
+    <value>你对你的法术应用超魔技巧比常人更为精湛。
+效益：在你选择该背景特性时，选择一个3级以下的法术。当你对该法术施以超魔强化时，其最终法术等级视为比正常情况低1级（超魔强化后仅增加1级的情况除外）。</value>
+  </data>
+  <data name="MetamagicApprenticeTraitName_info" xml:space="preserve">
+    <value>超魔大师</value>
   </data>
   <data name="MetamagicElementalSpellSelectionDescription_info" xml:space="preserve">
     <value>选择一项能量类型：酸蚀、寒冷、电击、火焰或力场。你会用该能量类型取代法术原来的能量类型。
@@ -1378,7 +1481,7 @@
     <value>奇迹术</value>
   </data>
   <data name="MisbegottenDrawbackDescription_info" xml:space="preserve">
-    <value>无论是由于恶意的魔法，疾病，还是诸神的，你与生俱来身有残缺，并展现在你的不良于行上。
+    <value>无论是由于恶意的魔法，疾病，还是诸神的嘲弄，你与生俱来身有残缺，并展现在你的不良于行上。
 缺陷：所有敏捷相关的技能检定受到-2减值。</value>
   </data>
   <data name="MisbegottenDrawbackName_info" xml:space="preserve">
@@ -1398,11 +1501,11 @@
   </data>
   <data name="MysteryBattleDescription_info" xml:space="preserve">
     <value>
-职业技能：{0}，{1}
+本职技能：{0}，{1}
 选择了战斗秘示域的先知可以选择以下启示：</value>
   </data>
   <data name="MysteryBattleFinalRevelationDescription_info" xml:space="preserve">
-    <value>达到20级时，你成为了战斗的化身。你能以整轮动作进行一次全力攻击，并移动相当于你速度的距离（你可以在攻击之前或之后移动）。当你造成重击时，你可以忽略目标可能拥有的伤害减免。在进行重击确认时你在AC上获得+4的洞察加值。</value>
+    <value>达到20级后，你成为了战斗的化身。你能以整轮动作进行一次全力攻击，并移动相当于你速度的距离（你可以在攻击之前或之后移动）。当你造成重击时，你可以忽略目标可能拥有的伤害减免。在进行重击确认时你在AC上获得+4的洞察加值。</value>
   </data>
   <data name="MysteryBattleIronSkinDescription_info" xml:space="preserve">
     <value>每天1次，你的皮肤可以变得如同钢铁一般坚硬，使你获得伤害减免“10/精金”。该能力的效果如同“石肤术”，并使用你的先知等级作为施法者等级。15级后你每天可以使用此能力2次。</value>
@@ -1454,10 +1557,10 @@
     <value>武器大师</value>
   </data>
   <data name="MysteryClassSkillsFeatureDescription_info" xml:space="preserve">
-    <value>先知可以获得源于其秘示域的额外职业技能。</value>
+    <value>先知可以获得源于其秘示域的额外本职技能。</value>
   </data>
   <data name="MysteryClassSkillsFeatureName_info" xml:space="preserve">
-    <value>职业技能奖励</value>
+    <value>本职技能奖励</value>
   </data>
   <data name="MysteryDragonBreathWeaponConeOfEnergyType_info" xml:space="preserve">
     <value>{0}锥形吐息</value>
@@ -1479,7 +1582,7 @@
 在选择了此秘示域后，先知必须再选择一种能量类型（火焰，寒冷，电击或者酸蚀）作为其关联元素，这个选择将会影响巨龙秘示域的某些启示。</value>
   </data>
   <data name="MysteryDragonFinalRevelationDescription_info" xml:space="preserve">
-    <value>达到20级时，你的龙裔命运显露出来。你对麻痹、睡眠和你选定的能量伤害免疫。你作为法术及魔法效果目标时被视作龙类。如果你获得了喷吐攻击的启示，你每天能够无限次使用该能力，但是每1d4+1轮内只能使用一次。</value>
+    <value>达到20级后，你的龙裔命运显露出来。你对麻痹、睡眠和你选定的能量伤害免疫。你作为法术及魔法效果目标时被视作龙类。如果你获得了喷吐攻击的启示，你每天能够无限次使用该能力，但是每1d4+1轮内只能使用一次。</value>
   </data>
   <data name="MysteryDragonFormDescription_info" xml:space="preserve">
     <value>你和龙类的亲密关系使你能变形为龙的形态。你能以一个标准动作变为中体型类龙生物，如同龙形I。15级时，你能变为大体型类龙生物，如同龙形II。你每天能使用该能力1次，持续时间为每先知等级10分钟。如果你在15级后使用该能力变为中体型龙，则持续时间为每先知等级1小时。</value>
@@ -1548,7 +1651,7 @@
     <value>神龙摆尾</value>
   </data>
   <data name="MysteryDragonTalonsDescription_info" xml:space="preserve">
-    <value>你使用龙类的可怖利爪作战。你能够以自由动作长出利爪。利爪被视为天生武器，使你能够在整轮攻击时，以最高基础攻击加值进行2次爪抓攻击。每次攻击造成1d4（小体型则为1d3点）+力量调整值的伤害。达到5级后，利爪在穿透伤害减免时可视为魔法武器。达到7级后，伤害提高一级，变为1d6点（小体型则为1d4点）。达到11级后，利爪变为你选定能量类型的武器，攻击命中后能够额外造成1d6点对应能量类型的伤害。你每天可使用爪抓的轮数等于3+魅力调整值。生效轮次无需连续。</value>
+    <value>你使用龙类的可怖利爪作战。你能够以自由动作长出利爪。利爪被视为天生武器，使你能够在整轮攻击时，以最高基础攻击加值进行2次爪抓攻击。每次攻击造成1d4（小体型则为1d3点）+力量调整值的伤害。5级起，利爪在穿透伤害减免时可视为魔法武器。7级起，伤害提高一级，变为1d6点（小体型则为1d4点）。11级起，利爪变为你选定能量类型的武器，攻击命中后能够额外造成1d6点对应能量类型的伤害。你每天可使用爪抓的轮数等于3+魅力调整值。生效轮次无需连续。</value>
   </data>
   <data name="MysteryDragonTalonsName_info" xml:space="preserve">
     <value>巨龙之爪</value>
@@ -1578,11 +1681,11 @@
     <value>灰烬之舞</value>
   </data>
   <data name="MysteryFlameDescription_info" xml:space="preserve">
-    <value>职业技能：{0}，{1}
+    <value>本职技能：{0}，{1}
 选择了烈焰秘示域的先知可以获得以下启示：</value>
   </data>
   <data name="MysteryFlameFinalRevelationDescription_info" xml:space="preserve">
-    <value>达到20级时，你成为了火焰的主宰。你可以选择将以下一项超魔专长应用到你的任何火焰法术上而不需要消费额外的高级法术位或施法时间：法术延时，法术加强，法术及远，你无需满足这些专长的先决条件。</value>
+    <value>达到20级后，你成为了火焰的主宰。你可以选择将以下一项超魔专长应用到你的任何火焰法术上而不需要消费额外的高级法术位或施法时间：法术延时，法术加强，法术及远，你无需满足这些专长的先决条件。</value>
   </data>
   <data name="MysteryFlameFinalRevelationExtendSpellName_info" xml:space="preserve">
     <value>法术延时（火焰）</value>
@@ -1600,7 +1703,7 @@
     <value>火焰风暴</value>
   </data>
   <data name="MysteryFlameFormDescription_info" xml:space="preserve">
-    <value>你能以一个标准动作变为一个小型火元素，如同法术元素形态I。在9级时，你可以变身为一个中型火元素，如同元素形态II。在11级时，你可以变身为一个大型火元素，如同元素形态III。你每天可以使用此启示一次，持续时间为每先知等级/小时。你必须达到7级才能选择本启示。</value>
+    <value>你能以一个标准动作变为一个小型火元素，如同法术元素形态I。9级起你可以变身为一个中型火元素，如同元素形态II。11级起你可以变身为一个大型火元素，如同元素形态III。你每天可以使用此启示一次，持续时间为每先知等级/小时。你必须达到7级才能选择本启示。</value>
   </data>
   <data name="MysteryFlameFormName_info" xml:space="preserve">
     <value>烈火形态</value>
@@ -1644,7 +1747,7 @@
   </data>
   <data name="MysteryHeavensDescription_info" xml:space="preserve">
     <value>那些沉醉于夜空的先知可以习得源于天空中星象之力的法术和启示——七彩星光，夜月，亦或是无尽深空。
-职业技能：{0}，{1}</value>
+本职技能：{0}，{1}</value>
   </data>
   <data name="MysteryHeavensName_info" xml:space="preserve">
     <value>苍天秘示域</value>
@@ -1657,7 +1760,7 @@
     <value>光阴之触</value>
   </data>
   <data name="MysteryTimeDescription_info" xml:space="preserve">
-    <value>职业技能：{0}，{1}
+    <value>本职技能：{0}，{1}
 选择了时光秘示域的先知可以获得以下启示：</value>
   </data>
   <data name="MysteryTimeEraseDescription_info" xml:space="preserve">
@@ -1667,7 +1770,7 @@
     <value>时光抹除</value>
   </data>
   <data name="MysteryTimeFinalRevelationDescription_info" xml:space="preserve">
-    <value>达到20级时，你成为了真正的时间掌控者，并且永葆青春。增减年龄的魔法效果对你不再有效，并且你的能力属性不再因能力增长而遭受减值。年龄相关的加值依然会生效，而你已受到的年龄相关的减值效果依然会留存。你不再会因衰老而死，但仍会死于事故，疾病，毒素，以及除此之外的原因。此外，你每天能以类法术能力使用1次时间停止。</value>
+    <value>达到20级后，你成为了真正的时间掌控者，并且永葆青春。增减年龄的魔法效果对你不再有效，并且你的能力属性不再因能力增长而遭受减值。年龄相关的加值依然会生效，而你已受到的年龄相关的减值效果依然会留存。你不再会因衰老而死，但仍会死于事故，疾病，毒素，以及除此之外的原因。此外，你每天能以类法术能力使用1次时间停止。</value>
   </data>
   <data name="MysteryTimeFlickerDescription_info" xml:space="preserve">
     <value>你能以一个标准动作在时间轴上忽隐忽现，产生隐蔽的效果（一如朦胧术）。你每天可以维持该效果达1分钟/每先知等级；你无须一次性用完这段持续时间，但必须至少以1分钟为单位来使用这段时间。7级后你使用该能力时，能选择将效果视同移位术，但生效时间缩短为1轮/每先知等级。你必须达到3级才能选择本启示。</value>
@@ -1875,7 +1978,7 @@
   <data name="NobleFamilyOrlovskyTraitDescription_info" xml:space="preserve">
     <value>家族格言：“高高在上”
 奥洛夫斯基家族在维什卡山顶的鹰栖城掌控着布雷沃的东北部地区。他们向来对于琐碎的政治斗争不屑一顾。作为现在已经消失的罗嘉维亚家族坚实的盟友，他们现在有些蠢蠢欲动。如果波尔・奥洛夫斯基爵士选择站出来反叛诺雷奇・瑟托瓦，他们可以选择先与盖雷斯家族和梅德伟耶德家族结盟。三大家族联手，将破坏瑟托瓦家族的两大重要基石——冰港和新斯特文之间的补给和运输路线。
-效益：你在战技防御上获得+1背景加值。你可以在沟通、运动和隐匿中选择一项，在该技能检定上获得+1背景加值，并且该技能成为你的职业技能。</value>
+效益：你在战技防御上获得+1背景加值。你可以在沟通、运动和隐匿中选择一项，在该技能检定上获得+1背景加值，并且该技能成为你的本职技能。</value>
   </data>
   <data name="NobleFamilyOrlovskyTraitName_info" xml:space="preserve">
     <value>奥洛夫斯基家族</value>
@@ -2032,20 +2135,20 @@
 你无法看到20英尺之外，因此你无法设定20英尺外的目标，距离外的目标视为隐蔽。</value>
   </data>
   <data name="OracleCurseCloudedVisionLevel10Description_info" xml:space="preserve">
-    <value>达到10级时，你获得30英尺内盲感。</value>
+    <value>10级起，你获得30英尺内盲感。</value>
   </data>
   <data name="OracleCurseCloudedVisionLevel15Description_info" xml:space="preserve">
-    <value>达到15级时，你获得15英尺盲视。</value>
+    <value>15级起，你获得15英尺盲视。</value>
   </data>
   <data name="OracleCurseCloudedVisionLevel5Description_info" xml:space="preserve">
-    <value>达到5级时，你的视距增加到30英尺。</value>
+    <value>5级起，你的视距增加到30英尺。</value>
   </data>
   <data name="OracleCurseCloudedVisionName_info" xml:space="preserve">
     <value>障目</value>
   </data>
   <data name="OracleCurseCovetousDescription_info" xml:space="preserve">
     <value>你发现自己沉迷于闪耀的奢华生活。
-你必须佩戴至少100gp+200gp*（人物等级-1）的非魔法物品及珠宝。如果你没有足够的资金来购买这些额外装备，你会感到强烈的渴望（但是并非强制性）的去卖掉现有装备或者偷窃他人财物。如果你无法满足这一要求，你会陷入恶心状态。使用魔法装置成为你的职业技能。</value>
+你必须佩戴至少100gp+200gp*（人物等级-1）的非魔法物品及珠宝。如果你没有足够的资金来购买这些额外装备，你会感到强烈的渴望（但是并非强制性）的去卖掉现有装备或者偷窃他人财物。如果你无法满足这一要求，你会陷入恶心状态。使用魔法装置成为你的本职技能。</value>
   </data>
   <data name="OracleCurseCovetousLevel10Description_info" xml:space="preserve">
     <value>10级时，你能使用{0}技能辨识物品。</value>
@@ -2187,7 +2290,7 @@
   </data>
   <data name="OracleMysteryFeatureDescription_info" xml:space="preserve">
     <value>每一个先知都拥有属于自己的神力奥秘以为力量和法术之源，这些秘示域也同样会给予他们以额外的本职技能和其他特殊能力。秘示域代表了一个先知所追随的信念以及对于支持类型概念神祇的赞美，或是这些大能赋予一个代行者发自内心的召唤。举例来说，一个拥有波涛秘示域的先知可能是因为她在在风口浪尖之间出生长大并受到了江河湖海之神的启迪，作为水之平静与狂暴双面的化身在人间行走。这些来源不明的能力将随着先知等级的提升而渐变演化为更多更强的力量，在她的第一个等级先知需要选择一个秘示域，一旦选定即无法更改。
-达到2级时，以及之后每提升2级，取决于她的秘示域，先知可以将额外的一个法术加入她的已知法术列表。这些法术并不算在她的已知法术数量之内，在提升等级时，先知无法替换这些法术。</value>
+2级时，以及之后每提升2级，取决于她的秘示域，先知可以将额外的一个法术加入她的已知法术列表。这些法术并不算在她的已知法术数量之内，在提升等级时，先知无法替换这些法术。</value>
   </data>
   <data name="OracleMysteryFeatureName_info" xml:space="preserve">
     <value>秘示域</value>
@@ -2263,7 +2366,7 @@
     <value>跨陆飞行</value>
   </data>
   <data name="PhysiqueDrawbackDescription_info" xml:space="preserve">
-    <value>肉体缺陷重点描述角色背景的肉体方面的残缺。</value>
+    <value>肉体缺陷着重于描述角色背景的肉体方面的残缺。</value>
   </data>
   <data name="PhysiqueDrawbackName_info" xml:space="preserve">
     <value>肉体缺陷</value>
@@ -2297,6 +2400,13 @@
   <data name="PolymorphDrawbackName_info" xml:space="preserve">
     <value>女巫诅咒</value>
   </data>
+  <data name="PragmaticActivatorTraitDescription_info" xml:space="preserve">
+    <value>不少人只知道照本宣科地按照标准流程操作魔法装置，而你的操作方法却要因地制宜得多。
+效益：你可以在进行使用魔法装置检定时使用智力修正值取代魅力修正值。</value>
+  </data>
+  <data name="PragmaticActivatorTraitName_info" xml:space="preserve">
+    <value>实用主义</value>
+  </data>
   <data name="PrerequisiteCasterSpellLevelCaption_info" xml:space="preserve">
     <value>可施放 {1} 级{0}法术</value>
   </data>
@@ -2321,6 +2431,13 @@
   </data>
   <data name="ProlongMagicTraitName_info" xml:space="preserve">
     <value>延长魔法（魔裔）</value>
+  </data>
+  <data name="ProvisionedAdventurerTraitDescription_info" xml:space="preserve">
+    <value>你一直都在筹划摆脱你至今为止的贫困人生，成为一名冒险者，因此你节衣缩食，购买一件又一件冒险的必需装备，直到你如今完全准备妥当。请选择下列物资包之一。
+效益：在开始游戏时，你的背包里将会装入平均总价值900gp的一套物资。</value>
+  </data>
+  <data name="ProvisionedAdventurerTraitName_info" xml:space="preserve">
+    <value>未雨绸缪</value>
   </data>
   <data name="RaceCarefullyHiddenTraitDescription_info" xml:space="preserve">
     <value>作为一个不受欢迎族裔的成员，你东躲西藏的生活带给你避免被发现的不可思议的诀窍。
@@ -2364,7 +2481,7 @@
   </data>
   <data name="RaceWorldTravelerTraitBenefit_info" xml:space="preserve">
     <value>
-效益：从沟通，知识（世界）或察觉中选择一项作为你的职业技能，并且该项技能在进行检定时获得+1加值。</value>
+效益：从沟通，知识（世界）或察觉中选择一项作为你的本职技能，并且该项技能在进行检定时获得+1加值。</value>
   </data>
   <data name="RaceWorldTravelerTraitDescription_info" xml:space="preserve">
     <value>你和家人痴迷于在世界各地旅行。你见识过种类繁多的不同文化，并且学会了欣赏世界所提供的多样性。</value>
@@ -2405,7 +2522,7 @@
     <value>消除呓语诅咒的负面效果（即除主角外的其他队伍成员的“知识：世界”技能不能低于1级，否则在战斗中不受指挥）</value>
   </data>
   <data name="ReplacementFeatureDescription_info" xml:space="preserve">
-    <value>达到{0}级时，以及之后每提升{1}个{2}等级（{3}级，{4}级，以此类推），{5}皆可选择学习一个新的法术来替换其已知的法术。实际上，{6}的旧法术将会被新法术取代。新法术的等级必须与被替换法术的等级相同。{7}在任何给定等级只能交换一个法术，并且必须选择是否在获得该等级已知的新法术的同时交换该法术。</value>
+    <value>{0}级时，以及之后每提升{1}个{2}等级（{3}级，{4}级，以此类推），{5}皆可选择学习一个新的法术来替换其已知的法术。实际上，{6}的旧法术将会被新法术取代。新法术的等级必须与被替换法术的等级相同。{7}在任何给定等级只能交换一个法术，并且必须选择是否在获得该等级已知的新法术的同时交换该法术。</value>
   </data>
   <data name="ReplacementFeatureName_info" xml:space="preserve">
     <value>替换法术（{0}）</value>
@@ -2445,7 +2562,7 @@
   </data>
   <data name="RuthlessTraitDescription_info" xml:space="preserve">
     <value>你对痛下杀手从来没有心理负担。
-效益：你在确认重击的检定上获得+1背景加值。</value>
+效益：你在进行确认重击的检定时获得+1背景加值。</value>
   </data>
   <data name="RuthlessTraitName_info" xml:space="preserve">
     <value>残忍（矮人）</value>
@@ -2497,7 +2614,7 @@
   </data>
   <data name="SeekerTinkeringDescription_info" xml:space="preserve">
     <value>探求者常通过寻找古代装置、老旧典籍和奇奇怪怪的魔法物品来了解他们的秘示域。这种好奇心使破解陌生而怪异机关的诀窍变成他们与生俱来的本能，因此在进行寻找陷阱的察觉检定时将获得1/2其职业等级（最小为1）的加值。如果探求者同时拥有具备寻找陷阱能力的游荡者或其他职业的等级，在决定技能检定加值时会将探求者的等级和其他职业等级加总计算。
-修修补补将取代从秘示域获得的所有其他奖励职业技能。</value>
+修修补补将取代从秘示域获得的所有其他奖励本职技能。</value>
   </data>
   <data name="SeekerTinkeringName_info" xml:space="preserve">
     <value>修修补补</value>
@@ -2512,12 +2629,19 @@
   <data name="ShowCustomPortraits_info" xml:space="preserve">
     <value>创建角色时在肖像列表中显示自定义肖像（需要重新启动游戏才能生效）</value>
   </data>
+  <data name="SignatureSpellTraitDescription_info" xml:space="preserve">
+    <value>你学会了一项增强你施法威力的秘法。
+效益：在你选择该背景特性时，指定一个法术。当你施展该法术时，施法者等级+1。</value>
+  </data>
+  <data name="SignatureSpellTraitName_info" xml:space="preserve">
+    <value>招牌法术</value>
+  </data>
   <data name="SingleLineDescription_info" xml:space="preserve">
     <value>• {0}</value>
   </data>
   <data name="SkillBonusProgressionDescription_info" xml:space="preserve">
     <value>{0}
-你在你选择的进阶职业的职业技能的检定上获得+2加值。如果这些技能为10级或以上，加值增至+4。该加值可以和技能专攻叠加，但无法和其他专长提供的加值叠加（如魔法天赋或善于沟通）。</value>
+你在你选择的进阶职业的本职技能的检定上获得+2加值。如果这些技能为10级或以上，加值增至+4。该加值可以和技能专攻叠加，但无法和其他专长提供的加值叠加（如魔法天赋或善于沟通）。</value>
   </data>
   <data name="SkipDeityFeatureDescription_info" xml:space="preserve">
     <value>选择此选项可跳过在角色创建时选择神祇。如果你获得了一个需要选择神祇的职业等级（如牧师、审判官或圣骑士），你可以在之后再选择神祇。</value>
@@ -2644,7 +2768,7 @@
   </data>
   <data name="TraitsAddStatBonusDescription_info" xml:space="preserve">
     <value>{0}
-效益：你在{1}检定上获得+1背景加值，并且{2}成为你的职业技能。</value>
+效益：你在{1}检定上获得+1背景加值，并且{2}成为你的本职技能。</value>
   </data>
   <data name="TraitsFillSpellSelection_info" xml:space="preserve">
     <value>{0}（{1} 级法术）</value>
@@ -2665,7 +2789,7 @@
     <value>{0}—{1}</value>
   </data>
   <data name="UndeadCurseDrawbackDescription_info" xml:space="preserve">
-    <value>此生物被乌伽娑婀转化为不死生物。
+    <value>此生物被厄迦图娅转化为不死生物。
 缺陷：此生物害怕火焰，神圣和崇圣属性攻击。</value>
   </data>
   <data name="UndeadCurseDrawbackName_info" xml:space="preserve">
@@ -2677,6 +2801,13 @@
   </data>
   <data name="WallOfFireAbilityName_info" xml:space="preserve">
     <value>火墙术</value>
+  </data>
+  <data name="WanderlustTraitDescription_info" xml:space="preserve">
+    <value>你的童年在与身为行商的父母一起旅行中渡过，不断见到新的景色让你的生活色彩缤纷。时至今日你依然热爱旅行，在旅行路上的你显得精力充沛。
+效益：你的陆上移动速度提高10英尺。</value>
+  </data>
+  <data name="WanderlustTraitName_info" xml:space="preserve">
+    <value>浪迹天涯</value>
   </data>
   <data name="WarriorOfOldTraitDescription_info" xml:space="preserve">
     <value>你从小就花费大量时间进行格斗训练。尽管岁月让那些训练成为了模糊的记忆，你依然从中学会如何快速应对麻烦。

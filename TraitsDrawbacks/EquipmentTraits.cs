@@ -106,9 +106,8 @@ namespace EldritchArcana
             string DefaultThings = ", three rations, a lantern and some paper to write on.";
 
 
-            var WellProvisionedTrait = Helpers.CreateFeatureSelection("ProvisionedAdventurerTrait", "Well-Provisioned Adventurer",
-                "You always knew you'd leave your humble beginnings behind and become an adventurer, so you scrimped and saved, buying the necessary equipment one piece at a time until you had everything you needed.Select one of the equipment packages in the section that just popped up.\n" +
-                "Benefit: You start the game with a backpack full of equipment with an averidge combined worth of 900 gp",
+            var WellProvisionedTrait = Helpers.CreateFeatureSelection("ProvisionedAdventurerTrait", RES.ProvisionedAdventurerTraitName_info,
+                RES.ProvisionedAdventurerTraitDescription_info,
                 PackGuids[0],
                 LargeBagOfHolding.Icon,
                 FeatureGroup.None);
@@ -335,8 +334,6 @@ namespace EldritchArcana
 
             choices.Add(WellProvisionedTrait);
 
-
-
             //weapons and weapon types
             var LongbowWeapontype = Traits.library.Get<BlueprintWeaponType>("7a1211c05ec2c46428f41e3c0db9423f");
             var LongbowPlus1 = Traits.library.Get<BlueprintItem>("fd732e6688007e449964d8c5f2fc659d");
@@ -374,9 +371,6 @@ namespace EldritchArcana
             var BastardSwordPlus1 = Traits.library.Get<BlueprintItem>("517ba772f7eec2e43999eac2014c3ab8");
             var HandCrossbow = Traits.library.Get<BlueprintWeaponType>("e702f2c2e4a8a7f4fa847dcf1e03ab07");
             var HandCrossbowPlus1 = Traits.library.Get<BlueprintItem>("239096882dc4e86479ae713ff1eddb74");
-
-
-
             var HandCrossbowProficiency = Traits.library.Get<BlueprintFeature>("8504fe61874f6a244886cca32e93b563");
             HandCrossbowProficiency.AddComponent(Helpers.Create<WeaponAttackAndCombatManeuverBonus>(a => { a.WeaponType = HandCrossbow; a.AttackBonus = 1; a.Descriptor = ModifierDescriptor.Trait; }));
             HandCrossbowProficiency.AddComponent(Helpers.Create<AddStartingEquipment>(a => { a.CategoryItems = Array.Empty<WeaponCategory>(); a.RestrictedByClass = Array.Empty<BlueprintCharacterClass>(); a.BasicItems = new BlueprintItem[] { HandCrossbowPlus1, HandCrossbowPlus1 }; }));
@@ -384,10 +378,8 @@ namespace EldritchArcana
             HandCrossbowProficiency.SetNameDescriptionIcon("Family Heirloom Hand Crossbow", "You got this hand crossbow from your family for hunting for food for your family." +
                 "\nBenefit: You are proficient with hand crosbows.", HandCrossbowPlus1.Icon);
 
-
-
-            var FamilyHeirloomTrait = Helpers.CreateFeatureSelection("HairloomTrait", "Family Heirloom Weapon",
-                "You inherited a weapon from someone.\nBenefit: You can choose a weapon and you start the game with a +1 variant on you.\nBenefit: When using weapons of this type you have a +1 bonus on attack rolls and combat maneurvers.",
+            var FamilyHeirloomTrait = Helpers.CreateFeatureSelection("HairloomTrait", RES.HairloomTraitName_info,
+                RES.HairloomTraitDescription_info,
                 "e16eb56b2f964321a30086226dccb39e",
                 Helpers.NiceIcons(37),
                 FeatureGroup.None);
@@ -642,9 +634,8 @@ namespace EldritchArcana
 
             choices.Add(FamilyHeirloomTrait);
 
-            choices.Add(Helpers.CreateFeature("IronLiverTrait", "Iron Liver",
-                "Due to a lucky constitution or frequent exposure, your body is resistant to poison, including alcohol and drugs." +
-                "\nBenefit: You gain a +2 trait bonus on Fortitude saves against poison and drugs, and a +4 trait bonus on Fortitude saves to avoid the effects of alcohol.",
+            choices.Add(Helpers.CreateFeature("IronLiverTrait", RES.IronLiverTraitName_info,
+                RES.IronLiverTraitDescription_info,
                 "ccc555c0789d43a2b6cfad26aeda3410",
                 Helpers.GetIcon("2483a523984f44944a7cf157b21bf79c"), // Elven Immunities
                 FeatureGroup.None,

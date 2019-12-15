@@ -10,6 +10,7 @@ using Kingmaker.UnitLogic.FactLogic;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using RES = EldritchArcana.Properties.Resources;
 
 namespace EldritchArcana
 {
@@ -30,8 +31,8 @@ namespace EldritchArcana
             //int rnd = DateTime.Now.Millisecond%4;
 
             var noFeature = Helpers.PrerequisiteNoFeature(null);
-            var EmotionDrawbacks = Helpers.CreateFeatureSelection("EmotionDrawback", "Emotion Drawback",
-                "Emotion Drawbacks put the focus on mental aspects of your character's background.",
+            var EmotionDrawbacks = Helpers.CreateFeatureSelection("EmotionDrawback", RES.EmotionDrawbackName_info,
+                RES.EmotionDrawbackDescription_info,
                 EmotionGuids[0], null, FeatureGroup.None, noFeature);
 
             noFeature.Feature = EmotionDrawbacks;

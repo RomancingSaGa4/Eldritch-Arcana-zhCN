@@ -164,7 +164,8 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Anatomist 的本地化字符串。
+        ///   查找类似 You have studied the workings of anatomy, either as a student at university or as an apprentice mortician or necromancer. You know where to aim your blows to strike vital organs.
+        ///Benefit: You gain a +1 trait bonus on all rolls made to confirm critical hits. 的本地化字符串。
         /// </summary>
         internal static string AnatomistTraitDescription_info {
             get {
@@ -173,8 +174,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 You have studied the workings of anatomy, either as a student at university or as an apprentice mortician or necromancer. You know where to aim your blows to strike vital organs.
-        ///Benefit: You gain a +1 trait bonus on all rolls made to confirm critical hits. 的本地化字符串。
+        ///   查找类似 Anatomist 的本地化字符串。
         /// </summary>
         internal static string AnatomistTraitName_info {
             get {
@@ -377,7 +377,8 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Armor Expert 的本地化字符串。
+        ///   查找类似 You have worn armor as long as you can remember, either as part of your training to become a knight’s squire or simply because you were seeking to emulate a hero. Your childhood armor wasn’t the real thing as far as protection, but it did encumber you as much as real armor would have, and you’ve grown used to moving in such suits with relative grace.
+        ///Benefit: When you wear armor of any sort, reduce that suit’s armor check penalty by 1, to a minimum check penalty of 0. 的本地化字符串。
         /// </summary>
         internal static string ArmorExpertTraitDescription_info {
             get {
@@ -386,8 +387,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 You have worn armor as long as you can remember, either as part of your training to become a knight’s squire or simply because you were seeking to emulate a hero. Your childhood armor wasn’t the real thing as far as protection, but it did encumber you as much as real armor would have, and you’ve grown used to moving in such suits with relative grace.
-        ///Benefit: When you wear armor of any sort, reduce that suit’s armor check penalty by 1, to a minimum check penalty of 0. 的本地化字符串。
+        ///   查找类似 Armor Expert 的本地化字符串。
         /// </summary>
         internal static string ArmorExpertTraitName_info {
             get {
@@ -549,6 +549,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 A master druid revealed to you greater secrets of concentration when changing your form into that of an animal.
+        ///Benefit: You can shapeshift more often. 的本地化字符串。
+        /// </summary>
+        internal static string BeastOfSocietyTraitDescription_info {
+            get {
+                return ResourceManager.GetString("BeastOfSocietyTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Beast Of Society 的本地化字符串。
+        /// </summary>
+        internal static string BeastOfSocietyTraitName_info {
+            get {
+                return ResourceManager.GetString("BeastOfSocietyTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Your time spent as a society member has taught you new truths about the origins of the your rage ability.
         ///Benefit: You may use your rage ability for 3 additional rounds per day. 的本地化字符串。
         /// </summary>
@@ -602,6 +621,25 @@ namespace EldritchArcana.Properties {
         internal static string BladeOfTheSocietyTraitName_info {
             get {
                 return ResourceManager.GetString("BladeOfTheSocietyTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Exposure to corruption has altered your body causing you to sprout horrific growths beneath your skin.
+        ///Benefit: You gain a +1 natural armor bonus to AC, but your body does not work as a normal creature&apos;s would. Anytime you receive magical healing you heal 1 hp less per die. 的本地化字符串。
+        /// </summary>
+        internal static string BlightedTraitDescription_info {
+            get {
+                return ResourceManager.GetString("BlightedTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Blighted Physiology 的本地化字符串。
+        /// </summary>
+        internal static string BlightedTraitName_info {
+            get {
+                return ResourceManager.GetString("BlightedTraitName_info", resourceCulture);
             }
         }
         
@@ -870,6 +908,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Your sharp intellect and rapier-like wit bruise egos.
+        ///Benefits: Intimidate is always a class skill for you, and you may use your Intelligence modifier when making Intimidate checks instead of your Charisma modifier. 的本地化字符串。
+        /// </summary>
+        internal static string BruisingIntellectTraitDescription_info {
+            get {
+                return ResourceManager.GetString("BruisingIntellectTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Bruising Intellect 的本地化字符串。
+        /// </summary>
+        internal static string BruisingIntellectTraitName_info {
+            get {
+                return ResourceManager.GetString("BruisingIntellectTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You have worked for a crime lord, either as a low-level enforcer or as a guard, and are adept at frightening away people. 的本地化字符串。
         /// </summary>
         internal static string BruteTraitDescription_info {
@@ -1074,6 +1131,24 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Your greatest interests as a child did not lie with current events or the mundane—you have always felt out of place, as if you were born in the wrong era. You take to philosophical discussions of the Great Beyond and of historical events with ease. 的本地化字符串。
+        /// </summary>
+        internal static string ClassicallySchooledTraitDescription_info {
+            get {
+                return ResourceManager.GetString("ClassicallySchooledTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Classically Schooled 的本地化字符串。
+        /// </summary>
+        internal static string ClassicallySchooledTraitName_info {
+            get {
+                return ResourceManager.GetString("ClassicallySchooledTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Combat traits focus on martial and physical aspects of your character&apos;s background. 的本地化字符串。
         /// </summary>
         internal static string CombatTraitDescription_info {
@@ -1189,6 +1264,43 @@ namespace EldritchArcana.Properties {
         internal static string CustomTraitName_info {
             get {
                 return ResourceManager.GetString("CustomTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You learned to swim right after you learned to walk. When you were a youth, a gang of river pirates put you to work swimming in night-time rivers. And canals with a dagger between your teeth so you could sever the anchor ropes of merchant vessels.
+        ///Benefit: You gain a +1 trait bonus on damage rolls with a dagger and a +1 trait bonus on Swim(atletics is class skill) checks, and you start with a dagger. 的本地化字符串。
+        /// </summary>
+        internal static string DaggerboyTraitDescription_info {
+            get {
+                return ResourceManager.GetString("DaggerboyTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 River Rat (Marsh or River) 的本地化字符串。
+        /// </summary>
+        internal static string DaggerboyTraitName_info {
+            get {
+                return ResourceManager.GetString("DaggerboyTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You have always been intrigued by magic, possibly because you were the child of a magician or priest. You often snuck into your parent&apos;s laboratory or shrine to tinker with spell components and magic devices, and frequently caused quite a bit of damage and headaches for your parent as a result. 的本地化字符串。
+        /// </summary>
+        internal static string DangerouslyCuriousTraitDescription_info {
+            get {
+                return ResourceManager.GetString("DangerouslyCuriousTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Dangerously Curious 的本地化字符串。
+        /// </summary>
+        internal static string DangerouslyCuriousTraitName_info {
+            get {
+                return ResourceManager.GetString("DangerouslyCuriousTraitName_info", resourceCulture);
             }
         }
         
@@ -1652,6 +1764,24 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Emotion Drawbacks put the focus on mental aspects of your character&apos;s background. 的本地化字符串。
+        /// </summary>
+        internal static string EmotionDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("EmotionDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Emotion Drawback 的本地化字符串。
+        /// </summary>
+        internal static string EmotionDrawbackName_info {
+            get {
+                return ResourceManager.GetString("EmotionDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Your hours of meditation on inner perfection and the nature of strength and speed allow you to focus your thoughts to achieve things your body might not normally be able to do on its own. 
         ///Benefit: You modify your {0} using your Wisdom modifier, insted of your {1}. 的本地化字符串。
         /// </summary>
@@ -1662,11 +1792,30 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 Use Wisdom for calculating {0}. 的本地化字符串。
+        ///   查找类似 Use Wisdom for calculating {0} 的本地化字符串。
         /// </summary>
         internal static string EmpathicDiplomatStatTraitName_info {
             get {
                 return ResourceManager.GetString("EmpathicDiplomatStatTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You have long followed the path of common sense and empathic insight when using diplomacy.
+        ///Benefit: You modify your Diplomacy checks using your Wisdom modifier, not your Charisma modifier. 的本地化字符串。
+        /// </summary>
+        internal static string EmpathicDiplomatTraitDescription_info {
+            get {
+                return ResourceManager.GetString("EmpathicDiplomatTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Empathic Diplomat 的本地化字符串。
+        /// </summary>
+        internal static string EmpathicDiplomatTraitName_info {
+            get {
+                return ResourceManager.GetString("EmpathicDiplomatTraitName_info", resourceCulture);
             }
         }
         
@@ -2004,7 +2153,7 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似   • &lt;b&gt;{0}&lt;/b&gt; 的本地化字符串。
+        ///   查找类似 • &lt;b&gt;{0}&lt;/b&gt; 的本地化字符串。
         /// </summary>
         internal static string featureName_error {
             get {
@@ -2286,6 +2435,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Your childhood was dominated either by lessons of some sort (whether musical, academic, or other) or by a horrible home life that encouraged your ability to block out distractions and focus on the immediate task at hand.
+        ///Benefit: You gain a +2 trait bonus on concentration checks. 的本地化字符串。
+        /// </summary>
+        internal static string FocusedMindTraitDescription_info {
+            get {
+                return ResourceManager.GetString("FocusedMindTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Focused Mind 的本地化字符串。
+        /// </summary>
+        internal static string FocusedMindTraitName_info {
+            get {
+                return ResourceManager.GetString("FocusedMindTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Having lived outside of traditional elf society for much or all of your life, you know the world can be cruel, dangerous, and unforgiving of the weak.
         ///Benefit: You gain a +1 trait bonus on Fortitude saving throws. 的本地化字符串。
         /// </summary>
@@ -2431,6 +2599,25 @@ namespace EldritchArcana.Properties {
         internal static string FrostbornTraitName_info {
             get {
                 return ResourceManager.GetString("FrostbornTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your interest in magic was inspired by witnessing a spell being cast in a particularly dramatic method, perhaps even one that affected you physically or spiritually. This early exposure to magic has made it easier for you to work similar magic on your own.
+        ///Benefit: Pick one spell when you choose this trait—from this point on, whenever you cast that spell, its effects manifest at +1 caster level. 的本地化字符串。
+        /// </summary>
+        internal static string GiftedAdeptTraitDescription_info {
+            get {
+                return ResourceManager.GetString("GiftedAdeptTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Gifted Adept 的本地化字符串。
+        /// </summary>
+        internal static string GiftedAdeptTraitName_info {
+            get {
+                return ResourceManager.GetString("GiftedAdeptTraitName_info", resourceCulture);
             }
         }
         
@@ -2581,6 +2768,26 @@ namespace EldritchArcana.Properties {
         internal static string GroundedTraitName_info {
             get {
                 return ResourceManager.GetString("GroundedTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You inherited a weapon from someone.
+        ///Benefit: You can choose a weapon and you start the game with a +1 variant on you.
+        ///Benefit: When using weapons of this type you have a +1 bonus on attack rolls and combat maneurvers. 的本地化字符串。
+        /// </summary>
+        internal static string HairloomTraitDescription_info {
+            get {
+                return ResourceManager.GetString("HairloomTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Family Heirloom Weapon 的本地化字符串。
+        /// </summary>
+        internal static string HairloomTraitName_info {
+            get {
+                return ResourceManager.GetString("HairloomTraitName_info", resourceCulture);
             }
         }
         
@@ -2767,6 +2974,25 @@ namespace EldritchArcana.Properties {
         internal static string IndomitableFaithTraitName_info {
             get {
                 return ResourceManager.GetString("IndomitableFaithTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Due to a lucky constitution or frequent exposure, your body is resistant to poison, including alcohol and drugs.
+        ///Benefit: You gain a +2 trait bonus on Fortitude saves against poison and drugs, and a +4 trait bonus on Fortitude saves to avoid the effects of alcohol. 的本地化字符串。
+        /// </summary>
+        internal static string IronLiverTraitDescription_info {
+            get {
+                return ResourceManager.GetString("IronLiverTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Iron Liver 的本地化字符串。
+        /// </summary>
+        internal static string IronLiverTraitName_info {
+            get {
+                return ResourceManager.GetString("IronLiverTraitName_info", resourceCulture);
             }
         }
         
@@ -3123,6 +3349,44 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You were raised, either wholly or in part, by a magical creature, either after it found you abandoned in the woods or because your parents often left you in the care of a magical minion. This constant exposure to magic has made its mysteries easy for you to understand, even when you turn your mind to other devotions and tasks.
+        ///Benefit: Pick a class when you gain this trait — your caster level in that class gains a +2 trait bonus as long as this bonus doesn&apos;t raise your caster level above your current Hit D [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string MagicalKnackTraitDescription_info {
+            get {
+                return ResourceManager.GetString("MagicalKnackTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Magical Knack 的本地化字符串。
+        /// </summary>
+        internal static string MagicalKnackTraitName_info {
+            get {
+                return ResourceManager.GetString("MagicalKnackTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 One of your parents was a gifted spellcaster who not only used metamagic often, but also developed many magical items and perhaps even a new spell or two—and you have inherited a fragment of this greatness.
+        ///Benefit: Pick one spell when you choose this trait. When you apply metamagic feats to this spell that add at least 1 level to the spell, treat its actual level as 1 lower for determining the spell&apos;s final adjusted level. 的本地化字符串。
+        /// </summary>
+        internal static string MagicalLineageTraitDescription_info {
+            get {
+                return ResourceManager.GetString("MagicalLineageTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Magical Lineage 的本地化字符串。
+        /// </summary>
+        internal static string MagicalLineageTraitName_info {
+            get {
+                return ResourceManager.GetString("MagicalLineageTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Magic traits focus on any magical events or training your character may have had in their past. 的本地化字符串。
         /// </summary>
         internal static string MagicTraitDescription_info {
@@ -3237,6 +3501,26 @@ namespace EldritchArcana.Properties {
         internal static string MetamagicAdeptFeatureName_info {
             get {
                 return ResourceManager.GetString("MetamagicAdeptFeatureName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your ability to alter your spell of choice is greater than expected.
+        ///Benefit: Select one spell of 3rd level or below; when you use the chosen spell with a metamagic feat, it uses one spell slot one level lower than it normally would.
+        ///Starting level is still minimun. 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicApprenticeTraitDescription_info {
+            get {
+                return ResourceManager.GetString("MetamagicApprenticeTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Metamagic Master 的本地化字符串。
+        /// </summary>
+        internal static string MetamagicApprenticeTraitName_info {
+            get {
+                return ResourceManager.GetString("MetamagicApprenticeTraitName_info", resourceCulture);
             }
         }
         
@@ -6107,6 +6391,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 While some figure out how to use magical devices with stubborn resolve, your approach is more pragmatic.
+        ///Benefit: You may use your Intelligence modifier when making Use Magic Device Checks instead of your Charisma modifier. 的本地化字符串。
+        /// </summary>
+        internal static string PragmaticActivatorTraitDescription_info {
+            get {
+                return ResourceManager.GetString("PragmaticActivatorTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Pragmatic Activator 的本地化字符串。
+        /// </summary>
+        internal static string PragmaticActivatorTraitName_info {
+            get {
+                return ResourceManager.GetString("PragmaticActivatorTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Can cast {0} spells of level: {1} 的本地化字符串。
         /// </summary>
         internal static string PrerequisiteCasterSpellLevelCaption_info {
@@ -6167,6 +6470,25 @@ namespace EldritchArcana.Properties {
         internal static string ProlongMagicTraitName_info {
             get {
                 return ResourceManager.GetString("ProlongMagicTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You always knew you&apos;d leave your humble beginnings behind and become an adventurer, so you scrimped and saved, buying the necessary equipment one piece at a time until you had everything you needed.Select one of the equipment packages in the section that just popped up.
+        ///Benefit: You start the game with a backpack full of equipment with an average combined worth of 900 gp. 的本地化字符串。
+        /// </summary>
+        internal static string ProvisionedAdventurerTraitDescription_info {
+            get {
+                return ResourceManager.GetString("ProvisionedAdventurerTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Well-Provisioned Adventurer 的本地化字符串。
+        /// </summary>
+        internal static string ProvisionedAdventurerTraitName_info {
+            get {
+                return ResourceManager.GetString("ProvisionedAdventurerTraitName_info", resourceCulture);
             }
         }
         
@@ -6706,6 +7028,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You have learned a mystical secret that empowers your spellcasting.
+        ///Benefit: Pick one spell when you choose this trait — from this point on, whenever you cast that spell, you do so at +1 caster level. 的本地化字符串。
+        /// </summary>
+        internal static string SignatureSpellTraitDescription_info {
+            get {
+                return ResourceManager.GetString("SignatureSpellTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Signature Spell 的本地化字符串。
+        /// </summary>
+        internal static string SignatureSpellTraitName_info {
+            get {
+                return ResourceManager.GetString("SignatureSpellTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 • {0} 的本地化字符串。
         /// </summary>
         internal static string SingleLineDescription_info {
@@ -7151,6 +7492,25 @@ namespace EldritchArcana.Properties {
         internal static string WallOfFireAbilityName_info {
             get {
                 return ResourceManager.GetString("WallOfFireAbilityName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your childhood was brightened by the new places you constantly saw as you traveled with your parents, who were merchants. Still excited by travel, you gain great energy when traveling overland.
+        ///Benefit: Treat your base land speed as 10 feet higher when determining your overland speed. 的本地化字符串。
+        /// </summary>
+        internal static string WanderlustTraitDescription_info {
+            get {
+                return ResourceManager.GetString("WanderlustTraitDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Wanderlust 的本地化字符串。
+        /// </summary>
+        internal static string WanderlustTraitName_info {
+            get {
+                return ResourceManager.GetString("WanderlustTraitName_info", resourceCulture);
             }
         }
         

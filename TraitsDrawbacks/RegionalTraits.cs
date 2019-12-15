@@ -29,8 +29,8 @@ namespace EldritchArcana
             var choices = new List<BlueprintFeature>();
 
 
-            var signatureSpell = Helpers.CreateFeatureSelection("SignatureSpellTrait", "Signature Spell",
-                "You have learned a mystical secret that empowers your spellcasting.\nBenefit: Pick one spell when you choose this trait—from this point on, whenever you cast that spell, you do so at +1 caster level.",
+            var signatureSpell = Helpers.CreateFeatureSelection("SignatureSpellTrait", RES.SignatureSpellTraitName_info,
+                RES.SignatureSpellTraitDescription_info,
                 "7a3dfe274f45432b85361bdbb0a3009b",
                 Helpers.GetIcon("fe9220cdc16e5f444a84d85d5fa8e3d5"), // Spell Specialization Progression
                 FeatureGroup.None,
@@ -38,37 +38,34 @@ namespace EldritchArcana
             Traits.FillSpellSelection(signatureSpell, 1, 9, Helpers.Create<IncreaseCasterLevelForSpell>());
             choices.Add(signatureSpell);
 
-            var metamagicApprentice = Helpers.CreateFeatureSelection("MetamagicApprenticeTrait", "Metamagic Master",
-                "Your ability to alter your spell of choice is greater than expected.\nBenefit: Select one spell of 3rd level or below; when you use the chosen spell with a metamagic feat, it uses one spell slot one level lower than it normally would.\nstarting level is still minimun",
+            var metamagicApprentice = Helpers.CreateFeatureSelection("MetamagicApprenticeTrait", RES.MetamagicApprenticeTraitName_info,
+                RES.MetamagicApprenticeTraitDescription_info,
                 "00844f940e434033ab826e5ff5930012",
                 Helpers.GetIcon("ee7dc126939e4d9438357fbd5980d459"), // Spell Penetration
                 FeatureGroup.None);
             Traits.FillSpellSelection(metamagicApprentice, 1, 3, Helpers.Create<ReduceMetamagicCostForSpell>(r => { r.Reduction = 1; r.MaxSpellLevel = 3; }));
             choices.Add(metamagicApprentice);
 
-
-            choices.Add(Helpers.CreateFeature("BlightedTrait", "Blighted Physiology",
-                "Exposure to corruption has altered your body causing you to sprout horrific growths beneath your skin." +
-                "\nBenefit: You gain a +1 natural armor bonus to AC, but your body does not work as a normal creature's would. Anytime you receive magical healing you heal 1 hp less per die.",
+            choices.Add(Helpers.CreateFeature("BlightedTrait", RES.BlightedTraitName_info,
+                RES.BlightedTraitDescription_info,
                 "c50bdfaad65b4028884dd4a74f14e792",
                 Image2Sprite.Create("Mods/EldritchArcana/sprites/anatomist.png"),
                 FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.AC, 1, ModifierDescriptor.NaturalArmor),
                 Helpers.Create<FeyFoundlingLogic>(s => { s.dieModefier = -1; s.flatModefier = 0; })));
 
-            choices.Add(Helpers.CreateFeature("WanderlustTrait", "Wanderlust",
-                "Your childhood was brightened by the new places you constantly saw as you traveled with your parents, who were merchants. Still excited by travel, you gain great energy when traveling overland." +
-                "\nBenefit: Treat your base land speed as 10 feet higher when determining your overland speed.",
+            choices.Add(Helpers.CreateFeature("WanderlustTrait", RES.WanderlustTraitName_info,
+                RES.WanderlustTraitDescription_info,
                 "d40bdfaad65b4028884dd4a74f14e793",
                 Helpers.NiceIcons(0),
                 FeatureGroup.None,
-                Helpers.CreateAddStatBonus(StatType.Speed, 10, ModifierDescriptor.Insight)));
+                Helpers.CreateAddStatBonus(StatType.Speed, 10, ModifierDescriptor.Trait)));
 
 
             var dagger = Traits.library.Get<BlueprintWeaponType>("07cc1a7fceaee5b42b3e43da960fe76d");
 
-            var riverrat = Traits.CreateAddStatBonus("DaggerboyTrait", "River Rat (Marsh or River)",
-                "You learned to swim right after you learned to walk. When you were a youth, a gang of river pirates put you to work swimming in night-time rivers. And canals with a dagger between your teeth so you could sever the anchor ropes of merchant vessels. \n Benefit: You gain a +1 trait bonus on damage rolls with a dagger and a +1 trait bonus on Swim(atletics is class skill) checks. and you start with a dagger.",
+            var riverrat = Traits.CreateAddStatBonus("DaggerboyTrait", RES.DaggerboyTraitName_info,
+                RES.DaggerboyTraitDescription_info,
                 "e16eb56b2f964321a29976226dccb39f",
                 StatType.SkillAthletics // strongman
 
@@ -102,9 +99,8 @@ namespace EldritchArcana
             choices.Add(riverrat);
             //WeaponCategoryAttackBonus
 
-            choices.Add(Helpers.CreateFeature("EmpathicDiplomatTrait", "Empathic Diplomat",
-                "You have long followed the path of common sense and empathic insight when using diplomacy. \n" +
-                "Benefit: You modify your Diplomacy checks using your Wisdom modifier, not your Charisma modifier.",
+            choices.Add(Helpers.CreateFeature("EmpathicDiplomatTrait", RES.EmpathicDiplomatTraitName_info,
+                RES.EmpathicDiplomatTraitDescription_info,
                 "a987f5e69db44cdd88983985e37a6d2b",
                 Helpers.NiceIcons(999), // Weapon Specialization
                 FeatureGroup.None,
@@ -115,9 +111,8 @@ namespace EldritchArcana
                     x.NewBaseStatType = StatType.Wisdom;
                 })));
 
-            var BruisingInt = Traits.CreateAddStatBonus("BruisingIntellectTrait", "Bruising Intellect",
-               "Your sharp intellect and rapier-like wit bruise egos. \n" +
-                "Benefits: Intimidate is always a class skill for you, and you may use your Intelligence modifier when making Intimidate checks instead of your Charisma modifier.",
+            var BruisingInt = Traits.CreateAddStatBonus("BruisingIntellectTrait", RES.BruisingIntellectTraitName_info,
+                RES.BruisingIntellectTraitDescription_info,
                 "b222b5e69db44cdd88983985e37a6d2f",
                 StatType.SkillPersuasion
                 );
