@@ -248,6 +248,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 After suffering terribly for not being tight-lipped enough as a child, such as when you accidentally exposed your family to enemy inquisitors, you developed a habit of being overly cautious with your words.
+        ///Drawback: You take a –2 penalty on Persuasion checks and must speak slowly due to the concentration required. Unless stated otherwise, you are assumed to not be speaking at a volume above a whisper. 的本地化字符串。
+        /// </summary>
+        internal static string AnxiousDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("AnxiousDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Anxious 的本地化字符串。
+        /// </summary>
+        internal static string AnxiousDrawbackName_info {
+            get {
+                return ResourceManager.GetString("AnxiousDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Any Lore/Knowledge Skill 的本地化字符串。
         /// </summary>
         internal static string AnyClassSkillName_info {
@@ -411,6 +430,26 @@ namespace EldritchArcana.Properties {
         internal static string AsthmaticDrawbackName_info {
             get {
                 return ResourceManager.GetString("AsthmaticDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You are attached to yourself. 
+        ///Whenever the object of your attachment is either threatened, in danger, or in someone else&apos;s possession, you take a -1 penalty on Will saves and a -2 penalty on saves against fear effects.
+        ///Drawback: You take a -1 penalty on Will saves and a -2 penalty on saves against fear effects. 的本地化字符串。
+        /// </summary>
+        internal static string AttachedDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("AttachedDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Attached 的本地化字符串。
+        /// </summary>
+        internal static string AttachedDrawbackName_info {
+            get {
+                return ResourceManager.GetString("AttachedDrawbackName_info", resourceCulture);
             }
         }
         

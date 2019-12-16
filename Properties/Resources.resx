@@ -185,6 +185,13 @@ Benefits: You gain a +1 trait bonus on Will saving throws as long as you have an
   <data name="AnimalFriendTraitName_info" xml:space="preserve">
     <value>Animal Friend (Gnome)</value>
   </data>
+  <data name="AnxiousDrawbackDescription_info" xml:space="preserve">
+    <value>After suffering terribly for not being tight-lipped enough as a child, such as when you accidentally exposed your family to enemy inquisitors, you developed a habit of being overly cautious with your words.
+Drawback: You take a –2 penalty on Persuasion checks and must speak slowly due to the concentration required. Unless stated otherwise, you are assumed to not be speaking at a volume above a whisper.</value>
+  </data>
+  <data name="AnxiousDrawbackName_info" xml:space="preserve">
+    <value>Anxious</value>
+  </data>
   <data name="AnyClassSkillName_info" xml:space="preserve">
     <value>Any Lore/Knowledge Skill</value>
   </data>
@@ -243,6 +250,14 @@ Drawback: You suffer a -2 penalty against any effect that will cause you to be f
   </data>
   <data name="AsthmaticDrawbackName_info" xml:space="preserve">
     <value>Asthmatic</value>
+  </data>
+  <data name="AttachedDrawbackDescription_info" xml:space="preserve">
+    <value>You are attached to yourself. 
+Whenever the object of your attachment is either threatened, in danger, or in someone else's possession, you take a -1 penalty on Will saves and a -2 penalty on saves against fear effects.
+Drawback: You take a -1 penalty on Will saves and a -2 penalty on saves against fear effects.</value>
+  </data>
+  <data name="AttachedDrawbackName_info" xml:space="preserve">
+    <value>Attached</value>
   </data>
   <data name="AvidReaderArcanaDescription_info" xml:space="preserve">
     <value>Because you are a magic bookworm.

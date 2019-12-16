@@ -38,18 +38,16 @@ namespace EldritchArcana
             noFeature.Feature = EmotionDrawbacks;
 
             var choices = new List<BlueprintFeature>();
-            choices.Add(Helpers.CreateFeature("AnxiousDrawback", "Anxious",
-                "After suffering terribly for not being tight-lipped enough as a child, such as when you accidentally exposed your family to enemy inquisitors, you developed a habit of being overly cautious with your words." +
-                "\nDrawback: You take a –2 penalty on Persuasion checks and must speak slowly due to the concentration required. Unless stated otherwise, you are assumed to not be speaking at a volume above a whisper.",
+            choices.Add(Helpers.CreateFeature("AnxiousDrawback", RES.AnxiousDrawbackName_info,
+                RES.AnxiousDrawbackDescription_info,
                 EmotionGuids[1],
                 Helpers.NiceIcons(16), // great fortitude
                 FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.SkillPersuasion, -2, ModifierDescriptor.Penalty)));
 
             //var tieflingHeritageDemodand = library.Get<BlueprintFeature>("a53d760a364cd90429e16aa1e7048d0a");
-            choices.Add(Helpers.CreateFeature("AttachedDrawback", "Attached",
-                "You are attached to yourself. Whenever the object of your attachment is either threatened, in danger, or in someone else's possession, you take a –1 penalty on Will saves and a –2 penalty on saves against fear effects." +
-                "\nDrawback: You take a –1 penalty on Will saves and a –2 penalty on saves against fear effects.",
+            choices.Add(Helpers.CreateFeature("AttachedDrawback", RES.AttachedDrawbackName_info,
+                RES.AttachedDrawbackDescription_info,
                 EmotionGuids[2],
                 Helpers.GetIcon("2483a523984f44944a7cf157b21bf79c"), // Elven Immunities
                 FeatureGroup.None,

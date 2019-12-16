@@ -185,6 +185,13 @@
   <data name="AnimalFriendTraitName_info" xml:space="preserve">
     <value>动物之友（侏儒）</value>
   </data>
+  <data name="AnxiousDrawbackDescription_info" xml:space="preserve">
+    <value>你小时候由于口风不够紧而遭受到了极大的痛苦（例如你曾因为不小心把家人暴露给敌人的审判官），因此现在你养成了极端谨言慎行的习惯。
+缺陷：你在进行沟通检定时受到-2减值，并且你说话时必须斟字酌句，因此语速缓慢。除此之外，你还无法大声说话。</value>
+  </data>
+  <data name="AnxiousDrawbackName_info" xml:space="preserve">
+    <value>焦虑</value>
+  </data>
   <data name="AnyClassSkillName_info" xml:space="preserve">
     <value>任何知识/学识技能</value>
   </data>
@@ -244,6 +251,14 @@
   <data name="AsthmaticDrawbackName_info" xml:space="preserve">
     <value>哮喘</value>
   </data>
+  <data name="AttachedDrawbackDescription_info" xml:space="preserve">
+    <value>你依恋的对象是你自己。
+当你依恋的对象受到威胁，处于危险状态或被他人拥有时，你在进行意志豁免检定时受到-1减值，对抗恐惧效果的豁免检定时受到-2减值。
+缺陷：你在进行意志豁免检定时受到-1减值，对抗恐惧效果的豁免检定时受到-2减值。</value>
+  </data>
+  <data name="AttachedDrawbackName_info" xml:space="preserve">
+    <value>依恋</value>
+  </data>
   <data name="AvidReaderArcanaDescription_info" xml:space="preserve">
     <value>你是个魔法书虫。
 效益：即便在受到威胁或被被扰乱时，你在知识（神秘）的技能检定中仍能始终投出10。</value>
@@ -261,15 +276,15 @@
   </data>
   <data name="BadvisionDrawbackBookwormDescription_info" xml:space="preserve">
     <value>你曾在无数个夜里捧着书本挑灯夜读，因此你的视力已经惨不忍睹。但你能做到按照书里的知识按图索骥而非你的视力来观察视物。
-效益：你在察觉技能检定上使用智力调整值而非察觉。
-缺陷：你在察觉技能检定上的减值再额外-1。</value>
+效益：你在进行察觉技能检定时使用智力调整值而非察觉。
+缺陷：你在进行察觉技能检定时受到的减值再额外-1。</value>
   </data>
   <data name="BadvisionDrawbackBookwormName_info" xml:space="preserve">
     <value>书虫</value>
   </data>
   <data name="BadvisionDrawbackDescription_info" xml:space="preserve">
     <value>你无法如正常人一样视物。
-缺陷：你在察觉技能检定上受到-1减值，并且因你弱视的种类受到另一种惩罚。请在后续选择中选择一项。</value>
+缺陷：你进行察觉技能检定时受到-1减值，并且因你弱视的种类受到另一种惩罚。请在后续选择中选择一项。</value>
   </data>
   <data name="BadvisionDrawbackFarDescription_info" xml:space="preserve">
     <value>你视近不清。
@@ -738,8 +753,8 @@
     <value>使用感知修正值进行{0}检定</value>
   </data>
   <data name="EmpathicDiplomatTraitDescription_info" xml:space="preserve">
-    <value>使用沟通技能时，你长期遵守常识和同理心的视点。
-效益：你在进行沟通技能检定时可以使用感知修正值而非魅力。</value>
+    <value>使用交涉技能时，你长期遵守常识和同理心的视点。
+效益：你在进行交涉技能检定时可以使用感知修正值而非魅力。</value>
   </data>
   <data name="EmpathicDiplomatTraitName_info" xml:space="preserve">
     <value>共情交际</value>
@@ -981,14 +996,14 @@
   </data>
   <data name="FoulBrandFaceDrawbackDescription_info" xml:space="preserve">
     <value>烙印在你的脸部。
-缺陷：你在沟通检定上受到-2减值。</value>
+缺陷：你在进行沟通检定时受到-2减值。</value>
   </data>
   <data name="FoulBrandFaceDrawbackName_info" xml:space="preserve">
     <value>脸部</value>
   </data>
   <data name="FoulBrandHandsDrawbackDescription_info" xml:space="preserve">
     <value>烙印在你的手部。
-缺陷：你在巧手检定上受到-2减值。</value>
+缺陷：你在进行巧手检定时受到-2减值。</value>
   </data>
   <data name="FoulBrandHandsDrawbackName_info" xml:space="preserve">
     <value>手部</value>
@@ -1055,7 +1070,7 @@
   </data>
   <data name="GodScornTraitDescription_info" xml:space="preserve">
     <value>你对诸神和他们那些可怜小祭司的蔑视使你摆脱他们祈祷的影响变得更加容易。
-效益：你在对抗神术的豁免检定上获得+1背景加值。</value>
+效益：你在对抗神术的豁免检定时获得+1背景加值。</value>
   </data>
   <data name="GodScornTraitName_info" xml:space="preserve">
     <value>轻神蔑佛（魔孽魔裔）</value>
@@ -1075,7 +1090,7 @@
   </data>
   <data name="GroundedTraitDescription_info" xml:space="preserve">
     <value>你德智体全面发展。
-效益：你在灵巧检定上获得+2背景加值，并在反射豁免检定时获得+1背景加值。</value>
+效益：你在进行灵巧检定时获得+2背景加值，并在反射豁免检定时获得+1背景加值。</value>
   </data>
   <data name="GroundedTraitName_info" xml:space="preserve">
     <value>理性（矮人）</value>
@@ -1083,13 +1098,13 @@
   <data name="HairloomTraitDescription_info" xml:space="preserve">
     <value>你从某人那里继承来一把兵刃。
 效益：你可以选择某种武器，开始游戏时你获得一把+1附魔的该种武器。
-效益：当你使用选择的武器种类时，你在攻击检定和战技检定上获得+1背景加值。</value>
+效益：当你使用选择的武器种类时，你在进行攻击检定和战技检定时获得+1背景加值。</value>
   </data>
   <data name="HairloomTraitName_info" xml:space="preserve">
     <value>家传兵刃</value>
   </data>
   <data name="HealingHandsFeatureDescription_info" xml:space="preserve">
-    <value>你在医疗检定上获得+4加值。你能以一个迅捷动作使用{0}。</value>
+    <value>你在进行医疗检定时获得+4加值。你能以一个迅捷动作使用{0}。</value>
   </data>
   <data name="HealingHandsFeatureName_info" xml:space="preserve">
     <value>医疗之手</value>
@@ -1109,7 +1124,7 @@
   </data>
   <data name="HelplessDrawbackDescription_info" xml:space="preserve">
     <value>你曾因所爱之人遭受不幸感受过极度无助，因此当盟友处于危险境地之时这种无法动弹的无助感有时又会降临在你身上。
-缺陷：你在对抗麻痹和石化的豁免检定上受到-2减值。</value>
+缺陷：你在对抗麻痹和石化的豁免检定时受到-2减值。</value>
   </data>
   <data name="HelplessDrawbackName_info" xml:space="preserve">
     <value>无助</value>
@@ -1639,7 +1654,7 @@
     <value>金甲龙鳞</value>
   </data>
   <data name="MysteryDragonSensesDescription_info" xml:space="preserve">
-    <value>你的直觉如同巨龙一般惊人地敏锐。你在察觉检定上获得+2的加值。5级时，该加值增至+4。11级时你获得30英尺内盲感。15级时你的盲感距离增至60英尺。</value>
+    <value>你的直觉如同巨龙一般惊人地敏锐。你在进行察觉检定时获得+2的加值。5级时，该加值增至+4。11级时你获得30英尺内盲感。15级时你的盲感距离增至60英尺。</value>
   </data>
   <data name="MysteryDragonSensesName_info" xml:space="preserve">
     <value>巨龙直觉</value>
@@ -1954,7 +1969,7 @@
   <data name="NobleFamilyLebedaTraitDescription_info" xml:space="preserve">
     <value>家族格言：“优雅地成功”
 勒贝达家族聚居于布雷沃雷卡尔湖的西南方，掌控着那里的平原以及湖上航运的绝大部分份额。人们将这个布雷沃贵族家族视为整个罗斯特兰的代表，他们拥有非常显著的塔尔多血统，对美好事物的品味以及对剑斗的热爱。
-效益：你在知识（神秘）检定上获得+1背景加值，并且可以选择一项可用技能的资源。该技能的使用次数增加至少1次。（如你无法使用列表中的技能则无效）。</value>
+效益：你在进行知识（神秘）检定时获得+1背景加值，并且可以选择一项可用技能的资源。该技能的使用次数增加至少1次。（如你无法使用列表中的技能则无效）。</value>
   </data>
   <data name="NobleFamilyLebedaTraitName_info" xml:space="preserve">
     <value>勒贝达家族</value>
@@ -1962,7 +1977,7 @@
   <data name="NobleFamilyLodovkaTraitDescription_info" xml:space="preserve">
     <value>家族格言：“水域，我们的领域”
 洛多夫卡家族是一支布雷沃的贵族家族，总部位于缥缈湖的阿库本岛上。他们是湖上的一支传统势力。在寇泽科・洛多夫卡爵士的带领下，他们的舰队规模和在湖区的影响力都在稳固提升。这支家族舰队的主要工作是捕捞鱼和淡水蟹。洛多夫卡家族的纹章是一只爬出水面朝向一座灰色高塔/要塞的绿色螃蟹。
-效益：你在运动检定上获得+2背景加值。如果你拥有施法能力，雪球术将加入你的已知法术列表，即便你原本无法学会该法术。</value>
+效益：你在进行运动检定时获得+2背景加值。如果你拥有施法能力，雪球术将加入你的已知法术列表，即便你原本无法学会该法术。</value>
   </data>
   <data name="NobleFamilyLodovkaTraitName_info" xml:space="preserve">
     <value>洛多夫卡家族</value>
@@ -1978,7 +1993,7 @@
   <data name="NobleFamilyOrlovskyTraitDescription_info" xml:space="preserve">
     <value>家族格言：“高高在上”
 奥洛夫斯基家族在维什卡山顶的鹰栖城掌控着布雷沃的东北部地区。他们向来对于琐碎的政治斗争不屑一顾。作为现在已经消失的罗嘉维亚家族坚实的盟友，他们现在有些蠢蠢欲动。如果波尔・奥洛夫斯基爵士选择站出来反叛诺雷奇・瑟托瓦，他们可以选择先与盖雷斯家族和梅德伟耶德家族结盟。三大家族联手，将破坏瑟托瓦家族的两大重要基石——冰港和新斯特文之间的补给和运输路线。
-效益：你在战技防御上获得+1背景加值。你可以在沟通、运动和隐匿中选择一项，在该技能检定上获得+1背景加值，并且该技能成为你的本职技能。</value>
+效益：你在战技防御上获得+1背景加值。你可以在沟通、运动和隐匿中选择一项，在进行该项技能检定时获得+1背景加值，并且该技能成为你的本职技能。</value>
   </data>
   <data name="NobleFamilyOrlovskyTraitName_info" xml:space="preserve">
     <value>奥洛夫斯基家族</value>
@@ -2004,7 +2019,7 @@
   </data>
   <data name="OccultBargainDrawbackDescription_info" xml:space="preserve">
     <value>你从一个坚持祂的身份是秘密的来源获得魔法力量。
-缺陷：你在专注技能检定上受到-1减值。并且当面对拉玛什图信徒时你的所有AC和所有豁免都受到-2减值。</value>
+缺陷：你在进行专注技能检定时受到-1减值。并且当面对拉玛什图信徒时你的所有AC和所有豁免都受到-2减值。</value>
   </data>
   <data name="OccultBargainDrawbackName_info" xml:space="preserve">
     <value>诡秘交易</value>
@@ -2089,7 +2104,7 @@
     <value>获得+3{0}幸运加值</value>
   </data>
   <data name="OptimisticGamblerTraitWeaponBonus_info" xml:space="preserve">
-    <value>在你开始游戏时将获得{0}，并且你在该类型武器的攻击检定上享有+3背景加值。</value>
+    <value>在你开始游戏时将获得{0}，并且你在进行该类型武器的攻击检定时享有+3背景加值。</value>
   </data>
   <data name="OptimisticGamblerTraitWWIB_info" xml:space="preserve">
     <value>会是什么呢？</value>
@@ -2154,10 +2169,10 @@
     <value>10级时，你能使用{0}技能辨识物品。</value>
   </data>
   <data name="OracleCurseCovetousLevel15Description_info" xml:space="preserve">
-    <value>15级时，你在{0}检定上获得+4洞察加值。</value>
+    <value>15级时，你在进行{0}检定时获得+4洞察加值。</value>
   </data>
   <data name="OracleCurseCovetousLevel5Description_info" xml:space="preserve">
-    <value>5级时，你在{0}检定上获得+4洞察加值。</value>
+    <value>5级时，你在进行{0}检定时获得+4洞察加值。</value>
   </data>
   <data name="OracleCurseCovetousName_info" xml:space="preserve">
     <value>贪欲</value>
@@ -2166,7 +2181,7 @@
     <value>你失去了听力，并将承受所有因为耳聋而获得的正常减值：先攻-4，察觉技能-4。不过你施放的所有法术都视为搭配有法术默发专长，并且这些法术的施法时间和法术等级不会增加。</value>
   </data>
   <data name="OracleCurseDeafLevel10Description_info" xml:space="preserve">
-    <value>10级时，你在察觉技能检定上获得+3加值。</value>
+    <value>10级时，你在进行察觉技能检定时获得+3加值。</value>
   </data>
   <data name="OracleCurseDeafLevel15Description_info" xml:space="preserve">
     <value>15级时，你获得30英尺内的震颤感应。</value>
@@ -2175,7 +2190,7 @@
     <value>震颤感应</value>
   </data>
   <data name="OracleCurseDeafLevel5Description_info" xml:space="preserve">
-    <value>5级时，你在察觉技能检定上不再受到减值，并且你因为耳聋而受到的先攻检定减值降低到-2。</value>
+    <value>5级时，你在进行察觉技能检定时不再受到减值，并且你因为耳聋而受到的先攻检定减值降低到-2。</value>
   </data>
   <data name="OracleCurseDeafName_info" xml:space="preserve">
     <value>失聪</value>
@@ -2252,7 +2267,7 @@
   </data>
   <data name="OracleCurseWastingDescription_info" xml:space="preserve">
     <value>你的躯体正处于缓慢的腐烂状态。
-除了威吓技能之外，你在所有基于魅力的技能检定上承受-4减值。同时你在对抗疾病效果的强韧检定上获得+4表现加值。</value>
+除了威吓技能之外，你在进行所有基于魅力的技能检定时受到-4减值。同时你在进行对抗疾病效果的强韧检定时获得+4表现加值。</value>
   </data>
   <data name="OracleCurseWastingLevel10Description_info" xml:space="preserve">
     <value>10级时，你免疫疾病效果。</value>
@@ -2454,7 +2469,7 @@
   </data>
   <data name="RaceHistorianTraitDescription_info" xml:space="preserve">
     <value>你的双亲是历史学者——或许是研究自家族谱的族谱学家，或许是研究古代帝国遗物的智者，亦或许仅仅是对过去有着深厚而持久热爱的业余爱好者。
-效益：你在所有逸闻见识类检定上获得+1背景加值。</value>
+效益：你在进行所有逸闻见识类检定时获得+1背景加值。</value>
   </data>
   <data name="RaceHistorianTraitName_info" xml:space="preserve">
     <value>历史学者（人类）</value>
@@ -2491,7 +2506,7 @@
   </data>
   <data name="RapscallionTraitDescription_info" xml:space="preserve">
     <value>你的一生都致力于和当权派作对，并且对自己游走于法律边缘颇感自得。然而尽管你恶行累累，你却从未被捕。
-效益：你在灵巧检定上获得+1背景加值，在先攻检定上获得+1背景加值。</value>
+效益：你在进行灵巧检定时获得+1背景加值，在进行先攻检定时获得+1背景加值。</value>
   </data>
   <data name="RapscallionTraitName_info" xml:space="preserve">
     <value>恶棍（侏儒）</value>
@@ -2710,7 +2725,7 @@
   </data>
   <data name="SpookedDrawbackDescription_info" xml:space="preserve">
     <value>你在年幼时曾经历过一段关于精怪的不愿回首的记忆，时至今日这段经历仍然让你对此类存在心有余悸。
-缺陷：你在面对精类生物时攻击检定受到-4减值，在对恐惧效果的豁免检定上受到-2减值。</value>
+缺陷：你在面对精类生物时攻击检定受到-4减值，在进行对恐惧效果的豁免检定时受到-2减值。</value>
   </data>
   <data name="SpookedDrawbackName_info" xml:space="preserve">
     <value>怕鬼</value>
@@ -2761,14 +2776,14 @@
   </data>
   <data name="ToxophiliteTraitDescription_info" xml:space="preserve">
     <value>你继承了你的天界祖先的某些弓箭才能。
-效益：使用弓箭时你在确认重击的检定上获得+2背景加值。</value>
+效益：使用弓箭时你在进行确认重击的检定时获得+2背景加值。</value>
   </data>
   <data name="ToxophiliteTraitName_info" xml:space="preserve">
     <value>射艺大师（神裔）</value>
   </data>
   <data name="TraitsAddStatBonusDescription_info" xml:space="preserve">
     <value>{0}
-效益：你在{1}检定上获得+1背景加值，并且{2}成为你的本职技能。</value>
+效益：你在进行{1}检定时获得+1背景加值，并且{2}成为你的本职技能。</value>
   </data>
   <data name="TraitsFillSpellSelection_info" xml:space="preserve">
     <value>{0}（{1} 级法术）</value>
