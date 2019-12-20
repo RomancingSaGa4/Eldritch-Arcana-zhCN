@@ -2734,7 +2734,7 @@
     <value>灵能武器</value>
   </data>
   <data name="SquirrelSpellDescription_info" xml:space="preserve">
-    <value>你召唤了一群松鼠，它们会攻击它所在区域内的所有其他生物。（你可以召唤集群，让它们共享其他生物的区域。）如果在其区域内没有活物，集群会尽其所能攻击或追逐离其最近的生物。施法者无法控制其目标或行进方向。</value>
+    <value>此法术能召唤出一个狂暴松鼠集群，它们会攻击它所在区域内的所有其他生物。（你召唤出的是一个集群，它们会共享其他生物的区域。）如果在其区域内没有活物，集群会尽其所能攻击或追逐离其最近的生物。施法者无法控制其目标或行进方向。</value>
   </data>
   <data name="SquirrelSpellName_info" xml:space="preserve">
     <value>召唤松鼠集群</value>
