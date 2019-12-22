@@ -805,6 +805,9 @@ Special: You can gain this feat multiple times. Its effects stack, granting a ne
   <data name="ExtraArcanaFeatureName_info" xml:space="preserve">
     <value>Extra Arcana</value>
   </data>
+  <data name="ExtraChannelOracleName_info" xml:space="preserve">
+    <value>Extra Channel (Oracle)</value>
+  </data>
   <data name="ExtraRevelationFeatureDescription_info" xml:space="preserve">
     <value>You gain one additional revelation. You must meet all of the prerequisites for this revelation.
 Special: You can gain Extra Revelation multiple times.</value>

@@ -153,7 +153,7 @@ namespace EldritchArcana
             // Add Extra Channel, fix Selective Channel
             var extraChannel = library.CopyAndAdd<BlueprintFeature>("cd9f19775bd9d3343a31a065e93f0c47",
                 "ExtraChannelOracle", "670d560ed7fe4329b2d311eba3600949");
-            extraChannel.SetName("Extra Channel (Oracle)");
+            extraChannel.SetName(RES.ExtraChannelOracleName_info);
             extraChannel.SetComponents(feat.PrerequisiteFeature(), resource.CreateIncreaseResourceAmount(2));
             library.AddFeats(extraChannel);
 

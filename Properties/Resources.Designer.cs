@@ -1989,6 +1989,15 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Extra Channel (Oracle) 的本地化字符串。
+        /// </summary>
+        internal static string ExtraChannelOracleName_info {
+            get {
+                return ResourceManager.GetString("ExtraChannelOracleName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You gain one additional revelation. You must meet all of the prerequisites for this revelation.
         ///Special: You can gain Extra Revelation multiple times. 的本地化字符串。
         /// </summary>

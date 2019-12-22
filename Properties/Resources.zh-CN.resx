@@ -805,6 +805,9 @@
   <data name="ExtraArcanaFeatureName_info" xml:space="preserve">
     <value>额外奥能</value>
   </data>
+  <data name="ExtraChannelOracleName_info" xml:space="preserve">
+    <value>额外导能（先知）</value>
+  </data>
   <data name="ExtraRevelationFeatureDescription_info" xml:space="preserve">
     <value>你得到一个额外的启示。你必须满足这个启示的所有先决条件。
 特殊：你可以多次获得额外的启示。</value>
