@@ -197,7 +197,8 @@ namespace EldritchArcana
                 var statId = statIds[i];
                 var statName = LocalizedTexts.Instance.Stats.GetText(stat);
 
-                var feat = Helpers.CreateFeature($"{wish.name}InherentBonus{stat}", $"{wish.Name} — {statName}",
+                var feat = Helpers.CreateFeature($"{wish.name}InherentBonus{stat}",
+                    string.Format(RES.TypeHyphenSubtype_info, wish.Name, statName),
                     string.Format(RES.WishFeatureDescription_info, statName),
                     Helpers.MergeIds(statId, "e9a878036b9e4df78f85d8558058fc56", noduplicateId),
                     wish.Icon,
@@ -216,6 +217,7 @@ namespace EldritchArcana
                     wish.Icon, AbilityType.Spell, CommandType.Standard,
                     AbilityRange.Medium, wish.LocalizedDuration, wish.LocalizedSavingThrow,
                     //Game.Instance.Player.Inventory.Add(itemByGuid, itemAmount)
+                    // 必须在2轮内施放下一次加属性的许愿
                     Helpers.CreateRunActions(buff.CreateApplyBuff(Helpers.CreateContextDuration(2),
                         fromSpell: true, dispellable: false)));
                 ability.CanTargetSelf = true;
@@ -345,6 +347,7 @@ namespace EldritchArcana
             buff.Frequency = DurationRate.Rounds;
 
             // Duration: 2 rounds. Should be enough time to make a wish (as a free action).
+            // Buff2轮一是为了防止许愿或奇迹放完之后进战斗直接用自由动作放法术，二是为了防止几个许愿叠起来放掉一个后其余次数变0的Bug，是必须的
             var applyBuff = Helpers.CreateApplyBuff(buff, Helpers.CreateContextDuration(2),
                 fromSpell: true, dispellable: false, toCaster: true);
 
