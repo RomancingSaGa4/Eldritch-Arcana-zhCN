@@ -626,6 +626,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You were reported to a dangerous authority and narrowly escaped death. You second-guess your instincts constantly, leaving you never sure whether or not to trust someone and endangered if you encounter that group’s agents again.
+        ///Drawback: You take a -3 penalty on Diplomacy checks. 的本地化字符串。
+        /// </summary>
+        internal static string BetrayedDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("BetrayedDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Betrayed 的本地化字符串。
+        /// </summary>
+        internal static string BetrayedDrawbackName_info {
+            get {
+                return ResourceManager.GetString("BetrayedDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You were born with a strange birthmark that looks very similar to the holy symbol of the god you chose to worship later in life.
         ///Benefits: This birthmark increases your devotion to your god. You gain a +2 trait bonus on all saving throws against charm and compulsion effects. 的本地化字符串。
         /// </summary>
@@ -641,6 +660,25 @@ namespace EldritchArcana.Properties {
         internal static string BirthmarkTraitName_info {
             get {
                 return ResourceManager.GetString("BirthmarkTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You have been hurt repeatedly by those you trusted, and it has become difficult for you to accept help.
+        ///Drawback: When you receive healing from an ally&apos;s class feature, spell, or spell-like ability, reduce the amount of that healing by 1 hit point. 的本地化字符串。
+        /// </summary>
+        internal static string BitterDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("BitterDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Bitter 的本地化字符串。
+        /// </summary>
+        internal static string BitterDrawbackName_info {
+            get {
+                return ResourceManager.GetString("BitterDrawbackName_info", resourceCulture);
             }
         }
         
@@ -1202,6 +1240,45 @@ namespace EldritchArcana.Properties {
         internal static string CombatTraitName_info {
             get {
                 return ResourceManager.GetString("CombatTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Raised with the assurance that only those like you are truly worthy of respect, you have an off-putting way of demonstrating that you look down on those not of your race and ethnicity or nationality.
+        ///Drawback: You take a –5 penalty on Diplomacy and Intimidate checks. 的本地化字符串。
+        /// </summary>
+        internal static string CondescendingDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("CondescendingDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Condescending 的本地化字符串。
+        /// </summary>
+        internal static string CondescendingDrawbackName_info {
+            get {
+                return ResourceManager.GetString("CondescendingDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You might face dangerous situations with bravado, but you are constantly afraid. And if you see a dead body you might just throw up.
+        ///Benefit: Your movementspeed increases by 5.
+        ///Drawback: You take a –4 penalty on saves against fear effects. And -2 to all Fortitude saves. 的本地化字符串。
+        /// </summary>
+        internal static string CowardlyDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("CowardlyDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Cowardly 的本地化字符串。
+        /// </summary>
+        internal static string CowardlyDrawbackName_info {
+            get {
+                return ResourceManager.GetString("CowardlyDrawbackName_info", resourceCulture);
             }
         }
         
@@ -3157,6 +3234,30 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You don&apos;t so much cast a miracle as request one. You state what you would like to have happen and request that your deity (or the power you pray to for spells) intercede.
+        ///A miracle can do any of the following things.
+        ///• Duplicate any cleric spell of 6th level or lower.
+        ///• Duplicate any other spell of 5th level or lower.
+        ///• Undo the harmful effects of certain spells, such as feeblemind or insanity.
+        ///• Have any effect whose power level is in line with the above effects.
+        ///In any event, a request that is out o [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        /// </summary>
+        internal static string LesserMiracleSpellDescription_info {
+            get {
+                return ResourceManager.GetString("LesserMiracleSpellDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Lesser Miracle 的本地化字符串。
+        /// </summary>
+        internal static string LesserMiracleSpellName_info {
+            get {
+                return ResourceManager.GetString("LesserMiracleSpellName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Miracle preloading 的本地化字符串。
         /// </summary>
         internal static string LesserMiracleSpells_info {
@@ -3888,20 +3989,11 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 (Divine) Miracle 的本地化字符串。
-        /// </summary>
-        internal static string MiracleDivineAbilityName_info {
-            get {
-                return ResourceManager.GetString("MiracleDivineAbilityName_info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查找类似 Miracle 的本地化字符串。
         /// </summary>
-        internal static string MiracleSpells_info {
+        internal static string MiracleSpellName_info {
             get {
-                return ResourceManager.GetString("MiracleSpells_info", resourceCulture);
+                return ResourceManager.GetString("MiracleSpellName_info", resourceCulture);
             }
         }
         

@@ -59,13 +59,13 @@ namespace EldritchArcana
         internal const string SummonWildhuntId = "vr623ae7179a4d19a40b977ffca1b52f";
         internal const string SummonGoblinSixId = "C001615230714F29BAEC3E2A0F40C3BF";
         internal const string SummonSquirrelId = "2E8716AC8C09468ABDA8BDB7BE8E5971";
-        static LibraryScriptableObject library => Main.library;
+        static LibraryScriptableObject Library => Main.library;
 
         internal static AbilitySpawnFx commonTransmutationFx;
 
         internal static void Load()
         {
-            var angelicAspect = library.Get<BlueprintAbility>("75a10d5a635986641bfbcceceec87217");
+            var angelicAspect = Library.Get<BlueprintAbility>("75a10d5a635986641bfbcceceec87217");
             commonTransmutationFx = angelicAspect.GetComponent<AbilitySpawnFx>();
 
             Main.SafeLoad(FixElementalFormSpellcasting, RES.FixElementalSpells_info);
@@ -146,7 +146,7 @@ namespace EldritchArcana
             };
             foreach (var spellId in spellIds)
             {
-                var baseSpell = library.Get<BlueprintAbility>(spellId);
+                var baseSpell = Library.Get<BlueprintAbility>(spellId);
                 foreach (var spell in baseSpell.Variants)
                 {
                     var buff = spell.GetComponent<AbilityEffectRunAction>().Actions.Actions
@@ -158,7 +158,7 @@ namespace EldritchArcana
 
         static void LoadWeaponOfAwe()
         {
-            var shaken = library.Get<BlueprintBuff>("25ec6cb6ab1845c48a95f9c20b034220");
+            var shaken = Library.Get<BlueprintBuff>("25ec6cb6ab1845c48a95f9c20b034220");
 
             var enchantment = Helpers.Create<BlueprintWeaponEnchantment>();
             enchantment.name = "WeaponOfAweEnchantment";
@@ -166,10 +166,10 @@ namespace EldritchArcana
             Helpers.SetLocalizedStringField(enchantment, "m_Description", RES.WeaponofAweDescription_info);
             Helpers.SetLocalizedStringField(enchantment, "m_Prefix", "");
             Helpers.SetLocalizedStringField(enchantment, "m_Suffix", "");
-            library.AddAsset(enchantment, "21985d11a0f941a2b359c48b5d8a32da");
+            Library.AddAsset(enchantment, "21985d11a0f941a2b359c48b5d8a32da");
             enchantment.SetComponents(Helpers.Create<WeaponOfAweLogic>(w => w.Buff = shaken));
 
-            var paladinWeaponBond = library.Get<BlueprintAbility>("7ff088ab58c69854b82ea95c2b0e35b4");
+            var paladinWeaponBond = Library.Get<BlueprintAbility>("7ff088ab58c69854b82ea95c2b0e35b4");
             var spell = Helpers.CreateAbility("WeaponOfAwe", RES.WeaponOfAweSpells_info,
                 RES.WeaponOfAweAbilityDescription_info,
                 "9c98a1de91a54ba583b9f4880d505766",
@@ -192,7 +192,7 @@ namespace EldritchArcana
             spell.NeedEquipWeapons = true;
             // Note: the paladin animation is neat, but it's very long.
             //spell.Animation = paladinWeaponBond.Animation;
-            var arcaneWeaponSwitchAbility = library.Get<BlueprintAbility>("3c89dfc82c2a3f646808ea250eb91b91");
+            var arcaneWeaponSwitchAbility = Library.Get<BlueprintAbility>("3c89dfc82c2a3f646808ea250eb91b91");
             spell.Animation = arcaneWeaponSwitchAbility.Animation;
             spell.AvailableMetamagic = Metamagic.Quicken | Metamagic.Heighten | Metamagic.Extend;
             spell.CanTargetFriends = true;
@@ -205,27 +205,27 @@ namespace EldritchArcana
 
         static void LoadSummonWildhunt()
         {
-            var GoblinSummonSix = library.Get<BlueprintAbility>("1909400d0731ae049ac62edade91c1f7");//TestSummonAbility.
+            var GoblinSummonSix = Library.Get<BlueprintAbility>("1909400d0731ae049ac62edade91c1f7");//TestSummonAbility.
             //var summonMonsterIXd4plus1 = library.Get<BlueprintAbility>("4988b2e622c6f2d4b897894e3be13f09");
             //var SummonMonsterIXBase = library.Get<BlueprintAbility>("52b5df2a97df18242aec67610616ded0");
             //var SummonSpecial = library.Get<BlueprintAbility>("563876dbfa98696409e60fc635ea9d77");//summon murder pony
             //var SummonSpecial = library.Get<BlueprintAbility>("c2e5b967c47a81c4aa355ef213ec5634");//RaySpellLanternKingStar.
-            var SummonSpecial = library.Get<BlueprintAbility>("06a171f8ce3ad71418ffc516ded07a6b");//squirrelhorde
+            var SummonSpecial = Library.Get<BlueprintAbility>("06a171f8ce3ad71418ffc516ded07a6b");//squirrelhorde
             //var SummonSpecial = library.Get<BlueprintAbility>("26c8d5dc21025564baaeaee51ede05c1");//Switchdoublecompainions
             //var kalike = library.Get<BlueprintAbility>("5cb0f13fc0eef464993b2e082f186032");//SwitchTo_Kalikke_Ability.
             //var kanerah = library.Get<BlueprintAbility>("fb96d35da88acb1498dc51a934f6c4d5");//SwitchTo_Kanerah_Ability.
-            var camo = library.Get<BlueprintAbility>("b26a123a009d4a141ac9c19355913285");//camoflage
+            var camo = Library.Get<BlueprintAbility>("b26a123a009d4a141ac9c19355913285");//camoflage
             var GobIcon = Image2Sprite.Create("Mods/EldritchArcana/sprites/summon_goblins.png");
             //TestSummonAbility.1909400d0731ae049ac62edade91c1f7//summon 6 goblins
 
 
             //var spell = library.CopyAndAdd(summonMonsterIXd4plus1, "Wildhunt", SummonWildhuntId);
-            var GoblinSpell = library.CopyAndAdd(GoblinSummonSix, "GoblinSummonSix", SummonGoblinSixId);//
+            var GoblinSpell = Library.CopyAndAdd(GoblinSummonSix, "GoblinSummonSix", SummonGoblinSixId);//
             GoblinSpell.AddComponent(Helpers.CreateSpellComponent(SpellSchool.Conjuration));
-            Lazy<BlueprintItem> shortSword = new Lazy<BlueprintItem>(() => library.Get<BlueprintItem>("f717b39c351b8b44388c471d4d272f4e"));
+            Lazy<BlueprintItem> shortSword = new Lazy<BlueprintItem>(() => Library.Get<BlueprintItem>("f717b39c351b8b44388c471d4d272f4e"));
             GoblinSpell.MaterialComponent.Item = shortSword.Value;
             GoblinSpell.MaterialComponent.Count = 1;
-            var SquirrelSpell = library.CopyAndAdd(SummonSpecial, "Squirrelhorde", SummonSquirrelId);
+            var SquirrelSpell = Library.CopyAndAdd(SummonSpecial, "Squirrelhorde", SummonSquirrelId);
             SquirrelSpell.SetNameDescription(RES.SquirrelSpellName_info,
                 RES.SquirrelSpellDescription_info);
             GoblinSpell.SetNameDescription(RES.GoblinSpellName_info,
@@ -249,12 +249,12 @@ namespace EldritchArcana
 
         static void LoadTrueResurrection()
         {
-            var resurrection = library.Get<BlueprintAbility>("80a1a388ee938aa4e90d427ce9a7a3e9");
-            var raiseDead = library.Get<BlueprintAbility>("a0fc99f0933d01643b2b8fe570caa4c5");
+            var resurrection = Library.Get<BlueprintAbility>("80a1a388ee938aa4e90d427ce9a7a3e9");
+            var raiseDead = Library.Get<BlueprintAbility>("a0fc99f0933d01643b2b8fe570caa4c5");
 
-            var resurrectionBuff = library.Get<BlueprintBuff>("12f2f2cf326dfd743b2cce5b14e99b3c");//resurrectionBuff
-            var fireball = library.Get<BlueprintAbility>("2d81362af43aeac4387a3d4fced489c3");
-            var spell = library.CopyAndAdd(resurrection, "MassResurrection", MassResurrectionId);
+            //var resurrectionBuff = library.Get<BlueprintBuff>("12f2f2cf326dfd743b2cce5b14e99b3c");//resurrectionBuff
+            var fireball = Library.Get<BlueprintAbility>("2d81362af43aeac4387a3d4fced489c3");
+            var spell = Library.CopyAndAdd(resurrection, "MassResurrection", MassResurrectionId);
 
             //var 00084298d39172b4e954b8eca5575dd9
             spell.SetNameDescription(RES.TrueResurrectionSpells_info,
@@ -281,23 +281,23 @@ namespace EldritchArcana
 
         static void LoadHypnoticPattern()
         {
-            var rainbowPattern = library.Get<BlueprintAbility>("4b8265132f9c8174f87ce7fa6d0fe47b");
-            var rainbowPatternBuff = library.Get<BlueprintBuff>("6477ae917b0ec7a4ca76bc9f36b023ac");
+            var rainbowPattern = Library.Get<BlueprintAbility>("4b8265132f9c8174f87ce7fa6d0fe47b");
+            var rainbowPatternBuff = Library.Get<BlueprintBuff>("6477ae917b0ec7a4ca76bc9f36b023ac");
 
-            var spell = library.CopyAndAdd(rainbowPattern, "HypnoticPattern", hypnoticPatternId);
+            var spell = Library.CopyAndAdd(rainbowPattern, "HypnoticPattern", hypnoticPatternId);
             spell.SetNameDescription(RES.HypnoticPatternSpells_info,
                 RES.HypnoticSpellDescription_info);
             spell.LocalizedDuration = Helpers.CreateString($"{spell.name}.Duration", RES.HypnoticDurationLocalized_info);
 
-            var buff = library.CopyAndAdd(rainbowPatternBuff, $"{spell.name}Buff", "d5a5ac267e21484a9332d96f3be3452d");
+            var buff = Library.CopyAndAdd(rainbowPatternBuff, $"{spell.name}Buff", "d5a5ac267e21484a9332d96f3be3452d");
             buff.SetNameDescription(spell.Name, spell.Description);
 
             // duration is 2 rounds after concentration expires
             buff.AddComponent(SpellConcentrationLogic.Create(Helpers.CreateContextDuration(2)));
 
-            var constructType = library.Get<BlueprintFeature>("fd389783027d63343b4a5634bd81645f");
-            var undeadType = library.Get<BlueprintFeature>("734a29b693e9ec346ba2951b27987e33");
-            var bloodlineUndeadArcana = library.Get<BlueprintFeature>("1a5e7191279e7cd479b17a6ca438498c");
+            var constructType = Library.Get<BlueprintFeature>("fd389783027d63343b4a5634bd81645f");
+            var undeadType = Library.Get<BlueprintFeature>("734a29b693e9ec346ba2951b27987e33");
+            var bloodlineUndeadArcana = Library.Get<BlueprintFeature>("1a5e7191279e7cd479b17a6ca438498c");
 
             spell.SetComponents(
                 SpellSchool.Illusion.CreateSpellComponent(),
@@ -344,12 +344,12 @@ namespace EldritchArcana
                 "d072b841ba0668846adeb007f623bd6c",
                 "6a6a0901d799ceb49b33d4851ff72132",
                 "746ee366e50611146821d61e391edf16",
-            }.Select(library.Get<BlueprintWeaponEnchantment>).ToArray();
+            }.Select(Library.Get<BlueprintWeaponEnchantment>).ToArray();
 
             var name = "GreaterMagicWeapon";
             for (int i = 0; i < enchantments.Length; i++)
             {
-                var enchant = library.CopyAndAdd(enchantments[i], $"{name}Bonus{i + 1}", enchantments[i].AssetGuid,
+                var enchant = Library.CopyAndAdd(enchantments[i], $"{name}Bonus{i + 1}", enchantments[i].AssetGuid,
                     "01a963207ccb484897f3de00344cad55");
                 enchant.SetComponents(Helpers.Create<GreaterMagicWeaponBonusLogic>(g => g.EnhancementBonus = i + 1));
                 enchantments[i] = enchant;
@@ -359,7 +359,7 @@ namespace EldritchArcana
             enchantItem.Enchantments = enchantments;
             enchantItem.DurationValue = Helpers.CreateContextDuration(rate: DurationRate.Hours);
 
-            var arcaneWeaponSwitchAbility = library.Get<BlueprintAbility>("3c89dfc82c2a3f646808ea250eb91b91");
+            var arcaneWeaponSwitchAbility = Library.Get<BlueprintAbility>("3c89dfc82c2a3f646808ea250eb91b91");
             var spell = Helpers.CreateAbility(name, RES.GreaterMagicWeaponSpells_info,
                 RES.GreaterMagicWeaponAbilityDescription_info,
                 "6e513ce66905424eb441755cd264fbfa",
@@ -600,7 +600,7 @@ namespace EldritchArcana
         public bool TargetCaster;
 
         public static FakeTargetsAround Create(Feet radius, TargetType targetType = TargetType.Any,
-            Feet spreadSpeed = default(Feet), bool toCaster = false)
+            Feet spreadSpeed = default, bool toCaster = false)
         {
             var f = Helpers.Create<FakeTargetsAround>();
             f.AoERadius = radius;

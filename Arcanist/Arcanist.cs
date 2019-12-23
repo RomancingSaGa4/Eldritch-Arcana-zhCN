@@ -21,7 +21,7 @@ namespace EldritchArcana
 {
     static class ArcanistClass
     {
-        static LibraryScriptableObject library => Main.library;
+        static LibraryScriptableObject Library => Main.library;
         internal static BlueprintCharacterClass arcanist;
         internal static BlueprintCharacterClass[] arcanistArray;
         internal static BlueprintFeature arcanistCantrips;
@@ -50,7 +50,7 @@ namespace EldritchArcana
             var arcanist = ArcanistClass.arcanist = Helpers.Create<BlueprintCharacterClass>();
             arcanistArray = new BlueprintCharacterClass[] { ArcanistClass.arcanist };
             ArcanistClass.arcanist.name = "ArcanistClass";
-            library.AddAsset(ArcanistClass.arcanist, arcanistGuid);
+            Library.AddAsset(ArcanistClass.arcanist, arcanistGuid);
             ArcanistClass.arcanist.LocalizedName = Helpers.CreateString("Arcanist.Name", "Arcanist(W.I.P)");
             ArcanistClass.arcanist.LocalizedDescription = Helpers.CreateString("Arcanist.Description", "Arcanists are scholars of all things magical.\n" +
                 "They constantly seek out new forms of magic to discover how they work, and in many cases, to collect the energy of such magic for their own uses. Many arcanists are seen as reckless," +
@@ -65,10 +65,10 @@ namespace EldritchArcana
 
             var spellbook = Helpers.Create<BlueprintSpellbook>();
             spellbook.name = "ArcanistSpellbook";
-            library.AddAsset(spellbook, ArcanistSpellbookGuid);
+            Library.AddAsset(spellbook, ArcanistSpellbookGuid);
             spellbook.Name = ArcanistClass.arcanist.LocalizedName;
-            var magusSpellLevels = library.Get<BlueprintSpellsTable>("6326b540f7c6a604f9d6f82cc0e2293c");
-            var wizardLevels = library.Get<BlueprintSpellsTable>("78bb94ed2e75122428232950bb09e97b");
+            //var magusSpellLevels = Library.Get<BlueprintSpellsTable>("6326b540f7c6a604f9d6f82cc0e2293c");
+            var wizardLevels = Library.Get<BlueprintSpellsTable>("78bb94ed2e75122428232950bb09e97b");
             spellbook.SpellsPerDay = wizardLevels;
             spellbook.SpellList = wizard.Spellbook.SpellList;
             spellbook.SpellsPerLevel = 2;
@@ -98,8 +98,8 @@ namespace EldritchArcana
             ArcanistClass.arcanist.IsDivineCaster = false;
             ArcanistClass.arcanist.IsArcaneCaster = true;
 
-            var paladin = library.Get<BlueprintCharacterClass>("bfa11238e7ae3544bbeb4d0b92e897ec");
-            //var ArcanePoolFeature = library.Get<BlueprintFeature>("3ce9bb90749c21249adc639031d5eed1");//magus
+            var paladin = Library.Get<BlueprintCharacterClass>("bfa11238e7ae3544bbeb4d0b92e897ec");
+            //var ArcanePoolFeature = Library.Get<BlueprintFeature>("3ce9bb90749c21249adc639031d5eed1");//magus
             ArcanistClass.arcanist.StartingGold = paladin.StartingGold; // all classes start with 411.
             ArcanistClass.arcanist.PrimaryColor = paladin.PrimaryColor;
             ArcanistClass.arcanist.SecondaryColor = paladin.SecondaryColor;
@@ -143,22 +143,22 @@ namespace EldritchArcana
 
 
 
-            var proficiencies = library.CopyAndAdd<BlueprintFeature>(
+            var proficiencies = Library.CopyAndAdd<BlueprintFeature>(
                 "a98d7cc4e30fe6c4bb3a2c2f69acc3fe", // wizard proficiencies
                 "ArcanistProficiencies",
                 ArcanistProficienciesGuid);
             proficiencies.SetName("arcanist Proficiencies");
             proficiencies.SetDescription("A arcanist is proficient with all simple weapons, as well as the favored weapon of their deity.");
 
-            var detectMagic = library.Get<BlueprintFeature>("ee0b69e90bac14446a4cf9a050f87f2e");
-            var deitySelection = library.Get<BlueprintFeatureSelection>("59e7a76987fe3b547b9cce045f4db3e4");
+            var detectMagic = Library.Get<BlueprintFeature>("ee0b69e90bac14446a4cf9a050f87f2e");
+            var deitySelection = Library.Get<BlueprintFeatureSelection>("59e7a76987fe3b547b9cce045f4db3e4");
 
 
-            var MagusSpellRecallFeature = library.CopyAndAdd<BlueprintFeature>("61fc0521e9992624e9c518060bf89c0f", "ArcanistPool", Arcanistguidlist[1]);
-            var MagusSpellRecall = library.CopyAndAdd<BlueprintAbility>("1bd76e00b6e056d42a8ecc1031dd43b4", "ArcanistSpellrecall", Arcanistguidlist[2]);
+            var MagusSpellRecallFeature = Library.CopyAndAdd<BlueprintFeature>("61fc0521e9992624e9c518060bf89c0f", "ArcanistPool", Arcanistguidlist[1]);
+            //var MagusSpellRecall = Library.CopyAndAdd<BlueprintAbility>("1bd76e00b6e056d42a8ecc1031dd43b4", "ArcanistSpellrecall", Arcanistguidlist[2]);
             MagusSpellRecallFeature.SetDescription("Arcanist Reservoir use this reservoir to empower your spells through varius means.");
-            createArcaneReservoir();
-            var Yog = library.CopyAndAdd<BlueprintFeature>("a3a5ccc9c670e6f4ca4a686d23b89900", "Yog", Arcanistguidlist[98]);
+            CreateArcaneReservoir();
+            var Yog = Library.CopyAndAdd<BlueprintFeature>("a3a5ccc9c670e6f4ca4a686d23b89900", "Yog", Arcanistguidlist[98]);
             Yog.SetDescription("praise yog");
             /*
             foreach (var componen in Yog.ComponentsArray)
@@ -180,8 +180,8 @@ namespace EldritchArcana
             Arcanist_reservoir,
             detectMagic
             ));
-            var WizardFeatSelection = library.Get<BlueprintFeatureSelection>("8c3102c2ff3b69444b139a98521a4899");
-            var fighterFeat = library.Get<BlueprintFeatureSelection>("41c8486641f7d6d4283ca9dae4147a9f");
+            var WizardFeatSelection = Library.Get<BlueprintFeatureSelection>("8c3102c2ff3b69444b139a98521a4899");
+            //var fighterFeat = Library.Get<BlueprintFeatureSelection>("41c8486641f7d6d4283ca9dae4147a9f");
             //entries.Add(Helpers.LevelEntry(2)); 
             entries.Add(Helpers.LevelEntry(3, ExploitSelection, WizardFeatSelection));
             //entries.Add(Helpers.LevelEntry(4)); 
@@ -234,7 +234,7 @@ namespace EldritchArcana
 
             var choices = new List<BlueprintFeature>();
             //var fam = library.Get<BlueprintFeatureSelection>("363cab72f77c47745bf3a8807074d183");
-            var fam = library.CopyAndAdd<BlueprintFeatureSelection>("363cab72f77c47745bf3a8807074d183", "ExploitFamiliar", "365cab72f77c47745bf3a8807074d024");
+            var fam = Library.CopyAndAdd<BlueprintFeatureSelection>("363cab72f77c47745bf3a8807074d183", "ExploitFamiliar", "365cab72f77c47745bf3a8807074d024");
             fam.DlcType = Kingmaker.Blueprints.Root.DlcType.None;
             fam.ComponentsArray = new BlueprintComponent[0];
             fam.SetDescription("Possilbe Arcanist exploit.");
@@ -250,14 +250,7 @@ namespace EldritchArcana
             return selection;
         }
 
-
-
-
-
-
-
-
-        static void createArcaneReservoir()
+        static void CreateArcaneReservoir()
         {
             string abilitydescription = "An arcanist has an innate pool of magical energy that she can draw upon to fuel her arcanist exploits and enhance her spells. The arcanist�s arcane reservoir can hold a maximum amount of magical energy.\n" +
                 "Points from the arcanist reservoir are used to fuel many of the arcanist�s powers. In addition, the arcanist can expend 1 point from her arcane reservoir as a free action whenever she casts an arcanist spell. If she does, she can choose to increase the caster level by 1 or increase the spell�s DC by 1.\n" +
@@ -283,7 +276,7 @@ namespace EldritchArcana
             surge2.resource = resource;
 
             //var shadow_evocation = library.Get<BlueprintAbility>("237427308e48c3341b3d532b9d3a001f");
-            var MagusSpellRecall = library.Get<BlueprintAbility>("1bd76e00b6e056d42a8ecc1031dd43b4");
+            var MagusSpellRecall = Library.Get<BlueprintAbility>("1bd76e00b6e056d42a8ecc1031dd43b4");
             var buff = Helpers.CreateBuff("ArcanistReservoirEmpowerBuffLevel",
                               "Arcane Exploit Level Increase",
                               "At 1st level The Arcanist can use its arcane pool to increase the level of a spell.",

@@ -40,15 +40,15 @@ namespace EldritchArcana
 {
     static class WishSpells
     {
-        internal static BlueprintAbility miracle;
-        internal static BlueprintAbility Wishy;
+        //internal static BlueprintAbility miracle;
+        //internal static BlueprintAbility Wishy;
 
-        static LibraryScriptableObject library => Main.library;
+        static LibraryScriptableObject Library => Main.library;
 
         internal static void Load()
         {
             Main.SafeLoad(LoadLesserMiracle, RES.LesserMiracleSpells_info);//this is neccecairy to declaire id's so the copys work.
-            Main.SafeLoad(LoadMiracle, RES.MiracleSpells_info);
+            Main.SafeLoad(LoadMiracle, RES.MiracleSpellName_info);
             Main.SafeLoad(LoadWish, RES.WishSpells_info);
             Main.SafeLoad(LoadLimitedWish, RES.LimitedWishSpells_info);
             Main.SafeLoad(LoadWishFabricate, RES.WishFabricateSpells_info);
@@ -146,7 +146,7 @@ namespace EldritchArcana
 
             spell.AddToSpellList(Helpers.wizardSpellList, 9);
             // Wish Scroll uses 7th level spells to offer the most choice (divine + arcane).
-            Wishy = spell;
+            // Wishy = spell;
             Helpers.AddSpellAndScroll(spell, "f948342d6a9f2ce49b6aa5f362569d72", 6); // scroll geniekind djinni icon
             // Fix Draconic and Arcane bloodlines to have Wish as their 9th level spell.
             FixBloodlineSpell(spell, "4d491cf9631f7e9429444f4aed629791", "74ab07974fa1c424bbd6fc0e56114db6"); // arcane
@@ -155,7 +155,7 @@ namespace EldritchArcana
 
         internal static void FixBloodlineSpell(BlueprintAbility spell, String bloodlineId, String addSpellId)
         {
-            var addSpellFeat = library.Get<BlueprintFeature>(addSpellId);
+            var addSpellFeat = Library.Get<BlueprintFeature>(addSpellId);
             addSpellFeat.SetNameDescriptionIcon(spell.Name, string.Format(RES.FixBloodlineSpellDescription_info, spell.Description), spell.Icon);
 
             // Fix the spell, and the spell recommendations.
@@ -236,12 +236,12 @@ namespace EldritchArcana
             }
             return variants;
         }
-        static readonly Lazy<BlueprintItem> bone = new Lazy<BlueprintItem>(() => library.Get<BlueprintItem>("6a7cdeb14fc6ef44580cf639c5cdc113"));
+        // static readonly Lazy<BlueprintItem> bone = new Lazy<BlueprintItem>(() => library.Get<BlueprintItem>("6a7cdeb14fc6ef44580cf639c5cdc113"));
 
 
         static void LoadMiracle()
         {
-            var spell = Helpers.CreateAbility("Miracle", RES.MiracleSpells_info,
+            var spell = Helpers.CreateAbility("Miracle", RES.MiracleSpellName_info,
                 RES.MiracleAbilityDescription_info,
                 "8ce2676c93de461b91596ef7e4e04c09",
                 Helpers.GetIcon("fafd77c6bfa85c04ba31fdc1c962c914"), // restoration greater
@@ -262,12 +262,11 @@ namespace EldritchArcana
             spell.AddComponent(spell.CreateAbilityVariants(variants));
             spell.MaterialComponent = variants[0].MaterialComponent;
 
-            // TODO: variant for mass Resurrection (cost 25,000)
             // TODO: variant for protection from natural disasters (cost 25,000)
             // Perhaps it should prevent some of the bad kingdom effects that can happen,
             // or other quest related effects (e.g. become immune to Kingdom penalties for a time)?
             spell.AddToSpellList(Helpers.clericSpellList, 9);
-            miracle = spell;
+            //miracle = spell;
 
             // Miracle Scroll uses 7th level spells to offer the most choice (divine + arcane).
             Helpers.AddSpellAndScroll(spell, "d441dfae9c6b21e47ae24eb13d8b4c4b", 6); // restoration greater.
@@ -276,8 +275,8 @@ namespace EldritchArcana
 
         static void LoadLesserMiracle()
         {
-            var spell = Helpers.CreateAbility("LesserMiracle", RES.MiracleDivineAbilityName_info,
-                RES.MiracleAbilityDescription_info,
+            var spell = Helpers.CreateAbility("LesserMiracle", RES.LesserMiracleSpellName_info,
+                RES.LesserMiracleSpellDescription_info,
                 "be3eb41e7b4d484bbfaa83b83a98931c",
                 //"2ce3374c93de461b91596ef7e4e04c14",
                 Helpers.GetIcon("fafd77c6bfa85c04ba31fdc1c962c914"), // restoration greater
@@ -291,7 +290,7 @@ namespace EldritchArcana
             spell.AvailableMetamagic = Metamagic.Quicken | Metamagic.Heighten | Metamagic.Empower | Metamagic.Extend | Metamagic.Maximize | Metamagic.Reach;
 
             var variants = new List<BlueprintAbility>();
-            for (int level = 1; level <= 7; level++)
+            for (int level = 1; level <= 6; level++)
             {
                 variants.Add(CreateWishForSpellLevel(spell, level, 7, isMiracle: true));
             }
@@ -299,15 +298,11 @@ namespace EldritchArcana
             spell.MaterialComponent = variants[0].MaterialComponent;
 
             variants.AddRange(CreateWishForStatBonus(spell, spell.AssetGuid));
-            // TODO: variant for mass Resurrection (cost 25,000)
-            // TODO: variant for protection from natural disasters (cost 25,000)
-            // Perhaps it should prevent some of the bad kingdom effects that can happen,
-            // or other quest related effects (e.g. become immune to Kingdom penalties for a time)?
+
             spell.AddToSpellList(Helpers.clericSpellList, 7);
             //miracle = spell;
 
-            // Miracle Scroll uses 7th level spells to offer the most choice (divine + arcane).
-            Helpers.AddSpellAndScroll(spell, "d441dfae9c6b21e47ae24eb13d8b4c4b", 5); // restoration greater.
+            Helpers.AddSpellAndScroll(spell, "d441dfae9c6b21e47ae24eb13d8b4c4b", 4); // restoration greater.
         }
 
         static BlueprintAbility CreateWishForSpellLevel(BlueprintAbility wishSpell, int level, int wishLevel, bool isMiracle = false)
@@ -315,7 +310,7 @@ namespace EldritchArcana
             //make shure the ids are different becouse doublicate ids would overwrite each outher
             string MiracleID = isMiracle ? "6db719c91bcc4f31b997904ef1f873c9" : "7db719c91bcc4f31b997904ef1f873c8";
 
-            var wishText = isMiracle ? RES.MiracleSpells_info : RES.WishSpells_info;
+            var wishText = isMiracle ? RES.MiracleSpellName_info : RES.WishSpells_info;
             var spell = Helpers.CreateAbility($"{wishSpell.name}{level}",
                 string.Format(RES.WishLevelSpellName_info, wishSpell.Name, level),
                 string.Format(RES.WishSpellDescription_info, wishText, wishSpell.Description),
@@ -324,11 +319,12 @@ namespace EldritchArcana
                 wishSpell.LocalizedDuration, wishSpell.LocalizedSavingThrow);
             spell.AvailableMetamagic = wishSpell.AvailableMetamagic;
             spell.CanTargetSelf = true;
-            if (!isMiracle)
-            {
-                spell.MaterialComponent.Item = wishLevel < 9 ? diamondDust.Value : diamond.Value;
-                spell.MaterialComponent.Count = wishLevel < 9 ? 30 : 5;
-            }
+            // 根据PF规则，奇迹术也需要材料费
+            //if (!isMiracle)
+            //{
+            spell.MaterialComponent.Item = wishLevel < 9 ? diamondDust.Value : diamond.Value;
+            spell.MaterialComponent.Count = wishLevel < 9 ? 30 : 5;
+            //}
 
             // To keep wish spells from overwhelming the game's UI, they're done as a series of nested selections:
             // - wish spell variant: choose spell level, or other effect
@@ -365,19 +361,16 @@ namespace EldritchArcana
             //    MiracleID = "7a203cb47d1942059a602da860e435d7";
             //}
             // 1. Get all spells for this spell level (minimum level across all classes that can cast it).
-            var wishSpellsAtLevel = GetWishSpellAbilities()[level];
             // 2. Remove material costs, if applicable.
-            int ignoreMaterials = isMiracle ? miracleIgnoreMaterialCost : (wishLevel < 9 ? limitedWishIgnoreMaterialCost : wishIgnoreMaterialCost);
-            var wishSpellsAdjustMaterials = wishSpellsAtLevel.Select(s =>
-            {
-                var cost = s.MaterialComponent.GetCost();
-                if (cost <= miracleIgnoreMaterialCost || cost > ignoreMaterials) return s;
-                return noMaterialWishSpells[s];
-            });
-            // 3. Group spell choices by school. This lets us adjust based on the opposition school, if needed.
-            var spellsBySchool = wishSpellsAdjustMaterials.GroupBy(s => s.School);
+            // 修改，忽略材料费：次等奇迹和有限许愿1000gp，奇迹100gp，许愿10000gp
+            int ignoreMaterials = wishLevel < 9 ? limitedWishIgnoreMaterialCost : (isMiracle ? miracleIgnoreMaterialCost : wishIgnoreMaterialCost);
 
-            var oppositionSchools = library.Get<BlueprintFeatureSelection>("6c29030e9fea36949877c43a6f94ff31");
+            var wishSpellsAtLevel = GetWishSpellAbilities(ignoreMaterials)[level];
+
+            // 3. Group spell choices by school. This lets us adjust based on the opposition school, if needed.
+            var spellsBySchool = wishSpellsAtLevel.GroupBy(s => s.School);
+
+            var oppositionSchools = Library.Get<BlueprintFeatureSelection>("6c29030e9fea36949877c43a6f94ff31");
             var components = new List<BlueprintComponent> {
                 wishResource.CreateAddAbilityResource()
             };
@@ -467,7 +460,7 @@ namespace EldritchArcana
             return components.ToArray();
         }
 
-        static List<List<BlueprintAbility>> GetWishSpellAbilities()
+        static List<List<BlueprintAbility>> GetWishSpellAbilities(int ignoreMaterialCost = wishIgnoreMaterialCost)
         {
             // Transforms all spells into spell-like abilities, suitable for Wish/Miracle.
             if (wishResource != null) return wishSpells;
@@ -490,15 +483,20 @@ namespace EldritchArcana
                 var level = spellLists.Min(l => l.SpellLevel);
                 if (level > 0 && level < wishSpells.Count)
                 {
-                    var ability = SpellToWishAbility(spell, "361fc62d90dc4e75b4c7858fcc0072b0");
-                    wishSpells[level].Add(ability);
                     var cost = spell.MaterialComponent.GetCost();
                     // If the material cost is between the range of what Miracle and Wish allow for free,
                     // generate a version that doesn't cost anything.
-                    if (cost > miracleIgnoreMaterialCost && cost <= wishIgnoreMaterialCost)
+                    // 修改，兼容有限许愿和次等奇迹
+                    if (cost> miracleIgnoreMaterialCost && cost <= ignoreMaterialCost)
                     {
-                        var noMaterialAbility = SpellToWishAbility(spell, "c7c0d7772ad04541a39e334f9025c87d", wishIgnoreMaterialCost);
-                        noMaterialWishSpells.Add(ability, noMaterialAbility);
+                        var noMaterialAbility = SpellToWishAbility(spell, "c7c0d7772ad04541a39e334f9025c87d", ignoreMaterialCost);
+                        //noMaterialWishSpells.Add(ability, noMaterialAbility);
+                        wishSpells[level].Add(noMaterialAbility);
+                    }
+                    else
+                    {
+                        var ability = SpellToWishAbility(spell, "361fc62d90dc4e75b4c7858fcc0072b0");
+                        wishSpells[level].Add(ability);
                     }
                 }
             }
@@ -517,7 +515,7 @@ namespace EldritchArcana
 
         static BlueprintAbility SpellToWishAbility(BlueprintAbility spell, String idPart, int ignoreMaterialCost = miracleIgnoreMaterialCost)
         {
-            var ability = library.CopyAndAdd(spell, $"Wish{spell.name}", spell.AssetGuid, idPart);
+            var ability = Library.CopyAndAdd(spell, $"Wish{spell.name}", spell.AssetGuid, idPart);
             ability.Type = AbilityType.SpellLike;
             ability.ActionType = CommandType.Free;
             if (ability.MaterialComponent.GetCost() <= ignoreMaterialCost)
@@ -542,16 +540,16 @@ namespace EldritchArcana
         const int limitedWishIgnoreMaterialCost = 1000;
         const int wishIgnoreMaterialCost = 10000;
 
-        static readonly Lazy<BlueprintItem> summonedBow = new Lazy<BlueprintItem>(
-            () => library.Get<BlueprintItem>("2fe00e2c0591ecd4b9abee963373c9a7"));
+        // static readonly Lazy<BlueprintItem> summonedBow = new Lazy<BlueprintItem>(
+        //    () => library.Get<BlueprintItem>("2fe00e2c0591ecd4b9abee963373c9a7"));
         static readonly Lazy<BlueprintItem> diamond = new Lazy<BlueprintItem>(
-            () => library.Get<BlueprintItem>("6a7cdeb14fc6ef44580cf639c5cdc113"));
+            () => Library.Get<BlueprintItem>("6a7cdeb14fc6ef44580cf639c5cdc113"));
         static readonly Lazy<BlueprintItem> diamondDust = new Lazy<BlueprintItem>(
-            () => library.Get<BlueprintItem>("92752bbbf04dfa1439af186f48aee0e9"));
+            () => Library.Get<BlueprintItem>("92752bbbf04dfa1439af186f48aee0e9"));
 
         static BlueprintAbilityResource wishResource;
         static readonly List<List<BlueprintAbility>> wishSpells = new List<List<BlueprintAbility>>(9);
-        static readonly Dictionary<BlueprintAbility, BlueprintAbility> noMaterialWishSpells = new Dictionary<BlueprintAbility, BlueprintAbility>();
+        // static readonly Dictionary<BlueprintAbility, BlueprintAbility> noMaterialWishSpells = new Dictionary<BlueprintAbility, BlueprintAbility>();
 
         static readonly String[] spellSchoolGuids = new String[] {
             "35525798a7f8444c953ecfedeb378928",
@@ -656,7 +654,7 @@ namespace EldritchArcana
         }
 
         [JsonProperty]
-        private List<Ability> abilities = new List<Ability>();
+        private readonly List<Ability> abilities = new List<Ability>();
 
         public override void OnFactActivate()
         {

@@ -323,12 +323,26 @@
   <data name="BerserkerOfTheSocietyTraitName_info" xml:space="preserve">
     <value>社群战狂</value>
   </data>
+  <data name="BetrayedDrawbackDescription_info" xml:space="preserve">
+    <value>你曾被人举报给一个危险的政权并险死还生。你一直怀疑自己的直觉是否准确，这使你无法再轻信任何人，并且如果你再度遭遇那组特工，你便会陷入危险。
+缺陷：你在进行沟通检定时受到-3减值。</value>
+  </data>
+  <data name="BetrayedDrawbackName_info" xml:space="preserve">
+    <value>惨遭背叛</value>
+  </data>
   <data name="BirthmarkTraitDescription_info" xml:space="preserve">
     <value>你与生俱来拥有一块奇怪的胎记，看起来就像你日后入信的神祇的圣徽。
 效益：这个胎记会增加你对神祇的虔诚。你在对抗魅惑与胁迫效果时豁免检定获得+2背景加值。</value>
   </data>
   <data name="BirthmarkTraitName_info" xml:space="preserve">
     <value>胎记</value>
+  </data>
+  <data name="BitterDrawbackDescription_info" xml:space="preserve">
+    <value>你一再受到信任的人的伤害，这使你变得难以接受帮助。
+缺陷：你从盟友专长，法术或是类法术效果接受治疗时，治疗效果-1。</value>
+  </data>
+  <data name="BitterDrawbackName_info" xml:space="preserve">
+    <value>辛酸</value>
   </data>
   <data name="BladeOfTheSocietyTraitDescription_info" xml:space="preserve">
     <value>你研究了很多类人生物和怪物，清楚了解他们的弱点为何。
@@ -524,6 +538,21 @@
   </data>
   <data name="CombatTraitName_info" xml:space="preserve">
     <value>战斗背景</value>
+  </data>
+  <data name="CondescendingDrawbackDescription_info" xml:space="preserve">
+    <value>除非是面对像你自己这样真正值得尊重的人，你会用一种令人反感的方式表达你看不起那些不属于自己的种族，民族或国家的人。
+缺陷：你在进行沟通和威吓检定时受到-5减值。</value>
+  </data>
+  <data name="CondescendingDrawbackName_info" xml:space="preserve">
+    <value>趾高气昂</value>
+  </data>
+  <data name="CowardlyDrawbackDescription_info" xml:space="preserve">
+    <value>你在面对危机时可能会虚张声势，但实际上一直心中惴惴。 如果你看到尸体，可能还会呕吐。
+效益：你的移动速度提升5英尺。
+缺陷：你在进行对抗恐惧效果的检定时受到-4减值，进行强韧检定时受到-2减值。</value>
+  </data>
+  <data name="CowardlyDrawbackName_info" xml:space="preserve">
+    <value>怯懦</value>
   </data>
   <data name="CrossbloodedChoicesFeatureDescription_info" xml:space="preserve">
     <value>
@@ -1220,6 +1249,19 @@
   <data name="LegacyOfSandTraitName_info" xml:space="preserve">
     <value>沙之遗产（半兽人）</value>
   </data>
+  <data name="LesserMiracleSpellDescription_info" xml:space="preserve">
+    <value>准确地说，你并非“施放”奇迹术，而是请求奇迹发生。你声明你希望发生什么样的事情，并且向你的神祇（或者你祈祷获得法术能力的其它力量）请求神迹降临。
+次等奇迹术可以做到以下任意一点：
+• 复制任何一个不超过6级的牧师法术。
+• 复制任何一个不超过5级的其它法术。
+• 消除特定法术的有害效果，诸如弱智或是神智错乱。
+• 获得任何强度不超过上述效果的其它效果。
+无论情况为何，超出神祇本性（或者阵营）的要求都会被拒绝。
+复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照7级法术计算。如果次等奇迹术复制的法术含有价格超过1000金币的材料成分，那么你就必须提供这些材料（这并不包含在法术本身价值1500金币的材料费内）。</value>
+  </data>
+  <data name="LesserMiracleSpellName_info" xml:space="preserve">
+    <value>次等奇迹术</value>
+  </data>
   <data name="LesserMiracleSpells_info" xml:space="preserve">
     <value>奇迹术预载</value>
   </data>
@@ -1254,8 +1296,8 @@
 • 复制任何一个不超过5级的非术士/法师法术，但是这个法术不能属于你的对立学派。
 • 复制任何一个不超过5级的术士/法师法术，哪怕这个法术属于你的对立学派。
 • 复制任何一个不超过4级的非术士/法师法术，哪怕这个法术属于你的对立学派。
-• 消除许多法术的有害效果，如神智错乱。
-• 创造出其它效果，其强度等级不超过上述的效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定时受到-7的减值等等。
+• 消除特定法术的有害效果，诸如弱智或是神智错乱。
+• 获得任何强度不超过上述效果的其它效果，比如让某一生物在下次攻击时能够自动命中，或者在下次豁免检定时受到-7的减值等等。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照7级法术计算。如果有限祈愿术复制的法术含有价格超过1000金币的材料成分，那么你就必须提供这些材料（这并不包含在法术本身价值1500金币的材料费内）。</value>
   </data>
   <data name="LimitedWishSpells_info" xml:space="preserve">
@@ -1481,21 +1523,18 @@
   <data name="MiracleAbilityDescription_info" xml:space="preserve">
     <value>准确地说，你并非“施放”奇迹术，而是请求奇迹发生。你声明你希望发生什么样的事情，并且向你的神祇（或者你祈祷获得法术能力的其它力量）请求神迹降临。
 奇迹术可以做到以下任意一点：
-• 复制任何不超过8级的牧师法术。
-• 复制任何不超过7级的其它法术。
-• 取消特定法术的有害效果，诸如弱智或是神智错乱。
+• 复制任何一个不超过8级的牧师法术。
+• 复制任何一个不超过7级的其它法术。
+• 消除特定法术的有害效果，诸如弱智或是神智错乱。
 • 获得任何强度不超过上述效果的其它效果。
-此外，牧师还可以请求一个非常强力的神迹。施放这样的奇迹术将耗费牧师价值25000金币的钻石粉末，因为这会涉及非常强大的神圣能量。这类特殊的强力奇迹可能包含下列情况：
+此外，牧师还可以请求一个非常强力的神迹。施放这样的奇迹术将耗费牧师价值25000金币的钻石，因为这会涉及非常强大的神圣能量。这类特殊的强力奇迹可能包含下列情况：
 • 让阵亡的盟友重新复活，继续战斗，从而让战局变得对你有利。
 • 让你和你的盟友带着所有的装备从某个位面前往一个特定位置，并且在穿过位面之间的屏障时不会出现任何错误。
 • 保护一座城市免受地震、火山爆发、洪水或其他重大自然灾害的影响。
 无论情况为何，超出神祇本性（或者阵营）的要求都会被拒绝。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照9级法术计算。如果奇迹术复制的法术含有价格超过100金币的材料成分，那么你就必须提供这些材料。</value>
   </data>
-  <data name="MiracleDivineAbilityName_info" xml:space="preserve">
-    <value>奇迹术（神术）</value>
-  </data>
-  <data name="MiracleSpells_info" xml:space="preserve">
+  <data name="MiracleSpellName_info" xml:space="preserve">
     <value>奇迹术</value>
   </data>
   <data name="MisbegottenDrawbackDescription_info" xml:space="preserve">
@@ -2997,7 +3036,7 @@
 • 复制任何一个不超过7级的非术士/法师法术，但是该法术不能属于你的对立学派。
 • 复制任何一个不超过7级的术士/法师学派，哪怕该法术属于你的对立学派。
 • 复制任何一个不超过6级的非术士/法师法术，哪怕该法术属于你的对立学派。
-• 取消许多其他法术的有害效果，诸如指使术或是神智错乱。
+• 消除许多其他法术的有害效果，诸如指使术或是神智错乱。
 • 给予一个生物的某项属性值+1的天赋加值。连续不断地施放2到5个祈愿术可以给予生物的某项属性值+2到+5的天赋加值（两个祈愿术获得+2天赋加值，三个祈愿术获得+3天赋加值，以此类推）。天赋加值即刻生效，因此无法被解除。注意：对于任何一项属性，天赋加值最大不能超过+5，并且天赋加值的效果无法叠加，只能应用最大加值。
 • 移除受伤和疾病。单个祈愿术可以帮助1个/每施法者等级的生物，所有目标的同一类病症都将得到治疗。例如你可以治疗自己和同伴受到的所有伤害，或者移除队伍中每个人受到的中毒效果，但是不能用1个祈愿术来同时得到两种效果。
 • 死者重生。一个祈愿术可以通过复制死者复活法术来复活一个死去的生物。如果死去的生物已然尸骨无存，祈愿术依旧可以复活它，但是这需要两个祈愿术：一个用来创造其身体，另外一个让该身体重新获得生命的活力。祈愿术复活的生物仍然无可避免地会损失一个等级。

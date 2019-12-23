@@ -37,63 +37,59 @@ namespace EldritchArcana
 
             noFeature.Feature = EmotionDrawbacks;
 
-            var choices = new List<BlueprintFeature>();
-            choices.Add(Helpers.CreateFeature("AnxiousDrawback", RES.AnxiousDrawbackName_info,
+            var choices = new List<BlueprintFeature>
+            {
+                Helpers.CreateFeature("AnxiousDrawback", RES.AnxiousDrawbackName_info,
                 RES.AnxiousDrawbackDescription_info,
                 EmotionGuids[1],
                 Helpers.NiceIcons(16), // great fortitude
                 FeatureGroup.None,
-                Helpers.CreateAddStatBonus(StatType.SkillPersuasion, -2, ModifierDescriptor.Penalty)));
+                Helpers.CreateAddStatBonus(StatType.SkillPersuasion, -2, ModifierDescriptor.Penalty)),
 
-            //var tieflingHeritageDemodand = library.Get<BlueprintFeature>("a53d760a364cd90429e16aa1e7048d0a");
-            choices.Add(Helpers.CreateFeature("AttachedDrawback", RES.AttachedDrawbackName_info,
+                //var tieflingHeritageDemodand = library.Get<BlueprintFeature>("a53d760a364cd90429e16aa1e7048d0a");
+                Helpers.CreateFeature("AttachedDrawback", RES.AttachedDrawbackName_info,
                 RES.AttachedDrawbackDescription_info,
                 EmotionGuids[2],
                 Helpers.GetIcon("2483a523984f44944a7cf157b21bf79c"), // Elven Immunities
                 FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.SaveWill, -1, ModifierDescriptor.Penalty),
-                Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Fear; s.Value = -2; s.ModifierDescriptor = ModifierDescriptor.Penalty; })));
+                Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Fear; s.Value = -2; s.ModifierDescriptor = ModifierDescriptor.Penalty; })),
 
 
-            choices.Add(Helpers.CreateFeature("BetrayedDrawback", "Betrayed",
-                "You can roll twice and take the lower result on Sense Motive checks to get hunches. You cannot reroll this result, even if you have another ability that would normally allow you to do so." +
-                "\nDrawback: You take a -3 penalty on Diplomacy checks.",
+                Helpers.CreateFeature("BetrayedDrawback", RES.BetrayedDrawbackName_info,
+                RES.BetrayedDrawbackDescription_info,
                 EmotionGuids[3],
                 Helpers.NiceIcons(2), // Accomplished Sneak Attacker
                 FeatureGroup.None,
-                Helpers.CreateAddStatBonus(StatType.CheckDiplomacy, -3, ModifierDescriptor.Penalty)));
+                Helpers.CreateAddStatBonus(StatType.CheckDiplomacy, -3, ModifierDescriptor.Penalty)),
 
 
-            choices.Add(Helpers.CreateFeature("BitterDrawback", "Bitter",
-                "You have been hurt repeatedly by those you trusted, and it has become difficult for you to accept help." +
-                "\nDrawback: When you receive healing from an ally's class feature, spell, or spell-like ability, reduce the amount of that healing by 1 hit point.",
+                Helpers.CreateFeature("BitterDrawback", RES.BitterDrawbackName_info,
+                RES.BitterDrawbackDescription_info,
                 EmotionGuids[4],
                 Helpers.NiceIcons(5), // great fortitude
                 FeatureGroup.None,
-                Helpers.Create<FeyFoundlingLogic>(s => { s.dieModefier = 0; s.flatModefier = -1; })));
+                Helpers.Create<FeyFoundlingLogic>(s => { s.dieModefier = 0; s.flatModefier = -1; })),
 
-            choices.Add(Helpers.CreateFeature("CondescendingDrawback", "Condescending",
-                "Raised with the assurance that only those like you are truly worthy of respect, you have an off-putting way of demonstrating that you look down on those not of your race and ethnicity or nationality." +
-                "\nDrawback: You take a –5 penalty on Diplomacy and Intimidate checks.",
+                Helpers.CreateFeature("CondescendingDrawback", RES.CondescendingDrawbackName_info,
+                RES.CondescendingDrawbackDescription_info,
                 EmotionGuids[5],
                 Helpers.NiceIcons(10), // enchantment
                 FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.CheckDiplomacy, -5, ModifierDescriptor.Penalty),
-                Helpers.CreateAddStatBonus(StatType.CheckIntimidate, -5, ModifierDescriptor.Penalty)));
+                Helpers.CreateAddStatBonus(StatType.CheckIntimidate, -5, ModifierDescriptor.Penalty)),
 
-            //Effect Your base speed when frightened and fleeing increases by 5 feet, and the penalties you take from having the cowering, frightened, panicked, or shaken conditions increase by 1.If you would normally be immune to fear, you do not take these penalties but instead lose your immunity to fear(regardless of its source).
-            choices.Add(Helpers.CreateFeature("CowardlyDrawback", "Cowardly",
-                "You might face dangerous situations with bravado, but you are constantly afraid. And if you see a dead body you might just throw up." +
-                "\nBenefit: Your movementspeed increases by 5" +
-                "\nDrawback: You take a –4 penalty on saves against fear effects. And -2 to all Fortitude saves.",
+                //Effect Your base speed when frightened and fleeing increases by 5 feet, and the penalties you take from having the cowering, frightened, panicked, or shaken conditions increase by 1.If you would normally be immune to fear, you do not take these penalties but instead lose your immunity to fear(regardless of its source).
+                Helpers.CreateFeature("CowardlyDrawback", RES.CowardlyDrawbackName_info,
+                RES.CowardlyDrawbackDescription_info,
                 EmotionGuids[6],
                 Helpers.NiceIcons(6), //invisiblilty
                 FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.SaveFortitude, -2, ModifierDescriptor.Penalty),
                 Helpers.CreateAddStatBonus(StatType.Speed, 5, ModifierDescriptor.FearPenalty),
-                Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Fear; s.Value = -4; s.ModifierDescriptor = ModifierDescriptor.Penalty; })));
+                Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Fear; s.Value = -4; s.ModifierDescriptor = ModifierDescriptor.Penalty; })),
 
-            choices.Add(Helpers.CreateFeature("CrueltyDrawback", "Cruelty",
+                Helpers.CreateFeature("CrueltyDrawback", "Cruelty",
                 "You were rewarded as a child for flaunting your victory over others as completely as possible, and you discovered you enjoyed the feeling of rubbing your foes' faces in the dirt." +
                 "\nBenefit: You have +2 on attack rolls against flanked targets." +
                 "\nDrawback: You take a –2 penalty on attack rolls against someone that is not flanked.",
@@ -101,16 +97,17 @@ namespace EldritchArcana
                 Helpers.NiceIcons(9), // breakbone
                 FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.BaseAttackBonus, -2, ModifierDescriptor.Penalty),
-                DamageBonusAgainstFlankedTarget.Create(4)));
+                DamageBonusAgainstFlankedTarget.Create(4)),
 
-            choices.Add(Helpers.CreateFeature("EmptyMaskDrawback", "Empty Mask",
+                Helpers.CreateFeature("EmptyMaskDrawback", "Empty Mask",
                 "You have spent so long hiding your true identity to escape political enemies that you have lost much of your sense of self." +
                 "\nDrawback: you take a –1 penalty on Will saves vs compulsion and a –2 vs people that know your identity.",
                 EmotionGuids[8],
                 Helpers.NiceIcons(14), // mask
                 FeatureGroup.None,
                 //Helpers.CreateAddStatBonus(StatType.SaveWill, -1, ModifierDescriptor.Penalty),
-                Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Compulsion; s.Value = -2; s.ModifierDescriptor = ModifierDescriptor.Penalty; })));
+                Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Compulsion; s.Value = -2; s.ModifierDescriptor = ModifierDescriptor.Penalty; }))
+            };
 
             var debuff = Helpers.CreateBuff("EnvyDeBuff", "Envy",
                 "You have 2 less on concentration checks.",

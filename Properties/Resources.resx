@@ -323,12 +323,26 @@ Benefit: You may use your rage ability for 3 additional rounds per day.</value>
   <data name="BerserkerOfTheSocietyTraitName_info" xml:space="preserve">
     <value>Berserker of the Society</value>
   </data>
+  <data name="BetrayedDrawbackDescription_info" xml:space="preserve">
+    <value>You were reported to a dangerous authority and narrowly escaped death. You second-guess your instincts constantly, leaving you never sure whether or not to trust someone and endangered if you encounter that group’s agents again.
+Drawback: You take a -3 penalty on Diplomacy checks.</value>
+  </data>
+  <data name="BetrayedDrawbackName_info" xml:space="preserve">
+    <value>Betrayed</value>
+  </data>
   <data name="BirthmarkTraitDescription_info" xml:space="preserve">
     <value>You were born with a strange birthmark that looks very similar to the holy symbol of the god you chose to worship later in life.
 Benefits: This birthmark increases your devotion to your god. You gain a +2 trait bonus on all saving throws against charm and compulsion effects.</value>
   </data>
   <data name="BirthmarkTraitName_info" xml:space="preserve">
     <value>Birthmark</value>
+  </data>
+  <data name="BitterDrawbackDescription_info" xml:space="preserve">
+    <value>You have been hurt repeatedly by those you trusted, and it has become difficult for you to accept help.
+Drawback: When you receive healing from an ally's class feature, spell, or spell-like ability, reduce the amount of that healing by 1 hit point.</value>
+  </data>
+  <data name="BitterDrawbackName_info" xml:space="preserve">
+    <value>Bitter</value>
   </data>
   <data name="BladeOfTheSocietyTraitDescription_info" xml:space="preserve">
     <value>You have studied and learned the weak spots of many humanoids and monsters.
@@ -524,6 +538,21 @@ You can use this ability a number of times per day equal to 1+your Charisma modi
   </data>
   <data name="CombatTraitName_info" xml:space="preserve">
     <value>Combat Trait</value>
+  </data>
+  <data name="CondescendingDrawbackDescription_info" xml:space="preserve">
+    <value>Raised with the assurance that only those like you are truly worthy of respect, you have an off-putting way of demonstrating that you look down on those not of your race and ethnicity or nationality.
+Drawback: You take a –5 penalty on Diplomacy and Intimidate checks.</value>
+  </data>
+  <data name="CondescendingDrawbackName_info" xml:space="preserve">
+    <value>Condescending</value>
+  </data>
+  <data name="CowardlyDrawbackDescription_info" xml:space="preserve">
+    <value>You might face dangerous situations with bravado, but you are constantly afraid. And if you see a dead body you might just throw up.
+Benefit: Your movementspeed increases by 5.
+Drawback: You take a –4 penalty on saves against fear effects. And -2 to all Fortitude saves.</value>
+  </data>
+  <data name="CowardlyDrawbackName_info" xml:space="preserve">
+    <value>Cowardly</value>
   </data>
   <data name="CrossbloodedChoicesFeatureDescription_info" xml:space="preserve">
     <value>
@@ -1218,6 +1247,19 @@ Benefit: You gain a +1 trait bonus on all Will saving throws.</value>
   <data name="LegacyOfSandTraitName_info" xml:space="preserve">
     <value>Legacy of Sand (Half-Orc)</value>
   </data>
+  <data name="LesserMiracleSpellDescription_info" xml:space="preserve">
+    <value>You don't so much cast a miracle as request one. You state what you would like to have happen and request that your deity (or the power you pray to for spells) intercede.
+A miracle can do any of the following things.
+• Duplicate any cleric spell of 6th level or lower.
+• Duplicate any other spell of 5th level or lower.
+• Undo the harmful effects of certain spells, such as feeblemind or insanity.
+• Have any effect whose power level is in line with the above effects.
+In any event, a request that is out of line with the deity's (or alignment's) nature is refused.
+A duplicated spell allows saving throws and spell resistance as normal, but the save DCs are as for a 9th-level spell.When a miracle spell duplicates a spell with a material component that costs more than 1000 gp, you must provide that component (in addition to the 1,500 gp diamond component for this spell).</value>
+  </data>
+  <data name="LesserMiracleSpellName_info" xml:space="preserve">
+    <value>Lesser Miracle</value>
+  </data>
   <data name="LesserMiracleSpells_info" xml:space="preserve">
     <value>Miracle preloading</value>
   </data>
@@ -1491,10 +1533,7 @@ Alternatively, a cleric can make a very powerful request. Casting such a miracle
 In any event, a request that is out of line with the deity's (or alignment's) nature is refused.
 A duplicated spell allows saving throws and spell resistance as normal, but the save DCs are as for a 9th-level spell.When a miracle spell duplicates a spell with a material component that costs more than 100 gp, you must provide that component.</value>
   </data>
-  <data name="MiracleDivineAbilityName_info" xml:space="preserve">
-    <value>(Divine) Miracle</value>
-  </data>
-  <data name="MiracleSpells_info" xml:space="preserve">
+  <data name="MiracleSpellName_info" xml:space="preserve">
     <value>Miracle</value>
   </data>
   <data name="MisbegottenDrawbackDescription_info" xml:space="preserve">

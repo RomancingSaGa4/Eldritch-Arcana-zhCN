@@ -220,8 +220,8 @@ namespace EldritchArcana
                     // Apply fire damage to all targets in range.
                     fireDmgSave));
             spell.AddToSpellList(Helpers.wizardSpellList, 9);
-            spell.AddToSpellList(Helpers.magusSpellList, 9);
-            spell.AddToSpellList(Helpers.fireDomainSpellList, 9);
+            spell.AddToSpellList(Helpers.magusSpellList, 6);
+            //spell.AddToSpellList(Helpers.fireDomainSpellList, 9);
             //spell.AddToSpellList(Helpers.druidSpellList, 9);
             //spell.AddToSpellList(Helpers., 9);
             Helpers.AddSpellAndScroll(spell, "5b172c2c3e356eb43ba5a8f8008a8a5a"); // scroll of fireball
