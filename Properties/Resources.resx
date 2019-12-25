@@ -577,6 +577,14 @@ Choices for each bloodline:</value>
   <data name="CrossBloodlineName_info" xml:space="preserve">
     <value>{0} (Crossblood)</value>
   </data>
+  <data name="CrueltyDrawbackDescription_info" xml:space="preserve">
+    <value>You were rewarded as a child for flaunting your victory over others as completely as possible, and you discovered you enjoyed the feeling of rubbing your foes' faces in the dirt.
+Benefit: You have +2 on attack rolls against flanked targets.
+Drawback: You take a –2 penalty on attack rolls against someone that is not flanked.</value>
+  </data>
+  <data name="CrueltyDrawbackName_info" xml:space="preserve">
+    <value>Cruelty</value>
+  </data>
   <data name="CurseDrawbackOptionsDescription_info" xml:space="preserve">
     <value>You were cursed. Select a Curse.</value>
   </data>
@@ -788,6 +796,13 @@ Benefit: You modify your Diplomacy checks using your Wisdom modifier, not your C
   <data name="EmpathicDiplomatTraitName_info" xml:space="preserve">
     <value>Empathic Diplomat</value>
   </data>
+  <data name="EmptyMaskDrawbackDescription_info" xml:space="preserve">
+    <value>You have spent so long hiding your true identity to escape political enemies that you have lost much of your sense of self.
+Drawback: you take a -1 penalty on Will saves vs compulsion and a -2 vs people that know your identity.</value>
+  </data>
+  <data name="EmptyMaskDrawbackName_info" xml:space="preserve">
+    <value>Empty Mask</value>
+  </data>
   <data name="EnergyBodyFeatureDescription_info" xml:space="preserve">
     <value>As a standard action, you can transform your body into pure life energy, resembling a golden-white fire elemental. In this form, you gain the elemental subtype and give off a warm, welcoming light that increases the light level within 10 feet by one step, up to normal light. Any undead creature striking you with its body or a handheld weapon deals normal damage, but at the same time the attacker takes 1d6 points of positive energy damage + 1 point per oracle level. Creatures wielding melee weapons with reach are not subject to this damage if they attack you. If you grapple or attack an undead creature using unarmed strikes or natural weapons, you may deal this damage in place of the normal damage for the attack. Once per round, if you pass through a living allied creature's square or the ally passes through your square, it heals 1d6 hit points + 1 per oracle level. You may use this ability to heal yourself as a move action. You choose whether or not to heal a creature when it passes through your space. You may return to your normal form as a free action. You may remain in energy body form for a number of rounds per day equal to your oracle level.</value>
   </data>
@@ -806,6 +821,16 @@ Drawback: You take a –2 penalty on attacks against vermin, and you take a –2
   </data>
   <data name="EntomophobeDrawbackName_info" xml:space="preserve">
     <value>Entomophobe</value>
+  </data>
+  <data name="EnvyDebuffDescription_info" xml:space="preserve">
+    <value>You have 2 less on concentration checks.</value>
+  </data>
+  <data name="EnvyDrawbackDescription_info" xml:space="preserve">
+    <value>You grew up in or near an opulent, decadent culture that valued nothing more than showing up the material wealth or accomplishments of others, causing the seed of envy to be planted in your heart.
+Drawback: You have 2 less on concentration checks, if you do not posses at least 100 + 200 per level gold.</value>
+  </data>
+  <data name="EnvyDrawbackName_info" xml:space="preserve">
+    <value>Envy</value>
   </data>
   <data name="EquipmentTraitDescription_info" xml:space="preserve">
     <value>Many adventurers come to rely on certain gear to the extent that the equipment and the adventurer each become something more when the other is present. The symbiosis between adventurers and their gear is varied and complex. Below are several traits and feats that help characters make the most of their equipment or use their equipment to make the most of their skills.</value>
@@ -1124,6 +1149,20 @@ Benefit: You gain a +2 trait bonus on Mobility checks, and a +1 trait bonus on R
   </data>
   <data name="GroundedTraitName_info" xml:space="preserve">
     <value>Grounded (Dwarf)</value>
+  </data>
+  <data name="GuiltyFraudDrawbackDescription_info" xml:space="preserve">
+    <value>You received something through trickery that you did not deserve, and your guilt for the misdeed distracts you from dangers around you.
+Benefit: Start the game dual wielding a one handed weapon.
+Drawback: You take a -2 penalty on Persuasion checks.</value>
+  </data>
+  <data name="GuiltyFraudDrawbackName_info" xml:space="preserve">
+    <value>Guilty Fraud</value>
+  </data>
+  <data name="GuiltyFraudDrawbackWeaponDescription_info" xml:space="preserve">
+    <value>A {0}.</value>
+  </data>
+  <data name="GuiltyFraudDrawbackWeaponFeat_info" xml:space="preserve">
+    <value>Your scram reward — {0}</value>
   </data>
   <data name="HairloomTraitDescription_info" xml:space="preserve">
     <value>You inherited a weapon from someone.

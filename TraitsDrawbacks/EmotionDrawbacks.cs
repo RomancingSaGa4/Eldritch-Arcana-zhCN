@@ -89,19 +89,16 @@ namespace EldritchArcana
                 Helpers.CreateAddStatBonus(StatType.Speed, 5, ModifierDescriptor.FearPenalty),
                 Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Fear; s.Value = -4; s.ModifierDescriptor = ModifierDescriptor.Penalty; })),
 
-                Helpers.CreateFeature("CrueltyDrawback", "Cruelty",
-                "You were rewarded as a child for flaunting your victory over others as completely as possible, and you discovered you enjoyed the feeling of rubbing your foes' faces in the dirt." +
-                "\nBenefit: You have +2 on attack rolls against flanked targets." +
-                "\nDrawback: You take a –2 penalty on attack rolls against someone that is not flanked.",
+                Helpers.CreateFeature("CrueltyDrawback", RES.CrueltyDrawbackName_info,
+                RES.CrueltyDrawbackDescription_info,
                 EmotionGuids[7],
                 Helpers.NiceIcons(9), // breakbone
                 FeatureGroup.None,
                 Helpers.CreateAddStatBonus(StatType.BaseAttackBonus, -2, ModifierDescriptor.Penalty),
                 DamageBonusAgainstFlankedTarget.Create(4)),
 
-                Helpers.CreateFeature("EmptyMaskDrawback", "Empty Mask",
-                "You have spent so long hiding your true identity to escape political enemies that you have lost much of your sense of self." +
-                "\nDrawback: you take a –1 penalty on Will saves vs compulsion and a –2 vs people that know your identity.",
+                Helpers.CreateFeature("EmptyMaskDrawback", RES.EmptyMaskDrawbackName_info,
+                RES.EmptyMaskDrawbackDescription_info,
                 EmotionGuids[8],
                 Helpers.NiceIcons(14), // mask
                 FeatureGroup.None,
@@ -109,25 +106,22 @@ namespace EldritchArcana
                 Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Compulsion; s.Value = -2; s.ModifierDescriptor = ModifierDescriptor.Penalty; }))
             };
 
-            var debuff = Helpers.CreateBuff("EnvyDeBuff", "Envy",
-                "You have 2 less on concentration checks.",
+            var debuff = Helpers.CreateBuff("EnvyDeBuff", RES.EnvyDrawbackName_info,
+                RES.EnvyDebuffDescription_info,
                 EmotionGuids[9],
                 Helpers.NiceIcons(1), null,
                 Helpers.Create<ConcentrationBonus>(a => { a.Value = -2; a.CheckFact = true; }));
 
-            choices.Add(Helpers.CreateFeature("EnvyDrawback", "Envy",
-                "You grew up in or near an opulent, decadent culture that valued nothing more than showing up the material wealth or accomplishments of others, causing the seed of envy to be planted in your heart." +
-                "\nDrawback: You have 2 less on concentration checks. if you do not posses at least 100 + 200 per level gold.",
+            choices.Add(Helpers.CreateFeature("EnvyDrawback", RES.EnvyDrawbackName_info,
+                RES.EnvyDrawbackDescription_info,
                 EmotionGuids[10],
                 Helpers.NiceIcons(1), //grab
                 FeatureGroup.None,
                 CovetousCurseLogic.Create(debuff)));//
             //
             //int rnd = DateTime.Now.Millisecond % 64;
-            var Fraud = Helpers.CreateFeatureSelection("GuiltyFraudDrawback", "Guilty Fraud",
-                "You received something through trickery that you did not deserve, and your guilt for the misdeed distracts you from dangers around you." +
-                "\nBenefit: Start the game dual wielding a one handed weapon." +
-                "\nDrawback: You take a –2 penalty on Persuasion checks.",
+            var Fraud = Helpers.CreateFeatureSelection("GuiltyFraudDrawback", RES.GuiltyFraudDrawbackName_info,
+                RES.GuiltyFraudDrawbackDescription_info,
                 EmotionGuids[11],
                 Helpers.NiceIcons(999), // great fortitude
                 FeatureGroup.None,
@@ -138,40 +132,58 @@ namespace EldritchArcana
             var hoi = new List<BlueprintFeature>() { };
             x = 11;//x is just a cheat value we use to ged guids
             //foreach (WeaponCategory weap in (WeaponCategory[])Enum.GetValues(typeof(WeaponCategory)))
-            var Onehandedweapons = new WeaponCategory[] {
-                WeaponCategory.Dagger,                WeaponCategory.Dart,
-                WeaponCategory.DuelingSword,                WeaponCategory.ElvenCurvedBlade,
-                WeaponCategory.Flail,                WeaponCategory.Greataxe,
-                WeaponCategory.Javelin,                WeaponCategory.LightMace,
-                WeaponCategory.Shuriken,                WeaponCategory.Sickle,
-                WeaponCategory.Sling,                WeaponCategory.Kama,
-                WeaponCategory.Kukri,                WeaponCategory.Starknife,
-                WeaponCategory.ThrowingAxe,                WeaponCategory.LightPick,
-                WeaponCategory.DwarvenWaraxe,                WeaponCategory.Trident,
-                WeaponCategory.BastardSword,                WeaponCategory.Battleaxe,
-                WeaponCategory.Longsword,                WeaponCategory.Nunchaku,
-                WeaponCategory.Rapier,                WeaponCategory.Sai,
-                WeaponCategory.Scimitar,                WeaponCategory.Shortsword,
-                WeaponCategory.Club,                WeaponCategory.WeaponLightShield,
-                WeaponCategory.WeaponHeavyShield,                WeaponCategory.HeavyMace,
-                WeaponCategory.LightHammer,                WeaponCategory.LightPick,
+            var Onehandedweapons = new Dictionary<WeaponCategory, String> {
+                { WeaponCategory.Club, RES.WeaponCategoryClubName_info },
+                { WeaponCategory.Dagger, RES.WeaponCategoryDaggerName_info },
+                { WeaponCategory.Dart,RES.WeaponCategoryDartName_info },
+                { WeaponCategory.DuelingSword, RES.WeaponCategoryDuelingSwordName_info },
+                { WeaponCategory.ElvenCurvedBlade, RES.WeaponCategoryElvenCurveBladeName_info },
+                { WeaponCategory.Falcata, RES.WeaponCategoryFalcataName_info },
+                { WeaponCategory.Flail, RES.WeaponCategoryFlailName_info },
+                { WeaponCategory.Handaxe, RES.WeaponCategoryHandaxeName_info },
+                { WeaponCategory.HeavyMace, RES.WeaponCategoryHeavyMaceName_info },
+                { WeaponCategory.Javelin, RES.WeaponCategoryJavelinName_info},
+                { WeaponCategory.LightMace, RES.WeaponCategoryLightMaceName_info },
+                { WeaponCategory.Shuriken, RES.WeaponCategoryShurikenName_info },
+                { WeaponCategory.Sickle, RES.WeaponCategorySickleName_info },
+                { WeaponCategory.Sling, RES.WeaponCategorySlingName_info },
+                { WeaponCategory.Kama, RES.WeaponCategoryKamaName_info },
+                { WeaponCategory.Kukri, RES.WeaponCategoryKukriName_info },
+                { WeaponCategory.Starknife, RES.WeaponCategoryStarknifeName_info },
+                { WeaponCategory.ThrowingAxe, RES.WeaponCategoryThrowingAxeName_info },
+                { WeaponCategory.LightPick, RES.WeaponCategoryLightPickName_info },
+                { WeaponCategory.DwarvenWaraxe, RES.WeaponCategoryDwarvenWaraxeName_info },
+                { WeaponCategory.Trident, RES.WeaponCategoryTridentName_info },
+                { WeaponCategory.BastardSword, RES.WeaponCategoryBastardSwordName_info },
+                { WeaponCategory.Battleaxe, RES.WeaponCategoryBattleaxeName_info },
+                { WeaponCategory.Longsword, RES.WeaponCategoryLongswordName_info },
+                { WeaponCategory.Nunchaku, RES.WeaponCategoryNunchakuName_info },
+                { WeaponCategory.Rapier, RES.WeaponCategoryRapierName_info },
+                { WeaponCategory.Estoc, RES.WeaponCategoryEstocName_info },
+                { WeaponCategory.Sai, RES.WeaponCategorySaiName_info },
+                { WeaponCategory.Scimitar, RES.WeaponCategoryScimitarName_info },
+                { WeaponCategory.Shortsword, RES.WeaponCategoryShortswordName_info },
+                { WeaponCategory.Warhammer, RES.WeaponCategoryWarhammerName_info },
+                { WeaponCategory.LightHammer, RES.WeaponCategoryLightHammerName_info },
+                { WeaponCategory.WeaponLightShield, RES.WeaponCategoryLightShieldName_info },
+                { WeaponCategory.WeaponHeavyShield, RES.WeaponCategoryHeavyShieldName_info },
             };
-            foreach (WeaponCategory weap in Onehandedweapons)
+
+            foreach (KeyValuePair<WeaponCategory, String> weap in Onehandedweapons)
             {
 
                 x++;
                 hoi.Add(Helpers.CreateFeature(
-                $"Greedy{weap}Drawback",
-                $"your scram reward — {weap}",
-                $"{weap}", EmotionGuids[x]
-                ,
+                $"Greedy{weap.Key}Drawback",
+                string.Format(RES.GuiltyFraudDrawbackWeaponFeat_info, weap.Value),
+                string.Format(RES.GuiltyFraudDrawbackWeaponDescription_info, weap.Value), 
+                EmotionGuids[x],
                 Helpers.NiceIcons(999), FeatureGroup.None,
                 Helpers.Create<AddStartingEquipment>(a =>
                 {
 
-                    a.CategoryItems = new WeaponCategory[] { weap, weap };
+                    a.CategoryItems = new WeaponCategory[] { weap.Key, weap.Key };
                     a.RestrictedByClass = Array.Empty<BlueprintCharacterClass>();
-
                     a.BasicItems = Array.Empty<BlueprintItem>();
                 })));
 
@@ -179,6 +191,7 @@ namespace EldritchArcana
             }
             //Log.Write(x.ToString());
             x++;
+
             choices.Add(Helpers.CreateFeature("HauntedDrawback", "Haunted",
                 "Something from your past—or a dark secret you presently hold—makes it difficult for you to ever be at peace, and your chronic worry that you might fall to evil influence has become a self-fulfilling prophecy." +
                 "\nDrawback: You take a –2 penalty on spells with the evil descriptor.",

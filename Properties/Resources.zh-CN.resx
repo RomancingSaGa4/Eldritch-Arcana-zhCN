@@ -577,6 +577,14 @@
   <data name="CrossBloodlineName_info" xml:space="preserve">
     <value>{0}（混血）</value>
   </data>
+  <data name="CrueltyDrawbackDescription_info" xml:space="preserve">
+    <value>你自小就从炫耀自己将他人打得体无完肤的行为中获益不少，并且你发现你自己非常享受将敌人的脸按到地里摩擦的快感。
+效益：你在面对夹击对象时攻击检定获得+2加值。
+缺陷：你在面对未受到夹击的对象时攻击检定受到-2减值。</value>
+  </data>
+  <data name="CrueltyDrawbackName_info" xml:space="preserve">
+    <value>残虐</value>
+  </data>
   <data name="CurseDrawbackOptionsDescription_info" xml:space="preserve">
     <value>你受到诅咒。请选择一种诅咒。</value>
   </data>
@@ -788,6 +796,13 @@
   <data name="EmpathicDiplomatTraitName_info" xml:space="preserve">
     <value>共情交际</value>
   </data>
+  <data name="EmptyMaskDrawbackDescription_info" xml:space="preserve">
+    <value>长久以来你在政治抗争中将你的本性隐藏在假面之后，致使你自己也几乎认不出你自己究竟是一个怎样的人。
+缺陷：你在对抗胁迫效果时意志检定受到-1减值，在对抗清楚你本性的人时豁免检定受到-2减值。</value>
+  </data>
+  <data name="EmptyMaskDrawbackName_info" xml:space="preserve">
+    <value>假面具</value>
+  </data>
   <data name="EnergyBodyFeatureDescription_info" xml:space="preserve">
     <value>你能以一个标准动作将自己的身体化为纯净的生命能量，在外观上看来就如同一个金光闪闪的火元素一般。在此形态下，你获得元素亚种特性，并且你浑身散发的怡人暖光会使得身周10英尺范围内的光照等级上升一级，最高到正常光照水平。任何用自己的身体部分或持有武器近战攻击你的不死生物都能正常造成伤害，但同时也会受到1d6+每先知等级1点的正向能量伤害。用长触及武器攻击你的生物不受此效果影响。如果你在此状态下擒抱或者通过天生武器或徒手击打攻击不死生物，你也可以选择造成此伤害而非你的正常攻击伤害。每轮一次，如果你穿越一个盟友占据的方格或者一个盟友穿越你占据的方格，同时治疗他1d6+每先知等级1点的伤害，你也可以通过一个移动动作以此能力治疗自己，并且你自己可以选择是否治疗穿过你的盟友。你可以以一个自由动作返回正常形态，你每天可以转换为能量形态的轮数等同于你的先知等级。</value>
   </data>
@@ -806,6 +821,16 @@
   </data>
   <data name="EntomophobeDrawbackName_info" xml:space="preserve">
     <value>昆虫恐惧症</value>
+  </data>
+  <data name="EnvyDebuffDescription_info" xml:space="preserve">
+    <value>你在进行专注检定时受到-2减值。</value>
+  </data>
+  <data name="EnvyDrawbackDescription_info" xml:space="preserve">
+    <value>你成长在一个充满纸醉金迷氛围的社会环境中，财富和成就是衡量人的价值的唯一标准。这使得嫉妒的种子深深的扎根在你的心里。
+缺陷：当你手里的钱少于100gp+200gp*（人物等级-1）的时候，你在进行专注检定时就会受到-2减值。</value>
+  </data>
+  <data name="EnvyDrawbackName_info" xml:space="preserve">
+    <value>嫉妒</value>
   </data>
   <data name="EquipmentTraitDescription_info" xml:space="preserve">
     <value>许多冒险者倾向于依赖某件特定的装备，当他们和装备合二为一之时将变得如虎添翼。冒险者与他们的装备之间的共生关系是多种多样且复杂的。以下是一些特性和专长，可以帮助角色充分利用自己的装备，或是利用装备来充分发挥自己的技能。</value>
@@ -1126,6 +1151,20 @@
   </data>
   <data name="GroundedTraitName_info" xml:space="preserve">
     <value>理性（矮人）</value>
+  </data>
+  <data name="GuiltyFraudDrawbackDescription_info" xml:space="preserve">
+    <value>你以某些诡诈手段获取了一些不属于你的事物，而你手中的不义之财使你无法专注于身边的危险。
+效益：在开始游戏时你将获得一把单手武器。
+缺陷：你在进行沟通检定时受到-2减值。</value>
+  </data>
+  <data name="GuiltyFraudDrawbackName_info" xml:space="preserve">
+    <value>诈骗</value>
+  </data>
+  <data name="GuiltyFraudDrawbackWeaponDescription_info" xml:space="preserve">
+    <value>你获得了一把{0}。</value>
+  </data>
+  <data name="GuiltyFraudDrawbackWeaponFeat_info" xml:space="preserve">
+    <value>赃物：{0}</value>
   </data>
   <data name="HairloomTraitDescription_info" xml:space="preserve">
     <value>你从某人那里继承来一把兵刃。

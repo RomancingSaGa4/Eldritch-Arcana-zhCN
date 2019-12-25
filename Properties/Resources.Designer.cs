@@ -1348,6 +1348,26 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You were rewarded as a child for flaunting your victory over others as completely as possible, and you discovered you enjoyed the feeling of rubbing your foes&apos; faces in the dirt.
+        ///Benefit: You have +2 on attack rolls against flanked targets.
+        ///Drawback: You take a –2 penalty on attack rolls against someone that is not flanked. 的本地化字符串。
+        /// </summary>
+        internal static string CrueltyDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("CrueltyDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Cruelty 的本地化字符串。
+        /// </summary>
+        internal static string CrueltyDrawbackName_info {
+            get {
+                return ResourceManager.GetString("CrueltyDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You were cursed. Select a Curse. 的本地化字符串。
         /// </summary>
         internal static string CurseDrawbackOptionsDescription_info {
@@ -1936,6 +1956,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You have spent so long hiding your true identity to escape political enemies that you have lost much of your sense of self.
+        ///Drawback: you take a -1 penalty on Will saves vs compulsion and a -2 vs people that know your identity. 的本地化字符串。
+        /// </summary>
+        internal static string EmptyMaskDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("EmptyMaskDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Empty Mask 的本地化字符串。
+        /// </summary>
+        internal static string EmptyMaskDrawbackName_info {
+            get {
+                return ResourceManager.GetString("EmptyMaskDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 As a standard action, you can transform your body into pure life energy, resembling a golden-white fire elemental. In this form, you gain the elemental subtype and give off a warm, welcoming light that increases the light level within 10 feet by one step, up to normal light. Any undead creature striking you with its body or a handheld weapon deals normal damage, but at the same time the attacker takes 1d6 points of positive energy damage + 1 point per oracle level. Creatures wielding melee weapons with reac [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
         internal static string EnergyBodyFeatureDescription_info {
@@ -1987,6 +2026,34 @@ namespace EldritchArcana.Properties {
         internal static string EntomophobeDrawbackName_info {
             get {
                 return ResourceManager.GetString("EntomophobeDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You have 2 less on concentration checks. 的本地化字符串。
+        /// </summary>
+        internal static string EnvyDebuffDescription_info {
+            get {
+                return ResourceManager.GetString("EnvyDebuffDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You grew up in or near an opulent, decadent culture that valued nothing more than showing up the material wealth or accomplishments of others, causing the seed of envy to be planted in your heart.
+        ///Drawback: You have 2 less on concentration checks, if you do not posses at least 100 + 200 per level gold. 的本地化字符串。
+        /// </summary>
+        internal static string EnvyDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("EnvyDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Envy 的本地化字符串。
+        /// </summary>
+        internal static string EnvyDrawbackName_info {
+            get {
+                return ResourceManager.GetString("EnvyDrawbackName_info", resourceCulture);
             }
         }
         
@@ -2893,6 +2960,44 @@ namespace EldritchArcana.Properties {
         internal static string GroundedTraitName_info {
             get {
                 return ResourceManager.GetString("GroundedTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You received something through trickery that you did not deserve, and your guilt for the misdeed distracts you from dangers around you.
+        ///Benefit: Start the game dual wielding a one handed weapon.
+        ///Drawback: You take a -2 penalty on Persuasion checks. 的本地化字符串。
+        /// </summary>
+        internal static string GuiltyFraudDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("GuiltyFraudDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Guilty Fraud 的本地化字符串。
+        /// </summary>
+        internal static string GuiltyFraudDrawbackName_info {
+            get {
+                return ResourceManager.GetString("GuiltyFraudDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 A {0}. 的本地化字符串。
+        /// </summary>
+        internal static string GuiltyFraudDrawbackWeaponDescription_info {
+            get {
+                return ResourceManager.GetString("GuiltyFraudDrawbackWeaponDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Your scram reward — {0} 的本地化字符串。
+        /// </summary>
+        internal static string GuiltyFraudDrawbackWeaponFeat_info {
+            get {
+                return ResourceManager.GetString("GuiltyFraudDrawbackWeaponFeat_info", resourceCulture);
             }
         }
         
