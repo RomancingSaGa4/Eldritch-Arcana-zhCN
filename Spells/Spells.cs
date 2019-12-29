@@ -55,10 +55,13 @@ namespace EldritchArcana
     static class Spells
     {
         internal const string hypnoticPatternId = "bd623ae7179a4d19a40b977ffca1b83f";
-        internal const string MassResurrectionId = "bd623ae7179a4d19a40b977ffca1b84g";
-        internal const string SummonWildhuntId = "vr623ae7179a4d19a40b977ffca1b52f";
+        internal const string TrueResurrectionId = "bd623ae7179a4d19a40b977ffca1b94f";
+        internal const string SummonWildhuntId = "de623ae7179a4d19a40b977ffca1b52f";
         internal const string SummonGoblinSixId = "C001615230714F29BAEC3E2A0F40C3BF";
         internal const string SummonSquirrelId = "2E8716AC8C09468ABDA8BDB7BE8E5971";
+
+        internal static BlueprintAbility TrueResurrection;
+
         static LibraryScriptableObject Library => Main.library;
 
         internal static AbilitySpawnFx commonTransmutationFx;
@@ -69,6 +72,7 @@ namespace EldritchArcana
             commonTransmutationFx = angelicAspect.GetComponent<AbilitySpawnFx>();
 
             Main.SafeLoad(FixElementalFormSpellcasting, RES.FixElementalSpells_info);
+            Main.SafeLoad(FixHealingDomainLevel8Spell, RES.FixHealingDomainLevel8Spell);
 
             Main.SafeLoad(DismissSpell.Load, RES.DismissSpells_info);
 
@@ -76,15 +80,13 @@ namespace EldritchArcana
             Main.SafeLoad(FlySpells.Load, RES.FlySpells_info);
             Main.SafeLoad(TimeStop.Load, RES.TimeStopSpells_info);
             Main.SafeLoad(KnockAndDetectSecrets.Load, RES.KnockAndDetectSecretsSpells_info);
-            Main.SafeLoad(LoadTrueResurrection, RES.TrueResurrectionSpells_info);
-            Main.SafeLoad(LoadSummonWildhunt, RES.SummonWildhuntSpells_info);
-
-            Main.SafeLoad(ExperimentalSpells.LoadSpritualWeapon, RES.SpritualWeaponSpells_info);
+            //Main.SafeLoad(ExperimentalSpells.LoadSpritualWeapon, RES.SpritualWeaponSpells_info);
             Main.SafeLoad(ExperimentalSpells.LoadEmergencyForceSphere, RES.EmergencyForceSphereSpells_info);
 
             Main.SafeLoad(LoadGreaterMagicWeapon, RES.GreaterMagicWeaponSpells_info);
             Main.SafeLoad(LoadWeaponOfAwe, RES.WeaponOfAweSpells_info);
-
+            Main.SafeLoad(LoadTrueResurrection, RES.TrueResurrectionSpells_info);
+            Main.SafeLoad(LoadSummonWildhunt, RES.SummonWildhuntSpells_info);
             Main.SafeLoad(LoadHypnoticPattern, RES.HypnoticPatternSpells_info);
 
             // TODO: divine spell: Blessing of Fervor, Atonement (w/ option to change to your alignment?)
@@ -156,6 +158,14 @@ namespace EldritchArcana
             }
         }
 
+        static void FixHealingDomainLevel8Spell()
+        {
+            // 修正医疗领域8级法术为群体治疗致命伤
+            var cureCrticalWoundMassSpell = Library.Get<BlueprintAbility>("1f173a16120359e41a20fc75bb53d449");
+            cureCrticalWoundMassSpell.FixDomainSpell(8, "033b2b6a8899be844ae8aa91d4dab477");
+            //cureCrticalWoundMassSpell.AddToSpellList(Helpers.healingDomainSpellList, 8);
+        }
+
         static void LoadWeaponOfAwe()
         {
             var shaken = Library.Get<BlueprintBuff>("25ec6cb6ab1845c48a95f9c20b034220");
@@ -218,14 +228,14 @@ namespace EldritchArcana
             var GobIcon = Image2Sprite.Create("Mods/EldritchArcana/sprites/summon_goblins.png");
             //TestSummonAbility.1909400d0731ae049ac62edade91c1f7//summon 6 goblins
 
-
             //var spell = library.CopyAndAdd(summonMonsterIXd4plus1, "Wildhunt", SummonWildhuntId);
-            var GoblinSpell = Library.CopyAndAdd(GoblinSummonSix, "GoblinSummonSix", SummonGoblinSixId);//
+            var GoblinSpell = Library.CopyAndAdd(GoblinSummonSix, "GoblinSummonSix", SummonGoblinSixId);
             GoblinSpell.AddComponent(Helpers.CreateSpellComponent(SpellSchool.Conjuration));
             Lazy<BlueprintItem> shortSword = new Lazy<BlueprintItem>(() => Library.Get<BlueprintItem>("f717b39c351b8b44388c471d4d272f4e"));
             GoblinSpell.MaterialComponent.Item = shortSword.Value;
             GoblinSpell.MaterialComponent.Count = 1;
             var SquirrelSpell = Library.CopyAndAdd(SummonSpecial, "Squirrelhorde", SummonSquirrelId);
+            SquirrelSpell.Type = AbilityType.Spell;
             SquirrelSpell.SetNameDescription(RES.SquirrelSpellName_info,
                 RES.SquirrelSpellDescription_info);
             GoblinSpell.SetNameDescription(RES.GoblinSpellName_info,
@@ -240,11 +250,13 @@ namespace EldritchArcana
             SquirrelSpell.AddToSpellList(Helpers.inquisitorSpellList, 3);
             SquirrelSpell.AddToSpellList(Helpers.wizardSpellList, 3);
             SquirrelSpell.AddToSpellList(Helpers.bardSpellList, 3);
+            Helpers.AddSpellAndScroll(SquirrelSpell, "e72436c53e19a8048ba35cf49f70c64a"); //卷轴 召唤怪物III 王蜥
 
             GoblinSpell.AddToSpellList(Helpers.magusSpellList, 2);
             GoblinSpell.AddToSpellList(Helpers.wizardSpellList, 2);
             GoblinSpell.AddToSpellList(Helpers.bardSpellList, 2);
             GoblinSpell.AddToSpellList(Helpers.druidSpellList, 2);
+            Helpers.AddSpellAndScroll(GoblinSpell, "20e78f54795c37b469bbcc0af791fbd5"); //卷轴 召唤怪物II 1d3只狗
         }
 
         static void LoadTrueResurrection()
@@ -254,7 +266,7 @@ namespace EldritchArcana
 
             //var resurrectionBuff = library.Get<BlueprintBuff>("12f2f2cf326dfd743b2cce5b14e99b3c");//resurrectionBuff
             var fireball = Library.Get<BlueprintAbility>("2d81362af43aeac4387a3d4fced489c3");
-            var spell = Library.CopyAndAdd(resurrection, "MassResurrection", MassResurrectionId);
+            var spell = Library.CopyAndAdd(resurrection, "TrueResurrection", TrueResurrectionId);
 
             //var 00084298d39172b4e954b8eca5575dd9
             spell.SetNameDescription(RES.TrueResurrectionSpells_info,
@@ -271,12 +283,13 @@ namespace EldritchArcana
             spell.ReplaceComponent<SpellComponent>(raiseDead.GetComponent<SpellComponent>());
             spell.MaterialComponent.Count = 1;
 
-            //spell.AddToSpellList(Helpers.spel, 3);
-            spell.AddToSpellList(Helpers.healingDomainSpellList, 8);
-            spell.AddToSpellList(Helpers.druidSpellList, 9);
-            /*
-            Helpers.AddSpellAndScroll(spell, "84cd707a7ae9f934389ed6bbf51b023a"); // scroll rainbow pattern*/
+            //完全复生术追加至普通的牧师9级法术表中
+            spell.AddToSpellList(Helpers.clericSpellList, 9);
+            //spell.AddToSpellList(Helpers.druidSpellList, 9);
+            //spell.FixDomainSpell(8, "033b2b6a8899be844ae8aa91d4dab477");
+            Helpers.AddSpellAndScroll(spell, "6169a9e10d32c524ea44edb47ebd93cf"); // scroll resurrection
 
+            TrueResurrection = spell;
         }
 
         static void LoadHypnoticPattern()

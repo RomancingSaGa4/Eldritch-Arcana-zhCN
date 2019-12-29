@@ -638,7 +638,7 @@
     <value>延缓感染</value>
   </data>
   <data name="DelayedBlastFireballAbilityDescription_info" xml:space="preserve">
-    <value>该法术的效果类似于火球术，但是更为强力，并且可以在施法完成后5轮内引爆。爆炸的火焰将造成每施法者等级1d6点火焰伤害（最大伤害值为20d6）。延迟爆裂火球的小火珠能按照你的愿望立刻引爆，或者你可以选择延迟爆发时间（至多5轮）。你必须在施法完成之际决定爆发延迟的轮数，并且该时间一旦决定无可更改。</value>
+    <value>此法术的效果类似于火球术，但是更为强力，并且可以在施法完成后5轮内引爆。爆炸的火焰将造成每施法者等级1d6点火焰伤害（最大伤害值为20d6）。延迟爆裂火球的小火珠能按照你的愿望立刻引爆，或者你可以选择延迟爆发时间（至多5轮）。你必须在施法完成之际决定爆发延迟的轮数，并且该时间一旦决定无可更改。</value>
   </data>
   <data name="DelayedBlastFireballAbilityName_info" xml:space="preserve">
     <value>延迟爆裂火球</value>
@@ -971,6 +971,9 @@
   <data name="FixElementalSpells_info" xml:space="preserve">
     <value>启用元素形态的施法</value>
   </data>
+  <data name="FixHealingDomainLevel8Spell" xml:space="preserve">
+    <value>修复医疗领域8级法术为“群体治疗致命伤”</value>
+  </data>
   <data name="FixSpellSpecializationFeatureName_info" xml:space="preserve">
     <value>法术专精</value>
   </data>
@@ -1120,7 +1123,7 @@
     <value>(返回)</value>
   </data>
   <data name="GoblinSpellDescription_info" xml:space="preserve">
-    <value>该法术召唤了一组六只地精。召唤的地精群出现在你指定的地方，并在你行动之际立即行动。它会尽其所能攻击你的对手。如果你能和这些生物交流，你可以指示它们不要攻击，攻击特定的敌人，或者按照你的命令采取其他行动。</value>
+    <value>此法术召唤了一组六只地精。召唤的地精群出现在你指定的地方，并在你行动之际立即行动。它会尽其所能攻击你的对手。如果你能和这些生物交流，你可以指示它们不要攻击，攻击特定的敌人，或者按照你的命令采取其他行动。</value>
   </data>
   <data name="GoblinSpellName_info" xml:space="preserve">
     <value>召唤六只地精</value>
@@ -1140,7 +1143,7 @@
     <value>高等悠远血脉</value>
   </data>
   <data name="GreaterMagicWeaponAbilityDescription_info" xml:space="preserve">
-    <value>该法术的效果类似于魔化武器，但是能够给武器在攻击和伤害上提供+1/每4施法者等级的增强加值（最大+5）。这个加值无法让武器穿透伤害减免，除非是对魔法的伤害减免。</value>
+    <value>此法术的效果类似于魔化武器，但是能够给武器在攻击和伤害上提供+1/每4施法者等级的增强加值（最大+5）。这个加值无法让武器穿透伤害减免，除非是对魔法的伤害减免。</value>
   </data>
   <data name="GreaterMagicWeaponSpells_info" xml:space="preserve">
     <value>高等魔化武器</value>
@@ -1291,7 +1294,7 @@
   <data name="LesserMiracleSpellDescription_info" xml:space="preserve">
     <value>准确地说，你并非“施放”奇迹术，而是请求奇迹发生。你声明你希望发生什么样的事情，并且向你的神祇（或者你祈祷获得法术能力的其它力量）请求神迹降临。
 次等奇迹术可以做到以下任意一点：
-• 复制任何一个不超过6级的牧师法术。
+• 复制任何一个不超过6级的牧师/德鲁伊法术。
 • 复制任何一个不超过5级的其它法术。
 • 消除特定法术的有害效果，诸如弱智或是神智错乱。
 • 获得任何强度不超过上述效果的其它效果。
@@ -1575,6 +1578,9 @@
   </data>
   <data name="MiracleSpellName_info" xml:space="preserve">
     <value>奇迹术</value>
+  </data>
+  <data name="MiracleUseSpellName_info" xml:space="preserve">
+    <value>奇迹术：{0}</value>
   </data>
   <data name="MisbegottenDrawbackDescription_info" xml:space="preserve">
     <value>无论是由于恶意的魔法，疾病，还是诸神的嘲弄，你与生俱来身有残缺，并展现在你的不良于行上。
@@ -2453,7 +2459,7 @@
     <value>异乡来客</value>
   </data>
   <data name="OverlandFlightSpellAbilityDescription_info" xml:space="preserve">
-    <value>该法术给予你一双飞翼，使你能够以40英尺的速度飞行（如身穿中型或重型盔甲，或者负重为中度或重度负荷时，速度为30英尺）。该法术为长途飞行而设计，并能保证你在飞行期间不会疲劳。</value>
+    <value>此法术给予你一双飞翼，使你能够以40英尺的速度飞行（如身穿中型或重型盔甲，或者负重为中度或重度负荷时，速度为30英尺）。此法术为长途飞行而设计，并能保证你在飞行期间不会疲劳。</value>
   </data>
   <data name="OverlandFlightSpellAbilityName_info" xml:space="preserve">
     <value>跨陆飞行（{0}）</value>
@@ -2637,8 +2643,9 @@
     <value>结果：成功。</value>
   </data>
   <data name="ResurrectionSpellDescription_info" xml:space="preserve">
-    <value>该法术的效果类似于死者复活，不同的是你可以复活已经死亡长达10年/每施法者等级的生物。该法术甚至可以让已经尸骨无存的生物复活，前提是你以某种方式明确地识别死者（吟诵死者的出生或死亡时间和地点是最常见的方法）。在法术完成后，生物即刻完全回复其生命值、活力和健康状态，不会损失等级（或体质属性），并且回复生物在死亡时拥有的所有已准备好的法术。你可以复活被致死效果杀死的人或被变成不死生物再被摧毁的人。这个法术也可以复活元素或异界生物，但不能复活构装体或不死生物。即便完全复原术也不能使死于天年的生物起死回生。
-效益：复活是一个自由动作。</value>
+    <value>此法术效果如同复活亡者，不同的是你能够复活已经死亡长达10年/每施法者等级的生物。此法术甚至可以让已经尸骨无存的生物复活，前提是你以某种方式明确地识别死者（吟诵死者的出生或死亡时间和地点是最常见的方法）。
+当法术施放完成后，生物即刻完全回复其生命值、活力和健康状态，不会损失等级（或体质属性），并且回复生物在死亡时拥有的所有已准备好的法术。你可以复活被即死效果杀死的人或被变成不死生物再被摧毁的人。这个法术也可以复活元素或异界生物，但不能复活构装体或不死生物。即便完全复生术也不能使死于天年的生物起死回生。
+相比复生术的效益：此法术只需要自由动作就能施放。</value>
   </data>
   <data name="RollWithItFeatureDescription_info" xml:space="preserve">
     <value>你很擅长挨打，尽管你在大多数时候都是在声嘶力竭的大叫中飞出战场。
@@ -2842,7 +2849,7 @@
     <value>1d4+1轮（体感时间）</value>
   </data>
   <data name="TimeStopBuffDescription_info" xml:space="preserve">
-    <value>该法术看似是让除了你以外的其他人都进入时间停止状态。但其实只是你的速度变得非常快，使得其他生物看上去完全静止而已，实际上他们仍在按照正常速度移动。你可以在1d4+1轮（体感时间）内自由行动。普通或是魔法火焰、寒冷、毒气等依然会伤害你。在时间停止作用期间，其他生物不会因你的攻击或法术而受伤；你不能以那些生物为任何攻击或法术的目标。造成范围效果的法术的持续时间如果比时间停止剩下的时间长，则可在时间停止结束后继续生效。大多数施法者利用这些额外的时间来加强防御、召唤盟友，或是逃离战斗。
+    <value>此法术看似是让除了你以外的其他人都进入时间停止状态。但其实只是你的速度变得非常快，使得其他生物看上去完全静止而已，实际上他们仍在按照正常速度移动。你可以在1d4+1轮（体感时间）内自由行动。普通或是魔法火焰、寒冷、毒气等依然会伤害你。在时间停止作用期间，其他生物不会因你的攻击或法术而受伤；你不能以那些生物为任何攻击或法术的目标。造成范围效果的法术的持续时间如果比时间停止剩下的时间长，则可在时间停止结束后继续生效。大多数施法者利用这些额外的时间来加强防御、召唤盟友，或是逃离战斗。
 若物品被其他困在正常时间内的生物所持有、携带或穿戴，则你不能移动或伤害它们，但你可以影响无主物品。
 在时间停止的持续时间内，你无法被察觉。在时间停止的效果下你不能进入被反魔法场保护的区域。</value>
   </data>
@@ -2873,7 +2880,7 @@
     <value>角色的背景特性是指那些和你的种族、职业无关的能力。</value>
   </data>
   <data name="TrueResurrectionSpells_info" xml:space="preserve">
-    <value>完全复原术</value>
+    <value>完全复生术</value>
   </data>
   <data name="TuskedTraitDescription_info" xml:space="preserve">
     <value>效益：你有一对巨大而尖利的獠牙，你能进行啮咬攻击（中体型生物可以造成1d4伤害）。作为整轮攻击行动的一部分，你在最高基础攻击加值受到-5减值的情况下进行啮咬攻击。</value>
@@ -3078,7 +3085,7 @@
 • 消除许多其他法术的有害效果，诸如指使术或是神智错乱。
 • 给予一个生物的某项属性值+1的天赋加值。连续不断地施放2到5个祈愿术可以给予生物的某项属性值+2到+5的天赋加值（两个祈愿术获得+2天赋加值，三个祈愿术获得+3天赋加值，以此类推）。天赋加值即刻生效，因此无法被解除。注意：对于任何一项属性，天赋加值最大不能超过+5，并且天赋加值的效果无法叠加，只能应用最大加值。
 • 移除受伤和疾病。单个祈愿术可以帮助1个/每施法者等级的生物，所有目标的同一类病症都将得到治疗。例如你可以治疗自己和同伴受到的所有伤害，或者移除队伍中每个人受到的中毒效果，但是不能用1个祈愿术来同时得到两种效果。
-• 死者重生。一个祈愿术可以通过复制死者复活法术来复活一个死去的生物。如果死去的生物已然尸骨无存，祈愿术依旧可以复活它，但是这需要两个祈愿术：一个用来创造其身体，另外一个让该身体重新获得生命的活力。祈愿术复活的生物仍然无可避免地会损失一个等级。
+• 死者重生。祈愿术可以通过复制复活亡者法术来复活一个死去的生物。如果死去的生物已然尸骨无存，祈愿术依旧可以复活它，但是这需要两个祈愿术：一个用来创造其身体，另外一个让该身体重新获得生命的活力。祈愿术复活的生物仍然无可避免地会损失一个等级。
 复制的法术将会照常进行豁免检定和法术抗力检定，但是其豁免DC按照9级法术计算。如果祈愿术复制的法术含有价格超过10000金币的材料成分，那么你就必须提供这些材料（这并不包含在法术本身价值25000金币的材料费内）。</value>
   </data>
   <data name="WishArcaneAbilityDescription_info" xml:space="preserve">
@@ -3108,8 +3115,8 @@
     <value>此级别的对立学派法术无法复制。</value>
   </data>
   <data name="WishSpellDescription_info" xml:space="preserve">
-    <value>（施法后，使用能力栏选择你的{0}）{1}。
-</value>
+    <value>（施法后，在能力栏内使用你的{0}。能力栏内的{0}会存在2轮。）
+{1}</value>
   </data>
   <data name="WishSpellsSpellName_info" xml:space="preserve">
     <value>{0}法术</value>

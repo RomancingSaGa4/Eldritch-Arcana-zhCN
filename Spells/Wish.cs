@@ -40,8 +40,8 @@ namespace EldritchArcana
 {
     static class WishSpells
     {
-        //internal static BlueprintAbility miracle;
-        //internal static BlueprintAbility Wishy;
+        internal static BlueprintAbility miracle;
+        internal static BlueprintAbility Wishy;
 
         static LibraryScriptableObject Library => Main.library;
 
@@ -146,7 +146,7 @@ namespace EldritchArcana
 
             spell.AddToSpellList(Helpers.wizardSpellList, 9);
             // Wish Scroll uses 7th level spells to offer the most choice (divine + arcane).
-            // Wishy = spell;
+            Wishy = spell;
             Helpers.AddSpellAndScroll(spell, "f948342d6a9f2ce49b6aa5f362569d72", 6); // scroll geniekind djinni icon
             // Fix Draconic and Arcane bloodlines to have Wish as their 9th level spell.
             FixBloodlineSpell(spell, "4d491cf9631f7e9429444f4aed629791", "74ab07974fa1c424bbd6fc0e56114db6"); // arcane
@@ -169,13 +169,13 @@ namespace EldritchArcana
         static List<BlueprintAbility> CreateWishForStatBonus(BlueprintAbility wish, string noduplicateId = null)
         {
 
-
             var variants = new List<BlueprintAbility>();
+            // 许愿只能加六维
             var stats = new StatType[] {
                 StatType.Strength, StatType.Dexterity, StatType.Constitution,
-                StatType.Intelligence, StatType.Wisdom, StatType.Charisma,
-                StatType.Speed,StatType.Initiative,StatType.SneakAttack,
-                StatType.TemporaryHitPoints
+                StatType.Intelligence, StatType.Wisdom, StatType.Charisma
+                //,StatType.Speed,StatType.Initiative,StatType.SneakAttack,
+                //StatType.TemporaryHitPoints
             };
             var statIds = new String[] {
                 "0b183a3acaf5464eaad54276413cec04",
@@ -183,11 +183,11 @@ namespace EldritchArcana
                 "5422c7b6b46c47a394f294db14a788a9",
                 "a55a1ccd705a42e3b939d23e0f481d76",
                 "74baf6d80a844254a8014758d4ef306a",
-                "8734f42ae9bb4f8e8b5eb9c9b8d9a631",
-                "8734f42ae9bb4f8e9c5eb9c9b8d9a632",
-                "8734f42ae9bb4f9e9c5eb9c9b8d9a633",
-                "8735f42ae9bb4f3e9c5eb9c9b8d9a634",
-                "8735f42ae9bb4f3e9c5ef0c9b8d9a635",
+                "8734f42ae9bb4f8e8b5eb9c9b8d9a631"
+                //,"8734f42ae9bb4f8e9c5eb9c9b8d9a632",
+                //"8734f42ae9bb4f9e9c5eb9c9b8d9a633",
+                //"8735f42ae9bb4f3e9c5eb9c9b8d9a634",
+                //"8735f42ae9bb4f3e9c5ef0c9b8d9a635",
             };
 
             for (int i = 0; i < stats.Length; i++)
@@ -226,10 +226,10 @@ namespace EldritchArcana
                 ability.EffectOnAlly = AbilityEffectOnUnit.Helpful;
                 ability.MaterialComponent.Item = diamond.Value;
                 ability.MaterialComponent.Count = 5;
-                if (i % 8 == 1)
+                /*if (i % 8 == 1)
                 {
                     ability.MaterialComponent.Count = Main.settings?.CheatCustomTraits == true ? -50 : 5;
-                }/*
+                }
                 else { 
                 //ability.MaterialComponent.Item = summonedBow.Value;
                 }*/
@@ -261,6 +261,13 @@ namespace EldritchArcana
             {
                 variants.Add(CreateWishForSpellLevel(spell, level, 9, isMiracle: true));
             }
+            // 添加奇迹术用的完全复生术
+            var wishTrueResurrection = Library.CopyAndAdd(Spells.TrueResurrection, 
+                "WishTrueResurrection", Spells.TrueResurrectionId, "361fc62d90dc4e75b4c7858fcc0072b0");
+            wishTrueResurrection.SetName(string.Format(RES.MiracleUseSpellName_info, RES.TrueResurrectionSpells_info));
+            wishTrueResurrection.SetIcon(Helpers.GetIcon("fafd77c6bfa85c04ba31fdc1c962c914")); // restoration greater
+            wishTrueResurrection.MaterialComponent = variants[0].MaterialComponent;
+            variants.Add(wishTrueResurrection);
             spell.AddComponent(spell.CreateAbilityVariants(variants));
             spell.MaterialComponent = variants[0].MaterialComponent;
 
@@ -268,7 +275,10 @@ namespace EldritchArcana
             // Perhaps it should prevent some of the bad kingdom effects that can happen,
             // or other quest related effects (e.g. become immune to Kingdom penalties for a time)?
             spell.AddToSpellList(Helpers.clericSpellList, 9);
-            //miracle = spell;
+            // 修正为幸运，联盟领域9级法术
+            spell.FixDomainSpell(9, Helpers.communityDomainSpellList.AssetGuid);
+            spell.FixDomainSpell(9, Helpers.luckDomainSpellList.AssetGuid);
+            miracle = spell;
 
             // Miracle Scroll uses 7th level spells to offer the most choice (divine + arcane).
             Helpers.AddSpellAndScroll(spell, "d441dfae9c6b21e47ae24eb13d8b4c4b", 6); // restoration greater.
@@ -302,6 +312,11 @@ namespace EldritchArcana
             variants.AddRange(CreateWishForStatBonus(spell, spell.AssetGuid));
 
             spell.AddToSpellList(Helpers.clericSpellList, 7);
+            // 按照3.5e规则德鲁伊的法表也有次等奇迹
+            spell.AddToSpellList(Helpers.druidSpellList, 7);
+            // 修正为幸运，联盟领域7级法术
+            spell.FixDomainSpell(7, Helpers.communityDomainSpellList.AssetGuid);
+            spell.FixDomainSpell(7, Helpers.luckDomainSpellList.AssetGuid);
             //miracle = spell;
 
             Helpers.AddSpellAndScroll(spell, "d441dfae9c6b21e47ae24eb13d8b4c4b", 4); // restoration greater.
@@ -364,14 +379,20 @@ namespace EldritchArcana
             //    MiracleID = "7a203cb47d1942059a602da860e435d7";
             //}
             // 1. Get all spells for this spell level (minimum level across all classes that can cast it).
+            var wishSpellsAtLevel = GetWishSpellAbilities()[level];
             // 2. Remove material costs, if applicable.
+            // int ignoreMaterials = isMiracle ? miracleIgnoreMaterialCost : (wishLevel < 9 ? limitedWishIgnoreMaterialCost : wishIgnoreMaterialCost);
             // 修改，忽略材料费：次等奇迹和有限许愿1000gp，奇迹100gp，许愿10000gp
             int ignoreMaterials = wishLevel < 9 ? limitedWishIgnoreMaterialCost : (isMiracle ? miracleIgnoreMaterialCost : wishIgnoreMaterialCost);
 
-            var wishSpellsAtLevel = GetWishSpellAbilities(ignoreMaterials)[level];
-
+            var wishSpellsAdjustMaterials = wishSpellsAtLevel.Select(s =>
+            {
+                var cost = s.MaterialComponent.GetCost();
+                if (cost <= miracleIgnoreMaterialCost || cost > ignoreMaterials) return s;
+                return noMaterialWishSpells[s];
+            });
             // 3. Group spell choices by school. This lets us adjust based on the opposition school, if needed.
-            var spellsBySchool = wishSpellsAtLevel.GroupBy(s => s.School);
+            var spellsBySchool = wishSpellsAdjustMaterials.GroupBy(s => s.School);
 
             var oppositionSchools = Library.Get<BlueprintFeatureSelection>("6c29030e9fea36949877c43a6f94ff31");
             var components = new List<BlueprintComponent> {
@@ -402,6 +423,17 @@ namespace EldritchArcana
                 // Limited Wish is allowed to cast it (it's a non-wizard spell 5th level or less).
                 var classSpellList = isMiracle ? Helpers.clericSpellList : Helpers.wizardSpellList;
                 var schoolIcon = specialistFeat.Icon;
+
+                // 次等奇迹术且复制6级法术时追加德鲁伊法术
+                if (isMiracle && level == 6 && wishLevel == 7)
+                {
+                    IEnumerable<BlueprintAbility> druidLevel6 = spells.Where(s => s.GetComponents<SpellListComponent>()
+                        .Any(c => c.SpellList == Helpers.druidSpellList && c.SpellLevel == level)).ToList();
+                    foreach (var druidspell in druidLevel6)
+                    {
+                        druidspell.AddToSpellList(classSpellList, 6);
+                    }
+                }
 
                 IEnumerable<BlueprintAbility> validSpells = spells;
                 if (level == wishLevel - 1)
@@ -463,7 +495,7 @@ namespace EldritchArcana
             return components.ToArray();
         }
 
-        static List<List<BlueprintAbility>> GetWishSpellAbilities(int ignoreMaterialCost = wishIgnoreMaterialCost)
+        static List<List<BlueprintAbility>> GetWishSpellAbilities()
         {
             // Transforms all spells into spell-like abilities, suitable for Wish/Miracle.
             if (wishResource != null) return wishSpells;
@@ -483,23 +515,19 @@ namespace EldritchArcana
                 var spellLists = spell.GetComponents<SpellListComponent>();
                 if (spellLists.FirstOrDefault() == null) continue;
 
-                var level = spellLists.Min(l => l.SpellLevel);
+                // 可能因为复制复生术的关系完全复生术的最小环数总是很奇怪，所以手动修正环数
+                var level = spell.AssetGuid == Spells.TrueResurrectionId ? 9 : spellLists.Min(l => l.SpellLevel);
                 if (level > 0 && level < wishSpells.Count)
                 {
+                    var ability = SpellToWishAbility(spell, "361fc62d90dc4e75b4c7858fcc0072b0");
+                    wishSpells[level].Add(ability);
                     var cost = spell.MaterialComponent.GetCost();
                     // If the material cost is between the range of what Miracle and Wish allow for free,
                     // generate a version that doesn't cost anything.
-                    // 修改，兼容有限许愿和次等奇迹
-                    if (cost> miracleIgnoreMaterialCost && cost <= ignoreMaterialCost)
+                    if (cost > miracleIgnoreMaterialCost && cost <= wishIgnoreMaterialCost)
                     {
-                        var noMaterialAbility = SpellToWishAbility(spell, "c7c0d7772ad04541a39e334f9025c87d", ignoreMaterialCost);
-                        //noMaterialWishSpells.Add(ability, noMaterialAbility);
-                        wishSpells[level].Add(noMaterialAbility);
-                    }
-                    else
-                    {
-                        var ability = SpellToWishAbility(spell, "361fc62d90dc4e75b4c7858fcc0072b0");
-                        wishSpells[level].Add(ability);
+                        var noMaterialAbility = SpellToWishAbility(spell, "c7c0d7772ad04541a39e334f9025c87d", wishIgnoreMaterialCost);
+                        noMaterialWishSpells.Add(ability, noMaterialAbility);
                     }
                 }
             }
@@ -552,7 +580,7 @@ namespace EldritchArcana
 
         static BlueprintAbilityResource wishResource;
         static readonly List<List<BlueprintAbility>> wishSpells = new List<List<BlueprintAbility>>(9);
-        // static readonly Dictionary<BlueprintAbility, BlueprintAbility> noMaterialWishSpells = new Dictionary<BlueprintAbility, BlueprintAbility>();
+        static readonly Dictionary<BlueprintAbility, BlueprintAbility> noMaterialWishSpells = new Dictionary<BlueprintAbility, BlueprintAbility>();
 
         static readonly String[] spellSchoolGuids = new String[] {
             "35525798a7f8444c953ecfedeb378928",

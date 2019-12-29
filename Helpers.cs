@@ -380,21 +380,67 @@ namespace EldritchArcana
             comp.SpellList = spellList;
             spell.AddComponent(comp);
             spellList.SpellsByLevel[level].Spells.Add(spell);
+            // 9级法术无法添加的修正
+            if (level == 9) spellList.SpellsByLevel[level].SpellsFiltered.Add(spell);
+
             if (spellList == Helpers.wizardSpellList)
             {
                 var thisschool = spell.School;
-                //int school;
-                //var values = Enum.GetValues(typeof(SpellSchool)).Cast<SpellSchool>();
-                foreach (SpellSchool school in Enum.GetValues(typeof(SpellSchool)))
+                // 修正专精学派
+                var specialistList = specialistSchoolList.Value[(int)thisschool];
+                specialistList?.SpellsByLevel[level].Spells.Add(spell);
+
+                // 修正塔西伦专精法师禁忌学派
+                var thassilonianSchools = new List<int>
                 {
-                    var specialistList = specialistSchoolList.Value[(int)school];
-                    specialistList?.SpellsByLevel[level].Spells.Add(spell);
-                    var thassilonianList = thassilonianSchoolList.Value[(int)school];
-                    thassilonianList?.SpellsByLevel[level].Spells.Add(spell);
+                    (int)SpellSchool.Abjuration,
+                    (int)SpellSchool.Conjuration,
+                    (int)SpellSchool.Enchantment,
+                    (int)SpellSchool.Evocation,
+                    (int)SpellSchool.Illusion,
+                    (int)SpellSchool.Necromancy,
+                    (int)SpellSchool.Transmutation
+                };
+                
+                switch (thisschool)
+                {
+                    case (SpellSchool.Abjuration):
+                        thassilonianSchools.Remove((int)SpellSchool.Evocation);
+                        thassilonianSchools.Remove((int)SpellSchool.Necromancy);
+                        break;
+                    case (SpellSchool.Conjuration):
+                        thassilonianSchools.Remove((int)SpellSchool.Evocation);
+                        thassilonianSchools.Remove((int)SpellSchool.Illusion);
+                        break;
+                    case (SpellSchool.Enchantment):
+                        thassilonianSchools.Remove((int)SpellSchool.Necromancy);
+                        thassilonianSchools.Remove((int)SpellSchool.Transmutation);
+                        break;
+                    case (SpellSchool.Evocation):
+                        thassilonianSchools.Remove((int)SpellSchool.Abjuration);
+                        thassilonianSchools.Remove((int)SpellSchool.Conjuration);
+                        break;
+                    case (SpellSchool.Illusion):
+                        thassilonianSchools.Remove((int)SpellSchool.Conjuration);
+                        thassilonianSchools.Remove((int)SpellSchool.Transmutation);
+                        break;
+                    case (SpellSchool.Necromancy):
+                        thassilonianSchools.Remove((int)SpellSchool.Abjuration);
+                        thassilonianSchools.Remove((int)SpellSchool.Enchantment);
+                        break;
+                    case (SpellSchool.Transmutation):
+                        thassilonianSchools.Remove((int)SpellSchool.Enchantment);
+                        thassilonianSchools.Remove((int)SpellSchool.Illusion);
+                        break;
+                    default: // 预言系或其他
+                        break;
                 }
 
-
-
+                foreach (int school in thassilonianSchools)
+                {
+                    var thassilonianList = thassilonianSchoolList.Value[school];
+                    thassilonianList?.SpellsByLevel[level].Spells.Add(spell);
+                }
 
             }
         }
@@ -698,8 +744,8 @@ namespace EldritchArcana
         public static LocalizedString reflexHalfDamage, savingThrowNone;
 
         public static BlueprintSpellList wizardSpellList, magusSpellList, druidSpellList, clericSpellList, paladinSpellList, inquisitorSpellList,
-            alchemistSpellList, bardSpellList, fireDomainSpellList, healingDomainSpellList,
-            protectionDomainSpellList;
+            alchemistSpellList, bardSpellList, fireDomainSpellList, healingDomainSpellList, protectionDomainSpellList, communityDomainSpellList,
+            luckDomainSpellList;
 
         public static BlueprintItemWeapon touchWeapon;
 
@@ -762,6 +808,8 @@ namespace EldritchArcana
             fireDomainSpellList = library.Get<BlueprintSpellList>("d8f30625d1b1f9d41a24446cbf7ac52e");
             healingDomainSpellList = library.Get<BlueprintSpellList>("033b2b6a8899be844ae8aa91d4dab477");
             protectionDomainSpellList = library.Get<BlueprintSpellList>("93228f4df23d2d448a0db59141af8aed");
+            communityDomainSpellList = library.Get<BlueprintSpellList>("75576ed8cab010644a11f9ecd512a7f9");
+            luckDomainSpellList = library.Get<BlueprintSpellList>("9e756552e9b05ce459feac658dd2d8fb");
             //sorcererSpellList = library.Get<BlueprintSpellList>("");
 
             touchWeapon = library.Get<BlueprintItemWeapon>("bb337517547de1a4189518d404ec49d4"); // TouchItem

@@ -969,6 +969,9 @@ Whenever you receive magical healing, you heal an additional 2 points per die ro
   <data name="FixElementalSpells_info" xml:space="preserve">
     <value>Enable spellcasting for elemental forms</value>
   </data>
+  <data name="FixHealingDomainLevel8Spell" xml:space="preserve">
+    <value>Fix healing domain's level 8 spell as Cure Critial Wound, Mass</value>
+  </data>
   <data name="FixSpellSpecializationFeatureName_info" xml:space="preserve">
     <value>Spell Specialization</value>
   </data>
@@ -1574,6 +1577,9 @@ A duplicated spell allows saving throws and spell resistance as normal, but the 
   </data>
   <data name="MiracleSpellName_info" xml:space="preserve">
     <value>Miracle</value>
+  </data>
+  <data name="MiracleUseSpellName_info" xml:space="preserve">
+    <value>Miracle : {0}</value>
   </data>
   <data name="MisbegottenDrawbackDescription_info" xml:space="preserve">
     <value>Whether due to the influence of malign magic, disease, or the scorn of the gods, you were born with a troublesome deformity that interferes with your movement.
@@ -3104,8 +3110,8 @@ Two to five wish spells cast in immediate succession can grant a creature a +2 t
     <value>Opposition school spells of this level are not available.</value>
   </data>
   <data name="WishSpellDescription_info" xml:space="preserve">
-    <value>(After casting this spell, use the ability bar to select your {0}.){1}
-</value>
+    <value>(After casting this spell, use the ability bar to select your {0}.)
+{1}</value>
   </data>
   <data name="WishSpellsSpellName_info" xml:space="preserve">
     <value>{0} Spells</value>

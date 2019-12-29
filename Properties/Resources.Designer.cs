@@ -2447,6 +2447,15 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Fix healing domain&apos;s level 8 spell as Cure Critial Wound, Mass 的本地化字符串。
+        /// </summary>
+        internal static string FixHealingDomainLevel8Spell {
+            get {
+                return ResourceManager.GetString("FixHealingDomainLevel8Spell", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Spell Specialization 的本地化字符串。
         /// </summary>
         internal static string FixSpellSpecializationFeatureName_info {
@@ -4099,6 +4108,15 @@ namespace EldritchArcana.Properties {
         internal static string MiracleSpellName_info {
             get {
                 return ResourceManager.GetString("MiracleSpellName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Miracle : {0} 的本地化字符串。
+        /// </summary>
+        internal static string MiracleUseSpellName_info {
+            get {
+                return ResourceManager.GetString("MiracleUseSpellName_info", resourceCulture);
             }
         }
         
@@ -8312,8 +8330,8 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
-        ///   查找类似 (After casting this spell, use the ability bar to select your {0}.){1}
-        /// 的本地化字符串。
+        ///   查找类似 (After casting this spell, use the ability bar to select your {0}.)
+        ///{1} 的本地化字符串。
         /// </summary>
         internal static string WishSpellDescription_info {
             get {

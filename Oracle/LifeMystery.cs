@@ -98,9 +98,9 @@ namespace EldritchArcana
                 "fafd77c6bfa85c04ba31fdc1c962c914",// greater restoration                
                 "867524328b54f25488d371214eea0d90", // mass heal
                 //FireSpells.meteorSwarm.AssetGuid, // if miracle does not work (should be: true resurrection)
-                Spells.MassResurrectionId,          // 恢复正确的完全复原术
-                //"bd623ae7179a4d19a40b977ffca1b84g" //true rez
-                //WishSpells.miracle.AssetGuid, // miracle (should be: true resurrection)
+                Spells.TrueResurrectionId            //恢复正确的完全复原术 
+                //"bd623ae7179a4d19a40b977ffca1b84g"
+                //WishSpells.miracle.AssetGuid // miracle (should be: true resurrection)
             });
 
             var entries = new List<LevelEntry>();

@@ -220,7 +220,7 @@ namespace EldritchArcana
                     // Apply fire damage to all targets in range.
                     fireDmgSave));
             spell.AddToSpellList(Helpers.wizardSpellList, 9);
-            spell.AddToSpellList(Helpers.magusSpellList, 6);
+            //spell.AddToSpellList(Helpers.magusSpellList, 9);
             //spell.AddToSpellList(Helpers.fireDomainSpellList, 9);
             //spell.AddToSpellList(Helpers.druidSpellList, 9);
             //spell.AddToSpellList(Helpers., 9);
