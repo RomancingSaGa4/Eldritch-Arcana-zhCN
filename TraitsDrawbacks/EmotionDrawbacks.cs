@@ -210,10 +210,8 @@ namespace EldritchArcana
                 Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.MindAffecting; s.Value = -2; s.ModifierDescriptor = ModifierDescriptor.Penalty; })));
 
             x++;
-            choices.Add(Helpers.CreateFeature("ImpatientDrawback", "Impatient",
-                "You love leaping into battle at the earliest opportunity, and it frustrates you to wait for others to act." +
-                "\nBenefit: You take a +1 Insight bonus on Initiative." +
-                "\nDrawback: You take a -2 penalty on saves against evil spells, and a -1 penalty to all attack rolls.",
+            choices.Add(Helpers.CreateFeature("ImpatientDrawback", RES.ImpatientDrawbackName_info,
+                RES.ImpatientDrawbackDescription_info,
                 EmotionGuids[x],
                 Helpers.NiceIcons(33), //rush
                 FeatureGroup.None,
@@ -222,9 +220,8 @@ namespace EldritchArcana
                 Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Evil; s.Value = -2; s.ModifierDescriptor = ModifierDescriptor.Penalty; })));
 
             x++;
-            choices.Add(Helpers.CreateFeature("DaydreamerDrawback", "Daydreamer",
-                "You always have your head in the clouds." +
-                "\nDrawback: You suffer a -1 penalty to initiative checks and a -2 penalty to Perception checks to avoid being surprised.",
+            choices.Add(Helpers.CreateFeature("DaydreamerDrawback", RES.DaydreamerDrawbackName_info,
+                RES.DaydreamerDrawbackDescription_info,
                 EmotionGuids[x],
                 Helpers.NiceIcons(6), //rush
                 FeatureGroup.None,
@@ -232,16 +229,15 @@ namespace EldritchArcana
                 Helpers.CreateAddStatBonus(StatType.SkillPerception, -2, ModifierDescriptor.Penalty)));
 
             x++;
-            choices.Add(Helpers.CreateFeature("ShadowDrawback", "Shadow-Scarred",
-                 "You were touched by terrible horrors that live in the darkness just outside the human sphere and feel your life-force ebb away ever so slightly whenever you return to the shadows." +
-                 "\nDrawback: Whenever you are in an area of dim light or darkness, you take a –1 penalty on saving throws.",
+            choices.Add(Helpers.CreateFeature("ShadowDrawback", RES.ShadowDrawbackName_info,
+                 RES.ShadowDrawbackDescription_info,
                  EmotionGuids[x],
                  Helpers.NiceIcons(6), //rush
                  FeatureGroup.None,
                  Helpers.Create<ShadowSensitivity>()));
             x++;
-            var debuff2 = Helpers.CreateBuff("ShadowDeBuff", "Shadow-Scarred",
-                "You have 1 less on saving throws.",
+            var debuff2 = Helpers.CreateBuff("ShadowDeBuff", RES.ShadowDrawbackName_info,
+                RES.ShadowDeBuffDescription_info,
                 EmotionGuids[x],
                 Helpers.NiceIcons(22), null);
             var components = new List<BlueprintComponent> { };
@@ -266,23 +262,21 @@ namespace EldritchArcana
             ShadowSensitivity.ShadowBuff = debuff2;
 
             x++;
-            choices.Add(Helpers.CreateFeature("SleepyDrawback", "Sleepy",
-                 "You must sleep or rest for at least 8 hours each night to get the benefits of a full night's rest." +
-                 "\nDrawback: You take a –2 penalty on saving throws against sleep effects.",
+            choices.Add(Helpers.CreateFeature("SleepyDrawback", RES.SleepyDrawbackName_info,
+                 RES.SleepyDrawbackDescription_info,
                  EmotionGuids[x],
                  Helpers.NiceIcons(7),
                  FeatureGroup.None,
                  Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.Bonus = -2; s.SpellDescriptor = SpellDescriptor.Sleep; })));
 
             x++;
-            choices.Add(Helpers.CreateFeature("ZealousDrawback", "Zealous",
-                 "You are fanatical in your beliefs, ruled by emotion over reason." +
-                 "\nDrawback: When you attack a creature that you know worships a different religion than you do, you take a –5 penalty on the attack roll and a +2 trait bonus on the damage roll.",
+            choices.Add(Helpers.CreateFeature("ZealousDrawback", RES.ZealousDrawbackName_info,
+                 RES.ZealousDrawbackDescription_info,
                  EmotionGuids[x],
                  Helpers.NiceIcons(48),
                  FeatureGroup.None,
                  Helpers.CreateAddStatBonus(StatType.AdditionalAttackBonus, -5, ModifierDescriptor.Sacred),
-                 Helpers.CreateAddStatBonus(StatType.AdditionalDamage, 2, ModifierDescriptor.Sacred)
+                 Helpers.CreateAddStatBonus(StatType.AdditionalDamage, 2, ModifierDescriptor.Trait)
                  ));
 
             Fraud.SetFeatures(hoi);

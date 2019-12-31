@@ -1245,7 +1245,7 @@ namespace EldritchArcana.Properties {
         
         /// <summary>
         ///   查找类似 Raised with the assurance that only those like you are truly worthy of respect, you have an off-putting way of demonstrating that you look down on those not of your race and ethnicity or nationality.
-        ///Drawback: You take a –5 penalty on Diplomacy and Intimidate checks. 的本地化字符串。
+        ///Drawback: You take a -5 penalty on Diplomacy and Intimidate checks. 的本地化字符串。
         /// </summary>
         internal static string CondescendingDrawbackDescription_info {
             get {
@@ -1265,7 +1265,7 @@ namespace EldritchArcana.Properties {
         /// <summary>
         ///   查找类似 You might face dangerous situations with bravado, but you are constantly afraid. And if you see a dead body you might just throw up.
         ///Benefit: Your movementspeed increases by 5.
-        ///Drawback: You take a –4 penalty on saves against fear effects. And -2 to all Fortitude saves. 的本地化字符串。
+        ///Drawback: You take a -4 penalty on saves against fear effects. And -2 to all Fortitude saves. 的本地化字符串。
         /// </summary>
         internal static string CowardlyDrawbackDescription_info {
             get {
@@ -1437,6 +1437,25 @@ namespace EldritchArcana.Properties {
         internal static string DangerouslyCuriousTraitName_info {
             get {
                 return ResourceManager.GetString("DangerouslyCuriousTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You always have your head in the clouds.
+        ///Drawback: You suffer a -1 penalty to initiative checks and a -2 penalty to Perception checks to avoid being surprised. 的本地化字符串。
+        /// </summary>
+        internal static string DaydreamerDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("DaydreamerDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Daydreamer 的本地化字符串。
+        /// </summary>
+        internal static string DaydreamerDrawbackName_info {
+            get {
+                return ResourceManager.GetString("DaydreamerDrawbackName_info", resourceCulture);
             }
         }
         
@@ -3194,6 +3213,26 @@ namespace EldritchArcana.Properties {
         internal static string HypnoticSpellDescription_info {
             get {
                 return ResourceManager.GetString("HypnoticSpellDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You love leaping into battle at the earliest opportunity, and it frustrates you to wait for others to act.
+        ///Benefit: You take a +1 Insight bonus on Initiative.
+        ///Drawback: You take a -2 penalty on saves against evil spells, and a -1 penalty to all attack rolls. 的本地化字符串。
+        /// </summary>
+        internal static string ImpatientDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("ImpatientDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Impatient 的本地化字符串。
+        /// </summary>
+        internal static string ImpatientDrawbackName_info {
+            get {
+                return ResourceManager.GetString("ImpatientDrawbackName_info", resourceCulture);
             }
         }
         
@@ -7301,6 +7340,34 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 You have 1 less on saving throws. 的本地化字符串。
+        /// </summary>
+        internal static string ShadowDeBuffDescription_info {
+            get {
+                return ResourceManager.GetString("ShadowDeBuffDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You were touched by terrible horrors that live in the darkness just outside the human sphere and feel your life-force ebb away ever so slightly whenever you return to the shadows.
+        ///Drawback: Whenever you are in an area of dim light or darkness, you take a -1 penalty on saving throws. 的本地化字符串。
+        /// </summary>
+        internal static string ShadowDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("ShadowDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Shadow-Scarred 的本地化字符串。
+        /// </summary>
+        internal static string ShadowDrawbackName_info {
+            get {
+                return ResourceManager.GetString("ShadowDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 An instinct for dishonorable conduct serves you well when fighting opponents who are blind, oblivious, or blundering around in the dark.
         ///Benefit: You gain a +2 trait bonus on melee weapon damage rolls made against foes that cannot see you. 的本地化字符串。
         /// </summary>
@@ -7399,6 +7466,25 @@ namespace EldritchArcana.Properties {
         internal static string SkipSelectionDescription_info {
             get {
                 return ResourceManager.GetString("SkipSelectionDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You must sleep or rest for at least 8 hours each night to get the benefits of a full night&apos;s rest.
+        ///Drawback: You take a -2 penalty on saving throws against sleep effects. 的本地化字符串。
+        /// </summary>
+        internal static string SleepyDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("SleepyDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Sleepy 的本地化字符串。
+        /// </summary>
+        internal static string SleepyDrawbackName_info {
+            get {
+                return ResourceManager.GetString("SleepyDrawbackName_info", resourceCulture);
             }
         }
         
@@ -8429,6 +8515,25 @@ namespace EldritchArcana.Properties {
         internal static string YouthfulMischiefTraitName_info {
             get {
                 return ResourceManager.GetString("YouthfulMischiefTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 You are fanatical in your beliefs, ruled by emotion over reason.
+        ///Drawback: When you attack a creature that you know worships a different religion than you do, you take a -5 penalty on the attack roll and a +2 trait bonus on the damage roll. 的本地化字符串。
+        /// </summary>
+        internal static string ZealousDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("ZealousDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Zealous 的本地化字符串。
+        /// </summary>
+        internal static string ZealousDrawbackName_info {
+            get {
+                return ResourceManager.GetString("ZealousDrawbackName_info", resourceCulture);
             }
         }
         

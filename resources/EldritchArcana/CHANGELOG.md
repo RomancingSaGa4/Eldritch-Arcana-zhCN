@@ -3,6 +3,37 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [1.2.9.11-zhCN]
+
+### Added
+-除了装备背景的那些物品包和家传兵刃应该全部都翻译了。
+
+### Fixed
+-删去多余的魔战士超魔奥能
+-修正完全复生术的环数和AssetID，添加正确的完全复生术到奇迹术，生命秘示域的19级法术完全复生术修正为正确的ID。
+-添加完全复生术和召唤哥布林，召唤松鼠集群的卷轴，并使其能被祈愿术和奇迹术复制。
+-修正医疗领域8级法术为群体治疗致命伤
+-修正幸运和联盟领域的7级法术为次等奇迹术，9级法术为奇迹术。
+-有限祈愿术，次等奇迹术，奇迹术的省略材料费修正为正确的判断。
+-Mod法术的法术专精，塔西伦专精法师法术表的正确设置。
+-修正9级法术无法正确学习的Bug（似乎还是有点Bug，我得再看看，但比之前完全不能学应该好多了）
+-奥法骑士的每日法术1级跳过看起来是写的hardcode，没法普遍化了
+-etc.一些应该不记得了
+
+## [1.2.9]
+
+### Added
+-some family heirloom weapons
+-Avid reader
+
+### Changed
+-Dragon disciple fix(Still busy fixing)
+
+## [1.2.8]
+
+### Fixed
+-Dragon disciple acting weird(hotfix still working on a permanent solution)
+
 ## [1.2.7]
 
 ### Added

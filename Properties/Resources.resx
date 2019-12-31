@@ -541,7 +541,7 @@ You can use this ability a number of times per day equal to 1+your Charisma modi
   </data>
   <data name="CondescendingDrawbackDescription_info" xml:space="preserve">
     <value>Raised with the assurance that only those like you are truly worthy of respect, you have an off-putting way of demonstrating that you look down on those not of your race and ethnicity or nationality.
-Drawback: You take a –5 penalty on Diplomacy and Intimidate checks.</value>
+Drawback: You take a -5 penalty on Diplomacy and Intimidate checks.</value>
   </data>
   <data name="CondescendingDrawbackName_info" xml:space="preserve">
     <value>Condescending</value>
@@ -549,7 +549,7 @@ Drawback: You take a –5 penalty on Diplomacy and Intimidate checks.</value>
   <data name="CowardlyDrawbackDescription_info" xml:space="preserve">
     <value>You might face dangerous situations with bravado, but you are constantly afraid. And if you see a dead body you might just throw up.
 Benefit: Your movementspeed increases by 5.
-Drawback: You take a –4 penalty on saves against fear effects. And -2 to all Fortitude saves.</value>
+Drawback: You take a -4 penalty on saves against fear effects. And -2 to all Fortitude saves.</value>
   </data>
   <data name="CowardlyDrawbackName_info" xml:space="preserve">
     <value>Cowardly</value>
@@ -609,6 +609,13 @@ Benefit: You gain a +1 trait bonus on damage rolls with a dagger and a +1 trait 
   </data>
   <data name="DangerouslyCuriousTraitName_info" xml:space="preserve">
     <value>Dangerously Curious</value>
+  </data>
+  <data name="DaydreamerDrawbackDescription_info" xml:space="preserve">
+    <value>You always have your head in the clouds.
+Drawback: You suffer a -1 penalty to initiative checks and a -2 penalty to Perception checks to avoid being surprised.</value>
+  </data>
+  <data name="DaydreamerDrawbackName_info" xml:space="preserve">
+    <value>Daydreamer</value>
   </data>
   <data name="DefenderOfTheSocietyTraitDescription_info" xml:space="preserve">
     <value>Your time spent fighting and studying the greatest warriors of the society has taught you new defensive skills while wearing armor.
@@ -1233,6 +1240,14 @@ Benefit: You increase your ki pool by 1 point.</value>
   </data>
   <data name="HypnoticSpellDescription_info" xml:space="preserve">
     <value>A twisting pattern of subtle, shifting colors weaves through the air, fascinating creatures within it. Roll 2d4 and add your caster level (maximum 10) to determine the total number of HD of creatures affected. Creatures with the fewest HD are affected first; and, among creatures with equal HD, those who are closest to the spell's point of origin are affected first. HD that are not sufficient to affect a creature are wasted. Affected creatures become fascinated by the pattern of colors. Sightless creatures are not affected.</value>
+  </data>
+  <data name="ImpatientDrawbackDescription_info" xml:space="preserve">
+    <value>You love leaping into battle at the earliest opportunity, and it frustrates you to wait for others to act.
+Benefit: You take a +1 Insight bonus on Initiative.
+Drawback: You take a -2 penalty on saves against evil spells, and a -1 penalty to all attack rolls.</value>
+  </data>
+  <data name="ImpatientDrawbackName_info" xml:space="preserve">
+    <value>Impatient</value>
   </data>
   <data name="ImprovedEldritchHeritageFeatureDescription_info" xml:space="preserve">
     <value>The power of your discovered bloodline continues to grow.
@@ -2731,6 +2746,16 @@ This ability replaces all of the bonus class skills they would otherwise normall
   <data name="SeekerTinkeringName_info" xml:space="preserve">
     <value>Tinkering</value>
   </data>
+  <data name="ShadowDeBuffDescription_info" xml:space="preserve">
+    <value>You have 1 less on saving throws.</value>
+  </data>
+  <data name="ShadowDrawbackDescription_info" xml:space="preserve">
+    <value>You were touched by terrible horrors that live in the darkness just outside the human sphere and feel your life-force ebb away ever so slightly whenever you return to the shadows.
+Drawback: Whenever you are in an area of dim light or darkness, you take a -1 penalty on saving throws.</value>
+  </data>
+  <data name="ShadowDrawbackName_info" xml:space="preserve">
+    <value>Shadow-Scarred</value>
+  </data>
   <data name="ShadowStabberTraitDescription_info" xml:space="preserve">
     <value>An instinct for dishonorable conduct serves you well when fighting opponents who are blind, oblivious, or blundering around in the dark.
 Benefit: You gain a +2 trait bonus on melee weapon damage rolls made against foes that cannot see you.</value>
@@ -2766,6 +2791,13 @@ You gain a +2 bonus on checks using the skill you chose from that prestige class
   </data>
   <data name="SkipSelection_info" xml:space="preserve">
     <value>(Skip)</value>
+  </data>
+  <data name="SleepyDrawbackDescription_info" xml:space="preserve">
+    <value>You must sleep or rest for at least 8 hours each night to get the benefits of a full night's rest.
+Drawback: You take a -2 penalty on saving throws against sleep effects.</value>
+  </data>
+  <data name="SleepyDrawbackName_info" xml:space="preserve">
+    <value>Sleepy</value>
   </data>
   <data name="SocialTraitDescription_info" xml:space="preserve">
     <value>Social traits focus on your character's social class or upbringing.</value>
@@ -3145,6 +3177,13 @@ Benefit: You gain a +1 trait bonus on Reflex saves.</value>
   </data>
   <data name="YouthfulMischiefTraitName_info" xml:space="preserve">
     <value>Youthful Mischief (Elf)</value>
+  </data>
+  <data name="ZealousDrawbackDescription_info" xml:space="preserve">
+    <value>You are fanatical in your beliefs, ruled by emotion over reason.
+Drawback: When you attack a creature that you know worships a different religion than you do, you take a -5 penalty on the attack roll and a +2 trait bonus on the damage roll.</value>
+  </data>
+  <data name="ZealousDrawbackName_info" xml:space="preserve">
+    <value>Zealous</value>
   </data>
   <data name="ZestForBattleTraitDescription_info" xml:space="preserve">
     <value>Your greatest joy is being in the thick of battle, and smiting your enemies for a righteous or even dastardly cause.

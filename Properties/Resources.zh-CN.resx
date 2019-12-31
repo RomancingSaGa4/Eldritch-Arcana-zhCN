@@ -187,7 +187,7 @@
   </data>
   <data name="AnxiousDrawbackDescription_info" xml:space="preserve">
     <value>你小时候由于口风不够紧而遭受到了极大的痛苦（例如你曾因为不小心把家人暴露给敌人的审判官），因此现在你养成了极端谨言慎行的习惯。
-缺陷：你在进行沟通检定时受到-2减值，并且你说话时必须斟字酌句，因此语速缓慢。除此之外，你还无法大声说话。</value>
+缺陷：你在进行沟通检定时受到-2减值，并且你说话时必须斟字酌句，因此语速缓慢。除非另有说明，你一般不能以超过悄悄话的音量说话。</value>
   </data>
   <data name="AnxiousDrawbackName_info" xml:space="preserve">
     <value>焦虑</value>
@@ -253,7 +253,7 @@
   </data>
   <data name="AttachedDrawbackDescription_info" xml:space="preserve">
     <value>你依恋的对象是你自己。
-当你依恋的对象受到威胁，处于危险状态或被他人拥有时，你在进行意志豁免检定时受到-1减值，对抗恐惧效果的豁免检定时受到-2减值。
+当你依恋的对象受到威胁，处于危险状态或被他人占有时，你在进行意志豁免检定时受到-1减值，对抗恐惧效果的豁免检定时受到-2减值。
 缺陷：你在进行意志豁免检定时受到-1减值，对抗恐惧效果的豁免检定时受到-2减值。</value>
   </data>
   <data name="AttachedDrawbackName_info" xml:space="preserve">
@@ -318,7 +318,7 @@
   </data>
   <data name="BerserkerOfTheSocietyTraitDescription_info" xml:space="preserve">
     <value>你长期在社群中的奉献使你对狂暴的渊源的有了更深刻的理解。
-效益：你每天能使用狂暴技能的轮数延长3轮。</value>
+效益：你每天能使用狂暴技能的轮数增加3轮。</value>
   </data>
   <data name="BerserkerOfTheSocietyTraitName_info" xml:space="preserve">
     <value>社群战狂</value>
@@ -540,11 +540,11 @@
     <value>战斗背景</value>
   </data>
   <data name="CondescendingDrawbackDescription_info" xml:space="preserve">
-    <value>除非是面对像你自己这样真正值得尊重的人，你会用一种令人反感的方式表达你看不起那些不属于自己的种族，民族或国家的人。
+    <value>你觉得只有同你自己一样真正值得尊重的人才值得交往，你用一种相当令人反感的方式表达你看不起那些与你不同种族，民族或国家的人。
 缺陷：你在进行沟通和威吓检定时受到-5减值。</value>
   </data>
   <data name="CondescendingDrawbackName_info" xml:space="preserve">
-    <value>趾高气昂</value>
+    <value>盛气凌人</value>
   </data>
   <data name="CowardlyDrawbackDescription_info" xml:space="preserve">
     <value>你在面对危机时可能会虚张声势，但实际上一直心中惴惴。 如果你看到尸体，可能还会呕吐。
@@ -610,12 +610,19 @@
   <data name="DangerouslyCuriousTraitName_info" xml:space="preserve">
     <value>致命好奇</value>
   </data>
+  <data name="DaydreamerDrawbackDescription_info" xml:space="preserve">
+    <value>你总是神游物外。
+缺陷：你在进行先攻检定时受到-1减值，在进行避免被偷袭的察觉检定时受到-2减值。</value>
+  </data>
+  <data name="DaydreamerDrawbackName_info" xml:space="preserve">
+    <value>白日梦</value>
+  </data>
   <data name="DefenderOfTheSocietyTraitDescription_info" xml:space="preserve">
     <value>你在与社群中最强的战士们搏斗和学习的过程中，对披甲时的防御技能有了更深刻的理解。
 效益：你在穿着中甲或重甲时防御等级获得+1背景加值。</value>
   </data>
   <data name="DefenderOfTheSocietyTraitName_info" xml:space="preserve">
-    <value>社群之盾</value>
+    <value>社群护卫</value>
   </data>
   <data name="DeftDodgerTraitDescription_info" xml:space="preserve">
     <value>在危险环境或恶邻之侧长大的你不断地磨练自己的感官与直觉。
@@ -790,15 +797,15 @@
     <value>使用感知修正值进行{0}检定</value>
   </data>
   <data name="EmpathicDiplomatTraitDescription_info" xml:space="preserve">
-    <value>使用交涉技能时，你长期遵守常识和同理心的视点。
-效益：你在进行交涉技能检定时可以使用感知修正值而非魅力。</value>
+    <value>使用沟通技能时，你长期遵守常识和同理心的视点。
+效益：你在进行沟通技能检定时可以使用感知修正值而非魅力。</value>
   </data>
   <data name="EmpathicDiplomatTraitName_info" xml:space="preserve">
     <value>共情交际</value>
   </data>
   <data name="EmptyMaskDrawbackDescription_info" xml:space="preserve">
     <value>长久以来你在政治抗争中将你的本性隐藏在假面之后，致使你自己也几乎认不出你自己究竟是一个怎样的人。
-缺陷：你在对抗胁迫效果时意志检定受到-1减值，在对抗清楚你本性的人时豁免检定受到-2减值。</value>
+缺陷：你在对抗胁迫效果进行意志检定时受到-1减值，在对抗清楚你本性的人进行豁免检定时受到-2减值。</value>
   </data>
   <data name="EmptyMaskDrawbackName_info" xml:space="preserve">
     <value>假面具</value>
@@ -942,8 +949,8 @@
     <value>• &lt;b&gt;{0}&lt;/b&gt;</value>
   </data>
   <data name="Fey-takenDrawbackDescription_info" xml:space="preserve">
-    <value>你在孩童时曾被喜欢恶作剧的妖精带走了一段时间。当你回归现实世界后，你从此看起来奇怪且不合群。你觉得现实世界十分无趣，你渴望回到那里，因而时常反抗，因此你不会按原样进食，你也不会再对奇光异景产生疑问。
-缺陷：你对疾病，幻象及所有类型的毒，以及精类的法术，类法术能力和超自然能力都受到-2减值。</value>
+    <value>你在孩提时曾被喜欢恶作剧的妖精拐走了一段时间。当你回归现实世界后，你从此看起来奇怪且不合群。你渴望回到那个地方，并觉得凡人的世界如此沉闷而令人作呕，所以你平时毫无食欲，并且对各种奇怪景象视若无睹。
+缺陷：你对疾病，幻象及所有类型的毒，以及精类的法术，类法术能力和超自然能力的豁免检定都受到-2减值。</value>
   </data>
   <data name="Fey-takenDrawbackName_info" xml:space="preserve">
     <value>神隐</value>
@@ -1235,6 +1242,14 @@
   </data>
   <data name="HypnoticSpellDescription_info" xml:space="preserve">
     <value>闪烁变化的旋转彩色图纹在空中扩散，迷魂身在其中的生物。投2d4然后加上你的施法者等级（最大+10）决定受到影响的生物的总生命骰数。生命骰数最少的生物最先受到影响；对于生命骰相同的生物，最靠近法术中心点的生物最先受到影响。不足以影响生物的生命骰数将被浪费。受到影响的生物被彩色图纹迷魂。没有视觉的生物不受影响。</value>
+  </data>
+  <data name="ImpatientDrawbackDescription_info" xml:space="preserve">
+    <value>你喜好一马当先投入战斗，等他人同时采取行动对你来说是一种苦痛。
+效益：你在进行先攻检定时获得+1洞察加值。
+缺陷：你在对含有“邪恶”描述符的法术的进行豁免检定时受到-2减值，在进行攻击检定时受到-1减值。</value>
+  </data>
+  <data name="ImpatientDrawbackName_info" xml:space="preserve">
+    <value>急性子</value>
   </data>
   <data name="ImprovedEldritchHeritageFeatureDescription_info" xml:space="preserve">
     <value>你身上的血脉之力持续增长。
@@ -2736,6 +2751,16 @@
   <data name="SeekerTinkeringName_info" xml:space="preserve">
     <value>修修补补</value>
   </data>
+  <data name="ShadowDeBuffDescription_info" xml:space="preserve">
+    <value>你在进行豁免检定时受到-1减值。</value>
+  </data>
+  <data name="ShadowDrawbackDescription_info" xml:space="preserve">
+    <value>你曾接触过黑暗中的非人恐惧，至今你一进入黑暗环境就会觉得快要死到临头。
+缺陷：当你处于光照条件为昏暗或黑暗的环境中，你在进行豁免检定时受到-1减值。</value>
+  </data>
+  <data name="ShadowDrawbackName_info" xml:space="preserve">
+    <value>怕黑</value>
+  </data>
   <data name="ShadowStabberTraitDescription_info" xml:space="preserve">
     <value>在与盲目，未察觉或在黑暗中致命失误的对手战斗时，你惯于下三滥行为的本能让你如鱼得水。
 效益：你在对无法看见你的敌人发动近战攻击时伤害获得+2背景加值。</value>
@@ -2771,6 +2796,13 @@
   </data>
   <data name="SkipSelection_info" xml:space="preserve">
     <value>(跳过)</value>
+  </data>
+  <data name="SleepyDrawbackDescription_info" xml:space="preserve">
+    <value>你必须睡足或休息足8小时才能获得完整的一夜休息效果。
+缺陷：你在进行对睡眠效果的豁免检定时受到-2减值。</value>
+  </data>
+  <data name="SleepyDrawbackName_info" xml:space="preserve">
+    <value>嗜睡</value>
   </data>
   <data name="SocialTraitDescription_info" xml:space="preserve">
     <value>社会背景聚焦于角色的社会阶级或教养。</value>
@@ -3150,6 +3182,13 @@
   </data>
   <data name="YouthfulMischiefTraitName_info" xml:space="preserve">
     <value>人生经验（精灵）</value>
+  </data>
+  <data name="ZealousDrawbackDescription_info" xml:space="preserve">
+    <value>你对你的信仰非常狂热，情感总是压倒你的理智。
+缺陷：当你对一个不同信仰的生物发动攻击时，你在进行攻击检定时受到-2减值，进行伤害检定时获得+2背景加值。</value>
+  </data>
+  <data name="ZealousDrawbackName_info" xml:space="preserve">
+    <value>狂信</value>
   </data>
   <data name="ZestForBattleTraitDescription_info" xml:space="preserve">
     <value>你最大的乐趣就是在激烈的战斗中，为正义甚至卑鄙的事业而打击敌人。
