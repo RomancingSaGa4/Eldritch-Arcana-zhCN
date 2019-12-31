@@ -3031,6 +3031,44 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Something from your past — or a dark secret you presently hold — makes it difficult for you to ever be at peace, and your chronic worry that you might fall to evil influence has become a self-fulfilling prophecy.
+        ///Drawback: You take a –2 penalty on spells with the evil descriptor. 的本地化字符串。
+        /// </summary>
+        internal static string HauntedDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("HauntedDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Haunted 的本地化字符串。
+        /// </summary>
+        internal static string HauntedDrawbackName_info {
+            get {
+                return ResourceManager.GetString("HauntedDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 When you were young, a relative with whom you had frequently quarreled passed away where his or her soul could not rest. Now, the unquiet spirit appears around you at inconvenient times, distracting you with regret for being unable to help.
+        ///Drawback: You take a –2 penalty on saving throws against the distraction ability of swarms and mind-affecting effects and on concentration checks. 的本地化字符串。
+        /// </summary>
+        internal static string HauntedRegretDrawbackDescription_info {
+            get {
+                return ResourceManager.GetString("HauntedRegretDrawbackDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Haunting Regret 的本地化字符串。
+        /// </summary>
+        internal static string HauntedRegretDrawbackName_info {
+            get {
+                return ResourceManager.GetString("HauntedRegretDrawbackName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 You gain a +4 bonus on Heal checks. You may use {0} as a swift action. 的本地化字符串。
         /// </summary>
         internal static string HealingHandsFeatureDescription_info {

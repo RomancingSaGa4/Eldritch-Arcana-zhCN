@@ -190,25 +190,25 @@ namespace EldritchArcana
                 //Log.Write(x.ToString());
             }
             //Log.Write(x.ToString());
-            x++;
 
-            choices.Add(Helpers.CreateFeature("HauntedDrawback", "Haunted",
-                "Something from your past—or a dark secret you presently hold—makes it difficult for you to ever be at peace, and your chronic worry that you might fall to evil influence has become a self-fulfilling prophecy." +
-                "\nDrawback: You take a –2 penalty on spells with the evil descriptor.",
+            x++;
+            choices.Add(Helpers.CreateFeature("HauntedDrawback", RES.HauntedDrawbackName_info,
+                RES.HauntedDrawbackDescription_info,
                 EmotionGuids[x],
                 Helpers.NiceIcons(39), // fatigue
                 FeatureGroup.None,
                 //Helpers.CreateAddStatBonus(StatType.SaveWill, -1, ModifierDescriptor.Penalty),
                 Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.Evil; s.Value = -2; s.ModifierDescriptor = ModifierDescriptor.Penalty; })));
+
             x++;
-            choices.Add(Helpers.CreateFeature("HauntedRegretDrawback", "Haunting Regret",
-                "When you were young, a relative with whom you had frequently quarreled passed away where his or her soul could not rest. Now, the unquiet spirit appears around you at inconvenient times, distracting you with regret for being unable to help." +
-                "\nDrawback: You take a –2 penalty on saving throws against the distraction ability of swarms and mind-affecting effects and on concentration checks.",
+            choices.Add(Helpers.CreateFeature("HauntedRegretDrawback", RES.HauntedRegretDrawbackName_info,
+                RES.HauntedRegretDrawbackDescription_info,
                 EmotionGuids[x],
                 Helpers.NiceIcons(7),//fatigue//
                 FeatureGroup.None,
                 Helpers.Create<ConcentrationBonus>(a => a.Value = -2),
                 Helpers.Create<SavingThrowBonusAgainstDescriptor>(s => { s.SpellDescriptor = SpellDescriptor.MindAffecting; s.Value = -2; s.ModifierDescriptor = ModifierDescriptor.Penalty; })));
+
             x++;
             choices.Add(Helpers.CreateFeature("ImpatientDrawback", "Impatient",
                 "You love leaping into battle at the earliest opportunity, and it frustrates you to wait for others to act." +

@@ -777,10 +777,10 @@
     <value>紧急力场护罩</value>
   </data>
   <data name="EmotionDrawbackDescription_info" xml:space="preserve">
-    <value>情感缺陷着重于描述角色背景的精神方面的残缺。</value>
+    <value>情绪缺陷着重于描述角色背景的精神方面的残缺。</value>
   </data>
   <data name="EmotionDrawbackName_info" xml:space="preserve">
-    <value>情感缺陷</value>
+    <value>情绪缺陷</value>
   </data>
   <data name="EmpathicDiplomatStatTraitDescription_info" xml:space="preserve">
     <value>你对内在完美、力量与速度本质的长时冥思，使你能将精神与思考高度集中，完成那些仅凭肉体无法办到的事情。
@@ -1176,6 +1176,20 @@
   </data>
   <data name="HairloomTraitName_info" xml:space="preserve">
     <value>家传兵刃</value>
+  </data>
+  <data name="HauntedDrawbackDescription_info" xml:space="preserve">
+    <value>曾经在你的过去发生的某些事——或是你过去保有的某些阴暗的秘密——让你的心灵永远无法保持平静。而你长期以来担心自己会陷入邪恶的影响已成为一种近似自我暗示的预言。
+缺陷：你在对含有“邪恶”描述符的法术的进行豁免检定时受到-2减值。</value>
+  </data>
+  <data name="HauntedDrawbackName_info" xml:space="preserve">
+    <value>作祟</value>
+  </data>
+  <data name="HauntedRegretDrawbackDescription_info" xml:space="preserve">
+    <value>你年轻时，一位常与你口角的亲眷骤然离世，而其灵魂无法安息。如今这个不安定的幽灵经常在麻烦的时间出现在你的周围，利用你对未能救其性命的悔恨分散你的精神。
+缺陷：你在对集群的扰乱心神效果进行豁免检定时，以及对影响精神的效果进行专注检定时受到-2减值。</value>
+  </data>
+  <data name="HauntedRegretDrawbackName_info" xml:space="preserve">
+    <value>怨鬼缠身</value>
   </data>
   <data name="HealingHandsFeatureDescription_info" xml:space="preserve">
     <value>你在进行医疗检定时获得+4加值。你能以一个迅捷动作使用{0}。</value>
