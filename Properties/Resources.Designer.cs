@@ -1710,6 +1710,25 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Dismissible
+        ///You can dismiss this spell at will. Dismissing a spell is a standard action that does not provoke attacks of opportunity. 的本地化字符串。
+        /// </summary>
+        internal static string DismissEmergencyForceSphereDescription_info {
+            get {
+                return ResourceManager.GetString("DismissEmergencyForceSphereDescription_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Dismiss Spell (Emergency Force Sphere) 的本地化字符串。
+        /// </summary>
+        internal static string DismissEmergencyForceSphereName_info {
+            get {
+                return ResourceManager.GetString("DismissEmergencyForceSphereName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 No area effects to dismiss (only certain spells can be dismissed in combat). 的本地化字符串。
         /// </summary>
         internal static string DismissSpellNoAreaEffectsToDismiss_info {
@@ -3648,6 +3667,15 @@ namespace EldritchArcana.Properties {
         internal static string loadWishSpells_error {
             get {
                 return ResourceManager.GetString("loadWishSpells_error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Name string fix for Charoite Wyvern 的本地化字符串。
+        /// </summary>
+        internal static string loadWyvernCharoiteNameStringFix_error {
+            get {
+                return ResourceManager.GetString("loadWyvernCharoiteNameStringFix_error", resourceCulture);
             }
         }
         
@@ -8496,6 +8524,15 @@ namespace EldritchArcana.Properties {
         internal static string WittyReparteeTraitName_info {
             get {
                 return ResourceManager.GetString("WittyReparteeTraitName_info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Charoite Wyvern 的本地化字符串。
+        /// </summary>
+        internal static string WyvernCharoiteName_info {
+            get {
+                return ResourceManager.GetString("WyvernCharoiteName_info", resourceCulture);
             }
         }
         

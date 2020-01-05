@@ -389,8 +389,8 @@ namespace EldritchArcana
             dismiss.Range = AbilityRange.Personal;
             dismiss.CanTargetSelf = true;
             dismiss.name = "DismissEmergencyForceSphere";
-            dismiss.SetNameDescriptionIcon("Dismiss Spell (Emergency Force Sphere)",
-                "Dismissible\nYou can dismiss this spell at will. Dismissing a spell is a standard action that does not provoke attacks of opportunity.",
+            dismiss.SetNameDescriptionIcon(RES.DismissEmergencyForceSphereName_info,
+                RES.DismissEmergencyForceSphereDescription_info,
                 spell.Icon);
             dismiss.SetComponents(
                 Helpers.Create<AbilityEffectRunAction>(a => a.Actions = new ActionList()

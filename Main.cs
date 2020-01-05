@@ -43,6 +43,8 @@ namespace EldritchArcana
 
                 SafeLoad(Spells.Load, RES.loadSpells_error);
 
+                SafeLoad(LoadWyvernCharoiteNameStringFix, RES.loadWyvernCharoiteNameStringFix_error);
+
                 // Note: needs to be loaded after other spells, so it can offer them as a choice.
                 SafeLoad(WishSpells.Load, RES.loadWishSpells_error);
 
@@ -167,6 +169,14 @@ namespace EldritchArcana
 
                 charGen.Portraits = charGen.Portraits.AddToArray(customPortraits);
             }
+        }
+
+        static void LoadWyvernCharoiteNameStringFix()
+        {
+            var WyvernCharoite = library.Get < BlueprintUnit >("fb3cf6666c50638439cdecfa45ae80ac"); //紫龙晶双足飞龙
+            WyvernCharoite.LocalizedName = new Kingmaker.Localization.SharedStringAsset();
+            WyvernCharoite.LocalizedName.String = Helpers.CreateString("WyvernCharoite.name", RES.WyvernCharoiteName_info);
+            WyvernCharoite.LocalizedName.name = "WyvernCharoite";
         }
 
         static string GetMd5Hash(MD5 md5, string input)

@@ -705,6 +705,13 @@
   <data name="DismissAreaEffectAbilityName_info" xml:space="preserve">
     <value>驱散范围法术效果</value>
   </data>
+  <data name="DismissEmergencyForceSphereDescription_info" xml:space="preserve">
+    <value>可驱散
+你能以自己的意愿驱散该法术。驱散法术效果是一个不会引发借机攻击的标准动作。</value>
+  </data>
+  <data name="DismissEmergencyForceSphereName_info" xml:space="preserve">
+    <value>驱散法术（紧急力场法球）</value>
+  </data>
   <data name="DismissSpellNoAreaEffectsToDismiss_info" xml:space="preserve">
     <value>无法驱散范围法术效果（只有特定的法术才能在战斗中被驱散）。</value>
   </data>
@@ -1406,6 +1413,9 @@
   </data>
   <data name="loadWishSpells_error" xml:space="preserve">
     <value>许愿法术</value>
+  </data>
+  <data name="loadWyvernCharoiteNameStringFix_error" xml:space="preserve">
+    <value>紫龙晶双足飞龙的名称修正</value>
   </data>
   <data name="MaestroOfTheSocietyTraitDescription_info" xml:space="preserve">
     <value>多亏了你可以接触到那些馆藏的丰富音乐知识瑰宝，最伟大音乐家的才能在你的指尖流淌。
@@ -3175,6 +3185,9 @@
   </data>
   <data name="WittyReparteeTraitName_info" xml:space="preserve">
     <value>舌灿莲花</value>
+  </data>
+  <data name="WyvernCharoiteName_info" xml:space="preserve">
+    <value>紫龙晶双足飞龙</value>
   </data>
   <data name="YouthfulMischiefTraitDescription_info" xml:space="preserve">
     <value>虽然你已经不做大脚板、斥候或者吟游诗人的营生很久了，但你依然还记得在危机来临时该如何应对。

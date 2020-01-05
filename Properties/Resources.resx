@@ -705,6 +705,13 @@ If this ability is enabled, it means you have a currently active effect spell th
   <data name="DismissAreaEffectAbilityName_info" xml:space="preserve">
     <value>Dismiss Area Effect Spell</value>
   </data>
+  <data name="DismissEmergencyForceSphereDescription_info" xml:space="preserve">
+    <value>Dismissible
+You can dismiss this spell at will. Dismissing a spell is a standard action that does not provoke attacks of opportunity.</value>
+  </data>
+  <data name="DismissEmergencyForceSphereName_info" xml:space="preserve">
+    <value>Dismiss Spell (Emergency Force Sphere)</value>
+  </data>
   <data name="DismissSpellNoAreaEffectsToDismiss_info" xml:space="preserve">
     <value>No area effects to dismiss (only certain spells can be dismissed in combat).</value>
   </data>
@@ -1404,6 +1411,9 @@ A duplicated spell allows saving throws and spell resistance as normal, but the 
   </data>
   <data name="loadWishSpells_error" xml:space="preserve">
     <value>Wish spells</value>
+  </data>
+  <data name="loadWyvernCharoiteNameStringFix_error" xml:space="preserve">
+    <value>Name string fix for Charoite Wyvern</value>
   </data>
   <data name="MaestroOfTheSocietyTraitDescription_info" xml:space="preserve">
     <value>The skills of the greatest musicians are at your fingertips, thanks to the vast treasure trove of musical knowledge in the vaults you have access to.
@@ -3170,6 +3180,9 @@ Two to five wish spells cast in immediate succession can grant a creature a +2 t
   </data>
   <data name="WittyReparteeTraitName_info" xml:space="preserve">
     <value>Witty Repartee</value>
+  </data>
+  <data name="WyvernCharoiteName_info" xml:space="preserve">
+    <value>Charoite Wyvern</value>
   </data>
   <data name="YouthfulMischiefTraitDescription_info" xml:space="preserve">
     <value>Though you gave up the life of a padfoot, scout, or minstrel decades before, you still know how to roll with the punches when things turn sour.
