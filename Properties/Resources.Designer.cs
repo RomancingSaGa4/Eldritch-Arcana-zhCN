@@ -2466,6 +2466,15 @@ namespace EldritchArcana.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Add all kinds of forms to Form Of The Dragon (I, II, III) 的本地化字符串。
+        /// </summary>
+        internal static string FixAllDragonKindsToDragonForm {
+            get {
+                return ResourceManager.GetString("FixAllDragonKindsToDragonForm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 At 3rd level, and every two levels thereafter, a sorcerer learns an additional spell, derived from her bloodline. These spells are in addition to the number of spells given at new levels.
         ///{0} 的本地化字符串。
         /// </summary>

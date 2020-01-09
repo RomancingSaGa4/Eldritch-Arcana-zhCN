@@ -982,6 +982,9 @@
     <value>3级时，以及之后每升2级，术士都可以额外学习一个来自于血承的法术。该法术不计入新等级赋予的法术数量。
 {0}</value>
   </data>
+  <data name="FixAllDragonKindsToDragonForm" xml:space="preserve">
+    <value>为龙形I，II，III添加所有种类的龙的形态</value>
+  </data>
   <data name="FixElementalSpells_info" xml:space="preserve">
     <value>启用元素形态的施法</value>
   </data>

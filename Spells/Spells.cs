@@ -73,6 +73,7 @@ namespace EldritchArcana
 
             Main.SafeLoad(FixElementalFormSpellcasting, RES.FixElementalSpells_info);
             Main.SafeLoad(FixHealingDomainLevel8Spell, RES.FixHealingDomainLevel8Spell);
+            Main.SafeLoad(FixAllDragonKindsToDragonForm, RES.FixAllDragonKindsToDragonForm);
 
             Main.SafeLoad(DismissSpell.Load, RES.DismissSpells_info);
 
@@ -164,6 +165,95 @@ namespace EldritchArcana
             var cureCrticalWoundMassSpell = Library.Get<BlueprintAbility>("1f173a16120359e41a20fc75bb53d449");
             cureCrticalWoundMassSpell.FixDomainSpell(8, "033b2b6a8899be844ae8aa91d4dab477");
             //cureCrticalWoundMassSpell.AddToSpellList(Helpers.healingDomainSpellList, 8);
+        }
+
+        static void FixAllDragonKindsToDragonForm()
+        {
+            // 为龙形添加所有种类的龙
+            // 添加是无效的，只能重置Variants
+            var SpellFormOfTheDragon = Library.Get<BlueprintAbility>("f767399367df54645ac620ef7b2062bb");
+            var SpellFormOfTheDragonBlack = Library.Get<BlueprintAbility>("baeb1c45b53de864ca0c10784ce447f0");
+            var SpellFormOfTheDragonBlue = Library.Get<BlueprintAbility>("7e889430ba65f724c81702101346e39a");
+            var SpellFormOfTheDragonBrass = Library.Get<BlueprintAbility>("2271bc6960317164aa61363ebe7c0228");
+            var SpellFormOfTheDragonBronze = Library.Get<BlueprintAbility>("f1103c097be761e489ee27a8d49a373b");
+            var SpellFormOfTheDragonCopper = Library.Get<BlueprintAbility>("7ecab895312f8b541a712f965ee7afdb");
+            var SpellFormOfTheDragonGold = Library.Get<BlueprintAbility>("12e6785ca0f97a145a7c02a5f0fd155c");
+            var SpellFormOfTheDragonGreen = Library.Get<BlueprintAbility>("9d649b9e77bcd3d4ea0f91b8512a3744");
+            var SpellFormOfTheDragonRed = Library.Get<BlueprintAbility>("69bdc2c9678bd0d44bcb2ebe959d028e");
+            var SpellFormOfTheDragonSilver = Library.Get<BlueprintAbility>("c267d1263d24fe443aad916154cfd71f");
+            var SpellFormOfTheDragonWhite = Library.Get<BlueprintAbility>("dd9562283469b8b44941e413854a8738");
+            var variantsForm = new List<BlueprintAbility> {
+                SpellFormOfTheDragonBlack,
+                SpellFormOfTheDragonBlue,
+                SpellFormOfTheDragonBrass,
+                SpellFormOfTheDragonBronze,
+                SpellFormOfTheDragonCopper,
+                SpellFormOfTheDragonGold,
+                SpellFormOfTheDragonGreen,
+                SpellFormOfTheDragonRed,
+                SpellFormOfTheDragonSilver,
+                SpellFormOfTheDragonWhite
+            };
+            SpellFormOfTheDragon.SetComponents(SpellFormOfTheDragon.CreateAbilityVariants(variantsForm));
+            // SpellFormOfTheDragon.Variants.ForEach<BlueprintAbility>(c => Log.Write("Now Dragon Form contents: " + c.Name));
+
+            var SpellFormOfTheDragonII = Library.Get<BlueprintAbility>("666556ded3a32f34885e8c318c3a0ced");
+            var SpellFormOfTheDragonIIBlack = Library.Get<BlueprintAbility>("6bf16ce26218a8c4d83be46f728b988c");
+            var SpellFormOfTheDragonIIBlue = Library.Get<BlueprintAbility>("4f35ef15da877154897da5753a1ef6c0");
+            var SpellFormOfTheDragonIIBrass = Library.Get<BlueprintAbility>("f600fa881abbe904483a19a45a4c30db");
+            var SpellFormOfTheDragonIIBronze = Library.Get<BlueprintAbility>("74b250652bff49b449cdbf9a716a817c");
+            var SpellFormOfTheDragonIICopper = Library.Get<BlueprintAbility>("9c5b14468fcc97349bd9f1d51b5683c8");
+            var SpellFormOfTheDragonIIGold = Library.Get<BlueprintAbility>("72a3ccf67437f4342b2d23634271de77");
+            var SpellFormOfTheDragonIIGreen = Library.Get<BlueprintAbility>("86974eb3b760af4459144e047ed423fa");
+            var SpellFormOfTheDragonIIRed = Library.Get<BlueprintAbility>("b5f8f544b7802bd4197a34f162fee6f1");
+            var SpellFormOfTheDragonIISilver = Library.Get<BlueprintAbility>("c7adf4e83543f45419a37e6fb3651c77");
+            var SpellFormOfTheDragonIIWhite = Library.Get<BlueprintAbility>("91b46b3b1dd4b984092bf997495aeff2");
+            var variantsFormII = new List<BlueprintAbility> {
+                SpellFormOfTheDragonIIBlack,
+                SpellFormOfTheDragonIIBlue,
+                SpellFormOfTheDragonIIBrass,
+                SpellFormOfTheDragonIIBronze,
+                SpellFormOfTheDragonIICopper,
+                SpellFormOfTheDragonIIGold,
+                SpellFormOfTheDragonIIGreen,
+                SpellFormOfTheDragonIIRed,
+                SpellFormOfTheDragonIISilver,
+                SpellFormOfTheDragonIIWhite
+            };
+            SpellFormOfTheDragonII.SetComponents(SpellFormOfTheDragonII.CreateAbilityVariants(variantsFormII));
+            // SpellFormOfTheDragonII.Variants.ForEach<BlueprintAbility>(c => Log.Write("Now Dragon Form II contents: " + c.Name));
+
+
+            var SpellFormOfTheDragonIII = Library.Get<BlueprintAbility>("1cdc4ad4c208246419b98a35539eafa6");
+            var SpellFormOfTheDragonIIIBlack = Library.Get<BlueprintAbility>("c12c98cfd3cde22488f09e9618ff7435");
+            var SpellFormOfTheDragonIIIBlue = Library.Get<BlueprintAbility>("5c6791821d8a2ae4cb134a4bd925de50");
+            var SpellFormOfTheDragonIIIBrass = Library.Get<BlueprintAbility>("4fda7f6a51d989a4794ff4401178b5fe");
+            var SpellFormOfTheDragonIIIBronze = Library.Get<BlueprintAbility>("04d7a690e60feca40890bc3db144b335");
+            var SpellFormOfTheDragonIIICopper = Library.Get<BlueprintAbility>("ab069196fb37dfc4e848fe482f7f620d");
+            var SpellFormOfTheDragonIIIGold = Library.Get<BlueprintAbility>("c511266a705a6e94186cb51e0503775f");
+            var SpellFormOfTheDragonIIIGreen = Library.Get<BlueprintAbility>("00b3a04140c39b447925fe5a79522087");
+            var SpellFormOfTheDragonIIIRed = Library.Get<BlueprintAbility>("2c1ee791f53ed4f42bd86d8659c638c0");
+            var SpellFormOfTheDragonIIISilver = Library.Get<BlueprintAbility>("0b1e76be6f786ca45b2ac247ac3a278e");
+            var SpellFormOfTheDragonIIIWhite = Library.Get<BlueprintAbility>("ded61c155aaa39440be67f877623378e");
+
+            // 变赤铜龙和变金龙描述符的修正
+            SpellFormOfTheDragonIIICopper.ReplaceComponent<SpellDescriptorComponent>(SpellDescriptor.Polymorph.CreateSpellDescriptor());
+            SpellFormOfTheDragonIIIGold.ReplaceComponent<SpellDescriptorComponent>(SpellDescriptor.Polymorph.CreateSpellDescriptor());
+
+            var variantsFormIII = new List<BlueprintAbility> { 
+                SpellFormOfTheDragonIIIBlack,
+                SpellFormOfTheDragonIIIBlue,
+                SpellFormOfTheDragonIIIBrass,
+                SpellFormOfTheDragonIIIBronze,
+                SpellFormOfTheDragonIIICopper,
+                SpellFormOfTheDragonIIIGold,
+                SpellFormOfTheDragonIIIGreen,
+                SpellFormOfTheDragonIIIRed,
+                SpellFormOfTheDragonIIISilver,
+                SpellFormOfTheDragonIIIWhite 
+            };
+            SpellFormOfTheDragonIII.SetComponents(SpellFormOfTheDragonIII.CreateAbilityVariants(variantsFormIII));
+            // SpellFormOfTheDragonIII.Variants.ForEach<BlueprintAbility>(c => Log.Write("Now Dragon Form III contents: " + c.Name));
         }
 
         static void LoadWeaponOfAwe()

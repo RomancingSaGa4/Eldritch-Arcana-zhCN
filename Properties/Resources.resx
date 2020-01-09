@@ -980,6 +980,9 @@ Whenever you receive magical healing, you heal an additional 2 points per die ro
     <value>At 3rd level, and every two levels thereafter, a sorcerer learns an additional spell, derived from her bloodline. These spells are in addition to the number of spells given at new levels.
 {0}</value>
   </data>
+  <data name="FixAllDragonKindsToDragonForm" xml:space="preserve">
+    <value>Add all kinds of forms to Form Of The Dragon (I, II, III)</value>
+  </data>
   <data name="FixElementalSpells_info" xml:space="preserve">
     <value>Enable spellcasting for elemental forms</value>
   </data>
