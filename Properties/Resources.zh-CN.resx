@@ -1641,7 +1641,7 @@
     <value>每天1次，当你在豁免检定失败后导致目盲，耳聋，战栗，惊惧，麻痹，恐慌或是震慑状态时，你都能以一个即时动作再投一次豁免，并获得+4加值。即使第二次检定的结果比第一次更糟，你也必须接受。在7级和15级时，你每天可以使用本能力的次数再增加1次。</value>
   </data>
   <data name="MysteryBattleBattlefieldClarityName_info" xml:space="preserve">
-    <value>灵台澄明</value>
+    <value>洞悉战场</value>
   </data>
   <data name="MysteryBattleDescription_info" xml:space="preserve">
     <value>
