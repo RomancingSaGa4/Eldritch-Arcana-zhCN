@@ -194,7 +194,10 @@ namespace EldritchArcana
                 SpellFormOfTheDragonSilver,
                 SpellFormOfTheDragonWhite
             };
-            SpellFormOfTheDragon.SetComponents(SpellFormOfTheDragon.CreateAbilityVariants(variantsForm));
+            SpellFormOfTheDragon.SetComponents(
+                SpellSchool.Transmutation.CreateSpellComponent(),
+                SpellDescriptor.Polymorph.CreateSpellDescriptor(),
+                SpellFormOfTheDragon.CreateAbilityVariants(variantsForm));
             // SpellFormOfTheDragon.Variants.ForEach<BlueprintAbility>(c => Log.Write("Now Dragon Form contents: " + c.Name));
 
             var SpellFormOfTheDragonII = Library.Get<BlueprintAbility>("666556ded3a32f34885e8c318c3a0ced");
@@ -220,9 +223,11 @@ namespace EldritchArcana
                 SpellFormOfTheDragonIISilver,
                 SpellFormOfTheDragonIIWhite
             };
-            SpellFormOfTheDragonII.SetComponents(SpellFormOfTheDragonII.CreateAbilityVariants(variantsFormII));
+            SpellFormOfTheDragonII.SetComponents(
+                SpellSchool.Transmutation.CreateSpellComponent(),
+                SpellDescriptor.Polymorph.CreateSpellDescriptor(),
+                SpellFormOfTheDragonII.CreateAbilityVariants(variantsFormII));
             // SpellFormOfTheDragonII.Variants.ForEach<BlueprintAbility>(c => Log.Write("Now Dragon Form II contents: " + c.Name));
-
 
             var SpellFormOfTheDragonIII = Library.Get<BlueprintAbility>("1cdc4ad4c208246419b98a35539eafa6");
             var SpellFormOfTheDragonIIIBlack = Library.Get<BlueprintAbility>("c12c98cfd3cde22488f09e9618ff7435");
@@ -252,7 +257,10 @@ namespace EldritchArcana
                 SpellFormOfTheDragonIIISilver,
                 SpellFormOfTheDragonIIIWhite 
             };
-            SpellFormOfTheDragonIII.SetComponents(SpellFormOfTheDragonIII.CreateAbilityVariants(variantsFormIII));
+            SpellFormOfTheDragonIII.SetComponents(
+                SpellSchool.Transmutation.CreateSpellComponent(),
+                SpellDescriptor.Polymorph.CreateSpellDescriptor(),
+                SpellFormOfTheDragonIII.CreateAbilityVariants(variantsFormIII));
             // SpellFormOfTheDragonIII.Variants.ForEach<BlueprintAbility>(c => Log.Write("Now Dragon Form III contents: " + c.Name));
         }
 
