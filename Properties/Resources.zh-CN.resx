@@ -2952,7 +2952,7 @@
   </data>
   <data name="UndeadCurseDrawbackDescription_info" xml:space="preserve">
     <value>此生物被厄迦图娅转化为不死生物。
-缺陷：此生物害怕火焰，神圣和崇圣属性攻击。</value>
+缺陷：此生物害怕火焰，神力和崇圣属性攻击。</value>
   </data>
   <data name="UndeadCurseDrawbackName_info" xml:space="preserve">
     <value>不死诅咒</value>
