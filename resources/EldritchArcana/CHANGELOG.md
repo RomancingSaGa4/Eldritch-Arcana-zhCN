@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [2020.1.27.Fix]
+
+### Fixed
+-对应2.0.8
+-修正紫龙晶双足飞龙召唤生物名称显示不正确的Bug
+-修正龙形1、2、3龙种类不全的Bug
+
 ## [1.2.9.11-zhCN]
 
 ### Added
